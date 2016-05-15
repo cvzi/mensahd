@@ -1,0 +1,29 @@
+<openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
+  <canteen>
+    <name>{name}</name>
+    <address>{adress}</address>
+    <city>{city}</city>
+    <phone>{phone}</phone>
+    <location latitude="{latitude}" longitude="{longitude}" />
+    <!--<availability></availability>-->
+    <times type="opening">
+      <monday {monday} />
+      <tuesday {tuesday} />
+      <wednesday {wednesday} />
+      <thursday {thursday} />
+      <friday {friday} />
+      <saturday {saturday} />
+      <sunday {sunday} />
+    </times>
+    <feed name="today" priority="0">
+      <schedule dayOfMonth="*" dayOfWeek="*" hour="9-14" retry="30 1" />
+      <url>{feed_today}</url>
+      <source>{source_today}</source>
+    </feed>
+    <feed name="full" priority="1">
+      <schedule dayOfMonth="*" dayOfWeek="*" hour="8" retry="60 5 1440" />
+      <url>{feed_full}</url>
+      <source>{source_full}</source>
+    </feed>
+  </canteen>
+</openmensa>
