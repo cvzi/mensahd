@@ -8,7 +8,9 @@
 <xsl:param name="lastFetched"/>
 
 <xsl:template match="/">
+
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
+
 
 
 <xsl:if test="boolean(number($lastFetched)) and number($lastFetched) &gt; 1">
@@ -54,15 +56,21 @@
                             <note>
                                 <xsl:value-of select="text_en"/>
                             </note>
-                            <price role="student">
-                                <xsl:value-of select="studi"/>
-                            </price>
-                            <price role="employee">
-                                <xsl:value-of select="bed"/>
-                            </price>
-                            <price role="other">
-                                <xsl:value-of select="gast"/>
-                            </price>
+                            <xsl:if test="studi &gt; 0.0">
+                                <price role="student">
+                                    <xsl:value-of select="studi"/>
+                                </price>
+                            </xsl:if>
+                            <xsl:if test="bed &gt; 0.0">
+                                <price role="employee">
+                                    <xsl:value-of select="bed"/>
+                                </price>
+                            </xsl:if>
+                            <xsl:if test="gast &gt; 0.0">
+                                <price role="other">
+                                    <xsl:value-of select="gast"/>
+                                </price>
+                            </xsl:if>
                         </meal>
                     </xsl:for-each>
                 </category>
@@ -77,4 +85,3 @@
 </openmensa>
 </xsl:template>
 </xsl:stylesheet>
-
