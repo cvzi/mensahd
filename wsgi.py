@@ -4,8 +4,8 @@
 
 import os
 import datetime
-#import pytz
-#import heidelberg
+import pytz
+import heidelberg
 from mannheim import getmannheim
 import traceback
 
