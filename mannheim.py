@@ -44,7 +44,7 @@ def parse_url(url, today=False):
         today += datetime.timedelta(days=1) # Tomorrow
 
     url = url % today.strftime('%Y_%m_%d')
-
+    
     content = requests.get(url).text
 
     document = BeautifulSoup(content, "html.parser")
@@ -105,7 +105,11 @@ def parse_url(url, today=False):
                         categoryName = canteenCategories[cat]
 
                     # Name
-                    name = removeextras_regex.sub("", td0.find("p").text)
+                    if td0.find("p"):
+                        name = removeextras_regex.sub("", td0.find("p").text)
+                    else:
+                        name = categoryName # No name available, let's just use the category name
+                    
 
                     # Prices
                     prices = []
@@ -223,8 +227,8 @@ def getmannheim():
 
 
 if __name__ == "__main__":
-    print(getmannheim().json("https://localhost/meta/%s.xml"))
-    
+    #print(getmannheim().json("https://localhost/meta/%s.xml"))
+    print(getmannheim().feed("metropol"))
 
 
 
