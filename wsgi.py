@@ -8,6 +8,9 @@ import pytz
 import heidelberg
 from mannheim import getmannheim
 import traceback
+import urllib.request
+import urllib.error
+import socket
 
 page_errors = []
 
@@ -21,8 +24,34 @@ def application(environ, start_response):
     if environ['PATH_INFO'] == '/health':
         response_body = "1"
             
+    if environ['PATH_INFO'] == '/favicon.ico':
+        ctype = 'image/x-icon'
+        response_body = open(os.path.join(os.path.dirname(__file__), "favicon.ico"),"rb").read()
+        response_headers = [('Content-Type', ctype), ('Content-Length', str(len(response_body)))]
+        start_response(status, response_headers)
+        return [response_body ]
+            
     elif environ['PATH_INFO'] == '/status':
-        response_body = "Ok. %d errors.\n" % len(page_errors)
+        statusmessage = []
+        
+        try:
+            request = urllib.request.Request("http://www.stw.uni-heidelberg.de/") # No HTTP over SSL available!
+            result = urllib.request.urlopen(request, timeout=5)
+        except:
+            statusmessage.append("www.stw.uni-heidelberg.de is not reachable")
+            
+        try:
+            request = urllib.request.Request("https://www.stw-ma.de/")
+            result = urllib.request.urlopen(request, timeout=5)
+        except:
+            statusmessage.append("www.stw-ma.de is not reachable")
+            
+        if not statusmessage:
+            statusmessage = "Ok"
+        else:
+            statusmessage = ". ".join(statusmessage)
+
+        response_body = "%s. %d errors.\n" % (statusmessage, len(page_errors))
         for exc in page_errors:
             response_body += "%s \t %s\n" % exc
         
@@ -36,6 +65,11 @@ def application(environ, start_response):
             name = ''
         try:
             response_body = heidelberg.today(name).decode("utf-8")
+        except (urllib.error.URLError, socket.timeout) as e:
+            ctype = 'text/plain'
+            response_body = "Could not connect to www.stw.uni-heidelberg.de\n\nAn error occured:\n%s\n%s" % (e, traceback.format_exc())
+            status = '533 Open www.stw.uni-heidelberg.de timed out'
+            page_errors.append((environ['PATH_INFO'], e))
         except Exception as e:
             ctype = 'text/plain'
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
@@ -53,6 +87,11 @@ def application(environ, start_response):
             name = ''
         try:
             response_body = heidelberg.all(name).decode("utf-8")
+        except (urllib.error.URLError, socket.timeout) as e:
+            ctype = 'text/plain'
+            response_body = "Could not connect to www.stw.uni-heidelberg.de\n\nAn error occured:\n%s\n%s" % (e, traceback.format_exc())
+            status = '533 Open www.stw.uni-heidelberg.de timed out'
+            page_errors.append((environ['PATH_INFO'], e))
         except Exception as e:
             ctype = 'text/plain'
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
@@ -69,6 +108,11 @@ def application(environ, start_response):
             name = ''
         try:
             response_body = heidelberg.meta(name)
+        except (urllib.error.URLError, socket.timeout) as e:
+            ctype = 'text/plain'
+            response_body = "Could not connect to www.stw.uni-heidelberg.de\n\nAn error occured:\n%s\n%s" % (e, traceback.format_exc())
+            status = '533 Open www.stw.uni-heidelberg.de timed out'
+            page_errors.append((environ['PATH_INFO'], e))
         except Exception as e:
             ctype = 'text/plain'
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
@@ -80,6 +124,11 @@ def application(environ, start_response):
         ctype = 'text/xml'
         try:
             response_body = heidelberg.list()
+        except (urllib.error.URLError, socket.timeout) as e:
+            ctype = 'text/plain'
+            response_body = "Could not connect to www.stw.uni-heidelberg.de\n\nAn error occured:\n%s\n%s" % (e, traceback.format_exc())
+            status = '533 Open www.stw.uni-heidelberg.de timed out'
+            page_errors.append((environ['PATH_INFO'], e))
         except Exception as e:
             ctype = 'text/plain'
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
@@ -90,6 +139,11 @@ def application(environ, start_response):
         ctype = 'text/json'
         try:
             response_body = heidelberg.listJSON()
+        except (urllib.error.URLError, socket.timeout) as e:
+            ctype = 'text/plain'
+            response_body = "Could not connect to www.stw.uni-heidelberg.de\n\nAn error occured:\n%s\n%s" % (e, traceback.format_exc())
+            status = '533 Open www.stw.uni-heidelberg.de timed out'
+            page_errors.append((environ['PATH_INFO'], e))
         except Exception as e:
             ctype = 'text/plain'
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
@@ -118,6 +172,11 @@ def application(environ, start_response):
             name = name[:-4]            
         try:
             response_body = mannheim.meta(name)
+        except (urllib.error.URLError, socket.timeout) as e:
+            ctype = 'text/plain'
+            response_body = "Could not connect to www.stw-ma.de\n\nAn error occured:\n%s\n%s" % (e, traceback.format_exc())
+            status = '533 Open www.stw-ma.de timed out'
+            page_errors.append((environ['PATH_INFO'], e))
         except Exception as e:
             ctype = 'text/plain'
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
@@ -131,6 +190,11 @@ def application(environ, start_response):
             name = name[:-4]            
         try:
             response_body = mannheim.feed(name)
+        except (urllib.error.URLError, socket.timeout) as e:
+            ctype = 'text/plain'
+            response_body = "Could not connect to www.stw-ma.de\n\nAn error occured:\n%s\n%s" % (e, traceback.format_exc())
+            status = '533 Open www.stw-ma.de timed out'
+            page_errors.append((environ['PATH_INFO'], e))
         except Exception as e:
             ctype = 'text/plain'
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())

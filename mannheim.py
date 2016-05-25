@@ -115,7 +115,10 @@ def parse_url(url, today=False):
                     prices = []
                     spans = td1.find_all("span", {"class": "label"})
                     if spans:
-                        price = float(euro_regex.search(spans[0].text).group(1).replace(",","."))
+                        try:
+                            price = float(euro_regex.search(spans[0].text).group(1).replace(",","."))
+                        except:
+                            notes.append(spans[0].text.strip()+" Preis")
                         if len(spans) == 2:
                             notes.append(spans[1].text.strip()+" Preis")
                         prices = (price, price*employee_multiplier, price*guest_multiplier)
@@ -228,7 +231,7 @@ def getmannheim():
 
 if __name__ == "__main__":
     #print(getmannheim().json("https://localhost/meta/%s.xml"))
-    print(getmannheim().feed("metropol"))
+    print(getmannheim().feed("hochschule"))
 
 
 

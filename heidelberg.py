@@ -14,8 +14,9 @@ import io
 from threading import Lock 
 
 mealsURL = 'https://www.stw.uni-heidelberg.de/appdata/sp.xml'
-mealsURL_authorization = ""
+mealsURL_authorization = open(os.path.join(os.path.dirname(__file__), ".password.txt")).read()
 metaURL = 'http://www.stw.uni-heidelberg.de/sites/default/files/download/pdf/stwhd-de.json'
+__timeoutSeconds = 20
 
 xslFile = os.path.join(os.path.dirname(__file__), "heidelberg.xsl")
 metaTemplateFile = os.path.join(os.path.dirname(__file__), "metaTemplate.xml")
@@ -25,7 +26,7 @@ template_metaURL = "https://mensahd-cuzi.rhcloud.com/meta/%s.xml"
 template_todayURL = "https://mensahd-cuzi.rhcloud.com/today/%s.xml"
 template_fullURL = "https://mensahd-cuzi.rhcloud.com/all/%s.xml"
 
-
+emptyFeed = '<openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd"/><!-- %s -->'
 
 # Maps arbitrary ids to the actual names in the XML feed. The ids are used in the feed URLs
 nameMap = {
@@ -66,6 +67,9 @@ cache_metaURL_lock = Lock()
 cache_metaURL_data = None
 cache_metaURL_time = 0
 
+def getEmptyFeed(comment="empty"):
+    return emptyFeed % comment
+
 def _getShortName(longname):
     """Reverse function for global nameMap dict"""
     for short in nameMap:
@@ -77,7 +81,7 @@ def _getMealsURL():
     """Download meals information from XML feed"""
     request = urllib.request.Request(mealsURL)
     request.add_header("Authorization", "Basic %s" % mealsURL_authorization)
-    result = urllib.request.urlopen(request)
+    result = urllib.request.urlopen(request, timeout=__timeoutSeconds)
     return result, 0
     
 def _getMealsURL_cached(max_age_minutes=15):
@@ -99,7 +103,7 @@ def _getMealsURL_cached(max_age_minutes=15):
 def _getMetaURL():
     """Download meta information from JSON source"""
     request = urllib.request.Request(metaURL) 
-    result = urllib.request.urlopen(request)
+    result = urllib.request.urlopen(request, timeout=__timeoutSeconds)
     return result, 0
     
 def _getMetaURL_cached(max_age_minutes=120):
@@ -185,7 +189,7 @@ def _generateCanteenMeta(source, name):
         xml = template.format(**data)
         return xml
 
-    return '<openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd"/>'
+    return getEmptyFeed("Unkown canteen - wrong name?")
 
 def _generateCanteenList(source):
     """Generate an XML feed with basic information about all available canteens"""
