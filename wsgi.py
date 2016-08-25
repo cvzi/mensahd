@@ -17,6 +17,11 @@ page_errors = []
 baseurl = "https://mensahd-cuzi.rhcloud.com/"
 mannheim = getmannheim()
 
+def timeStrBerlin():
+    berlin = pytz.timezone('Europe/Berlin')
+    now = datetime.datetime.now(berlin)
+    return now.strftime("%Y-%m-%d %H:%M")
+
 def application(environ, start_response):
     ctype = 'text/plain'
     status = '200 OK'
@@ -52,8 +57,8 @@ def application(environ, start_response):
             statusmessage = ". ".join(statusmessage)
 
         response_body = "%s. %d errors.\n" % (statusmessage, len(page_errors))
-        for exc in page_errors:
-            response_body += "%s \t %s\n" % exc
+        for exc in reversed(page_errors):
+            response_body += "%s \t %s \t %s\n" % exc
         
     elif environ['PATH_INFO'].startswith('/today'):
         ctype = 'text/xml'
@@ -69,12 +74,12 @@ def application(environ, start_response):
             ctype = 'text/plain'
             response_body = "Could not connect to www.stw.uni-heidelberg.de\n\nAn error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '533 Open www.stw.uni-heidelberg.de timed out'
-            page_errors.append((environ['PATH_INFO'], e))
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
         except Exception as e:
             ctype = 'text/plain'
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '503 Service Unavailable'
-            page_errors.append((environ['PATH_INFO'], e))
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
             
 
     elif environ['PATH_INFO'].startswith('/all'):
@@ -91,12 +96,12 @@ def application(environ, start_response):
             ctype = 'text/plain'
             response_body = "Could not connect to www.stw.uni-heidelberg.de\n\nAn error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '533 Open www.stw.uni-heidelberg.de timed out'
-            page_errors.append((environ['PATH_INFO'], e))
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
         except Exception as e:
             ctype = 'text/plain'
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '503 Service Unavailable'
-            page_errors.append((environ['PATH_INFO'], e))
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
         
     elif environ['PATH_INFO'].startswith('/meta'):
         ctype = 'text/xml'
@@ -112,12 +117,12 @@ def application(environ, start_response):
             ctype = 'text/plain'
             response_body = "Could not connect to www.stw.uni-heidelberg.de\n\nAn error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '533 Open www.stw.uni-heidelberg.de timed out'
-            page_errors.append((environ['PATH_INFO'], e))
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
         except Exception as e:
             ctype = 'text/plain'
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '503 Service Unavailable'
-            page_errors.append((environ['PATH_INFO'], e))
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
         
     
     elif environ['PATH_INFO'] == '/list':
@@ -128,12 +133,12 @@ def application(environ, start_response):
             ctype = 'text/plain'
             response_body = "Could not connect to www.stw.uni-heidelberg.de\n\nAn error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '533 Open www.stw.uni-heidelberg.de timed out'
-            page_errors.append((environ['PATH_INFO'], e))
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
         except Exception as e:
             ctype = 'text/plain'
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '503 Service Unavailable'
-            page_errors.append((environ['PATH_INFO'], e))
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
         
     elif environ['PATH_INFO'] == '/list.json':
         ctype = 'text/json'
@@ -143,12 +148,12 @@ def application(environ, start_response):
             ctype = 'text/plain'
             response_body = "Could not connect to www.stw.uni-heidelberg.de\n\nAn error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '533 Open www.stw.uni-heidelberg.de timed out'
-            page_errors.append((environ['PATH_INFO'], e))
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
         except Exception as e:
             ctype = 'text/plain'
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '503 Service Unavailable'
-            page_errors.append((environ['PATH_INFO'], e))
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
     
     elif environ['PATH_INFO'] == '/time':
         berlin = pytz.timezone('Europe/Berlin')
@@ -163,7 +168,7 @@ def application(environ, start_response):
             ctype = 'text/plain'
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '503 Service Unavailable'
-            page_errors.append((environ['PATH_INFO'], e))
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
     
     elif environ['PATH_INFO'].startswith('/mannheim/meta/'):
         ctype = 'text/xml'
@@ -176,12 +181,12 @@ def application(environ, start_response):
             ctype = 'text/plain'
             response_body = "Could not connect to www.stw-ma.de\n\nAn error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '533 Open www.stw-ma.de timed out'
-            page_errors.append((environ['PATH_INFO'], e))
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
         except Exception as e:
             ctype = 'text/plain'
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '503 Service Unavailable'
-            page_errors.append((environ['PATH_INFO'], e))
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
             
     elif environ['PATH_INFO'].startswith('/mannheim/feed/'):
         ctype = 'text/xml'
@@ -194,12 +199,12 @@ def application(environ, start_response):
             ctype = 'text/plain'
             response_body = "Could not connect to www.stw-ma.de\n\nAn error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '533 Open www.stw-ma.de timed out'
-            page_errors.append((environ['PATH_INFO'], e))
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
         except Exception as e:
             ctype = 'text/plain'
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '503 Service Unavailable'
-            page_errors.append((environ['PATH_INFO'], e))
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
 
     elif environ['PATH_INFO'] == '/mannheim' or environ['PATH_INFO'] == '/mannheim/':
         ctype = 'text/html'
