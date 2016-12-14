@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+
 <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
 
 <xsl:param name="canteenName"/>
@@ -8,6 +9,8 @@
 <xsl:param name="lastFetched"/>
 
 <xsl:template match="/">
+
+
 
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
 
@@ -50,12 +53,8 @@
                 <category name="{@ausgabe}">
                     <xsl:for-each select="gericht">
                         <meal>
-                            <name>
-                                <xsl:value-of select="text"/>
-                            </name>
-                            <note>
-                                <xsl:value-of select="text_en"/>
-                            </note>
+                            <name><xsl:choose><xsl:when test="string-length( text ) &gt; 249"><xsl:value-of select="substring( text ,0, 246 )"/>...</xsl:when><xsl:otherwise><xsl:value-of select="text"/></xsl:otherwise></xsl:choose></name>
+                            <note><xsl:choose><xsl:when test="string-length( text_en ) &gt; 249"><xsl:value-of select="substring( text_en ,0, 246 )"/>...</xsl:when><xsl:otherwise><xsl:value-of select="text_en"/></xsl:otherwise></xsl:choose></note>
                             <xsl:if test="studi &gt; 0.0">
                                 <price role="student">
                                     <xsl:value-of select="studi"/>
