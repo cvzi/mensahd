@@ -45,7 +45,11 @@ def parse_url(url, today=False):
 
     url = url % today.strftime('%Y_%m_%d')
     
-    content = requests.get(url).text
+    try:
+        content = requests.get(url).text
+    except requests.exceptions.ConnectionError as e:
+        print(e)
+        content = requests.get(url, verify=False).text
 
     document = BeautifulSoup(content, "html.parser")
     canteen = LazyBuilder()
