@@ -24,15 +24,17 @@ def timeStrBerlin():
 
 def application(environ, start_response):
     ctype = 'text/plain'
+    cache_control = 'no-cache, no-store, must-revalidate'
     status = '200 OK'
     
     if environ['PATH_INFO'] == '/health':
         response_body = "1"
             
-    if environ['PATH_INFO'] == '/favicon.ico':
+    elif environ['PATH_INFO'] == '/favicon.ico':
         ctype = 'image/x-icon'
+        cache_control = 'public, max-age=8640000'
         response_body = open(os.path.join(os.path.dirname(__file__), "favicon.ico"),"rb").read()
-        response_headers = [('Content-Type', ctype), ('Content-Length', str(len(response_body)))]
+        response_headers = [('Content-Type', ctype), ('Content-Length', str(len(response_body))), ('Cache-Control', cache_control)]
         start_response(status, response_headers)
         return [response_body ]
             
@@ -61,7 +63,7 @@ def application(environ, start_response):
             response_body += "%s \t %s \t %s\n" % exc
         
     elif environ['PATH_INFO'].startswith('/today'):
-        ctype = 'text/xml'
+        ctype = 'application/xml'
         if len(environ['PATH_INFO']) > 7:
             name = environ['PATH_INFO'][7:]
             if name.endswith(".xml"):
@@ -83,7 +85,7 @@ def application(environ, start_response):
             
 
     elif environ['PATH_INFO'].startswith('/all'):
-        ctype = 'text/xml'
+        ctype = 'application/xml'
         if len(environ['PATH_INFO']) > 5:
             name = environ['PATH_INFO'][5:]
             if name.endswith(".xml"):
@@ -104,7 +106,7 @@ def application(environ, start_response):
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
         
     elif environ['PATH_INFO'].startswith('/meta'):
-        ctype = 'text/xml'
+        ctype = 'application/xml'
         if len(environ['PATH_INFO']) > 6:
             name = environ['PATH_INFO'][6:]
             if name.endswith(".xml"):
@@ -126,7 +128,7 @@ def application(environ, start_response):
         
     
     elif environ['PATH_INFO'] == '/list':
-        ctype = 'text/xml'
+        ctype = 'application/xml'
         try:
             response_body = heidelberg.list()
         except (urllib.error.URLError, socket.timeout) as e:
@@ -141,7 +143,7 @@ def application(environ, start_response):
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
         
     elif environ['PATH_INFO'] == '/list.json':
-        ctype = 'text/json'
+        ctype = 'application/json'
         try:
             response_body = heidelberg.listJSON()
         except (urllib.error.URLError, socket.timeout) as e:
@@ -161,7 +163,7 @@ def application(environ, start_response):
         response_body = now.strftime("%Y-%m-%d %H:%M")
 
     elif environ['PATH_INFO'] == '/mannheim/list.json':
-        ctype = 'text/json'
+        ctype = 'application/json'
         try:
             response_body = mannheim.json(baseurl+"mannheim/meta/%s.xml")
         except Exception as e:
@@ -171,7 +173,7 @@ def application(environ, start_response):
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
     
     elif environ['PATH_INFO'].startswith('/mannheim/meta/'):
-        ctype = 'text/xml'
+        ctype = 'application/xml'
         name = environ['PATH_INFO'][15:]
         if name.endswith(".xml"):
             name = name[:-4]            
@@ -189,7 +191,7 @@ def application(environ, start_response):
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
             
     elif environ['PATH_INFO'].startswith('/mannheim/feed/'):
-        ctype = 'text/xml'
+        ctype = 'application/xml'
         name = environ['PATH_INFO'][15:]
         if name.endswith(".xml"):
             name = name[:-4]            
@@ -208,6 +210,7 @@ def application(environ, start_response):
 
     elif environ['PATH_INFO'] == '/mannheim' or environ['PATH_INFO'] == '/mannheim/':
         ctype = 'text/html'
+        cache_control = 'public, max-age=86400'
         response_body = """
             <h1>mensahd-cuzi for Mannheim University canteens</h1>
             <div>This is a parser for <a href="https://openmensa.org/">openmensa.org</a>. It fetches and converts public data from <a href="https://www.stw-ma.de/Essen+_+Trinken/Men%C3%BCpl%C3%A4ne.html">Studierendenwerk Mannheim</a></div>
@@ -222,6 +225,7 @@ def application(environ, start_response):
  
     else:
         ctype = 'text/html'
+        cache_control = 'public, max-age=86400'
         response_body = """
             <h1>mensahd-cuzi for Heidelberg University canteens</h1>
             <div>This is a parser for <a href="https://openmensa.org/">openmensa.org</a>. It fetches and converts public data from <a href="http://www.stw.uni-heidelberg.de/de/speiseplan">Studierendenwerk Heidelberg</a></div>
@@ -240,7 +244,7 @@ def application(environ, start_response):
     
     response_body = response_body.encode('utf-8')
 
-    response_headers = [('Content-Type', ctype), ('Content-Length', str(len(response_body)))]
+    response_headers = [('Content-Type', ctype), ('Content-Length', str(len(response_body))), ('Cache-Control', cache_control)]
 
     start_response(status, response_headers)
     return [response_body ]
