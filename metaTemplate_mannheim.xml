@@ -21,7 +21,7 @@
       <source>{source_today}</source>
     </feed>
     <feed name="full" priority="1">
-      <schedule dayOfMonth="*" dayOfWeek="*" hour="8" retry="60 5 1440" />
+      <schedule dayOfMonth="*" dayOfWeek="{feed_full_dayOfWeek}" hour="8" retry="60 5 1440" />
       <url>{feed_full}</url>
       <source>{source_full}</source>
     </feed>

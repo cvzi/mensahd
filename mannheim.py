@@ -162,8 +162,9 @@ def _generateCanteenMeta(name):
             "longitude" : mensa["longitude"],
             "feed_today" : template_todayURL % urllib.parse.quote(shortname),
             "feed_full" : template_fullURL % urllib.parse.quote(shortname),
+            "feed_full_dayOfWeek" : "*",
             "source_today" : mensa["source_today"],
-            "source_full" : mensa["source_week"]
+            "source_full" : mensa["source_week"],
             }
         openingTimes = {}
         infokurz = mensa["infokurz"]
