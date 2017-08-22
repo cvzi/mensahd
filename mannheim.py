@@ -14,9 +14,9 @@ metaJson = os.path.join(os.path.dirname(__file__), "mannheim.json")
 
 metaTemplateFile = os.path.join(os.path.dirname(__file__), "metaTemplate_mannheim.xml")
 
-template_metaURL = "https://mensahd-cuzi.rhcloud.com/mannheim/meta/%s.xml"
-template_todayURL = "https://mensahd-cuzi.rhcloud.com/mannheim/feed/%s.xml"
-template_fullURL = "https://mensahd-cuzi.rhcloud.com/mannheim/feed/%s.xml"
+template_metaURL = "%smannheim/meta/%s.xml"
+template_todayURL = "%smannheim/feed/%s.xml"
+template_fullURL = "%smannheim/feed/%s.xml"
 
 weekdaysMap = [
     ("Mo", "monday"),
@@ -139,7 +139,7 @@ def parse_url(url, today=False):
 
 
 
-def _generateCanteenMeta(name):
+def _generateCanteenMeta(name, baseurl):
     """Generate an openmensa XML meta feed from the static json file using an XML template"""
     obj = json.load(open(metaJson))
     template = open(metaTemplateFile).read()
@@ -160,8 +160,8 @@ def _generateCanteenMeta(name):
             "phone" : mensa["phone"],
             "latitude" : mensa["latitude"],
             "longitude" : mensa["longitude"],
-            "feed_today" : template_todayURL % urllib.parse.quote(shortname),
-            "feed_full" : template_fullURL % urllib.parse.quote(shortname),
+            "feed_today" : template_todayURL % (baseurl, urllib.parse.quote(shortname)),
+            "feed_full" : template_fullURL % (baseurl, urllib.parse.quote(shortname)),
             "feed_full_dayOfWeek" : "*",
             "source_today" : mensa["source_today"],
             "source_full" : mensa["source_week"],
@@ -199,7 +199,8 @@ def _generateCanteenMeta(name):
 
 
 class Parser:
-    def __init__(self, city, handler, shared_prefix):
+    def __init__(self, baseurl, city, handler, shared_prefix):
+        self.baseurl = baseurl
         self.handler = handler
         self.shared_prefix = shared_prefix
         self.canteens = {}
@@ -207,21 +208,21 @@ class Parser:
     def define(self, name, suffix):
         self.canteens[name] = self.shared_prefix+suffix
 
-    def json(self, meta_url):
+    def json(self):
         tmp = self.canteens.copy()
         for name in tmp:
-            tmp[name] = meta_url % name
+            tmp[name] = template_metaURL  % (self.baseurl, name)
         return json.dumps(tmp, indent=2)
     
     def meta(self, name):
-        return _generateCanteenMeta(name)
+        return _generateCanteenMeta(name, self.baseurl)
     
     def feed(self, name):      
         return self.handler(self.canteens[name])
     
 
-def getmannheim():
-    parser = Parser('mannheim',
+def getmannheim(baseurl):
+    parser = Parser(baseurl, 'mannheim',
                     handler=parse_url,
                     shared_prefix='https://www.stw-ma.de/')
     parser.define('schloss', suffix='Essen+_+Trinken/Menüpläne/Mensa+am+Schloss-date-%s-pdfView-1.html')
@@ -236,7 +237,7 @@ def getmannheim():
 
 if __name__ == "__main__":
     #print(getmannheim().json("https://localhost/meta/%s.xml"))
-    print(getmannheim().feed("hochschule"))
+    print(getmannheim("http://localhost/").feed("hochschule"))
 
 
 

@@ -18,9 +18,9 @@ metaJson = os.path.join(os.path.dirname(__file__), "koeln.json")
 
 metaTemplateFile = os.path.join(os.path.dirname(__file__), "metaTemplate_mannheim.xml")
 
-template_metaURL = "https://mensahd-cuzi.rhcloud.com/koeln/meta/%s.xml"
-template_todayURL = "https://mensahd-cuzi.rhcloud.com/koeln/today/%s.xml"
-template_fullURL = "https://mensahd-cuzi.rhcloud.com/koeln/all/%s.xml"
+template_metaURL = "%skoeln/meta/%s.xml"
+template_todayURL = "%skoeln/today/%s.xml"
+template_fullURL = "%skoeln/all/%s.xml"
 
 weekdaysMap = [
     ("Mo", "monday"),
@@ -123,9 +123,8 @@ def parse_url(canteen, locId, day=None):
 
 
 
-def _generateCanteenMeta(name):
+def _generateCanteenMeta(obj, name,  baseurl):
     """Generate an openmensa XML meta feed from the static json file using an XML template"""
-    obj = json.load(open(metaJson))
     template = open(metaTemplateFile).read()
 
     for mensa in obj["mensen"]:
@@ -144,8 +143,8 @@ def _generateCanteenMeta(name):
             "phone" : mensa["phone"],
             "latitude" : mensa["latitude"],
             "longitude" : mensa["longitude"],
-            "feed_today" : template_todayURL % urllib.parse.quote(shortname),
-            "feed_full" : template_fullURL % urllib.parse.quote(shortname),
+            "feed_today" : template_todayURL % (baseurl, urllib.parse.quote(shortname)),
+            "feed_full" : template_fullURL % (baseurl, urllib.parse.quote(shortname)),
             "feed_full_dayOfWeek" : "1",
             "source_today" : mensa["source_today"].replace("&","&amp;"),
             "source_full" : mensa["source_today"].replace("&","&amp;")
@@ -181,8 +180,16 @@ def _generateCanteenMeta(name):
 
 
 class Parser:
-    def __init__(self, handler):
-        self.xmlnames = ["spoho", "cafe-himmelsblick", "iwz-deutz", "gummersbach", "kunsthochschule-medien", "muho", "robertkoch", "suedstadt", "unimensa"]
+    def __init__(self, baseurl, handler):
+        self.baseurl = baseurl
+        self.metaObj = json.load(open(metaJson))
+        
+        self.xmlnames = []
+        for mensa in self.metaObj["mensen"]:
+            self.xmlnames.append(mensa["xml"])
+                
+        #self.xmlnames = ["spoho", "cafe-himmelsblick", "iwz-deutz", "gummersbach", "kunsthochschule-medien", "muho", "robertkoch", "suedstadt", "unimensa"]     
+        
         self.handler = handler
 
     def __now(self):
@@ -190,14 +197,14 @@ class Parser:
         now = datetime.datetime.now(berlin)
         return now
         
-    def json(self, meta_url):
+    def json(self):
         tmp = {}
         for name in self.xmlnames:
-            tmp[name] = meta_url % name
+            tmp[name] = template_metaURL % (self.baseurl, name)
         return json.dumps(tmp, indent=2)
     
     def meta(self, name):
-        return _generateCanteenMeta(name)
+        return _generateCanteenMeta(self.metaObj, name, self.baseurl)
     
     def feed_today(self, name):
         today = self.__now().date()
@@ -226,10 +233,10 @@ class Parser:
         return canteen.toXMLFeed()
     
 
-def getkoeln():
-    parser = Parser(parse_url)
+def getkoeln(baseurl):
+    parser = Parser(baseurl, parse_url)
     return parser
         
 
 if __name__ == "__main__":
-    print(getkoeln().feed_today("unimensa"))
+    print(getkoeln("http://localhost/").feed_today("unimensa"))
