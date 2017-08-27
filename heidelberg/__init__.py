@@ -266,3 +266,4 @@ def getheidelberg(baseurl):
     
 if __name__ == "__main__":
     print(getheidelberg("http://localhost/").feed_today())
+    
