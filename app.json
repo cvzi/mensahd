@@ -1,0 +1,13 @@
+{
+  "name": "mensahd",
+  "description": "mensahd parser for openmensa.org",
+  "image": "heroku/python",
+  
+  "env": {
+    "DISABLE_COLLECTSTATIC": {
+      "description": "Don't run python manage.py collectstatic --noinput on deploy",
+      "value": "1"
+    }
+  }
+  
+}

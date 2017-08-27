@@ -18,7 +18,7 @@ import socket
 
 page_errors = []
 
-baseurl = "https://mensahd-cuzi.rhcloud.com/"
+baseurl = "https://mensahd.herokuapp.com/"
 
 heidelberg = getheidelberg(baseurl)
 mannheim = getmannheim(baseurl)
