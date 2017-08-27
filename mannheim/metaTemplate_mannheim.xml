@@ -16,12 +16,12 @@
       <sunday {sunday} />
     </times>
     <feed name="today" priority="0">
-      <schedule dayOfMonth="*" dayOfWeek="*" hour="9-14" retry="30 1" />
+      <schedule dayOfMonth="*" dayOfWeek="1-5" hour="10-14" retry="5 3" />
       <url>{feed_today}</url>
       <source>{source_today}</source>
     </feed>
     <feed name="full" priority="1">
-      <schedule dayOfMonth="*" dayOfWeek="{feed_full_dayOfWeek}" hour="8" retry="60 5 1440" />
+      <schedule dayOfMonth="*" dayOfWeek="1-5" hour="7" minute="30" retry="60 1 1440" />
       <url>{feed_full}</url>
       <source>{source_full}</source>
     </feed>
