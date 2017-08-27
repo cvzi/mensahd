@@ -71,7 +71,7 @@ def application(environ, start_response):
             request = urllib.request.Request("https://www.studierendenwerk-stuttgart.de/")
             result = urllib.request.urlopen(request, timeout=5)
         except:
-            statusmessage.append("www.studierendenwerk-stuttgart.de is not reachable")
+            statusmessage.append("www.studierendenwerk-stuttgart.de is not reachable")   
            
             
             
@@ -83,7 +83,6 @@ def application(environ, start_response):
         response_body = "%s. %d errors.\n" % (statusmessage, len(page_errors))
         for exc in reversed(page_errors):
             response_body += "%s \t %s \t %s\n" % exc
-        
         
     elif environ['PATH_INFO'].startswith('/today'):
         ctype = 'application/xml; charset=utf-8'
@@ -426,7 +425,7 @@ def application(environ, start_response):
     response_headers = [('Content-Type', ctype), ('Content-Length', str(len(response_body))), ('Cache-Control', cache_control)]
 
     start_response(status, response_headers)
-    return [response_body ]
+    return [response_body]
 
 #
 # Below for testing only
