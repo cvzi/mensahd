@@ -6,7 +6,7 @@ import os
 import datetime
 import pytz
 
-import heidelberg
+from heidelberg import getheidelberg
 from mannheim import getmannheim
 from koeln import getkoeln
 from stuttgart import getstuttgart
@@ -19,6 +19,8 @@ import socket
 page_errors = []
 
 baseurl = "https://mensahd-cuzi.rhcloud.com/"
+
+heidelberg = getheidelberg(baseurl)
 mannheim = getmannheim(baseurl)
 koeln = getkoeln(baseurl)
 stuttgart = getstuttgart(baseurl)
@@ -48,7 +50,7 @@ def application(environ, start_response):
         statusmessage = []
         
         try:
-            request = urllib.request.Request("http://www.stw.uni-heidelberg.de/") # No HTTP over SSL available!
+            request = urllib.request.Request("http://www.stw.uni-heidelberg.de/") # No httpS available!
             result = urllib.request.urlopen(request, timeout=5)
         except:
             statusmessage.append("www.stw.uni-heidelberg.de is not reachable")
@@ -60,7 +62,7 @@ def application(environ, start_response):
             statusmessage.append("www.stw-ma.de is not reachable")
             
         try:
-            request = urllib.request.Request("http://www.max-manager.de/")
+            request = urllib.request.Request("https://www.max-manager.de/") # No httpS available!
             result = urllib.request.urlopen(request, timeout=5)
         except:
             statusmessage.append("www.max-manager.de is not reachable")   
@@ -69,7 +71,7 @@ def application(environ, start_response):
             request = urllib.request.Request("https://www.studierendenwerk-stuttgart.de/")
             result = urllib.request.urlopen(request, timeout=5)
         except:
-            statusmessage.append("www.studierendenwerk-stuttgart.de is not reachable")   
+            statusmessage.append("www.studierendenwerk-stuttgart.de is not reachable")
            
             
             
@@ -82,6 +84,7 @@ def application(environ, start_response):
         for exc in reversed(page_errors):
             response_body += "%s \t %s \t %s\n" % exc
         
+        
     elif environ['PATH_INFO'].startswith('/today'):
         ctype = 'application/xml; charset=utf-8'
         if len(environ['PATH_INFO']) > 7:
@@ -91,7 +94,7 @@ def application(environ, start_response):
         else:
             name = ''
         try:
-            response_body = heidelberg.today(name).decode("utf-8")
+            response_body = heidelberg.feed_today(name).decode("utf-8")
         except (urllib.error.URLError, socket.timeout) as e:
             ctype = 'text/plain; charset=utf-8'
             response_body = "Could not connect to www.stw.uni-heidelberg.de\n\nAn error occured:\n%s\n%s" % (e, traceback.format_exc())
@@ -113,7 +116,7 @@ def application(environ, start_response):
         else:
             name = ''
         try:
-            response_body = heidelberg.all(name).decode("utf-8")
+            response_body = heidelberg.feed_all(name).decode("utf-8")
         except (urllib.error.URLError, socket.timeout) as e:
             ctype = 'text/plain; charset=utf-8'
             response_body = "Could not connect to www.stw.uni-heidelberg.de\n\nAn error occured:\n%s\n%s" % (e, traceback.format_exc())
@@ -165,7 +168,7 @@ def application(environ, start_response):
     elif environ['PATH_INFO'] == '/list.json':
         ctype = 'application/json; charset=utf-8'
         try:
-            response_body = heidelberg.listJSON()
+            response_body = heidelberg.json()
         except (urllib.error.URLError, socket.timeout) as e:
             ctype = 'text/plain; charset=utf-8'
             response_body = "Could not connect to www.stw.uni-heidelberg.de\n\nAn error occured:\n%s\n%s" % (e, traceback.format_exc())

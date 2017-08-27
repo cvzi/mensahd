@@ -16,7 +16,7 @@ from pyopenmensa.feed import LazyBuilder
 
 metaJson = os.path.join(os.path.dirname(__file__), "koeln.json")
 
-metaTemplateFile = os.path.join(os.path.dirname(__file__), "metaTemplate_mannheim.xml")
+metaTemplateFile = os.path.join(os.path.dirname(__file__), "metaTemplate_koeln.xml")
 
 template_metaURL = "%skoeln/meta/%s.xml"
 template_todayURL = "%skoeln/today/%s.xml"
@@ -32,7 +32,7 @@ weekdaysMap = [
     ("So", "sunday")
     ]
 
-url = r"http://www.max-manager.de/daten-extern/sw-koeln/html/speiseplan-render.php"
+url = r"https://www.max-manager.de/daten-extern/sw-koeln/html/speiseplan-render.php"
 
 roles = ('student', 'employee', 'other')
 
@@ -145,7 +145,6 @@ def _generateCanteenMeta(obj, name,  baseurl):
             "longitude" : mensa["longitude"],
             "feed_today" : template_todayURL % (baseurl, urllib.parse.quote(shortname)),
             "feed_full" : template_fullURL % (baseurl, urllib.parse.quote(shortname)),
-            "feed_full_dayOfWeek" : "1",
             "source_today" : mensa["source_today"].replace("&","&amp;"),
             "source_full" : mensa["source_today"].replace("&","&amp;")
             }
