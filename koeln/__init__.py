@@ -84,9 +84,12 @@ def parse_url(canteen, locId, day=None):
     for tr in trs:
         td = tr.find("td", {"class": "pk bg-rot"})
         if td:
-            nextIsMenu = True
             categoryName = td.text.strip()
-            categoryName = categoryName.replace("*","")
+            categoryName = categoryName.replace("*","").strip()
+            if categoryName == "Hinweis":
+                nextIsMenu = False
+            else:
+                nextIsMenu = True
             continue
 
         elif nextIsMenu:
@@ -98,7 +101,7 @@ def parse_url(canteen, locId, day=None):
             
             text = "".join(artikel.findAll(text=True, recursive=False))
             text += " " + "".join(descr.findAll(text=True, recursive=False))
-            text = text.replace("*","")
+            text = text.replace("*","").strip()
 
             sup = ",".join([n.text for n in artikel.findAll("sup")])
             sup += "," + ",".join([n.text for n in descr.findAll("sup")])       
@@ -109,7 +112,7 @@ def parse_url(canteen, locId, day=None):
                 notes = [ingredients[i] for i in notes if i in ingredients]
             else:
                 notes = None
-
+         
             prices = [float(x.strip().replace(",",".")) for x in tds[2].text.split("/")]
 
             canteen.addMeal(date, categoryName, text, notes, prices, roles)
@@ -238,4 +241,4 @@ def getkoeln(baseurl):
         
 
 if __name__ == "__main__":
-    print(getkoeln("http://localhost/").feed_today("unimensa"))
+    print(getkoeln("http://localhost/").feed_today("gummersbach"))
