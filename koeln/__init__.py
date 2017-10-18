@@ -86,7 +86,7 @@ def parse_url(canteen, locId, day=None):
         if td:
             categoryName = td.text.strip()
             categoryName = categoryName.replace("*","").strip()
-            if categoryName == "Hinweis":
+            if categoryName in ("Hinweis","Information"):
                 nextIsMenu = False
             else:
                 nextIsMenu = True
@@ -112,7 +112,7 @@ def parse_url(canteen, locId, day=None):
                 notes = [ingredients[i] for i in notes if i in ingredients]
             else:
                 notes = None
-         
+
             prices = [float(x.strip().replace(",",".")) for x in tds[2].text.split("/")]
 
             canteen.addMeal(date, categoryName, text, notes, prices, roles)
@@ -241,4 +241,4 @@ def getkoeln(baseurl):
         
 
 if __name__ == "__main__":
-    print(getkoeln("http://localhost/").feed_today("gummersbach"))
+    print(getkoeln("http://localhost/").feed_today("cafe-himmelsblick"))
