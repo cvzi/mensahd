@@ -93,7 +93,6 @@ def parse_url(canteen, locId, day=None):
             continue
 
         elif nextIsMenu:
-            foundAny = True
             tds = tr.find_all("td")
 
             artikel = tds[1].find("span", {"class":"artikel"})
@@ -103,6 +102,10 @@ def parse_url(canteen, locId, day=None):
             text += " " + "".join(descr.findAll(text=True, recursive=False))
             text = text.replace("*","").strip()
 
+            if text.lower() == "geschlossen":
+                nextIsMenu = False
+                continue
+            
             sup = ",".join([n.text for n in artikel.findAll("sup")])
             sup += "," + ",".join([n.text for n in descr.findAll("sup")])       
 
@@ -116,7 +119,7 @@ def parse_url(canteen, locId, day=None):
             prices = [float(x.strip().replace(",",".")) for x in tds[2].text.split("/")]
 
             canteen.addMeal(date, categoryName, text, notes, prices, roles)
-
+            foundAny = True
 
     if foundAny:
         return True
@@ -241,4 +244,4 @@ def getkoeln(baseurl):
         
 
 if __name__ == "__main__":
-    print(getkoeln("http://localhost/").feed_today("cafe-himmelsblick"))
+    print(getkoeln("http://localhost/").feed_all("kunsthochschule-medien"))
