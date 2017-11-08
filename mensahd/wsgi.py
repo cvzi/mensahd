@@ -62,16 +62,16 @@ def application(environ, start_response):
             statusmessage.append("www.stw-ma.de is not reachable")
             
         try:
-            request = urllib.request.Request("https://www.max-manager.de/") # No httpS available!
+            request = urllib.request.Request("https://www.max-manager.de/")
             result = urllib.request.urlopen(request, timeout=5)
         except:
             statusmessage.append("www.max-manager.de is not reachable")   
 
         try:
-            request = urllib.request.Request("https://www.studierendenwerk-stuttgart.de/")
+            request = urllib.request.Request("https://sws2.maxmanager.xyz")
             result = urllib.request.urlopen(request, timeout=5)
         except:
-            statusmessage.append("www.studierendenwerk-stuttgart.de is not reachable")   
+            statusmessage.append("sws2.maxmanager.xyz is not reachable")
            
             
             
@@ -362,16 +362,34 @@ def application(environ, start_response):
             status = '503 Service Unavailable'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
             
-    elif environ['PATH_INFO'].startswith('/stuttgart/feed/'):
+    elif environ['PATH_INFO'].startswith('/stuttgart/today/'):
         ctype = 'application/xml; charset=utf-8'
-        name = environ['PATH_INFO'][16:]
+        name = environ['PATH_INFO'][17:]
         if name.endswith(".xml"):
             name = name[:-4]
         try:
-            response_body = stuttgart.feed(name)
+            response_body = stuttgart.feed_today(name)
         except (urllib.error.URLError, socket.timeout) as e:
             ctype = 'text/plain; charset=utf-8'
-            response_body = "Could not connect to www.studierendenwerk-stuttgart.de\n\nAn error occured:\n%s\n%s" % (e, traceback.format_exc())
+            response_body = "Could not connect to sws2.maxmanager.xyz\n\nAn error occured:\n%s\n%s" % (e, traceback.format_exc())
+            status = '533 Open www.max-manager.de timed out'
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
+        except Exception as e:
+            ctype = 'text/plain; charset=utf-8'
+            response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
+            status = '503 Service Unavailable'
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
+            
+    elif environ['PATH_INFO'].startswith('/stuttgart/all/'):
+        ctype = 'application/xml; charset=utf-8'
+        name = environ['PATH_INFO'][15:]
+        if name.endswith(".xml"):
+            name = name[:-4]
+        try:
+            response_body = stuttgart.feed_all(name)
+        except (urllib.error.URLError, socket.timeout) as e:
+            ctype = 'text/plain; charset=utf-8'
+            response_body = "Could not connect to sws2.maxmanager.xyz\n\nAn error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '533 Open www.max-manager.de timed out'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
         except Exception as e:
