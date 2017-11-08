@@ -372,7 +372,7 @@ def application(environ, start_response):
         except (urllib.error.URLError, socket.timeout) as e:
             ctype = 'text/plain; charset=utf-8'
             response_body = "Could not connect to sws2.maxmanager.xyz\n\nAn error occured:\n%s\n%s" % (e, traceback.format_exc())
-            status = '533 Open www.max-manager.de timed out'
+            status = '533 Open sws2.maxmanager.xyz timed out'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
         except Exception as e:
             ctype = 'text/plain; charset=utf-8'
@@ -390,7 +390,7 @@ def application(environ, start_response):
         except (urllib.error.URLError, socket.timeout) as e:
             ctype = 'text/plain; charset=utf-8'
             response_body = "Could not connect to sws2.maxmanager.xyz\n\nAn error occured:\n%s\n%s" % (e, traceback.format_exc())
-            status = '533 Open www.max-manager.de timed out'
+            status = '533 Open sws2.maxmanager.xyz timed out'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
         except Exception as e:
             ctype = 'text/plain; charset=utf-8'
