@@ -32,6 +32,7 @@ weekdaysMap = [
 url = r"https://sws2.maxmanager.xyz/inc/ajax-php_konnektor.inc.php"
 sourceUrl = r"https://www.studierendenwerk-stuttgart.de/essen/speiseplan/"
 roles = ('student', 'employee', 'other')
+price_pattern = re.compile('\d+,\d\d')
 
 ingredients = {
     "Ei" : "Ei",
@@ -136,7 +137,7 @@ def parse_url(canteen, locId, day=None):
 
             pricesText = div.find("div", {"class" : "preise-xs"}).text.strip()
 
-            prices = [float(x.strip().replace(",",".").replace("€","").strip()) for x in pricesText.split("/")]
+            prices = [float(x.replace(",",".")) for x in price_pattern.findall(pricesText)]
 
             canteen.addMeal(date, categoryName, mealName, notes, prices, roles)
             foundAny = True
@@ -266,7 +267,7 @@ def getstuttgart(baseurl):
 
 if __name__ == "__main__":
     #print(getstuttgart("http://localhost/").feed_all("mitteMusikhochschule"))
-    print(getstuttgart("http://localhost/").feed_today("goeppingen"))
+    print(getstuttgart("http://localhost/").feed_today("mitteMusikhochschule"))
     #print(getstuttgart("http://localhost/").meta("mitteMusikhochschule"))
 
     
