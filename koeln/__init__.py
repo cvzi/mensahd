@@ -102,7 +102,7 @@ def parse_url(canteen, locId, day=None):
             text += " " + "".join(descr.findAll(text=True, recursive=False))
             text = text.replace("*","").strip()
 
-            if text.lower() == "geschlossen":
+            if "geschlossen" in text.lower():
                 nextIsMenu = False
                 continue
             
@@ -244,4 +244,4 @@ def getkoeln(baseurl):
         
 
 if __name__ == "__main__":
-    print(getkoeln("http://localhost/").feed_all("kunsthochschule-medien"))
+    print(getkoeln("http://localhost/").feed_all("gummersbach"))
