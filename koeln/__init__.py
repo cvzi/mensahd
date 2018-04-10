@@ -116,10 +116,15 @@ def parse_url(canteen, locId, day=None):
             else:
                 notes = None
 
-            prices = [float(x.strip().replace(",",".")) for x in tds[2].text.split("/")]
-
+            try:
+                prices = [float(x.strip().replace(",",".")) for x in tds[2].text.split("/")]
+            except:
+                print("Could not find prices for:")
+                print(text)
+                prices = []
             canteen.addMeal(date, categoryName, text, notes, prices, roles)
             foundAny = True
+
 
     if foundAny:
         return True
