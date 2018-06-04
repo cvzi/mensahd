@@ -90,7 +90,8 @@ def parse_url(canteen, locId, day=None):
         'Accept-Language': 'de-De,de'
         }
 
-    data = "func=make_spl&locId=%s&date=%s&lang=de&startThisWeek=2017-11-06&startNextWeek=2017-11-13" % (locId, date)
+    #data = "func=make_spl&locId=%s&date=%s&lang=de&startThisWeek=2018-06-04&startNextWeek=2018-06-11" % (locId, date)
+    data = "func=make_spl&locId=%s&date=%s&lang=de" % (locId, date)
 
     r = requests.post(url, data = data, headers = headers)
 
@@ -245,17 +246,24 @@ class Parser:
         date = self.__now()
 
         # Get this week
+        lastWeekday = -1
         while self.handler(canteen, self.xml2locId[name], date.date()):
             date += datetime.timedelta(days=1)
+            if lastWeekday > date.weekday():
+                break
+            lastWeekday = date.weekday()
             
         # Skip over weekend
         if date.weekday() > 4: 
             date += datetime.timedelta(days=7-date.weekday())
             
             # Get next week
+            lastWeekday = -1
             while self.handler(canteen, self.xml2locId[name], date.date()):
                 date += datetime.timedelta(days=1) 
-            
+                if lastWeekday > date.weekday():
+                    break
+                lastWeekday = date.weekday()
         
         return canteen.toXMLFeed()
     
@@ -266,8 +274,8 @@ def getstuttgart(baseurl):
         
 
 if __name__ == "__main__":
-    #print(getstuttgart("http://localhost/").feed_all("mitteMusikhochschule"))
-    print(getstuttgart("http://localhost/").feed_today("mitteMusikhochschule"))
+    #print(getstuttgart("http://localhost/").feed_today("mitteMusikhochschule"))
+    print(getstuttgart("http://localhost/").feed_all("mitteMusikhochschule"))
     #print(getstuttgart("http://localhost/").meta("mitteMusikhochschule"))
 
     
