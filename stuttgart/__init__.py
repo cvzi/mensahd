@@ -89,9 +89,14 @@ def parse_url(canteen, locId, day=None):
         'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
         'Accept-Language': 'de-De,de'
         }
+          
+    startThisWeek = day - datetime.timedelta(days=day.weekday())
+    startNextWeek = startThisWeek + datetime.timedelta(days=7)
 
-    #data = "func=make_spl&locId=%s&date=%s&lang=de&startThisWeek=2018-06-04&startNextWeek=2018-06-11" % (locId, date)
-    data = "func=make_spl&locId=%s&date=%s&lang=de" % (locId, date)
+    startThisWeek = startThisWeek.strftime("%Y-%m-%d")
+    startNextWeek = startNextWeek.strftime("%Y-%m-%d")
+
+    data = "func=make_spl&locId=%s&date=%s&lang=de&startThisWeek=%s&startNextWeek=%s" % (locId, date, startThisWeek, startNextWeek)
 
     r = requests.post(url, data = data, headers = headers)
 
@@ -274,8 +279,8 @@ def getstuttgart(baseurl):
         
 
 if __name__ == "__main__":
-    #print(getstuttgart("http://localhost/").feed_today("mitteMusikhochschule"))
-    print(getstuttgart("http://localhost/").feed_all("mitteMusikhochschule"))
+    print(getstuttgart("http://localhost/").feed_today("mitteMusikhochschule"))
+    #print(getstuttgart("http://localhost/").feed_all("mitteMusikhochschule"))
     #print(getstuttgart("http://localhost/").meta("mitteMusikhochschule"))
 
     
