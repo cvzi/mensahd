@@ -411,7 +411,8 @@ def application(environ, start_response):
               <li><a href="/stuttgart"><b>Stuttgart</b></a></li>   
               <li><a href="/stuttgart/list.json">/stuttgart/list.json</a></li>
               <li>/stuttgart/meta/{id}.xml</li>
-              <li>/stuttgart/feed/{id}.xml</li>
+              <li>/stuttgart/today/{id}.xml</li>
+              <li>/stuttgart/all/{id}.xml</li>
             </ul>"""
             
             
