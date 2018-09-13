@@ -10,6 +10,7 @@ from heidelberg import getheidelberg
 from mannheim import getmannheim
 from koeln import getkoeln
 from stuttgart import getstuttgart
+from eppelheim import geteppelheim
 
 import traceback
 import urllib.request
@@ -24,6 +25,7 @@ heidelberg = getheidelberg(baseurl)
 mannheim = getmannheim(baseurl)
 koeln = getkoeln(baseurl)
 stuttgart = getstuttgart(baseurl)
+eppelheim = geteppelheim(baseurl)
 
 def timeStrBerlin():
     berlin = pytz.timezone('Europe/Berlin')
@@ -417,6 +419,56 @@ def application(environ, start_response):
             
             
             
+            
+            
+    elif environ['PATH_INFO'] == '/eppelheim/list.json':
+        ctype = 'application/json; charset=utf-8'
+        try:
+            response_body = eppelheim.json()
+        except Exception as e:
+            ctype = 'text/plain; charset=utf-8'
+            response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
+            status = '503 Service Unavailable'
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
+
+    elif environ['PATH_INFO'].startswith('/eppelheim/meta/'):
+        ctype = 'application/xml; charset=utf-8'
+        name = environ['PATH_INFO'][16:]
+        if name.endswith(".xml"):
+            name = name[:-4]
+        try:
+            response_body = eppelheim.meta(name)
+        except (urllib.error.URLError, socket.timeout) as e:
+            ctype = 'text/plain; charset=utf-8'
+            response_body = "Could not connect to www.stw-ma.de\n\nAn error occured:\n%s\n%s" % (e, traceback.format_exc())
+            status = '533 Open www.stw-ma.de timed out'
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
+        except Exception as e:
+            ctype = 'text/plain; charset=utf-8'
+            response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
+            status = '503 Service Unavailable'
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
+            
+    elif environ['PATH_INFO'].startswith('/eppelheim/feed/'):
+        ctype = 'application/xml; charset=utf-8'
+        name = environ['PATH_INFO'][16:]
+        if name.endswith(".xml"):
+            name = name[:-4]
+        try:
+            response_body = eppelheim.feed(name)
+        except (urllib.error.URLError, socket.timeout) as e:
+            ctype = 'text/plain; charset=utf-8'
+            response_body = "Could not connect to www.stw-ma.de\n\nAn error occured:\n%s\n%s" % (e, traceback.format_exc())
+            status = '533 Open www.stw-ma.de timed out'
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
+        except Exception as e:
+            ctype = 'text/plain; charset=utf-8'
+            response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
+            status = '503 Service Unavailable'
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
+            
+            
+            
  
     else:
         ctype = 'text/html; charset=utf-8'
@@ -429,7 +481,7 @@ def application(environ, start_response):
               <li><a href="/"><b>Heidelberg</b></a></li>
               <li><a href="/mannheim">/mannheim</a></li>
               <li><a href="/koeln">/koeln</a></li>
-              <li><a href="/stuttgart">/stuttgart</a></li>          
+              <li><a href="/stuttgart">/stuttgart</a></li>
               <li><a href="/time">/time</a></li>
               <li><a href="/status">/status</a></li>
               <li><a href="/list">/list</a></li>
