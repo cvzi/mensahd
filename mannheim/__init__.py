@@ -44,7 +44,7 @@ def parse_url(url, today=False):
         today += datetime.timedelta(days=1) # Tomorrow
 
     url = url % today.strftime('%Y_%m_%d')
-    
+
     try:
         content = requests.get(url).text
     except requests.exceptions.ConnectionError as e:
@@ -62,7 +62,7 @@ def parse_url(url, today=False):
     except:
         employee_multiplier = 1.25
         guest_multiplier = 1.60
-    
+
 
     trs = document.find("table", {"id": "previewTable"}).find_all("tr")
 
@@ -219,24 +219,23 @@ class Parser:
     def feed(self, name):      
         return self.handler(self.canteens[name])
     
-
 def getmannheim(baseurl):
     parser = Parser(baseurl, 'mannheim',
                     handler=parse_url,
                     shared_prefix='https://www.stw-ma.de/')
-    parser.define('schloss', suffix='Essen+_+Trinken/Menüpläne/Mensa+am+Schloss-date-%s-pdfView-1.html')
-    parser.define('hochschule', suffix='Essen+_+Trinken/Menüpläne/Hochschule+Mannheim-date-%s-pdfView-1.html')
-    parser.define('kubus', suffix='Essen+_+Trinken/Menüpläne/Cafeteria+KUBUS-date-%s-pdfView-1.html')
-    parser.define('metropol', suffix='speiseplan_mensaria_metropol-date-%s-pdfView-1.html')
-    parser.define('wohlgelegen', suffix='Essen+_+Trinken/Menüpläne/Mensaria+Wohlgelegen-date-%s-pdfView-1.html')
-    parser.define('musikhochschule', suffix='Essen+_+Trinken/Menüpläne/Cafeteria+Musikhochschule-date-%s-pdfView-1.html')
-    parser.define('eo', suffix='menüplan_eo-date-%s-pdfView-1.html')
+    parser.define('schloss', suffix='menüplan_schlossmensa-date-%s-pdfView-1-showLang-.html')
+    parser.define('hochschule', suffix='Essen+_+Trinken-p-9/Speisepläne/Hochschule+Mannheim-date-%s-pdfView-1-showLang--p-3519.html')
+    parser.define('kubus', suffix='Essen+_+Trinken-p-9/Speisepläne/Cafeteria+KUBUS-date-%s-pdfView-1-showLang--p-3504.html')
+    parser.define('metropol', suffix='speiseplan_mensaria_metropol-date-%s-pdfView-1-showLang-.html')
+    parser.define('wohlgelegen', suffix='wohlgelegen-date-%s-pdfView-1-showLang-.html')
+    parser.define('musikhochschule', suffix='Essen+_+Trinken-p-9/Speisepläne/Cafeteria+Musikhochschule-date-%s-pdfView-1-showLang--p-3523.html')
+    parser.define('eo', suffix='menüplan_eo-date-%s-pdfView-1-showLang-.html')
     return parser
 
 
 if __name__ == "__main__":
     #print(getmannheim().json("https://localhost/meta/%s.xml"))
-    print(getmannheim("http://localhost/").feed("hochschule"))
+    print(getmannheim("http://localhost/").feed("eo"))
 
 
 
