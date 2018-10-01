@@ -117,7 +117,8 @@ def parse_url(url, today=False):
             notes.append(td3.text.strip())
 
 
-        canteen.addMeal(date, categoryName, mealName, notes, prices, roles if prices else None)
+        notes = [x for x in notes if x]
+        canteen.addMeal(date, categoryName, mealName, notes if notes else None, prices if prices else None, roles if prices else None)
 
     return canteen.toXMLFeed()
 
