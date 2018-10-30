@@ -80,11 +80,9 @@ def parse_url(url, today=False):
 
     trs = document.find("div", {"class": "maincontent"}).find("table").find_all("tr")
 
-    canteenCategories = []
-
     date = None
     for tr in trs:
-    
+
         tds = tr.find_all("td")
 
         if len(tds) == 4:
@@ -94,7 +92,7 @@ def parse_url(url, today=False):
 
             date = fromdate + datetime.timedelta(days=daysGerman.index(day))
             date = date.strftime('%d.%m.%Y')
-            
+
         else:
             td0 = None
             td1, td2, td3 = tds
@@ -104,13 +102,13 @@ def parse_url(url, today=False):
         if "feiertag" in td1.text.lower() or "geschlossen" in td1.text.lower():
             canteen.setDayClosed(date)
             continue
-        
+
         categoryName = td1.text.strip()[:-1]
         mealName = td2.text.strip()
 
         if not categoryName or not mealName:
             continue
-        
+
         prices = []
         try:
             price = float(euro_regex.search(td3.text).group(1).replace(",","."))
@@ -122,7 +120,7 @@ def parse_url(url, today=False):
             if guest != None:
                 prices.append(guest)
             else:
-                prices.append(price*guest_multiplier)    
+                prices.append(price*guest_multiplier)
         except:
             notes.append(td3.text.strip())
 
@@ -142,12 +140,12 @@ def _generateCanteenMeta(name, baseurl):
     for mensa in obj["mensen"]:
         if not mensa["xml"]:
             continue
-        
+
         if name != mensa["xml"]:
             continue
-        
+
         shortname = name
-        
+
         data = {
             "name" : mensa["name"],
             "adress" : "%s %s %s %s" % (mensa["name"],mensa["strasse"],mensa["plz"],mensa["ort"]),
@@ -182,8 +180,8 @@ def _generateCanteenMeta(name, baseurl):
                     data[long] = 'open="%s"' % openingTimes[short]
                 else:
                     data[long] = 'closed="true"'
-            
-        
+
+
         xml = template.format(**data)
         return xml
 
@@ -207,13 +205,13 @@ class Parser:
         for name in tmp:
             tmp[name] = template_metaURL  % (self.baseurl, name)
         return json.dumps(tmp, indent=2)
-    
+
     def meta(self, name):
         return _generateCanteenMeta(name, self.baseurl)
-    
-    def feed(self, name):      
+
+    def feed(self, name):
         return self.handler(self.canteens[name])
-    
+
 def getParser(baseurl):
     parser = Parser(baseurl, 'eppelheim',
                     handler=parse_url,

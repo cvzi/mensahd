@@ -81,7 +81,7 @@ def parse_url(url, today=False):
 
         elif previous is None:
             # Normal table row containing meal information
-            previous = tr            
+            previous = tr
 
         else:
             # Price table row
@@ -90,31 +90,33 @@ def parse_url(url, today=False):
             if "geschlossen" == previous.find_all("td")[1].text.strip():
                 canteen.setDayClosed(date)
             else:
-                cat = 0          
+                cat = 0
                 for td0,td1 in zip(previous.find_all("td")[1:], tr.find_all("td")):
                     if "heute kein Angebot" in td0.text or "geschlossen" in td0.text:
-                        cat += 1
-                        continue
-                        
-                    if "Kubusangebote am Themenpark" in td0.text:
-                        canteen.addMeal(date, categoryName, "Kubusangebote am Themenpark", [])
                         cat += 1
                         continue
 
                     notes = []
 
-                    # Category                    
+                    # Category
                     if td0.find("h2"):
                         categoryName = canteenCategories[cat] + " " +correctCapitalization(td0.find("h2").text.strip())
                     else:
                         categoryName = canteenCategories[cat]
+
+
+                    if "Kubusangebote am Themenpark" in td0.text:
+                        canteen.addMeal(date, categoryName, "Kubusangebote am Themenpark", [])
+                        cat += 1
+                        continue
+
 
                     # Name
                     if td0.find("p"):
                         name = removeextras_regex.sub("", td0.find("p").text)
                     else:
                         name = categoryName # No name available, let's just use the category name
-                    
+
 
                     # Prices
                     prices = []
@@ -129,11 +131,11 @@ def parse_url(url, today=False):
                         prices = (price, price*employee_multiplier, price*guest_multiplier)
 
                     # Notes: vegan, vegetarisch, ...
-                    notes += [icon["title"] for icon in td1.find_all("span", {"class": "icon"})]  
-                    
+                    notes += [icon["title"] for icon in td1.find_all("span", {"class": "icon"})]
+
                     canteen.addMeal(date, categoryName, name, notes, prices, roles if prices else None)
                     cat += 1
-                    
+
             previous = None
 
     return canteen.toXMLFeed()
@@ -148,12 +150,12 @@ def _generateCanteenMeta(name, baseurl):
     for mensa in obj["mensen"]:
         if not mensa["xml"]:
             continue
-        
+
         if name != mensa["xml"]:
             continue
-        
+
         shortname = name
-        
+
         data = {
             "name" : mensa["name"],
             "adress" : "%s %s %s %s" % (mensa["name"],mensa["strasse"],mensa["plz"],mensa["ort"]),
@@ -188,8 +190,8 @@ def _generateCanteenMeta(name, baseurl):
                     data[long] = 'open="%s"' % openingTimes[short]
                 else:
                     data[long] = 'closed="true"'
-            
-        
+
+
         xml = template.format(**data)
         return xml
 
@@ -213,13 +215,13 @@ class Parser:
         for name in tmp:
             tmp[name] = template_metaURL  % (self.baseurl, name)
         return json.dumps(tmp, indent=2)
-    
+
     def meta(self, name):
         return _generateCanteenMeta(name, self.baseurl)
-    
-    def feed(self, name):      
+
+    def feed(self, name):
         return self.handler(self.canteens[name])
-    
+
 def getParser(baseurl):
     parser = Parser(baseurl, 'mannheim',
                     handler=parse_url,

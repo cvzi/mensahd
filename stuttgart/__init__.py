@@ -90,7 +90,7 @@ def parse_url(canteen, locId, day=None):
         'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
         'Accept-Language': 'de-De,de'
         }
-          
+
     startThisWeek = day - datetime.timedelta(days=day.weekday())
     startNextWeek = startThisWeek + datetime.timedelta(days=7)
 
@@ -113,12 +113,12 @@ def parse_url(canteen, locId, day=None):
     foundAny = False
     for div in divs:
 
-        
+
         isCat = div.find("div", {"class": "gruppenname"})
         if isCat:
             categoryName = isCat.text.strip()
             categoryName = categoryName.replace("*","").strip()
-            categoryName = categoryName[0] + categoryName[1:].lower() 
+            categoryName = categoryName[0] + categoryName[1:].lower()
             if categoryName in ("Hinweis","Information"):
                 nextIsMenu = False
             else:
@@ -129,13 +129,13 @@ def parse_url(canteen, locId, day=None):
 
             mealName = div.find("div", {"class" : "visible-xs-block"}).text.strip()
 
-            
+
             if mealName.lower() == "geschlossen":
                 nextIsMenu = False
                 continue
 
             notes = div["lang"].split(",")
-            
+
             if len(notes):
                 notes = [ingredients[i] for i in notes if i in ingredients]
             else:
@@ -164,12 +164,12 @@ def _generateCanteenMeta(obj, name,  baseurl):
     for mensa in obj["mensen"]:
         if not mensa["xml"]:
             continue
-        
+
         if name != mensa["xml"]:
             continue
-        
+
         shortname = name
-        
+
         data = {
             "name" : mensa["name"],
             "adress" : "%s %s %s %s" % (mensa["name"],mensa["strasse"],mensa["plz"],mensa["ort"]),
@@ -204,8 +204,8 @@ def _generateCanteenMeta(obj, name,  baseurl):
                     data[long] = 'open="%s"' % openingTimes[short]
                 else:
                     data[long] = 'closed="true"'
-            
-        
+
+
         xml = template.format(**data)
         return xml
 
@@ -216,34 +216,35 @@ class Parser:
     def __init__(self, baseurl, handler):
         self.baseurl = baseurl
         self.metaObj = json.load(open(metaJson))
-        
+
         self.xmlnames = []
         self.xml2locId = {}
         self.canteens = self.xml2locId
         for mensa in self.metaObj["mensen"]:
             self.xmlnames.append(mensa["xml"])
             self.xml2locId[mensa["xml"]] = mensa["locId"]
-                
+
         self.handler = handler
 
-    def __now(self):
+    @staticmethod
+    def __now():
         berlin = pytz.timezone('Europe/Berlin')
         now = datetime.datetime.now(berlin)
         return now
-        
+
     def json(self):
         tmp = {}
         for name in self.xmlnames:
             tmp[name] = template_metaURL % (self.baseurl, name)
         return json.dumps(tmp, indent=2)
-    
+
     def meta(self, name):
         return _generateCanteenMeta(self.metaObj, name, self.baseurl)
-    
+
     def feed_today(self, name):
         today = self.__now().date()
         canteen = LazyBuilder()
-        
+
         self.handler(canteen, self.xml2locId[name], today)
         return canteen.toXMLFeed()
 
@@ -259,26 +260,26 @@ class Parser:
             if lastWeekday > date.weekday():
                 break
             lastWeekday = date.weekday()
-            
+
         # Skip over weekend
-        if date.weekday() > 4: 
+        if date.weekday() > 4:
             date += datetime.timedelta(days=7-date.weekday())
-            
+
             # Get next week
             lastWeekday = -1
             while self.handler(canteen, self.xml2locId[name], date.date()):
-                date += datetime.timedelta(days=1) 
+                date += datetime.timedelta(days=1)
                 if lastWeekday > date.weekday():
                     break
                 lastWeekday = date.weekday()
-        
+
         return canteen.toXMLFeed()
-    
+
 
 def getParser(baseurl):
     parser = Parser(baseurl, parse_url)
     return parser
-        
+
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
@@ -286,4 +287,4 @@ if __name__ == "__main__":
     #print(getParser("http://localhost/").feed_all("mitteMusikhochschule"))
     #print(getParser("http://localhost/").meta("mitteMusikhochschule"))
 
-    
+

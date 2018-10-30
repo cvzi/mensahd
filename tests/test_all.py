@@ -9,6 +9,8 @@ sys.path.insert(0, include)
 
 def downloadFile(url, filename="file.tmp"):
     if not os.path.isfile(filename):
+        if not url.startswith("http://") and not url.startswith("https://"):
+            raise RuntimeError("url is not an allowed URL: %r" % url)
         with urllib.request.urlopen(url) as furl:
             with open(filename, 'wb') as fout:
                 fout.write(furl.read())
@@ -20,13 +22,13 @@ xmlParser = lxml.etree.XMLParser(schema=lxml.etree.XMLSchema(file=downloadFile('
 
 def check_meta(content):
     print("Content",end="")
-    
+
     # Check syntax
     try:
         lxml.etree.fromstring(content.encode('utf8'), xmlParser)
     except etree.XMLSyntaxError as error:
         print("- Invalid document: %s" % str(error))
-        
+
     # Content length
     if len(content) < 450:
         print(" - Looks too short.")
@@ -37,7 +39,7 @@ def check_meta(content):
 
 def check_feed(content, encoding='utf8'):
     print("Content",end="")
-    
+
     # Check syntax
     try:
         source = content
@@ -45,12 +47,12 @@ def check_feed(content, encoding='utf8'):
             source = content.encode(encoding)
         else:
             content = content.decode(encoding)
-        
+
         lxml.etree.fromstring(source, xmlParser)
     except lxml.etree.XMLSyntaxError as error:
         print("- Invalid document: %s" % str(error))
         return False
-        
+
     # Content length
     if len(content) < 300:
         print(" - Looks empty.")
@@ -63,7 +65,7 @@ def check_feed(content, encoding='utf8'):
     closed = content.count('<closed')
     if closed > 0:
         print("Found closed days: %d" % closed)
-        
+
     return True
 
 
@@ -105,7 +107,7 @@ def check_xml(parser, canteen):
     if has_feed == 0:
         print("! No feeds found.")
 
-    
+
 def test_all_modules():
     moduleNames = ['eppelheim', 'heidelberg', 'koeln', 'mannheim', 'stuttgart']
 
@@ -114,7 +116,7 @@ def test_all_modules():
     modules = map(__import__, moduleNames)
 
     print(" - Ok.")
-    
+
     for mod in modules:
         print("Module: %s" % mod.__name__)
 
@@ -123,7 +125,7 @@ def test_all_modules():
 
         for canteen in canteens:
             check_xml(parser, canteen)
-        
+
 
 def run_all():
     for fname, f in list(globals().items()):

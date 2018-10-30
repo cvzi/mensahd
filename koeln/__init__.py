@@ -5,14 +5,11 @@ import urllib
 import re
 import logging
 
-
 import pytz
 import requests
 from bs4 import BeautifulSoup
 
 from pyopenmensa.feed import LazyBuilder
-
-
 
 # Based on https://github.com/mswart/openmensa-parsers/blob/master/magdeburg.py
 
@@ -99,7 +96,7 @@ def parse_url(canteen, locId, day=None):
 
             artikel = tds[1].find("span", {"class":"artikel"})
             descr = tds[1].find("span", {"class": "descr"})
-            
+
             text = "".join(artikel.findAll(text=True, recursive=False))
             text += " " + "".join(descr.findAll(text=True, recursive=False))
             text = text.replace("*","").strip()
@@ -107,12 +104,12 @@ def parse_url(canteen, locId, day=None):
             if "geschlossen" in text.lower():
                 nextIsMenu = False
                 continue
-            
+
             sup = ",".join([n.text for n in artikel.findAll("sup")])
-            sup += "," + ",".join([n.text for n in descr.findAll("sup")])       
+            sup += "," + ",".join([n.text for n in descr.findAll("sup")])
 
             notes = sorted(set([int(x.strip()) for x in sup.split(",") if x.strip()]))
-            
+
             if len(notes):
                 notes = [ingredients[i] for i in notes if i in ingredients]
             else:
@@ -143,12 +140,12 @@ def _generateCanteenMeta(obj, name,  baseurl):
     for mensa in obj["mensen"]:
         if not mensa["xml"]:
             continue
-        
+
         if name != mensa["xml"]:
             continue
-        
+
         shortname = name
-        
+
         data = {
             "name" : mensa["name"],
             "adress" : "%s %s %s %s" % (mensa["name"],mensa["strasse"],mensa["plz"],mensa["ort"]),
@@ -183,8 +180,8 @@ def _generateCanteenMeta(obj, name,  baseurl):
                     data[long] = 'open="%s"' % openingTimes[short]
                 else:
                     data[long] = 'closed="true"'
-            
-        
+
+
         xml = template.format(**data)
         return xml
 
@@ -195,32 +192,32 @@ class Parser:
     def __init__(self, baseurl, handler):
         self.baseurl = baseurl
         self.metaObj = json.load(open(metaJson))
-        
+
         self.canteens = {}
-        
+
         self.xmlnames = []
         for mensa in self.metaObj["mensen"]:
             self.xmlnames.append(mensa["xml"])
             self.canteens[mensa["xml"]] = True
-            
-        #self.xmlnames = ["spoho", "cafe-himmelsblick", "iwz-deutz", "gummersbach", "kunsthochschule-medien", "muho", "robertkoch", "suedstadt", "unimensa"]     
-        
+
+        #self.xmlnames = ["spoho", "cafe-himmelsblick", "iwz-deutz", "gummersbach", "kunsthochschule-medien", "muho", "robertkoch", "suedstadt", "unimensa"]
+
         self.handler = handler
 
     def __now(self):
         berlin = pytz.timezone('Europe/Berlin')
         now = datetime.datetime.now(berlin)
         return now
-        
+
     def json(self):
         tmp = {}
         for name in self.xmlnames:
             tmp[name] = template_metaURL % (self.baseurl, name)
         return json.dumps(tmp, indent=2)
-    
+
     def meta(self, name):
         return _generateCanteenMeta(self.metaObj, name, self.baseurl)
-    
+
     def feed_today(self, name):
         today = self.__now().date()
         canteen = LazyBuilder()
@@ -235,23 +232,23 @@ class Parser:
         # Get this week
         while self.handler(canteen, name, date.date()):
             date += datetime.timedelta(days=1)
-            
+
         # Skip over weekend
-        if date.weekday() > 4: 
+        if date.weekday() > 4:
             date += datetime.timedelta(days=7-date.weekday())
-            
+
             # Get next week
             while self.handler(canteen, name, date.date()):
-                date += datetime.timedelta(days=1) 
-            
-        
+                date += datetime.timedelta(days=1)
+
+
         return canteen.toXMLFeed()
-    
+
 
 def getParser(baseurl):
     parser = Parser(baseurl, parse_url)
     return parser
-        
+
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)

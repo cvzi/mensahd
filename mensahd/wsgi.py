@@ -2,7 +2,7 @@
 #
 # Python 3
 import os
-    
+
 if __name__ == '__main__':
     import sys
     include = os.path.relpath(os.path.join(os.path.dirname(__file__), ".."))
@@ -46,10 +46,10 @@ def application(environ, start_response):
     ctype = 'text/plain; charset=utf-8'
     cache_control = 'no-cache, no-store, must-revalidate'
     status = '200 OK'
-    
+
     if environ['PATH_INFO'] == '/health':
         response_body = "1"
-            
+
     elif environ['PATH_INFO'] == '/favicon.ico':
         ctype = 'image/x-icon'
         cache_control = 'public, max-age=8640000'
@@ -57,36 +57,36 @@ def application(environ, start_response):
         response_headers = [('Content-Type', ctype), ('Content-Length', str(len(response_body))), ('Cache-Control', cache_control)]
         start_response(status, response_headers)
         return [response_body ]
-            
+
     elif environ['PATH_INFO'] == '/status':
         statusmessage = []
-        
+
         try:
             request = urllib.request.Request("http://www.stw.uni-heidelberg.de/") # No httpS available!
             result = urllib.request.urlopen(request, timeout=5)
         except:
             statusmessage.append("www.stw.uni-heidelberg.de is not reachable")
-            
+
         try:
             request = urllib.request.Request("https://www.stw-ma.de/")
             result = urllib.request.urlopen(request, timeout=5)
         except:
             statusmessage.append("www.stw-ma.de is not reachable")
-            
+
         try:
             request = urllib.request.Request("https://www.max-manager.de/")
             result = urllib.request.urlopen(request, timeout=5)
         except:
-            statusmessage.append("www.max-manager.de is not reachable")   
+            statusmessage.append("www.max-manager.de is not reachable")
 
         try:
             request = urllib.request.Request("https://sws2.maxmanager.xyz")
             result = urllib.request.urlopen(request, timeout=5)
         except:
             statusmessage.append("sws2.maxmanager.xyz is not reachable")
-           
-            
-            
+
+
+
         if not statusmessage:
             statusmessage = "Ok"
         else:
@@ -95,7 +95,7 @@ def application(environ, start_response):
         response_body = "%s. %d errors.\n" % (statusmessage, len(page_errors))
         for exc in reversed(page_errors):
             response_body += "%s \t %s \t %s\n" % exc
-        
+
     elif environ['PATH_INFO'].startswith('/today'):
         ctype = 'application/xml; charset=utf-8'
         if len(environ['PATH_INFO']) > 7:
@@ -116,7 +116,7 @@ def application(environ, start_response):
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '503 Service Unavailable'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
-            
+
 
     elif environ['PATH_INFO'].startswith('/all'):
         ctype = 'application/xml; charset=utf-8'
@@ -138,7 +138,7 @@ def application(environ, start_response):
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '503 Service Unavailable'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
-        
+
     elif environ['PATH_INFO'].startswith('/meta'):
         ctype = 'application/xml; charset=utf-8'
         if len(environ['PATH_INFO']) > 6:
@@ -159,8 +159,8 @@ def application(environ, start_response):
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '503 Service Unavailable'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
-        
-    
+
+
     elif environ['PATH_INFO'] == '/list':
         ctype = 'application/xml; charset=utf-8'
         try:
@@ -175,7 +175,7 @@ def application(environ, start_response):
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '503 Service Unavailable'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
-        
+
     elif environ['PATH_INFO'] == '/list.json':
         ctype = 'application/json; charset=utf-8'
         try:
@@ -190,7 +190,7 @@ def application(environ, start_response):
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '503 Service Unavailable'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
-    
+
     elif environ['PATH_INFO'] == '/time':
         berlin = pytz.timezone('Europe/Berlin')
         now = datetime.datetime.now(berlin)
@@ -205,12 +205,12 @@ def application(environ, start_response):
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '503 Service Unavailable'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
-    
+
     elif environ['PATH_INFO'].startswith('/mannheim/meta/'):
         ctype = 'application/xml; charset=utf-8'
         name = environ['PATH_INFO'][15:]
         if name.endswith(".xml"):
-            name = name[:-4]            
+            name = name[:-4]
         try:
             response_body = mannheim.meta(name)
         except (urllib.error.URLError, socket.timeout) as e:
@@ -223,12 +223,12 @@ def application(environ, start_response):
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '503 Service Unavailable'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
-            
+
     elif environ['PATH_INFO'].startswith('/mannheim/feed/'):
         ctype = 'application/xml; charset=utf-8'
         name = environ['PATH_INFO'][15:]
         if name.endswith(".xml"):
-            name = name[:-4]            
+            name = name[:-4]
         try:
             response_body = mannheim.feed(name)
         except (urllib.error.URLError, socket.timeout) as e:
@@ -257,12 +257,12 @@ def application(environ, start_response):
               <li>/mannheim/feed/{id}.xml</li>
               <li><a href="/eppelheim">Eppelheim</a></li>
             </ul>"""
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
     elif environ['PATH_INFO'] == '/koeln/list.json':
         ctype = 'application/json; charset=utf-8'
         try:
@@ -272,12 +272,12 @@ def application(environ, start_response):
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '503 Service Unavailable'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
-    
+
     elif environ['PATH_INFO'].startswith('/koeln/meta/'):
         ctype = 'application/xml; charset=utf-8'
         name = environ['PATH_INFO'][12:]
         if name.endswith(".xml"):
-            name = name[:-4]            
+            name = name[:-4]
         try:
             response_body = koeln.meta(name)
         except (urllib.error.URLError, socket.timeout) as e:
@@ -290,7 +290,7 @@ def application(environ, start_response):
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '503 Service Unavailable'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
-            
+
     elif environ['PATH_INFO'].startswith('/koeln/today/'):
         ctype = 'application/xml; charset=utf-8'
         name = environ['PATH_INFO'][13:]
@@ -308,7 +308,7 @@ def application(environ, start_response):
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '503 Service Unavailable'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
-            
+
     elif environ['PATH_INFO'].startswith('/koeln/all/'):
         ctype = 'application/xml; charset=utf-8'
         name = environ['PATH_INFO'][11:]
@@ -326,7 +326,7 @@ def application(environ, start_response):
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '503 Service Unavailable'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
-    
+
     elif environ['PATH_INFO'] == '/koeln' or environ['PATH_INFO'] == '/koeln/':
         ctype = 'text/html; charset=utf-8'
         cache_control = 'public, max-age=86400'
@@ -336,17 +336,17 @@ def application(environ, start_response):
             <h2>Public interface:</h2>
             <ul>
               <li><a href="/">../ Heidelberg</a></li>
-              <li><a href="/koeln"><b>Köln</b></a></li>   
+              <li><a href="/koeln"><b>Köln</b></a></li>
               <li><a href="/koeln/list.json">/koeln/list.json</a></li>
               <li>/koeln/meta/{id}.xml</li>
               <li>/koeln/today/{id}.xml</li>
               <li>/koeln/all/{id}.xml</li>
             </ul>"""
-               
-            
-            
-            
-            
+
+
+
+
+
     elif environ['PATH_INFO'] == '/stuttgart/list.json':
         ctype = 'application/json; charset=utf-8'
         try:
@@ -356,12 +356,12 @@ def application(environ, start_response):
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '503 Service Unavailable'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
-    
+
     elif environ['PATH_INFO'].startswith('/stuttgart/meta/'):
         ctype = 'application/xml; charset=utf-8'
         name = environ['PATH_INFO'][16:]
         if name.endswith(".xml"):
-            name = name[:-4]            
+            name = name[:-4]
         try:
             response_body = stuttgart.meta(name)
         except (urllib.error.URLError, socket.timeout) as e:
@@ -374,7 +374,7 @@ def application(environ, start_response):
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '503 Service Unavailable'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
-            
+
     elif environ['PATH_INFO'].startswith('/stuttgart/today/'):
         ctype = 'application/xml; charset=utf-8'
         name = environ['PATH_INFO'][17:]
@@ -392,7 +392,7 @@ def application(environ, start_response):
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '503 Service Unavailable'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
-            
+
     elif environ['PATH_INFO'].startswith('/stuttgart/all/'):
         ctype = 'application/xml; charset=utf-8'
         name = environ['PATH_INFO'][15:]
@@ -410,8 +410,8 @@ def application(environ, start_response):
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '503 Service Unavailable'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
- 
-    
+
+
     elif environ['PATH_INFO'] == '/stuttgart' or environ['PATH_INFO'] == '/stuttgart/':
         ctype = 'text/html; charset=utf-8'
         cache_control = 'public, max-age=86400'
@@ -421,17 +421,17 @@ def application(environ, start_response):
             <h2>Public interface:</h2>
             <ul>
               <li><a href="/">../ Heidelberg</a></li>
-              <li><a href="/stuttgart"><b>Stuttgart</b></a></li>   
+              <li><a href="/stuttgart"><b>Stuttgart</b></a></li>
               <li><a href="/stuttgart/list.json">/stuttgart/list.json</a></li>
               <li>/stuttgart/meta/{id}.xml</li>
               <li>/stuttgart/today/{id}.xml</li>
               <li>/stuttgart/all/{id}.xml</li>
             </ul>"""
-            
-            
-            
-            
-            
+
+
+
+
+
     elif environ['PATH_INFO'] == '/eppelheim/list.json':
         ctype = 'application/json; charset=utf-8'
         try:
@@ -459,7 +459,7 @@ def application(environ, start_response):
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '503 Service Unavailable'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
-            
+
     elif environ['PATH_INFO'].startswith('/eppelheim/feed/'):
         ctype = 'application/xml; charset=utf-8'
         name = environ['PATH_INFO'][16:]
@@ -477,7 +477,7 @@ def application(environ, start_response):
             response_body = "An error occured:\n%s\n%s" % (e, traceback.format_exc())
             status = '503 Service Unavailable'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
-            
+
     elif environ['PATH_INFO'] == '/eppelheim' or environ['PATH_INFO'] == '/eppelheim/':
         ctype = 'text/html; charset=utf-8'
         cache_control = 'public, max-age=86400'
@@ -492,9 +492,9 @@ def application(environ, start_response):
               <li>/eppelheim/meta/{id}.xml</li>
               <li>/eppelheim/feed/{id}.xml</li>
             </ul>"""
-            
-            
- 
+
+
+
     else:
         ctype = 'text/html; charset=utf-8'
         cache_control = 'public, max-age=86400'
@@ -515,7 +515,7 @@ def application(environ, start_response):
               <li>/today/{id}.xml</li>
               <li>/all/{id}.xml</li>
             </ul>"""
-    
+
     response_body = response_body.encode('utf-8')
 
     response_headers = [('Content-Type', ctype), ('Content-Length', str(len(response_body))), ('Cache-Control', cache_control)]
@@ -530,4 +530,4 @@ if __name__ == '__main__':
     from wsgiref.simple_server import make_server
     httpd = make_server('localhost', 80, application)
     httpd.serve_forever()
-    
+

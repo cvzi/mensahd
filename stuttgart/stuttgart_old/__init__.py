@@ -72,13 +72,13 @@ weekdaysMap = [
 cache_mealsURL_lock = Lock()
 cache_mealsURL_text = None
 cache_mealsURL_time = 0
-    
+
 def _getMealsURL_cached(max_age_minutes=15):
     """Download meals information from XML feed, if available use a cached version"""
     global cache_mealsURL_lock
     global cache_mealsURL_text
     global cache_mealsURL_time
-    
+
     age_seconds = (time.time() - cache_mealsURL_time)
     if age_seconds > max_age_minutes*60:
         with cache_mealsURL_lock:
@@ -97,8 +97,8 @@ re_title = re.compile(r"<title>([^<]+) vom ([^<]+)</title>")
 def parse_url(canteen, xmlname, allowedCategoryNames=None):
 
 
-    rss, age_seconds = _getMealsURL_cached()
-    
+    rss, _ = _getMealsURL_cached()
+
     items = rss.split("<item>")
     for text in items:
         m = re_title.search(text)
@@ -111,7 +111,7 @@ def parse_url(canteen, xmlname, allowedCategoryNames=None):
         trs = document.find("tbody").find_all("tr")
 
         categoryName = "NOT_FOUND"
-        
+
         for tr in trs:
             tds = tr.find_all("td")
             if len(tds) == 1: # Category Name
@@ -119,7 +119,7 @@ def parse_url(canteen, xmlname, allowedCategoryNames=None):
             else: # Meal
                 prices = [None, None]
                 text, *prices, additives = [td.text.strip() for td in tds]
-                
+
                 notes = [ingredients[i] for i in [x.strip() for x in additives.split(",")] if i in ingredients]
 
                 if allowedCategoryNames is not None:
@@ -138,12 +138,12 @@ def _generateCanteenMeta(obj, name, baseurl):
     for mensa in obj["mensen"]:
         if not mensa["xml"]:
             continue
-        
+
         if name != mensa["xml"]:
             continue
-        
+
         shortname = name
-        
+
         data = {
             "name" : mensa["name"],
             "adress" : "%s %s %s %s" % (mensa["name"],mensa["strasse"],mensa["plz"],mensa["ort"]),
@@ -176,8 +176,8 @@ def _generateCanteenMeta(obj, name, baseurl):
                     data[long] = 'open="%s"' % openingTimes[short]
                 else:
                     data[long] = 'closed="true"'
-            
-        
+
+
         xml = template.format(**data)
         return xml
 
@@ -188,19 +188,19 @@ class Parser:
     def __init__(self,baseurl):
         self.baseurl = baseurl
         self.metaObj = json.load(open(metaJson))
-        
+
         self.xmlnames = []
         for mensa in self.metaObj["mensen"]:
             if "kategorien" in mensa:
                 self.xmlnames.append((mensa["xml"], mensa["kategorien"]))
             else:
                 self.xmlnames.append(mensa["xml"])
-        
+
         #self.xmlnames = ["mitteMusikhochschule","nordKunstakademie", "mitteMensa1Holzgartenstrasse", "vaihingenMensa2", "esslingen1Flandernstrasse", "ludwigsburg"]
         #self.xmlnames += [("esslingen2Mitte", ["Vorspeise", "Hauptgericht 1", "Hauptgericht 2", "Bio-Gericht"])] #"http://www.hs-esslingen.de/de/hochschule/service/mensa/speiseplan-stadtmitte.html")]
         #self.xmlnames += [("goeppingen", ["Hauptgericht 1", "Bio-Gericht"])] # https://www.studierendenwerk-stuttgart.de/cafeteria/cafeteria-bau-4-eg-goeppingen
 
-        
+
     def json(self):
         tmp = {}
         for name in self.xmlnames:
@@ -209,25 +209,25 @@ class Parser:
             else:
                 tmp[name[0]] = template_metaURL % (self.baseurl, name[0])
         return json.dumps(tmp, indent=2)
-    
+
     def meta(self, name):
         return _generateCanteenMeta(self.metaObj, name, self.baseurl)
-    
+
     def feed(self, name):
         canteen = LazyBuilder()
-        if name in self.xmlnames:  
+        if name in self.xmlnames:
             parse_url(canteen, name) # all categories
         else :
             xmlname_enty = [x for x in self.xmlnames if x[0] == name][0]
             parse_url(canteen, *xmlname_enty) # only certain categories
-            
+
         return canteen.toXMLFeed()
-    
+
 
 def getstuttgart(baseurl):
     parser = Parser(baseurl)
     return parser
-        
+
 
 if __name__ == "__main__":
     print(getstuttgart("http://localhost/").feed("goeppingen"))

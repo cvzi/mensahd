@@ -12,7 +12,7 @@ import re
 import time
 import io
 import logging
-from threading import Lock 
+from threading import Lock
 
 mealsURL = 'https://www.stw.uni-heidelberg.de/appdata/sp.xml'
 mealsURL_authorization = open(os.path.join(os.path.dirname(__file__), ".password.txt")).read()
@@ -48,7 +48,7 @@ desiredName = {
     "Mensa Bildungscampus Heilbronn" : "Heilbronn, Mensa Bildungscampus/Europaplatz",
     "Mensa Künzelsau" : "Künzelsau, Mensa Reinhold-Würth-Hochschule"
     }
-    
+
 weekdaysMap = [
     ("Mo", "monday"),
     ("Di", "tuesday"),
@@ -80,17 +80,19 @@ def _getShortName(longname):
 
 def _getMealsURL():
     """Download meals information from XML feed"""
+    if not mealsURL.startswith("http://") and not  mealsURL.startswith("https://"):
+        raise RuntimeError("mealsUrl is not an allowed URL: '%s'" % mealsURL)
     request = urllib.request.Request(mealsURL)
     request.add_header("Authorization", "Basic %s" % mealsURL_authorization)
     result = urllib.request.urlopen(request, timeout=__timeoutSeconds)
     return result, 0
-    
+
 def _getMealsURL_cached(max_age_minutes=15):
     """Download meals information from XML feed, if available use a cached version"""
     global cache_mealsURL_lock
     global cache_mealsURL_data
     global cache_mealsURL_time
-    
+
     age_seconds = (time.time() - cache_mealsURL_time)
     if age_seconds > max_age_minutes*60:
         with cache_mealsURL_lock:
@@ -103,10 +105,12 @@ def _getMealsURL_cached(max_age_minutes=15):
 
 def _getMetaURL():
     """Download meta information from JSON source"""
-    request = urllib.request.Request(metaURL) 
+    if not metaURL.startswith("http://") and not metaURL.startswith("https://"):
+        raise RuntimeError("metaURL is not an allowed URL: '%s'" % metaURL)
+    request = urllib.request.Request(metaURL)
     result = urllib.request.urlopen(request, timeout=__timeoutSeconds)
     return result, 0
-    
+
 def _getMetaURL_cached(max_age_minutes=120):
     """Download meta information from JSON source, if available use a cached version"""
     global cache_metaURL_lock
@@ -121,16 +125,16 @@ def _getMetaURL_cached(max_age_minutes=120):
             logging.info("##CACHE## Meta cache updated")
 
     return io.BytesIO(cache_metaURL_data), age_seconds
-    
+
 def _generateFeed(source, name, date='', lastFetched=0):
     """Generate an openmensa XML feed from the source feed using XSLT"""
     if date == 'today':
         berlin = pytz.timezone('Europe/Berlin')
         now = datetime.datetime.now(berlin)
         date = now.strftime("%Y-%m-%d")
-    
+
     name = nameMap[name]
-    
+
     dom = lxml.etree.parse(source)
     xslt_tree = lxml.etree.parse(xslFile)
     xslt = lxml.etree.XSLT(xslt_tree )
@@ -148,7 +152,7 @@ def _generateCanteenMeta(source, name, baseurl):
     for mensa in obj["mensen"]:
         if not mensa["xml"]:
             continue
-        
+
         if name != mensa["xml"]:
             continue
 
@@ -185,8 +189,8 @@ def _generateCanteenMeta(source, name, baseurl):
                     data[long] = 'open="%s"' % openingTimes[short]
                 else:
                     data[long] = 'closed="true"'
-            
-        
+
+
         xml = template.format(**data)
         return xml
 
@@ -214,7 +218,7 @@ def _generateCanteenList(source, baseurl):
         xml += "  </canteen>\n"
     xml += '</canteens>'
     return xml
-    
+
 def _generateCanteenList_JSON(source, baseurl):
     """Generate a JSON file for openmensa.org containing basic information about all available canteens"""
     obj = json.loads(source.read().decode("utf-8-sig"))
@@ -225,48 +229,50 @@ def _generateCanteenList_JSON(source, baseurl):
             continue
 
         shortName = _getShortName(mensa["xml"])
-        
+
         data[shortName] = template_metaURL % (baseurl, urllib.parse.quote(shortName))
     return json.dumps(data, sort_keys=True, indent=4, separators=(',', ': '))
-    
-    
+
+
 class Parser:
     def __init__(self, baseurl):
         self.baseurl = baseurl
         self.canteens = nameMap
-        
+
     def json(self):
         """Return a list of all the canteens as JSON"""
-        stream, age_seconds = _getMetaURL_cached()
+        stream, _ = _getMetaURL_cached()
         return _generateCanteenList_JSON(stream, self.baseurl)
-    
+
     def list(self):
         """Return a list of all the canteens as XML"""
-        stream, age_seconds = _getMetaURL_cached()
+        stream, _ = _getMetaURL_cached()
         return _generateCanteenList(stream, self.baseurl)
-    
+
     def meta(self, name):
         """Return a feed with all available meta information for openmensa.org"""
-        stream, age_seconds = _getMetaURL_cached()
+        stream, _ = _getMetaURL_cached()
         return _generateCanteenMeta(stream, name, self.baseurl)
-    
-    def feed_today(self, name=""):
+
+    @staticmethod
+    def feed_today(name=""):
         """Return today's meal feed for openmensa.org"""
         stream, age_seconds = _getMealsURL_cached()
         return _generateFeed(stream, name, 'today', age_seconds)
-
-    def feed_all(self, name=""):
+        
+    @staticmethod
+    def feed_all(name=""):
         """Return a feed with all available meal information for openmensa.org"""
         stream, age_seconds = _getMealsURL_cached()
         return _generateFeed(stream, name, '', age_seconds)
 
-    
+
 
 def getParser(baseurl):
     parser = Parser(baseurl)
     return parser
-    
+
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
     print(getParser("http://localhost/").feed_today("inf304"))
-    
+
