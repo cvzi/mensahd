@@ -3,6 +3,8 @@ import os
 import json
 import urllib
 import re
+import logging
+
 
 import pytz
 import requests
@@ -86,7 +88,7 @@ def parse_url(canteen, locId, day=None):
         if td:
             categoryName = td.text.strip()
             categoryName = categoryName.replace("*","").strip()
-            if categoryName in ("Hinweis","Information"):
+            if categoryName in ("", "Hinweis", "Information"):
                 nextIsMenu = False
             else:
                 nextIsMenu = True
@@ -119,8 +121,8 @@ def parse_url(canteen, locId, day=None):
             try:
                 prices = [float(x.strip().replace(",",".")) for x in tds[2].text.split("/")]
             except:
-                print("Could not find prices for:")
-                print(text)
+                logging.warning("Could not find prices for:")
+                logging.warning(text)
                 prices = []
             canteen.addMeal(date, categoryName, text, notes, prices, roles)
             foundAny = True
@@ -194,10 +196,13 @@ class Parser:
         self.baseurl = baseurl
         self.metaObj = json.load(open(metaJson))
         
+        self.canteens = {}
+        
         self.xmlnames = []
         for mensa in self.metaObj["mensen"]:
             self.xmlnames.append(mensa["xml"])
-                
+            self.canteens[mensa["xml"]] = True
+            
         #self.xmlnames = ["spoho", "cafe-himmelsblick", "iwz-deutz", "gummersbach", "kunsthochschule-medien", "muho", "robertkoch", "suedstadt", "unimensa"]     
         
         self.handler = handler
@@ -243,10 +248,11 @@ class Parser:
         return canteen.toXMLFeed()
     
 
-def getkoeln(baseurl):
+def getParser(baseurl):
     parser = Parser(baseurl, parse_url)
     return parser
         
 
 if __name__ == "__main__":
-    print(getkoeln("http://localhost/").feed_all("gummersbach"))
+    logging.basicConfig(level=logging.DEBUG)
+    print(getParser("http://localhost/").feed_all("robertkoch"))

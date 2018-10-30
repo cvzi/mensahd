@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import os
 import re
 import datetime
+import logging
 import json
 from pyopenmensa.feed import LazyBuilder
 import urllib
@@ -48,7 +49,7 @@ def parse_url(url, today=False):
     try:
         content = requests.get(url).text
     except requests.exceptions.ConnectionError as e:
-        print(e)
+        logging.warning(e)
         content = requests.get(url, verify=False).text
 
     document = BeautifulSoup(content, "html.parser")
@@ -219,7 +220,7 @@ class Parser:
     def feed(self, name):      
         return self.handler(self.canteens[name])
     
-def getmannheim(baseurl):
+def getParser(baseurl):
     parser = Parser(baseurl, 'mannheim',
                     handler=parse_url,
                     shared_prefix='https://www.stw-ma.de/')
@@ -234,8 +235,9 @@ def getmannheim(baseurl):
 
 
 if __name__ == "__main__":
-    #print(getmannheim().json("https://localhost/meta/%s.xml"))
-    print(getmannheim("http://localhost/").feed("eo"))
+    logging.basicConfig(level=logging.DEBUG)
+    #print(getParser("http://localhost/").json("https://localhost/meta/%s.xml"))
+    print(getParser("http://localhost/").feed("eo"))
 
 
 

@@ -11,6 +11,7 @@ import json
 import re
 import time
 import io
+import logging
 from threading import Lock 
 
 mealsURL = 'https://www.stw.uni-heidelberg.de/appdata/sp.xml'
@@ -96,7 +97,7 @@ def _getMealsURL_cached(max_age_minutes=15):
             cache_mealsURL_data = _getMealsURL()[0].read()
             cache_mealsURL_time = time.time()
             age_seconds = 0
-            print("##CACHE## Meals cache updated")
+            logging.info("##CACHE## Meals cache updated")
 
     return io.BytesIO(cache_mealsURL_data), age_seconds
 
@@ -117,7 +118,7 @@ def _getMetaURL_cached(max_age_minutes=120):
             cache_metaURL_data = _getMetaURL()[0].read()
             cache_metaURL_time = time.time()
             age_seconds = 0
-            print("##CACHE## Meta cache updated")
+            logging.info("##CACHE## Meta cache updated")
 
     return io.BytesIO(cache_metaURL_data), age_seconds
     
@@ -232,6 +233,7 @@ def _generateCanteenList_JSON(source, baseurl):
 class Parser:
     def __init__(self, baseurl):
         self.baseurl = baseurl
+        self.canteens = nameMap
         
     def json(self):
         """Return a list of all the canteens as JSON"""
@@ -260,10 +262,11 @@ class Parser:
 
     
 
-def getheidelberg(baseurl):
+def getParser(baseurl):
     parser = Parser(baseurl)
     return parser
     
 if __name__ == "__main__":
-    print(getheidelberg("http://localhost/").feed_today())
+    logging.basicConfig(level=logging.DEBUG)
+    print(getParser("http://localhost/").feed_today("inf304"))
     

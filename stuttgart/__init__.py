@@ -3,6 +3,7 @@ import os
 import json
 import urllib
 import re
+import logging
 
 import pytz
 import requests
@@ -218,6 +219,7 @@ class Parser:
         
         self.xmlnames = []
         self.xml2locId = {}
+        self.canteens = self.xml2locId
         for mensa in self.metaObj["mensen"]:
             self.xmlnames.append(mensa["xml"])
             self.xml2locId[mensa["xml"]] = mensa["locId"]
@@ -273,14 +275,15 @@ class Parser:
         return canteen.toXMLFeed()
     
 
-def getstuttgart(baseurl):
+def getParser(baseurl):
     parser = Parser(baseurl, parse_url)
     return parser
         
 
 if __name__ == "__main__":
-    print(getstuttgart("http://localhost/").feed_today("mitteMusikhochschule"))
-    #print(getstuttgart("http://localhost/").feed_all("mitteMusikhochschule"))
-    #print(getstuttgart("http://localhost/").meta("mitteMusikhochschule"))
+    logging.basicConfig(level=logging.DEBUG)
+    print(getParser("http://localhost/").feed_today("mitteMusikhochschule"))
+    #print(getParser("http://localhost/").feed_all("mitteMusikhochschule"))
+    #print(getParser("http://localhost/").meta("mitteMusikhochschule"))
 
     

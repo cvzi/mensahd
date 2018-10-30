@@ -1,16 +1,21 @@
 #!/usr/bin/env python
 #
 # Python 3
-
 import os
+    
+if __name__ == '__main__':
+    import sys
+    include = os.path.relpath(os.path.join(os.path.dirname(__file__), ".."))
+    sys.path.insert(0, include)
+
 import datetime
 import pytz
 
-from heidelberg import getheidelberg
-from mannheim import getmannheim
-from koeln import getkoeln
-from stuttgart import getstuttgart
-from eppelheim import geteppelheim
+from heidelberg import getParser as getheidelberg
+from mannheim import getParser as getmannheim
+from koeln import getParser as getkoeln
+from stuttgart import getParser as getstuttgart
+from eppelheim import getParser as geteppelheim
 
 import traceback
 import urllib.request
@@ -19,7 +24,12 @@ import socket
 
 page_errors = []
 
-baseurl = "https://mensahd.herokuapp.com/"
+baseurl = os.getenv("PUBLIC_URL", False)
+if not baseurl:
+    if __name__ == '__main__':
+        baseurl = "http://127.0.0.1/"
+    else:
+        raise RuntimeError("Environment variable PUBLIC_URL is not set.")
 
 heidelberg = getheidelberg(baseurl)
 mannheim = getmannheim(baseurl)
@@ -245,6 +255,7 @@ def application(environ, start_response):
               <li><a href="/mannheim/list.json">/mannheim/list.json</a></li>
               <li>/mannheim/meta/{id}.xml</li>
               <li>/mannheim/feed/{id}.xml</li>
+              <li><a href="/eppelheim">Eppelheim</a></li>
             </ul>"""
             
             
@@ -467,6 +478,20 @@ def application(environ, start_response):
             status = '503 Service Unavailable'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
             
+    elif environ['PATH_INFO'] == '/eppelheim' or environ['PATH_INFO'] == '/eppelheim/':
+        ctype = 'text/html; charset=utf-8'
+        cache_control = 'public, max-age=86400'
+        response_body = """
+            <h1>mensahd-cuzi for DHBW Eppelheim</h1>
+            <div>This is a parser for <a href="https://openmensa.org/">openmensa.org</a>. It fetches and converts public data from <a href="https://www.stw-ma.de/Essen+_+Trinken/Men%C3%BCpl%C3%A4ne.html">Studierendenwerk Mannheim</a></div>
+            <h2>Public interface:</h2>
+            <ul>
+              <li><a href="/">../ Heidelberg</a></li>
+              <li><a href="/eppelheim"><b>Eppelheim</b></a></li>
+              <li><a href="/eppelheim/list.json">/eppelheim/list.json</a></li>
+              <li>/eppelheim/meta/{id}.xml</li>
+              <li>/eppelheim/feed/{id}.xml</li>
+            </ul>"""
             
             
  
@@ -503,7 +528,6 @@ def application(environ, start_response):
 #
 if __name__ == '__main__':
     from wsgiref.simple_server import make_server
-    httpd = make_server('localhost', 8051, application)
-    # Wait for a single request, serve it and quit.
-    httpd.handle_request()
+    httpd = make_server('localhost', 80, application)
+    httpd.serve_forever()
     
