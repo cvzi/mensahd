@@ -7,6 +7,7 @@ import datetime
 import json
 from pyopenmensa.feed import LazyBuilder
 import urllib
+import logging
 
 # Based on https://github.com/mswart/openmensa-parsers/blob/master/magdeburg.py
 
@@ -51,7 +52,7 @@ def parse_url(url, today=False):
     try:
         content = requests.get(url).text
     except requests.exceptions.ConnectionError as e:
-        print(e)
+        logging.warning(str(e))
         content = requests.get(url, verify=False).text
 
     document = BeautifulSoup(content, "html.parser")
@@ -99,8 +100,17 @@ def parse_url(url, today=False):
             td1, td2, td3 = tds
 
         notes = []
+
+        if "feiertag" in td1.text.lower() or "geschlossen" in td1.text.lower():
+            canteen.setDayClosed(date)
+            continue
+        
         categoryName = td1.text.strip()[:-1]
         mealName = td2.text.strip()
+
+        if not categoryName or not mealName:
+            continue
+        
         prices = []
         try:
             price = float(euro_regex.search(td3.text).group(1).replace(",","."))
@@ -204,7 +214,7 @@ class Parser:
     def feed(self, name):      
         return self.handler(self.canteens[name])
     
-def geteppelheim(baseurl):
+def getParser(baseurl):
     parser = Parser(baseurl, 'eppelheim',
                     handler=parse_url,
                     shared_prefix='https://www.stw-ma.de/')
@@ -214,8 +224,9 @@ def geteppelheim(baseurl):
 
 
 if __name__ == "__main__":
-    #print(geteppelheim().json("https://localhost/meta/%s.xml"))
-    print(geteppelheim("http://localhost/").feed("dhbw"))
+    logging.basicConfig(level=logging.DEBUG)
+    #print(getParser("http://localhost/").json("https://localhost/meta/%s.xml"))
+    print(getParser("http://localhost/").feed("dhbw"))
 
 
 
