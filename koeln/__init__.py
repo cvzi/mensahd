@@ -204,7 +204,8 @@ class Parser:
 
         self.handler = handler
 
-    def __now(self):
+    @staticmethod
+    def __now():
         berlin = pytz.timezone('Europe/Berlin')
         now = datetime.datetime.now(berlin)
         return now

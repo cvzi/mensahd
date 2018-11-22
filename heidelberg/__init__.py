@@ -259,7 +259,7 @@ class Parser:
         """Return today's meal feed for openmensa.org"""
         stream, age_seconds = _getMealsURL_cached()
         return _generateFeed(stream, name, 'today', age_seconds)
-        
+
     @staticmethod
     def feed_all(name=""):
         """Return a feed with all available meal information for openmensa.org"""
