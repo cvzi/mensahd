@@ -157,7 +157,7 @@ def parse_url(canteen, locId, day=None):
                 else:
                     prices = [prices[1], prices[3]]
                 logging.warning("Assuming prices: %r" % prices)
-                
+
 
             canteen.addMeal(date, categoryName, mealName, notes, prices, roles)
             foundAny = True

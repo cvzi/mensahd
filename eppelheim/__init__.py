@@ -65,7 +65,7 @@ def parse_url(url, today=False):
 
         p = price_guest_regex.search(document.find("main").text).groupdict()
         guest = float(p["employee"].split(",")[0]) + float(p["employee"].split(",")[1])/100
-    except:
+    except (AttributeError, TypeError, KeyError, ValueError):
         employee_multiplier = 1.25
         guest_multiplier = 1.60
         employee = None
@@ -121,7 +121,7 @@ def parse_url(url, today=False):
                 prices.append(guest)
             else:
                 prices.append(price*guest_multiplier)
-        except:
+        except (AttributeError, TypeError, KeyError, ValueError):
             notes.append(td3.text.strip())
 
 

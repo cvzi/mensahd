@@ -117,7 +117,7 @@ def parse_url(canteen, locId, day=None):
 
             try:
                 prices = [float(x.strip().replace(",",".")) for x in tds[2].text.split("/")]
-            except:
+            except (AttributeError, TypeError, KeyError, ValueError):
                 logging.warning("Could not find prices for:")
                 logging.warning(text)
                 prices = []

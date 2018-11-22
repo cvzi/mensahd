@@ -60,7 +60,7 @@ def parse_url(url, today=False):
         p = price_regex.search(document.find("p", {"id": "message"}).text).groupdict()
         employee_multiplier = 1.0 + int(p["employee"]) / 100.0
         guest_multiplier = 1.0 + int(p["guest"]) / 100.0
-    except:
+    except (AttributeError, TypeError, KeyError, ValueError):
         employee_multiplier = 1.25
         guest_multiplier = 1.60
 
