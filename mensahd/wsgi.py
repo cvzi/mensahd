@@ -61,31 +61,24 @@ def application(environ, start_response):
     elif environ['PATH_INFO'] == '/status':
         statusmessage = []
 
-        try:
-            request = urllib.request.Request("http://www.stw.uni-heidelberg.de/") # No httpS available!
-            result = urllib.request.urlopen(request, timeout=5)
-        except:
-            statusmessage.append("www.stw.uni-heidelberg.de is not reachable")
-
-        try:
-            request = urllib.request.Request("https://www.stw-ma.de/")
-            result = urllib.request.urlopen(request, timeout=5)
-        except:
-            statusmessage.append("www.stw-ma.de is not reachable")
-
-        try:
-            request = urllib.request.Request("https://www.max-manager.de/")
-            result = urllib.request.urlopen(request, timeout=5)
-        except:
-            statusmessage.append("www.max-manager.de is not reachable")
-
-        try:
-            request = urllib.request.Request("https://sws2.maxmanager.xyz")
-            result = urllib.request.urlopen(request, timeout=5)
-        except:
-            statusmessage.append("sws2.maxmanager.xyz is not reachable")
-
-
+        for url in ("https://www.stw.uni-heidelberg.de/", "https://www.stw-ma.de/", "https://www.max-manager.de/", "https://sws2.maxmanager.xyz"):
+            try:
+                request = urllib.request.Request(url)
+                result = urllib.request.urlopen(request, timeout=5)
+                if result.getcode() != 200:
+                    raise RuntimeError("HTTP status code: %r" % result.status)
+            except (urllib.error.URLError, socket.timeout) as e:
+                statusmessage.append("www.stw.uni-heidelberg.de is not reachable")
+                print(e)
+            except RuntimeError as e:
+                if result is not None:
+                    statusmessage.append("www.stw.uni-heidelberg.de status code %d" % result.getcode())
+                else:
+                    statusmessage.append("www.stw.uni-heidelberg.de %r" % e)
+                print(e)
+            except BaseException as e:
+                statusmessage.append("www.stw.uni-heidelberg.de %r" % e)
+                print(e)
 
         if not statusmessage:
             statusmessage = "Ok"
@@ -529,5 +522,6 @@ def application(environ, start_response):
 if __name__ == '__main__':
     from wsgiref.simple_server import make_server
     httpd = make_server('localhost', 80, application)
+    print("http://localhost:80/")
     httpd.serve_forever()
 
