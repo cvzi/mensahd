@@ -124,7 +124,7 @@ def parse_url(url, today=False):
                     if spans:
                         try:
                             price = float(euro_regex.search(spans[0].text).group(1).replace(",","."))
-                        except:
+                        except (AttributeError, TypeError, KeyError, ValueError):
                             notes.append(spans[0].text.strip()+" Preis")
                         if len(spans) == 2:
                             notes.append(spans[1].text.strip()+" Preis")
