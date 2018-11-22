@@ -146,6 +146,19 @@ def parse_url(canteen, locId, day=None):
 
             prices = [float(x.replace(",",".")) for x in price_pattern.findall(pricesText)]
 
+            if len(prices) != 2:
+                logging.warning("Expected two prices, got %r" % prices)
+                if len(prices) == 0:
+                    prices = [0.0,0.0]
+                elif len(prices) == 1:
+                    prices.append(0.0)
+                elif len(prices) == 3:
+                    prices = prices[0:2]
+                else:
+                    prices = [prices[1], prices[3]]
+                logging.warning("Assuming prices: %r" % prices)
+                
+
             canteen.addMeal(date, categoryName, mealName, notes, prices, roles)
             foundAny = True
 
@@ -283,7 +296,7 @@ def getParser(baseurl):
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
-    print(getParser("http://localhost/").feed_today("mitteMusikhochschule"))
+    print(getParser("http://localhost/").feed_today("vaihingenMensa2"))
     #print(getParser("http://localhost/").feed_all("mitteMusikhochschule"))
     #print(getParser("http://localhost/").meta("mitteMusikhochschule"))
 
