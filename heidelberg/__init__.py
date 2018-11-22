@@ -16,13 +16,13 @@ from threading import Lock
 
 mealsURL = 'https://www.stw.uni-heidelberg.de/appdata/sp.xml'
 mealsURL_authorization = open(os.path.join(os.path.dirname(__file__), ".password.txt")).read()
-metaURL = 'http://www.stw.uni-heidelberg.de/sites/default/files/download/pdf/stwhd-de.json'
+metaURL = 'https://www.stw.uni-heidelberg.de/sites/default/files/download/pdf/stwhd-de.json'
 __timeoutSeconds = 20
 
 xslFile = os.path.join(os.path.dirname(__file__), "heidelberg.xsl")
 metaTemplateFile = os.path.join(os.path.dirname(__file__), "metaTemplate.xml")
 
-template_sourceURL = "http://www.studentenwerk.uni-heidelberg.de/de/speiseplan"
+template_sourceURL = "https://www.studentenwerk.uni-heidelberg.de/de/speiseplan_neu"
 template_metaURL = "%smeta/%s.xml"
 template_todayURL = "%stoday/%s.xml"
 template_fullURL = "%sall/%s.xml"
@@ -80,7 +80,7 @@ def _getShortName(longname):
 
 def _getMealsURL():
     """Download meals information from XML feed"""
-    if not mealsURL.startswith("http://") and not  mealsURL.startswith("https://"):
+    if not mealsURL.startswith("http://") and not mealsURL.startswith("https://"):
         raise RuntimeError("mealsUrl is not an allowed URL: '%s'" % mealsURL)
     request = urllib.request.Request(mealsURL)
     request.add_header("Authorization", "Basic %s" % mealsURL_authorization)
