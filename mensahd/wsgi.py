@@ -62,23 +62,24 @@ def application(environ, start_response):
         statusmessage = []
 
         for url in ("https://www.stw.uni-heidelberg.de/", "https://www.stw-ma.de/", "https://www.max-manager.de/", "https://sws2.maxmanager.xyz"):
+            hostname = url.split("//")[1].split("/")[0]
             try:
                 request = urllib.request.Request(url)
-                result = urllib.request.urlopen(request, timeout=5)
+                result = urllib.request.urlopen(request, timeout=7)
                 if result.getcode() != 200:
                     raise RuntimeError("HTTP status code: %r" % result.status)
             except (urllib.error.URLError, socket.timeout) as e:
-                statusmessage.append("www.stw.uni-heidelberg.de is not reachable")
-                print(e)
+                statusmessage.append("%s is not reachable" % hostname)
+                print("%s is not reachable" % hostname)
             except RuntimeError as e:
                 if result is not None:
-                    statusmessage.append("www.stw.uni-heidelberg.de status code %d" % result.getcode())
+                    statusmessage.append("%s status code %d" % (hostname, result.getcode()))
                 else:
-                    statusmessage.append("www.stw.uni-heidelberg.de %r" % e)
-                print(e)
+                    statusmessage.append("%s %r" % (hostname, e))
+                print("%s %r" % (hostname, e))
             except BaseException as e:
-                statusmessage.append("www.stw.uni-heidelberg.de %r" % e)
-                print(e)
+                statusmessage.append("%s %r" % (hostname,e))
+                print("%s %r" % (hostname,e))
 
         if not statusmessage:
             statusmessage = "Ok"
