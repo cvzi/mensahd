@@ -2,6 +2,7 @@
 import os
 import logging
 import lxml.etree
+import defusedxml.lxml
 import urllib.request
 
 include = os.path.relpath(os.path.join(os.path.dirname(__file__), '..'))
@@ -28,8 +29,8 @@ def check_meta(content):
 
     # Check syntax
     try:
-        lxml.etree.fromstring(content.encode('utf8'), xmlParser)
-    except etree.XMLSyntaxError as error:
+        defusedxml.lxml.fromstring(content.encode('utf8'), xmlParser)
+    except lxml.etree.XMLSyntaxError as error:
         print("- Invalid document: %s" % str(error))
 
     # Content length
