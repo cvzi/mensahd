@@ -52,7 +52,7 @@ def check_feed(content, encoding='utf8'):
         else:
             content = content.decode(encoding)
 
-        lxml.etree.fromstring(source, xmlParser)
+        defusedxml.lxml.fromstring(source, xmlParser)
     except lxml.etree.XMLSyntaxError as error:
         print("- Invalid document: %s" % str(error))
         return False
