@@ -4,6 +4,7 @@
 
 import urllib.request
 import lxml.etree
+import defusedxml.lxml
 import datetime
 import pytz
 import os
@@ -135,9 +136,9 @@ def _generateFeed(source, name, date='', lastFetched=0):
 
     name = nameMap[name]
 
-    dom = lxml.etree.parse(source)
-    xslt_tree = lxml.etree.parse(xslFile)
-    xslt = lxml.etree.XSLT(xslt_tree )
+    dom = defusedxml.lxml.parse(source)
+    xslt_tree = defusedxml.lxml.parse(xslFile)
+    xslt = lxml.etree.XSLT(xslt_tree)
     newdom = xslt(dom, canteenName=lxml.etree.XSLT.strparam(name), canteenDesiredName=lxml.etree.XSLT.strparam(desiredName[name]), specificDate=lxml.etree.XSLT.strparam(date), lastFetched=lxml.etree.XSLT.strparam('%d' % lastFetched))
     return lxml.etree.tostring(newdom, pretty_print=True)
 
@@ -274,5 +275,5 @@ def getParser(baseurl):
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
-    print(getParser("http://localhost/").feed_today("inf304"))
+    print(getParser("http://localhost/").feed_all("inf304"))
 
