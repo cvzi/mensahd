@@ -36,7 +36,7 @@ daysGerman = ["Montag", "Dienstag", "Mittwoch",
 roles = ('student', 'employee', 'other')
 
 
-def correctCapitalization(s): 
+def correctCapitalization(s):
     return s[0].upper() + s[1:].lower()
 
 
@@ -126,11 +126,11 @@ def parse_url(url, today=False):
             price = float(euro_regex.search(
                 td3.text).group(1).replace(",", "."))
             prices.append(price)
-            if employee != None:
+            if employee is not None:
                 prices.append(employee)
             else:
                 prices.append(price*employee_multiplier)
-            if guest != None:
+            if guest is not None:
                 prices.append(guest)
             else:
                 prices.append(price*guest_multiplier)
