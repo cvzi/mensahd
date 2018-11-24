@@ -7,6 +7,7 @@ import urllib.request
 include = os.path.relpath(os.path.join(os.path.dirname(__file__), '..'))
 sys.path.insert(0, include)
 
+
 def downloadFile(url, filename="file.tmp"):
     if not os.path.isfile(filename):
         if not url.startswith("http://") and not url.startswith("https://"):
@@ -18,10 +19,12 @@ def downloadFile(url, filename="file.tmp"):
     return os.path.abspath(filename)
 
 
-xmlParser = lxml.etree.XMLParser(schema=lxml.etree.XMLSchema(file=downloadFile('http://openmensa.org/open-mensa-v2.xsd', 'open-mensa-v2.xsd')))
+xmlParser = lxml.etree.XMLParser(schema=lxml.etree.XMLSchema(file=downloadFile(
+    'http://openmensa.org/open-mensa-v2.xsd', 'open-mensa-v2.xsd')))
+
 
 def check_meta(content):
-    print("Content",end="")
+    print("Content", end="")
 
     # Check syntax
     try:
@@ -38,7 +41,7 @@ def check_meta(content):
 
 
 def check_feed(content, encoding='utf8'):
-    print("Content",end="")
+    print("Content", end="")
 
     # Check syntax
     try:
@@ -56,7 +59,7 @@ def check_feed(content, encoding='utf8'):
     # Content length
     if len(content) < 300:
         print(" - Looks empty.")
-    elif len(content)< 360:
+    elif len(content) < 360:
         print(" - Looks closed.")
     else:
         print(" - Ok.")
@@ -135,13 +138,7 @@ def run_all():
             print("Ok.")
 
 
-
-
 if __name__ == '__main__':
-    #logging.basicConfig(level=logging.DEBUG)
+    # logging.basicConfig(level=logging.DEBUG)
     logging.basicConfig(level=logging.WARNING)
     run_all()
-
-
-
-
