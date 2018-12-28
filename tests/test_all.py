@@ -31,11 +31,11 @@ def check_meta(content, name=''):
     try:
         defusedxml.lxml.fromstring(content.encode('utf8'), xmlParser)
     except lxml.etree.XMLSyntaxError as error:
-        raise RuntimeWarning("Invalid document meta %s: %s" % (name, str(error)))
+        raise RuntimeWarning("Invalid document meta [%s]: %s" % (name, str(error)))
 
     # Content length
     if len(content) < 450:
-        print(" -> Probably too short.", file=sys.stderr)
+        print(" -> Probably too short. [%s]" % (name, ), file=sys.stderr)
         return False
     else:
         print(" -> Ok.")
@@ -55,32 +55,33 @@ def check_feed(content, encoding='utf8', name=''):
 
         defusedxml.lxml.fromstring(source, xmlParser)
     except lxml.etree.XMLSyntaxError as error:
-        raise RuntimeWarning("Invalid document feed %s: %s" % (name, str(error)))
+        raise RuntimeWarning("Invalid document feed [%s]: %s" % (name, str(error)))
 
     # Content length
     if len(content) < 300:
-        raise RuntimeWarning("%s probably empty feed." % (name,))
+        raise RuntimeWarning("[%s] probably empty feed." % (name,))
     elif len(content) < 360:
-        print(" -> Probably closed.", file=sys.stderr)
+        print(" -> Probably closed. [%s]" % (name, ), file=sys.stderr)
     else:
         print(" -> Ok.")
 
     # Count closed days:
     closed = content.count('<closed')
     if closed > 0:
-        print("Found closed days: %d" % closed, file=sys.stderr)
+        print("Found closed days: %d [%s]" % closed, file=sys.stderr)
 
     return True
 
 
 def check_xml(parser, canteen):
-    print("Canteen: %s/%s" % (parser.__module__, canteen))
+    name = "%s/%s" % (parser.__module__, canteen)
+    print("Canteen: %s" % (name, ))
 
     print("meta()", end="")
     content = parser.meta(canteen)
     print(" -> Ok.")
     print("meta() ", end="")
-    check_meta(content, name=canteen)
+    check_meta(content, name=name)
 
     has_feed = 0
 
@@ -89,7 +90,7 @@ def check_xml(parser, canteen):
         content = parser.feed_today(canteen)
         print(" -> Ok.")
         print("feed_today() ", end="")
-        check_feed(content, name=canteen)
+        check_feed(content, name=name)
         has_feed += 1
 
     if hasattr(parser, "feed_all"):
@@ -97,7 +98,7 @@ def check_xml(parser, canteen):
         content = parser.feed_all(canteen)
         print(" -> Ok.")
         print("feed_all() ", end="")
-        check_feed(content, name=canteen)
+        check_feed(content, name=name)
         has_feed += 1
 
     if hasattr(parser, "feed"):
@@ -105,11 +106,11 @@ def check_xml(parser, canteen):
         content = parser.feed(canteen)
         print(" -> Ok.")
         print("feed() ", end="")
-        check_feed(content, name=canteen)
+        check_feed(content, name=name)
         has_feed += 1
 
     if has_feed == 0:
-        raise RuntimeWarning("No feeds found for %s." % (canteen, ))
+        raise RuntimeWarning("No feeds found for [%s]." % (name, ))
 
 
 def test_all_modules():
