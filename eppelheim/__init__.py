@@ -89,8 +89,23 @@ def parse_url(url, today=False):
         p["from"] += p["to"].split(".")[2]
     fromdate = datetime.datetime.strptime(p["from"], "%d.%m.%Y")
 
-    trs = document.find("div", {"class": "maincontent"}).find(
-        "table").find_all("tr")
+    maincontent = document.find("div", {"class": "maincontent"})
+    table = maincontent.find("table")
+    if not table:
+        if maincontent:
+            # Die Speisenausgabe DHBW Eppelheim ist vom dd.mm.yyyy – dd.mm.yyyy geschlossen
+            p = datespan_regex.search(maincontent.text)
+            if p:
+                fromdate = datetime.datetime.strptime(p["from"], "%d.%m.%Y")
+                todate = datetime.datetime.strptime(p["to"], "%d.%m.%Y")         
+                while fromdate <= todate:
+                    canteen.setDayClosed(fromdate.strftime('%d.%m.%Y'))
+                    fromdate += datetime.timedelta(1)
+        
+        return canteen.toXMLFeed()
+
+    
+    trs = table.find_all("tr")
 
     date = None
     for tr in trs:
