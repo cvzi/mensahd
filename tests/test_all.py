@@ -35,7 +35,7 @@ def check_meta(content, name=''):
 
     # Content length
     if len(content) < 450:
-        print(" -> Probably too short. [%s]" % (name, ), file=sys.stderr)
+        print(" -> Probably too short meta. [%s]" % (name, ), file=sys.stderr)
         return False
     else:
         print(" -> Ok.")
@@ -68,7 +68,7 @@ def check_feed(content, encoding='utf8', name=''):
     # Count closed days:
     closed = content.count('<closed')
     if closed > 0:
-        print("Found closed days: %d [%s]" % closed, file=sys.stderr)
+        print("Found closed days: %d [%s]" % (closed, name), file=sys.stderr)
 
     return True
 
