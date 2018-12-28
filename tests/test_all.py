@@ -24,24 +24,25 @@ xmlParser = lxml.etree.XMLParser(schema=lxml.etree.XMLSchema(file=downloadFile(
     'http://openmensa.org/open-mensa-v2.xsd', 'open-mensa-v2.xsd')))
 
 
-def check_meta(content):
+def check_meta(content, name=''):
     print("Content", end="")
 
     # Check syntax
     try:
         defusedxml.lxml.fromstring(content.encode('utf8'), xmlParser)
     except lxml.etree.XMLSyntaxError as error:
-        print("- Invalid document: %s" % str(error))
+        raise RuntimeWarning("Invalid document meta %s: %s" % (name, str(error)))
 
     # Content length
     if len(content) < 450:
-        print(" - Looks too short.")
+        print(" -> Probably too short.", file=sys.stderr)
+        return False
     else:
-        print(" - Ok.")
+        print(" -> Ok.")
     return True
 
 
-def check_feed(content, encoding='utf8'):
+def check_feed(content, encoding='utf8', name=''):
     print("Content", end="")
 
     # Check syntax
@@ -54,72 +55,71 @@ def check_feed(content, encoding='utf8'):
 
         defusedxml.lxml.fromstring(source, xmlParser)
     except lxml.etree.XMLSyntaxError as error:
-        print("- Invalid document: %s" % str(error))
-        return False
+        raise RuntimeWarning("Invalid document feed %s: %s" % (name, str(error)))
 
     # Content length
     if len(content) < 300:
-        print(" - Looks empty.")
+        raise RuntimeWarning("%s probably empty feed." % (name,))
     elif len(content) < 360:
-        print(" - Looks closed.")
+        print(" -> Probably closed.", file=sys.stderr)
     else:
-        print(" - Ok.")
+        print(" -> Ok.")
 
     # Count closed days:
     closed = content.count('<closed')
     if closed > 0:
-        print("Found closed days: %d" % closed)
+        print("Found closed days: %d" % closed, file=sys.stderr)
 
     return True
 
 
 def check_xml(parser, canteen):
-    print("Canteen: %s" % canteen)
+    print("Canteen: %s/%s" % (parser.__module__, canteen))
 
     print("meta()", end="")
     content = parser.meta(canteen)
-    print(" - Ok.")
+    print(" -> Ok.")
     print("meta() ", end="")
-    check_meta(content)
+    check_meta(content, name=canteen)
 
     has_feed = 0
 
     if hasattr(parser, "feed_today"):
         print("feed_today()", end="")
         content = parser.feed_today(canteen)
-        print(" - Ok.")
+        print(" -> Ok.")
         print("feed_today() ", end="")
-        check_feed(content)
+        check_feed(content, name=canteen)
         has_feed += 1
 
     if hasattr(parser, "feed_all"):
         print("feed_all()", end="")
         content = parser.feed_all(canteen)
-        print(" - Ok.")
+        print(" -> Ok.")
         print("feed_all() ", end="")
-        check_feed(content)
+        check_feed(content, name=canteen)
         has_feed += 1
 
     if hasattr(parser, "feed"):
         print("feed()", end="")
         content = parser.feed(canteen)
-        print(" - Ok.")
+        print(" -> Ok.")
         print("feed() ", end="")
-        check_feed(content)
+        check_feed(content, name=canteen)
         has_feed += 1
 
     if has_feed == 0:
-        print("! No feeds found.")
+        raise RuntimeWarning("No feeds found for %s." % (canteen, ))
 
 
 def test_all_modules():
     moduleNames = ['eppelheim', 'heidelberg', 'koeln', 'mannheim', 'stuttgart']
 
-    print("Importing", end="")
+    print("Importing %s" % (", ".join(moduleNames), ), end="")
 
     modules = map(__import__, moduleNames)
 
-    print(" - Ok.")
+    print(" -> Ok.")
 
     for mod in modules:
         print("Module: %s" % mod.__name__)
