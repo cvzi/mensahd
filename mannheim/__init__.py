@@ -79,6 +79,8 @@ def parse_url(url, today=False):
     firstTr = True
     previous = None   # previous tr row
     for tr in trs:
+        closed = False
+        mealsFound = False
         if firstTr:
             # First table row contains the names of the different categories
             firstTr = False
@@ -96,59 +98,63 @@ def parse_url(url, today=False):
                                     "data-date"]).group('date')
 
             if "geschlossen" == previous.find_all("td")[1].text.strip():
-                canteen.setDayClosed(date)
-            else:
-                cat = 0
-                for td0, td1 in zip(previous.find_all("td")[1:], tr.find_all("td")):
-                    if "heute kein Angebot" in td0.text or "geschlossen" in td0.text:
-                        cat += 1
-                        continue
+                closed = date
 
-                    notes = []
-
-                    # Category
-                    if td0.find("h2"):
-                        categoryName = canteenCategories[cat] + " " + \
-                            correctCapitalization(td0.find("h2").text.strip())
-                    else:
-                        categoryName = canteenCategories[cat]
-
-                    if "Kubusangebote am Themenpark" in td0.text:
-                        canteen.addMeal(date, categoryName,
-                                        "Kubusangebote am Themenpark", [])
-                        cat += 1
-                        continue
-
-                    # Name
-                    if td0.find("p"):
-                        name = removeextras_regex.sub("", td0.find("p").text)
-                    else:
-                        name = categoryName  # No name available, let's just use the category name
-
-                    # Prices
-                    prices = []
-                    spans = td1.find_all("span", {"class": "label"})
-                    if spans:
-                        try:
-                            price = float(euro_regex.search(
-                                spans[0].text).group(1).replace(",", "."))
-                        except (AttributeError, TypeError, KeyError, ValueError):
-                            notes.append(spans[0].text.strip()+" Preis")
-                        if len(spans) == 2:
-                            notes.append(spans[1].text.strip()+" Preis")
-                        prices = (price, price*employee_multiplier,
-                                  price*guest_multiplier)
-
-                    # Notes: vegan, vegetarisch, ...
-                    notes += [icon["title"]
-                              for icon in td1.find_all("span", {"class": "icon"})]
-
-                    canteen.addMeal(date, categoryName, name,
-                                    notes, prices, roles if prices else None)
+            cat = 0
+            for td0, td1 in zip(previous.find_all("td")[1:], tr.find_all("td")):
+                if "heute kein Angebot" in td0.text or "geschlossen" in td0.text:
                     cat += 1
+                    continue
+
+                notes = []
+
+                # Category
+                if td0.find("h2"):
+                    categoryName = canteenCategories[cat] + " " + \
+                        correctCapitalization(td0.find("h2").text.strip())
+                else:
+                    categoryName = canteenCategories[cat]
+
+                if "Kubusangebote am Themenpark" in td0.text:
+                    canteen.addMeal(date, categoryName,
+                                    "Kubusangebote am Themenpark", [])
+                    cat += 1
+                    continue
+
+                # Name
+                if td0.find("p"):
+                    name = removeextras_regex.sub("", td0.find("p").text)
+                else:
+                    name = categoryName  # No name available, let's just use the category name
+
+                # Prices
+                prices = []
+                spans = td1.find_all("span", {"class": "label"})
+                if spans:
+                    try:
+                        price = float(euro_regex.search(
+                            spans[0].text).group(1).replace(",", "."))
+                    except (AttributeError, TypeError, KeyError, ValueError):
+                        notes.append(spans[0].text.strip()+" Preis")
+                    if len(spans) == 2:
+                        notes.append(spans[1].text.strip()+" Preis")
+                    prices = (price, price*employee_multiplier,
+                              price*guest_multiplier)
+
+                # Notes: vegan, vegetarisch, ...
+                notes += [icon["title"]
+                          for icon in td1.find_all("span", {"class": "icon"})]
+
+                canteen.addMeal(date, categoryName, name,
+                                notes, prices, roles if prices else None)
+
+                mealsFound = True
+                cat += 1
 
             previous = None
-
+        if not mealsFound and closed:
+            canteen.setDayClosed(closed)
+        
     return canteen.toXMLFeed()
 
 
