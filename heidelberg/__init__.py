@@ -16,13 +16,15 @@ import logging
 from threading import Lock
 
 mealsURL = 'https://www.stw.uni-heidelberg.de/appdata/sp.xml'
-if os.path.isfile(os.path.join(os.path.dirname(__file__), ".password.txt")):
-    with open(os.path.join(os.path.dirname(__file__), ".password.txt")) as af:
+mealsURL_authorization = False
+if os.path.isfile(os.path.join(os.path.dirname(__file__), '.password.txt')):
+    with open(os.path.join(os.path.dirname(__file__), '.password.txt')) as af:
         mealsURL_authorization = af.read()
 else:
-    mealsURL_authorization = os.getenv("HEIDELBERG_AUTH")
+    mealsURL_authorization = os.getenv('HEIDELBERG_AUTH')
+
 if not mealsURL_authorization:
-    raise RuntimeError("Authentication data has not been provided")
+    raise RuntimeError("Authentication data not found")
 
 metaURL = 'https://www.stw.uni-heidelberg.de/sites/default/files/download/pdf/stwhd-de.json'
 __timeoutSeconds = 20
