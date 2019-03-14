@@ -40,11 +40,11 @@ def correctCapitalization(s):
     return s[0].upper() + s[1:].lower()
 
 
-day_regex = re.compile('(?P<date>\d{2}\.\d{2}\.\d{4})')
-removeextras_regex = re.compile('\s+\[(\w,?)+\]')
-price_employee_regex = re.compile('Dozenten\s*\((?P<employee>\d+,\d+)')
-price_guest_regex = re.compile('Gäste\s*\((?P<employee>\d+,\d+)')
-euro_regex = re.compile('(\d+,\d+) €')
+day_regex = re.compile(r'(?P<date>\d{2}\.\d{2}\.\d{4})')
+removeextras_regex = re.compile(r'\s+\[(\w,?)+\]')
+price_employee_regex = re.compile(r'Dozenten\s*\((?P<employee>\d+,\d+)')
+price_guest_regex = re.compile(r'Gäste\s*\((?P<employee>\d+,\d+)')
+euro_regex = re.compile(r'(\d+,\d+) €')
 datespan_regex = re.compile(
     '(?P<from>\d+\.\d+\.\d{0,4})\s*–\s*(?P<to>\d+\.\d+\.\d{0,4})')
 
@@ -70,11 +70,11 @@ def parse_url(url, today=False):
     try:
         p = price_employee_regex.search(document.find("main").text).groupdict()
         employee = float(p["employee"].split(",")[0]) + \
-            float(p["employee"].split(",")[1])/100
+            float(p["employee"].split(",")[1]) / 100
 
         p = price_guest_regex.search(document.find("main").text).groupdict()
         guest = float(p["employee"].split(",")[0]) + \
-            float(p["employee"].split(",")[1])/100
+            float(p["employee"].split(",")[1]) / 100
     except (AttributeError, TypeError, KeyError, ValueError):
         employee_multiplier = 1.25
         guest_multiplier = 1.60
@@ -93,18 +93,18 @@ def parse_url(url, today=False):
     table = maincontent.find("table")
     if not table:
         if maincontent:
-            # Die Speisenausgabe DHBW Eppelheim ist vom dd.mm.yyyy – dd.mm.yyyy geschlossen
+            # Die Speisenausgabe DHBW Eppelheim ist vom dd.mm.yyyy – dd.mm.yyyy
+            # geschlossen
             p = datespan_regex.search(maincontent.text)
             if p:
                 fromdate = datetime.datetime.strptime(p["from"], "%d.%m.%Y")
-                todate = datetime.datetime.strptime(p["to"], "%d.%m.%Y")         
+                todate = datetime.datetime.strptime(p["to"], "%d.%m.%Y")
                 while fromdate <= todate:
                     canteen.setDayClosed(fromdate.strftime('%d.%m.%Y'))
                     fromdate += datetime.timedelta(1)
-        
+
         return canteen.toXMLFeed()
 
-    
     trs = table.find_all("tr")
 
     date = None
@@ -144,11 +144,11 @@ def parse_url(url, today=False):
             if employee is not None:
                 prices.append(employee)
             else:
-                prices.append(price*employee_multiplier)
+                prices.append(price * employee_multiplier)
             if guest is not None:
                 prices.append(guest)
             else:
-                prices.append(price*guest_multiplier)
+                prices.append(price * guest_multiplier)
         except (AttributeError, TypeError, KeyError, ValueError):
             notes.append(td3.text.strip())
 
@@ -225,7 +225,7 @@ class Parser:
         self.canteens = {}
 
     def define(self, name, suffix):
-        self.canteens[name] = self.shared_prefix+suffix
+        self.canteens[name] = self.shared_prefix + suffix
 
     def json(self):
         tmp = self.canteens.copy()

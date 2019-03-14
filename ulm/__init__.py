@@ -11,7 +11,8 @@ from pyopenmensa.feed import OpenMensaCanteen
 
 metaJson = os.path.join(os.path.dirname(__file__), "ulm.json")
 
-metaTemplateFile = os.path.join(os.path.dirname(__file__), "metaTemplate_ulm.xml")
+metaTemplateFile = os.path.join(
+    os.path.dirname(__file__), "metaTemplate_ulm.xml")
 
 template_metaURL = "%sulm/meta/%s.xml"
 template_fullURL = "%sulm/feed/%s.xml"
@@ -29,11 +30,14 @@ weekdaysMap = [
 price_roles_regex = re.compile(r'€\s*(?P<price>\d+[,.]\d{2})')
 price_single_regex = re.compile(r'(?P<price>\d+[,.]\d{2})\s*€')
 date_regex = re.compile(r'(?P<date>\d{4}-\d{2}-\d{2})')
-remove_notes_regex = re.compile(r'\([A-Z0-9,\s]*\)\s*')  # Strip notes from meal
-remove_uppercase_regex = re.compile('[A-Z]{3,}')  # Strip uppercase from meal_raw
+remove_notes_regex = re.compile(
+    r'\([A-Z0-9,\s]*\)\s*')  # Strip notes from meal
+remove_uppercase_regex = re.compile(
+    '[A-Z]{3,}')  # Strip uppercase from meal_raw
 
 roles = ('student', 'employee', 'other')
-weekdays = ('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday')
+weekdays = ('Monday', 'Tuesday', 'Wednesday',
+            'Thursday', 'Friday', 'Saturday', 'Sunday')
 default_category = "Essen"
 
 legend = {
@@ -83,7 +87,8 @@ def _from_json(canteen, url, place):
                 today = datetime.date.today()
                 weekday = weekdays.index(day['date'])
                 till_next = (weekday - today.weekday() + 7) % 7
-                date = (today + datetime.timedelta(days=till_next)).strftime('%Y-%m-%d')
+                date = (today + datetime.timedelta(days=till_next)
+                        ).strftime('%Y-%m-%d')
 
             mensa = day[place]
 
@@ -98,7 +103,8 @@ def _from_json(canteen, url, place):
                 if 'price' in meal and meal['price']:
                     prices = price_roles_regex.findall(meal['price'])
                     if not prices and price_single_regex.search(meal['price']):
-                        prices = [price_single_regex.search(meal['price']).group('price')]
+                        prices = [price_single_regex.search(
+                            meal['price']).group('price')]
                 else:
                     prices = []
 
@@ -107,7 +113,8 @@ def _from_json(canteen, url, place):
                 if 'meal_raw' in meal:
                     try:
                         # Remove duplicate info from meal_raw
-                        raw = remove_uppercase_regex.sub('', meal['meal_raw'].strip()).strip(' /')
+                        raw = remove_uppercase_regex.sub(
+                            '', meal['meal_raw'].strip()).strip(' /')
                         raw_parts = raw.split()
                         name_parts = name.split()
                         for x in name_parts:
@@ -116,7 +123,8 @@ def _from_json(canteen, url, place):
                         raw = ' '.join(raw_parts)
 
                         # Split at whitespace, round brackets and comma
-                        raw = raw.replace('(', ' ').replace(')', ' ').replace(',', ' ')
+                        raw = raw.replace('(', ' ').replace(
+                            ')', ' ').replace(',', ' ')
                         tags = [s.strip() for s in raw.split() if s.strip()]
 
                         # Convert via legend
@@ -125,22 +133,27 @@ def _from_json(canteen, url, place):
                                 notes.append(legend[tag])
                             else:
                                 notes.append(tag)
-                    except Exception:
+                    except Exception as e:
                         # traceback.print_exc()
-                        pass
+                        logging.warning("Could not generate notes: %r" % (e,))
 
                 if name:
-                    canteen.addMeal(date, meal['category'], name, notes, prices, roles)
+                    canteen.addMeal(
+                        date, meal['category'], name, notes, prices, roles)
                 else:
-                    # No meal name -> use category as name and a default category
-                    canteen.addMeal(date, default_category, meal['category'], notes, prices, roles)
+                    # No meal name -> use category as name and a default
+                    # category
+                    canteen.addMeal(date, default_category,
+                                    meal['category'], notes, prices, roles)
+
 
 def _parse_url(sourcepage, filename, place):
     canteen = OpenMensaCanteen()
     _from_json(canteen, sourcepage + filename, place)
     return canteen.toXMLFeed()
 
-def _generateCanteenMeta(obj, name,  baseurl):
+
+def _generateCanteenMeta(obj, name, baseurl):
     """Generate an openmensa XML meta feed from the static json file using an XML template"""
     template = open(metaTemplateFile).read()
 
@@ -215,11 +228,13 @@ class Parser:
         return _generateCanteenMeta(self.metaObj, name, self.baseurl)
 
     def feed(self, name):
-        return _parse_url(self.sourceurl, self.canteens[name][0], self.canteens[name][1])
+        return _parse_url(
+            self.sourceurl, self.canteens[name][0], self.canteens[name][1])
 
 
 def getParser(baseurl):
-    parser = Parser(baseurl, sourceurl='https://www.uni-ulm.de/mensaplan/data/')
+    parser = Parser(
+        baseurl, sourceurl='https://www.uni-ulm.de/mensaplan/data/')
     return parser
 
 
