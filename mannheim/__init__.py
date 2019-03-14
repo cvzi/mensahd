@@ -37,11 +37,11 @@ roles = ('student', 'employee', 'other')
 def correctCapitalization(s): return s[0].upper() + s[1:].lower()
 
 
-day_regex = re.compile('(?P<date>\d{2}\.\d{2}\.\d{4})')
-removeextras_regex = re.compile('\s+\[(\w,?)+\]')
+day_regex = re.compile(r'(?P<date>\d{2}\.\d{2}\.\d{4})')
+removeextras_regex = re.compile(r'\s+\[(\w,?)+\]')
 price_regex = re.compile(
     'Bedienstete \+ (?P<employee>\d+)\%, Gäste \+ (?P<guest>\d+)\%')
-euro_regex = re.compile('(\d+,\d+) €')
+euro_regex = re.compile(r'(\d+,\d+) €')
 
 
 def parse_url(url, today=False):
@@ -101,7 +101,8 @@ def parse_url(url, today=False):
                 closed = date
 
             cat = 0
-            for td0, td1 in zip(previous.find_all("td")[1:], tr.find_all("td")):
+            for td0, td1 in zip(previous.find_all("td")[
+                                1:], tr.find_all("td")):
                 if "heute kein Angebot" in td0.text or "geschlossen" in td0.text:
                     cat += 1
                     continue
@@ -135,11 +136,11 @@ def parse_url(url, today=False):
                         price = float(euro_regex.search(
                             spans[0].text).group(1).replace(",", "."))
                     except (AttributeError, TypeError, KeyError, ValueError):
-                        notes.append(spans[0].text.strip()+" Preis")
+                        notes.append(spans[0].text.strip() + " Preis")
                     if len(spans) == 2:
-                        notes.append(spans[1].text.strip()+" Preis")
-                    prices = (price, price*employee_multiplier,
-                              price*guest_multiplier)
+                        notes.append(spans[1].text.strip() + " Preis")
+                    prices = (price, price * employee_multiplier,
+                              price * guest_multiplier)
 
                 # Notes: vegan, vegetarisch, ...
                 notes += [icon["title"]
@@ -154,7 +155,7 @@ def parse_url(url, today=False):
             previous = None
         if not mealsFound and closed:
             canteen.setDayClosed(closed)
-        
+
     return canteen.toXMLFeed()
 
 
@@ -224,7 +225,7 @@ class Parser:
         self.canteens = {}
 
     def define(self, name, suffix):
-        self.canteens[name] = self.shared_prefix+suffix
+        self.canteens[name] = self.shared_prefix + suffix
 
     def json(self):
         tmp = self.canteens.copy()
