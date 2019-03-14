@@ -20,7 +20,6 @@ from ulm import getParser as getulm
 
 
 if __name__ == '__main__':
-    import sys
     include = os.path.relpath(os.path.join(os.path.dirname(__file__), ".."))
     sys.path.insert(0, include)
 
