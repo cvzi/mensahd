@@ -202,16 +202,16 @@ def _generateCanteenMeta(obj, name,  baseurl):
         m = re.findall(pattern, infokurz)
         for result in m:
             fromDay, _, toDay, fromTimeH, fromTimeM, toTimeH, toTimeM = result
-            openingTimes[fromDay] = "%s:%s-%s:%s" % (
-                fromTimeH, fromTimeM, toTimeH, toTimeM)
+            openingTimes[fromDay] = "%02d:%02d-%02d:%02d" % (
+                int(fromTimeH), int(fromTimeM), int(toTimeH), int(toTimeM))
             if toDay:
                 select = False
                 for short, long in weekdaysMap:
                     if short == fromDay:
                         select = True
                     elif select:
-                        openingTimes[short] = "%s:%s-%s:%s" % (
-                            fromTimeH, fromTimeM, toTimeH, toTimeM)
+                        openingTimes[short] = "%02d:%02d-%02d:%02d" % (
+                            int(fromTimeH), int(fromTimeM), int(toTimeH), int(toTimeM))
                     if short == toDay:
                         select = False
 
