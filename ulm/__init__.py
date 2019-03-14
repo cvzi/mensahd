@@ -102,9 +102,14 @@ def _from_json(canteen, url, place):
                 # Prices
                 if 'price' in meal and meal['price']:
                     prices = price_roles_regex.findall(meal['price'])
+                    if len(prices) > len(roles):
+                        prices = prices[0:len(roles)]
                     if not prices and price_single_regex.search(meal['price']):
                         prices = [price_single_regex.search(
                             meal['price']).group('price')]
+                        if len(prices) > len(roles):
+                            prices = prices[0:len(roles)]
+
                 else:
                     prices = []
 
@@ -166,7 +171,7 @@ def _generateCanteenMeta(obj, name, baseurl):
 
         data = {
             "name": mensa["name"],
-            "adress": "%s %s %s %s" % (mensa["name"], mensa["strasse"], mensa["plz"], mensa["ort"]),
+            "adress": "%s, %s %s" % (mensa["strasse"], mensa["plz"], mensa["ort"]),
             "city": mensa["ort"],
             "phone": mensa["phone"],
             "latitude": mensa["latitude"],
@@ -181,16 +186,16 @@ def _generateCanteenMeta(obj, name, baseurl):
         m = re.findall(pattern, infokurz)
         for result in m:
             fromDay, _, toDay, fromTimeH, fromTimeM, toTimeH, toTimeM = result
-            openingTimes[fromDay] = "%s:%s-%s:%s" % (
-                fromTimeH, fromTimeM, toTimeH, toTimeM)
+            openingTimes[fromDay] = "%02d:%02d-%02d:%02d" % (
+                int(fromTimeH), int(fromTimeM), int(toTimeH), int(toTimeM))
             if toDay:
                 select = False
                 for short, long in weekdaysMap:
                     if short == fromDay:
                         select = True
                     elif select:
-                        openingTimes[short] = "%s:%s-%s:%s" % (
-                            fromTimeH, fromTimeM, toTimeH, toTimeM)
+                        openingTimes[short] = "%02d:%02d-%02d:%02d" % (
+                            int(fromTimeH), int(fromTimeM), int(toTimeH), int(toTimeM))
                     if short == toDay:
                         select = False
 
@@ -240,5 +245,5 @@ def getParser(baseurl):
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
-    print(getParser("http://localhost/").feed("unimensa"))
-    print(getParser("http://localhost/").meta("unimensa"))
+    print(getParser("http://localhost/").feed("cafeb"))
+    print(getParser("http://localhost/").meta("cafeb"))
