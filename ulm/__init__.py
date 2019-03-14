@@ -9,8 +9,22 @@ import urllib.request
 
 from pyopenmensa.feed import OpenMensaCanteen
 
+metaJson = os.path.join(os.path.dirname(__file__), "ulm.json")
+
+metaTemplateFile = os.path.join(os.path.dirname(__file__), "metaTemplate_ulm.xml")
+
 template_metaURL = "%sulm/meta/%s.xml"
 template_fullURL = "%sulm/feed/%s.xml"
+
+weekdaysMap = [
+    ("Mo", "monday"),
+    ("Di", "tuesday"),
+    ("Mi", "wednesday"),
+    ("Do", "thursday"),
+    ("Fr", "friday"),
+    ("Sa", "saturday"),
+    ("So", "sunday")
+]
 
 price_roles_regex = re.compile(r'€\s*(?P<price>\d+[,.]\d{2})')
 price_single_regex = re.compile(r'(?P<price>\d+[,.]\d{2})\s*€')
@@ -126,6 +140,58 @@ def _parse_url(sourcepage, filename, place):
     _from_json(canteen, sourcepage + filename, place)
     return canteen.toXMLFeed()
 
+def _generateCanteenMeta(obj, name,  baseurl):
+    """Generate an openmensa XML meta feed from the static json file using an XML template"""
+    template = open(metaTemplateFile).read()
+
+    for mensa in obj["mensen"]:
+        if not mensa["xml"]:
+            continue
+
+        if name != mensa["xml"]:
+            continue
+
+        data = {
+            "name": mensa["name"],
+            "adress": "%s %s %s %s" % (mensa["name"], mensa["strasse"], mensa["plz"], mensa["ort"]),
+            "city": mensa["ort"],
+            "phone": mensa["phone"],
+            "latitude": mensa["latitude"],
+            "longitude": mensa["longitude"],
+            "feed_full": template_fullURL % (baseurl, urllib.parse.quote(mensa["xml"])),
+            "source_full": mensa["source_week"],
+        }
+        openingTimes = {}
+        infokurz = mensa["infokurz"]
+        pattern = re.compile(
+            "([A-Z][a-z])( - ([A-Z][a-z]))? (\d{1,2})\.(\d{2}) - (\d{1,2})\.(\d{2}) Uhr")
+        m = re.findall(pattern, infokurz)
+        for result in m:
+            fromDay, _, toDay, fromTimeH, fromTimeM, toTimeH, toTimeM = result
+            openingTimes[fromDay] = "%s:%s-%s:%s" % (
+                fromTimeH, fromTimeM, toTimeH, toTimeM)
+            if toDay:
+                select = False
+                for short, long in weekdaysMap:
+                    if short == fromDay:
+                        select = True
+                    elif select:
+                        openingTimes[short] = "%s:%s-%s:%s" % (
+                            fromTimeH, fromTimeM, toTimeH, toTimeM)
+                    if short == toDay:
+                        select = False
+
+            for short, long in weekdaysMap:
+                if short in openingTimes:
+                    data[long] = 'open="%s"' % openingTimes[short]
+                else:
+                    data[long] = 'closed="true"'
+
+        xml = template.format(**data)
+        return xml
+
+    return '<openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd"/>'
+
 
 class Parser:
     def __init__(self, baseurl, sourceurl):
@@ -160,3 +226,4 @@ def getParser(baseurl):
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
     print(getParser("http://localhost/").feed("unimensa"))
+    print(getParser("http://localhost/").meta("unimensa"))
