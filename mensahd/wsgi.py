@@ -5,14 +5,18 @@ import socket
 import urllib.error
 import urllib.request
 import traceback
+import datetime
+import os
+
+import pytz
+
 from eppelheim import getParser as geteppelheim
 from stuttgart import getParser as getstuttgart
 from koeln import getParser as getkoeln
 from mannheim import getParser as getmannheim
 from heidelberg import getParser as getheidelberg
-import pytz
-import datetime
-import os
+from ulm import getParser as getulm
+
 
 if __name__ == '__main__':
     import sys
@@ -34,6 +38,7 @@ mannheim = getmannheim(baseurl)
 koeln = getkoeln(baseurl)
 stuttgart = getstuttgart(baseurl)
 eppelheim = geteppelheim(baseurl)
+ulm = getulm(baseurl)
 
 
 def timeStrBerlin():
@@ -63,7 +68,7 @@ def application(environ, start_response):
     elif environ['PATH_INFO'] == '/status':
         statusmessage = []
 
-        for url in ("https://www.stw.uni-heidelberg.de/", "https://www.stw-ma.de/", "https://www.max-manager.de/", "https://sws2.maxmanager.xyz"):
+        for url in ("https://www.stw.uni-heidelberg.de/", "https://www.stw-ma.de/", "https://www.max-manager.de/", "https://sws2.maxmanager.xyz/", "https://www.uni-ulm.de/"):
             hostname = url.split("//")[1].split("/")[0]
             try:
                 request = urllib.request.Request(url)
@@ -507,6 +512,68 @@ def application(environ, start_response):
               <li>/eppelheim/meta/{id}.xml</li>
               <li>/eppelheim/feed/{id}.xml</li>
             </ul>"""
+
+    elif environ['PATH_INFO'] == '/ulm/list.json':
+        ctype = 'application/json; charset=utf-8'
+        try:
+            response_body = ulm.json()
+        except Exception as e:
+            ctype = 'text/plain; charset=utf-8'
+            response_body = "An error occured:\n%s\n%s" % (
+                e, traceback.format_exc())
+            status = '503 Service Unavailable'
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
+
+    elif environ['PATH_INFO'].startswith('/ulm/meta/'):
+        ctype = 'application/xml; charset=utf-8'
+        name = environ['PATH_INFO'][10:]
+        if name.endswith(".xml"):
+            name = name[:-4]
+        try:
+            response_body = ulm.meta(name)
+        except Exception as e:
+            ctype = 'text/plain; charset=utf-8'
+            response_body = "An error occured:\n%s\n%s" % (
+                e, traceback.format_exc())
+            status = '503 Service Unavailable'
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
+
+    elif environ['PATH_INFO'].startswith('/ulm/feed/'):
+        ctype = 'application/xml; charset=utf-8'
+        name = environ['PATH_INFO'][10:]
+        if name.endswith(".xml"):
+            name = name[:-4]
+        try:
+            response_body = ulm.feed(name)
+        except (urllib.error.URLError, socket.timeout) as e:
+            ctype = 'text/plain; charset=utf-8'
+            response_body = "Could not connect to www.uni-ulm.de\n\nAn error occured:\n%s\n%s" % (
+                e, traceback.format_exc())
+            status = '533 Open www.uni-ulm.de timed out'
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
+        except Exception as e:
+            ctype = 'text/plain; charset=utf-8'
+            response_body = "An error occured:\n%s\n%s" % (
+                e, traceback.format_exc())
+            status = '503 Service Unavailable'
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
+
+    elif environ['PATH_INFO'] == '/ulm' or environ['PATH_INFO'] == '/ulm/':
+        ctype = 'text/html; charset=utf-8'
+        cache_control = 'public, max-age=86400'
+        response_body = """
+            <h1>mensahd-cuzi for Studierendenwerk Ulm canteens</h1>
+            <div>This is a parser for <a href="https://openmensa.org/">openmensa.org</a>. It fetches and converts public data from <a href="https://www.uni-ulm.de/mensaplan/">https://www.uni-ulm.de/mensaplan/</a></div>
+            <h2>Public interface:</h2>
+            <ul>
+              <li><a href="/">../ Heidelberg</a></li>
+              <li><a href="/ulm"><b>ulm</b></a></li>
+              <li><a href="/ulm/list.json">/ulm/list.json</a></li>
+              <li>/ulm/meta/{id}.xml</li>
+              <li>/ulm/feed/{id}.xml</li>
+            </ul>"""
+
+
 
     else:
         ctype = 'text/html; charset=utf-8'
