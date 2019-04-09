@@ -89,10 +89,16 @@ def _from_json(canteen, url, place):
                 date = (today + datetime.timedelta(days=till_next)
                         ).strftime('%Y-%m-%d')
 
+            if not place in day:
+                continue
+
             mensa = day[place]
 
             if 'open' in mensa and not mensa['open']:
                 canteen.setDayClosed(date)
+                continue
+
+            if not 'meals' in mensa:
                 continue
 
             for meal in mensa['meals']:
