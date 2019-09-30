@@ -116,6 +116,8 @@ def parse_url(url, today=False):
             td0, td1, td2, td3 = tds
 
             day = td0.text.strip()
+            if '(' in day:
+                day = day.split('(')[0].strip()
 
             date = fromdate + datetime.timedelta(days=daysGerman.index(day))
             date = date.strftime('%d.%m.%Y')
@@ -126,7 +128,7 @@ def parse_url(url, today=False):
 
         notes = []
 
-        if "feiertag" in td1.text.lower() or "geschlossen" in td1.text.lower():
+        if "feiertag" in td1.text.lower() or "geschlossen" in td1.text.lower() or  (td0 and "feiertag" in td0.text.lower()):
             canteen.setDayClosed(date)
             continue
 
