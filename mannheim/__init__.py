@@ -74,7 +74,11 @@ def parse_url(url, today=False):
 
     table = document.find("table", {"id": "previewTable"})
     if not table:
-        logging.warn("#previewTable not found: %r\nReturning empty feed" % (url,))
+        # previewTable not found, e.g. temporary closed
+        # Set 7 days closed
+        for i in range(7):
+            canteen.setDayClosed((datetime.date.today() + datetime.timedelta(i)))
+
         return canteen.toXMLFeed()
 
     trs = table.find_all("tr")
