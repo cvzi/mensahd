@@ -72,7 +72,12 @@ def parse_url(url, today=False):
         employee_multiplier = 1.25
         guest_multiplier = 1.60
 
-    trs = document.find("table", {"id": "previewTable"}).find_all("tr")
+    table = document.find("table", {"id": "previewTable"})
+    if not table:
+        logging.warn("#previewTable not found: %r\nReturning empty feed" % (url,))
+        return canteen.toXMLFeed()
+
+    trs = table.find_all("tr")
 
     canteenCategories = []
 
