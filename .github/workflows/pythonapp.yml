@@ -1,4 +1,4 @@
-name: Python application
+name: Test xml meta and feeds
 
 on: [push]
 
@@ -20,3 +20,5 @@ jobs:
         pip install nose
     - name: Test with nose
       run: nosetests
+      env:
+        HEIDELBERG_AUTH: ${{ secrets.HEIDELBERG_AUTH }}
