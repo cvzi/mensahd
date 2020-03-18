@@ -72,7 +72,16 @@ legend = {
 
 
 def _from_json(canteen, url, place):
-    req = urllib.request.urlopen(url)
+    try:
+        req = urllib.request.urlopen(url)
+    except urllib.error.HTTPError as e:
+        if e.status == 404:
+            print(url)
+            print(e)
+            return
+        else:
+            raise e
+
     charset = req.info().get_param('charset') or 'utf-8'
     data = json.loads(req.read().decode(charset, errors='ignore'))
 
@@ -250,5 +259,5 @@ def getParser(baseurl):
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
-    print(getParser("http://localhost/").feed("cafeb"))
-    print(getParser("http://localhost/").meta("cafeb"))
+    print(getParser("http://localhost/").feed("diner"))
+    #print(getParser("http://localhost/").meta("cafeb"))
