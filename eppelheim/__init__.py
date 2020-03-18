@@ -70,6 +70,9 @@ def parse_url(url, today=False):
     h2 = document.find("div", {"class": "maincontent"}).find("h2")
     datematch = datespan_regex.search(h2.text)
     if not datematch and "geschlossen" in h2.text:
+        # Set 7 days closed
+        for i in range(7):
+            canteen.setDayClosed((datetime.date.today() + datetime.timedelta(i)))
         return canteen.toXMLFeed()
     p = datematch.groupdict()
     if len(p["from"].split(".")[2]) == 0:

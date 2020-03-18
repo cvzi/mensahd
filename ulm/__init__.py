@@ -78,6 +78,9 @@ def _from_json(canteen, url, place):
         if e.status == 404:
             print(url)
             print(e)
+            # Set 7 days closed
+            for i in range(7):
+                canteen.setDayClosed((datetime.date.today() + datetime.timedelta(i)))
             return
         else:
             raise e
