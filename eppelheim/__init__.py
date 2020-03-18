@@ -66,6 +66,16 @@ def parse_url(url, today=False):
     document = BeautifulSoup(content, "html.parser")
     canteen = LazyBuilder()
 
+    # Date
+    h2 = document.find("div", {"class": "maincontent"}).find("h2")
+    datematch = datespan_regex.search(h2.text)
+    if not datematch and "geschlossen" in h2.text:
+        return canteen.toXMLFeed()
+    p = datematch.groupdict()
+    if len(p["from"].split(".")[2]) == 0:
+        p["from"] += p["to"].split(".")[2]
+    fromdate = datetime.datetime.strptime(p["from"], "%d.%m.%Y")
+
     # Prices for employees and guests
     try:
         p = price_employee_regex.search(document.find("main").text).groupdict()
@@ -80,14 +90,6 @@ def parse_url(url, today=False):
         guest_multiplier = 1.60
         employee = None
         guest = None
-
-    # Date
-    p = datespan_regex.search(document.find(
-        "div", {"class": "maincontent"}).find("h2").text).groupdict()
-
-    if len(p["from"].split(".")[2]) == 0:
-        p["from"] += p["to"].split(".")[2]
-    fromdate = datetime.datetime.strptime(p["from"], "%d.%m.%Y")
 
     maincontent = document.find("div", {"class": "maincontent"})
     table = maincontent.find("table")
