@@ -79,6 +79,7 @@ def _from_json(canteen, url, place):
             print(url)
             print(e)
             # Set 7 days closed
+            print('Setting week to "closed"')
             for i in range(7):
                 canteen.setDayClosed((datetime.date.today() + datetime.timedelta(i)))
             return
@@ -87,6 +88,13 @@ def _from_json(canteen, url, place):
 
     charset = req.info().get_param('charset') or 'utf-8'
     data = json.loads(req.read().decode(charset, errors='ignore'))
+
+    if not data or 'weeks' not in data or not data['weeks']:
+        print('Empty json file, setting week to "closed"')
+        # Set 7 days closed
+        for i in range(7):
+            canteen.setDayClosed((datetime.date.today() + datetime.timedelta(i)))
+        return
 
     for week in data['weeks']:
         for day in week['days']:
@@ -262,5 +270,5 @@ def getParser(baseurl):
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
-    print(getParser("http://localhost/").feed("diner"))
+    print(getParser("http://localhost/").feed("unimensa"))
     #print(getParser("http://localhost/").meta("cafeb"))
