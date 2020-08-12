@@ -100,7 +100,7 @@ def mensa_info(apiurl, days, canteenid, alternative, canteen=None, day=0):
     try:
         data = r.json()
     except json.decoder.JSONDecodeError as e:
-        print(f"'{url}' response:\n{r.text}")
+        logging.error(f"'{url}' response:\n{r.text}")
         return f"JSONDecodeError: {e}"
 
     if canteen is None:
@@ -108,9 +108,11 @@ def mensa_info(apiurl, days, canteenid, alternative, canteen=None, day=0):
 
     if len(data['menuList']) == 0:
         if type(alternative) is not bool and day == 0:
-            print(f"Trying alternative id {canteenid} -> {alternative}")
+            logging.info(f"Empty menuList {morning.date().isoformat()}. Trying alternative id: {canteenid} -> {alternative}")
             return mensa_info(apiurl, days, alternative, False)
         else:
+            # If empty, stop here, do not try more days
+            logging.info(f"Empty menuList id={canteenid} {morning.date().isoformat()} (day {day + 1} of {days}).")
             return canteen.toXMLFeed()
 
     date = data['date'].split('T')[0]
@@ -127,13 +129,19 @@ def mensa_info(apiurl, days, canteenid, alternative, canteen=None, day=0):
         prices = []
         roles = []
         pricePer = None
+        mainDishes = 1
+        prefix = ""
         for inp in menu['inputs']:
             if inp['name'] == 'inhalt' and inp['value']:
                 document = BeautifulSoup(inp['value'], "html.parser")
                 spans = document.find_all("span")
                 for span in spans:
                     text = next(span.stripped_strings)
-                    if len(text) > 2:
+                    if text == 'oder':
+                        mainDishes += 1
+                    if text in ['mit', 'an']:
+                        prefix = text + " "
+                    elif len(text) > 1 and text != 'und':
                         notes = []
                         if span['class']:
                             notes += [showFilter(data, c[12:]) for c in span['class'] if c.startswith(
@@ -143,7 +151,9 @@ def mensa_info(apiurl, days, canteenid, alternative, canteen=None, day=0):
                             sup = sup.text.strip()[1:-1].split(",")
                             sup = [s.strip() for s in sup]
                             notes += [additive(data, s) for s in sup]
-                        meals.append([text, notes])
+                        notes = [note.strip() for note in notes if note and note.strip()]
+                        meals.append([prefix + text, notes])
+                        prefix = ""
             elif inp['name'] == 'preisStudent' and inp['value']:
                 prices.append(inp['value'])
                 roles.append('student')
@@ -160,11 +170,11 @@ def mensa_info(apiurl, days, canteenid, alternative, canteen=None, day=0):
                     pricePer = 'Preis pro ' + inp['value']
 
         if meals:
-            first = True
+            first = 0
             for meal in meals:
                 mealName, notes = meal
-                if first:
-                    first = False
+                if first < mainDishes:
+                    first += 1
                     if pricePer:
                         notes.insert(0, pricePer)
                     canteen.addMeal(date, categoryName, mealName,
