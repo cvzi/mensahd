@@ -59,7 +59,9 @@ def check_feed(content, encoding='utf8', name=''):
 
     # Content length
     if len(content) < 300:
-        raise RuntimeWarning("[%s] probably empty feed." % (name,))
+        #raise RuntimeWarning("[%s] probably empty feed." % (name,))
+        print(f"[{name}] probably empty feed.")
+        return False
     elif len(content) < 360:
         print(" -> Probably closed. [%s]" % (name, ), file=sys.stderr)
     else:
@@ -122,14 +124,22 @@ def test_all_modules():
 
     print(" -> Ok.")
 
+    errors = []
     for mod in modules:
-        print("Module: %s" % mod.__name__)
+        try:
+            print("Module: %s" % mod.__name__)
 
-        parser = mod.getParser('http://localhost/')
-        canteens = list(parser.canteens.keys())
+            parser = mod.getParser('http://localhost/')
+            canteens = list(parser.canteens.keys())
 
-        for canteen in canteens:
-            check_xml(parser, canteen)
+            for canteen in canteens:
+                check_xml(parser, canteen)
+        except Exception as e:
+            print(e)
+            errors.append(e)
+
+    if errors:
+        raise errors[0]
 
 
 def run_all():
