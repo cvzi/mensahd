@@ -66,6 +66,10 @@ def parse_url(url, today=False):
     document = BeautifulSoup(content, "html.parser")
     canteen = LazyBuilder()
 
+    if not document.find("div", {"class": "maincontent"}):
+        print("Page incompatible. Maintenance?")
+        return canteen.toXMLFeed()
+
     # Date
     h2 = document.find("div", {"class": "maincontent"}).find("h2")
     datematch = datespan_regex.search(h2.text)
