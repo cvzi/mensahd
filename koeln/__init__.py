@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# Python 3
 import datetime
 import os
 import json
@@ -8,8 +10,9 @@ import logging
 import pytz
 import requests
 from bs4 import BeautifulSoup
-
 from pyopenmensa.feed import LazyBuilder
+
+from version import __version__, useragentname, useragentcomment
 
 # Based on https://github.com/mswart/openmensa-parsers/blob/master/magdeburg.py
 
@@ -22,6 +25,12 @@ template_metaURL = "%skoeln/meta/%s.xml"
 template_todayURL = "%skoeln/today/%s.xml"
 template_fullURL = "%skoeln/all/%s.xml"
 
+url = r"https://www.max-manager.de/daten-extern/sw-koeln/html/speiseplan-render.php"
+
+headers = {
+    'User-Agent': f'{useragentname}/{__version__} ({useragentcomment}) {requests.utils.default_user_agent()}'
+}
+
 weekdaysMap = [
     ("Mo", "monday"),
     ("Di", "tuesday"),
@@ -31,8 +40,6 @@ weekdaysMap = [
     ("Sa", "saturday"),
     ("So", "sunday")
 ]
-
-url = r"https://www.max-manager.de/daten-extern/sw-koeln/html/speiseplan-render.php"
 
 roles = ('student', 'employee', 'other')
 
@@ -72,7 +79,13 @@ def parse_url(canteen, locId, day=None):
     date = day.strftime("%Y-%m-%d")
 
     r = requests.post(
-        url, data={'date': date, 'func': 'make_spl', 'lang': 'de', 'locId': locId})
+        url,
+        data={
+            'date': date,
+            'func': 'make_spl',
+            'lang': 'de',
+            'locId': locId},
+        headers=headers)
 
     content = r.content.decode("utf-8")
 
@@ -136,7 +149,7 @@ def parse_url(canteen, locId, day=None):
     return False
 
 
-def _generateCanteenMeta(obj, name,  baseurl):
+def _generateCanteenMeta(obj, name, baseurl):
     """Generate an openmensa XML meta feed from the static json file using an XML template"""
     template = open(metaTemplateFile).read()
 
@@ -241,7 +254,7 @@ class Parser:
 
         # Skip over weekend
         if date.weekday() > 4:
-            date += datetime.timedelta(days=7-date.weekday())
+            date += datetime.timedelta(days=7 - date.weekday())
 
             # Get next week
             while self.handler(canteen, name, date.date()):

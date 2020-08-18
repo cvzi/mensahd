@@ -1,13 +1,17 @@
-#!python3
-import requests
-from bs4 import BeautifulSoup
+#!/usr/bin/env python
+# Python 3
 import os
 import re
 import datetime
 import json
-from pyopenmensa.feed import LazyBuilder
 import urllib
 import logging
+
+import requests
+from bs4 import BeautifulSoup
+from pyopenmensa.feed import LazyBuilder
+
+from version import __version__, useragentname, useragentcomment
 
 # Based on https://github.com/mswart/openmensa-parsers/blob/master/magdeburg.py
 
@@ -35,6 +39,9 @@ daysGerman = ["Montag", "Dienstag", "Mittwoch",
 
 roles = ('student', 'employee', 'other')
 
+headers = {
+    'User-Agent': f'{useragentname}/{__version__} ({useragentcomment}) {requests.utils.default_user_agent()}'
+}
 
 def correctCapitalization(s):
     return s[0].upper() + s[1:].lower()
@@ -58,10 +65,10 @@ def parse_url(url, today=False):
         url = url % today.strftime('%Y_%m_%d')
 
     try:
-        content = requests.get(url).text
+        content = requests.get(url, headers=headers).text
     except requests.exceptions.ConnectionError as e:
         logging.warning(str(e))
-        content = requests.get(url, verify=False).text
+        content = requests.get(url, headers=headers, verify=False).text
 
     document = BeautifulSoup(content, "html.parser")
     canteen = LazyBuilder()

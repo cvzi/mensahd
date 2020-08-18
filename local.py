@@ -1,3 +1,4 @@
+#!python3
 #
 # For testing only
 #

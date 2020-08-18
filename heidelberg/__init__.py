@@ -1,12 +1,7 @@
 #!/usr/bin/env python
-#
 # Python 3
-
 import urllib.request
-import lxml.etree
-import defusedxml.lxml
 import datetime
-import pytz
 import os
 import json
 import re
@@ -14,6 +9,12 @@ import time
 import io
 import logging
 from threading import Lock
+
+import pytz
+import lxml.etree
+import defusedxml.lxml
+
+from version import __version__, useragentname, useragentcomment
 
 mealsURL = 'https://www.stw.uni-heidelberg.de/appdata/sp.xml'
 mealsURL_authorization = False
@@ -97,6 +98,7 @@ def _getMealsURL():
         raise RuntimeError("mealsUrl is not an allowed URL: '%s'" % mealsURL)
     request = urllib.request.Request(mealsURL)
     request.add_header("Authorization", "Basic %s" % mealsURL_authorization)
+    request.add_header("User-Agent", f"{useragentname}/{__version__} ({useragentcomment}) Python-urllib/{urllib.request.__version__}")
     result = urllib.request.urlopen(request, timeout=__timeoutSeconds)
     return result, 0
 
@@ -123,6 +125,7 @@ def _getMetaURL():
     if not metaURL.startswith("http://") and not metaURL.startswith("https://"):
         raise RuntimeError("metaURL is not an allowed URL: '%s'" % metaURL)
     request = urllib.request.Request(metaURL)
+    request.add_header("User-Agent", f"{useragentname}/{__version__} ({useragentcomment}) Python-urllib/{urllib.request.__version__}")
     result = urllib.request.urlopen(request, timeout=__timeoutSeconds)
     return result, 0
 

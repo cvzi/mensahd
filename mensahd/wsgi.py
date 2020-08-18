@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 #
 # Python 3
+
 import sys
 import os
 import socket
@@ -11,17 +12,17 @@ import datetime
 
 import pytz
 
+if __name__ == '__main__':
+    include = os.path.relpath(os.path.join(os.path.dirname(__file__), ".."))
+    sys.path.insert(0, include)
+
+from version import __version__
 from eppelheim import getParser as geteppelheim
 from stuttgart import getParser as getstuttgart
 from koeln import getParser as getkoeln
 from mannheim import getParser as getmannheim
 from heidelberg import getParser as getheidelberg
 from ulm import getParser as getulm
-
-
-if __name__ == '__main__':
-    include = os.path.relpath(os.path.join(os.path.dirname(__file__), ".."))
-    sys.path.insert(0, include)
 
 
 page_errors = []
@@ -68,7 +69,7 @@ def application(environ, start_response):
     elif environ['PATH_INFO'] == '/status':
         statusmessage = []
 
-        for url in ("https://www.stw.uni-heidelberg.de/", "https://www.stw-ma.de/", "https://www.max-manager.de/", "https://sws2.maxmanager.xyz/", "https://www.uni-ulm.de/"):
+        for url in ("https://www.stw.uni-heidelberg.de/", "https://www.stw-ma.de/", "https://studiplus.stw-ma.de/", "https://www.max-manager.de/", "https://sws2.maxmanager.xyz/", "https://www.uni-ulm.de/"):
             hostname = url.split("//")[1].split("/")[0]
             try:
                 request = urllib.request.Request(url)
@@ -92,9 +93,9 @@ def application(environ, start_response):
         if not statusmessage:
             statusmessage = "Ok"
         else:
-            statusmessage = ". ".join(statusmessage)
+            statusmessage = ". \n".join(statusmessage)
 
-        response_body = "%s. %d errors.\n" % (statusmessage, len(page_errors))
+        response_body = "%s.\n%d errors.\n" % (statusmessage, len(page_errors))
         for exc in reversed(page_errors):
             response_body += "%s \t %s \t %s\n" % exc
 
@@ -237,18 +238,18 @@ def application(environ, start_response):
             status = '503 Service Unavailable'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
 
-    elif environ['PATH_INFO'].startswith('/mannheim/feed/'):
+    elif environ['PATH_INFO'].startswith('/mannheim/today/'):
         ctype = 'application/xml; charset=utf-8'
-        name = environ['PATH_INFO'][15:]
+        name = environ['PATH_INFO'][16:]
         if name.endswith(".xml"):
             name = name[:-4]
         try:
-            response_body = mannheim.feed(name)
+            response_body = mannheim.feed_today(name)
         except (urllib.error.URLError, socket.timeout) as e:
             ctype = 'text/plain; charset=utf-8'
-            response_body = "Could not connect to www.stw-ma.de\n\nAn error occured:\n%s\n%s" % (
+            response_body = "Could not connect to studiplus.stw-ma.de\n\nAn error occured:\n%s\n%s" % (
                 e, traceback.format_exc())
-            status = '533 Open www.stw-ma.de timed out'
+            status = '533 Open studiplus.stw-ma.de timed out'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
         except Exception as e:
             ctype = 'text/plain; charset=utf-8'
@@ -256,6 +257,27 @@ def application(environ, start_response):
                 e, traceback.format_exc())
             status = '503 Service Unavailable'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
+
+    elif environ['PATH_INFO'].startswith('/mannheim/all/'):
+        ctype = 'application/xml; charset=utf-8'
+        name = environ['PATH_INFO'][14:]
+        if name.endswith(".xml"):
+            name = name[:-4]
+        try:
+            response_body = mannheim.feed_all(name)
+        except (urllib.error.URLError, socket.timeout) as e:
+            ctype = 'text/plain; charset=utf-8'
+            response_body = "Could not connect to studiplus.stw-ma.de\n\nAn error occured:\n%s\n%s" % (
+                e, traceback.format_exc())
+            status = '533 Open studiplus.stw-ma.de timed out'
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
+        except Exception as e:
+            ctype = 'text/plain; charset=utf-8'
+            response_body = "An error occured:\n%s\n%s" % (
+                e, traceback.format_exc())
+            status = '503 Service Unavailable'
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
+
 
     elif environ['PATH_INFO'] == '/mannheim' or environ['PATH_INFO'] == '/mannheim/':
         ctype = 'text/html; charset=utf-8'
@@ -295,7 +317,7 @@ def application(environ, start_response):
             ctype = 'text/plain; charset=utf-8'
             response_body = "Could not connect to www.max-manager.de\n\nAn error occured:\n%s\n%s" % (
                 e, traceback.format_exc())
-            status = '533 Open www.stw-ma.de timed out'
+            status = '533 Open www.max-manager.de timed out'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
         except Exception as e:
             ctype = 'text/plain; charset=utf-8'
@@ -382,7 +404,7 @@ def application(environ, start_response):
             ctype = 'text/plain; charset=utf-8'
             response_body = "Could not connect to www.studierendenwerk-stuttgart.de\n\nAn error occured:\n%s\n%s" % (
                 e, traceback.format_exc())
-            status = '533 Open www.stw-ma.de timed out'
+            status = '533 Open www.studierendenwerk-stuttgart.de timed out'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
         except Exception as e:
             ctype = 'text/plain; charset=utf-8'
@@ -583,8 +605,10 @@ def application(environ, start_response):
 
     response_body = response_body.encode('utf-8')
 
-    response_headers = [('Content-Type', ctype), ('Content-Length',
-                                                  str(len(response_body))), ('Cache-Control', cache_control)]
+    response_headers = [('Content-Type', ctype),
+                        ('Content-Length', str(len(response_body))),
+                        ('Cache-Control', cache_control),
+                        ('X-OpenMensa-ParserVersion', str(__version__))]
 
     start_response(status, response_headers)
     return [response_body]

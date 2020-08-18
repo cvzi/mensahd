@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# Python 3
 import datetime
 import os
 import json
@@ -8,9 +10,9 @@ import logging
 import pytz
 import requests
 from bs4 import BeautifulSoup
-
 from pyopenmensa.feed import LazyBuilder
 
+from version import __version__, useragentname, useragentcomment
 
 metaJson = os.path.join(os.path.dirname(__file__), "stuttgart.json")
 
@@ -87,7 +89,7 @@ ingredients = {
 
 def _fetchData(canteen, jsonfile):
     headers = {
-        'User-Agent': 'github.com/cvzi/mensahd python-requests',
+        'User-Agent': f'{useragentname}/{__version__} ({useragentcomment}) {requests.utils.default_user_agent()}',
         'Accept': 'application/json',
         'Accept-Language': 'de-De,de'
     }

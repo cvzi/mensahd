@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# Python 3
 import os
 import logging
 import re
@@ -7,6 +9,8 @@ import urllib
 import urllib.request
 
 from pyopenmensa.feed import OpenMensaCanteen
+
+from version import __version__, useragentname, useragentcomment
 
 metaJson = os.path.join(os.path.dirname(__file__), "ulm.json")
 
@@ -73,7 +77,9 @@ legend = {
 
 def _from_json(canteen, url, place):
     try:
-        req = urllib.request.urlopen(url)
+        req = urllib.request.Request(url)
+        req.add_header("User-Agent", f"{useragentname}/{__version__} ({useragentcomment}) Python-urllib/{urllib.request.__version__}")
+        result  = urllib.request.urlopen(req)
     except urllib.error.HTTPError as e:
         if e.status == 404:
             print(url)
@@ -86,8 +92,8 @@ def _from_json(canteen, url, place):
         else:
             raise e
 
-    charset = req.info().get_param('charset') or 'utf-8'
-    data = json.loads(req.read().decode(charset, errors='ignore'))
+    charset = result.info().get_param('charset') or 'utf-8'
+    data = json.loads(result.read().decode(charset, errors='ignore'))
 
     if not data or 'weeks' not in data or not data['weeks']:
         print('Empty json file, setting week to "closed"')

@@ -1,12 +1,17 @@
+#!/usr/bin/env python
+# Python 3
 import os
 import datetime
 import logging
-import requests
 import json
 import re
 import urllib
+
+import requests
 from bs4 import BeautifulSoup
 from pyopenmensa.feed import LazyBuilder
+
+from version import __version__, useragentname, useragentcomment
 
 metaJson = os.path.join(os.path.dirname(__file__), "mannheim.json")
 
@@ -38,7 +43,7 @@ if not authorization:
     raise RuntimeError("Authentication data not found")
 
 headers = {
-    'User-Agent': 'github.com/cvzi/mensahd python-requests',
+    'User-Agent': f'{useragentname}/{__version__} (+{useragentcomment}) {requests.utils.default_user_agent()}',
     'Accept': 'application/json',
     'Accept-Language': 'de-De,de',
     'X-App-Token': authorization
@@ -177,10 +182,10 @@ def mensa_info(apiurl, days, canteenid, alternative, canteen=None, day=0):
                     first += 1
                     if pricePer:
                         notes.insert(0, pricePer)
-                    canteen.addMeal(date, categoryName, mealName,
+                    canteen.addMeal(date, categoryName, mealName[:249],
                                     notes, prices, roles if prices else None)
                 else:
-                    canteen.addMeal(date, categoryName, mealName, notes)
+                    canteen.addMeal(date, categoryName, mealName[:249], notes)
 
     day = day + 1
     if days > day:
