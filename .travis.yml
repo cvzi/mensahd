@@ -8,7 +8,6 @@ install:
   - pip install codacy-coverage
   - pip install nose
 script:
-  - nosetests
   - coverage run -a tests/test_*.py
 after_success:
   - coveralls
