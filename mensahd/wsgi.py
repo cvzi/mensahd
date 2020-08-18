@@ -291,7 +291,8 @@ def application(environ, start_response):
               <li><a href="/mannheim"><b>Mannheim</b></a></li>
               <li><a href="/mannheim/list.json">/mannheim/list.json</a></li>
               <li>/mannheim/meta/{id}.xml</li>
-              <li>/mannheim/feed/{id}.xml</li>
+              <li>/mannheim/today/{id}.xml</li>
+              <li>/mannheim/all/{id}.xml</li>
               <li><a href="/eppelheim">Eppelheim</a></li>
             </ul>"""
 
@@ -574,7 +575,36 @@ def application(environ, start_response):
               <li>/ulm/feed/{id}.xml</li>
             </ul>"""
 
+    elif environ['PATH_INFO'] == '/api':
+        links = []
+        for parser in (heidelberg, eppelheim, mannheim, koeln, stuttgart, ulm):
+            moduleName = parser.__module__
+            if moduleName == 'heidelberg':
+                moduleName = ''
+            else:
+                moduleName += '/'
 
+            canteens = list(parser.canteens.keys())
+            for canteen in canteens:
+                if hasattr(parser, "meta"):
+                    links.append(f"{moduleName}meta/{canteen}.xml")
+                if hasattr(parser, "feed_today"):
+                    links.append(f"{moduleName}today/{canteen}.xml")
+                if hasattr(parser, "feed_all"):
+                    links.append(f"{moduleName}all/{canteen}.xml")
+                if hasattr(parser, "feed"):
+                    links.append(f"{moduleName}feed/{canteen}.xml")
+
+        newline = "\n              "
+        ctype = 'text/html; charset=utf-8'
+        cache_control = 'public, max-age=86400'
+        response_body = f"""
+            <h1>mensahd-cuzi</h1>
+            <div>This is a parser for <a href="https://openmensa.org/">openmensa.org</a>.</div>
+            <h2>API:</h2>
+            <ul style="font-family:Consolas,monospace">
+              {newline.join([f'<li><a href="/{path}">/{path}</a></li>' for path in links])}
+            </ul>"""
 
     else:
         ctype = 'text/html; charset=utf-8'
@@ -596,6 +626,7 @@ def application(environ, start_response):
               <li>/meta/{id}.xml</li>
               <li>/today/{id}.xml</li>
               <li>/all/{id}.xml</li>
+              <li><a href="/api">/api</a></li>
             </ul>
             <!-- https://github.com/tholman/github-corners -->
             <div>
