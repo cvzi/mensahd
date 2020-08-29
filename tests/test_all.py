@@ -13,7 +13,7 @@ def downloadFile(url, filename="file.tmp"):
     if not os.path.isfile(filename):
         if not url.startswith("http://") and not url.startswith("https://"):
             raise RuntimeError("url is not an allowed URL: %r" % url)
-        with urllib.request.urlopen(url) as furl:
+        with urllib.request.urlopen(url) as furl:  # nosec
             with open(filename, 'wb') as fout:
                 fout.write(furl.read())
 
@@ -59,7 +59,7 @@ def check_feed(content, encoding='utf8', name=''):
 
     # Content length
     if len(content) < 300:
-        #raise RuntimeWarning("[%s] probably empty feed." % (name,))
+        # raise RuntimeWarning("[%s] probably empty feed." % (name,))
         print(f"[{name}] probably empty feed.")
         return False
     elif len(content) < 360:
@@ -116,7 +116,7 @@ def check_xml(parser, canteen):
 
 
 def test_all_modules():
-    moduleNames = ['eppelheim', 'heidelberg', 'koeln', 'mannheim', 'stuttgart']
+    moduleNames = ['eppelheim', 'heidelberg', 'koeln', 'mannheim', 'stuttgart', 'luxembourg']
 
     print("Importing %s" % (", ".join(moduleNames), ), end="")
 

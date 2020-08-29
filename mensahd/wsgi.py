@@ -9,6 +9,7 @@ import urllib.error
 import urllib.request
 import traceback
 import datetime
+import logging
 
 import pytz
 
@@ -23,7 +24,7 @@ from koeln import getParser as getkoeln
 from mannheim import getParser as getmannheim
 from heidelberg import getParser as getheidelberg
 from ulm import getParser as getulm
-
+from luxembourg import getParser as getluxembourg
 
 page_errors = []
 
@@ -40,6 +41,7 @@ koeln = getkoeln(baseurl)
 stuttgart = getstuttgart(baseurl)
 eppelheim = geteppelheim(baseurl)
 ulm = getulm(baseurl)
+luxembourg = getluxembourg(baseurl)
 
 
 def timeStrBerlin():
@@ -69,26 +71,35 @@ def application(environ, start_response):
     elif environ['PATH_INFO'] == '/status':
         statusmessage = []
 
-        for url in ("https://www.stw.uni-heidelberg.de/", "https://www.stw-ma.de/", "https://studiplus.stw-ma.de/", "https://www.max-manager.de/", "https://sws2.maxmanager.xyz/", "https://www.uni-ulm.de/"):
+        sites = ("https://www.stw.uni-heidelberg.de/",
+                 "https://www.stw-ma.de/",
+                 "https://studiplus.stw-ma.de/",
+                 "https://www.max-manager.de/",
+                 "https://sws2.maxmanager.xyz/",
+                 "https://www.uni-ulm.de/",
+                 "https://ssl.education.lu/eRestauration/CustomerServices/Menu")
+        for url in sites:
             hostname = url.split("//")[1].split("/")[0]
             try:
+                if not url.startswith("http://") and not url.startswith("https://"):
+                    raise RuntimeError(f"url is not an allowed URL: '{url}'")
                 request = urllib.request.Request(url)
-                result = urllib.request.urlopen(request, timeout=7)
+                result = urllib.request.urlopen(request, timeout=7)  # nosec
                 if result.getcode() != 200:
                     raise RuntimeError("HTTP status code: %r" % result.status)
             except (urllib.error.URLError, socket.timeout) as e:
-                statusmessage.append("%s is not reachable" % hostname)
-                print("%s is not reachable" % hostname)
+                status = f"{e.code if hasattr(e, 'code') else '666'} {e.reason if hasattr(e, 'reason') else 'network error'}"
+                statusmessage.append(f"{hostname} is not reachable: {status}")
+                logging.error(f"{hostname} is not reachable #1: {e}")
             except RuntimeError as e:
                 if result is not None:
-                    statusmessage.append("%s status code %d" %
-                                         (hostname, result.getcode()))
+                    statusmessage.append(f"{hostname} status code {result.getcode()}")
                 else:
                     statusmessage.append("%s %r" % (hostname, e))
-                print("%s %r" % (hostname, e))
+                logging.error(f"{hostname} is not reachable #2: {e}")
             except BaseException as e:
                 statusmessage.append("%s %r" % (hostname, e))
-                print("%s %r" % (hostname, e))
+                logging.error(f"{hostname} is not reachable #3: {e}")
 
         if not statusmessage:
             statusmessage = "Ok"
@@ -277,7 +288,6 @@ def application(environ, start_response):
                 e, traceback.format_exc())
             status = '503 Service Unavailable'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
-
 
     elif environ['PATH_INFO'] == '/mannheim' or environ['PATH_INFO'] == '/mannheim/':
         ctype = 'text/html; charset=utf-8'
@@ -575,9 +585,69 @@ def application(environ, start_response):
               <li>/ulm/feed/{id}.xml</li>
             </ul>"""
 
+    elif environ['PATH_INFO'] == '/luxembourg/list.json':
+        ctype = 'application/json; charset=utf-8'
+        try:
+            response_body = luxembourg.json()
+        except Exception as e:
+            ctype = 'text/plain; charset=utf-8'
+            response_body = "An error occured:\n%s\n%s" % (
+                e, traceback.format_exc())
+            status = '503 Service Unavailable'
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
+
+    elif environ['PATH_INFO'].startswith('/luxembourg/meta/'):
+        ctype = 'application/xml; charset=utf-8'
+        name = environ['PATH_INFO'][17:]
+        if name.endswith(".xml"):
+            name = name[:-4]
+        try:
+            response_body = luxembourg.meta(name)
+        except Exception as e:
+            ctype = 'text/plain; charset=utf-8'
+            response_body = "An error occured:\n%s\n%s" % (
+                e, traceback.format_exc())
+            status = '503 Service Unavailable'
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
+
+    elif environ['PATH_INFO'].startswith('/luxembourg/feed/'):
+        ctype = 'application/xml; charset=utf-8'
+        name = environ['PATH_INFO'][17:]
+        if name.endswith(".xml"):
+            name = name[:-4]
+        try:
+            response_body = luxembourg.feed(name)
+        except (urllib.error.URLError, socket.timeout) as e:
+            ctype = 'text/plain; charset=utf-8'
+            response_body = "Could not connect to ssl.education.lu\n\nAn error occured:\n%s\n%s" % (
+                e, traceback.format_exc())
+            status = '533 Open ssl.education.lu timed out'
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
+        except Exception as e:
+            ctype = 'text/plain; charset=utf-8'
+            response_body = "An error occured:\n%s\n%s" % (
+                e, traceback.format_exc())
+            status = '503 Service Unavailable'
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
+
+    elif environ['PATH_INFO'] == '/luxembourg' or environ['PATH_INFO'] == '/luxembourg/':
+        ctype = 'text/html; charset=utf-8'
+        cache_control = 'public, max-age=86400'
+        response_body = """
+            <h1>mensahd-cuzi for Restopolis canteens</h1>
+            <div>This is a parser for <a href="https://openmensa.org/">openmensa.org</a>. It fetches and converts public data from <a href="https://portal.education.lu/restopolis/">https://portal.education.lu/restopolis/</a></div>
+            <h2>Public interface:</h2>
+            <ul>
+              <li><a href="/">../ Heidelberg</a></li>
+              <li><a href="/luxembourg"><b>luxembourg</b></a></li>
+              <li><a href="/luxembourg/list.json">/luxembourg/list.json</a></li>
+              <li>/luxembourg/meta/{id}.xml</li>
+              <li>/luxembourg/feed/{id}.xml</li>
+            </ul>"""
+
     elif environ['PATH_INFO'] == '/api':
         links = []
-        for parser in (heidelberg, eppelheim, mannheim, koeln, stuttgart, ulm):
+        for parser in (heidelberg, eppelheim, mannheim, koeln, stuttgart, ulm, luxembourg):
             moduleName = parser.__module__
             if moduleName == 'heidelberg':
                 moduleName = ''
@@ -600,7 +670,7 @@ def application(environ, start_response):
         cache_control = 'public, max-age=86400'
         response_body = f"""
             <h1>mensahd-cuzi</h1>
-            <div>This is a parser for <a href="https://openmensa.org/">openmensa.org</a>.</div>
+            <div>List of all available endpoints</div>
             <h2>API:</h2>
             <ul style="font-family:Consolas,monospace">
               {newline.join([f'<li><a href="/{path}">/{path}</a></li>' for path in links])}
