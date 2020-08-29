@@ -99,7 +99,7 @@ def _getMealsURL():
     request = urllib.request.Request(mealsURL)
     request.add_header("Authorization", "Basic %s" % mealsURL_authorization)
     request.add_header("User-Agent", f"{useragentname}/{__version__} ({useragentcomment}) Python-urllib/{urllib.request.__version__}")
-    result = urllib.request.urlopen(request, timeout=__timeoutSeconds)  #nosec
+    result = urllib.request.urlopen(request, timeout=__timeoutSeconds)  # nosec
     return result, 0
 
 
@@ -126,7 +126,7 @@ def _getMetaURL():
         raise RuntimeError("metaURL is not an allowed URL: '%s'" % metaURL)
     request = urllib.request.Request(metaURL)
     request.add_header("User-Agent", f"{useragentname}/{__version__} ({useragentcomment}) Python-urllib/{urllib.request.__version__}")
-    result = urllib.request.urlopen(request, timeout=__timeoutSeconds)  #nosec
+    result = urllib.request.urlopen(request, timeout=__timeoutSeconds)  # nosec
     return result, 0
 
 
