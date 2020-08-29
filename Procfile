@@ -1,1 +1,1 @@
-web: gunicorn mensahd.wsgi --log-file -
+web: gunicorn mensahd.wsgi --timeout 60 --log-file -
