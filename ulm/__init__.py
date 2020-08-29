@@ -77,9 +77,11 @@ legend = {
 
 def _from_json(canteen, url, place):
     try:
-        req = urllib.request.Request(url)
+        if not url.startswith("http://") and not url.startswith("https://"):
+            raise RuntimeError(f"url is not an allowed URL: '{url}'")
+        req = urllib.request.Request(url)  #nosec
         req.add_header("User-Agent", f"{useragentname}/{__version__} ({useragentcomment}) Python-urllib/{urllib.request.__version__}")
-        result  = urllib.request.urlopen(req)
+        result = urllib.request.urlopen(req)
     except urllib.error.HTTPError as e:
         if e.status == 404:
             print(url)
@@ -115,7 +117,7 @@ def _from_json(canteen, url, place):
                 date = (today + datetime.timedelta(days=till_next)
                         ).strftime('%Y-%m-%d')
 
-            if not place in day:
+            if place not in day:
                 continue
 
             mensa = day[place]
@@ -124,7 +126,7 @@ def _from_json(canteen, url, place):
                 canteen.setDayClosed(date)
                 continue
 
-            if not 'meals' in mensa:
+            if 'meals' not in mensa:
                 continue
 
             for meal in mensa['meals']:
@@ -277,4 +279,3 @@ def getParser(baseurl):
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
     print(getParser("http://localhost/").feed("unimensa"))
-    #print(getParser("http://localhost/").meta("cafeb"))

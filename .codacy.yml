@@ -2,3 +2,7 @@ engines:
  pylint:
    enabled: true
    python_version: 3
+   exclude_paths:
+     - 'mannheim/old/**'
+     - 'stuttgart/stuttgart_old2018/**'
+     - 'stuttgart/stuttgart_old2020/**'

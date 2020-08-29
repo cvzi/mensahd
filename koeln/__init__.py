@@ -87,9 +87,7 @@ def parse_url(canteen, locId, day=None):
             'locId': locId},
         headers=headers)
 
-    content = r.content.decode("utf-8")
-
-    document = BeautifulSoup(content, "html.parser")
+    document = BeautifulSoup(r.text, "html.parser")
 
     trs = document.find("table", {"class": "speiseplan"}).find_all("tr")
 

@@ -1,6 +1,7 @@
 exclude_paths:
-  - stuttgart/stuttgart_old/
-  - gps/_testdata
+  - mannheim/old/
+  - stuttgart/stuttgart_old2018/
+  - stuttgart/stuttgart_old2020/
 engines:
   bandit:
     enabled: true
@@ -11,9 +12,12 @@ engines:
   pep8:
     enabled: true
     checks:
+      # Disable "Module level import not at top of file"
+      E402:
+        enabled: false
       # Disable "Line too long"
       E501:
-        enabled: false 
+        enabled: false
   radon:
     enabled: true
   sonar-python:

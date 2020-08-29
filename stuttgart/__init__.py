@@ -87,6 +87,7 @@ ingredients = {
     "P": "Preisrenner",
 }
 
+
 def _fetchData(canteen, jsonfile):
     headers = {
         'User-Agent': f'{useragentname}/{__version__} ({useragentcomment}) {requests.utils.default_user_agent()}',
@@ -219,5 +220,4 @@ def getParser(baseurl):
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
-    #print(getParser("http://localhost/").meta("horb"))
-    #print(getParser("http://localhost/").feed("horb"))
+    print(getParser("http://localhost/").feed("horb"))

@@ -95,11 +95,11 @@ def _getShortName(longname):
 def _getMealsURL():
     """Download meals information from XML feed"""
     if not mealsURL.startswith("http://") and not mealsURL.startswith("https://"):
-        raise RuntimeError("mealsUrl is not an allowed URL: '%s'" % mealsURL)
+        raise RuntimeError(f"mealsUrl is not an allowed URL: '{mealsURL}'")
     request = urllib.request.Request(mealsURL)
     request.add_header("Authorization", "Basic %s" % mealsURL_authorization)
     request.add_header("User-Agent", f"{useragentname}/{__version__} ({useragentcomment}) Python-urllib/{urllib.request.__version__}")
-    result = urllib.request.urlopen(request, timeout=__timeoutSeconds)
+    result = urllib.request.urlopen(request, timeout=__timeoutSeconds)  #nosec
     return result, 0
 
 
@@ -126,7 +126,7 @@ def _getMetaURL():
         raise RuntimeError("metaURL is not an allowed URL: '%s'" % metaURL)
     request = urllib.request.Request(metaURL)
     request.add_header("User-Agent", f"{useragentname}/{__version__} ({useragentcomment}) Python-urllib/{urllib.request.__version__}")
-    result = urllib.request.urlopen(request, timeout=__timeoutSeconds)
+    result = urllib.request.urlopen(request, timeout=__timeoutSeconds)  #nosec
     return result, 0
 
 

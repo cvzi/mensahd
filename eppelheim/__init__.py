@@ -43,6 +43,7 @@ headers = {
     'User-Agent': f'{useragentname}/{__version__} ({useragentcomment}) {requests.utils.default_user_agent()}'
 }
 
+
 def correctCapitalization(s):
     return s[0].upper() + s[1:].lower()
 
@@ -144,7 +145,7 @@ def parse_url(url, today=False):
 
         notes = []
 
-        if "feiertag" in td1.text.lower() or "geschlossen" in td1.text.lower() or  (td0 and "feiertag" in td0.text.lower()):
+        if "feiertag" in td1.text.lower() or "geschlossen" in td1.text.lower() or (td0 and "feiertag" in td0.text.lower()):
             canteen.setDayClosed(date)
             continue
 
@@ -270,5 +271,4 @@ def getParser(baseurl):
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
-    # print(getParser("http://localhost/").json("https://localhost/meta/%s.xml"))
     print(getParser("http://localhost/").feed("dhbw"))
