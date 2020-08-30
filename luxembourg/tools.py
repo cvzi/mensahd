@@ -1,3 +1,4 @@
+import os
 import re
 import datetime
 import logging
@@ -14,7 +15,7 @@ __all__ = ['getMenu', 'askRestopolis']
 try:
     from version import __version__, useragentname, useragentcomment
 except:
-    __version__, useragentname, useragentcomment = 0.1, requests.utils.default_user_agent(), "Python 3"
+    __version__, useragentname, useragentcomment = 0.1, "Python", "3"
 
 url = "https://ssl.education.lu/eRestauration/CustomerServices/Menu"
 s = requests.Session()
@@ -74,19 +75,7 @@ def askRestopolis(restaurant=None, service=None, date=None):
     if date is not None:
         cookies["CustomerServices.Restopolis.SelectedDate"] = date.strftime("%d.%m.%Y")
 
-    return s.get(url, cookies=cookies)
-
-
-def testHeaders():
-    """
-    Test askRestopolis request headers, cookies, ...
-    """
-    global url
-    tmp = url
-    url = "http://httpbin.org/anything"
-    r = askRestopolis(restaurant=123, service=456, date=datetime.date(1991,8,6))
-    __import__("pprint").pprint(r.json(), width=102)
-    url = tmp
+    return s.get(url, cookies=cookies, proxies=dict(https=os.getenv('LUXEMBOURG_PROXY')) if os.getenv('LUXEMBOURG_PROXY', '') else None)
 
 
 def getMenu(restaurantId, datetimeDay=None, serviceIds=None):
