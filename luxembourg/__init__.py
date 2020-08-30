@@ -50,9 +50,17 @@ class Parser:
             else:
                 sourceUrl = template_sourceURL % (int(restaurant["id"]), int(restaurant["services"][0][0]))
 
+            address = ""
+            if restaurant["street"]:
+                address += restaurant["street"]
+            if restaurant["zip"]:
+                address += (", " if address else "") + restaurant["zip"]
+            if restaurant["city"]:
+                address += ((" " if restaurant["zip"] else ", ") if address else "") + restaurant["city"]
+
             data = {
                 "name": restaurant["name"] + (f" ({restaurant['region']})" if restaurant["region"] else ""),
-                "address": "%s %s %s" % (restaurant["street"], restaurant["zip"], restaurant["city"]),
+                "address": address,
                 "city": restaurant["city"],
                 "phoneXML": f"<phone>{restaurant['phone']}</phone>" if "phone" in restaurant else "",
                 "latitude": restaurant["latitude"],
