@@ -6,7 +6,7 @@ import re
 import json
 import datetime
 import urllib
-import urllib.request
+import requests
 
 from pyopenmensa.feed import OpenMensaCanteen
 
@@ -74,31 +74,31 @@ legend = {
     '35': "Fisch"
 }
 
+headers = {
+    'User-Agent': f'{useragentname}/{__version__} (+{useragentcomment}) {requests.utils.default_user_agent()}',
+    'Accept': 'application/json',
+    'Accept-Language': 'de-De,de'
+}
 
 def _from_json(canteen, url, place):
-    try:
-        if not url.startswith("http://") and not url.startswith("https://"):
-            raise RuntimeError(f"url is not an allowed URL: '{url}'")
-        req = urllib.request.Request(url)  #nosec
-        req.add_header("User-Agent", f"{useragentname}/{__version__} ({useragentcomment}) Python-urllib/{urllib.request.__version__}")
-        result = urllib.request.urlopen(req)
-    except urllib.error.HTTPError as e:
-        if e.status == 404:
-            print(url)
-            print(e)
-            # Set 7 days closed
-            print('Setting week to "closed"')
-            for i in range(7):
-                canteen.setDayClosed((datetime.date.today() + datetime.timedelta(i)))
-            return
-        else:
-            raise e
+    if not url.startswith("http://") and not url.startswith("https://"):
+        raise RuntimeError(f"url is not an allowed URL: '{url}'")
+    result = requests.get(url, headers=headers)
+    if result.status_code == 404:
+        logging.warning(f"{result} for {url}. Setting week 'closed'")
+        # Set 7 days closed
+        for i in range(7):
+            canteen.setDayClosed((datetime.date.today() + datetime.timedelta(i)))
+        return
 
-    charset = result.info().get_param('charset') or 'utf-8'
-    data = json.loads(result.read().decode(charset, errors='ignore'))
+    try:
+        data = result.json()
+    except json.decoder.JSONDecodeError as e:
+        logging.error(f"JSONDecodeError: {e}")
+        data = None
 
     if not data or 'weeks' not in data or not data['weeks']:
-        print('Empty json file, setting week to "closed"')
+        logging.warning(f'Empty/malformed json file, setting week to "closed" ({url})')
         # Set 7 days closed
         for i in range(7):
             canteen.setDayClosed((datetime.date.today() + datetime.timedelta(i)))
