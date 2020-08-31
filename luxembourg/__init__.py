@@ -33,8 +33,7 @@ weekdaysMap = [
 
 class Parser:
     def feed(self, refName):
-        services = [s[0] for s in self.canteens[refName]["services"]]
-        xml, _, _, _ = getMenu(restaurantId=self.canteens[refName]["id"], serviceIds=services)
+        xml, _, _, _ = getMenu(restaurantId=self.canteens[refName]["id"], serviceIds=self.canteens[refName]["services"])
         return xml
 
     def meta(self, refName):

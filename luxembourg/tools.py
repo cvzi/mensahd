@@ -88,14 +88,18 @@ def getMenu(restaurantId, datetimeDay=None, serviceIds=None):
         datetimeDay = datetime.date.today()
 
     if isinstance(serviceIds, str) or not isinstance(serviceIds, Iterable):
-        serviceIds = [serviceIds, ]
+        serviceIds = [(serviceIds, ""), ]
+    for i, service in enumerate(serviceIds):
+        if isinstance(service, str) or isinstance(service, int):
+            serviceIds[i] = (service, "")
 
     mealCounter = 0
     dayCounter = set()
     weekdayCounter = {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
-    for serviceId in serviceIds:
+    for service in serviceIds:
+        serviceSuffix = f"({service[1]})" if service[1] and len(serviceIds) > 1 else ""
         r = askRestopolis(restaurant=restaurantId,
-                          service=serviceId, date=datetimeDay)
+                          service=service[0], date=datetimeDay)
         if r.status_code != 200:
             status = 'Could not open restopolis'
             if 'status' in r.headers:
@@ -140,6 +144,8 @@ def getMenu(restaurantId, datetimeDay=None, serviceIds=None):
                     category = courseName
                     if productSection:
                         category += " " + productSection
+                    if serviceSuffix:
+                        category += " " + serviceSuffix
                     if productDescription:
                         notes += textwrap.wrap(productDescription, width=250)
                     if productAllergens:
