@@ -14,7 +14,7 @@ __all__ = ['getMenu', 'askRestopolis']
 
 try:
     from version import __version__, useragentname, useragentcomment
-except:
+except ModuleNotFoundError:
     __version__, useragentname, useragentcomment = 0.1, "Python", "3"
 
 url = "https://ssl.education.lu/eRestauration/CustomerServices/Menu"

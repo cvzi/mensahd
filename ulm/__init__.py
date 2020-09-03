@@ -10,7 +10,10 @@ import requests
 
 from pyopenmensa.feed import OpenMensaCanteen
 
-from version import __version__, useragentname, useragentcomment
+try:
+    from version import __version__, useragentname, useragentcomment
+except ModuleNotFoundError:
+    __version__, useragentname, useragentcomment = 0.1, "Python", "3"
 
 metaJson = os.path.join(os.path.dirname(__file__), "ulm.json")
 
@@ -278,4 +281,4 @@ def getParser(baseurl):
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
-    print(getParser("http://localhost/").feed("unimensa"))
+    print(getParser("http://localhost/").feed("diner"))
