@@ -11,7 +11,10 @@ import requests
 from bs4 import BeautifulSoup
 from pyopenmensa.feed import LazyBuilder
 
-from version import __version__, useragentname, useragentcomment
+try:
+    from version import __version__, useragentname, useragentcomment
+except ModuleNotFoundError:
+    __version__, useragentname, useragentcomment = 0.1, requests.utils.default_user_agent(), "Python 3"
 
 metaJson = os.path.join(os.path.dirname(__file__), "mannheim.json")
 
@@ -102,11 +105,14 @@ def mensa_info(apiurl, days, canteenid, alternative, canteen=None, day=0):
         logging.warning(e)
         r = requests.get(url, headers=headers, verify=False)
 
+    if r.status_code != 200:
+        raise RuntimeError(f"Error {r.status_code}: {r.text}")
+
     try:
         data = r.json()
     except json.decoder.JSONDecodeError as e:
         logging.error(f"'{url}' response:\n{r.text}")
-        return f"JSONDecodeError: {e}"
+        raise e
 
     if canteen is None:
         canteen = LazyBuilder()
@@ -259,7 +265,7 @@ class Parser:
         self.shared_prefix = shared_prefix
         self.canteens = {}
 
-    def define(self, name, canteenid, alternative=False):
+    def define(self, name, canteenid, alternative=False, disabled=False):
         self.canteens[name] = [canteenid, alternative]
 
     def json(self):
@@ -284,12 +290,12 @@ def getParser(baseurl):
                     shared_prefix='https://studiplus.stw-ma.de/api/app/')
     parser.define('schloss', 108)
     parser.define('hochschule', 416, 5599)
-    parser.define('kubus', 406, 5555)
-    parser.define('metropol', 404, 5687)
-    parser.define('metropol2go', 5687)
+    parser.define('kubus', 406)
+    parser.define('metropol', 404)
+    # parser.define('metropol2go', 5687) # Disabled on openmensa.org
     parser.define('wohlgelegen', 408)
     parser.define('musikhochschule', 172)
-    parser.define('eo', 170)
+    # parser.define('eo', 170) # Disabled on openmensa.org
 
     parser.define('horizonte', 502)
     # parser.define('dhbw', 896) # TODO this might be eppelheim
@@ -300,4 +306,4 @@ def getParser(baseurl):
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
-    print(getParser("http://localhost/").feed_today("metropol2go"))
+    print(getParser("http://localhost/").feed_today("kubus"))
