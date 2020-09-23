@@ -8,6 +8,13 @@ import urllib.request
 include = os.path.relpath(os.path.join(os.path.dirname(__file__), '..'))
 sys.path.insert(0, include)
 
+isPyIdle = "idlelib" in sys.modules
+endVT = "" if isPyIdle else "\033[0m"
+yellowVT = "" if isPyIdle else "\033[1;33m"
+greenVT = "" if isPyIdle else "\033[1;32m"
+redVT = "" if isPyIdle else "\033[1;31m"
+greenOk = f"{greenVT}Ok{endVT}"
+
 
 def downloadFile(url, filename="file.tmp"):
     if not os.path.isfile(filename):
@@ -38,7 +45,7 @@ def check_meta(content, name=''):
         print(" -> Probably too short meta. [%s]" % (name, ), file=sys.stderr)
         return False
     else:
-        print(" -> Ok.")
+        print(f" -> {greenOk}.")
     return True
 
 
@@ -55,22 +62,22 @@ def check_feed(content, encoding='utf8', name=''):
 
         defusedxml.lxml.fromstring(source, xmlParser)
     except lxml.etree.XMLSyntaxError as error:
-        raise RuntimeWarning("Invalid document feed [%s]: %s" % (name, str(error)))
+        raise RuntimeWarning(f"Invalid document feed [{name}]: {error}")
 
     # Content length
     if len(content) < 300:
         # raise RuntimeWarning("[%s] probably empty feed." % (name,))
-        print(f"[{name}] probably empty feed.")
+        print(f"{yellowVT}[{name}] probably empty feed.{endVT}")
         return False
     elif len(content) < 360:
-        print(" -> Probably closed. [%s]" % (name, ), file=sys.stderr)
+        print(f" -> {yellowVT}Probably closed. [{name}]{endVT}", file=sys.stderr)
     else:
-        print(" -> Ok.")
+        print(f" -> {greenOk}.")
 
     # Count closed days:
     closed = content.count('<closed')
     if closed > 0:
-        print("Found closed days: %d [%s]" % (closed, name), file=sys.stderr)
+        print(f"{yellowVT}Found closed days: {closed} [{name}]{endVT}", file=sys.stderr)
 
     return True
 
@@ -81,7 +88,7 @@ def check_xml(parser, canteen):
 
     print("meta()", end="")
     content = parser.meta(canteen)
-    print(" -> Ok.")
+    print(f" -> {greenOk}.")
     print("meta() ", end="")
     check_meta(content, name=name)
 
@@ -90,7 +97,7 @@ def check_xml(parser, canteen):
     if hasattr(parser, "feed_today"):
         print("feed_today()", end="")
         content = parser.feed_today(canteen)
-        print(" -> Ok.")
+        print(f" -> {greenOk}.")
         print("feed_today() ", end="")
         check_feed(content, name=name)
         has_feed += 1
@@ -98,7 +105,7 @@ def check_xml(parser, canteen):
     if hasattr(parser, "feed_all"):
         print("feed_all()", end="")
         content = parser.feed_all(canteen)
-        print(" -> Ok.")
+        print(f" -> {greenOk}.")
         print("feed_all() ", end="")
         check_feed(content, name=name)
         has_feed += 1
@@ -106,7 +113,7 @@ def check_xml(parser, canteen):
     if hasattr(parser, "feed"):
         print("feed()", end="")
         content = parser.feed(canteen)
-        print(" -> Ok.")
+        print(f" -> {greenOk}.")
         print("feed() ", end="")
         check_feed(content, name=name)
         has_feed += 1
@@ -122,7 +129,7 @@ def test_all_modules():
 
     modules = map(__import__, moduleNames)
 
-    print(" -> Ok.")
+    print(f" -> {greenOk}.")
 
     errors = []
     for mod in modules:
@@ -134,23 +141,45 @@ def test_all_modules():
 
             for canteen in canteens:
                 check_xml(parser, canteen)
+        except (KeyboardInterrupt, SystemExit) as e:
+            raise e
         except Exception as e:
-            print(e)
+            print(f" {redVT}Error in {mod.__name__} ", end="")
+            if canteen:
+                print(f"{redVT}in canteen %r: {endVT}" % (canteen, ), end="")
+            print("{redVT}%r{endVT}" % (e, ))
             errors.append(e)
 
     if errors:
         raise errors[0]
 
 
+def one_module(name):
+    print(f"Importing {name}", end="")
+
+    mod = __import__(name)
+
+    print(f" -> {greenOk}.")
+
+    parser = mod.getParser('http://localhost/')
+    canteens = list(parser.canteens.keys())
+
+    for canteen in canteens:
+        check_xml(parser, canteen)
+
 def run_all():
     for fname, f in list(globals().items()):
         if fname.startswith('test_'):
-            print("%s()" % fname)
+            print(f"{fname}()...")
             f()
-            print("Ok.")
+            print(f"...{fname}() -> {greenOk}.")
 
 
 if __name__ == '__main__':
     # logging.basicConfig(level=logging.DEBUG)
     logging.basicConfig(level=logging.WARNING)
-    run_all()
+
+    if len(sys.argv) == 2:
+        one_module(sys.argv[1])
+    else:
+        run_all()
