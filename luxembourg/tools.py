@@ -50,7 +50,8 @@ allergens = {
 
 imgs = {
     "/terroir.png": "produit culinaire du terroir",
-    "/bio.png": "bio"
+    "/bio.png": "bio",
+    "/transfair.png": "produit Transfair"
 }
 
 
@@ -184,9 +185,9 @@ def getMenu(restaurantId, datetimeDay=None, serviceIds=None):
                                 notes.append(imgs[img])
                                 unknownImg = False
                         if unknownImg:
-                            logging.warning(f"Unkown img {div.attrs['src']}")
+                            logging.warning(f"Unkown img {div.attrs['src']} [restaurant={restaurantId}]")
                     elif "wrapper-theme-day" in div.attrs["class"]:
-                        logging.info(f"Theme day: {div.text.strip()}")
+                        logging.info(f"Theme day: {div.text.strip()} [restaurant={restaurantId}]")
                     elif "no-products" in div.attrs["class"]:
                         # Closed (No meals)
                         lazyBuilder.setDayClosed(date)
@@ -196,7 +197,7 @@ def getMenu(restaurantId, datetimeDay=None, serviceIds=None):
                     else:
                         logging.debug(div)
                         raise RuntimeWarning(
-                            f"unknown tag <{div.name}> with class {div.attrs['class']}: oneDayDiv->else")
+                            f"unknown tag <{div.name}> with class {div.attrs['class']}: oneDayDiv->else [restaurant={restaurantId}]")
                 elif div.name == 'ul':
                     mealCounter += 1
                     weekdayCounter[weekDay] += 1
