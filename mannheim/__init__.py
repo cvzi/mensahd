@@ -278,9 +278,13 @@ class Parser:
         return _generateCanteenMeta(name, self.baseurl)
 
     def feed_today(self, name):
+        if name not in self.canteens:
+            return 'wrong mensa name'
         return self.handler(self.shared_prefix, 1, *self.canteens[name])
 
     def feed_all(self, name):
+        if name not in self.canteens:
+            return 'wrong mensa name'
         return self.handler(self.shared_prefix, 5, *self.canteens[name])
 
 
@@ -290,20 +294,21 @@ def getParser(baseurl):
                     shared_prefix='https://studiplus.stw-ma.de/api/app/')
     parser.define('schloss', 108)
     parser.define('hochschule', 416, 5599)
-    parser.define('kubus', 406)
     parser.define('metropol', 404)
-    # parser.define('metropol2go', 5687) # Disabled on openmensa.org
     parser.define('wohlgelegen', 408)
-    parser.define('musikhochschule', 172)
+    parser.define('horizonte', 502)
+    parser.define('wagon', 5189)
+
+    # parser.define('musikhochschule', 172) # Disabled on openmensa.org
+    # parser.define('kubus', 406) # Disabled on openmensa.org
+    # parser.define('metropol2go', 5687) # Disabled on openmensa.org
     # parser.define('eo', 170) # Disabled on openmensa.org
 
-    parser.define('horizonte', 502)
     # parser.define('dhbw', 896) # TODO this might be eppelheim
-    parser.define('wagon', 5189)
 
     return parser
 
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
-    print(getParser("http://localhost/").feed_today("kubus"))
+    print(getParser("http://localhost/").feed_today("hochschule"))
