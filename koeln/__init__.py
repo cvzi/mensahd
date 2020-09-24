@@ -1,18 +1,25 @@
 #!/usr/bin/env python
 # Python 3
 import datetime
+import time
 import os
 import json
 import urllib
 import re
 import logging
+import string
+import textwrap
+from threading import Lock
 
 import pytz
 import requests
 from bs4 import BeautifulSoup
 from pyopenmensa.feed import LazyBuilder
 
-from version import __version__, useragentname, useragentcomment
+try:
+    from version import __version__, useragentname, useragentcomment
+except ModuleNotFoundError:
+    __version__, useragentname, useragentcomment = 0.1, requests.utils.default_user_agent(), "Python 3"
 
 # Based on https://github.com/mswart/openmensa-parsers/blob/master/magdeburg.py
 
@@ -24,8 +31,13 @@ metaTemplateFile = os.path.join(
 template_metaURL = "%skoeln/meta/%s.xml"
 template_todayURL = "%skoeln/today/%s.xml"
 template_fullURL = "%skoeln/all/%s.xml"
+template_source = r"https://www.kstw.de/speiseplan?l="
+templace_url = "https://www.kstw.de/speiseplan?l={ids}&t={{date}}"
 
-url = r"https://www.max-manager.de/daten-extern/sw-koeln/html/speiseplan-render.php"
+with open(metaJson, 'r', encoding='utf8') as f:
+    canteenDict = json.load(f)
+
+url = templace_url.format(ids=",".join(canteenDict.keys()))
 
 headers = {
     'User-Agent': f'{useragentname}/{__version__} ({useragentcomment}) {requests.utils.default_user_agent()}'
@@ -41,184 +53,147 @@ weekdaysMap = [
     ("So", "sunday")
 ]
 
-roles = ('student', 'employee', 'other')
-
-ingredients = {1: "mit Farbstoff",
-               2: "mit Konservierungsstoff",
-               3: "mit Antioxidationsmittel",
-               4: "mit Geschmacksverstärker",
-               5: "geschwefelt",
-               6: "geschwärzt",
-               7: "gewachst",
-               8: "mit Phosphat",
-               9: "mit Süßstoff",
-               10: "enthält eine Phenylalaninquelle",
-               11: "Gluten",
-               12: "Krebstiere (Schalen-/Krusten-/Weichtiere)",
-               13: "Eier",
-               14: "Fisch",
-               15: "Erdnüsse",
-               16: "Soja",
-               17: "Milch",
-               18: "Laktose",
-               19: "Schalenfrüchte (Nüsse)",
-               20: "Sellerie",
-               21: "Senf",
-               22: "Sesamsamen",
-               23: "Schwefeldioxid und Sulfite",
-               24: "Lupinen",
-               26: "enthält Alkohol",
-               27: "enthält Gelatine"}
+rolesOrder = ('student', 'employee', 'other')
 
 
-def parse_url(canteen, locId, day=None):
+# Global vars for caching
+cache_mealsURL_lock = Lock()
+cache_mealsURL_data = {}
+cache_mealsURL_time = {}
 
+
+def _getMealsURL(url, max_age_minutes=30):
+    """Download website, if available use a cached version"""
+    if url in cache_mealsURL_data:
+        age_seconds = (time.time() - cache_mealsURL_time[url])
+        if age_seconds < max_age_minutes*60:
+            logging.debug(f"From cache: {url} [{round(age_seconds)}s old]")
+            return cache_mealsURL_data[url]
+
+    content = requests.get(url, headers=headers).text
+    with cache_mealsURL_lock:
+        cache_mealsURL_data[url] = content
+        cache_mealsURL_time[url] = time.time()
+    return content
+
+
+def parse_url(lazyBuilder, mensaId, day=None):
     if day is None:
         day = datetime.date.today()
-
     date = day.strftime("%Y-%m-%d")
 
-    r = requests.post(
-        url,
-        data={
-            'date': date,
-            'func': 'make_spl',
-            'lang': 'de',
-            'locId': locId},
-        headers=headers)
+    content = _getMealsURL(url.format(date=date))
+    document = BeautifulSoup(content, "html.parser")
 
-    document = BeautifulSoup(r.text, "html.parser")
+    mensaDivs = document.find_all(
+        "div", class_="tx-epwerkmenu-menu-location-wrapper")
+    mensaDivs = [
+        mensaDiv for mensaDiv in mensaDivs if mensaDiv.attrs["data-location"] == str(mensaId)]
+    if len(mensaDivs) != 1:
+        logging.error(f"Mensa not found id={mensaId}")
+        return False
 
-    trs = document.find("table", {"class": "speiseplan"}).find_all("tr")
+    mensaDiv = mensaDivs.pop()
+    menuTiles = mensaDiv.find_all("div", class_="menue-tile")
 
-    nextIsMenu = False
-    categoryName = ""
     foundAny = False
-    for tr in trs:
-        td = tr.find("td", {"class": "pk bg-rot"})
-        if td:
-            categoryName = td.text.strip()
-            categoryName = categoryName.replace("*", "").strip()
-            if categoryName in ("", "Hinweis", "Information"):
-                nextIsMenu = False
-            else:
-                nextIsMenu = True
-            continue
+    for menuTile in menuTiles:
+        category = string.capwords(menuTile.attrs["data-category"])
+        mealName = menuTile.find(
+            class_="tx-epwerkmenu-menu-meal-title").text.strip()
+        desc = menuTile.find(class_="tx-epwerkmenu-menu-meal-description")
+        if desc and desc.text.strip():
+            mealName = f"{mealName} {desc.text.strip()}"
 
-        elif nextIsMenu:
-            tds = tr.find_all("td")
+        additives = menuTile.find(class_="tx-epwerkmenu-menu-meal-additives")
+        for sup in additives.find_all('sup'):
+            sup.extract()
+        notes = [note.strip()
+                 for note in additives.text.split("\n") if note.strip()]
 
-            artikel = tds[1].find("span", {"class": "artikel"})
-            descr = tds[1].find("span", {"class": "descr"})
+        pricesDiv = menuTile.find(
+            class_="tx-epwerkmenu-menu-meal-prices-values")
 
-            text = "".join(artikel.findAll(text=True, recursive=False))
-            text += " " + "".join(descr.findAll(text=True, recursive=False))
-            text = text.replace("*", "").strip()
-
-            if "geschlossen" in text.lower():
-                nextIsMenu = False
-                continue
-
-            sup = ",".join([n.text for n in artikel.findAll("sup")])
-            sup += "," + ",".join([n.text for n in descr.findAll("sup")])
-
-            notes = sorted(set([int(x.strip())
-                                for x in sup.split(",") if x.strip()]))
-
-            if len(notes):
-                notes = [ingredients[i] for i in notes if i in ingredients]
-            else:
-                notes = None
-
+        roles = []
+        prices = []
+        for j, price in enumerate(pricesDiv.text.split('/')):
+            price = price.strip().replace(',', '.')
             try:
-                prices = [float(x.strip().replace(",", "."))
-                          for x in tds[2].text.split("/")]
-            except (AttributeError, TypeError, KeyError, ValueError):
-                logging.warning("Could not find prices for:")
-                logging.warning(text)
-                prices = []
-            canteen.addMeal(date, categoryName, text, notes, prices, roles)
-            foundAny = True
+                price = float(price)
+                prices.append(price)
+                roles.append(rolesOrder[j])
+            except ValueError:
+                pass
+
+        for j, mealText in enumerate(textwrap.wrap(mealName, width=250)):
+            lazyBuilder.addMeal(date, category, mealName,
+                                notes if j == 0 else None,
+                                prices if j == 0 else None,
+                                roles if j == 0 else None)
+        foundAny = True
 
     if foundAny:
         return True
 
-    canteen.setDayClosed(date)
+    lazyBuilder.setDayClosed(date)
+
     return False
 
 
-def _generateCanteenMeta(obj, name, baseurl):
+def _generateCanteenMeta(mensa, baseurl):
     """Generate an openmensa XML meta feed from the static json file using an XML template"""
     template = open(metaTemplateFile).read()
 
-    for mensa in obj["mensen"]:
-        if not mensa["xml"]:
-            continue
-
-        if name != mensa["xml"]:
-            continue
-
-        shortname = name
-
-        data = {
-            "name": mensa["name"],
-            "adress": "%s %s %s %s" % (mensa["name"], mensa["strasse"], mensa["plz"], mensa["ort"]),
-            "city": mensa["ort"],
-            "phone": mensa["phone"],
-            "latitude": mensa["latitude"],
-            "longitude": mensa["longitude"],
-            "feed_today": template_todayURL % (baseurl, urllib.parse.quote(shortname)),
-            "feed_full": template_fullURL % (baseurl, urllib.parse.quote(shortname)),
-            "source_today": mensa["source_today"].replace("&", "&amp;"),
-            "source_full": mensa["source_today"].replace("&", "&amp;")
-        }
-        openingTimes = {}
-        infokurz = mensa["infokurz"]
-        pattern = re.compile(
-            "([A-Z][a-z])( - ([A-Z][a-z]))? (\d{1,2})\.(\d{2}) - (\d{1,2})\.(\d{2}) Uhr")
-        m = re.findall(pattern, infokurz)
-        for result in m:
-            fromDay, _, toDay, fromTimeH, fromTimeM, toTimeH, toTimeM = result
-            openingTimes[fromDay] = "%02d:%02d-%02d:%02d" % (
-                int(fromTimeH), int(fromTimeM), int(toTimeH), int(toTimeM))
-            if toDay:
-                select = False
-                for short, long in weekdaysMap:
-                    if short == fromDay:
-                        select = True
-                    elif select:
-                        openingTimes[short] = "%02d:%02d-%02d:%02d" % (
-                            int(fromTimeH), int(fromTimeM), int(toTimeH), int(toTimeM))
-                    if short == toDay:
-                        select = False
-
+    data = {
+        "name": mensa["name"],
+        "adress": "%s %s %s %s" % (mensa["name"], mensa["strasse"], mensa["plz"], mensa["ort"]),
+        "city": mensa["ort"],
+        "phone": mensa["phone"],
+        "latitude": mensa["latitude"],
+        "longitude": mensa["longitude"],
+        "feed_today": template_todayURL % (baseurl, urllib.parse.quote(mensa["reference"])),
+        "feed_full": template_fullURL % (baseurl, urllib.parse.quote(mensa["reference"])),
+        "source_today": template_source + mensa["id"],
+        "source_full": template_source + mensa["id"]
+    }
+    openingTimes = {}
+    infokurz = mensa["infokurz"]
+    pattern = re.compile(
+        "([A-Z][a-z])( - ([A-Z][a-z]))? (\d{1,2})\.(\d{2}) - (\d{1,2})\.(\d{2}) Uhr")
+    m = re.findall(pattern, infokurz)
+    for result in m:
+        fromDay, _, toDay, fromTimeH, fromTimeM, toTimeH, toTimeM = result
+        openingTimes[fromDay] = "%02d:%02d-%02d:%02d" % (
+            int(fromTimeH), int(fromTimeM), int(toTimeH), int(toTimeM))
+        if toDay:
+            select = False
             for short, long in weekdaysMap:
-                if short in openingTimes:
-                    data[long] = 'open="%s"' % openingTimes[short]
-                else:
-                    data[long] = 'closed="true"'
+                if short == fromDay:
+                    select = True
+                elif select:
+                    openingTimes[short] = "%02d:%02d-%02d:%02d" % (
+                        int(fromTimeH), int(fromTimeM), int(toTimeH), int(toTimeM))
+                if short == toDay:
+                    select = False
 
-        xml = template.format(**data)
-        return xml
+        for short, long in weekdaysMap:
+            if short in openingTimes:
+                data[long] = 'open="%s"' % openingTimes[short]
+            else:
+                data[long] = 'closed="true"'
 
-    return '<openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd"/>'
+    xml = template.format(**data)
+    return xml
 
 
 class Parser:
-    def __init__(self, baseurl, handler):
+    def __init__(self, baseurl):
         self.baseurl = baseurl
-        self.metaObj = json.load(open(metaJson))
-
         self.canteens = {}
-
-        self.xmlnames = []
-        for mensa in self.metaObj["mensen"]:
-            self.xmlnames.append(mensa["xml"])
-            self.canteens[mensa["xml"]] = True
-
-        # self.xmlnames = ["spoho", "cafe-himmelsblick", "iwz-deutz", "gummersbach", "kunsthochschule-medien", "muho", "robertkoch", "suedstadt", "unimensa"]
-
-        self.handler = handler
+        for mensaId in canteenDict:
+            canteenDict[mensaId]["id"] = mensaId
+            self.canteens[canteenDict[mensaId]
+                          ["reference"]] = canteenDict[mensaId]
 
     @staticmethod
     def __now():
@@ -228,44 +203,52 @@ class Parser:
 
     def json(self):
         tmp = {}
-        for name in self.xmlnames:
-            tmp[name] = template_metaURL % (self.baseurl, name)
+        for reference in self.canteens:
+            tmp[reference] = template_metaURL % (self.baseurl, reference)
         return json.dumps(tmp, indent=2)
 
     def meta(self, name):
-        return _generateCanteenMeta(self.metaObj, name, self.baseurl)
+        if name in self.canteens:
+            return _generateCanteenMeta(self.canteens[name], self.baseurl)
+        return 'Wrong mensa name'
 
     def feed_today(self, name):
-        today = self.__now().date()
-        canteen = LazyBuilder()
-        self.handler(canteen, name, today)
-        return canteen.toXMLFeed()
+        if name in self.canteens:
+            today = self.__now().date()
+            lazyBuilder = LazyBuilder()
+            mensaId = self.canteens[name]["id"]
+            parse_url(lazyBuilder, mensaId, today)
+            return lazyBuilder.toXMLFeed()
+        return 'Wrong mensa name'
 
     def feed_all(self, name):
-        canteen = LazyBuilder()
+        if name in self.canteens:
+            mensaId = self.canteens[name]["id"]
+            lazyBuilder = LazyBuilder()
 
-        date = self.__now()
+            date = self.__now()
 
-        # Get this week
-        while self.handler(canteen, name, date.date()):
-            date += datetime.timedelta(days=1)
-
-        # Skip over weekend
-        if date.weekday() > 4:
-            date += datetime.timedelta(days=7 - date.weekday())
-
-            # Get next week
-            while self.handler(canteen, name, date.date()):
+            # Get this week
+            while parse_url(lazyBuilder, mensaId, date.date()):
                 date += datetime.timedelta(days=1)
 
-        return canteen.toXMLFeed()
+            # Skip over weekend
+            if date.weekday() > 4:
+                date += datetime.timedelta(days=7 - date.weekday())
+
+                # Get next week
+                while parse_url(lazyBuilder, mensaId, date.date()):
+                    date += datetime.timedelta(days=1)
+
+            return lazyBuilder.toXMLFeed()
+        return 'Wrong mensa name'
 
 
 def getParser(baseurl):
-    parser = Parser(baseurl, parse_url)
+    parser = Parser(baseurl)
     return parser
 
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
-    print(getParser("http://localhost/").feed_all("robertkoch"))
+    print(getParser("http://localhost/").feed_today("iwz-deutz"))
