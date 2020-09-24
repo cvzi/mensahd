@@ -176,10 +176,9 @@ def run_all():
 
 
 if __name__ == '__main__':
-    # logging.basicConfig(level=logging.DEBUG)
-    logging.basicConfig(level=logging.WARNING)
-
     if len(sys.argv) == 2:
+        logging.basicConfig(level=logging.DEBUG)
         one_module(sys.argv[1])
     else:
+        logging.basicConfig(level=logging.WARNING)
         run_all()
