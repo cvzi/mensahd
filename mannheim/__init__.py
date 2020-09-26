@@ -117,7 +117,7 @@ def mensa_info(apiurl, days, canteenid, alternative, canteen=None, day=0):
     if canteen is None:
         canteen = LazyBuilder()
 
-    if len(data['menuList']) == 0:
+    if 'menuList' not in data or not data['menuList'] or len(data['menuList']) == 0:
         if not isinstance(alternative, bool) and day == 0:
             logging.info(f"Empty menuList {morning.date().isoformat()}. Trying alternative id: {canteenid} -> {alternative}")
             return mensa_info(apiurl, days, alternative, False)
@@ -311,4 +311,4 @@ def getParser(baseurl):
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
-    print(getParser("http://localhost/").feed_today("hochschule"))
+    print(getParser("http://localhost/").feed_today("schloss"))
