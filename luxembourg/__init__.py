@@ -4,8 +4,6 @@ import logging
 import urllib
 import re
 
-from pyopenmensa.feed import LazyBuilder
-
 try:
     from luxembourg.tools import getMenu
 except:

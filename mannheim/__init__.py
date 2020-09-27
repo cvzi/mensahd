@@ -9,12 +9,16 @@ import urllib
 
 import requests
 from bs4 import BeautifulSoup
-from pyopenmensa.feed import LazyBuilder
 
 try:
     from version import __version__, useragentname, useragentcomment
+    from util import StyledLazyBuilder
 except ModuleNotFoundError:
-    __version__, useragentname, useragentcomment = 0.1, requests.utils.default_user_agent(), "Python 3"
+    import sys
+    include = os.path.relpath(os.path.join(os.path.dirname(__file__), '..'))
+    sys.path.insert(0, include)
+    from version import __version__, useragentname, useragentcomment
+    from util import StyledLazyBuilder
 
 metaJson = os.path.join(os.path.dirname(__file__), "mannheim.json")
 
@@ -115,7 +119,7 @@ def mensa_info(apiurl, days, canteenid, alternative, canteen=None, day=0):
         raise e
 
     if canteen is None:
-        canteen = LazyBuilder()
+        canteen = StyledLazyBuilder()
 
     if 'menuList' not in data or not data['menuList'] or len(data['menuList']) == 0:
         if not isinstance(alternative, bool) and day == 0:
@@ -311,4 +315,4 @@ def getParser(baseurl):
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
-    print(getParser("http://localhost/").feed_today("schloss"))
+    print(getParser("http://localhost/").meta("hochschule"))

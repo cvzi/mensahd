@@ -9,9 +9,16 @@ import logging
 
 import requests
 from bs4 import BeautifulSoup
-from pyopenmensa.feed import LazyBuilder
 
-from version import __version__, useragentname, useragentcomment
+try:
+    from version import __version__, useragentname, useragentcomment
+    from util import StyledLazyBuilder
+except ModuleNotFoundError:
+    import sys
+    include = os.path.relpath(os.path.join(os.path.dirname(__file__), '..'))
+    sys.path.insert(0, include)
+    from version import __version__, useragentname, useragentcomment
+    from util import StyledLazyBuilder
 
 # Based on https://github.com/mswart/openmensa-parsers/blob/master/magdeburg.py
 
@@ -66,13 +73,14 @@ def parse_url(url, today=False):
         url = url % today.strftime('%Y_%m_%d')
 
     try:
+        print(url)
         content = requests.get(url, headers=headers).text
     except requests.exceptions.ConnectionError as e:
         logging.warning(str(e))
         content = requests.get(url, headers=headers, verify=False).text
 
     document = BeautifulSoup(content, "html.parser")
-    canteen = LazyBuilder()
+    canteen = StyledLazyBuilder()
 
     if not document.find("div", {"class": "maincontent"}):
         print("Page incompatible. Maintenance?")

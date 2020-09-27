@@ -8,14 +8,18 @@ from collections.abc import Iterable
 import requests
 import bs4
 from bs4 import BeautifulSoup
-from pyopenmensa.feed import LazyBuilder
-
-__all__ = ['getMenu', 'askRestopolis']
 
 try:
     from version import __version__, useragentname, useragentcomment
+    from util import StyledLazyBuilder
 except ModuleNotFoundError:
-    __version__, useragentname, useragentcomment = 0.1, "Python", "3"
+    import sys
+    include = os.path.relpath(os.path.join(os.path.dirname(__file__), '..'))
+    sys.path.insert(0, include)
+    from version import __version__, useragentname, useragentcomment
+    from util import StyledLazyBuilder
+
+__all__ = ['getMenu', 'askRestopolis']
 
 url = "https://ssl.education.lu/eRestauration/CustomerServices/Menu"
 s = requests.Session()
@@ -83,7 +87,7 @@ def getMenu(restaurantId, datetimeDay=None, serviceIds=None):
     """
     Create openmensa feed from restopolis website
     """
-    lazyBuilder = LazyBuilder()
+    lazyBuilder = StyledLazyBuilder()
 
     if not datetimeDay:
         datetimeDay = datetime.date.today()

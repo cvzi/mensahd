@@ -8,12 +8,15 @@ import datetime
 import urllib
 import requests
 
-from pyopenmensa.feed import OpenMensaCanteen
-
 try:
     from version import __version__, useragentname, useragentcomment
+    from util import StyledLazyBuilder
 except ModuleNotFoundError:
-    __version__, useragentname, useragentcomment = 0.1, "Python", "3"
+    import sys
+    include = os.path.relpath(os.path.join(os.path.dirname(__file__), '..'))
+    sys.path.insert(0, include)
+    from version import __version__, useragentname, useragentcomment
+    from util import StyledLazyBuilder
 
 metaJson = os.path.join(os.path.dirname(__file__), "ulm.json")
 
@@ -84,6 +87,7 @@ headers = {
 }
 
 def _from_json(canteen, url, place):
+
     if not url.startswith("http://") and not url.startswith("https://"):
         raise RuntimeError(f"url is not an allowed URL: '{url}'")
     result = requests.get(url, headers=headers)
@@ -189,7 +193,7 @@ def _from_json(canteen, url, place):
 
 
 def _parse_url(sourcepage, filename, place):
-    canteen = OpenMensaCanteen()
+    canteen = StyledLazyBuilder()
     _from_json(canteen, sourcepage + filename, place)
     return canteen.toXMLFeed()
 

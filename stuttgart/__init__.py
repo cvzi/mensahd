@@ -10,9 +10,16 @@ import logging
 import pytz
 import requests
 from bs4 import BeautifulSoup
-from pyopenmensa.feed import LazyBuilder
 
-from version import __version__, useragentname, useragentcomment
+try:
+    from version import __version__, useragentname, useragentcomment
+    from util import StyledLazyBuilder
+except ModuleNotFoundError:
+    import sys
+    include = os.path.relpath(os.path.join(os.path.dirname(__file__), '..'))
+    sys.path.insert(0, include)
+    from version import __version__, useragentname, useragentcomment
+    from util import StyledLazyBuilder
 
 metaJson = os.path.join(os.path.dirname(__file__), "stuttgart.json")
 
@@ -209,7 +216,7 @@ class Parser:
         return _generateCanteenMeta(self.metaObj, name, self.baseurl)
 
     def feed(self, name):
-        canteen = LazyBuilder()
+        canteen = StyledLazyBuilder()
         _fetchData(canteen, self.xml2json[name])
         return canteen.toXMLFeed()
 

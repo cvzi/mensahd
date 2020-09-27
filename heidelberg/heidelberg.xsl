@@ -10,7 +10,13 @@
 
 <xsl:template match="/">
 
+<xsl:processing-instruction name="xml-stylesheet">
+  <xsl:text>type="text/css" href="https://cvzi.github.io/om-style/latest/basic.css"</xsl:text>
+</xsl:processing-instruction>
 
+<xsl:processing-instruction name="xml-stylesheet">
+  <xsl:text>type="text/css" href="https://cvzi.github.io/om-style/latest/lightgreen.css"</xsl:text>
+</xsl:processing-instruction>
 
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
 

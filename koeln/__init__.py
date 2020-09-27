@@ -14,12 +14,16 @@ from threading import Lock
 import pytz
 import requests
 from bs4 import BeautifulSoup
-from pyopenmensa.feed import LazyBuilder
 
 try:
     from version import __version__, useragentname, useragentcomment
+    from util import StyledLazyBuilder
 except ModuleNotFoundError:
-    __version__, useragentname, useragentcomment = 0.1, requests.utils.default_user_agent(), "Python 3"
+    import sys
+    include = os.path.relpath(os.path.join(os.path.dirname(__file__), '..'))
+    sys.path.insert(0, include)
+    from version import __version__, useragentname, useragentcomment
+    from util import StyledLazyBuilder
 
 # Based on https://github.com/mswart/openmensa-parsers/blob/master/magdeburg.py
 
@@ -215,7 +219,7 @@ class Parser:
     def feed_today(self, name):
         if name in self.canteens:
             today = self.__now().date()
-            lazyBuilder = LazyBuilder()
+            lazyBuilder = StyledLazyBuilder()
             mensaId = self.canteens[name]["id"]
             parse_url(lazyBuilder, mensaId, today)
             return lazyBuilder.toXMLFeed()
@@ -224,7 +228,7 @@ class Parser:
     def feed_all(self, name):
         if name in self.canteens:
             mensaId = self.canteens[name]["id"]
-            lazyBuilder = LazyBuilder()
+            lazyBuilder = StyledLazyBuilder()
 
             date = self.__now()
 

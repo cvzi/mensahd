@@ -14,7 +14,13 @@ import pytz
 import lxml.etree
 import defusedxml.lxml
 
-from version import __version__, useragentname, useragentcomment
+try:
+    from version import __version__, useragentname, useragentcomment
+except ModuleNotFoundError:
+    import sys
+    include = os.path.relpath(os.path.join(os.path.dirname(__file__), '..'))
+    sys.path.insert(0, include)
+    from version import __version__, useragentname, useragentcomment
 
 mealsURL = 'https://www.stw.uni-heidelberg.de/appdata/sp.xml'
 mealsURL_authorization = False
@@ -160,7 +166,10 @@ def _generateFeed(source, name, date='', lastFetched=0):
     xslt = lxml.etree.XSLT(xslt_tree)
     newdom = xslt(dom, canteenName=lxml.etree.XSLT.strparam(name), canteenDesiredName=lxml.etree.XSLT.strparam(
         desiredName[name]), specificDate=lxml.etree.XSLT.strparam(date), lastFetched=lxml.etree.XSLT.strparam('%d' % lastFetched))
-    return lxml.etree.tostring(newdom, pretty_print=True)
+    return lxml.etree.tostring(newdom,
+                               pretty_print=True,
+                               xml_declaration=True,
+                               encoding=newdom.docinfo.encoding)
 
 
 def _generateCanteenMeta(source, name, baseurl):
@@ -304,4 +313,4 @@ def getParser(baseurl):
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
-    print(getParser("http://localhost/").feed_all("inf304"))
+    print(getParser("http://localhost/").feed_all("inf304").decode("utf-8"))
