@@ -10,13 +10,13 @@ import requests
 
 try:
     from version import __version__, useragentname, useragentcomment
-    from util import StyledLazyBuilder
+    from util import StyledLazyBuilder, nowBerlin
 except ModuleNotFoundError:
     import sys
     include = os.path.relpath(os.path.join(os.path.dirname(__file__), '..'))
     sys.path.insert(0, include)
     from version import __version__, useragentname, useragentcomment
-    from util import StyledLazyBuilder
+    from util import StyledLazyBuilder, nowBerlin
 
 metaJson = os.path.join(os.path.dirname(__file__), "ulm.json")
 
@@ -95,7 +95,7 @@ def _from_json(canteen, url, place):
         logging.warning(f"{result} for {url}. Setting week 'closed'")
         # Set 7 days closed
         for i in range(7):
-            canteen.setDayClosed((datetime.date.today() + datetime.timedelta(i)))
+            canteen.setDayClosed((nowBerlin().date() + datetime.timedelta(i)))
         return
 
     try:
@@ -108,7 +108,7 @@ def _from_json(canteen, url, place):
         logging.warning(f'Empty/malformed json file, setting week to "closed" ({url})')
         # Set 7 days closed
         for i in range(7):
-            canteen.setDayClosed((datetime.date.today() + datetime.timedelta(i)))
+            canteen.setDayClosed((nowBerlin().date() + datetime.timedelta(i)))
         return
 
     for week in data['weeks']:
@@ -118,7 +118,7 @@ def _from_json(canteen, url, place):
                 date = day['date']
             else:
                 # Monday, Tueday, ...
-                today = datetime.date.today()
+                today = nowBerlin().date()
                 weekday = weekdays.index(day['date'])
                 till_next = (weekday - today.weekday() + 7) % 7
                 date = (today + datetime.timedelta(days=till_next)

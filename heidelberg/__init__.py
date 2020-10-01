@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # Python 3
 import urllib.request
-import datetime
 import os
 import json
 import re
@@ -10,17 +9,18 @@ import io
 import logging
 from threading import Lock
 
-import pytz
 import lxml.etree
 import defusedxml.lxml
 
 try:
     from version import __version__, useragentname, useragentcomment
+    from util import nowBerlin
 except ModuleNotFoundError:
     import sys
     include = os.path.relpath(os.path.join(os.path.dirname(__file__), '..'))
     sys.path.insert(0, include)
     from version import __version__, useragentname, useragentcomment
+    from util import nowBerlin
 
 mealsURL = 'https://www.stw.uni-heidelberg.de/appdata/sp.xml'
 mealsURL_authorization = False
@@ -155,8 +155,7 @@ def _getMetaURL_cached(max_age_minutes=120):
 def _generateFeed(source, name, date='', lastFetched=0):
     """Generate an openmensa XML feed from the source feed using XSLT"""
     if date == 'today':
-        berlin = pytz.timezone('Europe/Berlin')
-        now = datetime.datetime.now(berlin)
+        now = nowBerlin()
         date = now.strftime("%Y-%m-%d")
 
     name = nameMap[name]

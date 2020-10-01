@@ -12,13 +12,13 @@ from bs4 import BeautifulSoup
 
 try:
     from version import __version__, useragentname, useragentcomment
-    from util import StyledLazyBuilder
+    from util import StyledLazyBuilder, nowBerlin
 except ModuleNotFoundError:
     import sys
     include = os.path.relpath(os.path.join(os.path.dirname(__file__), '..'))
     sys.path.insert(0, include)
     from version import __version__, useragentname, useragentcomment
-    from util import StyledLazyBuilder
+    from util import StyledLazyBuilder, nowBerlin
 
 # Based on https://github.com/mswart/openmensa-parsers/blob/master/magdeburg.py
 
@@ -65,7 +65,7 @@ datespan_regex = re.compile(
 
 
 def parse_url(url, today=False):
-    today = datetime.date.today()
+    today = nowBerlin().date()
     if today.weekday() == 6:  # Sunday
         today += datetime.timedelta(days=1)  # Tomorrow
 
@@ -92,7 +92,7 @@ def parse_url(url, today=False):
     if not datematch and "geschlossen" in h2.text:
         # Set 7 days closed
         for i in range(7):
-            canteen.setDayClosed((datetime.date.today() + datetime.timedelta(i)))
+            canteen.setDayClosed((nowBerlin().date() + datetime.timedelta(i)))
         return canteen.toXMLFeed()
     p = datematch.groupdict()
     if len(p["from"].split(".")[2]) == 0:

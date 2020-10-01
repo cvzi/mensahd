@@ -12,13 +12,13 @@ from bs4 import BeautifulSoup
 
 try:
     from version import __version__, useragentname, useragentcomment
-    from util import StyledLazyBuilder
+    from util import StyledLazyBuilder, nowBerlin
 except ModuleNotFoundError:
     import sys
     include = os.path.relpath(os.path.join(os.path.dirname(__file__), '..'))
     sys.path.insert(0, include)
     from version import __version__, useragentname, useragentcomment
-    from util import StyledLazyBuilder
+    from util import StyledLazyBuilder, nowBerlin
 
 metaJson = os.path.join(os.path.dirname(__file__), "mannheim.json")
 
@@ -90,7 +90,7 @@ def showFilter(data, filterid):
 
 
 def mensa_info(apiurl, days, canteenid, alternative, canteen=None, day=0):
-    now = datetime.datetime.now()
+    now = nowBerlin()
     now += datetime.timedelta(days=day)
     if now.weekday() == 6:  # Sunday
         now += datetime.timedelta(days=1)  # Sunday -> Monday
@@ -296,10 +296,11 @@ def getParser(baseurl):
     parser = Parser(baseurl, 'mannheim',
                     handler=mensa_info,
                     shared_prefix='https://studiplus.stw-ma.de/api/app/')
-    parser.define('schloss', 108)
-    parser.define('hochschule', 416, 5599)
-    parser.define('metropol', 404)
-    parser.define('wohlgelegen', 408)
+    parser.define('schloss', 610)
+    parser.define('hochschule', 611, 5599)
+    parser.define('metropol', 613)
+    parser.define('wohlgelegen', 614)
+
     parser.define('horizonte', 502)
     parser.define('wagon', 5189)
 

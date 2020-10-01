@@ -1,13 +1,11 @@
 #!/usr/bin/env python
 # Python 3
-import datetime
 import os
 import json
 import urllib
 import re
 import logging
 
-import pytz
 import requests
 from bs4 import BeautifulSoup
 
@@ -199,12 +197,6 @@ class Parser:
         for mensa in self.metaObj["mensen"]:
             self.xmlnames.append(mensa["xml"])
             self.xml2json[mensa["xml"]] = mensa["json"]
-
-    @staticmethod
-    def __now():
-        berlin = pytz.timezone('Europe/Berlin')
-        now = datetime.datetime.now(berlin)
-        return now
 
     def json(self):
         tmp = {}
