@@ -32,7 +32,7 @@ xmlParser = lxml.etree.XMLParser(schema=lxml.etree.XMLSchema(file=downloadFile(
 
 
 def check_meta(content, name=''):
-    print("Content", end="")
+    print("Content", end="", flush=True)
 
     # Check syntax
     try:
@@ -50,7 +50,7 @@ def check_meta(content, name=''):
 
 
 def check_feed(content, encoding='utf8', name=''):
-    print("Content", end="")
+    print("Content", end="", flush=True)
 
     # Check syntax
     try:
@@ -86,35 +86,35 @@ def check_xml(parser, canteen):
     name = "%s/%s" % (parser.__module__, canteen)
     print("Canteen: %s" % (name, ))
 
-    print("meta()", end="")
+    print("meta()", end="", flush=True)
     content = parser.meta(canteen)
     print(f" -> {greenOk}.")
-    print("meta() ", end="")
+    print("meta() ", end="", flush=True)
     check_meta(content, name=name)
 
     has_feed = 0
 
     if hasattr(parser, "feed_today"):
-        print("feed_today()", end="")
+        print("feed_today()", end="", flush=True)
         content = parser.feed_today(canteen)
         print(f" -> {greenOk}.")
-        print("feed_today() ", end="")
+        print("feed_today() ", end="", flush=True)
         check_feed(content, name=name)
         has_feed += 1
 
     if hasattr(parser, "feed_all"):
-        print("feed_all()", end="")
+        print("feed_all()", end="", flush=True)
         content = parser.feed_all(canteen)
         print(f" -> {greenOk}.")
-        print("feed_all() ", end="")
+        print("feed_all() ", end="", flush=True)
         check_feed(content, name=name)
         has_feed += 1
 
     if hasattr(parser, "feed"):
-        print("feed()", end="")
+        print("feed()", end="", flush=True)
         content = parser.feed(canteen)
         print(f" -> {greenOk}.")
-        print("feed() ", end="")
+        print("feed() ", end="", flush=True)
         check_feed(content, name=name)
         has_feed += 1
 
@@ -123,9 +123,9 @@ def check_xml(parser, canteen):
 
 
 def test_all_modules():
-    moduleNames = ['eppelheim', 'heidelberg', 'koeln', 'mannheim', 'stuttgart', 'ulm', 'luxembourg']
+    moduleNames = ['eppelheim', 'heidelberg', 'mannheim', 'stuttgart', 'ulm', 'luxembourg']
 
-    print("Importing %s" % (", ".join(moduleNames), ), end="")
+    print("Importing %s" % (", ".join(moduleNames), ), end="", flush=True)
 
     modules = map(__import__, moduleNames)
 
@@ -155,7 +155,7 @@ def test_all_modules():
 
 
 def one_module(name):
-    print(f"Importing {name}", end="")
+    print(f"Importing {name}", end="", flush=True)
 
     mod = __import__(name)
 

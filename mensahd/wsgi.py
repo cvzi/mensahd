@@ -20,7 +20,6 @@ if __name__ == '__main__':
 from version import __version__
 from eppelheim import getParser as geteppelheim
 from stuttgart import getParser as getstuttgart
-from koeln import getParser as getkoeln
 from mannheim import getParser as getmannheim
 from heidelberg import getParser as getheidelberg
 from ulm import getParser as getulm
@@ -37,7 +36,6 @@ if not baseurl:
 
 heidelberg = getheidelberg(baseurl)
 mannheim = getmannheim(baseurl)
-koeln = getkoeln(baseurl)
 stuttgart = getstuttgart(baseurl)
 eppelheim = geteppelheim(baseurl)
 ulm = getulm(baseurl)
@@ -74,8 +72,7 @@ def application(environ, start_response):
         sites = ("https://www.stw.uni-heidelberg.de/",
                  "https://www.stw-ma.de/",
                  "https://studiplus.stw-ma.de/",
-                 "https://www.max-manager.de/",
-                 "https://sws2.maxmanager.xyz/",
+                 "https://sws.maxmanager.xyz/", # Stuttgart
                  "https://www.uni-ulm.de/",
                  "https://ssl.education.lu/eRestauration/CustomerServices/Menu")
         for url in sites:
@@ -306,92 +303,60 @@ def application(environ, start_response):
               <li><a href="/eppelheim">Eppelheim</a></li>
             </ul>"""
 
-    elif environ['PATH_INFO'] == '/koeln/list.json':
-        ctype = 'application/json; charset=utf-8'
-        try:
-            response_body = koeln.json()
-        except Exception as e:
-            ctype = 'text/plain; charset=utf-8'
-            response_body = "An error occured:\n%s\n%s" % (
-                e, traceback.format_exc())
-            status = '503 Service Unavailable'
-            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
+    elif environ['PATH_INFO'].startswith('/koeln'):
+        redirects = {
+            "/koeln": "https://cvzi.github.io/mensa/#koeln",
+            "/koeln/": "https://cvzi.github.io/mensa/#koeln",
+            "/koeln/list.json": "https://cvzi.github.io/mensa/koeln.json",
+            "/koeln/meta/unimensa.xml": "https://cvzi.github.io/mensa/meta/koeln_unimensa.xml",
+            "/koeln/today/unimensa.xml": "https://cvzi.github.io/mensa/today/koeln_unimensa.xml",
+            "/koeln/all/unimensa.xml": "https://cvzi.github.io/mensa/feed/koeln_unimensa.xml",
+            "/koeln/meta/iwz-deutz.xml": "https://cvzi.github.io/mensa/meta/koeln_iwz-deutz.xml",
+            "/koeln/today/iwz-deutz.xml": "https://cvzi.github.io/mensa/today/koeln_iwz-deutz.xml",
+            "/koeln/all/iwz-deutz.xml": "https://cvzi.github.io/mensa/feed/koeln_iwz-deutz.xml",
+            "/koeln/meta/eraum.xml": "https://cvzi.github.io/mensa/meta/koeln_eraum.xml",
+            "/koeln/today/eraum.xml": "https://cvzi.github.io/mensa/today/koeln_eraum.xml",
+            "/koeln/all/eraum.xml": "https://cvzi.github.io/mensa/feed/koeln_eraum.xml",
+            "/koeln/meta/suedstadt.xml": "https://cvzi.github.io/mensa/meta/koeln_suedstadt.xml",
+            "/koeln/today/suedstadt.xml": "https://cvzi.github.io/mensa/today/koeln_suedstadt.xml",
+            "/koeln/all/suedstadt.xml": "https://cvzi.github.io/mensa/feed/koeln_suedstadt.xml",
+            "/koeln/meta/cafe-himmelsblick.xml": "https://cvzi.github.io/mensa/meta/koeln_cafe-himmelsblick.xml",
+            "/koeln/today/cafe-himmelsblick.xml": "https://cvzi.github.io/mensa/today/koeln_cafe-himmelsblick.xml",
+            "/koeln/all/cafe-himmelsblick.xml": "https://cvzi.github.io/mensa/feed/koeln_cafe-himmelsblick.xml",
+            "/koeln/meta/robertkoch.xml": "https://cvzi.github.io/mensa/meta/koeln_robertkoch.xml",
+            "/koeln/today/robertkoch.xml": "https://cvzi.github.io/mensa/today/koeln_robertkoch.xml",
+            "/koeln/all/robertkoch.xml": "https://cvzi.github.io/mensa/feed/koeln_robertkoch.xml",
+            "/koeln/meta/gummersbach.xml": "https://cvzi.github.io/mensa/meta/koeln_gummersbach.xml",
+            "/koeln/today/gummersbach.xml": "https://cvzi.github.io/mensa/today/koeln_gummersbach.xml",
+            "/koeln/all/gummersbach.xml": "https://cvzi.github.io/mensa/feed/koeln_gummersbach.xml",
+            "/koeln/meta/kunsthochschule-medien.xml": "https://cvzi.github.io/mensa/meta/koeln_kunsthochschule-medien.xml",
+            "/koeln/today/kunsthochschule-medien.xml": "https://cvzi.github.io/mensa/today/koeln_kunsthochschule-medien.xml",
+            "/koeln/all/kunsthochschule-medien.xml": "https://cvzi.github.io/mensa/feed/koeln_kunsthochschule-medien.xml",
+            "/koeln/meta/spoho.xml": "https://cvzi.github.io/mensa/meta/koeln_spoho.xml",
+            "/koeln/today/spoho.xml": "https://cvzi.github.io/mensa/today/koeln_spoho.xml",
+            "/koeln/all/spoho.xml": "https://cvzi.github.io/mensa/feed/koeln_spoho.xml",
+            "/koeln/meta/lindenthal.xml": "https://cvzi.github.io/mensa/meta/koeln_lindenthal.xml",
+            "/koeln/today/lindenthal.xml": "https://cvzi.github.io/mensa/today/koeln_lindenthal.xml",
+            "/koeln/all/lindenthal.xml": "https://cvzi.github.io/mensa/feed/koeln_lindenthal.xml",
+            "/koeln/meta/muho.xml": "https://cvzi.github.io/mensa/meta/koeln_muho.xml",
+            "/koeln/today/muho.xml": "https://cvzi.github.io/mensa/today/koeln_muho.xml",
+            "/koeln/all/muho.xml": "https://cvzi.github.io/mensa/feed/koeln_muho.xml",
+            "/koeln/meta/philcafe.xml": "https://cvzi.github.io/mensa/meta/koeln_philcafe.xml",
+            "/koeln/today/philcafe.xml": "https://cvzi.github.io/mensa/today/koeln_philcafe.xml",
+            "/koeln/all/philcafe.xml": "https://cvzi.github.io/mensa/feed/koeln_philcafe.xml"
+        }
+        new_url = redirects[environ['PATH_INFO']] if environ['PATH_INFO'] in redirects else "https://cvzi.github.io/mensa/"
 
-    elif environ['PATH_INFO'].startswith('/koeln/meta/'):
-        ctype = 'application/xml; charset=utf-8'
-        name = environ['PATH_INFO'][12:]
-        if name.endswith(".xml"):
-            name = name[:-4]
-        try:
-            response_body = koeln.meta(name)
-        except (urllib.error.URLError, socket.timeout) as e:
-            ctype = 'text/plain; charset=utf-8'
-            response_body = "Could not connect to www.max-manager.de\n\nAn error occured:\n%s\n%s" % (
-                e, traceback.format_exc())
-            status = '533 Open www.max-manager.de timed out'
-            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
-        except Exception as e:
-            ctype = 'text/plain; charset=utf-8'
-            response_body = "An error occured:\n%s\n%s" % (
-                e, traceback.format_exc())
-            status = '503 Service Unavailable'
-            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
+        response_body = ('<a href="%s">%s</a>' % (new_url, new_url)).encode('utf-8')
 
-    elif environ['PATH_INFO'].startswith('/koeln/today/'):
-        ctype = 'application/xml; charset=utf-8'
-        name = environ['PATH_INFO'][13:]
-        if name.endswith(".xml"):
-            name = name[:-4]
-        try:
-            response_body = koeln.feed_today(name)
-        except (urllib.error.URLError, socket.timeout) as e:
-            ctype = 'text/plain; charset=utf-8'
-            response_body = "Could not connect to www.max-manager.de\n\nAn error occured:\n%s\n%s" % (
-                e, traceback.format_exc())
-            status = '533 Open www.max-manager.de timed out'
-            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
-        except Exception as e:
-            ctype = 'text/plain; charset=utf-8'
-            response_body = "An error occured:\n%s\n%s" % (
-                e, traceback.format_exc())
-            status = '503 Service Unavailable'
-            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
+        response_headers = [('Location', new_url),
+                            ('Content-Length', str(len(response_body))),
+                            ('Content-Type', 'text/html; charset=utf-8'),
+                            ('X-OpenMensa-ParserVersion', str(__version__))]
+        status = '301 Moved Permanently'
+        start_response(status, response_headers)
+        return [response_body]
 
-    elif environ['PATH_INFO'].startswith('/koeln/all/'):
-        ctype = 'application/xml; charset=utf-8'
-        name = environ['PATH_INFO'][11:]
-        if name.endswith(".xml"):
-            name = name[:-4]
-        try:
-            response_body = koeln.feed_all(name)
-        except (urllib.error.URLError, socket.timeout) as e:
-            ctype = 'text/plain; charset=utf-8'
-            response_body = "Could not connect to www.max-manager.de\n\nAn error occured:\n%s\n%s" % (
-                e, traceback.format_exc())
-            status = '533 Open www.max-manager.de timed out'
-            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
-        except Exception as e:
-            ctype = 'text/plain; charset=utf-8'
-            response_body = "An error occured:\n%s\n%s" % (
-                e, traceback.format_exc())
-            status = '503 Service Unavailable'
-            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
-
-    elif environ['PATH_INFO'] == '/koeln' or environ['PATH_INFO'] == '/koeln/':
-        ctype = 'text/html; charset=utf-8'
-        cache_control = 'public, max-age=86400'
-        response_body = """
-            <h1>mensahd-cuzi for Köln University canteens</h1>
-            <div>This is a parser for <a href="https://openmensa.org/">openmensa.org</a>. It fetches and converts public data from <a href="http://www.kstw.de/index.php?option=com_content&view=article&id=182&Itemid=121">Kölner Studierendenwerk</a></div>
-            <h2>Public interface:</h2>
-            <ul>
-              <li><a href="/">../ Heidelberg</a></li>
-              <li><a href="/koeln"><b>Köln</b></a></li>
-              <li><a href="/koeln/list.json">/koeln/list.json</a></li>
-              <li>/koeln/meta/{id}.xml</li>
-              <li>/koeln/today/{id}.xml</li>
-              <li>/koeln/all/{id}.xml</li>
-            </ul>"""
 
     elif environ['PATH_INFO'] == '/stuttgart/list.json':
         ctype = 'application/json; charset=utf-8'
@@ -647,7 +612,7 @@ def application(environ, start_response):
 
     elif environ['PATH_INFO'] == '/api':
         links = []
-        for parser in (heidelberg, eppelheim, mannheim, koeln, stuttgart, ulm, luxembourg):
+        for parser in (heidelberg, eppelheim, mannheim, stuttgart, ulm, luxembourg):
             moduleName = parser.__module__
             if moduleName == 'heidelberg':
                 moduleName = ''
@@ -686,9 +651,10 @@ def application(environ, start_response):
             <ul>
               <li><a href="/"><b>Heidelberg</b></a></li>
               <li><a href="/mannheim">/mannheim</a></li>
-              <li><a href="/koeln">/koeln</a></li>
+              <li><a href="/koeln">/koeln</a> moved to <a href="https://cvzi.github.io/mensa/#koeln">https://cvzi.github.io/mensa/</a></li>
               <li><a href="/stuttgart">/stuttgart</a></li>
               <li><a href="/ulm">/ulm</a></li>
+              <li><a href="/luxembourg">/luxembourg</a></li>
               <li><a href="/time">/time</a></li>
               <li><a href="/status">/status</a></li>
               <li><a href="/list">/list</a></li>
