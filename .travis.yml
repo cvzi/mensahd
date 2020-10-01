@@ -4,7 +4,7 @@ python:
  
 before_install:
   - sudo apt-get install jq
-  - curl -LSs "$(curl -LSs https://api.github.com/repos/codacy/codacy-coverage-reporter/releases/latest | jq -r '.assets | map({name, browser_download_url} | select(.name | endswith(".jar"))) | .[0].browser_download_url')" -o codacy-coverage-reporter-assembly.jar
+  - curl -LSs "$(curl -LSs 'https://api.github.com/repos/codacy/codacy-coverage-reporter/releases/latest' | jq -r '.assets | map({name, browser_download_url} | select(.name | endswith(".jar"))) | .[0].browser_download_url')" -o codacy-coverage-reporter-assembly.jar
 install:
   - pip install -r requirements.txt
   - pip install coverage
