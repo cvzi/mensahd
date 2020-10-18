@@ -20,6 +20,8 @@ des [Kölner Studierendenwerks](http://www.kstw.de/index.php?option=com_content&
 und [Restopolis](https://portal.education.lu/restopolis/) (luxemburgische Schul-Restaurants).
 
 Links:
+*   See the resulting feeds at [https://mensahd.herokuapp.com/api](https://mensahd.herokuapp.com/api)
 *   [Understand OpenMensa’s Parser Concept](https://doc.openmensa.org/parsers/understand/)
-*   [XML schema](https://doc.openmensa.org/feed/v2/)
+*   OpenMensa [XML schema](https://doc.openmensa.org/feed/v2/)
 *   OpenMensa Android app on [f-droid](https://f-droid.org/en/packages/de.uni_potsdam.hpi.openmensa/), [playstore](https://play.google.com/store/apps/details?id=de.uni_potsdam.hpi.openmensa), [github](https://github.com/domoritz/open-mensa-android)
+*   Another parser for OpenMensa: [https://github.com/cvzi/mensa](https://github.com/cvzi/mensa)
