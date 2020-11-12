@@ -1,5 +1,6 @@
 import os
 import re
+import time
 import datetime
 import logging
 import textwrap
@@ -11,13 +12,13 @@ from bs4 import BeautifulSoup
 
 try:
     from version import __version__, useragentname, useragentcomment
-    from util import StyledLazyBuilder
+    from util import StyledLazyBuilder, nowBerlin
 except ModuleNotFoundError:
     import sys
     include = os.path.relpath(os.path.join(os.path.dirname(__file__), '..'))
     sys.path.insert(0, include)
     from version import __version__, useragentname, useragentcomment
-    from util import StyledLazyBuilder
+    from util import StyledLazyBuilder, nowBerlin
 
 __all__ = ['getMenu', 'askRestopolis']
 
@@ -83,14 +84,14 @@ def askRestopolis(restaurant=None, service=None, date=None):
     return s.get(url, cookies=cookies, proxies=dict(https=os.getenv('LUXEMBOURG_PROXY')) if os.getenv('LUXEMBOURG_PROXY', '') else None)
 
 
-def getMenu(restaurantId, datetimeDay=None, serviceIds=None):
+def getMenu(restaurantId, datetimeDay=None, serviceIds=None, alternativeId=None, alternativeServiceIds=None):
     """
     Create openmensa feed from restopolis website
     """
     lazyBuilder = StyledLazyBuilder()
 
     if not datetimeDay:
-        datetimeDay = datetime.date.today()
+        datetimeDay = nowBerlin().date()
 
     if isinstance(serviceIds, str) or not isinstance(serviceIds, Iterable):
         serviceIds = [(serviceIds, ""), ]
@@ -130,6 +131,7 @@ def getMenu(restaurantId, datetimeDay=None, serviceIds=None):
             date = dates[i]
             weekDay = date.weekday()
             courseName = ""
+            categoryNotes = []
             notes = []
             productSection = ""
             productName = ""
@@ -137,7 +139,8 @@ def getMenu(restaurantId, datetimeDay=None, serviceIds=None):
             productDescription = ""
 
             oneDayDiv.append(document.new_tag("div", attrs={"class":"fake-last"}))
-            for div in oneDayDiv.children:
+            children = list(oneDayDiv.children)
+            for div in children:
                 if not isinstance(div, bs4.element.Tag):
                     # Skip text node children
                     continue
@@ -155,6 +158,8 @@ def getMenu(restaurantId, datetimeDay=None, serviceIds=None):
                         notes += textwrap.wrap(productDescription, width=250)
                     if productAllergens:
                         notes += productAllergens
+                    if categoryNotes:
+                        notes += categoryNotes
                     lazyBuilder.addMeal(
                         date, category, productName[0:249], [note[0:249] for note in notes])
                     productName = ""
@@ -198,6 +203,23 @@ def getMenu(restaurantId, datetimeDay=None, serviceIds=None):
                     elif "fermé" in div.text.lower() or "fermé" in str(div.attrs).lower():
                         # Closed (explicit)
                         lazyBuilder.setDayClosed(date)
+                    elif "wrapper-category" in div.attrs["class"]:
+                        for categoryButton in div.find_all('button'):
+                            if "showConstantProducts" not in categoryButton.attrs['class'] and "showFormulae" not in categoryButton.attrs['class']:
+                                print(f"Unknown category button: {categoryButton.attrs['class']}: {categoryButton.text.strip()}")
+                    elif "cb" in div.attrs["class"]:
+                        pass
+                    elif "formulaeContainer" in div.attrs["class"] or "constantProductContainer" in div.attrs["class"]:
+                        # Append content of category container
+                        last = children.pop()
+                        children.extend(div.children)
+                        children.append(last)
+
+                        if "constantProductContainer" in div.attrs["class"]:
+                            categoryNotes = ["produit constant"]
+                        else:
+                            categoryNotes = []
+
                     else:
                         logging.debug(div)
                         raise RuntimeWarning(
@@ -219,6 +241,10 @@ def getMenu(restaurantId, datetimeDay=None, serviceIds=None):
                     logging.debug(div)
                     raise RuntimeWarning(
                         f"unknown tag <{div.name}>: oneDayDiv->else")
+
+    if mealCounter == 0 and alternativeId:
+        logging.debug("No meals -> trying alternativeId")
+        return getMenu(alternativeId, datetimeDay=datetimeDay, serviceIds=alternativeServiceIds, cache=cache, alternativeId=None, alternativeServiceIds=None)
 
     return lazyBuilder.toXMLFeed(), len(dayCounter), mealCounter, weekdayCounter
 
