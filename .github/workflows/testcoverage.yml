@@ -3,10 +3,8 @@ name: Test xml meta and feeds
 on: [push]
 
 jobs:
-  build:
-
+  test:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v1
     - name: Set up Python 3.8
@@ -26,12 +24,13 @@ jobs:
         HEIDELBERG_AUTH: ${{ secrets.HEIDELBERG_AUTH }}
         MANNHEIM_AUTH: ${{ secrets.MANNHEIM_AUTH }}
         LUXEMBOURG_PROXY: ${{ secrets.LUXEMBOURG_PROXY }}
-        COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Coveralls
       run: |
         coveralls
         coverage xml
+      env:
+        COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Codacy Coverage Reporter
       uses: codacy/codacy-coverage-reporter-action@0.2.0
       with:
