@@ -149,26 +149,40 @@ def mensa_info(apiurl, days, canteenid, alternative, canteen=None, day=0):
         for inp in menu['inputs']:
             if inp['name'] == 'inhalt' and inp['value']:
                 document = BeautifulSoup(inp['value'], "html.parser")
-                spans = document.find_all("span")
+                spans = document.children
+                notes = []
                 for span in spans:
-                    text = next(span.stripped_strings)
+                    if isinstance(span, str):
+                        text = span
+                    elif span.name != 'sup':
+                        text = next(span.stripped_strings)
                     if text == 'oder':
                         mainDishes += 1
                     if text in ['mit', 'an']:
                         prefix = text + " "
                     elif len(text) > 1 and text != 'und':
+                        if not isinstance(span, str):
+                            if span.name == 'span':
+                                if span['class']:
+                                    notes += [showFilter(data, c[12:]) for c in span['class'] if c.startswith(
+                                        'showOnFilter') and showFilter(data, c[12:])]
+                            if span.name == 'sup':
+                                sup = span
+                                text = ""
+                            else:
+                                sup = span.find("sup")
+                            if sup:
+                                sup = sup.text.strip()[1:-1].split(",")
+                                sup = [s.strip() for s in sup]
+                                notes += [additive(data, s) for s in sup]
+                        if text:
+                            notes = [note.strip() for note in notes if note and note.strip()]
+                            meals.append([prefix + text, notes])
+                            notes = []
+                            prefix = ""
+                    if notes:
+                        meals[-1][1].extend([note.strip() for note in notes if note and note.strip()])
                         notes = []
-                        if span['class']:
-                            notes += [showFilter(data, c[12:]) for c in span['class'] if c.startswith(
-                                'showOnFilter') and showFilter(data, c[12:])]
-                        sup = span.find("sup")
-                        if sup:
-                            sup = sup.text.strip()[1:-1].split(",")
-                            sup = [s.strip() for s in sup]
-                            notes += [additive(data, s) for s in sup]
-                        notes = [note.strip() for note in notes if note and note.strip()]
-                        meals.append([prefix + text, notes])
-                        prefix = ""
             elif inp['name'] == 'preisStudent' and inp['value']:
                 prices.append(inp['value'])
                 roles.append('student')
@@ -301,19 +315,19 @@ def getParser(baseurl):
     parser.define('metropol', 613)
     parser.define('wohlgelegen', 614)
 
-    parser.define('horizonte', 502)
-    parser.define('wagon', 5189)
+    parser.define('horizonte', 713, 502)
+    parser.define('wagon', 709, 5189)
 
     # parser.define('musikhochschule', 172) # Disabled on openmensa.org
     # parser.define('kubus', 406) # Disabled on openmensa.org
     # parser.define('metropol2go', 5687) # Disabled on openmensa.org
     # parser.define('eo', 170) # Disabled on openmensa.org
 
-    # parser.define('dhbw', 896) # TODO this might be eppelheim
+    # parser.define('dhbw', 718) # TODO this might be eppelheim
 
     return parser
 
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
-    print(getParser("http://localhost/").meta("hochschule"))
+    print(getParser("http://localhost/").feed_today("wagon"))
