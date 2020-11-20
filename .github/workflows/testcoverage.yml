@@ -18,10 +18,20 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         pip install nose
-    - name: Test with nose
-      run: nosetests
+        pip install coverage
+        pip install coveralls
+    - name: Run tests
+      run: coverage run -a tests/test_*.py
       env:
         HEIDELBERG_AUTH: ${{ secrets.HEIDELBERG_AUTH }}
         MANNHEIM_AUTH: ${{ secrets.MANNHEIM_AUTH }}
-        CODACY_PROJECT_TOKEN: ${{ secrets.CODACY_PROJECT_TOKEN }}
         LUXEMBOURG_PROXY: ${{ secrets.LUXEMBOURG_PROXY }}
+    - name: Coveralls
+      run: |
+        coveralls
+        coverage xml
+    - name: Codacy Coverage Reporter
+      uses: codacy/codacy-coverage-reporter-action@0.2.0
+      with:
+        project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+        coverage-reports: coverage.xml
