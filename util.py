@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
-import pytz
 import datetime
+from zoneinfo import ZoneInfo
 from pyopenmensa.feed import LazyBuilder
 
 __all__ = ['xmlEscape', 'StyledLazyBuilder', 'nowBerlin']
@@ -25,6 +25,6 @@ class StyledLazyBuilder(LazyBuilder):
         return xml_header + feed.toprettyxml(indent='  ')
 
 def nowBerlin():
-    berlin = pytz.timezone('Europe/Berlin')
-    now = datetime.datetime.now(berlin)
+    berlin = ZoneInfo('Europe/Berlin')
+    now = datetime.datetime.now(tz=berlin)
     return now
