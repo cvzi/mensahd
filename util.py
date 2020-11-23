@@ -16,7 +16,7 @@ def xmlEscape(s, escapeDoubleQuotes=False):
 
 
 class StyledLazyBuilder(LazyBuilder):
-    def toXMLFeed(self, styles=('https://cvzi.github.io/om-style/latest/basic.css', 'https://cvzi.github.io/om-style/latest/lightgreen.css')):
+    def toXMLFeed(self, styles=('https://cdn.jsdelivr.net/npm/om-style@1.0.0/basic.css', 'https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css')):
         feed = self.toXML()
         xml_header = '<?xml version="1.0" encoding="UTF-8"?>\n'
         if styles:
