@@ -1,6 +1,5 @@
 import os
 import re
-import time
 import datetime
 import logging
 import textwrap
@@ -244,7 +243,7 @@ def getMenu(restaurantId, datetimeDay=None, serviceIds=None, alternativeId=None,
 
     if mealCounter == 0 and alternativeId:
         logging.debug("No meals -> trying alternativeId")
-        return getMenu(alternativeId, datetimeDay=datetimeDay, serviceIds=alternativeServiceIds, cache=cache, alternativeId=None, alternativeServiceIds=None)
+        return getMenu(alternativeId, datetimeDay=datetimeDay, serviceIds=alternativeServiceIds, alternativeId=None, alternativeServiceIds=None)
 
     return lazyBuilder.toXMLFeed(), len(dayCounter), mealCounter, weekdayCounter
 
