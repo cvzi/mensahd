@@ -73,7 +73,6 @@ def parse_url(url, today=False):
         url = url % today.strftime('%Y_%m_%d')
 
     try:
-        print(url)
         content = requests.get(url, headers=headers).text
     except requests.exceptions.ConnectionError as e:
         logging.warning(str(e))
