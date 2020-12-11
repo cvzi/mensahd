@@ -1,6 +1,6 @@
 # mensahd
 
-![Test xml meta and feeds](https://github.com/cvzi/mensahd/workflows/Test%20xml%20meta%20and%20feeds/badge.svg)
+[![Test xml meta and feeds](https://github.com/cvzi/mensahd/workflows/Test%20xml%20meta%20and%20feeds/badge.svg)](https://github.com/cvzi/mensahd/actions?query=workflow%3A%22Test+xml+meta+and+feeds%22)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e2aa5ab1cb304c0ab1f5719ad2b3acbf)](https://app.codacy.com/app/cvzi/mensahd?utm_source=github.com&utm_medium=referral&utm_content=cvzi/mensahd&utm_campaign=Badge_Grade_Dashboard)
 
 Parser for [openmensa.org](https://openmensa.org/) for canteens of
