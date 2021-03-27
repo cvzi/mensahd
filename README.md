@@ -6,18 +6,14 @@
 Parser for [openmensa.org](https://openmensa.org/) for canteens of
 [Studierendenwerk Heidelberg](http://www.stw.uni-heidelberg.de/en/speiseplan),
 [Studierendenwerk Mannheim](https://www.stw-ma.de/Essen+_+Trinken/Men%C3%BCpl%C3%A4ne.html),
-[Studierendenwerk Stuttgart](https://www.studierendenwerk-stuttgart.de/gastronomie/speiseangebot),
-[Kölner Studierendenwerk](http://www.kstw.de/index.php?option=com_content&view=article&id=182&Itemid=121),
-[Studierendenwerk Ulm](https://studierendenwerk-ulm.de/essen-trinken/speiseplaene/)
-and [Restopolis](https://portal.education.lu/restopolis/) (luxembourgish school restaurants).
+[Studierendenwerk Stuttgart](https://www.studierendenwerk-stuttgart.de/gastronomie/speiseangebot)
+and [Studierendenwerk Ulm](https://studierendenwerk-ulm.de/essen-trinken/speiseplaene/).
 
 Parser für [openmensa.org](https://openmensa.org/) für die Mensen des
 [Studierendenwerk Heidelberg](http://www.stw.uni-heidelberg.de/de/speiseplan),
 [Studierendenwerk Mannheim](https://www.stw-ma.de/Essen+_+Trinken/Men%C3%BCpl%C3%A4ne.html),
-[Studierendenwerk Stuttgart](https://www.studierendenwerk-stuttgart.de/gastronomie/speiseangebot),
-des [Kölner Studierendenwerks](http://www.kstw.de/index.php?option=com_content&view=article&id=182&Itemid=121),
-[Studierendenwerk Ulm](https://studierendenwerk-ulm.de/essen-trinken/speiseplaene/),
-und [Restopolis](https://portal.education.lu/restopolis/) (luxemburgische Schul-Restaurants).
+[Studierendenwerk Stuttgart](https://www.studierendenwerk-stuttgart.de/gastronomie/speiseangebot)
+und [Studierendenwerk Ulm](https://studierendenwerk-ulm.de/essen-trinken/speiseplaene/).
 
 Links:
 *   See the resulting feeds at [https://mensahd.herokuapp.com/api](https://mensahd.herokuapp.com/api)
