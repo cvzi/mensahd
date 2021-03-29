@@ -23,7 +23,6 @@ from stuttgart import getParser as getstuttgart
 from mannheim import getParser as getmannheim
 from heidelberg import getParser as getheidelberg
 from ulm import getParser as getulm
-from luxembourg import getParser as getluxembourg
 
 page_errors = []
 
@@ -39,7 +38,6 @@ mannheim = getmannheim(baseurl)
 stuttgart = getstuttgart(baseurl)
 eppelheim = geteppelheim(baseurl)
 ulm = getulm(baseurl)
-luxembourg = getluxembourg(baseurl)
 
 
 def timeStrBerlin():
@@ -856,7 +854,7 @@ def application(environ, start_response):
 
     elif environ['PATH_INFO'] == '/api':
         links = []
-        for parser in (heidelberg, eppelheim, mannheim, stuttgart, ulm, luxembourg):
+        for parser in (heidelberg, eppelheim, mannheim, stuttgart, ulm):
             moduleName = parser.__module__
             if moduleName == 'heidelberg':
                 moduleName = ''
@@ -898,7 +896,7 @@ def application(environ, start_response):
               <li><a href="/koeln">/koeln</a> moved to <a href="https://cvzi.github.io/mensa/#koeln">https://cvzi.github.io/mensa/</a></li>
               <li><a href="/stuttgart">/stuttgart</a></li>
               <li><a href="/ulm">/ulm</a></li>
-              <li><a href="/luxembourg">/luxembourg</a></li>
+              <li><a href="/luxembourg">/luxembourg</a> moved to <a href="https://cvzi.github.io/mensa/#luxembourg">https://cvzi.github.io/mensa/</a></li>
               <li><a href="/time">/time</a></li>
               <li><a href="/status">/status</a></li>
               <li><a href="/list">/list</a></li>
