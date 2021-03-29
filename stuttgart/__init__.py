@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # Python 3
+import datetime
 import os
 import json
 import urllib
@@ -11,13 +12,13 @@ from bs4 import BeautifulSoup
 
 try:
     from version import __version__, useragentname, useragentcomment
-    from util import StyledLazyBuilder
+    from util import StyledLazyBuilder, nowBerlin
 except ModuleNotFoundError:
     import sys
     include = os.path.relpath(os.path.join(os.path.dirname(__file__), '..'))
     sys.path.insert(0, include)
     from version import __version__, useragentname, useragentcomment
-    from util import StyledLazyBuilder
+    from util import StyledLazyBuilder, nowBerlin
 
 metaJson = os.path.join(os.path.dirname(__file__), "stuttgart.json")
 
@@ -25,12 +26,13 @@ metaTemplateFile = os.path.join(os.path.dirname(
     __file__), "metaTemplate_stuttgart.xml")
 
 template_metaURL = "%sstuttgart/meta/%s.xml"
-template_feedURL = "%sstuttgart/feed/%s.xml"
+template_todayURL = "%sstuttgart/today/%s.xml"
+template_fullURL = "%sstuttgart/all/%s.xml"
 
-url = r"https://sws.maxmanager.xyz/extern/"
+url = r"https://sws2.maxmanager.xyz/inc/ajax-php_konnektor.inc.php"
 sourceUrl = r"https://www.studierendenwerk-stuttgart.de/essen/speiseplan/"
 roles = ('student', 'employee', 'other')
-weight = 'Preis je %sg'
+price_pattern = re.compile('\d+,\d\d')
 
 weekdaysMap = [
     ("Mo", "monday"),
@@ -89,46 +91,115 @@ ingredients = {
     "VG": "vegan",
     "F": "Fitness",
     "V": "vegetarisch",
-    "P": "Preisrenner",
+    "P": "Preisrenner"
 }
 
 
-def _fetchData(canteen, jsonfile):
+def parse_url(canteen, locId, day=None):
+
+    if day is None:
+        day = datetime.date.today()
+
+    date = day.strftime("%Y-%m-%d")
+
     headers = {
-        'User-Agent': f'{useragentname}/{__version__} ({useragentcomment}) {requests.utils.default_user_agent()}',
-        'Accept': 'application/json',
+        'Host': 'sws2.maxmanager.xyz',
+        'X-Requested-With': 'XMLHttpRequest',
+        'Referer':   'https://sws2.maxmanager.xyz/',
+        'User-Agent': 'Mozilla/5.0',
+        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
         'Accept-Language': 'de-De,de'
     }
-    r = requests.get(url + jsonfile, headers=headers)
-    data = r.json().popitem()[1]
 
-    for day, meals in data.items():
-        if len(meals) == 0:
-            canteen.setDayClosed(day)
-        for m in meals:
-            mealName = m["meal"].strip().strip(",")
-            if m["description"].strip():
-                mealName += "," + m["description"].strip()
+    startThisWeek = day - datetime.timedelta(days=day.weekday())
+    startNextWeek = startThisWeek + datetime.timedelta(days=7)
 
-            notes = [ingredients.get(i, i) for i in m["additives"].split(",") if i and i.strip()]
+    startThisWeek = startThisWeek.strftime("%Y-%m-%d")
+    startNextWeek = startNextWeek.strftime("%Y-%m-%d")
 
-            prices = []
-            myroles = []
-            if m["price1"] and m["price1"] != "-":
-                prices.append(float(m["price1"].replace(",", ".")))
-                myroles.append(roles[0])
-            if m["price2"] and m["price2"] != "-":
-                prices.append(float(m["price2"].replace(",", ".")))
-                myroles.append(roles[1])
-            if m["price3"] and m["price3"] != "-":
-                prices.append(float(m["price3"].replace(",", ".")))
-                myroles.append(roles[2])
-            if m["weight_unit"]:
-                notes.append(weight % (m["weight_unit"],))
+    data = "func=make_spl&locId=%s&date=%s&lang=de&startThisWeek=%s&startNextWeek=%s" % (
+        locId, date, startThisWeek, startNextWeek)
 
-            canteen.addMeal(day, m["category"], mealName, notes, prices, myroles)
+    r = requests.post(url, data=data, headers=headers)
 
-    return canteen
+    content = r.content.decode("utf-8")
+
+    document = BeautifulSoup(content, "html.parser")
+
+    divs = document.find(
+        "div", {"class": "container-fluid"}).find_all("div", {"class", "row"})
+
+    nextIsMenu = False
+    categoryName = ""
+    foundAny = False
+    for div in divs:
+
+        isCat = div.find("div", {"class": "gruppenname"})
+        if isCat:
+            categoryName = isCat.text.strip()
+            categoryName = categoryName.replace("*", "").strip()
+            categoryName = categoryName[0] + categoryName[1:].lower()
+            if categoryName in ("Hinweis", "Information"):
+                nextIsMenu = False
+            else:
+                nextIsMenu = True
+            continue
+
+        elif nextIsMenu:
+
+            mealName = div.find(
+                "div", {"class": "visible-xs-block"}).text.strip()
+
+            if mealName.lower() == "geschlossen":
+                nextIsMenu = False
+                continue
+
+            notes = div["lang"].split(",")
+
+            if len(notes):
+                notes = [ingredients[i] for i in notes if i in ingredients]
+            else:
+                notes = None
+
+            if "Nudelmanufaktur" in mealName:
+                mealName = re.sub(".*Nudelmanufaktur.?\s*", "", mealName)
+                notes.append("hauseigene Nudelmanufaktur")
+
+
+            pricesNode = div.find("div", {"class": "preise-xs"})
+            pricesText = None
+            if not pricesNode:
+                pricesText = str(div.find(text=re.compile('€')))
+            else :
+                pricesText = pricesNode.text.strip()
+
+            if pricesText:
+                prices = [float(x.replace(",", "."))
+                          for x in price_pattern.findall(pricesText)]
+
+                if len(prices) != 2:
+                    logging.warning("Expected two prices, got %r" % prices)
+                    if len(prices) == 0:
+                        prices = [0.0, 0.0]
+                    elif len(prices) == 1:
+                        prices.append(0.0)
+                    elif len(prices) == 3:
+                        prices = prices[0:2]
+                    else:
+                        prices = [prices[1], prices[3]]
+                    logging.warning("Assuming prices: %r" % prices)
+            else:
+                prices = []
+                logging.warning("No prices found")
+
+            canteen.addMeal(date, categoryName, mealName, notes, prices, roles)
+            foundAny = True
+
+    if foundAny:
+        return True
+
+    canteen.setDayClosed(date)
+    return False
 
 
 def _generateCanteenMeta(obj, name,  baseurl):
@@ -151,8 +222,10 @@ def _generateCanteenMeta(obj, name,  baseurl):
             "phone": mensa["phone"],
             "latitude": mensa["latitude"],
             "longitude": mensa["longitude"],
-            "feed": template_feedURL % (baseurl, urllib.parse.quote(shortname)),
-            "source": sourceUrl,
+            "feed_today": template_todayURL % (baseurl, urllib.parse.quote(shortname)),
+            "feed_full": template_fullURL % (baseurl, urllib.parse.quote(shortname)),
+            "source_today": sourceUrl,
+            "source_full": sourceUrl
         }
         openingTimes = {}
         infokurz = mensa["infokurz"]
@@ -187,16 +260,18 @@ def _generateCanteenMeta(obj, name,  baseurl):
 
 
 class Parser:
-    def __init__(self, baseurl):
+    def __init__(self, baseurl, handler):
         self.baseurl = baseurl
         self.metaObj = json.load(open(metaJson))
 
         self.xmlnames = []
-        self.xml2json = {}
-        self.canteens = self.xml2json
+        self.xml2locId = {}
+        self.canteens = self.xml2locId
         for mensa in self.metaObj["mensen"]:
             self.xmlnames.append(mensa["xml"])
-            self.xml2json[mensa["xml"]] = mensa["json"]
+            self.xml2locId[mensa["xml"]] = mensa["locId"]
+
+        self.handler = handler
 
     def json(self):
         tmp = {}
@@ -207,16 +282,48 @@ class Parser:
     def meta(self, name):
         return _generateCanteenMeta(self.metaObj, name, self.baseurl)
 
-    def feed(self, name):
+    def feed_today(self, name):
+        today = nowBerlin().date()
         canteen = StyledLazyBuilder()
-        _fetchData(canteen, self.xml2json[name])
+
+        self.handler(canteen, self.xml2locId[name], today)
+        return canteen.toXMLFeed()
+
+    def feed_all(self, name):
+        canteen = StyledLazyBuilder()
+
+        date = nowBerlin()
+
+        # Get this week
+        lastWeekday = -1
+        while self.handler(canteen, self.xml2locId[name], date.date()):
+            date += datetime.timedelta(days=1)
+            if lastWeekday > date.weekday():
+                break
+            lastWeekday = date.weekday()
+
+        # Skip over weekend
+        if date.weekday() > 4:
+            date += datetime.timedelta(days=7-date.weekday())
+
+            # Get next week
+            lastWeekday = -1
+            while self.handler(canteen, self.xml2locId[name], date.date()):
+                date += datetime.timedelta(days=1)
+                if lastWeekday > date.weekday():
+                    break
+                lastWeekday = date.weekday()
+
         return canteen.toXMLFeed()
 
 
 def getParser(baseurl):
-    return Parser(baseurl)
+    parser = Parser(baseurl, parse_url)
+    return parser
 
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
-    print(getParser("http://localhost/").feed("horb"))
+    print(getParser("http://localhost/").feed_all("central"))
+    # print(getParser("http://localhost/").feed_all("mitteMusikhochschule"))
+    # print(getParser("http://localhost/").meta("mitteMusikhochschule"))

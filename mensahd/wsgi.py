@@ -376,9 +376,9 @@ def application(environ, start_response):
             response_body = stuttgart.meta(name)
         except (urllib.error.URLError, socket.timeout) as e:
             ctype = 'text/plain; charset=utf-8'
-            response_body = "Could not connect to www.studierendenwerk-stuttgart.de\n\nAn error occured:\n%s\n%s" % (
+            response_body = "Could not connect to sws2.maxmanager.xyz\n\nAn error occured:\n%s\n%s" % (
                 e, traceback.format_exc())
-            status = '533 Open www.studierendenwerk-stuttgart.de timed out'
+            status = '533 Open sws2.maxmanager.xyz timed out'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
         except Exception as e:
             ctype = 'text/plain; charset=utf-8'
@@ -387,18 +387,38 @@ def application(environ, start_response):
             status = '503 Service Unavailable'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
 
-    elif environ['PATH_INFO'].startswith('/stuttgart/feed/'):
+    elif environ['PATH_INFO'].startswith('/stuttgart/today/'):
         ctype = 'application/xml; charset=utf-8'
-        name = environ['PATH_INFO'][16:]
+        name = environ['PATH_INFO'][17:]
         if name.endswith(".xml"):
             name = name[:-4]
         try:
-            response_body = stuttgart.feed(name)
+            response_body = stuttgart.feed_today(name)
         except (urllib.error.URLError, socket.timeout) as e:
             ctype = 'text/plain; charset=utf-8'
-            response_body = "Could not connect to sws.maxmanager.xyz\n\nAn error occured:\n%s\n%s" % (
+            response_body = "Could not connect to sws2.maxmanager.xyz\n\nAn error occured:\n%s\n%s" % (
                 e, traceback.format_exc())
-            status = '533 Open sws.maxmanager.xyz timed out'
+            status = '533 Open sws2.maxmanager.xyz timed out'
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
+        except Exception as e:
+            ctype = 'text/plain; charset=utf-8'
+            response_body = "An error occured:\n%s\n%s" % (
+                e, traceback.format_exc())
+            status = '503 Service Unavailable'
+            page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
+
+    elif environ['PATH_INFO'].startswith('/stuttgart/all/'):
+        ctype = 'application/xml; charset=utf-8'
+        name = environ['PATH_INFO'][15:]
+        if name.endswith(".xml"):
+            name = name[:-4]
+        try:
+            response_body = stuttgart.feed_all(name)
+        except (urllib.error.URLError, socket.timeout) as e:
+            ctype = 'text/plain; charset=utf-8'
+            response_body = "Could not connect to sws2.maxmanager.xyz\n\nAn error occured:\n%s\n%s" % (
+                e, traceback.format_exc())
+            status = '533 Open sws2.maxmanager.xyz timed out'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
         except Exception as e:
             ctype = 'text/plain; charset=utf-8'
@@ -419,8 +439,10 @@ def application(environ, start_response):
               <li><a href="/stuttgart"><b>Stuttgart</b></a></li>
               <li><a href="/stuttgart/list.json">/stuttgart/list.json</a></li>
               <li>/stuttgart/meta/{id}.xml</li>
-              <li>/stuttgart/feed/{id}.xml</li>
+              <li>/stuttgart/today/{id}.xml</li>
+              <li>/stuttgart/all/{id}.xml</li>
             </ul>"""
+
 
     elif environ['PATH_INFO'] == '/eppelheim/list.json':
         ctype = 'application/json; charset=utf-8'
