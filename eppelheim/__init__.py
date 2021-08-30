@@ -100,6 +100,12 @@ def parse_url(url, today=False):
             canteen.setDayClosed((nowBerlin().date() + datetime.timedelta(i)))
         return canteen.toXMLFeed()
 
+    if not datematch and "nach Vorbestellung" in h2.text:
+        # Set info for 7 days
+        for i in range(7):
+            canteen.addMeal((nowBerlin().date() + datetime.timedelta(i)), "Info", h2.text)
+        return canteen.toXMLFeed()
+
     p = datematch.groupdict()
     if len(p["from"].split(".")[2]) == 0:
         p["from"] += p["to"].split(".")[2]
