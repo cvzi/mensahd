@@ -71,8 +71,7 @@ def application(environ, start_response):
                  "https://www.stw-ma.de/",
                  "https://studiplus.stw-ma.de/",
                  "https://sws.maxmanager.xyz/", # Stuttgart
-                 "https://www.uni-ulm.de/",
-                 "https://ssl.education.lu/eRestauration/CustomerServices/Menu")
+                 "https://www.uni-ulm.de/")
         for url in sites:
             hostname = url.split("//")[1].split("/")[0]
             try:
@@ -163,9 +162,12 @@ def application(environ, start_response):
             response_body = heidelberg.meta(name)
         except (urllib.error.URLError, socket.timeout) as e:
             ctype = 'text/plain; charset=utf-8'
-            response_body = "Could not connect to www.stw.uni-heidelberg.de\n\nAn error occured:\n%s\n%s" % (
+            response_body = "Error opening www.stw.uni-heidelberg.de: %s\n\n%s" % (
                 e, traceback.format_exc())
-            status = '533 Open www.stw.uni-heidelberg.de timed out'
+            if 'time' in str(e):
+                status = '504 Open www.stw.uni-heidelberg.de timed out'
+            else:
+                status = '503 %s' % (e, )
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
         except Exception as e:
             ctype = 'text/plain; charset=utf-8'
@@ -180,9 +182,12 @@ def application(environ, start_response):
             response_body = heidelberg.list()
         except (urllib.error.URLError, socket.timeout) as e:
             ctype = 'text/plain; charset=utf-8'
-            response_body = "Could not connect to www.stw.uni-heidelberg.de\n\nAn error occured:\n%s\n%s" % (
+            response_body = "Error opening www.stw.uni-heidelberg.de: %s\n\n%s" % (
                 e, traceback.format_exc())
-            status = '533 Open www.stw.uni-heidelberg.de timed out'
+            if 'time' in str(e):
+                status = '504 Open www.stw.uni-heidelberg.de timed out'
+            else:
+                status = '503 %s' % (e, )
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
         except Exception as e:
             ctype = 'text/plain; charset=utf-8'
@@ -197,9 +202,12 @@ def application(environ, start_response):
             response_body = heidelberg.json()
         except (urllib.error.URLError, socket.timeout) as e:
             ctype = 'text/plain; charset=utf-8'
-            response_body = "Could not connect to www.stw.uni-heidelberg.de\n\nAn error occured:\n%s\n%s" % (
+            response_body = "Error opening www.stw.uni-heidelberg.de: %s\n\n%s" % (
                 e, traceback.format_exc())
-            status = '533 Open www.stw.uni-heidelberg.de timed out'
+            if 'time' in str(e):
+                status = '504 Open www.stw.uni-heidelberg.de timed out'
+            else:
+                status = '503 %s' % (e, )
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
         except Exception as e:
             ctype = 'text/plain; charset=utf-8'
