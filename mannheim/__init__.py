@@ -175,7 +175,10 @@ def mensa_info(apiurl, days, canteenid, alternative, canteen=None, day=0):
                                 sup = sup.text.strip()[1:-1].split(",")
                                 sup = [s.strip() for s in sup]
                                 notes += [additive(data, s) for s in sup]
+
                         if text:
+                            if text.startswith(", "):
+                                text = text[2:]
                             notes = [note.strip() for note in notes if note and note.strip()]
                             meals.append([prefix + text, notes])
                             notes = []
@@ -206,10 +209,10 @@ def mensa_info(apiurl, days, canteenid, alternative, canteen=None, day=0):
                     first += 1
                     if pricePer:
                         notes.insert(0, pricePer)
-                    canteen.addMeal(date, categoryName, mealName[:249],
+                    canteen.addMeal(date, categoryName, mealName.strip()[:249],
                                     notes, prices, roles if prices else None)
                 else:
-                    canteen.addMeal(date, categoryName, mealName[:249], notes)
+                    canteen.addMeal(date, categoryName, mealName.strip()[:249], notes)
 
     day = day + 1
     if days > day:
@@ -330,4 +333,4 @@ def getParser(baseurl):
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
-    print(getParser("http://localhost/").feed_today("wagon"))
+    print(getParser("http://localhost/").feed_today("schloss"))
