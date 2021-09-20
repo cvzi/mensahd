@@ -62,7 +62,7 @@ price_guest_regex = re.compile(r'Gäste\s*\((?P<employee>\d+,\d+)')
 euro_regex = re.compile(r'(\d+,\d+) €')
 datespan_regex = re.compile(
     '(?P<from>\d+\.\d+\.\d{0,4})\s*–\s*(?P<to>\d+\.\d+\.\d{0,4})')
-
+calendarweek_regex = re.compile('\(KW (\d+)\)')
 
 def parse_url(url, today=False):
     today = nowBerlin().date()
@@ -106,10 +106,17 @@ def parse_url(url, today=False):
             canteen.addMeal((nowBerlin().date() + datetime.timedelta(i)), "Info", h2.text)
         return canteen.toXMLFeed()
 
-    p = datematch.groupdict()
-    if len(p["from"].split(".")[2]) == 0:
-        p["from"] += p["to"].split(".")[2]
-    fromdate = datetime.datetime.strptime(p["from"], "%d.%m.%Y")
+    if not datematch:
+        match = calendarweek_regex.search(h2.text)
+        if match:
+            week = int(match.group(1))
+            fromdate = datetime.datetime.fromisocalendar(nowBerlin().year, week, 1)
+
+    if datematch:
+        p = datematch.groupdict()
+        if len(p["from"].split(".")[2]) == 0:
+            p["from"] += p["to"].split(".")[2]
+        fromdate = datetime.datetime.strptime(p["from"], "%d.%m.%Y")
 
     # Prices for employees and guests
     try:
