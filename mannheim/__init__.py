@@ -1,12 +1,14 @@
-#!python3
-import requests
-from bs4 import BeautifulSoup
+#!/usr/bin/env python
+# Python 3
 import os
-import re
 import datetime
 import logging
 import json
+import re
 import urllib
+
+import requests
+from bs4 import BeautifulSoup
 
 try:
     from version import __version__, useragentname, useragentcomment
@@ -18,8 +20,6 @@ except ModuleNotFoundError:
     from version import __version__, useragentname, useragentcomment
     from util import StyledLazyBuilder, nowBerlin
 
-# Based on https://github.com/mswart/openmensa-parsers/blob/master/magdeburg.py
-
 metaJson = os.path.join(os.path.dirname(__file__), "mannheim.json")
 
 metaTemplateFile = os.path.join(os.path.dirname(
@@ -28,16 +28,6 @@ metaTemplateFile = os.path.join(os.path.dirname(
 template_metaURL = "%smannheim/meta/%s.xml"
 template_todayURL = "%smannheim/today/%s.xml"
 template_fullURL = "%smannheim/all/%s.xml"
-
-weekdays = [
-    "Montag",
-    "Dienstag",
-    "Mittwoch",
-    "Donnerstag",
-    "Freitag",
-    "Samstag",
-    "Sonntag"
-]
 
 weekdaysMap = [
     ("Mo", "monday"),
@@ -49,188 +39,187 @@ weekdaysMap = [
     ("So", "sunday")
 ]
 
+authorization = False
+if os.path.isfile(os.path.join(os.path.dirname(__file__), '.password.txt')):
+    with open(os.path.join(os.path.dirname(__file__), '.password.txt')) as af:
+        authorization = af.read()
+else:
+    authorization = os.getenv('MANNHEIM_AUTH')
+
+if not authorization:
+    raise RuntimeError("Authentication data not found")
+
 headers = {
-    'User-Agent': f'{useragentname}/{__version__} (+{useragentcomment}) {requests.utils.default_user_agent()}'
+    'User-Agent': f'{useragentname}/{__version__} (+{useragentcomment}) {requests.utils.default_user_agent()}',
+    'Accept': 'application/json',
+    'Accept-Language': 'de-De,de',
+    'X-App-Token': authorization
 }
 
-roles = ('student', 'employee', 'other')
+additives = None
 
 
-def correctCapitalization(s): return s[0].upper() + s[1:].lower()
+def additive(data, key):
+    global additives
+    if additives is None:
+        # Build table from additives list
+        additives = {}
+        for a in data['additives']:
+            if a['key'] and a['value']:
+                additives[a['key']] = a
+    if key in additives:
+        return additives[key]['value']
+    return key
 
 
-day_regex = re.compile(r'(?P<date>\d{2}\.\d{2}\.\d{4})')
-removeextras_regex = re.compile(r'\s+\[(\w,?)+\]')
-price_regex = re.compile(
-    'Bedienstete \+ (?P<employee>\d+)\%, Gäste \+ (?P<guest>\d+)\%')
-euro_regex = re.compile(r'(\d+,\d+) €')
-whitespace = re.compile(r'\s+')
+showFilters = None
 
-def parse_url(url, today=False):
-    today = nowBerlin()
-    if today.weekday() == 6:  # Sunday
-        today += datetime.timedelta(days=1)  # Tomorrow
 
-    url = url.format(year=today.strftime('%Y'), month=today.strftime('%m'), day=today.strftime('%d'))
+def showFilter(data, filterid):
+    global showFilters
+    if showFilters is None:
+        # Build table from list
+        showFilters = {}
+        for f in data['filter']:
+            showFilters[f['id']] = f['name']
+    if isinstance(filterid, int):
+        filterid = str(filterid)
+    if filterid in showFilters:
+        return showFilters[filterid]
+    return None
+
+
+def mensa_info(apiurl, days, canteenid, alternative, canteen=None, day=0):
+    now = nowBerlin()
+    now += datetime.timedelta(days=day)
+    if now.weekday() == 6:  # Sunday
+        now += datetime.timedelta(days=1)  # Sunday -> Monday
+    morning = datetime.datetime(now.year, now.month, now.day, 11)
+    timestamp = int(
+        1000 * morning.replace(tzinfo=datetime.timezone.utc).timestamp())
+
+    url = apiurl + f'mensa/info?id={canteenid}&date={timestamp}&language=de'
 
     if not url.startswith("http://") and not url.startswith("https://"):
-        raise RuntimeError("url is not an allowed URL: '%s'" % url)
+        raise RuntimeError(f"url is not an allowed URL: '{url}'")
 
     try:
-        content = requests.get(url, headers=headers).text
+        r = requests.get(url, headers=headers)
     except requests.exceptions.ConnectionError as e:
         logging.warning(e)
-        content = requests.get(url, headers=headers, verify=False).text
+        r = requests.get(url, headers=headers, verify=False)
 
+    if r.status_code != 200:
+        raise RuntimeError(f"Error {r.status_code}: {r.text}")
 
-    # Fix table
-    content = content.replace("</th>", "</td>").replace("<th ", "<td ")
-
-    document = BeautifulSoup(content, "html.parser")
-    canteen = StyledLazyBuilder()
-
-    # date
-    fromTo = document.find("h2").text.strip()
-    fromMatch = day_regex.search(fromTo).group("date")
-    fromDatetime = datetime.datetime.strptime(fromMatch, "%d.%m.%Y")
-
-    # Legend
-    legend = {}
-    for span in document.select("#legend>span"):
-        sup = span.find("sup")
-        if sup and sup.text:
-            key = sup.text.strip()
-            sup.clear()
-            value = span.text.strip()
-            legend[key] = value
-
-    # Prices for employees and guests
     try:
-        p = price_regex.search(document.find(
-            "p", {"id": "message"}).text).groupdict()
-        employee_multiplier = 1.0 + int(p["employee"]) / 100.0
-        guest_multiplier = 1.0 + int(p["guest"]) / 100.0
-    except (AttributeError, TypeError, KeyError, ValueError):
-        employee_multiplier = 1.25
-        guest_multiplier = 1.60
+        data = r.json()
+    except json.decoder.JSONDecodeError as e:
+        logging.error(f"'{url}' response:\n{r.text}")
+        raise e
 
-    table = document.find("table", {"id": "previewTable"})
-    if not table:
-        # previewTable not found, e.g. temporary closed
-        # Set 7 days closed
-        for i in range(7):
-            canteen.setDayClosed((datetime.date.today() + datetime.timedelta(i)))
+    if canteen is None:
+        canteen = StyledLazyBuilder()
 
-        return canteen.toXMLFeed()
-
-    trs = table.find_all("tr")
-
-    canteenCategories = []
-
-    firstTr = True
-    previous = None   # previous tr row
-    for tr in trs:
-        closed = False
-        mealsFound = False
-        if firstTr:
-            # First table row contains the names of the different categories
-            firstTr = False
-
-            for th in tr.find_all("td")[1:]:
-                canteenCategories.append(th.text.strip())
-        elif previous is None:
-            # Normal table row containing meal information
-            previous = tr
-
+    if 'menuList' not in data or not data['menuList'] or len(data['menuList']) == 0:
+        if not isinstance(alternative, bool) and day == 0:
+            logging.info(f"Empty menuList {morning.date().isoformat()}. Trying alternative id: {canteenid} -> {alternative}")
+            return mensa_info(apiurl, days, alternative, False)
         else:
-            # Price table row
-            datetd = previous.find("td", {"class": "first"})
-            weekday = datetd.text.strip()
-            date = fromDatetime
-            i = 0
-            while weekdays.index(weekday) != date.weekday() and i < 8:
-                date += datetime.timedelta(days=1)
-                i += 1
-            if i > 7:
-                logging.error("Date could not be calculated from %r" % (weekday,))
-            date = date.date()
+            # If empty, stop here, do not try more days
+            logging.info(f"Empty menuList id={canteenid} {morning.date().isoformat()} (day {day + 1} of {days}).")
+            canteen.setDayClosed(morning.date())
+            return canteen.toXMLFeed()
 
-            if len(previous.find_all("td")) < 2 or "geschlossen" == previous.find_all("td")[1].text.strip():
-                closed = date
+    date = data['date'].split('T')[0]
+    cats = {}
+    for menu in data['menuList']:
+        categoryName = menu['title']
+        if categoryName in cats:
+            cats[categoryName] += 1
+            categoryName = f"{categoryName} ({cats[categoryName]})"
+        else:
+            cats[categoryName] = 1
 
-            cat = 0
+        meals = []
+        prices = []
+        roles = []
+        pricePer = None
+        mainDishes = 1
+        prefix = ""
+        for inp in menu['inputs']:
+            if inp['name'] == 'inhalt' and inp['value']:
+                document = BeautifulSoup(inp['value'], "html.parser")
+                spans = document.children
+                notes = []
+                for span in spans:
+                    if isinstance(span, str):
+                        text = span
+                    elif span.name != 'sup':
+                        text = next(span.stripped_strings)
+                    if text == 'oder':
+                        mainDishes += 1
+                    if text in ['mit', 'an']:
+                        prefix = text + " "
+                    elif len(text) > 1 and text != 'und':
+                        if not isinstance(span, str):
+                            if span.name == 'span':
+                                if span['class']:
+                                    notes += [showFilter(data, c[12:]) for c in span['class'] if c.startswith(
+                                        'showOnFilter') and showFilter(data, c[12:])]
+                            if span.name == 'sup':
+                                sup = span
+                                text = ""
+                            else:
+                                sup = span.find("sup")
+                            if sup:
+                                sup = sup.text.strip()[1:-1].split(",")
+                                sup = [s.strip() for s in sup]
+                                notes += [additive(data, s) for s in sup]
 
-            for td0, td1 in zip(previous.find_all("td")[1:], tr.find_all("td")):
-                if "heute kein Angebot" in td0.text or "geschlossen" in td0.text:
-                    cat += 1
-                    continue
-
-
-                notes = set()
-
-                # Category
-                if td0.find("h2"):
-                    categoryName = canteenCategories[cat] + " " + \
-                        correctCapitalization(td0.find("h2").text.strip())
+                        if text:
+                            if text.startswith(", "):
+                                text = text[2:]
+                            notes = [note.strip() for note in notes if note and note.strip()]
+                            meals.append([prefix + text, notes])
+                            notes = []
+                            prefix = ""
+                    if notes:
+                        meals[-1][1].extend([note.strip() for note in notes if note and note.strip()])
+                        notes = []
+            elif inp['name'] == 'preisStudent' and inp['value']:
+                prices.append(inp['value'])
+                roles.append('student')
+            elif inp['name'] == 'preisBediensteter' and inp['value']:
+                prices.append(inp['value'])
+                roles.append('employee')
+            elif inp['name'] == 'preisGast' and inp['value']:
+                prices.append(inp['value'])
+                roles.append('other')
+            elif inp['name'] == 'menge' and inp['value']:
+                if inp['value'].lower().startswith('pro'):
+                    pricePer = 'Preis ' + inp['value']
                 else:
-                    categoryName = canteenCategories[cat]
+                    pricePer = 'Preis pro ' + inp['value']
 
-                if "Kubusangebote am Themenpark" in td0.text:
-                    canteen.addMeal(date, categoryName,
-                                    "Kubusangebote am Themenpark", [])
-                    cat += 1
-                    continue
+        if meals:
+            first = 0
+            for meal in meals:
+                mealName, notes = meal
+                if first < mainDishes:
+                    first += 1
+                    if pricePer:
+                        notes.insert(0, pricePer)
+                    canteen.addMeal(date, categoryName, mealName.strip()[:249],
+                                    notes, prices, roles if prices else None)
+                else:
+                    canteen.addMeal(date, categoryName, mealName.strip()[:249], notes)
 
-
-                # Additives: SI,Mi,G,1,2,...
-                for sup in td0.find_all("sup"):
-                    keep = []
-                    for a in sup.text.strip("()").split(","):
-                        if a == "Veg":
-                            keep.append("🥕")
-                            notes.add("🥕 = Vegetarisch")
-                        elif a == "Vga":
-                            keep.append("🌿")
-                            notes.add("🌿 = Vegan")
-                        elif a == "Bio":
-                            keep.append("♻️")
-                            keep.append("♻️ = Bio")
-                        elif a and a in legend:
-                            notes.add(legend[a])
-                        elif a:
-                            notes.add(a)
-                    sup.clear()
-                    if keep:
-                        sup.append("%s" % (",".join(keep), ))
-
-                # Name
-                name = whitespace.sub(" ", td0.text).strip().replace(" ,", ",")
-
-                # Prices
-                prices = []
-                spans = td1.find_all("span", {"class": "label"})
-                if spans:
-                    try:
-                        price = float(euro_regex.search(
-                            spans[0].text).group(1).replace(",", "."))
-                    except (AttributeError, TypeError, KeyError, ValueError):
-                        notes.add(spans[0].text.strip() + " Preis")
-                    if len(spans) == 2:
-                        notes.add(spans[1].text.strip() + " Preis")
-                    prices = (price, price * employee_multiplier,
-                              price * guest_multiplier)
-
-                canteen.addMeal(date, categoryName, name,
-                                notes, prices, roles if prices else None)
-
-                mealsFound = True
-                cat += 1
-
-            previous = None
-        if not mealsFound and closed:
-            canteen.setDayClosed(closed)
-
-    return canteen.toXMLFeed()
+    day = day + 1
+    if days > day:
+        return mensa_info(apiurl, days, canteenid, alternative, canteen, day)
+    else:
+        return canteen.toXMLFeed()
 
 
 def _generateCanteenMeta(name, baseurl):
@@ -298,8 +287,8 @@ class Parser:
         self.shared_prefix = shared_prefix
         self.canteens = {}
 
-    def define(self, name, suffix):
-        self.canteens[name] = self.shared_prefix + suffix
+    def define(self, name, canteenid, alternative=False, disabled=False):
+        self.canteens[name] = [canteenid, alternative]
 
     def json(self):
         tmp = self.canteens.copy()
@@ -311,25 +300,37 @@ class Parser:
         return _generateCanteenMeta(name, self.baseurl)
 
     def feed_today(self, name):
-        return self.handler(self.canteens[name])
+        if name not in self.canteens:
+            return 'wrong mensa name'
+        return self.handler(self.shared_prefix, 1, *self.canteens[name])
 
     def feed_all(self, name):
-        return self.handler(self.canteens[name])
+        if name not in self.canteens:
+            return 'wrong mensa name'
+        return self.handler(self.shared_prefix, 5, *self.canteens[name])
 
 
 def getParser(baseurl):
-    parser = Parser(baseurl, 'mannheim', handler=parse_url, shared_prefix='https://www.stw-ma.de/')
+    parser = Parser(baseurl, 'mannheim',
+                    handler=mensa_info,
+                    shared_prefix='https://studiplus.stw-ma.de/api/app/')
+    parser.define('schloss', 610)
+    parser.define('hochschule', 611, 5599)
+    parser.define('metropol', 613)
+    parser.define('wohlgelegen', 614)
+    parser.define('horizonte', 713, 502)
+    parser.define('wagon', 709, 5189)
+    parser.define('musikhochschule', 714)
 
-    parser.define('schloss', suffix='menüplan_schlossmensa-date-{year}%25252d{month}%25252d{day}-view-week.html')
-    parser.define('hochschule', suffix='Essen+_+Trinken/Speisepl%C3%A4ne/Hochschule+Mannheim-date-{year}%25252d{month}%25252d{day}-view-week.html')
-    parser.define('wagon', suffix='Essen+_+Trinken/Speisepläne/MensaWagon-date-{year}%25252d{month}%25252d{day}-view-week.html')
-    parser.define('metropol', suffix='Essen+_+Trinken/Speisepl%C3%A4ne/Mensaria+Metropol-date-{year}%25252d{month}%25252d{day}-view-week.html')
-    parser.define('wohlgelegen', suffix='Essen+_+Trinken/Speisepl%C3%A4ne/Mensaria+Wohlgelegen-date-{year}%25252d{month}%25252d{day}-view-week.html')
-    parser.define('musikhochschule', suffix='Essen+_+Trinken/Speisepl%C3%A4ne/Cafeteria+Musikhochschule-date-{year}%25252d{month}%25252d{day}-view-week.html')
+    # parser.define('kubus', 406) # Disabled on openmensa.org
+    # parser.define('metropol2go', 5687) # Disabled on openmensa.org
+    # parser.define('eo', 170) # Disabled on openmensa.org
+
+    # parser.define('dhbw', 718) # TODO this might be eppelheim
+
     return parser
 
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
-    # print(getParser("http://localhost/").json("https://localhost/meta/%s.xml"))
-    print(getParser("http://localhost/").feed_today('schloss'))
+    print(getParser("http://localhost/").feed_today("wohlgelegen"))

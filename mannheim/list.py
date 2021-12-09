@@ -29,5 +29,4 @@ headers = {
 r = requests.get(url, headers=headers)
 
 data = r.json()
-
 pprint(data)

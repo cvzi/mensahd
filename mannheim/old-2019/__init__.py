@@ -6,8 +6,17 @@ import re
 import datetime
 import logging
 import json
-from pyopenmensa.feed import LazyBuilder
 import urllib
+
+try:
+    from version import __version__, useragentname, useragentcomment
+    from util import StyledLazyBuilder, nowBerlin
+except ModuleNotFoundError:
+    import sys
+    include = os.path.relpath(os.path.join(os.path.dirname(__file__), '..'))
+    sys.path.insert(0, include)
+    from version import __version__, useragentname, useragentcomment
+    from util import StyledLazyBuilder, nowBerlin
 
 # Based on https://github.com/mswart/openmensa-parsers/blob/master/magdeburg.py
 
@@ -17,8 +26,18 @@ metaTemplateFile = os.path.join(os.path.dirname(
     __file__), "metaTemplate_mannheim.xml")
 
 template_metaURL = "%smannheim/meta/%s.xml"
-template_todayURL = "%smannheim/feed/%s.xml"
-template_fullURL = "%smannheim/feed/%s.xml"
+template_todayURL = "%smannheim/today/%s.xml"
+template_fullURL = "%smannheim/all/%s.xml"
+
+weekdays = [
+    "Montag",
+    "Dienstag",
+    "Mittwoch",
+    "Donnerstag",
+    "Freitag",
+    "Samstag",
+    "Sonntag"
+]
 
 weekdaysMap = [
     ("Mo", "monday"),
@@ -30,6 +49,9 @@ weekdaysMap = [
     ("So", "sunday")
 ]
 
+headers = {
+    'User-Agent': f'{useragentname}/{__version__} (+{useragentcomment}) {requests.utils.default_user_agent()}'
+}
 
 roles = ('student', 'employee', 'other')
 
@@ -42,25 +64,45 @@ removeextras_regex = re.compile(r'\s+\[(\w,?)+\]')
 price_regex = re.compile(
     'Bedienstete \+ (?P<employee>\d+)\%, Gäste \+ (?P<guest>\d+)\%')
 euro_regex = re.compile(r'(\d+,\d+) €')
-
+whitespace = re.compile(r'\s+')
 
 def parse_url(url, today=False):
-    today = datetime.date.today()
+    today = nowBerlin()
     if today.weekday() == 6:  # Sunday
         today += datetime.timedelta(days=1)  # Tomorrow
 
-    url = url % today.strftime('%Y_%m_%d')
+    url = url.format(year=today.strftime('%Y'), month=today.strftime('%m'), day=today.strftime('%d'))
 
     if not url.startswith("http://") and not url.startswith("https://"):
         raise RuntimeError("url is not an allowed URL: '%s'" % url)
+
     try:
-        content = requests.get(url).text
+        content = requests.get(url, headers=headers).text
     except requests.exceptions.ConnectionError as e:
         logging.warning(e)
-        content = requests.get(url, verify=False).text
+        content = requests.get(url, headers=headers, verify=False).text
+
+
+    # Fix table
+    content = content.replace("</th>", "</td>").replace("<th ", "<td ")
 
     document = BeautifulSoup(content, "html.parser")
-    canteen = LazyBuilder()
+    canteen = StyledLazyBuilder()
+
+    # date
+    fromTo = document.find("h2").text.strip()
+    fromMatch = day_regex.search(fromTo).group("date")
+    fromDatetime = datetime.datetime.strptime(fromMatch, "%d.%m.%Y")
+
+    # Legend
+    legend = {}
+    for span in document.select("#legend>span"):
+        sup = span.find("sup")
+        if sup and sup.text:
+            key = sup.text.strip()
+            sup.clear()
+            value = span.text.strip()
+            legend[key] = value
 
     # Prices for employees and guests
     try:
@@ -94,29 +136,37 @@ def parse_url(url, today=False):
             # First table row contains the names of the different categories
             firstTr = False
 
-            for th in tr.find_all("th")[1:]:
+            for th in tr.find_all("td")[1:]:
                 canteenCategories.append(th.text.strip())
-
         elif previous is None:
             # Normal table row containing meal information
             previous = tr
 
         else:
             # Price table row
-            date = day_regex.search(previous.find("td", {"class": "first"})[
-                                    "data-date"]).group('date')
+            datetd = previous.find("td", {"class": "first"})
+            weekday = datetd.text.strip()
+            date = fromDatetime
+            i = 0
+            while weekdays.index(weekday) != date.weekday() and i < 8:
+                date += datetime.timedelta(days=1)
+                i += 1
+            if i > 7:
+                logging.error("Date could not be calculated from %r" % (weekday,))
+            date = date.date()
 
-            if "geschlossen" == previous.find_all("td")[1].text.strip():
+            if len(previous.find_all("td")) < 2 or "geschlossen" == previous.find_all("td")[1].text.strip():
                 closed = date
 
             cat = 0
-            for td0, td1 in zip(previous.find_all("td")[
-                                1:], tr.find_all("td")):
+
+            for td0, td1 in zip(previous.find_all("td")[1:], tr.find_all("td")):
                 if "heute kein Angebot" in td0.text or "geschlossen" in td0.text:
                     cat += 1
                     continue
 
-                notes = []
+
+                notes = set()
 
                 # Category
                 if td0.find("h2"):
@@ -131,11 +181,30 @@ def parse_url(url, today=False):
                     cat += 1
                     continue
 
+
+                # Additives: SI,Mi,G,1,2,...
+                for sup in td0.find_all("sup"):
+                    keep = []
+                    for a in sup.text.strip("()").split(","):
+                        if a == "Veg":
+                            keep.append("🥕")
+                            notes.add("🥕 = Vegetarisch")
+                        elif a == "Vga":
+                            keep.append("🌿")
+                            notes.add("🌿 = Vegan")
+                        elif a == "Bio":
+                            keep.append("♻️")
+                            keep.append("♻️ = Bio")
+                        elif a and a in legend:
+                            notes.add(legend[a])
+                        elif a:
+                            notes.add(a)
+                    sup.clear()
+                    if keep:
+                        sup.append("%s" % (",".join(keep), ))
+
                 # Name
-                if td0.find("p"):
-                    name = removeextras_regex.sub("", td0.find("p").text)
-                else:
-                    name = categoryName  # No name available, let's just use the category name
+                name = whitespace.sub(" ", td0.text).strip().replace(" ,", ",")
 
                 # Prices
                 prices = []
@@ -145,15 +214,11 @@ def parse_url(url, today=False):
                         price = float(euro_regex.search(
                             spans[0].text).group(1).replace(",", "."))
                     except (AttributeError, TypeError, KeyError, ValueError):
-                        notes.append(spans[0].text.strip() + " Preis")
+                        notes.add(spans[0].text.strip() + " Preis")
                     if len(spans) == 2:
-                        notes.append(spans[1].text.strip() + " Preis")
+                        notes.add(spans[1].text.strip() + " Preis")
                     prices = (price, price * employee_multiplier,
                               price * guest_multiplier)
-
-                # Notes: vegan, vegetarisch, ...
-                notes += [icon["title"]
-                          for icon in td1.find_all("span", {"class": "icon"})]
 
                 canteen.addMeal(date, categoryName, name,
                                 notes, prices, roles if prices else None)
@@ -245,31 +310,26 @@ class Parser:
     def meta(self, name):
         return _generateCanteenMeta(name, self.baseurl)
 
-    def feed(self, name):
+    def feed_today(self, name):
+        return self.handler(self.canteens[name])
+
+    def feed_all(self, name):
         return self.handler(self.canteens[name])
 
 
 def getParser(baseurl):
-    parser = Parser(baseurl, 'mannheim',
-                    handler=parse_url,
-                    shared_prefix='https://www.stw-ma.de/')
-    parser.define(
-        'schloss', suffix='menüplan_schlossmensa-date-%s-pdfView-1-showLang-.html')
-    parser.define(
-        'hochschule', suffix='Essen+_+Trinken-p-9/Speisepläne/Hochschule+Mannheim-date-%s-pdfView-1-showLang--p-3519.html')
-    parser.define(
-        'kubus', suffix='Essen+_+Trinken-p-9/Speisepläne/Cafeteria+KUBUS-date-%s-pdfView-1-showLang--p-3504.html')
-    parser.define(
-        'metropol', suffix='speiseplan_mensaria_metropol-date-%s-pdfView-1-showLang-.html')
-    parser.define(
-        'wohlgelegen', suffix='wohlgelegen-date-%s-pdfView-1-showLang-.html')
-    parser.define('musikhochschule',
-                  suffix='Essen+_+Trinken-p-9/Speisepläne/Cafeteria+Musikhochschule-date-%s-pdfView-1-showLang--p-3523.html')
-    parser.define('eo', suffix='menüplan_eo-date-%s-pdfView-1-showLang-.html')
+    parser = Parser(baseurl, 'mannheim', handler=parse_url, shared_prefix='https://www.stw-ma.de/')
+
+    parser.define('schloss', suffix='menüplan_schlossmensa-date-{year}%25252d{month}%25252d{day}-view-week.html')
+    parser.define('hochschule', suffix='Essen+_+Trinken/Speisepl%C3%A4ne/Hochschule+Mannheim-date-{year}%25252d{month}%25252d{day}-view-week.html')
+    parser.define('wagon', suffix='Essen+_+Trinken/Speisepläne/MensaWagon-date-{year}%25252d{month}%25252d{day}-view-week.html')
+    parser.define('metropol', suffix='Essen+_+Trinken/Speisepl%C3%A4ne/Mensaria+Metropol-date-{year}%25252d{month}%25252d{day}-view-week.html')
+    parser.define('wohlgelegen', suffix='Essen+_+Trinken/Speisepl%C3%A4ne/Mensaria+Wohlgelegen-date-{year}%25252d{month}%25252d{day}-view-week.html')
+    parser.define('musikhochschule', suffix='Essen+_+Trinken/Speisepl%C3%A4ne/Cafeteria+Musikhochschule-date-{year}%25252d{month}%25252d{day}-view-week.html')
     return parser
 
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
     # print(getParser("http://localhost/").json("https://localhost/meta/%s.xml"))
-    print(getParser("http://localhost/").feed("eo"))
+    print(getParser("http://localhost/").feed_today('schloss'))
