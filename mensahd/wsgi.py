@@ -10,8 +10,7 @@ import urllib.request
 import traceback
 import datetime
 import logging
-
-import pytz
+from zoneinfo import ZoneInfo
 
 if __name__ == '__main__':
     include = os.path.relpath(os.path.join(os.path.dirname(__file__), ".."))
@@ -41,8 +40,8 @@ ulm = getulm(baseurl)
 
 
 def timeStrBerlin():
-    berlin = pytz.timezone('Europe/Berlin')
-    now = datetime.datetime.now(berlin)
+    berlin = ZoneInfo('Europe/Berlin')
+    now = datetime.datetime.now(tz=berlin)
     return now.strftime("%Y-%m-%d %H:%M")
 
 
