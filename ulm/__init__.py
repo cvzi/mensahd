@@ -86,6 +86,7 @@ headers = {
     'Accept-Language': 'de-De,de'
 }
 
+
 def _from_json(canteen, url, place):
 
     if not url.startswith("http://") and not url.startswith("https://"):
@@ -105,7 +106,8 @@ def _from_json(canteen, url, place):
         data = None
 
     if not data or 'weeks' not in data or not data['weeks']:
-        logging.warning(f'Empty/malformed json file, setting week to "closed" ({url})')
+        logging.warning(
+            f'Empty/malformed json file, setting week to "closed" ({url})')
         # Set 7 days closed
         for i in range(7):
             canteen.setDayClosed((nowBerlin().date() + datetime.timedelta(i)))

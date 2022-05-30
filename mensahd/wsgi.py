@@ -69,7 +69,7 @@ def application(environ, start_response):
         sites = ("https://www.stw.uni-heidelberg.de/",
                  "https://www.stw-ma.de/",
                  "https://studiplus.stw-ma.de/",
-                 "https://sws.maxmanager.xyz/", # Stuttgart
+                 "https://sws.maxmanager.xyz/",  # Stuttgart
                  "https://www.uni-ulm.de/")
         for url in sites:
             hostname = url.split("//")[1].split("/")[0]
@@ -86,7 +86,8 @@ def application(environ, start_response):
                 logging.error(f"{hostname} is not reachable #1: {e}")
             except RuntimeError as e:
                 if result is not None:
-                    statusmessage.append(f"{hostname} status code {result.getcode()}")
+                    statusmessage.append(
+                        f"{hostname} status code {result.getcode()}")
                 else:
                     statusmessage.append("%s %r" % (hostname, e))
                 logging.error(f"{hostname} is not reachable #2: {e}")
@@ -394,7 +395,6 @@ def application(environ, start_response):
               <li>/stuttgart/today/{id}.xml</li>
               <li>/stuttgart/all/{id}.xml</li>
             </ul>"""
-
 
     elif environ['PATH_INFO'] == '/eppelheim/list.json':
         ctype = 'application/json; charset=utf-8'

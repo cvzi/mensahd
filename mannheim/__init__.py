@@ -123,11 +123,13 @@ def mensa_info(apiurl, days, canteenid, alternative, canteen=None, day=0):
 
     if 'menuList' not in data or not data['menuList'] or len(data['menuList']) == 0:
         if not isinstance(alternative, bool) and day == 0:
-            logging.info(f"Empty menuList {morning.date().isoformat()}. Trying alternative id: {canteenid} -> {alternative}")
+            logging.info(
+                f"Empty menuList {morning.date().isoformat()}. Trying alternative id: {canteenid} -> {alternative}")
             return mensa_info(apiurl, days, alternative, False)
         else:
             # If empty, stop here, do not try more days
-            logging.info(f"Empty menuList id={canteenid} {morning.date().isoformat()} (day {day + 1} of {days}).")
+            logging.info(
+                f"Empty menuList id={canteenid} {morning.date().isoformat()} (day {day + 1} of {days}).")
             canteen.setDayClosed(morning.date())
             return canteen.toXMLFeed()
 
@@ -180,12 +182,14 @@ def mensa_info(apiurl, days, canteenid, alternative, canteen=None, day=0):
                         if text:
                             if text.startswith(", "):
                                 text = text[2:]
-                            notes = [note.strip() for note in notes if note and note.strip()]
+                            notes = [note.strip()
+                                     for note in notes if note and note.strip()]
                             meals.append([prefix + text, notes])
                             notes = []
                             prefix = ""
                     if notes:
-                        meals[-1][1].extend([note.strip() for note in notes if note and note.strip()])
+                        meals[-1][1].extend([note.strip()
+                                            for note in notes if note and note.strip()])
                         notes = []
             elif inp['name'] == 'preisStudent' and inp['value']:
                 prices.append(inp['value'])
@@ -213,7 +217,8 @@ def mensa_info(apiurl, days, canteenid, alternative, canteen=None, day=0):
                     canteen.addMeal(date, categoryName, mealName.strip()[:249],
                                     notes, prices, roles if prices else None)
                 else:
-                    canteen.addMeal(date, categoryName, mealName.strip()[:249], notes)
+                    canteen.addMeal(date, categoryName,
+                                    mealName.strip()[:249], notes)
 
     day = day + 1
     if days > day:

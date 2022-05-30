@@ -64,6 +64,7 @@ datespan_regex = re.compile(
     '(?P<from>\d+\.\d+\.\d{0,4})\s*–\s*(?P<to>\d+\.\d+\.\d{0,4})')
 calendarweek_regex = re.compile('\(KW (\d+)\)')
 
+
 def parse_url(url, today=False):
     today = nowBerlin().date()
     if today.weekday() == 6:  # Sunday
@@ -103,14 +104,16 @@ def parse_url(url, today=False):
     if not datematch and "nach Vorbestellung" in h2.text:
         # Set info for 7 days
         for i in range(7):
-            canteen.addMeal((nowBerlin().date() + datetime.timedelta(i)), "Info", h2.text)
+            canteen.addMeal(
+                (nowBerlin().date() + datetime.timedelta(i)), "Info", h2.text)
         return canteen.toXMLFeed()
 
     if not datematch:
         match = calendarweek_regex.search(h2.text)
         if match:
             week = int(match.group(1))
-            fromdate = datetime.datetime.fromisocalendar(nowBerlin().year, week, 1)
+            fromdate = datetime.datetime.fromisocalendar(
+                nowBerlin().year, week, 1)
 
     if datematch:
         p = datematch.groupdict()
