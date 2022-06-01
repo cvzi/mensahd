@@ -11,25 +11,18 @@ from bs4 import BeautifulSoup
 
 from pyopenmensa.feed import LazyBuilder
 
-
 metaJson = os.path.join(os.path.dirname(__file__), "stuttgart.json")
 
-metaTemplateFile = os.path.join(os.path.dirname(
-    __file__), "metaTemplate_stuttgart.xml")
+metaTemplateFile = os.path.join(os.path.dirname(__file__),
+                                "metaTemplate_stuttgart.xml")
 
 template_metaURL = "%sstuttgart/meta/%s.xml"
 template_todayURL = "%sstuttgart/today/%s.xml"
 template_fullURL = "%sstuttgart/all/%s.xml"
 
-weekdaysMap = [
-    ("Mo", "monday"),
-    ("Di", "tuesday"),
-    ("Mi", "wednesday"),
-    ("Do", "thursday"),
-    ("Fr", "friday"),
-    ("Sa", "saturday"),
-    ("So", "sunday")
-]
+weekdaysMap = [("Mo", "monday"), ("Di", "tuesday"), ("Mi", "wednesday"),
+               ("Do", "thursday"), ("Fr", "friday"), ("Sa", "saturday"),
+               ("So", "sunday")]
 
 url = r"https://sws2.maxmanager.xyz/inc/ajax-php_konnektor.inc.php"
 sourceUrl = r"https://www.studierendenwerk-stuttgart.de/essen/speiseplan/"
@@ -87,7 +80,7 @@ def parse_url(canteen, locId, day=None):
     headers = {
         'Host': 'sws2.maxmanager.xyz',
         'X-Requested-With': 'XMLHttpRequest',
-        'Referer':   'https://sws2.maxmanager.xyz/',
+        'Referer': 'https://sws2.maxmanager.xyz/',
         'User-Agent': 'Mozilla/5.0',
         'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
         'Accept-Language': 'de-De,de'
@@ -108,8 +101,9 @@ def parse_url(canteen, locId, day=None):
 
     document = BeautifulSoup(content, "html.parser")
 
-    divs = document.find(
-        "div", {"class": "container-fluid"}).find_all("div", {"class", "row"})
+    divs = document.find("div", {
+        "class": "container-fluid"
+    }).find_all("div", {"class", "row"})
 
     nextIsMenu = False
     categoryName = ""
@@ -129,8 +123,9 @@ def parse_url(canteen, locId, day=None):
 
         elif nextIsMenu:
 
-            mealName = div.find(
-                "div", {"class": "visible-xs-block"}).text.strip()
+            mealName = div.find("div", {
+                "class": "visible-xs-block"
+            }).text.strip()
 
             if mealName.lower() == "geschlossen":
                 nextIsMenu = False
@@ -145,8 +140,10 @@ def parse_url(canteen, locId, day=None):
 
             pricesText = div.find("div", {"class": "preise-xs"}).text.strip()
 
-            prices = [float(x.replace(",", "."))
-                      for x in price_pattern.findall(pricesText)]
+            prices = [
+                float(x.replace(",", "."))
+                for x in price_pattern.findall(pricesText)
+            ]
 
             if len(prices) != 2:
                 logging.warning("Expected two prices, got %r" % prices)
@@ -170,7 +167,7 @@ def parse_url(canteen, locId, day=None):
     return False
 
 
-def _generateCanteenMeta(obj, name,  baseurl):
+def _generateCanteenMeta(obj, name, baseurl):
     """Generate an openmensa XML meta feed from the static json file using an XML template"""
     template = open(metaTemplateFile).read()
 
@@ -184,21 +181,33 @@ def _generateCanteenMeta(obj, name,  baseurl):
         shortname = name
 
         data = {
-            "name": mensa["name"],
-            "adress": "%s %s %s %s" % (mensa["name"], mensa["strasse"], mensa["plz"], mensa["ort"]),
-            "city": mensa["ort"],
-            "phone": mensa["phone"],
-            "latitude": mensa["latitude"],
-            "longitude": mensa["longitude"],
-            "feed_today": template_todayURL % (baseurl, urllib.parse.quote(shortname)),
-            "feed_full": template_fullURL % (baseurl, urllib.parse.quote(shortname)),
-            "source_today": sourceUrl,
-            "source_full": sourceUrl
+            "name":
+            mensa["name"],
+            "adress":
+            "%s %s %s %s" %
+            (mensa["name"], mensa["strasse"], mensa["plz"], mensa["ort"]),
+            "city":
+            mensa["ort"],
+            "phone":
+            mensa["phone"],
+            "latitude":
+            mensa["latitude"],
+            "longitude":
+            mensa["longitude"],
+            "feed_today":
+            template_todayURL % (baseurl, urllib.parse.quote(shortname)),
+            "feed_full":
+            template_fullURL % (baseurl, urllib.parse.quote(shortname)),
+            "source_today":
+            sourceUrl,
+            "source_full":
+            sourceUrl
         }
         openingTimes = {}
         infokurz = mensa["infokurz"]
         pattern = re.compile(
-            "([A-Z][a-z])( - ([A-Z][a-z]))? (\d{1,2})\.(\d{2}) - (\d{1,2})\.(\d{2}) Uhr")
+            "([A-Z][a-z])( - ([A-Z][a-z]))? (\d{1,2})\.(\d{2}) - (\d{1,2})\.(\d{2}) Uhr"
+        )
         m = re.findall(pattern, infokurz)
         for result in m:
             fromDay, _, toDay, fromTimeH, fromTimeM, toTimeH, toTimeM = result
@@ -211,7 +220,8 @@ def _generateCanteenMeta(obj, name,  baseurl):
                         select = True
                     elif select:
                         openingTimes[short] = "%02d:%02d-%02d:%02d" % (
-                            int(fromTimeH), int(fromTimeM), int(toTimeH), int(toTimeM))
+                            int(fromTimeH), int(fromTimeM), int(toTimeH),
+                            int(toTimeM))
                     if short == toDay:
                         select = False
 
@@ -228,6 +238,7 @@ def _generateCanteenMeta(obj, name,  baseurl):
 
 
 class Parser:
+
     def __init__(self, baseurl, handler):
         self.baseurl = baseurl
         self.metaObj = json.load(open(metaJson))
@@ -278,7 +289,7 @@ class Parser:
 
         # Skip over weekend
         if date.weekday() > 4:
-            date += datetime.timedelta(days=7-date.weekday())
+            date += datetime.timedelta(days=7 - date.weekday())
 
             # Get next week
             lastWeekday = -1

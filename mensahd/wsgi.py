@@ -56,25 +56,29 @@ def application(environ, start_response):
     elif environ['PATH_INFO'] == '/favicon.ico':
         ctype = 'image/x-icon'
         cache_control = 'public, max-age=8640000'
-        response_body = open(os.path.join(
-            os.path.dirname(__file__), "favicon.ico"), "rb").read()
-        response_headers = [('Content-Type', ctype), ('Content-Length',
-                                                      str(len(response_body))), ('Cache-Control', cache_control)]
+        response_body = open(
+            os.path.join(os.path.dirname(__file__), "favicon.ico"),
+            "rb").read()
+        response_headers = [('Content-Type', ctype),
+                            ('Content-Length', str(len(response_body))),
+                            ('Cache-Control', cache_control)]
         start_response(status, response_headers)
         return [response_body]
 
     elif environ['PATH_INFO'] == '/status':
         statusmessage = []
 
-        sites = ("https://www.stw.uni-heidelberg.de/",
-                 "https://www.stw-ma.de/",
-                 "https://studiplus.stw-ma.de/",
-                 "https://sws.maxmanager.xyz/", # Stuttgart
-                 "https://www.uni-ulm.de/")
+        sites = (
+            "https://www.stw.uni-heidelberg.de/",
+            "https://www.stw-ma.de/",
+            "https://studiplus.stw-ma.de/",
+            "https://sws.maxmanager.xyz/",  # Stuttgart
+            "https://www.uni-ulm.de/")
         for url in sites:
             hostname = url.split("//")[1].split("/")[0]
             try:
-                if not url.startswith("http://") and not url.startswith("https://"):
+                if not url.startswith("http://") and not url.startswith(
+                        "https://"):
                     raise RuntimeError(f"url is not an allowed URL: '{url}'")
                 request = urllib.request.Request(url)
                 result = urllib.request.urlopen(request, timeout=7)  # nosec
@@ -86,7 +90,8 @@ def application(environ, start_response):
                 logging.error(f"{hostname} is not reachable #1: {e}")
             except RuntimeError as e:
                 if result is not None:
-                    statusmessage.append(f"{hostname} status code {result.getcode()}")
+                    statusmessage.append(
+                        f"{hostname} status code {result.getcode()}")
                 else:
                     statusmessage.append("%s %r" % (hostname, e))
                 logging.error(f"{hostname} is not reachable #2: {e}")
@@ -291,7 +296,8 @@ def application(environ, start_response):
             status = '503 Service Unavailable'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
 
-    elif environ['PATH_INFO'] == '/mannheim' or environ['PATH_INFO'] == '/mannheim/':
+    elif environ['PATH_INFO'] == '/mannheim' or environ[
+            'PATH_INFO'] == '/mannheim/':
         ctype = 'text/html; charset=utf-8'
         cache_control = 'public, max-age=86400'
         response_body = """
@@ -379,7 +385,8 @@ def application(environ, start_response):
             status = '503 Service Unavailable'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
 
-    elif environ['PATH_INFO'] == '/stuttgart' or environ['PATH_INFO'] == '/stuttgart/':
+    elif environ['PATH_INFO'] == '/stuttgart' or environ[
+            'PATH_INFO'] == '/stuttgart/':
         ctype = 'text/html; charset=utf-8'
         cache_control = 'public, max-age=86400'
         response_body = """
@@ -394,7 +401,6 @@ def application(environ, start_response):
               <li>/stuttgart/today/{id}.xml</li>
               <li>/stuttgart/all/{id}.xml</li>
             </ul>"""
-
 
     elif environ['PATH_INFO'] == '/eppelheim/list.json':
         ctype = 'application/json; charset=utf-8'
@@ -447,7 +453,8 @@ def application(environ, start_response):
             status = '503 Service Unavailable'
             page_errors.append((timeStrBerlin(), environ['PATH_INFO'], e))
 
-    elif environ['PATH_INFO'] == '/eppelheim' or environ['PATH_INFO'] == '/eppelheim/':
+    elif environ['PATH_INFO'] == '/eppelheim' or environ[
+            'PATH_INFO'] == '/eppelheim/':
         ctype = 'text/html; charset=utf-8'
         cache_control = 'public, max-age=86400'
         response_body = """

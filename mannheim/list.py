@@ -16,7 +16,6 @@ else:
 if not authorization:
     raise RuntimeError("Authentication data not found")
 
-
 url = 'https://studiplus.stw-ma.de/api/app/mensas'
 
 headers = {
