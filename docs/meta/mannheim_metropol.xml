@@ -20,12 +20,12 @@
     </times>
     <feed name="today" priority="0">
       <schedule dayOfMonth="*" dayOfWeek="1-5" hour="10-14" retry="5 3" />
-      <url>https://cvzi.github.io/mensahd/{metaOrFeed}/mannheim_{mensaReference}.xmlmannheim/today/metropol.xml</url>
+      <url>https://cvzi.github.io/mensahd/today/mannheim_metropol.xml</url>
       <source>https://www.stw-ma.de/speiseplan_mensaria_metropol.html</source>
     </feed>
     <feed name="full" priority="1">
       <schedule dayOfMonth="*" dayOfWeek="1-5" hour="9" minute="30" retry="60 1 1440" />
-      <url>https://cvzi.github.io/mensahd/{metaOrFeed}/mannheim_{mensaReference}.xmlmannheim/all/metropol.xml</url>
+      <url>https://cvzi.github.io/mensahd/feed/mannheim_metropol.xml</url>
       <source>https://www.stw-ma.de/speiseplan_mensaria_metropol-pdfView-1.html</source>
     </feed>
   </canteen>

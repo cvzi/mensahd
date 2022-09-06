@@ -20,12 +20,12 @@
     </times>
     <feed name="today" priority="0">
       <schedule dayOfMonth="*" dayOfWeek="1-5" hour="10-14" retry="5 3" />
-      <url>https://cvzi.github.io/mensahd/{metaOrFeed}/mannheim_{mensaReference}.xmlmannheim/today/musikhochschule.xml</url>
+      <url>https://cvzi.github.io/mensahd/today/mannheim_musikhochschule.xml</url>
       <source>https://www.stw-ma.de/Essen+_+Trinken/Men%C3%BCpl%C3%A4ne/Cafeteria+Musikhochschule.html</source>
     </feed>
     <feed name="full" priority="1">
       <schedule dayOfMonth="*" dayOfWeek="1-5" hour="9" minute="30" retry="60 1 1440" />
-      <url>https://cvzi.github.io/mensahd/{metaOrFeed}/mannheim_{mensaReference}.xmlmannheim/all/musikhochschule.xml</url>
+      <url>https://cvzi.github.io/mensahd/feed/mannheim_musikhochschule.xml</url>
       <source>https://www.stw-ma.de/Essen+_+Trinken/Men%C3%BCpl%C3%A4ne/Cafeteria+Musikhochschule-pdfView-1.html</source>
     </feed>
   </canteen>
