@@ -4,6 +4,7 @@ import logging
 import lxml.etree
 import defusedxml.lxml
 import urllib.request
+import json
 
 include = os.path.relpath(os.path.join(os.path.dirname(__file__), '..'))
 sys.path.insert(0, include)
@@ -82,90 +83,72 @@ def check_feed(content, encoding='utf8', name=''):
     return True
 
 
-def check_xml(parser, canteen):
-    name = "%s/%s" % (parser.__module__, canteen)
-    print("Canteen: %s" % (name, ))
+def test_all_files():
+    GHPAGES = 'docs/'
+    FEEDS = 'feed/'
+    TODAYS = 'today/'
+    METAS = 'meta/'
 
-    print("meta()", end="", flush=True)
-    content = parser.meta(canteen)
-    print(f" -> {greenOk}.")
-    print("meta() ", end="", flush=True)
-    check_meta(content, name=name)
-
-    has_feed = 0
-
-    if hasattr(parser, "feed_today"):
-        print("feed_today()", end="", flush=True)
-        content = parser.feed_today(canteen)
-        print(f" -> {greenOk}.")
-        print("feed_today() ", end="", flush=True)
-        check_feed(content, name=name)
-        has_feed += 1
-
-    if hasattr(parser, "feed_all"):
-        print("feed_all()", end="", flush=True)
-        content = parser.feed_all(canteen)
-        print(f" -> {greenOk}.")
-        print("feed_all() ", end="", flush=True)
-        check_feed(content, name=name)
-        has_feed += 1
-
-    if hasattr(parser, "feed"):
-        print("feed()", end="", flush=True)
-        content = parser.feed(canteen)
-        print(f" -> {greenOk}.")
-        print("feed() ", end="", flush=True)
-        check_feed(content, name=name)
-        has_feed += 1
-
-    if has_feed == 0:
-        raise RuntimeWarning("No feeds found for [%s]." % (name, ))
-
-
-def test_all_modules():
-    moduleNames = ['eppelheim', 'heidelberg', 'mannheim', 'stuttgart', 'ulm']
-
-    print("Importing %s" % (", ".join(moduleNames), ), end="", flush=True)
-
-    modules = map(__import__, moduleNames)
-
-    print(f" -> {greenOk}.")
-
+    ghpagesPath = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', GHPAGES))
+    print(f"Checking files in {ghpagesPath}")
     errors = []
-    for mod in modules:
+
+    for filename in sorted(os.listdir(ghpagesPath)):
+        if not filename.endswith(".json"):
+            continue
+        print(filename, end="", flush=True)
+        path = os.path.join(ghpagesPath, filename)
         try:
-            print("Module: %s" % mod.__name__)
+            with open(path, 'r', encoding='utf8') as f:
+                data = json.load(f)
+            for value in data.values():
+                assert value.startswith("https://")
+                assert value.endswith(".xml")
+            print(f" -> {greenOk}.")
 
-            parser = mod.getParser('http://localhost/')
-            canteens = list(parser.canteens.keys())
-
-            for canteen in canteens:
-                check_xml(parser, canteen)
-        except (KeyboardInterrupt, SystemExit) as e:
-            raise e
         except Exception as e:
-            print(f" {redVT}Error in {mod.__name__} ", end="")
-            if canteen:
-                print(f"{redVT}in canteen %r: {endVT}" % (canteen, ), end="")
-            print("{redVT}%r{endVT}" % (e, ))
+            print(f" {redVT}Error:\n%r{endVT}\n" % (e, ), end="", flush=True)
             errors.append(e)
 
+    if os.path.isdir(os.path.join(ghpagesPath, METAS)):
+        for filename in sorted(os.listdir(os.path.join(ghpagesPath, METAS))):
+            prettyName = f"{METAS}{filename}"
+            print(prettyName, end="", flush=True)
+            path = os.path.join(ghpagesPath, METAS, filename)
+            try:
+                with open(path, 'r', encoding='utf8') as f:
+                    check_meta(f.read(), name=prettyName)
+            except Exception as e:
+                print(f" {redVT}Error:\n%r{endVT}\n" % (e, ), end="", flush=True)
+                errors.append(e)
+
+    if os.path.isdir(os.path.join(ghpagesPath, TODAYS)):
+        for filename in sorted(os.listdir(os.path.join(ghpagesPath, TODAYS))):
+            prettyName = f"{TODAYS}{filename}"
+            print(prettyName, end="", flush=True)
+            path = os.path.join(ghpagesPath, TODAYS, filename)
+            try:
+                with open(path, 'r', encoding='utf8') as f:
+                    check_feed(f.read(), encoding='utf8', name=prettyName)
+            except Exception as e:
+                print(f" {redVT}Error:\n%r{endVT}\n" % (e, ), end="", flush=True)
+                errors.append(e)
+    if os.path.isdir(os.path.join(ghpagesPath, FEEDS)):
+        for filename in sorted(os.listdir(os.path.join(ghpagesPath, FEEDS))):
+            prettyName = f"{FEEDS}{filename}"
+            print(prettyName, end="", flush=True)
+            path = os.path.join(ghpagesPath, FEEDS, filename)
+            try:
+                with open(path, 'r', encoding='utf8') as f:
+                    check_feed(f.read(), encoding='utf8', name=prettyName)
+            except Exception as e:
+                print(f" {redVT}Error:\n%r{endVT}\n" % (e, ), end="", flush=True)
+                errors.append(e)
+
     if errors:
+        print("--------- First error: ----------------", file=sys.stderr)
         raise errors[0]
 
-
-def one_module(name):
-    print(f"Importing {name}", end="", flush=True)
-
-    mod = __import__(name)
-
-    print(f" -> {greenOk}.")
-
-    parser = mod.getParser('http://localhost/')
-    canteens = list(parser.canteens.keys())
-
-    for canteen in canteens:
-        check_xml(parser, canteen)
 
 def run_all():
     for fname, f in list(globals().items()):
@@ -176,9 +159,6 @@ def run_all():
 
 
 if __name__ == '__main__':
-    if len(sys.argv) == 2:
-        logging.basicConfig(level=logging.DEBUG)
-        one_module(sys.argv[1])
-    else:
-        logging.basicConfig(level=logging.WARNING)
-        run_all()
+    # logging.basicConfig(level=logging.DEBUG)
+    logging.basicConfig(level=logging.WARNING)
+    run_all()

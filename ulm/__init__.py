@@ -171,7 +171,7 @@ def _from_json(canteen, url, place):
 
                         # Split at whitespace, round brackets and comma
                         raw = raw.replace('(', ' ').replace(
-                            ')', ' ').replace(',', ' ')
+                            ')', ' ').replace(',', ' ').replace('\uf02f', '')
                         tags = [s.strip() for s in raw.split() if s.strip()]
 
                         # Convert via legend
@@ -287,4 +287,4 @@ def getParser(baseurl):
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
-    print(getParser("http://localhost/").feed("diner"))
+    print(getParser("http://localhost/").feed("bistro"))
