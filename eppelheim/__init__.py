@@ -94,26 +94,25 @@ def parse_url(url, today=False):
         if match:
             datematch = match
 
-    h2 = h2s[0]
-    if not datematch and "geschlossen" in h2.text:
-        # Set 7 days closed
-        for i in range(7):
-            canteen.setDayClosed((nowBerlin().date() + datetime.timedelta(i)))
-        return canteen.toXMLFeed()
+    if h2s:
+        h2 = h2s[0]
+        if not datematch and "geschlossen" in h2.text:
+            # Set 7 days closed
+            for i in range(7):
+                canteen.setDayClosed((nowBerlin().date() + datetime.timedelta(i)))
+            return canteen.toXMLFeed()
 
-    if not datematch and "nach Vorbestellung" in h2.text:
-        # Set info for 7 days
-        for i in range(7):
-            canteen.addMeal(
-                (nowBerlin().date() + datetime.timedelta(i)), "Info", h2.text)
-        return canteen.toXMLFeed()
+        if not datematch and "nach Vorbestellung" in h2.text:
+            # Set info for 7 days
+            for i in range(7):
+                canteen.addMeal((nowBerlin().date() + datetime.timedelta(i)), "Info", h2.text)
+            return canteen.toXMLFeed()
 
-    if not datematch:
-        match = calendarweek_regex.search(h2.text)
-        if match:
-            week = int(match.group(1))
-            fromdate = datetime.datetime.fromisocalendar(
-                nowBerlin().year, week, 1)
+        if not datematch:
+            match = calendarweek_regex.search(h2.text)
+            if match:
+                week = int(match.group(1))
+                fromdate = datetime.datetime.fromisocalendar(nowBerlin().year, week, 1)
 
     if datematch:
         p = datematch.groupdict()
@@ -146,6 +145,16 @@ def parse_url(url, today=False):
             if p:
                 fromdate = datetime.datetime.strptime(p["from"], "%d.%m.%Y")
                 todate = datetime.datetime.strptime(p["to"], "%d.%m.%Y")
+                while fromdate <= todate:
+                    canteen.setDayClosed(fromdate.strftime('%d.%m.%Y'))
+                    fromdate += datetime.timedelta(1)
+
+            # Die Speisenausgabe an der DHBW Eppelheim ist ab dem dd.mm.yyyy
+            # wieder geöffnet.
+            p = day_regex.search(maincontent.text)
+            if p and "wieder" in maincontent.text:
+                fromdate = datetime.datetime.today()
+                todate = datetime.datetime.strptime(p["date"], "%d.%m.%Y")
                 while fromdate <= todate:
                     canteen.setDayClosed(fromdate.strftime('%d.%m.%Y'))
                     fromdate += datetime.timedelta(1)
