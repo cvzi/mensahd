@@ -239,7 +239,8 @@ def _generateCanteenList_JSON(source, url_template):
 
         shortName = _getShortName(mensa["xml"])
 
-        data[shortName] = url_template.format(metaOrFeed='meta', mensaReference=urllib.parse.quote(shortName))
+        data[shortName] = url_template.format(
+            metaOrFeed='meta', mensaReference=urllib.parse.quote(shortName))
 
     return json.dumps(data, sort_keys=True, indent=4, separators=(',', ': '))
 
