@@ -22,41 +22,32 @@ except ModuleNotFoundError:
 
 metaJson = os.path.join(os.path.dirname(__file__), "mannheim.json")
 
-metaTemplateFile = os.path.join(os.path.dirname(
-    __file__), "metaTemplate_mannheim.xml")
+metaTemplateFile = os.path.join(os.path.dirname(__file__),
+                                "metaTemplate_mannheim.xml")
 
 template_metaURL = "%smannheim/meta/%s.xml"
 template_todayURL = "%smannheim/today/%s.xml"
 template_fullURL = "%smannheim/all/%s.xml"
 
 weekdays = [
-    "Montag",
-    "Dienstag",
-    "Mittwoch",
-    "Donnerstag",
-    "Freitag",
-    "Samstag",
+    "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag",
     "Sonntag"
 ]
 
-weekdaysMap = [
-    ("Mo", "monday"),
-    ("Di", "tuesday"),
-    ("Mi", "wednesday"),
-    ("Do", "thursday"),
-    ("Fr", "friday"),
-    ("Sa", "saturday"),
-    ("So", "sunday")
-]
+weekdaysMap = [("Mo", "monday"), ("Di", "tuesday"), ("Mi", "wednesday"),
+               ("Do", "thursday"), ("Fr", "friday"), ("Sa", "saturday"),
+               ("So", "sunday")]
 
 headers = {
-    'User-Agent': f'{useragentname}/{__version__} (+{useragentcomment}) {requests.utils.default_user_agent()}'
+    'User-Agent':
+    f'{useragentname}/{__version__} (+{useragentcomment}) {requests.utils.default_user_agent()}'
 }
 
 roles = ('student', 'employee', 'other')
 
 
-def correctCapitalization(s): return s[0].upper() + s[1:].lower()
+def correctCapitalization(s):
+    return s[0].upper() + s[1:].lower()
 
 
 day_regex = re.compile(r'(?P<date>\d{2}\.\d{2}\.\d{4})')
@@ -72,8 +63,9 @@ def parse_url(url, today=False):
     if today.weekday() == 6:  # Sunday
         today += datetime.timedelta(days=1)  # Tomorrow
 
-    url = url.format(year=today.strftime(
-        '%Y'), month=today.strftime('%m'), day=today.strftime('%d'))
+    url = url.format(year=today.strftime('%Y'),
+                     month=today.strftime('%m'),
+                     day=today.strftime('%d'))
 
     if not url.startswith("http://") and not url.startswith("https://"):
         raise RuntimeError("url is not an allowed URL: '%s'" % url)
@@ -107,8 +99,9 @@ def parse_url(url, today=False):
 
     # Prices for employees and guests
     try:
-        p = price_regex.search(document.find(
-            "p", {"id": "message"}).text).groupdict()
+        p = price_regex.search(document.find("p", {
+            "id": "message"
+        }).text).groupdict()
         employee_multiplier = 1.0 + int(p["employee"]) / 100.0
         guest_multiplier = 1.0 + int(p["guest"]) / 100.0
     except (AttributeError, TypeError, KeyError, ValueError):
@@ -130,7 +123,7 @@ def parse_url(url, today=False):
     canteenCategories = []
 
     firstTr = True
-    previous = None   # previous tr row
+    previous = None  # previous tr row
     for tr in trs:
         closed = False
         mealsFound = False
@@ -154,16 +147,19 @@ def parse_url(url, today=False):
                 date += datetime.timedelta(days=1)
                 i += 1
             if i > 7:
-                logging.error(
-                    "Date could not be calculated from %r" % (weekday,))
+                logging.error("Date could not be calculated from %r" %
+                              (weekday, ))
             date = date.date()
 
-            if len(previous.find_all("td")) < 2 or "geschlossen" == previous.find_all("td")[1].text.strip():
+            if len(
+                    previous.find_all("td")
+            ) < 2 or "geschlossen" == previous.find_all("td")[1].text.strip():
                 closed = date
 
             cat = 0
 
-            for td0, td1 in zip(previous.find_all("td")[1:], tr.find_all("td")):
+            for td0, td1 in zip(
+                    previous.find_all("td")[1:], tr.find_all("td")):
                 if "heute kein Angebot" in td0.text or "geschlossen" in td0.text:
                     cat += 1
                     continue
@@ -212,8 +208,9 @@ def parse_url(url, today=False):
                 spans = td1.find_all("span", {"class": "label"})
                 if spans:
                     try:
-                        price = float(euro_regex.search(
-                            spans[0].text).group(1).replace(",", "."))
+                        price = float(
+                            euro_regex.search(spans[0].text).group(1).replace(
+                                ",", "."))
                     except (AttributeError, TypeError, KeyError, ValueError):
                         notes.add(spans[0].text.strip() + " Preis")
                     if len(spans) == 2:
@@ -221,8 +218,8 @@ def parse_url(url, today=False):
                     prices = (price, price * employee_multiplier,
                               price * guest_multiplier)
 
-                canteen.addMeal(date, categoryName, name,
-                                notes, prices, roles if prices else None)
+                canteen.addMeal(date, categoryName, name, notes, prices,
+                                roles if prices else None)
 
                 mealsFound = True
                 cat += 1
@@ -249,21 +246,33 @@ def _generateCanteenMeta(name, baseurl):
         shortname = name
 
         data = {
-            "name": mensa["name"],
-            "adress": "%s %s %s %s" % (mensa["name"], mensa["strasse"], mensa["plz"], mensa["ort"]),
-            "city": mensa["ort"],
-            "phone": mensa["phone"],
-            "latitude": mensa["latitude"],
-            "longitude": mensa["longitude"],
-            "feed_today": template_todayURL % (baseurl, urllib.parse.quote(shortname)),
-            "feed_full": template_fullURL % (baseurl, urllib.parse.quote(shortname)),
-            "source_today": mensa["source_today"],
-            "source_full": mensa["source_week"],
+            "name":
+            mensa["name"],
+            "adress":
+            "%s %s %s %s" %
+            (mensa["name"], mensa["strasse"], mensa["plz"], mensa["ort"]),
+            "city":
+            mensa["ort"],
+            "phone":
+            mensa["phone"],
+            "latitude":
+            mensa["latitude"],
+            "longitude":
+            mensa["longitude"],
+            "feed_today":
+            template_todayURL % (baseurl, urllib.parse.quote(shortname)),
+            "feed_full":
+            template_fullURL % (baseurl, urllib.parse.quote(shortname)),
+            "source_today":
+            mensa["source_today"],
+            "source_full":
+            mensa["source_week"],
         }
         openingTimes = {}
         infokurz = mensa["infokurz"]
         pattern = re.compile(
-            "([A-Z][a-z])( - ([A-Z][a-z]))? (\d{1,2})\.(\d{2}) - (\d{1,2})\.(\d{2}) Uhr")
+            "([A-Z][a-z])( - ([A-Z][a-z]))? (\d{1,2})\.(\d{2}) - (\d{1,2})\.(\d{2}) Uhr"
+        )
         m = re.findall(pattern, infokurz)
         for result in m:
             fromDay, _, toDay, fromTimeH, fromTimeM, toTimeH, toTimeM = result
@@ -276,7 +285,8 @@ def _generateCanteenMeta(name, baseurl):
                         select = True
                     elif select:
                         openingTimes[short] = "%02d:%02d-%02d:%02d" % (
-                            int(fromTimeH), int(fromTimeM), int(toTimeH), int(toTimeM))
+                            int(fromTimeH), int(fromTimeM), int(toTimeH),
+                            int(toTimeM))
                     if short == toDay:
                         select = False
 
@@ -293,6 +303,7 @@ def _generateCanteenMeta(name, baseurl):
 
 
 class Parser:
+
     def __init__(self, baseurl, city, handler, shared_prefix):
         self.baseurl = baseurl
         self.handler = handler
@@ -319,21 +330,41 @@ class Parser:
 
 
 def getParser(baseurl):
-    parser = Parser(baseurl, 'mannheim', handler=parse_url,
+    parser = Parser(baseurl,
+                    'mannheim',
+                    handler=parse_url,
                     shared_prefix='https://www.stw-ma.de/')
 
     parser.define(
-        'schloss', suffix='menüplan_schlossmensa-date-{year}%25252d{month}%25252d{day}-view-week.html')
+        'schloss',
+        suffix=
+        'menüplan_schlossmensa-date-{year}%25252d{month}%25252d{day}-view-week.html'
+    )
     parser.define(
-        'hochschule', suffix='Essen+_+Trinken/Speisepl%C3%A4ne/Hochschule+Mannheim-date-{year}%25252d{month}%25252d{day}-view-week.html')
+        'hochschule',
+        suffix=
+        'Essen+_+Trinken/Speisepl%C3%A4ne/Hochschule+Mannheim-date-{year}%25252d{month}%25252d{day}-view-week.html'
+    )
     parser.define(
-        'wagon', suffix='Essen+_+Trinken/Speisepläne/MensaWagon-date-{year}%25252d{month}%25252d{day}-view-week.html')
+        'wagon',
+        suffix=
+        'Essen+_+Trinken/Speisepläne/MensaWagon-date-{year}%25252d{month}%25252d{day}-view-week.html'
+    )
     parser.define(
-        'metropol', suffix='Essen+_+Trinken/Speisepl%C3%A4ne/Mensaria+Metropol-date-{year}%25252d{month}%25252d{day}-view-week.html')
+        'metropol',
+        suffix=
+        'Essen+_+Trinken/Speisepl%C3%A4ne/Mensaria+Metropol-date-{year}%25252d{month}%25252d{day}-view-week.html'
+    )
     parser.define(
-        'wohlgelegen', suffix='Essen+_+Trinken/Speisepl%C3%A4ne/Mensaria+Wohlgelegen-date-{year}%25252d{month}%25252d{day}-view-week.html')
-    parser.define('musikhochschule',
-                  suffix='Essen+_+Trinken/Speisepl%C3%A4ne/Cafeteria+Musikhochschule-date-{year}%25252d{month}%25252d{day}-view-week.html')
+        'wohlgelegen',
+        suffix=
+        'Essen+_+Trinken/Speisepl%C3%A4ne/Mensaria+Wohlgelegen-date-{year}%25252d{month}%25252d{day}-view-week.html'
+    )
+    parser.define(
+        'musikhochschule',
+        suffix=
+        'Essen+_+Trinken/Speisepl%C3%A4ne/Cafeteria+Musikhochschule-date-{year}%25252d{month}%25252d{day}-view-week.html'
+    )
     return parser
 
 

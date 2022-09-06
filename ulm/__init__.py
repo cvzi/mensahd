@@ -20,21 +20,15 @@ except ModuleNotFoundError:
 
 metaJson = os.path.join(os.path.dirname(__file__), "ulm.json")
 
-metaTemplateFile = os.path.join(
-    os.path.dirname(__file__), "metaTemplate_ulm.xml")
+metaTemplateFile = os.path.join(os.path.dirname(__file__),
+                                "metaTemplate_ulm.xml")
 
 template_metaURL = "%sulm/meta/%s.xml"
 template_fullURL = "%sulm/feed/%s.xml"
 
-weekdaysMap = [
-    ("Mo", "monday"),
-    ("Di", "tuesday"),
-    ("Mi", "wednesday"),
-    ("Do", "thursday"),
-    ("Fr", "friday"),
-    ("Sa", "saturday"),
-    ("So", "sunday")
-]
+weekdaysMap = [("Mo", "monday"), ("Di", "tuesday"), ("Mi", "wednesday"),
+               ("Do", "thursday"), ("Fr", "friday"), ("Sa", "saturday"),
+               ("So", "sunday")]
 
 price_roles_regex = re.compile(r'€\s*(?P<price>\d+[,.]\d{2})')
 price_single_regex = re.compile(r'(?P<price>\d+[,.]\d{2})\s*€')
@@ -45,8 +39,8 @@ remove_uppercase_regex = re.compile(
     '[A-Z]{3,}')  # Strip uppercase from meal_raw
 
 roles = ('student', 'employee', 'other')
-weekdays = ('Monday', 'Tuesday', 'Wednesday',
-            'Thursday', 'Friday', 'Saturday', 'Sunday')
+weekdays = ('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday',
+            'Sunday')
 default_category = "Essen"
 
 legend = {
@@ -81,7 +75,8 @@ legend = {
 }
 
 headers = {
-    'User-Agent': f'{useragentname}/{__version__} (+{useragentcomment}) {requests.utils.default_user_agent()}',
+    'User-Agent':
+    f'{useragentname}/{__version__} (+{useragentcomment}) {requests.utils.default_user_agent()}',
     'Accept': 'application/json',
     'Accept-Language': 'de-De,de'
 }
@@ -123,8 +118,9 @@ def _from_json(canteen, url, place):
                 today = nowBerlin().date()
                 weekday = weekdays.index(day['date'])
                 till_next = (weekday - today.weekday() + 7) % 7
-                date = (today + datetime.timedelta(days=till_next)
-                        ).strftime('%Y-%m-%d')
+                date = (
+                    today +
+                    datetime.timedelta(days=till_next)).strftime('%Y-%m-%d')
 
             if place not in day:
                 continue
@@ -147,8 +143,10 @@ def _from_json(canteen, url, place):
                     if len(prices) > len(roles):
                         prices = prices[0:len(roles)]
                     if not prices and price_single_regex.search(meal['price']):
-                        prices = [price_single_regex.search(
-                            meal['price']).group('price')]
+                        prices = [
+                            price_single_regex.search(
+                                meal['price']).group('price')
+                        ]
                         if len(prices) > len(roles):
                             prices = prices[0:len(roles)]
 
@@ -170,8 +168,9 @@ def _from_json(canteen, url, place):
                         raw = ' '.join(raw_parts)
 
                         # Split at whitespace, round brackets and comma
-                        raw = raw.replace('(', ' ').replace(
-                            ')', ' ').replace(',', ' ')
+                        raw = raw.replace('(',
+                                          ' ').replace(')',
+                                                       ' ').replace(',', ' ')
                         tags = [s.strip() for s in raw.split() if s.strip()]
 
                         # Convert via legend
@@ -182,16 +181,16 @@ def _from_json(canteen, url, place):
                                 notes.append(tag)
                     except Exception as e:
                         # traceback.print_exc()
-                        logging.warning("Could not generate notes: %r" % (e,))
+                        logging.warning("Could not generate notes: %r" % (e, ))
 
                 if name:
-                    canteen.addMeal(
-                        date, meal['category'], name, notes, prices, roles)
+                    canteen.addMeal(date, meal['category'], name, notes,
+                                    prices, roles)
                 else:
                     # No meal name -> use category as name and a default
                     # category
-                    canteen.addMeal(date, default_category,
-                                    meal['category'], notes, prices, roles)
+                    canteen.addMeal(date, default_category, meal['category'],
+                                    notes, prices, roles)
 
 
 def _parse_url(sourcepage, filename, place):
@@ -212,19 +211,28 @@ def _generateCanteenMeta(obj, name, baseurl):
             continue
 
         data = {
-            "name": mensa["name"],
-            "adress": "%s, %s %s" % (mensa["strasse"], mensa["plz"], mensa["ort"]),
-            "city": mensa["ort"],
-            "phone": mensa["phone"],
-            "latitude": mensa["latitude"],
-            "longitude": mensa["longitude"],
-            "feed_full": template_fullURL % (baseurl, urllib.parse.quote(mensa["xml"])),
-            "source_full": mensa["source_week"],
+            "name":
+            mensa["name"],
+            "adress":
+            "%s, %s %s" % (mensa["strasse"], mensa["plz"], mensa["ort"]),
+            "city":
+            mensa["ort"],
+            "phone":
+            mensa["phone"],
+            "latitude":
+            mensa["latitude"],
+            "longitude":
+            mensa["longitude"],
+            "feed_full":
+            template_fullURL % (baseurl, urllib.parse.quote(mensa["xml"])),
+            "source_full":
+            mensa["source_week"],
         }
         openingTimes = {}
         infokurz = mensa["infokurz"]
         pattern = re.compile(
-            "([A-Z][a-z])( - ([A-Z][a-z]))? (\d{1,2})\.(\d{2}) - (\d{1,2})\.(\d{2}) Uhr")
+            "([A-Z][a-z])( - ([A-Z][a-z]))? (\d{1,2})\.(\d{2}) - (\d{1,2})\.(\d{2}) Uhr"
+        )
         m = re.findall(pattern, infokurz)
         for result in m:
             fromDay, _, toDay, fromTimeH, fromTimeM, toTimeH, toTimeM = result
@@ -237,7 +245,8 @@ def _generateCanteenMeta(obj, name, baseurl):
                         select = True
                     elif select:
                         openingTimes[short] = "%02d:%02d-%02d:%02d" % (
-                            int(fromTimeH), int(fromTimeM), int(toTimeH), int(toTimeM))
+                            int(fromTimeH), int(fromTimeM), int(toTimeH),
+                            int(toTimeM))
                     if short == toDay:
                         select = False
 
@@ -254,6 +263,7 @@ def _generateCanteenMeta(obj, name, baseurl):
 
 
 class Parser:
+
     def __init__(self, baseurl, sourceurl):
         self.baseurl = baseurl
         self.sourceurl = sourceurl
@@ -275,13 +285,13 @@ class Parser:
         return _generateCanteenMeta(self.metaObj, name, self.baseurl)
 
     def feed(self, name):
-        return _parse_url(
-            self.sourceurl, self.canteens[name][0], self.canteens[name][1])
+        return _parse_url(self.sourceurl, self.canteens[name][0],
+                          self.canteens[name][1])
 
 
 def getParser(baseurl):
-    parser = Parser(
-        baseurl, sourceurl='https://www.uni-ulm.de/mensaplan/data/')
+    parser = Parser(baseurl,
+                    sourceurl='https://www.uni-ulm.de/mensaplan/data/')
     return parser
 
 

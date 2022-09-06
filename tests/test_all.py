@@ -38,8 +38,8 @@ def check_meta(content, name=''):
     try:
         defusedxml.lxml.fromstring(content.encode('utf8'), xmlParser)
     except lxml.etree.XMLSyntaxError as error:
-        raise RuntimeWarning(
-            "Invalid document meta [%s]: %s" % (name, str(error)))
+        raise RuntimeWarning("Invalid document meta [%s]: %s" %
+                             (name, str(error)))
 
     # Content length
     if len(content) < 450:
@@ -71,16 +71,16 @@ def check_feed(content, encoding='utf8', name=''):
         print(f"{yellowVT}[{name}] probably empty feed.{endVT}")
         return False
     elif len(content) < 360:
-        print(
-            f" -> {yellowVT}Probably closed. [{name}]{endVT}", file=sys.stderr)
+        print(f" -> {yellowVT}Probably closed. [{name}]{endVT}",
+              file=sys.stderr)
     else:
         print(f" -> {greenOk}.")
 
     # Count closed days:
     closed = content.count('<closed')
     if closed > 0:
-        print(
-            f"{yellowVT}Found closed days: {closed} [{name}]{endVT}", file=sys.stderr)
+        print(f"{yellowVT}Found closed days: {closed} [{name}]{endVT}",
+              file=sys.stderr)
 
     return True
 

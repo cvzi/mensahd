@@ -24,30 +24,27 @@ except ModuleNotFoundError:
 
 metaJson = os.path.join(os.path.dirname(__file__), "eppelheim.json")
 
-metaTemplateFile = os.path.join(os.path.dirname(
-    __file__), "metaTemplate_mannheim.xml")
+metaTemplateFile = os.path.join(os.path.dirname(__file__),
+                                "metaTemplate_mannheim.xml")
 
 template_metaURL = "%seppelheim/meta/%s.xml"
 template_todayURL = "%seppelheim/feed/%s.xml"
 template_fullURL = "%seppelheim/feed/%s.xml"
 
-weekdaysMap = [
-    ("Mo", "monday"),
-    ("Di", "tuesday"),
-    ("Mi", "wednesday"),
-    ("Do", "thursday"),
-    ("Fr", "friday"),
-    ("Sa", "saturday"),
-    ("So", "sunday")
-]
+weekdaysMap = [("Mo", "monday"), ("Di", "tuesday"), ("Mi", "wednesday"),
+               ("Do", "thursday"), ("Fr", "friday"), ("Sa", "saturday"),
+               ("So", "sunday")]
 
-daysGerman = ["Montag", "Dienstag", "Mittwoch",
-              "Donnerstag", "Freitag", "Samstag", "Sonntag"]
+daysGerman = [
+    "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag",
+    "Sonntag"
+]
 
 roles = ('student', 'employee', 'other')
 
 headers = {
-    'User-Agent': f'{useragentname}/{__version__} ({useragentcomment}) {requests.utils.default_user_agent()}'
+    'User-Agent':
+    f'{useragentname}/{__version__} ({useragentcomment}) {requests.utils.default_user_agent()}'
 }
 
 
@@ -104,8 +101,8 @@ def parse_url(url, today=False):
     if not datematch and "nach Vorbestellung" in h2.text:
         # Set info for 7 days
         for i in range(7):
-            canteen.addMeal(
-                (nowBerlin().date() + datetime.timedelta(i)), "Info", h2.text)
+            canteen.addMeal((nowBerlin().date() + datetime.timedelta(i)),
+                            "Info", h2.text)
         return canteen.toXMLFeed()
 
     if not datematch:
@@ -175,7 +172,8 @@ def parse_url(url, today=False):
 
         notes = []
 
-        if "feiertag" in td1.text.lower() or "geschlossen" in td1.text.lower() or (td0 and "feiertag" in td0.text.lower()):
+        if "feiertag" in td1.text.lower() or "geschlossen" in td1.text.lower(
+        ) or (td0 and "feiertag" in td0.text.lower()):
             canteen.setDayClosed(date)
             continue
 
@@ -187,8 +185,8 @@ def parse_url(url, today=False):
 
         prices = []
         try:
-            price = float(euro_regex.search(
-                td3.text).group(1).replace(",", "."))
+            price = float(
+                euro_regex.search(td3.text).group(1).replace(",", "."))
             prices.append(price)
             if employee is not None:
                 prices.append(employee)
@@ -223,21 +221,33 @@ def _generateCanteenMeta(name, baseurl):
         shortname = name
 
         data = {
-            "name": mensa["name"],
-            "adress": "%s %s %s %s" % (mensa["name"], mensa["strasse"], mensa["plz"], mensa["ort"]),
-            "city": mensa["ort"],
-            "phone": mensa["phone"],
-            "latitude": mensa["latitude"],
-            "longitude": mensa["longitude"],
-            "feed_today": template_todayURL % (baseurl, urllib.parse.quote(shortname)),
-            "feed_full": template_fullURL % (baseurl, urllib.parse.quote(shortname)),
-            "source_today": mensa["source_today"],
-            "source_full": mensa["source_week"],
+            "name":
+            mensa["name"],
+            "adress":
+            "%s %s %s %s" %
+            (mensa["name"], mensa["strasse"], mensa["plz"], mensa["ort"]),
+            "city":
+            mensa["ort"],
+            "phone":
+            mensa["phone"],
+            "latitude":
+            mensa["latitude"],
+            "longitude":
+            mensa["longitude"],
+            "feed_today":
+            template_todayURL % (baseurl, urllib.parse.quote(shortname)),
+            "feed_full":
+            template_fullURL % (baseurl, urllib.parse.quote(shortname)),
+            "source_today":
+            mensa["source_today"],
+            "source_full":
+            mensa["source_week"],
         }
         openingTimes = {}
         infokurz = mensa["infokurz"]
         pattern = re.compile(
-            "([A-Z][a-z])( - ([A-Z][a-z]))? (\d{1,2})\.(\d{2}) - (\d{1,2})\.(\d{2}) Uhr")
+            "([A-Z][a-z])( - ([A-Z][a-z]))? (\d{1,2})\.(\d{2}) - (\d{1,2})\.(\d{2}) Uhr"
+        )
         m = re.findall(pattern, infokurz)
         for result in m:
             fromDay, _, toDay, fromTimeH, fromTimeM, toTimeH, toTimeM = result
@@ -250,7 +260,8 @@ def _generateCanteenMeta(name, baseurl):
                         select = True
                     elif select:
                         openingTimes[short] = "%02d:%02d-%02d:%02d" % (
-                            int(fromTimeH), int(fromTimeM), int(toTimeH), int(toTimeM))
+                            int(fromTimeH), int(fromTimeM), int(toTimeH),
+                            int(toTimeM))
                     if short == toDay:
                         select = False
 
@@ -267,6 +278,7 @@ def _generateCanteenMeta(name, baseurl):
 
 
 class Parser:
+
     def __init__(self, baseurl, city, handler, shared_prefix):
         self.baseurl = baseurl
         self.handler = handler
@@ -290,11 +302,14 @@ class Parser:
 
 
 def getParser(baseurl):
-    parser = Parser(baseurl, 'eppelheim',
+    parser = Parser(baseurl,
+                    'eppelheim',
                     handler=parse_url,
                     shared_prefix='https://www.stw-ma.de/')
     parser.define(
-        'dhbw', suffix='Essen+_+Trinken/Speisepläne/Speisenausgabe+DHBW+Eppelheim.html')
+        'dhbw',
+        suffix='Essen+_+Trinken/Speisepläne/Speisenausgabe+DHBW+Eppelheim.html'
+    )
 
     return parser
 

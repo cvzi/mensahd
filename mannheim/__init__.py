@@ -22,22 +22,16 @@ except ModuleNotFoundError:
 
 metaJson = os.path.join(os.path.dirname(__file__), "mannheim.json")
 
-metaTemplateFile = os.path.join(os.path.dirname(
-    __file__), "metaTemplate_mannheim.xml")
+metaTemplateFile = os.path.join(os.path.dirname(__file__),
+                                "metaTemplate_mannheim.xml")
 
 template_metaURL = "%smannheim/meta/%s.xml"
 template_todayURL = "%smannheim/today/%s.xml"
 template_fullURL = "%smannheim/all/%s.xml"
 
-weekdaysMap = [
-    ("Mo", "monday"),
-    ("Di", "tuesday"),
-    ("Mi", "wednesday"),
-    ("Do", "thursday"),
-    ("Fr", "friday"),
-    ("Sa", "saturday"),
-    ("So", "sunday")
-]
+weekdaysMap = [("Mo", "monday"), ("Di", "tuesday"), ("Mi", "wednesday"),
+               ("Do", "thursday"), ("Fr", "friday"), ("Sa", "saturday"),
+               ("So", "sunday")]
 
 authorization = False
 if os.path.isfile(os.path.join(os.path.dirname(__file__), '.password.txt')):
@@ -50,7 +44,8 @@ if not authorization:
     raise RuntimeError("Authentication data not found")
 
 headers = {
-    'User-Agent': f'{useragentname}/{__version__} (+{useragentcomment}) {requests.utils.default_user_agent()}',
+    'User-Agent':
+    f'{useragentname}/{__version__} (+{useragentcomment}) {requests.utils.default_user_agent()}',
     'Accept': 'application/json',
     'Accept-Language': 'de-De,de',
     'X-App-Token': authorization
@@ -95,8 +90,8 @@ def mensa_info(apiurl, days, canteenid, alternative, canteen=None, day=0):
     if now.weekday() == 6:  # Sunday
         now += datetime.timedelta(days=1)  # Sunday -> Monday
     morning = datetime.datetime(now.year, now.month, now.day, 11)
-    timestamp = int(
-        1000 * morning.replace(tzinfo=datetime.timezone.utc).timestamp())
+    timestamp = int(1000 *
+                    morning.replace(tzinfo=datetime.timezone.utc).timestamp())
 
     url = apiurl + f'mensa/info?id={canteenid}&date={timestamp}&language=de'
 
@@ -121,15 +116,18 @@ def mensa_info(apiurl, days, canteenid, alternative, canteen=None, day=0):
     if canteen is None:
         canteen = StyledLazyBuilder()
 
-    if 'menuList' not in data or not data['menuList'] or len(data['menuList']) == 0:
+    if 'menuList' not in data or not data['menuList'] or len(
+            data['menuList']) == 0:
         if not isinstance(alternative, bool) and day == 0:
             logging.info(
-                f"Empty menuList {morning.date().isoformat()}. Trying alternative id: {canteenid} -> {alternative}")
+                f"Empty menuList {morning.date().isoformat()}. Trying alternative id: {canteenid} -> {alternative}"
+            )
             return mensa_info(apiurl, days, alternative, False)
         else:
             # If empty, stop here, do not try more days
             logging.info(
-                f"Empty menuList id={canteenid} {morning.date().isoformat()} (day {day + 1} of {days}).")
+                f"Empty menuList id={canteenid} {morning.date().isoformat()} (day {day + 1} of {days})."
+            )
             canteen.setDayClosed(morning.date())
             return canteen.toXMLFeed()
 
@@ -167,8 +165,12 @@ def mensa_info(apiurl, days, canteenid, alternative, canteen=None, day=0):
                         if not isinstance(span, str):
                             if span.name == 'span':
                                 if span['class']:
-                                    notes += [showFilter(data, c[12:]) for c in span['class'] if c.startswith(
-                                        'showOnFilter') and showFilter(data, c[12:])]
+                                    notes += [
+                                        showFilter(data, c[12:])
+                                        for c in span['class']
+                                        if c.startswith('showOnFilter')
+                                        and showFilter(data, c[12:])
+                                    ]
                             if span.name == 'sup':
                                 sup = span
                                 text = ""
@@ -182,14 +184,18 @@ def mensa_info(apiurl, days, canteenid, alternative, canteen=None, day=0):
                         if text:
                             if text.startswith(", "):
                                 text = text[2:]
-                            notes = [note.strip()
-                                     for note in notes if note and note.strip()]
+                            notes = [
+                                note.strip() for note in notes
+                                if note and note.strip()
+                            ]
                             meals.append([prefix + text, notes])
                             notes = []
                             prefix = ""
                     if notes:
-                        meals[-1][1].extend([note.strip()
-                                            for note in notes if note and note.strip()])
+                        meals[-1][1].extend([
+                            note.strip() for note in notes
+                            if note and note.strip()
+                        ])
                         notes = []
             elif inp['name'] == 'preisStudent' and inp['value']:
                 prices.append(inp['value'])
@@ -214,8 +220,9 @@ def mensa_info(apiurl, days, canteenid, alternative, canteen=None, day=0):
                     first += 1
                     if pricePer:
                         notes.insert(0, pricePer)
-                    canteen.addMeal(date, categoryName, mealName.strip()[:249],
-                                    notes, prices, roles if prices else None)
+                    canteen.addMeal(date, categoryName,
+                                    mealName.strip()[:249], notes, prices,
+                                    roles if prices else None)
                 else:
                     canteen.addMeal(date, categoryName,
                                     mealName.strip()[:249], notes)
@@ -242,21 +249,33 @@ def _generateCanteenMeta(name, baseurl):
         shortname = name
 
         data = {
-            "name": mensa["name"],
-            "adress": "%s %s %s %s" % (mensa["name"], mensa["strasse"], mensa["plz"], mensa["ort"]),
-            "city": mensa["ort"],
-            "phone": mensa["phone"],
-            "latitude": mensa["latitude"],
-            "longitude": mensa["longitude"],
-            "feed_today": template_todayURL % (baseurl, urllib.parse.quote(shortname)),
-            "feed_full": template_fullURL % (baseurl, urllib.parse.quote(shortname)),
-            "source_today": mensa["source_today"],
-            "source_full": mensa["source_week"],
+            "name":
+            mensa["name"],
+            "adress":
+            "%s %s %s %s" %
+            (mensa["name"], mensa["strasse"], mensa["plz"], mensa["ort"]),
+            "city":
+            mensa["ort"],
+            "phone":
+            mensa["phone"],
+            "latitude":
+            mensa["latitude"],
+            "longitude":
+            mensa["longitude"],
+            "feed_today":
+            template_todayURL % (baseurl, urllib.parse.quote(shortname)),
+            "feed_full":
+            template_fullURL % (baseurl, urllib.parse.quote(shortname)),
+            "source_today":
+            mensa["source_today"],
+            "source_full":
+            mensa["source_week"],
         }
         openingTimes = {}
         infokurz = mensa["infokurz"]
         pattern = re.compile(
-            "([A-Z][a-z])( - ([A-Z][a-z]))? (\d{1,2})\.(\d{2}) - (\d{1,2})\.(\d{2}) Uhr")
+            "([A-Z][a-z])( - ([A-Z][a-z]))? (\d{1,2})\.(\d{2}) - (\d{1,2})\.(\d{2}) Uhr"
+        )
         m = re.findall(pattern, infokurz)
         for result in m:
             fromDay, _, toDay, fromTimeH, fromTimeM, toTimeH, toTimeM = result
@@ -269,7 +288,8 @@ def _generateCanteenMeta(name, baseurl):
                         select = True
                     elif select:
                         openingTimes[short] = "%02d:%02d-%02d:%02d" % (
-                            int(fromTimeH), int(fromTimeM), int(toTimeH), int(toTimeM))
+                            int(fromTimeH), int(fromTimeM), int(toTimeH),
+                            int(toTimeM))
                     if short == toDay:
                         select = False
 
@@ -286,6 +306,7 @@ def _generateCanteenMeta(name, baseurl):
 
 
 class Parser:
+
     def __init__(self, baseurl, city, handler, shared_prefix):
         self.baseurl = baseurl
         self.handler = handler
@@ -316,7 +337,8 @@ class Parser:
 
 
 def getParser(baseurl):
-    parser = Parser(baseurl, 'mannheim',
+    parser = Parser(baseurl,
+                    'mannheim',
                     handler=mensa_info,
                     shared_prefix='https://studiplus.stw-ma.de/api/app/')
     parser.define('schloss', 610)

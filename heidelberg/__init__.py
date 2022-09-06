@@ -60,21 +60,17 @@ nameMap = {
 desiredName = {
     "zeughaus-Mensa im Marstall": "Heidelberg, zeughaus-Mensa im Marstall",
     "Triplex-Mensa am Uniplatz": "Heidelberg, Triplex-Mensa am Uniplatz",
-    "Mensa Im Neuenheimer Feld 304": "Heidelberg, Mensa Im Neuenheimer Feld 304",
+    "Mensa Im Neuenheimer Feld 304":
+    "Heidelberg, Mensa Im Neuenheimer Feld 304",
     "Mensa Heilbronn": "Heilbronn, Mensa Sontheim",
-    "Mensa Bildungscampus Heilbronn": "Heilbronn, Mensa Bildungscampus/Europaplatz",
+    "Mensa Bildungscampus Heilbronn":
+    "Heilbronn, Mensa Bildungscampus/Europaplatz",
     "Mensa Künzelsau": "Künzelsau, Mensa Reinhold-Würth-Hochschule"
 }
 
-weekdaysMap = [
-    ("Mo", "monday"),
-    ("Di", "tuesday"),
-    ("Mi", "wednesday"),
-    ("Do", "thursday"),
-    ("Fr", "friday"),
-    ("Sa", "saturday"),
-    ("So", "sunday")
-]
+weekdaysMap = [("Mo", "monday"), ("Di", "tuesday"), ("Mi", "wednesday"),
+               ("Do", "thursday"), ("Fr", "friday"), ("Sa", "saturday"),
+               ("So", "sunday")]
 
 # Global vars for caching
 cache_mealsURL_lock = Lock()
@@ -100,12 +96,15 @@ def _getShortName(longname):
 
 def _getMealsURL():
     """Download meals information from XML feed"""
-    if not mealsURL.startswith("http://") and not mealsURL.startswith("https://"):
+    if not mealsURL.startswith("http://") and not mealsURL.startswith(
+            "https://"):
         raise RuntimeError(f"mealsUrl is not an allowed URL: '{mealsURL}'")
     request = urllib.request.Request(mealsURL)
     request.add_header("Authorization", "Basic %s" % mealsURL_authorization)
     request.add_header(
-        "User-Agent", f"{useragentname}/{__version__} ({useragentcomment}) Python-urllib/{urllib.request.__version__}")
+        "User-Agent",
+        f"{useragentname}/{__version__} ({useragentcomment}) Python-urllib/{urllib.request.__version__}"
+    )
     result = urllib.request.urlopen(request, timeout=__timeoutSeconds)  # nosec
     return result, 0
 
@@ -117,7 +116,7 @@ def _getMealsURL_cached(max_age_minutes=15):
     global cache_mealsURL_time
 
     age_seconds = (time.time() - cache_mealsURL_time)
-    if age_seconds > max_age_minutes*60:
+    if age_seconds > max_age_minutes * 60:
         with cache_mealsURL_lock:
             cache_mealsURL_data = _getMealsURL()[0].read()
             cache_mealsURL_time = time.time()
@@ -129,11 +128,14 @@ def _getMealsURL_cached(max_age_minutes=15):
 
 def _getMetaURL():
     """Download meta information from JSON source"""
-    if not metaURL.startswith("http://") and not metaURL.startswith("https://"):
+    if not metaURL.startswith("http://") and not metaURL.startswith(
+            "https://"):
         raise RuntimeError("metaURL is not an allowed URL: '%s'" % metaURL)
     request = urllib.request.Request(metaURL)
     request.add_header(
-        "User-Agent", f"{useragentname}/{__version__} ({useragentcomment}) Python-urllib/{urllib.request.__version__}")
+        "User-Agent",
+        f"{useragentname}/{__version__} ({useragentcomment}) Python-urllib/{urllib.request.__version__}"
+    )
     result = urllib.request.urlopen(request, timeout=__timeoutSeconds)  # nosec
     return result, 0
 
@@ -144,7 +146,7 @@ def _getMetaURL_cached(max_age_minutes=120):
     global cache_metaURL_data
     global cache_metaURL_time
     age_seconds = (time.time() - cache_metaURL_time)
-    if age_seconds > max_age_minutes*60:
+    if age_seconds > max_age_minutes * 60:
         with cache_metaURL_lock:
             cache_metaURL_data = _getMetaURL()[0].read()
             cache_metaURL_time = time.time()
@@ -165,8 +167,12 @@ def _generateFeed(source, name, date='', lastFetched=0):
     dom = defusedxml.lxml.parse(source)
     xslt_tree = defusedxml.lxml.parse(xslFile)
     xslt = lxml.etree.XSLT(xslt_tree)
-    newdom = xslt(dom, canteenName=lxml.etree.XSLT.strparam(name), canteenDesiredName=lxml.etree.XSLT.strparam(
-        desiredName[name]), specificDate=lxml.etree.XSLT.strparam(date), lastFetched=lxml.etree.XSLT.strparam('%d' % lastFetched))
+    newdom = xslt(dom,
+                  canteenName=lxml.etree.XSLT.strparam(name),
+                  canteenDesiredName=lxml.etree.XSLT.strparam(
+                      desiredName[name]),
+                  specificDate=lxml.etree.XSLT.strparam(date),
+                  lastFetched=lxml.etree.XSLT.strparam('%d' % lastFetched))
     return lxml.etree.tostring(newdom,
                                pretty_print=True,
                                xml_declaration=True,
@@ -189,20 +195,31 @@ def _generateCanteenMeta(source, name, baseurl):
             continue
 
         data = {
-            "name": desiredName[mensa["xml"]],
-            "adress": "%s %s %s %s" % (mensa["name"], mensa["strasse"], mensa["plz"], mensa["ort"]),
-            "city": mensa["ort"],
-            "latitude": mensa["latitude"],
-            "longitude": mensa["longitude"],
-            "feed_today": template_todayURL % (baseurl, urllib.parse.quote(shortname)),
-            "feed_full": template_fullURL % (baseurl, urllib.parse.quote(shortname)),
-            "source_today": template_sourceURL,
-            "source_full": template_sourceURL
+            "name":
+            desiredName[mensa["xml"]],
+            "adress":
+            "%s %s %s %s" %
+            (mensa["name"], mensa["strasse"], mensa["plz"], mensa["ort"]),
+            "city":
+            mensa["ort"],
+            "latitude":
+            mensa["latitude"],
+            "longitude":
+            mensa["longitude"],
+            "feed_today":
+            template_todayURL % (baseurl, urllib.parse.quote(shortname)),
+            "feed_full":
+            template_fullURL % (baseurl, urllib.parse.quote(shortname)),
+            "source_today":
+            template_sourceURL,
+            "source_full":
+            template_sourceURL
         }
         openingTimes = {}
         infokurz = mensa["infokurz"]
         pattern = re.compile(
-            "([A-Z][a-z])( - ([A-Z][a-z]))? (\d{1,2})\.(\d{2}) - (\d{1,2})\.(\d{2}) Uhr")
+            "([A-Z][a-z])( - ([A-Z][a-z]))? (\d{1,2})\.(\d{2}) - (\d{1,2})\.(\d{2}) Uhr"
+        )
         m = re.findall(pattern, infokurz)
         for result in m:
             fromDay, _, toDay, fromTimeH, fromTimeM, toTimeH, toTimeM = result
@@ -215,7 +232,8 @@ def _generateCanteenMeta(source, name, baseurl):
                         select = True
                     elif select:
                         openingTimes[short] = "%02d:%02d-%02d:%02d" % (
-                            int(fromTimeH), int(fromTimeM), int(toTimeH), int(toTimeM))
+                            int(fromTimeH), int(fromTimeM), int(toTimeH),
+                            int(toTimeM))
                     if short == toDay:
                         select = False
 
@@ -245,7 +263,8 @@ def _generateCanteenList(source, baseurl):
         xml += "    <title>%s</title>\n" % mensa["name"]
         if mensa["xml"]:
             xml += "    <name>%s</name>\n" % mensa["xml"]
-            xml += "    <openmensaname>%s</openmensaname>\n" % desiredName[mensa["xml"]]
+            xml += "    <openmensaname>%s</openmensaname>\n" % desiredName[
+                mensa["xml"]]
             xml += "    <id>%s</id>\n" % shortName
             xml += "    <meta>%s</meta>\n" % template_metaURL % (
                 baseurl, urllib.parse.quote(shortName))
@@ -269,12 +288,13 @@ def _generateCanteenList_JSON(source, baseurl):
 
         shortName = _getShortName(mensa["xml"])
 
-        data[shortName] = template_metaURL % (
-            baseurl, urllib.parse.quote(shortName))
+        data[shortName] = template_metaURL % (baseurl,
+                                              urllib.parse.quote(shortName))
     return json.dumps(data, sort_keys=True, indent=4, separators=(',', ': '))
 
 
 class Parser:
+
     def __init__(self, baseurl):
         self.baseurl = baseurl
         self.canteens = nameMap

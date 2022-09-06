@@ -12,11 +12,10 @@ from bs4 import BeautifulSoup
 
 from pyopenmensa.feed import LazyBuilder
 
-
 metaJson = os.path.join(os.path.dirname(__file__), "stuttgart.json")
 
-metaTemplateFile = os.path.join(os.path.dirname(
-    __file__), "metaTemplate_stuttgart.xml")
+metaTemplateFile = os.path.join(os.path.dirname(__file__),
+                                "metaTemplate_stuttgart.xml")
 
 template_metaURL = "%sstuttgart/meta/%s.xml"
 template_fullURL = "%sstuttgart/feed/%s.xml"
@@ -26,47 +25,39 @@ sourceURL = "https://www.studierendenwerk-stuttgart.de/gastronomie/speiseangebot
 mealsURL = "https://www.studierendenwerk-stuttgart.de/speiseangebot_rss"
 __timeoutSeconds = 20
 
-
 roles = ('student', 'other')
 
-ingredients = {"1": "mit Konservierungsstoff",
-               "2": "mit Farbstoff",
-               "3": "mit Antioxidationsmittel",
-               "4": "mit Geschmacksverstärker",
-               "5": "geschwefelt",
-               "6": "gewachst",
-               "7": "mit Phosphat",
-               "8": "mit Süßungsmittel",
-               "9": "enthält eine Phenylalaninquelle",
-               "10": "geschwärzt",
-               "11": "enthält Alkohol",
+ingredients = {
+    "1": "mit Konservierungsstoff",
+    "2": "mit Farbstoff",
+    "3": "mit Antioxidationsmittel",
+    "4": "mit Geschmacksverstärker",
+    "5": "geschwefelt",
+    "6": "gewachst",
+    "7": "mit Phosphat",
+    "8": "mit Süßungsmittel",
+    "9": "enthält eine Phenylalaninquelle",
+    "10": "geschwärzt",
+    "11": "enthält Alkohol",
+    "En": "enthält Erdnuss",
+    "Fi": "enthält Fisch",
+    "Gl": "enthält Glutenhaltiges Getreide",
+    "Ei": "enthält Eier",
+    "Kr": "enthält Krebstiere (Krusten- und Schalentiere)",
+    "Lu": "enthält Lupine",
+    "La": "enthält Milch und Laktose",
+    "Nu": "enthält Schalenfrüchte (Nüsse)",
+    "Sw": "enthält Schwefeldioxid (\"SO2\") und Sulfite",
+    "Sl": "enthält Sellerie",
+    "Sf": "enthält Senf",
+    "Se": "enthält Sesam",
+    "So": "enthält Soja",
+    "Wt": "enthält Weichtiere"
+}
 
-               "En": "enthält Erdnuss",
-               "Fi": "enthält Fisch",
-               "Gl": "enthält Glutenhaltiges Getreide",
-               "Ei": "enthält Eier",
-               "Kr": "enthält Krebstiere (Krusten- und Schalentiere)",
-               "Lu": "enthält Lupine",
-               "La": "enthält Milch und Laktose",
-               "Nu": "enthält Schalenfrüchte (Nüsse)",
-               "Sw": "enthält Schwefeldioxid (\"SO2\") und Sulfite",
-               "Sl": "enthält Sellerie",
-               "Sf": "enthält Senf",
-               "Se": "enthält Sesam",
-               "So": "enthält Soja",
-               "Wt": "enthält Weichtiere"}
-
-
-weekdaysMap = [
-    ("Mo", "monday"),
-    ("Di", "tuesday"),
-    ("Mi", "wednesday"),
-    ("Do", "thursday"),
-    ("Fr", "friday"),
-    ("Sa", "saturday"),
-    ("So", "sunday")
-]
-
+weekdaysMap = [("Mo", "monday"), ("Di", "tuesday"), ("Mi", "wednesday"),
+               ("Do", "thursday"), ("Fr", "friday"), ("Sa", "saturday"),
+               ("So", "sunday")]
 
 # Global vars for caching
 cache_mealsURL_lock = Lock()
@@ -81,7 +72,7 @@ def _getMealsURL_cached(max_age_minutes=15):
     global cache_mealsURL_time
 
     age_seconds = (time.time() - cache_mealsURL_time)
-    if age_seconds > max_age_minutes*60:
+    if age_seconds > max_age_minutes * 60:
         with cache_mealsURL_lock:
             cache_mealsURL_text = requests.get(mealsURL).text
             cache_mealsURL_time = time.time()
@@ -119,16 +110,19 @@ def parse_url(canteen, xmlname, allowedCategoryNames=None):
                 prices = [None, None]
                 text, *prices, additives = [td.text.strip() for td in tds]
 
-                notes = [ingredients[i] for i in [x.strip()
-                                                  for x in additives.split(",")] if i in ingredients]
+                notes = [
+                    ingredients[i]
+                    for i in [x.strip() for x in additives.split(",")]
+                    if i in ingredients
+                ]
 
                 if allowedCategoryNames is not None:
                     if categoryName in allowedCategoryNames:
-                        canteen.addMeal(date, categoryName,
-                                        text, notes, prices, roles)
+                        canteen.addMeal(date, categoryName, text, notes,
+                                        prices, roles)
                 else:
-                    canteen.addMeal(date, categoryName, text,
-                                    notes, prices, roles)
+                    canteen.addMeal(date, categoryName, text, notes, prices,
+                                    roles)
 
 
 def _generateCanteenMeta(obj, name, baseurl):
@@ -145,24 +139,34 @@ def _generateCanteenMeta(obj, name, baseurl):
         shortname = name
 
         data = {
-            "name": mensa["name"],
-            "adress": "%s %s %s %s" % (mensa["name"], mensa["strasse"], mensa["plz"], mensa["ort"]),
-            "city": mensa["ort"],
-            "phone": mensa["phone"],
-            "latitude": mensa["latitude"],
-            "longitude": mensa["longitude"],
-            "feed_full": template_fullURL % (baseurl, urllib.parse.quote(shortname)),
-            "source_full": sourceURL.replace("&", "&amp;")
+            "name":
+            mensa["name"],
+            "adress":
+            "%s %s %s %s" %
+            (mensa["name"], mensa["strasse"], mensa["plz"], mensa["ort"]),
+            "city":
+            mensa["ort"],
+            "phone":
+            mensa["phone"],
+            "latitude":
+            mensa["latitude"],
+            "longitude":
+            mensa["longitude"],
+            "feed_full":
+            template_fullURL % (baseurl, urllib.parse.quote(shortname)),
+            "source_full":
+            sourceURL.replace("&", "&amp;")
         }
         openingTimes = {}
         infokurz = mensa["infokurz"]
         pattern = re.compile(
-            "([A-Z][a-z])( - ([A-Z][a-z]))? (\d{1,2})\.(\d{2}) - (\d{1,2})\.(\d{2}) Uhr")
+            "([A-Z][a-z])( - ([A-Z][a-z]))? (\d{1,2})\.(\d{2}) - (\d{1,2})\.(\d{2}) Uhr"
+        )
         m = re.findall(pattern, infokurz)
         for result in m:
             fromDay, _, toDay, fromTimeH, fromTimeM, toTimeH, toTimeM = result
-            openingTimes[fromDay] = "%s:%s-%s:%s" % (
-                fromTimeH, fromTimeM, toTimeH, toTimeM)
+            openingTimes[fromDay] = "%s:%s-%s:%s" % (fromTimeH, fromTimeM,
+                                                     toTimeH, toTimeM)
             if toDay:
                 select = False
                 for short, long in weekdaysMap:
@@ -187,6 +191,7 @@ def _generateCanteenMeta(obj, name, baseurl):
 
 
 class Parser:
+
     def __init__(self, baseurl):
         self.baseurl = baseurl
         self.metaObj = json.load(open(metaJson))

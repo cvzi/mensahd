@@ -21,8 +21,8 @@ except ModuleNotFoundError:
 
 metaJson = os.path.join(os.path.dirname(__file__), "stuttgart.json")
 
-metaTemplateFile = os.path.join(os.path.dirname(
-    __file__), "metaTemplate_stuttgart.xml")
+metaTemplateFile = os.path.join(os.path.dirname(__file__),
+                                "metaTemplate_stuttgart.xml")
 
 template_metaURL = "%sstuttgart/meta/%s.xml"
 template_feedURL = "%sstuttgart/feed/%s.xml"
@@ -32,15 +32,9 @@ sourceUrl = r"https://www.studierendenwerk-stuttgart.de/essen/speiseplan/"
 roles = ('student', 'employee', 'other')
 weight = 'Preis je %sg'
 
-weekdaysMap = [
-    ("Mo", "monday"),
-    ("Di", "tuesday"),
-    ("Mi", "wednesday"),
-    ("Do", "thursday"),
-    ("Fr", "friday"),
-    ("Sa", "saturday"),
-    ("So", "sunday")
-]
+weekdaysMap = [("Mo", "monday"), ("Di", "tuesday"), ("Mi", "wednesday"),
+               ("Do", "thursday"), ("Fr", "friday"), ("Sa", "saturday"),
+               ("So", "sunday")]
 
 ingredients = {
     "Ei": "Ei",
@@ -95,7 +89,8 @@ ingredients = {
 
 def _fetchData(canteen, jsonfile):
     headers = {
-        'User-Agent': f'{useragentname}/{__version__} ({useragentcomment}) {requests.utils.default_user_agent()}',
+        'User-Agent':
+        f'{useragentname}/{__version__} ({useragentcomment}) {requests.utils.default_user_agent()}',
         'Accept': 'application/json',
         'Accept-Language': 'de-De,de'
     }
@@ -110,8 +105,10 @@ def _fetchData(canteen, jsonfile):
             if m["description"].strip():
                 mealName += "," + m["description"].strip()
 
-            notes = [ingredients.get(i, i) for i in m["additives"].split(
-                ",") if i and i.strip()]
+            notes = [
+                ingredients.get(i, i) for i in m["additives"].split(",")
+                if i and i.strip()
+            ]
 
             prices = []
             myroles = []
@@ -125,15 +122,15 @@ def _fetchData(canteen, jsonfile):
                 prices.append(float(m["price3"].replace(",", ".")))
                 myroles.append(roles[2])
             if m["weight_unit"]:
-                notes.append(weight % (m["weight_unit"],))
+                notes.append(weight % (m["weight_unit"], ))
 
-            canteen.addMeal(day, m["category"], mealName,
-                            notes, prices, myroles)
+            canteen.addMeal(day, m["category"], mealName, notes, prices,
+                            myroles)
 
     return canteen
 
 
-def _generateCanteenMeta(obj, name,  baseurl):
+def _generateCanteenMeta(obj, name, baseurl):
     """Generate an openmensa XML meta feed from the static json file using an XML template"""
     template = open(metaTemplateFile).read()
 
@@ -147,19 +144,29 @@ def _generateCanteenMeta(obj, name,  baseurl):
         shortname = name
 
         data = {
-            "name": mensa["name"],
-            "adress": "%s %s %s %s" % (mensa["name"], mensa["strasse"], mensa["plz"], mensa["ort"]),
-            "city": mensa["ort"],
-            "phone": mensa["phone"],
-            "latitude": mensa["latitude"],
-            "longitude": mensa["longitude"],
-            "feed": template_feedURL % (baseurl, urllib.parse.quote(shortname)),
-            "source": sourceUrl,
+            "name":
+            mensa["name"],
+            "adress":
+            "%s %s %s %s" %
+            (mensa["name"], mensa["strasse"], mensa["plz"], mensa["ort"]),
+            "city":
+            mensa["ort"],
+            "phone":
+            mensa["phone"],
+            "latitude":
+            mensa["latitude"],
+            "longitude":
+            mensa["longitude"],
+            "feed":
+            template_feedURL % (baseurl, urllib.parse.quote(shortname)),
+            "source":
+            sourceUrl,
         }
         openingTimes = {}
         infokurz = mensa["infokurz"]
         pattern = re.compile(
-            "([A-Z][a-z])( - ([A-Z][a-z]))? (\d{1,2})\.(\d{2}) - (\d{1,2})\.(\d{2}) Uhr")
+            "([A-Z][a-z])( - ([A-Z][a-z]))? (\d{1,2})\.(\d{2}) - (\d{1,2})\.(\d{2}) Uhr"
+        )
         m = re.findall(pattern, infokurz)
         for result in m:
             fromDay, _, toDay, fromTimeH, fromTimeM, toTimeH, toTimeM = result
@@ -172,7 +179,8 @@ def _generateCanteenMeta(obj, name,  baseurl):
                         select = True
                     elif select:
                         openingTimes[short] = "%02d:%02d-%02d:%02d" % (
-                            int(fromTimeH), int(fromTimeM), int(toTimeH), int(toTimeM))
+                            int(fromTimeH), int(fromTimeM), int(toTimeH),
+                            int(toTimeM))
                     if short == toDay:
                         select = False
 
@@ -189,6 +197,7 @@ def _generateCanteenMeta(obj, name,  baseurl):
 
 
 class Parser:
+
     def __init__(self, baseurl):
         self.baseurl = baseurl
         self.metaObj = json.load(open(metaJson))
