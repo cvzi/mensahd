@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/basic.css" type="text/css"?>
+<?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
+<openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
+  <canteen>
+    <name>Mannheim, Mensa Wagon</name>
+    <address>Mannheim, Mensa Wagon Bismarckstraße 42 68161 Mannheim</address>
+    <city>Mannheim</city>
+    <phone></phone>
+    <location latitude="49.4830472" longitude="8.4640314" />
+    <!--<availability></availability>-->
+    <times type="opening">
+      <monday open="08:00-14:30" />
+      <tuesday open="08:00-14:30" />
+      <wednesday open="08:00-14:30" />
+      <thursday open="08:00-14:30" />
+      <friday open="08:00-14:30" />
+      <saturday closed="true" />
+      <sunday closed="true" />
+    </times>
+    <feed name="today" priority="0">
+      <schedule dayOfMonth="*" dayOfWeek="1-5" hour="10-14" retry="5 3" />
+      <url>https://cvzi.github.io/mensahd/{metaOrFeed}/mannheim_{mensaReference}.xmlmannheim/today/wagon.xml</url>
+      <source>https://www.stw-ma.de/Essen+_+Trinken/Speisepl%C3%A4ne/MensaWagon.html</source>
+    </feed>
+    <feed name="full" priority="1">
+      <schedule dayOfMonth="*" dayOfWeek="1-5" hour="9" minute="30" retry="60 1 1440" />
+      <url>https://cvzi.github.io/mensahd/{metaOrFeed}/mannheim_{mensaReference}.xmlmannheim/all/wagon.xml</url>
+      <source>https://www.stw-ma.de/Essen+_+Trinken/Speisepl%C3%A4ne/MensaWagon.html</source>
+    </feed>
+  </canteen>
+</openmensa>
