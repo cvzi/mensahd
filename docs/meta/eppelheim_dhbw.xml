@@ -18,11 +18,6 @@
       <saturday closed="true" />
       <sunday closed="true" />
     </times>
-    <feed name="today" priority="0">
-      <schedule dayOfMonth="*" dayOfWeek="1-5" hour="10-14" retry="5 3" />
-      <url>https://cvzi.github.io/mensahd/today/eppelheim_dhbw.xml</url>
-      <source>https://www.stw-ma.de/-p-2000.html</source>
-    </feed>
     <feed name="full" priority="1">
       <schedule dayOfMonth="*" dayOfWeek="1-5" hour="9" minute="30" retry="60 1 1440" />
       <url>https://cvzi.github.io/mensahd/feed/eppelheim_dhbw.xml</url>
