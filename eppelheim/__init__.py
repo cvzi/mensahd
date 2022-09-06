@@ -229,7 +229,7 @@ def _generateCanteenMeta(name, url_template):
             continue
 
         shortname = name
-        def param(s): return lxml.etree.XSLT.strparam(str(s))
+
         data = {
             "name": mensa["name"],
             "adress": "%s %s %s %s" % (mensa["name"], mensa["strasse"], mensa["plz"], mensa["ort"]),
@@ -237,8 +237,8 @@ def _generateCanteenMeta(name, url_template):
             "phone": mensa["phone"],
             "latitude": mensa["latitude"],
             "longitude": mensa["longitude"],
-            "feed_today": param(url_template.format(metaOrFeed='today', mensaReference=urllib.parse.quote(shortname))),
-            "feed_full": param(url_template.format(metaOrFeed='feed', mensaReference=urllib.parse.quote(shortname))),
+            "feed_today": url_template.format(metaOrFeed='today', mensaReference=urllib.parse.quote(shortname)),
+            "feed_full": url_template.format(metaOrFeed='feed', mensaReference=urllib.parse.quote(shortname)),
             "source_today": mensa["source_today"],
             "source_full": mensa["source_week"],
         }
