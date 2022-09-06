@@ -185,15 +185,14 @@ def _generateCanteenMeta(source, name, url_template):
         if name != mensa["xml"]:
             continue
 
-        def param(s): return lxml.etree.XSLT.strparam(str(s))
         data = {
             "name": desiredName[mensa["xml"]],
             "adress": "%s %s %s %s" % (mensa["name"], mensa["strasse"], mensa["plz"], mensa["ort"]),
             "city": mensa["ort"],
             "latitude": mensa["latitude"],
             "longitude": mensa["longitude"],
-            "feed_today": param(url_template.format(metaOrFeed='today', mensaReference=urllib.parse.quote(shortname))),
-            "feed_full": param(url_template.format(metaOrFeed='feed', mensaReference=urllib.parse.quote(shortname))),
+            "feed_today": url_template.format(metaOrFeed='today', mensaReference=urllib.parse.quote(shortname)),
+            "feed_full": url_template.format(metaOrFeed='feed', mensaReference=urllib.parse.quote(shortname)),
             "source_today": template_sourceURL,
             "source_full": template_sourceURL
         }
