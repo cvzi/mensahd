@@ -40,9 +40,6 @@ xslFile = os.path.join(os.path.dirname(__file__), "heidelberg.xsl")
 metaTemplateFile = os.path.join(os.path.dirname(__file__), "metaTemplate.xml")
 
 template_sourceURL = "https://www.studentenwerk.uni-heidelberg.de/de/speiseplan_neu"
-template_metaURL = "%smeta/%s.xml"
-template_todayURL = "%stoday/%s.xml"
-template_fullURL = "%sall/%s.xml"
 
 emptyFeed = '<openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd"/><!-- %s -->'
 
@@ -173,7 +170,7 @@ def _generateFeed(source, name, date='', lastFetched=0):
                                encoding=newdom.docinfo.encoding)
 
 
-def _generateCanteenMeta(source, name, baseurl):
+def _generateCanteenMeta(source, name, url_template):
     """Generate an openmensa XML meta feed from the source feed using an XML template"""
     obj = json.loads(source.read().decode("utf-8-sig"))
     template = open(metaTemplateFile).read()
@@ -188,14 +185,15 @@ def _generateCanteenMeta(source, name, baseurl):
         if name != mensa["xml"]:
             continue
 
+        def param(s): return lxml.etree.XSLT.strparam(str(s))
         data = {
             "name": desiredName[mensa["xml"]],
             "adress": "%s %s %s %s" % (mensa["name"], mensa["strasse"], mensa["plz"], mensa["ort"]),
             "city": mensa["ort"],
             "latitude": mensa["latitude"],
             "longitude": mensa["longitude"],
-            "feed_today": template_todayURL % (baseurl, urllib.parse.quote(shortname)),
-            "feed_full": template_fullURL % (baseurl, urllib.parse.quote(shortname)),
+            "feed_today": param(url_template.format(metaOrFeed='today', mensaReference=urllib.parse.quote(shortname))),
+            "feed_full": param(url_template.format(metaOrFeed='feed', mensaReference=urllib.parse.quote(shortname))),
             "source_today": template_sourceURL,
             "source_full": template_sourceURL
         }
@@ -231,34 +229,7 @@ def _generateCanteenMeta(source, name, baseurl):
     return getEmptyFeed("Unkown canteen - wrong name?")
 
 
-def _generateCanteenList(source, baseurl):
-    """Generate an XML feed with basic information about all available canteens"""
-    obj = json.loads(source.read().decode("utf-8-sig"))
-    xml = '<?xml version="1.0" encoding="UTF-8"?>\n<canteens>\n'
-
-    for mensa in obj["mensen"]:
-        if not mensa["xml"]:
-            continue
-
-        shortName = _getShortName(mensa["xml"])
-        xml += "  <canteen>\n"
-        xml += "    <title>%s</title>\n" % mensa["name"]
-        if mensa["xml"]:
-            xml += "    <name>%s</name>\n" % mensa["xml"]
-            xml += "    <openmensaname>%s</openmensaname>\n" % desiredName[mensa["xml"]]
-            xml += "    <id>%s</id>\n" % shortName
-            xml += "    <meta>%s</meta>\n" % template_metaURL % (
-                baseurl, urllib.parse.quote(shortName))
-            xml += "    <today>%s</today>\n" % template_todayURL % (
-                baseurl, urllib.parse.quote(shortName))
-            xml += "    <full>%s</full>\n" % template_fullURL % (
-                baseurl, urllib.parse.quote(shortName))
-        xml += "  </canteen>\n"
-    xml += '</canteens>'
-    return xml
-
-
-def _generateCanteenList_JSON(source, baseurl):
+def _generateCanteenList_JSON(source, url_template):
     """Generate a JSON file for openmensa.org containing basic information about all available canteens"""
     obj = json.loads(source.read().decode("utf-8-sig"))
     data = {}
@@ -269,30 +240,25 @@ def _generateCanteenList_JSON(source, baseurl):
 
         shortName = _getShortName(mensa["xml"])
 
-        data[shortName] = template_metaURL % (
-            baseurl, urllib.parse.quote(shortName))
+        data[shortName] = url_template.format(metaOrFeed='meta', mensaReference=urllib.parse.quote(shortName))
+
     return json.dumps(data, sort_keys=True, indent=4, separators=(',', ': '))
 
 
 class Parser:
-    def __init__(self, baseurl):
-        self.baseurl = baseurl
+    def __init__(self, url_template):
+        self.url_template = url_template
         self.canteens = nameMap
 
     def json(self):
         """Return a list of all the canteens as JSON"""
         stream, _ = _getMetaURL_cached()
-        return _generateCanteenList_JSON(stream, self.baseurl)
-
-    def list(self):
-        """Return a list of all the canteens as XML"""
-        stream, _ = _getMetaURL_cached()
-        return _generateCanteenList(stream, self.baseurl)
+        return _generateCanteenList_JSON(stream, self.url_template)
 
     def meta(self, name):
         """Return a feed with all available meta information for openmensa.org"""
         stream, _ = _getMetaURL_cached()
-        return _generateCanteenMeta(stream, name, self.baseurl)
+        return _generateCanteenMeta(stream, name, self.url_template)
 
     @staticmethod
     def feed_today(name=""):
@@ -307,8 +273,8 @@ class Parser:
         return _generateFeed(stream, name, '', age_seconds)
 
 
-def getParser(baseurl):
-    parser = Parser(baseurl)
+def getParser(url_template):
+    parser = Parser(url_template)
     return parser
 
 
