@@ -20,12 +20,12 @@
     </times>
     <feed name="today" priority="0">
       <schedule dayOfMonth="*" dayOfWeek="1-5" hour="10-14" retry="5 3" />
-      <url>https://cvzi.github.io/mensahd/{metaOrFeed}/heidelberg_{mensaReference}.xmltoday/heilbronn_sontheim.xml</url>
+      <url><lxml.etree._XSLTQuotedStringParam object at 0x7f1c3cdd4950></url>
       <source>https://www.studentenwerk.uni-heidelberg.de/de/speiseplan_neu</source>
     </feed>
     <feed name="full" priority="1">
       <schedule dayOfMonth="*" dayOfWeek="1-5" hour="9" minute="30" retry="60 1 1440" />
-      <url>https://cvzi.github.io/mensahd/{metaOrFeed}/heidelberg_{mensaReference}.xmlall/heilbronn_sontheim.xml</url>
+      <url><lxml.etree._XSLTQuotedStringParam object at 0x7f1c3cdd4970></url>
       <source>https://www.studentenwerk.uni-heidelberg.de/de/speiseplan_neu</source>
     </feed>
   </canteen>
