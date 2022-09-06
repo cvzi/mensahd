@@ -165,12 +165,11 @@ def parse_url(canteen, locId, day=None):
                 mealName = re.sub(".*Nudelmanufaktur.?\s*", "", mealName)
                 notes.append("hauseigene Nudelmanufaktur")
 
-
             pricesNode = div.find("div", {"class": "preise-xs"})
             pricesText = None
             if not pricesNode:
                 pricesText = str(div.find(text=re.compile('€')))
-            else :
+            else:
                 pricesText = pricesNode.text.strip()
 
             if pricesText:

@@ -66,12 +66,14 @@ price_regex = re.compile(
 euro_regex = re.compile(r'(\d+,\d+) €')
 whitespace = re.compile(r'\s+')
 
+
 def parse_url(url, today=False):
     today = nowBerlin()
     if today.weekday() == 6:  # Sunday
         today += datetime.timedelta(days=1)  # Tomorrow
 
-    url = url.format(year=today.strftime('%Y'), month=today.strftime('%m'), day=today.strftime('%d'))
+    url = url.format(year=today.strftime(
+        '%Y'), month=today.strftime('%m'), day=today.strftime('%d'))
 
     if not url.startswith("http://") and not url.startswith("https://"):
         raise RuntimeError("url is not an allowed URL: '%s'" % url)
@@ -81,7 +83,6 @@ def parse_url(url, today=False):
     except requests.exceptions.ConnectionError as e:
         logging.warning(e)
         content = requests.get(url, headers=headers, verify=False).text
-
 
     # Fix table
     content = content.replace("</th>", "</td>").replace("<th ", "<td ")
@@ -119,7 +120,8 @@ def parse_url(url, today=False):
         # previewTable not found, e.g. temporary closed
         # Set 7 days closed
         for i in range(7):
-            canteen.setDayClosed((datetime.date.today() + datetime.timedelta(i)))
+            canteen.setDayClosed(
+                (datetime.date.today() + datetime.timedelta(i)))
 
         return canteen.toXMLFeed()
 
@@ -152,7 +154,8 @@ def parse_url(url, today=False):
                 date += datetime.timedelta(days=1)
                 i += 1
             if i > 7:
-                logging.error("Date could not be calculated from %r" % (weekday,))
+                logging.error(
+                    "Date could not be calculated from %r" % (weekday,))
             date = date.date()
 
             if len(previous.find_all("td")) < 2 or "geschlossen" == previous.find_all("td")[1].text.strip():
@@ -164,7 +167,6 @@ def parse_url(url, today=False):
                 if "heute kein Angebot" in td0.text or "geschlossen" in td0.text:
                     cat += 1
                     continue
-
 
                 notes = set()
 
@@ -180,7 +182,6 @@ def parse_url(url, today=False):
                                     "Kubusangebote am Themenpark", [])
                     cat += 1
                     continue
-
 
                 # Additives: SI,Mi,G,1,2,...
                 for sup in td0.find_all("sup"):
@@ -318,14 +319,21 @@ class Parser:
 
 
 def getParser(baseurl):
-    parser = Parser(baseurl, 'mannheim', handler=parse_url, shared_prefix='https://www.stw-ma.de/')
+    parser = Parser(baseurl, 'mannheim', handler=parse_url,
+                    shared_prefix='https://www.stw-ma.de/')
 
-    parser.define('schloss', suffix='menüplan_schlossmensa-date-{year}%25252d{month}%25252d{day}-view-week.html')
-    parser.define('hochschule', suffix='Essen+_+Trinken/Speisepl%C3%A4ne/Hochschule+Mannheim-date-{year}%25252d{month}%25252d{day}-view-week.html')
-    parser.define('wagon', suffix='Essen+_+Trinken/Speisepläne/MensaWagon-date-{year}%25252d{month}%25252d{day}-view-week.html')
-    parser.define('metropol', suffix='Essen+_+Trinken/Speisepl%C3%A4ne/Mensaria+Metropol-date-{year}%25252d{month}%25252d{day}-view-week.html')
-    parser.define('wohlgelegen', suffix='Essen+_+Trinken/Speisepl%C3%A4ne/Mensaria+Wohlgelegen-date-{year}%25252d{month}%25252d{day}-view-week.html')
-    parser.define('musikhochschule', suffix='Essen+_+Trinken/Speisepl%C3%A4ne/Cafeteria+Musikhochschule-date-{year}%25252d{month}%25252d{day}-view-week.html')
+    parser.define(
+        'schloss', suffix='menüplan_schlossmensa-date-{year}%25252d{month}%25252d{day}-view-week.html')
+    parser.define(
+        'hochschule', suffix='Essen+_+Trinken/Speisepl%C3%A4ne/Hochschule+Mannheim-date-{year}%25252d{month}%25252d{day}-view-week.html')
+    parser.define(
+        'wagon', suffix='Essen+_+Trinken/Speisepläne/MensaWagon-date-{year}%25252d{month}%25252d{day}-view-week.html')
+    parser.define(
+        'metropol', suffix='Essen+_+Trinken/Speisepl%C3%A4ne/Mensaria+Metropol-date-{year}%25252d{month}%25252d{day}-view-week.html')
+    parser.define(
+        'wohlgelegen', suffix='Essen+_+Trinken/Speisepl%C3%A4ne/Mensaria+Wohlgelegen-date-{year}%25252d{month}%25252d{day}-view-week.html')
+    parser.define('musikhochschule',
+                  suffix='Essen+_+Trinken/Speisepl%C3%A4ne/Cafeteria+Musikhochschule-date-{year}%25252d{month}%25252d{day}-view-week.html')
     return parser
 
 

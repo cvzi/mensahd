@@ -110,7 +110,8 @@ def _fetchData(canteen, jsonfile):
             if m["description"].strip():
                 mealName += "," + m["description"].strip()
 
-            notes = [ingredients.get(i, i) for i in m["additives"].split(",") if i and i.strip()]
+            notes = [ingredients.get(i, i) for i in m["additives"].split(
+                ",") if i and i.strip()]
 
             prices = []
             myroles = []
@@ -126,7 +127,8 @@ def _fetchData(canteen, jsonfile):
             if m["weight_unit"]:
                 notes.append(weight % (m["weight_unit"],))
 
-            canteen.addMeal(day, m["category"], mealName, notes, prices, myroles)
+            canteen.addMeal(day, m["category"], mealName,
+                            notes, prices, myroles)
 
     return canteen
 
