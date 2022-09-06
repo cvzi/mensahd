@@ -99,20 +99,23 @@ def parse_url(url, today=False):
         if not datematch and "geschlossen" in h2.text:
             # Set 7 days closed
             for i in range(7):
-                canteen.setDayClosed((nowBerlin().date() + datetime.timedelta(i)))
+                canteen.setDayClosed(
+                    (nowBerlin().date() + datetime.timedelta(i)))
             return canteen.toXMLFeed()
 
         if not datematch and "nach Vorbestellung" in h2.text:
             # Set info for 7 days
             for i in range(7):
-                canteen.addMeal((nowBerlin().date() + datetime.timedelta(i)), "Info", h2.text)
+                canteen.addMeal(
+                    (nowBerlin().date() + datetime.timedelta(i)), "Info", h2.text)
             return canteen.toXMLFeed()
 
         if not datematch:
             match = calendarweek_regex.search(h2.text)
             if match:
                 week = int(match.group(1))
-                fromdate = datetime.datetime.fromisocalendar(nowBerlin().year, week, 1)
+                fromdate = datetime.datetime.fromisocalendar(
+                    nowBerlin().year, week, 1)
 
     if datematch:
         p = datematch.groupdict()
