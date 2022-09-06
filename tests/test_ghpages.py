@@ -39,7 +39,8 @@ def check_meta(content, name=''):
     try:
         defusedxml.lxml.fromstring(content.encode('utf8'), xmlParser)
     except lxml.etree.XMLSyntaxError as error:
-        raise RuntimeWarning("Invalid document meta [%s]: %s" % (name, str(error)))
+        raise RuntimeWarning(
+            "Invalid document meta [%s]: %s" % (name, str(error)))
 
     # Content length
     if len(content) < 450:
@@ -71,14 +72,16 @@ def check_feed(content, encoding='utf8', name=''):
         print(f"{yellowVT}[{name}] probably empty feed.{endVT}")
         return False
     elif len(content) < 360:
-        print(f" -> {yellowVT}Probably closed. [{name}]{endVT}", file=sys.stderr)
+        print(
+            f" -> {yellowVT}Probably closed. [{name}]{endVT}", file=sys.stderr)
     else:
         print(f" -> {greenOk}.")
 
     # Count closed days:
     closed = content.count('<closed')
     if closed > 0:
-        print(f"{yellowVT}Found closed days: {closed} [{name}]{endVT}", file=sys.stderr)
+        print(
+            f"{yellowVT}Found closed days: {closed} [{name}]{endVT}", file=sys.stderr)
 
     return True
 
@@ -89,7 +92,8 @@ def test_all_files():
     TODAYS = 'today/'
     METAS = 'meta/'
 
-    ghpagesPath = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', GHPAGES))
+    ghpagesPath = os.path.abspath(os.path.join(
+        os.path.dirname(__file__), '..', GHPAGES))
     print(f"Checking files in {ghpagesPath}")
     errors = []
 
@@ -119,7 +123,8 @@ def test_all_files():
                 with open(path, 'r', encoding='utf8') as f:
                     check_meta(f.read(), name=prettyName)
             except Exception as e:
-                print(f" {redVT}Error:\n%r{endVT}\n" % (e, ), end="", flush=True)
+                print(f" {redVT}Error:\n%r{endVT}\n" %
+                      (e, ), end="", flush=True)
                 errors.append(e)
 
     if os.path.isdir(os.path.join(ghpagesPath, TODAYS)):
@@ -131,7 +136,8 @@ def test_all_files():
                 with open(path, 'r', encoding='utf8') as f:
                     check_feed(f.read(), encoding='utf8', name=prettyName)
             except Exception as e:
-                print(f" {redVT}Error:\n%r{endVT}\n" % (e, ), end="", flush=True)
+                print(f" {redVT}Error:\n%r{endVT}\n" %
+                      (e, ), end="", flush=True)
                 errors.append(e)
     if os.path.isdir(os.path.join(ghpagesPath, FEEDS)):
         for filename in sorted(os.listdir(os.path.join(ghpagesPath, FEEDS))):
@@ -142,7 +148,8 @@ def test_all_files():
                 with open(path, 'r', encoding='utf8') as f:
                     check_feed(f.read(), encoding='utf8', name=prettyName)
             except Exception as e:
-                print(f" {redVT}Error:\n%r{endVT}\n" % (e, ), end="", flush=True)
+                print(f" {redVT}Error:\n%r{endVT}\n" %
+                      (e, ), end="", flush=True)
                 errors.append(e)
 
     if errors:

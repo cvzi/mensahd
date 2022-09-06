@@ -20,10 +20,12 @@ log_file = None
 greenOk = "Ok" if "idlelib" in sys.modules else "\033[1;32mOk\033[0m"
 redError = "Error" if "idlelib" in sys.modules else "\033[1;31m⚠️ Error\033[0m"
 
+
 def log(*objects, sep=' ', end='\n', file=sys.stdout, flush=False):
     print(*objects, sep=sep, end=end, file=file, flush=flush)
     if log_file and not log_file.closed:
         print(*objects, sep=sep, end=end, file=log_file, flush=flush)
+
 
 def generateIndexHtml(baseUrl, basePath, errors=None):
     files = []
@@ -39,7 +41,6 @@ def generateIndexHtml(baseUrl, basePath, errors=None):
     with open(os.path.join(repoPath, 'html/index.html'), 'r', encoding='utf8') as f:
         template = string.Template(f.read())
 
-
     def sortKey(s):
         parts = s[len(baseUrl):].split('/')
         s = parts[-1].upper() + (parts[-2] if len(parts) > 1 else "")
@@ -54,14 +55,17 @@ def generateIndexHtml(baseUrl, basePath, errors=None):
                 content.append('</ul>')
             first = False
 
-            content.append(f'<li><h3 id="{file[len(baseUrl):-5]}"><a href="{file}">🐏 {file[len(baseUrl):]}</a></h3>')
+            content.append(
+                f'<li><h3 id="{file[len(baseUrl):-5]}"><a href="{file}">🐏 {file[len(baseUrl):]}</a></h3>')
             content.append('<ul style="list-style-type:none">')
         else:
             icon = '🈺' if '/meta/' in file else '🍱'
-            content.append(f'  <li><a href="{file}">{icon} {file[len(baseUrl):]}</a></li>')
+            content.append(
+                f'  <li><a href="{file}">{icon} {file[len(baseUrl):]}</a></li>')
     content.append('</ul>')
     content.append('</li>')
-    content = '<ol style="list-style-type:none">\n' + '\n'.join(content) + '\n</ol>'
+    content = '<ol style="list-style-type:none">\n' + \
+        '\n'.join(content) + '\n</ol>'
 
     content = f'\n{content}\n'
 
@@ -72,16 +76,17 @@ def generateIndexHtml(baseUrl, basePath, errors=None):
     with open(os.path.join(repoPath, basePath, 'index.html'), 'w', encoding='utf8') as f:
         f.write(template.substitute(content=content, status=status))
 
+
 def updateFeeds(force=None,
-         updateJson=True,
-         updateMeta=True,
-         updateFeed=True,
-         updateToday=False,
-         updateIndex=True,
-         selectedParser='',
-         selectedMensa='',
-         baseUrl=baseUrl,
-         basePath=basePath):
+                updateJson=True,
+                updateMeta=True,
+                updateFeed=True,
+                updateToday=False,
+                updateIndex=True,
+                selectedParser='',
+                selectedMensa='',
+                baseUrl=baseUrl,
+                basePath=basePath):
 
     errors = []
 
@@ -112,7 +117,8 @@ def updateFeeds(force=None,
                 log(f"  - 🏫 {mensaReference}")
                 try:
                     if updateMeta:
-                        filename = filenameTemplate.format(base=basePath, parserName=parserName).format(metaOrFeed='meta', mensaReference=mensaReference)
+                        filename = filenameTemplate.format(base=basePath, parserName=parserName).format(
+                            metaOrFeed='meta', mensaReference=mensaReference)
                         log(f"    - 🈺 {filename}", end="", flush=True)
                         os.makedirs(os.path.dirname(filename), exist_ok=True)
                         content = parser.meta(mensaReference)
@@ -121,17 +127,22 @@ def updateFeeds(force=None,
                         log(f"  {greenOk}")
                     if updateFeed or updateToday:
                         if updateToday:
-                            feedMethods = [feedMethod for feedMethod in ["feed_today"] if hasattr(parser, feedMethod)]
+                            feedMethods = [feedMethod for feedMethod in [
+                                "feed_today"] if hasattr(parser, feedMethod)]
                             if not feedMethods and not updateMeta:
                                 log("\033[F\033[K", end="")
                         else:
-                            feedMethods = [feedMethod for feedMethod in ["feed", "feed_today", "feed_all", "feed_full"] if hasattr(parser, feedMethod)]
+                            feedMethods = [feedMethod for feedMethod in [
+                                "feed", "feed_today", "feed_all", "feed_full"] if hasattr(parser, feedMethod)]
                         for feedMethod in feedMethods:
                             fileTitle = "today" if feedMethod == "feed_today" else "feed"
-                            filename = filenameTemplate.format(base=basePath, parserName=parserName).format(metaOrFeed=fileTitle, mensaReference=mensaReference)
+                            filename = filenameTemplate.format(base=basePath, parserName=parserName).format(
+                                metaOrFeed=fileTitle, mensaReference=mensaReference)
                             log(f"    - 🍱 {filename}", end="", flush=True)
-                            os.makedirs(os.path.dirname(filename), exist_ok=True)
-                            content = getattr(parser, feedMethod)(mensaReference)
+                            os.makedirs(os.path.dirname(
+                                filename), exist_ok=True)
+                            content = getattr(parser, feedMethod)(
+                                mensaReference)
                             if type(content) is bytes:
                                 with open(os.path.join(repoPath, filename), 'wb') as f:
                                     f.write(content)
