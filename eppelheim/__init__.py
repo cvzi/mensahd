@@ -300,7 +300,7 @@ class Parser:
 
 
 def getParser(url_template):
-    parser = Parser(burl_template, 'eppelheim',
+    parser = Parser(url_template, 'eppelheim',
                     handler=parse_url,
                     shared_prefix='https://www.stw-ma.de/')
     parser.define(

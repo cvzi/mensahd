@@ -23,9 +23,6 @@ metaJson = os.path.join(os.path.dirname(__file__), "ulm.json")
 metaTemplateFile = os.path.join(
     os.path.dirname(__file__), "metaTemplate_ulm.xml")
 
-template_metaURL = "%sulm/meta/%s.xml"
-template_fullURL = "%sulm/feed/%s.xml"
-
 weekdaysMap = [
     ("Mo", "monday"),
     ("Di", "tuesday"),
@@ -200,7 +197,7 @@ def _parse_url(sourcepage, filename, place):
     return canteen.toXMLFeed()
 
 
-def _generateCanteenMeta(obj, name, baseurl):
+def _generateCanteenMeta(obj, name, url_template):
     """Generate an openmensa XML meta feed from the static json file using an XML template"""
     template = open(metaTemplateFile).read()
 
@@ -218,7 +215,7 @@ def _generateCanteenMeta(obj, name, baseurl):
             "phone": mensa["phone"],
             "latitude": mensa["latitude"],
             "longitude": mensa["longitude"],
-            "feed_full": template_fullURL % (baseurl, urllib.parse.quote(mensa["xml"])),
+            "feed_full": url_template.format(metaOrFeed='feed', mensaReference=urllib.parse.quote(mensa["xml"])),
             "source_full": mensa["source_week"],
         }
         openingTimes = {}
@@ -254,8 +251,8 @@ def _generateCanteenMeta(obj, name, baseurl):
 
 
 class Parser:
-    def __init__(self, baseurl, sourceurl):
-        self.baseurl = baseurl
+    def __init__(self, url_template, sourceurl):
+        self.url_template = url_template
         self.sourceurl = sourceurl
         self.metaObj = json.load(open(metaJson))
 
@@ -268,20 +265,21 @@ class Parser:
     def json(self):
         tmp = {}
         for name in self.xmlnames:
-            tmp[name] = template_metaURL % (self.baseurl, name)
+            tmp[name] = self.url_template.format(
+                metaOrFeed='meta', mensaReference=urllib.parse.quote(name))
         return json.dumps(tmp, indent=2)
 
     def meta(self, name):
-        return _generateCanteenMeta(self.metaObj, name, self.baseurl)
+        return _generateCanteenMeta(self.metaObj, name, self.url_template)
 
     def feed(self, name):
         return _parse_url(
             self.sourceurl, self.canteens[name][0], self.canteens[name][1])
 
 
-def getParser(baseurl):
+def getParser(url_template):
     parser = Parser(
-        baseurl, sourceurl='https://www.uni-ulm.de/mensaplan/data/')
+        url_template, sourceurl='https://www.uni-ulm.de/mensaplan/data/')
     return parser
 
 

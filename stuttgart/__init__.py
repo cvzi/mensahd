@@ -25,10 +25,6 @@ metaJson = os.path.join(os.path.dirname(__file__), "stuttgart.json")
 metaTemplateFile = os.path.join(os.path.dirname(
     __file__), "metaTemplate_stuttgart.xml")
 
-template_metaURL = "%sstuttgart/meta/%s.xml"
-template_todayURL = "%sstuttgart/today/%s.xml"
-template_fullURL = "%sstuttgart/all/%s.xml"
-
 url = r"https://sws2.maxmanager.xyz/inc/ajax-php_konnektor.inc.php"
 sourceUrl = r"https://www.studierendenwerk-stuttgart.de/essen/speiseplan/"
 roles = ('student', 'employee', 'other')
@@ -201,7 +197,7 @@ def parse_url(canteen, locId, day=None):
     return False
 
 
-def _generateCanteenMeta(obj, name,  baseurl):
+def _generateCanteenMeta(obj, name,  url_template):
     """Generate an openmensa XML meta feed from the static json file using an XML template"""
     template = open(metaTemplateFile).read()
 
@@ -221,8 +217,8 @@ def _generateCanteenMeta(obj, name,  baseurl):
             "phone": mensa["phone"],
             "latitude": mensa["latitude"],
             "longitude": mensa["longitude"],
-            "feed_today": template_todayURL % (baseurl, urllib.parse.quote(shortname)),
-            "feed_full": template_fullURL % (baseurl, urllib.parse.quote(shortname)),
+            "feed_today": url_template.format(metaOrFeed='today', mensaReference=urllib.parse.quote(shortname)),
+            "feed_full": url_template.format(metaOrFeed='feed', mensaReference=urllib.parse.quote(shortname)),
             "source_today": sourceUrl,
             "source_full": sourceUrl
         }
@@ -259,8 +255,8 @@ def _generateCanteenMeta(obj, name,  baseurl):
 
 
 class Parser:
-    def __init__(self, baseurl, handler):
-        self.baseurl = baseurl
+    def __init__(self, url_template, handler):
+        self.url_template = url_template
         self.metaObj = json.load(open(metaJson))
 
         self.xmlnames = []
@@ -275,11 +271,12 @@ class Parser:
     def json(self):
         tmp = {}
         for name in self.xmlnames:
-            tmp[name] = template_metaURL % (self.baseurl, name)
+            tmp[name] = self.url_template.format(
+                metaOrFeed='meta', mensaReference=urllib.parse.quote(name))
         return json.dumps(tmp, indent=2)
 
     def meta(self, name):
-        return _generateCanteenMeta(self.metaObj, name, self.baseurl)
+        return _generateCanteenMeta(self.metaObj, name, self.url_template)
 
     def feed_today(self, name):
         today = nowBerlin().date()
@@ -316,8 +313,8 @@ class Parser:
         return canteen.toXMLFeed()
 
 
-def getParser(baseurl):
-    parser = Parser(baseurl, parse_url)
+def getParser(url_template):
+    parser = Parser(url_template, parse_url)
     return parser
 
 
