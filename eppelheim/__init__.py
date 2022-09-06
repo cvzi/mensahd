@@ -25,7 +25,7 @@ except ModuleNotFoundError:
 metaJson = os.path.join(os.path.dirname(__file__), "eppelheim.json")
 
 metaTemplateFile = os.path.join(os.path.dirname(
-    __file__), "metaTemplate_mannheim.xml")
+    __file__), "metaTemplate_eppelheim.xml")
 
 weekdaysMap = [
     ("Mo", "monday"),
@@ -237,9 +237,7 @@ def _generateCanteenMeta(name, url_template):
             "phone": mensa["phone"],
             "latitude": mensa["latitude"],
             "longitude": mensa["longitude"],
-            "feed_today": url_template.format(metaOrFeed='today', mensaReference=urllib.parse.quote(shortname)),
             "feed_full": url_template.format(metaOrFeed='feed', mensaReference=urllib.parse.quote(shortname)),
-            "source_today": mensa["source_today"],
             "source_full": mensa["source_week"],
         }
         openingTimes = {}
