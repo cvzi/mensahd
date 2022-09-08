@@ -8,7 +8,7 @@ on:
     - 'docs/**'
     - 'luxembourg/**'
   schedule:
-    - cron: "12 6 * * *" # UTC
+    - cron: "22 6 * * *" # UTC
 jobs:
   generateXMLFeeds:
     runs-on: ubuntu-latest
