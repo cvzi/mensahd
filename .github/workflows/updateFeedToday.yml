@@ -5,6 +5,11 @@ on:
   schedule:
     - cron: "42 7-11 * * 1-5" # UTC
     - cron: "45 5 * * 1" # UTC run earlier on monday
+
+concurrency:
+  group: parsers-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   generateXMLFeedsToday:
     runs-on: ubuntu-latest
