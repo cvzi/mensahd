@@ -9,6 +9,11 @@ on:
     - 'luxembourg/**'
   schedule:
     - cron: "22 6 * * *" # UTC
+    
+concurrency:
+  group: parsers-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   generateXMLFeeds:
     runs-on: ubuntu-latest
