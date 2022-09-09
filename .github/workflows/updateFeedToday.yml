@@ -3,8 +3,7 @@ name: 🔂 RunParsersToday
 on:
   workflow_dispatch:
   schedule:
-    - cron: "42 7-11 * * 1-5" # UTC
-    - cron: "45 5 * * 1" # UTC run earlier on monday
+    - cron: "16,46 3-12 * * 1-5" # UTC
 
 concurrency:
   group: parsers-${{ github.ref }}
