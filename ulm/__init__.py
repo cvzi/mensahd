@@ -10,28 +10,18 @@ import requests
 
 try:
     from version import __version__, useragentname, useragentcomment
-    from util import StyledLazyBuilder, nowBerlin
+    from util import StyledLazyBuilder, nowBerlin, weekdays_map
 except ModuleNotFoundError:
     import sys
     include = os.path.relpath(os.path.join(os.path.dirname(__file__), '..'))
     sys.path.insert(0, include)
     from version import __version__, useragentname, useragentcomment
-    from util import StyledLazyBuilder, nowBerlin
+    from util import StyledLazyBuilder, nowBerlin, weekdays_map
 
 metaJson = os.path.join(os.path.dirname(__file__), "ulm.json")
 
 metaTemplateFile = os.path.join(
     os.path.dirname(__file__), "metaTemplate_ulm.xml")
-
-weekdaysMap = [
-    ("Mo", "monday"),
-    ("Di", "tuesday"),
-    ("Mi", "wednesday"),
-    ("Do", "thursday"),
-    ("Fr", "friday"),
-    ("Sa", "saturday"),
-    ("So", "sunday")
-]
 
 price_roles_regex = re.compile(r'€\s*(?P<price>\d+[,.]\d{2})')
 price_single_regex = re.compile(r'(?P<price>\d+[,.]\d{2})\s*€')
@@ -229,7 +219,7 @@ def _generateCanteenMeta(obj, name, url_template):
                 int(fromTimeH), int(fromTimeM), int(toTimeH), int(toTimeM))
             if toDay:
                 select = False
-                for short, long in weekdaysMap:
+                for short, long in weekdays_map:
                     if short == fromDay:
                         select = True
                     elif select:
@@ -238,7 +228,7 @@ def _generateCanteenMeta(obj, name, url_template):
                     if short == toDay:
                         select = False
 
-            for short, long in weekdaysMap:
+            for short, long in weekdays_map:
                 if short in openingTimes:
                     data[long] = 'open="%s"' % openingTimes[short]
                 else:

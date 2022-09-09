@@ -11,13 +11,13 @@ from bs4 import BeautifulSoup
 
 try:
     from version import __version__, useragentname, useragentcomment
-    from util import StyledLazyBuilder
+    from util import StyledLazyBuilder, weekdays_map
 except ModuleNotFoundError:
     import sys
     include = os.path.relpath(os.path.join(os.path.dirname(__file__), '..'))
     sys.path.insert(0, include)
     from version import __version__, useragentname, useragentcomment
-    from util import StyledLazyBuilder
+    from util import StyledLazyBuilder, weekdays_map
 
 metaJson = os.path.join(os.path.dirname(__file__), "stuttgart.json")
 
@@ -31,16 +31,6 @@ url = r"https://sws.maxmanager.xyz/extern/"
 sourceUrl = r"https://www.studierendenwerk-stuttgart.de/essen/speiseplan/"
 roles = ('student', 'employee', 'other')
 weight = 'Preis je %sg'
-
-weekdaysMap = [
-    ("Mo", "monday"),
-    ("Di", "tuesday"),
-    ("Mi", "wednesday"),
-    ("Do", "thursday"),
-    ("Fr", "friday"),
-    ("Sa", "saturday"),
-    ("So", "sunday")
-]
 
 ingredients = {
     "Ei": "Ei",
@@ -167,7 +157,7 @@ def _generateCanteenMeta(obj, name,  baseurl):
                 int(fromTimeH), int(fromTimeM), int(toTimeH), int(toTimeM))
             if toDay:
                 select = False
-                for short, long in weekdaysMap:
+                for short, long in weekdays_map:
                     if short == fromDay:
                         select = True
                     elif select:
@@ -176,7 +166,7 @@ def _generateCanteenMeta(obj, name,  baseurl):
                     if short == toDay:
                         select = False
 
-            for short, long in weekdaysMap:
+            for short, long in weekdays_map:
                 if short in openingTimes:
                     data[long] = 'open="%s"' % openingTimes[short]
                 else:

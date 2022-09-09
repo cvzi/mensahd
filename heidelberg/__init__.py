@@ -14,13 +14,13 @@ import defusedxml.lxml
 
 try:
     from version import __version__, useragentname, useragentcomment
-    from util import nowBerlin
+    from util import nowBerlin, weekdays_map
 except ModuleNotFoundError:
     import sys
     include = os.path.relpath(os.path.join(os.path.dirname(__file__), '..'))
     sys.path.insert(0, include)
     from version import __version__, useragentname, useragentcomment
-    from util import nowBerlin
+    from util import nowBerlin, weekdays_map
 
 mealsURL = 'https://www.stw.uni-heidelberg.de/appdata/sp.xml'
 mealsURL_authorization = False
@@ -63,7 +63,7 @@ desiredName = {
     "Mensa Künzelsau": "Künzelsau, Mensa Reinhold-Würth-Hochschule"
 }
 
-weekdaysMap = [
+weekdays_map = [
     ("Mo", "monday"),
     ("Di", "tuesday"),
     ("Mi", "wednesday"),
@@ -207,7 +207,7 @@ def _generateCanteenMeta(source, name, url_template):
                 int(fromTimeH), int(fromTimeM), int(toTimeH), int(toTimeM))
             if toDay:
                 select = False
-                for short, long in weekdaysMap:
+                for short, long in weekdays_map:
                     if short == fromDay:
                         select = True
                     elif select:
@@ -216,7 +216,7 @@ def _generateCanteenMeta(source, name, url_template):
                     if short == toDay:
                         select = False
 
-            for short, long in weekdaysMap:
+            for short, long in weekdays_map:
                 if short in openingTimes:
                     data[long] = 'open="%s"' % openingTimes[short]
                 else:
