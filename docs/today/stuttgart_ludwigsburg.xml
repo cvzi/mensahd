@@ -4,6 +4,13 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2022-09-13">
+      <category name="Vorspeise">
+        <meal>
+          <name>Tagessuppe</name>
+          <price role="employee">0.99</price>
+          <price role="student">0.59</price>
+        </meal>
+      </category>
       <category name="Hauptgericht">
         <meal>
           <name>Gnocchi in Spinat-Basilikumsauce mit gerösteten Sonnenblumenkernen</name>
@@ -31,14 +38,24 @@
           <price role="student">5.10</price>
         </meal>
         <meal>
-          <name>Falafel mit Tomatenbulgur und Soja-Minz-Dip</name>
-          <note>Sellerie</note>
+          <name>Linsen Spätzle mit Saiten</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Rind</note>
+          <note>Schwein</note>
           <note>Senf</note>
-          <note>Soja</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Farbstoffen</note>
+          <price role="employee">5.00</price>
+          <price role="student">3.00</price>
+        </meal>
+        <meal>
+          <name>Linsen und vegane Spätzle</name>
           <note>Weizen</note>
           <note>vegan</note>
-          <price role="employee">6.40</price>
-          <price role="student">4.40</price>
+          <price role="employee">4.60</price>
+          <price role="student">2.60</price>
         </meal>
         <meal>
           <name>Penne Bolognese überbacken</name>
@@ -67,9 +84,9 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Pudding mit Nuss-Geschmack</name>
-          <note>Mandeln</note>
+          <name>Heidelbeerjoghurt</name>
           <note>Milch und Laktose</note>
+          <note>mit Farbstoffen</note>
           <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
