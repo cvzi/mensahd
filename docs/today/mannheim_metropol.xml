@@ -3,25 +3,61 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2022-09-12">
+    <day date="2022-09-13">
       <category name="Menü 1">
         <meal>
-          <name>Cevapcici</name>
+          <name>Köttbullar</name>
+          <note>Ei</note>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Milch/Laktose</note>
           <note>Preis pro Portion</note>
+          <note>Rind</note>
           <note>Schweinefleisch</note>
-          <note>Sellerie</note>
+          <note>Weizen</note>
           <price role="student">3.00</price>
         </meal>
         <meal>
-          <name>Pommes frites</name>
+          <name>Lauchgemüse</name>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Milch/Laktose</note>
+          <note>Vegetarisch</note>
+          <note>Weizen</note>
+        </meal>
+        <meal>
+          <name>Salzkartoffeln</name>
           <note>Vegan</note>
         </meal>
         <meal>
-          <name>Tomaten Paprika Dip</name>
-          <note>Farbstoff</note>
-          <note>Säuerungsmittel</note>
+          <name>Röstzwiebeln</name>
+          <note>Glutenhaltiges Getreide</note>
           <note>Vegan</note>
-          <note>mit Süßmitteln</note>
+          <note>Weizen</note>
+        </meal>
+      </category>
+      <category name="Menü vegan/vegetarisch">
+        <meal>
+          <name>3 Semmelknödel</name>
+          <note>Ei</note>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Milch/Laktose</note>
+          <note>Preis pro Portion</note>
+          <note>Sellerie</note>
+          <note>Vegetarisch</note>
+          <note>Weizen</note>
+          <price role="student">3.00</price>
+        </meal>
+        <meal>
+          <name>Pilzragout</name>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Milch/Laktose</note>
+          <note>Vegetarisch</note>
+          <note>Weizen</note>
+        </meal>
+        <meal>
+          <name>Butterschmelze</name>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Vegan</note>
+          <note>Weizen</note>
         </meal>
         <meal>
           <name>frische Kräuter</name>
@@ -32,49 +68,28 @@
           <note>Vegan</note>
         </meal>
       </category>
-      <category name="Menü vegan/vegetarisch">
-        <meal>
-          <name>Vollkornspätzle</name>
-          <note>Ei</note>
-          <note>Glutenhaltiges Getreide</note>
-          <note>Preis pro Portion</note>
-          <note>Vegetarisch</note>
-          <note>Weizen</note>
-          <price role="student">3.00</price>
-        </meal>
-        <meal>
-          <name>geriebener Edamer</name>
-          <note>Milch/Laktose</note>
-          <note>Vegetarisch</note>
-        </meal>
-        <meal>
-          <name>Kräuter-Rahmsoße</name>
-          <note>Vegan</note>
-        </meal>
-        <meal>
-          <name>Beilagensalat</name>
-          <note>Vegan</note>
-        </meal>
-      </category>
       <category name="Wok">
         <meal>
-          <name>Putenbruststreifen, scharfe Sojasoße</name>
-          <note>Glutenhaltiges Getreide</note>
+          <name>Hänchengeschnetzeltes</name>
+          <note>Geflügel</note>
           <note>Preis pro Portion</note>
-          <note>Sellerie</note>
-          <note>Soja</note>
-          <note>Weizen</note>
           <price role="student">4.00</price>
         </meal>
         <meal>
-          <name>knackiges Asiagemüse</name>
-          <note>Vegan</note>
+          <name>Süß-Saure Soße</name>
+          <note>Antioxidationsmittel</note>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
         </meal>
         <meal>
           <name>Asia Nudeln</name>
           <note>Glutenhaltiges Getreide</note>
           <note>Vegan</note>
           <note>Weizen</note>
+        </meal>
+        <meal>
+          <name>Basmatireis</name>
         </meal>
       </category>
       <category name="Salatbuffet">

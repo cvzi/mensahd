@@ -3,23 +3,61 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2022-09-12">
+    <day date="2022-09-13">
       <category name="Menü 1">
         <meal>
-          <name>Cevapcici</name>
+          <name>Rindswurst</name>
+          <note>Antioxidationsmittel</note>
+          <note>Konservierungsstoff</note>
+          <note>Phosphat</note>
           <note>Preis pro Portion</note>
-          <note>Schweinefleisch</note>
-          <note>Sellerie</note>
+          <note>Rind</note>
+          <note>Säuerungsmittel</note>
           <price role="student">3.00</price>
         </meal>
         <meal>
-          <name>tunesische Reispfanne</name>
-          <note>Vegan</note>
-        </meal>
-        <meal>
-          <name>Joghurt-Dip</name>
+          <name>Lauchgemüse</name>
+          <note>Glutenhaltiges Getreide</note>
           <note>Milch/Laktose</note>
           <note>Vegetarisch</note>
+          <note>Weizen</note>
+        </meal>
+        <meal>
+          <name>Kartoffelstampf</name>
+          <note>Milch/Laktose</note>
+          <note>Vegetarisch</note>
+        </meal>
+        <meal>
+          <name>Röstzwiebeln</name>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Vegan</note>
+          <note>Weizen</note>
+        </meal>
+      </category>
+      <category name="Menü vegan/vegetarisch">
+        <meal>
+          <name>Semmelknödel</name>
+          <note>Ei</note>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Milch/Laktose</note>
+          <note>Preis pro Portion</note>
+          <note>Sellerie</note>
+          <note>Vegetarisch</note>
+          <note>Weizen</note>
+          <price role="student">3.00</price>
+        </meal>
+        <meal>
+          <name>Pilzragout</name>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Milch/Laktose</note>
+          <note>Vegetarisch</note>
+          <note>Weizen</note>
+        </meal>
+        <meal>
+          <name>Butterschmelze</name>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Vegan</note>
+          <note>Weizen</note>
         </meal>
         <meal>
           <name>frische Kräuter</name>
@@ -30,65 +68,48 @@
           <note>Vegan</note>
         </meal>
       </category>
-      <category name="Menü vegan/vegetarisch">
-        <meal>
-          <name>bunte Gerstenpfanne</name>
-          <note>Gerste</note>
-          <note>Glutenhaltiges Getreide</note>
-          <note>Preis pro Portion</note>
-          <note>Vegan</note>
-          <price role="student">3.00</price>
-        </meal>
-        <meal>
-          <name>Kidney-Quinoa-Pflanzerl</name>
-          <note>Vegan</note>
-        </meal>
-        <meal>
-          <name>Süßkartoffel-Chutney</name>
-          <note>Schwefeldioxid Sulfit</note>
-          <note>Vegan</note>
-        </meal>
-        <meal>
-          <name>frische Kräuter</name>
-          <note>Vegan</note>
-        </meal>
-      </category>
       <category name="MA(h)l was anderes">
         <meal>
-          <name>rotes Thai-Curry</name>
+          <name>Mac &amp; Cheese</name>
+          <note>Ei</note>
           <note>Glutenhaltiges Getreide</note>
+          <note>Milch/Laktose</note>
           <note>Preis pro Portion</note>
-          <note>Soja</note>
+          <note>Vegetarisch</note>
           <note>Weizen</note>
-          <price role="student">4.50</price>
+          <price role="student">5.00</price>
         </meal>
         <meal>
-          <name>Asia-Nudeln</name>
+          <name>Cheddar-Dip</name>
           <note>Glutenhaltiges Getreide</note>
-          <note>Vegan</note>
+          <note>Milch/Laktose</note>
+          <note>Sellerie</note>
+          <note>Vegetarisch</note>
           <note>Weizen</note>
         </meal>
         <meal>
-          <name>Basmatireis</name>
+          <name>Caesar Salat</name>
+          <note>Fisch</note>
+          <note>Milch/Laktose</note>
+          <note>Senf</note>
         </meal>
       </category>
       <category name="Themenpark">
         <meal>
-          <name>Kürbiskern-Hähnchenschnitzel</name>
+          <name>paniertes Schnitzel vom Schwein</name>
           <note>Ei</note>
           <note>Glutenhaltiges Getreide</note>
           <note>Preis pro 100g</note>
+          <note>Schweinefleisch</note>
+          <note>Säuerungsmittel</note>
           <note>Weizen</note>
           <price role="student">1.20</price>
         </meal>
         <meal>
-          <name>Valess Schnitzel</name>
-          <note>Ei</note>
+          <name>Sellerieschnitzel</name>
           <note>Glutenhaltiges Getreide</note>
-          <note>Hafer</note>
-          <note>Milch/Laktose</note>
-          <note>Säuerungsmittel</note>
-          <note>Vegetarisch</note>
+          <note>Sellerie</note>
+          <note>Vegan</note>
           <note>Weizen</note>
         </meal>
         <meal>
@@ -96,20 +117,23 @@
           <note>Vegan</note>
         </meal>
         <meal>
-          <name>Champignonrahmsoße</name>
-          <note>Glutenhaltiges Getreide</note>
+          <name>Tomatensoße</name>
+          <note>Sellerie</note>
+          <note>Säuerungsmittel</note>
           <note>Vegan</note>
-          <note>Weizen</note>
         </meal>
         <meal>
-          <name>Kroketten</name>
+          <name>Reisnudeln</name>
+          <note>Ei</note>
           <note>Glutenhaltiges Getreide</note>
           <note>Vegetarisch</note>
           <note>Weizen</note>
         </meal>
         <meal>
-          <name>Langkornreis</name>
+          <name>Kartoffel-Wedges</name>
+          <note>Glutenhaltiges Getreide</note>
           <note>Vegan</note>
+          <note>Weizen</note>
         </meal>
       </category>
       <category name="Salatbuffet">
@@ -124,45 +148,42 @@
           <note>Vegan</note>
         </meal>
         <meal>
+          <name>Karottensalat</name>
+          <note>Antioxidationsmittel</note>
+          <note>Vegan</note>
+        </meal>
+        <meal>
+          <name>Weißkrautsalat</name>
+          <note>Antioxidationsmittel</note>
+          <note>Vegan</note>
+        </meal>
+        <meal>
           <name>Gurkensalat</name>
           <note>Schwefeldioxid Sulfit</note>
           <note>Vegan</note>
         </meal>
         <meal>
-          <name>Eiersalat</name>
-          <note>Ei</note>
-          <note>Milch/Laktose</note>
+          <name>Blumenkohlsalat</name>
+          <note>Antioxidationsmittel</note>
+          <note>Vegan</note>
+        </meal>
+        <meal>
+          <name>Bauernsalat</name>
           <note>Schwefeldioxid Sulfit</note>
-          <note>Vegetarisch</note>
-        </meal>
-        <meal>
-          <name>serbischer Bohnensalat</name>
           <note>Vegan</note>
         </meal>
         <meal>
-          <name>Antipasti</name>
+          <name>Tomaten und Mozzarella</name>
+          <note>Farbstoff</note>
           <note>Milch/Laktose</note>
-          <note>Vegan</note>
-          <note>geschwärzt</note>
-        </meal>
-        <meal>
-          <name>roter Linsensalat</name>
-          <note>Antioxidationsmittel</note>
-          <note>Vegan</note>
-        </meal>
-        <meal>
-          <name>Orangen-Senf-Dressing</name>
-          <note>Antioxidationsmittel</note>
-          <note>Senf</note>
-          <note>Vegan</note>
+          <note>Vegetarisch</note>
         </meal>
       </category>
       <category name="Dessert">
         <meal>
-          <name>Mousse au Chocolat</name>
-          <note>Milch/Laktose</note>
+          <name>Hafer-Obst-Dessert</name>
           <note>Preis pro Stück</note>
-          <note>Vegetarisch</note>
+          <note>Vegan</note>
           <price role="student">1.20</price>
         </meal>
         <meal>
@@ -170,11 +191,13 @@
           <note>Vegan</note>
         </meal>
         <meal>
-          <name>Fruchtjoghurt</name>
-          <note>Farbstoff</note>
+          <name>Schokopudding</name>
           <note>Milch/Laktose</note>
-          <note>Säuerungsmittel</note>
           <note>Vegetarisch</note>
+        </meal>
+        <meal>
+          <name>Kirschkompott</name>
+          <note>Vegan</note>
         </meal>
       </category>
     </day>
