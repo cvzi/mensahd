@@ -3,8 +3,159 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2022-09-17">
-      <closed/>
+    <day date="2022-09-19">
+      <category name="Menü 1">
+        <meal>
+          <name>Schweinegeschnetzeltes</name>
+          <note>Preis pro Portion</note>
+          <note>Schweinefleisch</note>
+          <price role="student">3.00</price>
+        </meal>
+        <meal>
+          <name>Rahmsoße</name>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Milch/Laktose</note>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Vegetarisch</note>
+          <note>Weizen</note>
+        </meal>
+        <meal>
+          <name>Spätzle</name>
+          <note>Ei</note>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Vegetarisch</note>
+          <note>Weizen</note>
+        </meal>
+        <meal>
+          <name>Rosenkohl</name>
+          <note>Milch/Laktose</note>
+        </meal>
+        <meal>
+          <name>Butterschmelze</name>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Vegan</note>
+          <note>Weizen</note>
+        </meal>
+      </category>
+      <category name="Menü vegan/vegetarisch">
+        <meal>
+          <name>Chili sin Carne</name>
+          <note>Farbstoff</note>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Preis pro Portion</note>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Säuerungsmittel</note>
+          <note>Vegan</note>
+          <note>Weizen</note>
+          <price role="student">3.00</price>
+        </meal>
+        <meal>
+          <name>Nachos</name>
+          <note>Säuerungsmittel</note>
+          <note>Vegan</note>
+        </meal>
+        <meal>
+          <name>Langkornreis</name>
+          <note>Vegan</note>
+        </meal>
+        <meal>
+          <name>Beilagensalat</name>
+          <note>Vegan</note>
+        </meal>
+      </category>
+      <category name="MA(h)l was anderes">
+        <meal>
+          <name>Putenschnitzel</name>
+          <note>Geflügel</note>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Preis pro Portion</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <price role="student">0.00</price>
+        </meal>
+        <meal>
+          <name>Café de Paris Sauce</name>
+          <note>Ei</note>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Milch/Laktose</note>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+        </meal>
+        <meal>
+          <name>Crazy frites</name>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Vegan</note>
+          <note>Weizen</note>
+        </meal>
+        <meal>
+          <name>Beilagensalat</name>
+          <note>Vegan</note>
+        </meal>
+      </category>
+      <category name="Salatbuffet">
+        <meal>
+          <name>Blattsalate</name>
+          <note>Preis pro 100g</note>
+          <note>Vegan</note>
+          <price role="student">1.20</price>
+        </meal>
+        <meal>
+          <name>Rohkostsalate</name>
+          <note>Vegan</note>
+        </meal>
+        <meal>
+          <name>Weißkrautsalat</name>
+          <note>Antioxidationsmittel</note>
+          <note>Vegan</note>
+        </meal>
+        <meal>
+          <name>Gurkensalat</name>
+          <note>Schwefeldioxid Sulfit</note>
+          <note>Vegan</note>
+        </meal>
+        <meal>
+          <name>Bauernsalat</name>
+          <note>Schwefeldioxid Sulfit</note>
+          <note>Vegan</note>
+        </meal>
+        <meal>
+          <name>Nudelsalat</name>
+          <note>Antioxidationsmittel</note>
+          <note>Ei</note>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Milch/Laktose</note>
+          <note>Weizen</note>
+        </meal>
+        <meal>
+          <name>Joghurt-Dressing</name>
+          <note>Milch/Laktose</note>
+          <note>Senf</note>
+          <note>Vegetarisch</note>
+        </meal>
+        <meal>
+          <name>Cocktail-Dressing</name>
+          <note>Antioxidationsmittel</note>
+          <note>Ei</note>
+          <note>Milch/Laktose</note>
+          <note>mit Süßmitteln</note>
+        </meal>
+      </category>
+      <category name="Dessert">
+        <meal>
+          <name>Vanillepudding</name>
+          <note>Milch/Laktose</note>
+          <note>Preis pro Stück</note>
+          <note>Vegetarisch</note>
+          <price role="student">0.50</price>
+        </meal>
+        <meal>
+          <name>Schlagsahne</name>
+          <note>Milch/Laktose</note>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
