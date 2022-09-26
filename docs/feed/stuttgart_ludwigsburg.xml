@@ -4,21 +4,13 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2022-09-26">
-      <category name="Vorspeise">
-        <meal>
-          <name>Tagessuppe</name>
-          <price role="employee">0.99</price>
-          <price role="student">0.59</price>
-        </meal>
-      </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Vollkornspaghetti mit Sojabolognese</name>
+          <name>Spaghetti mit Sojabolognese</name>
           <note>Preisrenner</note>
           <note>Sellerie</note>
           <note>Soja</note>
           <note>Weizen</note>
-          <note>vegan</note>
           <price role="employee">4.59</price>
           <price role="student">2.59</price>
         </meal>
@@ -39,6 +31,27 @@
           <note>Weizen</note>
           <price role="employee">5.80</price>
           <price role="student">3.80</price>
+        </meal>
+        <meal>
+          <name>Maultaschen und Kartoffelsalat mit Zwiebelsauce</name>
+          <note>Ei</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <price role="employee">5.30</price>
+          <price role="student">3.30</price>
+        </meal>
+        <meal>
+          <name>Schlemmerfilet à la bordelaise und Vollkornreis mit Dillsauce</name>
+          <note>Fisch</note>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <price role="employee">5.00</price>
+          <price role="student">3.00</price>
         </meal>
         <meal>
           <name>Rinderhacksteak mit Baked Beans und Kartoffelchips</name>
@@ -87,9 +100,9 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Exotischer Obstsalat</name>
+          <name>Früchtequark</name>
+          <note>Milch und Laktose</note>
           <note>mit Antioxidationsmitteln</note>
-          <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
