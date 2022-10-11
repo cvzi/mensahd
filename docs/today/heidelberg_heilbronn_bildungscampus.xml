@@ -4,14 +4,56 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2022-10-10">
+    <day date="2022-10-11">
+      <category name="Dessert">
+        <meal>
+          <name>Mallorquinischer Mandelkuchen</name>
+          <note>Almond cake</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Over-Night-Oats mit getrockneten Aprikosen und Rosinen</name>
+          <note>Overnight-oats with dried apricots and raisins</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Kartoffelsuppe mit Majoran und Brotcroutons</name>
+          <note>Potato soup with croutons and marjoram</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Gebratenes Lachsfilet auf buntem Gemüse und Graupenrisotto</name>
+          <note>Pan-fried salmon trout with wok vegetables and barley risotto</note>
+        </meal>
+      </category>
       <category name="Vegan">
         <meal>
-          <name>Curry von regionalem Feldgemüse mit Soja-Joghurt-Raita und Naturreis</name>
-          <note>Vegetable curry with Indian style soy yogurt and rice</note>
-          <price role="student">4.00</price>
-          <price role="employee">6.00</price>
-          <price role="other">10.00</price>
+          <name>Panierte Sellerie-Medaillons auf hausgemachten Tomatennudeln</name>
+          <note>Breaded kohlrabi medaillons with housemade tomato-noodles, herb pesto and sunflower seeds</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Moussaka mit Auberginen, Kartoffeln, Tomaten und Schafskäse</name>
+          <note>Moussaka Greek pie with potatoes, tomatoes, eggplant and goat cheese</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
         </meal>
       </category>
     </day>
