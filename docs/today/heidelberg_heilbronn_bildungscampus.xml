@@ -4,14 +4,59 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2022-10-11">
+    <day date="2022-10-12">
+      <category name="Dessert">
+        <meal>
+          <name>Vanillecreme mit Zimt-Anis-Karamell</name>
+          <note>Vanilla cream with cinnamon-anise-caramel</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Kürbis-Birnen-Becher mit veganer Sahne und Haselnusskrokant</name>
+          <note>Apricot compote with hazelnut crunch</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Tomatensuppe mit Oregano</name>
+          <note>Tomato soup with oregano</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
       <category name="Tierisch">
         <meal>
-          <name>Gebratenes Lachsfilet auf buntem Gemüse und Graupenrisotto</name>
-          <note>Pan-fried salmon trout with wok vegetables and barley risotto</note>
-          <price role="student">5.00</price>
-          <price role="employee">7.50</price>
-          <price role="other">12.50</price>
+          <name>Ragout vom Hohenloher Kalb mit Ras-el-Hanout, Sahnewirsing und Gnocchi</name>
+          <note>Veal ragout with ras el hanout spices, braised cabbage and gnocchis</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Südamerikanische Bowl, dreierlei Bohnen, gegrillter Mais, gebratene Süßkartoffelschnitze und Chimichurri</name>
+          <note>South American bowl with tree sorts of mashed beans, grilled sweet corn, fried sweet potatoes, lettuce and chimichurri</note>
+          <price role="student">4.50</price>
+          <price role="employee">6.75</price>
+          <price role="other">11.25</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Hausgemachte Pasta in Zitronen-Sahne-Sauce mit Cime di Rapa und Onsen-Ei</name>
+          <note>Housemade pasta with a creamy lemon sauce, braised cabbage and Onsen boiled egg</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
         </meal>
       </category>
     </day>
