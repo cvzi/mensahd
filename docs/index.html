@@ -37,7 +37,120 @@
   <body>
     <main>
       <article>Parser for <a target="_blank" href="https://openmensa.org">openmensa.org</a>. The parser runs in a <a target="_blank" title="What's a Github action?" href="https://docs.github.com/en/actions">Github action<sup>❓</sup></a> and pushes the XML feeds to this page</article>
-      <article><h3><a href="https://github.com/cvzi/mensahd/actions/">🗿 Parser status</a></h3></article>
+      <article><h3><a href="https://github.com/cvzi/mensahd/actions/">🗿 Parser status</a></h3>
+<pre>mannheim:
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fad3cbf88e0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='studiplus.stw-ma.de', port=443): Max retries exceeded with url: /api/app/mensa/info?id=610&date=1665658800000&language=de (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fad3cbf88e0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/work/mensahd/mensahd/mannheim/__init__.py", line 93, in mensa_info
+    r = requests.get(url, headers=headers)
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='studiplus.stw-ma.de', port=443): Max retries exceeded with url: /api/app/mensa/info?id=610&date=1665658800000&language=de (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fad3cbf88e0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fad3cbfb2b0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='studiplus.stw-ma.de', port=443): Max retries exceeded with url: /api/app/mensa/info?id=610&date=1665658800000&language=de (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fad3cbfb2b0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/work/mensahd/mensahd/updateFeeds.py", line 158, in updateFeeds
+    raise e
+  File "/home/runner/work/mensahd/mensahd/updateFeeds.py", line 144, in updateFeeds
+    content = getattr(parser, feedMethod)(
+  File "/home/runner/work/mensahd/mensahd/mannheim/__init__.py", line 297, in feed_today
+    return self.handler(self.shared_prefix, 1, *self.canteens[name])
+  File "/home/runner/work/mensahd/mensahd/mannheim/__init__.py", line 96, in mensa_info
+    r = requests.get(url, headers=headers, verify=False)
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='studiplus.stw-ma.de', port=443): Max retries exceeded with url: /api/app/mensa/info?id=610&date=1665658800000&language=de (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fad3cbfb2b0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+</pre></article>
       <article>
 <ol style="list-style-type:none">
 <li><h3 id="eppelheim"><a href="https://cvzi.github.io/mensahd/eppelheim.json">🐏 eppelheim.json</a></h3>
