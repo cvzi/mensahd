@@ -4,8 +4,61 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2022-10-27">
-      <closed/>
+    <day date="2022-10-28">
+      <category name="Dessert">
+        <meal>
+          <name>Quark-Creme mit Frucht-Kompott</name>
+          <note>Curd cream with fruit compote</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Hausgemachtes Bircher Müsli mit Nüssen und Obst</name>
+          <note>Housemade Bircher muesli with nuts and fruit</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Tomatensuppe mit Kräuteröl</name>
+          <note>Tomato soup with herb oil</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Gebratenes Fischfilet mit Blattspinat, dazu hausgemachte Pasta und Tomatensugo</name>
+          <note>Roasted filet of fish with leaf lettuce, housemade pasta and tomato sugo</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Soja-Geschnetzeltes  "asia-style" mit Mie-Nudeln</name>
+          <note>Soy strips  "Asian-style" with Mie-noodles</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Pilz Risotto mit Bergkäse, konfierten Kirschtomaten und Rucola</name>
+          <note>Mushroom risotto with mountain cheese, slow-cooked cherry tomatoes und arugula</note>
+          <price role="student">4.00</price>
+          <price role="employee">6.00</price>
+          <price role="other">10.00</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
