@@ -4,8 +4,61 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2022-10-30">
-      <closed/>
+    <day date="2022-10-31">
+      <category name="Dessert">
+        <meal>
+          <name>Kirschgrütze mit Vanillesoße </name>
+          <note>Cherry compote with vanilla sauce </note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Milchreis mit Hafermilch aus dem Schwarzwald garniert mit Kompott</name>
+          <note>Oatmilk rice pudding garnished with compote</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Vegane Orangen-Karottensuppe mit frischem Ingwer</name>
+          <note>Vegan orange-carrot soup with fresh ginger</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Gesottenes Rindfleisch  auf Bouillon-Gemüse-Kartoffeln und frischem Meerettich  </name>
+          <note>Boiled beef with bouillon-vegetable-potatoes and fresh horseradish</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Gemüsewok mit mariniertem asiatischem Gemüse in süß-saurer Soße und Reis</name>
+          <note>Vegetable wok with marinated Asian vegetables in a sweet-sour sauce with rice</note>
+          <price role="student">4.00</price>
+          <price role="employee">6.00</price>
+          <price role="other">10.00</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Schupfnudel- Waldpilzpfanne mit Möhren und Lauch</name>
+          <note>Finger-shaped potato dumplings with wild mushrooms, carrots and leek</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
