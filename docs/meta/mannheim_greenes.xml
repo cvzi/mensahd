@@ -3,11 +3,11 @@
 <?xml-stylesheet type="text/css" href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css"?>
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <name>Mannheim, Mensa am Schloss</name>
-    <address>Bismarckstraße 10, 68159 </address>
+    <name>Mannheim, greenes²</name>
+    <address>Bismarckstraße 10, 68159 Mannheim</address>
     <city>Mannheim</city>
     <phone>+49 621 49072333</phone>
-    <location latitude="49.48484" longitude="8.45952"/>
+    <location latitude="49.48449192318391" longitude="8.458971639745846"/>
     <times type="opening">
       <monday closed="true"/>
       <tuesday closed="true"/>
@@ -19,8 +19,8 @@
     </times>
     <feed name="full" priority="1">
       <schedule dayOfMonth="*" dayOfWeek="1-5" hour="8" minute="10" retry="65 1 1440"/>
-      <url>https://cvzi.github.io/mensahd/feed/mannheim_schloss.xml</url>
-      <source>https://www.stw-ma.de/men%C3%BCplan_schlossmensa.html</source>
+      <url>https://cvzi.github.io/mensahd/feed/mannheim_greenes.xml</url>
+      <source>https://www.stw-ma.de/Essen+_+Trinken/Speisepl%C3%A4ne/greenes%C2%B2.html</source>
     </feed>
   </canteen>
 </openmensa>
