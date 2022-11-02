@@ -12,13 +12,13 @@ from bs4 import BeautifulSoup
 
 try:
     from version import __version__, useragentname, useragentcomment
-    from util import StyledLazyBuilder, nowBerlin, weekdays_map
+    from util import StyledLazyBuilder, now_local, weekdays_map
 except ModuleNotFoundError:
     import sys
     include = os.path.relpath(os.path.join(os.path.dirname(__file__), '..'))
     sys.path.insert(0, include)
     from version import __version__, useragentname, useragentcomment
-    from util import StyledLazyBuilder, nowBerlin, weekdays_map
+    from util import StyledLazyBuilder, now_local, weekdays_map
 
 # Based on https://github.com/mswart/openmensa-parsers/blob/master/magdeburg.py
 
@@ -52,7 +52,7 @@ calendarweek_regex = re.compile('\(KW (\d+)\)')
 
 
 def parse_url(url, today=False):
-    today = nowBerlin().date()
+    today = now_local().date()
     if today.weekday() == 6:  # Sunday
         today += datetime.timedelta(days=1)  # Tomorrow
 
@@ -86,14 +86,14 @@ def parse_url(url, today=False):
             # Set 7 days closed
             for i in range(7):
                 canteen.setDayClosed(
-                    (nowBerlin().date() + datetime.timedelta(i)))
+                    (now_local().date() + datetime.timedelta(i)))
             return canteen.toXMLFeed()
 
         if not datematch and "nach Vorbestellung" in h2.text:
             # Set info for 7 days
             for i in range(7):
                 canteen.addMeal(
-                    (nowBerlin().date() + datetime.timedelta(i)), "Info", h2.text)
+                    (now_local().date() + datetime.timedelta(i)), "Info", h2.text)
             return canteen.toXMLFeed()
 
         if not datematch:
@@ -101,7 +101,7 @@ def parse_url(url, today=False):
             if match:
                 week = int(match.group(1))
                 fromdate = datetime.datetime.fromisocalendar(
-                    nowBerlin().year, week, 1)
+                    now_local().year, week, 1)
 
     if datematch:
         p = datematch.groupdict()

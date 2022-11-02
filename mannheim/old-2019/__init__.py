@@ -10,13 +10,13 @@ import urllib
 
 try:
     from version import __version__, useragentname, useragentcomment
-    from util import StyledLazyBuilder, nowBerlin
+    from util import StyledLazyBuilder, now_local
 except ModuleNotFoundError:
     import sys
     include = os.path.relpath(os.path.join(os.path.dirname(__file__), '..'))
     sys.path.insert(0, include)
     from version import __version__, useragentname, useragentcomment
-    from util import StyledLazyBuilder, nowBerlin
+    from util import StyledLazyBuilder, now_local
 
 # Based on https://github.com/mswart/openmensa-parsers/blob/master/magdeburg.py
 
@@ -68,7 +68,7 @@ whitespace = re.compile(r'\s+')
 
 
 def parse_url(url, today=False):
-    today = nowBerlin()
+    today = now_local()
     if today.weekday() == 6:  # Sunday
         today += datetime.timedelta(days=1)  # Tomorrow
 

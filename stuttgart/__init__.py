@@ -12,13 +12,13 @@ from bs4 import BeautifulSoup
 
 try:
     from version import __version__, useragentname, useragentcomment
-    from util import StyledLazyBuilder, nowBerlin, weekdays_map
+    from util import StyledLazyBuilder, now_local, weekdays_map
 except ModuleNotFoundError:
     import sys
     include = os.path.relpath(os.path.join(os.path.dirname(__file__), '..'))
     sys.path.insert(0, include)
     from version import __version__, useragentname, useragentcomment
-    from util import StyledLazyBuilder, nowBerlin, weekdays_map
+    from util import StyledLazyBuilder, now_local, weekdays_map
 
 metaJson = os.path.join(os.path.dirname(__file__), "stuttgart.json")
 
@@ -269,7 +269,7 @@ class Parser:
         return _generateCanteenMeta(self.metaObj, name, self.url_template)
 
     def feed_today(self, name):
-        today = nowBerlin().date()
+        today = now_local().date()
         canteen = StyledLazyBuilder()
 
         self.handler(canteen, self.xml2locId[name], today)
@@ -278,7 +278,7 @@ class Parser:
     def feed_all(self, name):
         canteen = StyledLazyBuilder()
 
-        date = nowBerlin()
+        date = now_local()
 
         # Get this week
         lastWeekday = -1

@@ -14,13 +14,13 @@ import defusedxml.lxml
 
 try:
     from version import __version__, useragentname, useragentcomment
-    from util import nowBerlin, weekdays_map
+    from util import now_local, weekdays_map
 except ModuleNotFoundError:
     import sys
     include = os.path.relpath(os.path.join(os.path.dirname(__file__), '..'))
     sys.path.insert(0, include)
     from version import __version__, useragentname, useragentcomment
-    from util import nowBerlin, weekdays_map
+    from util import now_local, weekdays_map
 
 mealsURL = 'https://www.stw.uni-heidelberg.de/appdata/sp.xml'
 mealsURL_authorization = False
@@ -154,7 +154,7 @@ def _getMetaURL_cached(max_age_minutes=120):
 def _generateFeed(source, name, date='', lastFetched=0):
     """Generate an openmensa XML feed from the source feed using XSLT"""
     if date == 'today':
-        now = nowBerlin()
+        now = now_local()
         date = now.strftime("%Y-%m-%d")
 
     name = nameMap[name]

@@ -104,8 +104,8 @@ def parse_url(canteen, xmlname, allowedCategoryNames=None):
         if not m:
             continue
         date = re_title.search(text).group(2)
-        xmlescaped = text.split("<description>")[1].split("</description>")[0]
-        decoded = BeautifulSoup(xmlescaped, "html.parser")
+        xml_escaped = text.split("<description>")[1].split("</description>")[0]
+        decoded = BeautifulSoup(xml_escaped, "html.parser")
         document = BeautifulSoup("".join(decoded.contents), "html.parser")
         trs = document.find("tbody").find_all("tr")
 

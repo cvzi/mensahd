@@ -12,13 +12,13 @@ from bs4 import BeautifulSoup
 
 try:
     from version import __version__, useragentname, useragentcomment
-    from util import StyledLazyBuilder, nowBerlin, weekdays_map
+    from util import StyledLazyBuilder, now_local, weekdays_map
 except ModuleNotFoundError:
     import sys
     include = os.path.relpath(os.path.join(os.path.dirname(__file__), '..'))
     sys.path.insert(0, include)
     from version import __version__, useragentname, useragentcomment
-    from util import StyledLazyBuilder, nowBerlin, weekdays_map
+    from util import StyledLazyBuilder, now_local, weekdays_map
 
 metaJson = os.path.join(os.path.dirname(__file__), "mannheim.json")
 
@@ -76,7 +76,7 @@ def showFilter(data, filterid):
 
 
 def mensa_info(apiurl, days, canteenid, alternative, canteen=None, day=0):
-    now = nowBerlin()
+    now = now_local()
     now += datetime.timedelta(days=day)
     if now.weekday() == 6:  # Sunday
         now += datetime.timedelta(days=1)  # Sunday -> Monday
