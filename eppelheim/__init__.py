@@ -47,8 +47,8 @@ price_employee_regex = re.compile(r'Dozenten\s*\((?P<employee>\d+,\d+)')
 price_guest_regex = re.compile(r'Gäste\s*\((?P<employee>\d+,\d+)')
 euro_regex = re.compile(r'(\d+,\d+) €')
 datespan_regex = re.compile(
-    '(?P<from>\d+\.\d+\.\d{0,4})\s*–\s*(?P<to>\d+\.\d+\.\d{0,4})')
-calendarweek_regex = re.compile('\(KW (\d+)\)')
+    '(?P<from>\\d+\\.\\d+\\.\\d{0,4})\\s*[–-]\\s*(?P<to>\\d+\\.\\d+\\.\\d{0,4})')
+calendarweek_regex = re.compile('\\(KW (\\d+)\\)')
 
 
 def parse_url(url, today=False):
@@ -208,8 +208,10 @@ def parse_url(url, today=False):
 
 def _generateCanteenMeta(name, url_template):
     """Generate an openmensa XML meta feed from the static json file using an XML template"""
-    obj = json.load(open(metaJson))
-    template = open(metaTemplateFile).read()
+    with open(metaJson) as f:
+        obj = json.load(f)
+    with open(metaTemplateFile) as f:
+        template = f.read()
 
     for mensa in obj["mensen"]:
         if not mensa["xml"]:
@@ -233,7 +235,7 @@ def _generateCanteenMeta(name, url_template):
         openingTimes = {}
         infokurz = mensa["infokurz"]
         pattern = re.compile(
-            "([A-Z][a-z])( - ([A-Z][a-z]))? (\d{1,2})\.(\d{2}) - (\d{1,2})\.(\d{2}) Uhr")
+            "([A-Z][a-z])( - ([A-Z][a-z]))? (\\d{1,2})\\.(\\d{2}) - (\\d{1,2})\\.(\\d{2}) Uhr")
         m = re.findall(pattern, infokurz)
         for result in m:
             fromDay, _, toDay, fromTimeH, fromTimeM, toTimeH, toTimeM = result

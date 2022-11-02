@@ -28,7 +28,7 @@ metaTemplateFile = os.path.join(os.path.dirname(
 url = r"https://sws2.maxmanager.xyz/inc/ajax-php_konnektor.inc.php"
 sourceUrl = r"https://www.studierendenwerk-stuttgart.de/essen/speiseplan/"
 roles = ('student', 'employee', 'other')
-price_pattern = re.compile('\d+,\d\d')
+price_pattern = re.compile('\\d+,\\d\\d')
 
 ingredients = {
     "Ei": "Ei",
@@ -148,13 +148,13 @@ def parse_url(canteen, locId, day=None):
                 notes = None
 
             if "Nudelmanufaktur" in mealName:
-                mealName = re.sub(".*Nudelmanufaktur.?\s*", "", mealName)
+                mealName = re.sub(".*Nudelmanufaktur.?\\s*", "", mealName)
                 notes.append("hauseigene Nudelmanufaktur")
 
             pricesNode = div.find("div", {"class": "preise-xs"})
             pricesText = None
             if not pricesNode:
-                pricesText = str(div.find(text=re.compile('€')))
+                pricesText = str(div.find(string=re.compile('€')))
             else:
                 pricesText = pricesNode.text.strip()
 
@@ -189,7 +189,8 @@ def parse_url(canteen, locId, day=None):
 
 def _generateCanteenMeta(obj, name,  url_template):
     """Generate an openmensa XML meta feed from the static json file using an XML template"""
-    template = open(metaTemplateFile).read()
+    with open(metaTemplateFile) as f:
+        template = f.read()
 
     for mensa in obj["mensen"]:
         if not mensa["xml"]:
@@ -215,7 +216,7 @@ def _generateCanteenMeta(obj, name,  url_template):
         openingTimes = {}
         infokurz = mensa["infokurz"]
         pattern = re.compile(
-            "([A-Z][a-z])( - ([A-Z][a-z]))? (\d{1,2})\.(\d{2}) - (\d{1,2})\.(\d{2}) Uhr")
+            "([A-Z][a-z])( - ([A-Z][a-z]))? (\\d{1,2})\\.(\\d{2}) - (\\d{1,2})\\.(\\d{2}) Uhr")
         m = re.findall(pattern, infokurz)
         for result in m:
             fromDay, _, toDay, fromTimeH, fromTimeM, toTimeH, toTimeM = result
@@ -247,7 +248,8 @@ def _generateCanteenMeta(obj, name,  url_template):
 class Parser:
     def __init__(self, url_template, handler):
         self.url_template = url_template
-        self.metaObj = json.load(open(metaJson))
+        with open(metaJson) as f:
+            self.metaObj = json.load(f)
 
         self.xmlnames = []
         self.xml2locId = {}

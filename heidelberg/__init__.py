@@ -173,7 +173,8 @@ def _generateFeed(source, name, date='', lastFetched=0):
 def _generateCanteenMeta(source, name, url_template):
     """Generate an openmensa XML meta feed from the source feed using an XML template"""
     obj = json.loads(source.read().decode("utf-8-sig"))
-    template = open(metaTemplateFile).read()
+    with open(metaTemplateFile) as f:
+        template = f.read()
 
     shortname = name
     name = nameMap[shortname]
@@ -199,7 +200,7 @@ def _generateCanteenMeta(source, name, url_template):
         openingTimes = {}
         infokurz = mensa["infokurz"]
         pattern = re.compile(
-            "([A-Z][a-z])( - ([A-Z][a-z]))? (\d{1,2})\.(\d{2}) - (\d{1,2})\.(\d{2}) Uhr")
+            "([A-Z][a-z])( - ([A-Z][a-z]))? (\\d{1,2})\\.(\\d{2}) - (\\d{1,2})\\.(\\d{2}) Uhr")
         m = re.findall(pattern, infokurz)
         for result in m:
             fromDay, _, toDay, fromTimeH, fromTimeM, toTimeH, toTimeM = result
