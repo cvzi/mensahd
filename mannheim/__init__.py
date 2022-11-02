@@ -30,11 +30,7 @@ class Parser:
     meals_next_week = 'https://menuplan.eurest.at/NextWeek/{ref}.xml'
     source_url = 'https://menuplan.eurest.at/menu.html?current_url=%2FCurrentWeek%2F{ref}.xml'
 
-
-
-
     def correct_capitalization(self, s): return s[0].upper() + s[1:].lower()
-
 
     day_regex = re.compile(r'(?P<date>\d{2}\.\d{2}\.\d{4})')
     removeextras_regex = re.compile(r'\s+\[(\w,?)+\]')
@@ -53,7 +49,6 @@ class Parser:
     ]
 
     roles = ('student', 'employee', 'other')
-
 
     def feed(self, ref: str) -> str:
         """Generate an openmensa XML feed"""
@@ -77,7 +72,8 @@ class Parser:
             content = requests.get(url, headers=self.headers).text
         except requests.exceptions.ConnectionError as e:
             logging.warning(e)
-            content = requests.get(url, headers=self.headers, verify=False).text
+            content = requests.get(
+                url, headers=self.headers, verify=False).text
 
         # Fix table
         content = content.replace("</th>", "</td>").replace("<th ", "<td ")
@@ -167,7 +163,8 @@ class Parser:
                     # Category
                     if td0.find("h2"):
                         categoryName = canteenCategories[cat] + " " + \
-                            self.correct_capitalization(td0.find("h2").text.strip())
+                            self.correct_capitalization(
+                                td0.find("h2").text.strip())
                     else:
                         categoryName = canteenCategories[cat]
 
@@ -199,7 +196,8 @@ class Parser:
                             sup.append("%s" % (",".join(keep), ))
 
                     # Name
-                    name = self.whitespace.sub(" ", td0.text).strip().replace(" ,", ",")
+                    name = self.whitespace.sub(
+                        " ", td0.text).strip().replace(" ,", ",")
                     if not name:
                         # No meal for that day in this category
                         cat += 1
@@ -217,7 +215,7 @@ class Parser:
                         if len(spans) == 2:
                             notes.add(spans[1].text.strip() + " Preis")
                         prices = (price, price * employee_multiplier,
-                                price * guest_multiplier)
+                                  price * guest_multiplier)
 
                     canteen.addMeal(date, categoryName, name,
                                     notes, prices, self.roles if prices else None)
@@ -230,7 +228,6 @@ class Parser:
                 canteen.setDayClosed(closed)
 
         return canteen.toXMLFeed()
-
 
     def meta(self, ref):
         """Generate an openmensa XML meta feed using XSLT"""
@@ -269,12 +266,14 @@ class Parser:
                 metaOrFeed='meta', mensaReference=urllib.parse.quote(reference))
         return json.dumps(tmp, indent=2)
 
+
 def getParser(url_template):
     parser = Parser(url_template)
     return parser
+
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
     p = Parser("http://localhost/{metaOrFeed}/mannheim_{mensaReference}.xml")
     print(p.feed("schloss"))
-    #print(p.meta("schloss"))
+    # print(p.meta("schloss"))
