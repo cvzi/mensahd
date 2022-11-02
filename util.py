@@ -2,6 +2,7 @@
 
 import re
 import datetime
+import lxml
 from zoneinfo import ZoneInfo
 from pyopenmensa.feed import LazyBuilder
 
