@@ -4,13 +4,6 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2022-11-09">
-      <category name="Vorspeise">
-        <meal>
-          <name>Tagessuppe</name>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-      </category>
       <category name="Hauptgericht">
         <meal>
           <name>Indisches Auberginencurry mit Kichererbsenreis</name>
@@ -30,18 +23,6 @@
           <price role="student">3.30</price>
         </meal>
         <meal>
-          <name>Kassler Rücken Braten mit Bratensauce und Kartoffelpüree</name>
-          <note>Milch und Laktose</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Schwein</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
-          <note>mit Konservierungsstoffen</note>
-          <note>mit Phosphaten</note>
-          <price role="employee">7.60</price>
-          <price role="student">5.10</price>
-        </meal>
-        <meal>
           <name>Hähnchen Cordon bleu und Pommes frites</name>
           <note>Ei</note>
           <note>Geflügel</note>
@@ -51,20 +32,19 @@
           <price role="employee">7.70</price>
           <price role="student">5.20</price>
         </meal>
+        <meal>
+          <name>Penne Bolognese überbacken</name>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <price role="employee">7.60</price>
+          <price role="student">5.10</price>
+        </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Tagesgemüse</name>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-        <meal>
-          <name>Kartoffelpüree</name>
-          <note>Milch und Laktose</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
-          <note>vegetarisch</note>
+          <name>Rosenkohl</name>
+          <note>Sellerie</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -73,21 +53,31 @@
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
-      </category>
-      <category name="Dessert">
         <meal>
-          <name>Erdbeerjoghurt</name>
-          <note>Milch und Laktose</note>
-          <note>mit Farbstoffen</note>
-          <note>vegetarisch</note>
+          <name>Reis</name>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
         <meal>
-          <name>Pudding mit Nuss-Geschmack</name>
-          <note>Mandeln</note>
+          <name>Spätzle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Weizen</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+      </category>
+      <category name="Dessert">
+        <meal>
+          <name>Heidelbeerjoghurt</name>
           <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
+          <note>mit Farbstoffen</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Bayerische Creme mit Zimtkirschen</name>
+          <note>Milch und Laktose</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
