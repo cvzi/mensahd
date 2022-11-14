@@ -4,8 +4,61 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2022-11-13">
-      <closed/>
+    <day date="2022-11-14">
+      <category name="Dessert">
+        <meal>
+          <name>Panna Cotta mit Gewürzbirne</name>
+          <note>Panna Cotta with spiced pear</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Veganer Bananenkuchen im Glas mit Zitronentopping</name>
+          <note>Vegan banana cake in a glass with a lemon topping</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Brokkolicremsuppe mit gerösteten Croutons</name>
+          <note>Cream of broccoli soup with housemade croutons</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Rindsbratwürste vom Boeuf de Hohenlohe mit Bratkatoffeln und Zwiebelsauce</name>
+          <note>Beef sausage with fried potatoes and an onion sauce</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Bowl mit gebackenen Bohnen, marinierten Kürbis, gebratenem Tofu und Cous Cous</name>
+          <note>Bowl with baked beans, marinated pumpkin, fried tofu and cous cous</note>
+          <price role="student">4.00</price>
+          <price role="employee">6.00</price>
+          <price role="other">10.00</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Schupfnudeln mit frischem Blattspinat und Tomaten in Frischkäse-Kräuter-Soße</name>
+          <note>Finger shaped potato dumplings with fresh spinach leaves,  tomatoes, and a cream cheese-herb-sauce</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
