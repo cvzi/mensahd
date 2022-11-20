@@ -10,13 +10,15 @@ Parser for [openmensa.org](https://openmensa.org/) for canteens of
 [Studierendenwerk Heidelberg](http://www.stw.uni-heidelberg.de/en/speiseplan),
 [Studierendenwerk Mannheim](https://www.stw-ma.de/Essen+_+Trinken/Men%C3%BCpl%C3%A4ne.html),
 [Studierendenwerk Stuttgart](https://www.studierendenwerk-stuttgart.de/gastronomie/speiseangebot)
-and [Studierendenwerk Ulm](https://studierendenwerk-ulm.de/essen-trinken/speiseplaene/).
+[Studierendenwerk Ulm](https://studierendenwerk-ulm.de/essen-trinken/speiseplaene/),
+and [Studierendenwerk Hamburg](https://www.stwhh.de/speiseplan/),
 
 Parser für [openmensa.org](https://openmensa.org/) für die Mensen des
 [Studierendenwerk Heidelberg](http://www.stw.uni-heidelberg.de/de/speiseplan),
 [Studierendenwerk Mannheim](https://www.stw-ma.de/Essen+_+Trinken/Men%C3%BCpl%C3%A4ne.html),
 [Studierendenwerk Stuttgart](https://www.studierendenwerk-stuttgart.de/gastronomie/speiseangebot)
-und [Studierendenwerk Ulm](https://studierendenwerk-ulm.de/essen-trinken/speiseplaene/).
+[Studierendenwerk Ulm](https://studierendenwerk-ulm.de/essen-trinken/speiseplaene/),
+und [Studierendenwerk Hamburg](https://www.stwhh.de/speiseplan/),
 
 |  Feeds       |                                         Status                                                                                                                  |                     Cron                                                                                                                                      |
 |:------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------:|
