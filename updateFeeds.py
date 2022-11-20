@@ -7,7 +7,8 @@ import urllib
 import urllib3
 import string
 
-allParsers = ['hamburg', 'eppelheim', 'heidelberg', 'mannheim', 'stuttgart', 'ulm']
+allParsers = ['hamburg', 'eppelheim',
+              'heidelberg', 'mannheim', 'stuttgart', 'ulm']
 
 repoPath = os.path.dirname(__file__)
 filenameTemplate = "{base}{{metaOrFeed}}/{parserName}_{{mensaReference}}.xml"
