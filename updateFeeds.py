@@ -86,8 +86,8 @@ def updateFeeds(force=None,
                 updateIndex=True,
                 selectedParser='',
                 selectedMensa='',
-                baseUrl=baseUrl,
-                basePath=basePath):
+                baseUrl=defaultBaseUrl,
+                basePath=defaultBasePath):
 
     errors = []
 
