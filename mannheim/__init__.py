@@ -35,7 +35,7 @@ class Parser:
     day_regex = re.compile(r'(?P<date>\d{2}\.\d{2}\.\d{4})')
     removeextras_regex = re.compile(r'\s+\[(\w,?)+\]')
     price_regex = re.compile(
-        'Bedienstete \+ (?P<employee>\d+)\%, Gäste \+ (?P<guest>\d+)\%')
+        'Bedienstete \\+ (?P<employee>\\d+)\\%, Gäste \\+ (?P<guest>\\d+)\\%')
     euro_regex = re.compile(r'(\d+,\d+) €')
     whitespace = re.compile(r'\s+')
     weekdays = [
