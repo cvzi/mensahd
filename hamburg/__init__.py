@@ -62,6 +62,7 @@ class Parser:
     }
 
     euro_regex = re.compile(r'(\d+)[,.](\d+)\s*€')
+
     def __init__(self, url_template):
 
         canteen_json = os.path.join(os.path.dirname(__file__), "hamburg.json")
@@ -100,7 +101,8 @@ class Parser:
                 logging.error(f"Mensa not found [id='{mensaId}']")
             return False
 
-        legend_spans = document.find(class_="menulegend").find_all(class_="textlegend--bold")
+        legend_spans = document.find(class_="menulegend").find_all(
+            class_="textlegend--bold")
 
         legend = {
             "48": "48",
