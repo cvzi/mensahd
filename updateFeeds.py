@@ -12,9 +12,9 @@ allParsers = ['hamburg', 'eppelheim',
 
 repoPath = os.path.dirname(__file__)
 filenameTemplate = "{base}{{metaOrFeed}}/{parserName}_{{mensaReference}}.xml"
-baseUrl = "https://cvzi.github.io/mensahd/"
 baseRepo = "https://github.com/cvzi/mensahd/"
-basePath = "docs/"
+defaultBaseUrl = "https://cvzi.github.io/mensahd/"
+defaultBasePath = "docs/"
 
 
 log_file = None
@@ -243,12 +243,12 @@ def startFromTerminal(exitAfterwards=True):
     parser.add_argument(
         '-url',
         dest='baseUrl',
-        default=baseUrl,
+        default=defaultBaseUrl,
         help='Base URL')
     parser.add_argument(
         '-out',
         dest='basePath',
-        default=basePath,
+        default=defaultBasePath,
         help='Output directory')
 
     args = parser.parse_args()
