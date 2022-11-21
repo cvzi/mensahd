@@ -32,10 +32,15 @@
           <price role="student">5.00</price>
         </meal>
         <meal>
-          <name>Blumenkohl Korma, Basmatireis</name>
+          <name>Blumenkohl Korma , Basmatireis</name>
           <note>Klimateller</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Konservierungsstoff</note>
           <price role="employee">3.60</price>
           <price role="other">4.80</price>
           <price role="student">2.30</price>
@@ -44,12 +49,12 @@
       <category name="CampusSpezial">
         <meal>
           <name>Cremiges Kräuter-Risotto mit geschmortem Kürbis, Orangenespuma und Kürbiskern-Crunsh</name>
-          <note>48</note>
           <note>Alkohol</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegetarisch</note>
+          <note>enthält tierisches Lab</note>
           <note>mit Konservierungsstoff</note>
           <price role="employee">6.80</price>
           <price role="other">8.00</price>
@@ -58,10 +63,11 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta des Tages</name>
-          <note>Klimateller</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Pasta mit Tomatensauce,Zucchini und Schafskäse</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>enthält tierisches Lab</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
@@ -70,10 +76,11 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Gemüse des Tages</name>
+          <name>Broccoli, Gartengemüse, Kohlrabigemüse, Kräuterkartoffeln</name>
           <note>Klimateller</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mensaVital</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -353,23 +360,6 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Pulled Pork Burger mit Cole slaw</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Lupine und - erzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schwein</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Farbstoff</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">7.20</price>
-          <price role="other">8.40</price>
-          <price role="student">5.90</price>
-        </meal>
-        <meal>
           <name>Blumenkohl-Bratling-Burger mit Cole slaw</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Lupine und - erzeugnisse</note>
@@ -387,24 +377,41 @@
           <price role="other">8.00</price>
           <price role="student">5.50</price>
         </meal>
+        <meal>
+          <name>Pulled Pork Burger mit Cole slaw</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Lupine und - erzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Schwein</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Farbstoff</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">7.20</price>
+          <price role="other">8.40</price>
+          <price role="student">5.90</price>
+        </meal>
       </category>
       <category name="CampusWorld">
-        <meal>
-          <name>Extra: Pommes Frites</name>
-          <note>Klimateller</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.40</price>
-          <price role="other">1.55</price>
-          <price role="student">1.30</price>
-        </meal>
         <meal>
           <name>Extra: Kartoffelspalten</name>
           <note>Klimateller</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">1.40</price>
+          <price role="other">1.55</price>
+          <price role="student">1.30</price>
+        </meal>
+        <meal>
+          <name>Extra: Pommes Frites</name>
+          <note>Klimateller</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.40</price>
           <price role="other">1.55</price>
           <price role="student">1.30</price>
@@ -525,20 +532,6 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Vegetarische Bratwurst , mit verschiedenen Grillsoßen , Pommes Frites</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Klimateller</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">5.10</price>
-          <price role="other">6.30</price>
-          <price role="student">3.80</price>
-        </meal>
-        <meal>
           <name>Currybratwurst , mit verschiedenen Grillsoßen , Pommes Frites</name>
           <note>Schwein</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -552,6 +545,20 @@
           <price role="employee">6.10</price>
           <price role="other">7.30</price>
           <price role="student">4.80</price>
+        </meal>
+        <meal>
+          <name>Vegetarische Bratwurst , mit verschiedenen Grillsoßen , Pommes Frites</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Klimateller</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">5.10</price>
+          <price role="other">6.30</price>
+          <price role="student">3.80</price>
         </meal>
       </category>
       <category name="CampusSpezial">
@@ -650,12 +657,12 @@
       <category name="CampusSpezial">
         <meal>
           <name>Caesars salad mit gerösteten Perlgraupen, Ei, Hartkäse und Croutons</name>
-          <note>48</note>
           <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Senf und Senferzeugnisse</note>
           <note>Vegetarisch</note>
+          <note>enthält tierisches Lab</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <note>mit Konservierungsstoff</note>
           <price role="employee">6.10</price>
@@ -664,13 +671,13 @@
         </meal>
         <meal>
           <name>Caesars salad mit Hähnchenstreifen, gerösteten Perlgraupen, Ei, Hartkäse und Croutons</name>
-          <note>48</note>
           <note>Ei und Eierzeugnisse</note>
           <note>Geflügel</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Senf und Senferzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
+          <note>enthält tierisches Lab</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <note>mit Konservierungsstoff</note>
           <price role="employee">7.20</price>
@@ -732,20 +739,6 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Baked Potato &quot;Mexican&quot; mit Chili con carne, Kidneybohnen, Mais, Jalapeneos, Nachos und Sourcreme</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Rind</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Geschmacksverstärker</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">6.90</price>
-          <price role="other">8.10</price>
-          <price role="student">5.60</price>
-        </meal>
-        <meal>
           <name>Baked Potato &quot;Mexican&quot; mit Chili sin carne, Kidneybohnen, Mais, Jalapeneos, Nachos und Sourcreme</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Klimateller</note>
@@ -759,6 +752,20 @@
           <price role="employee">6.20</price>
           <price role="other">7.40</price>
           <price role="student">4.90</price>
+        </meal>
+        <meal>
+          <name>Baked Potato &quot;Mexican&quot; mit Chili con carne, Kidneybohnen, Mais, Jalapeneos, Nachos und Sourcreme</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Rind</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Geschmacksverstärker</note>
+          <note>mit Konservierungsstoff</note>
+          <price role="employee">6.90</price>
+          <price role="other">8.10</price>
+          <price role="student">5.60</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -906,11 +913,11 @@
       <category name="CampusSpezial">
         <meal>
           <name>Ziegenkäse auf cremigem Rote-Beete-Risotto und Walnuss - Crunsh</name>
-          <note>48</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Schalenfrüchte (z.B. Mandel, Haselnüsse, Walnuss etc.)/-erzeugnisse</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegetarisch</note>
+          <note>enthält tierisches Lab</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <note>mit Konservierungsstoff</note>
           <note>mit Süßungsmittel</note>

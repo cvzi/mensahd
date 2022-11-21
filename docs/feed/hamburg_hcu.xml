@@ -4,9 +4,31 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2022-11-21">
+      <category name="Pottkieker">
+        <meal>
+          <name>Kartoffelsuppe mit Baguette</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">1.40</price>
+          <price role="other">1.55</price>
+          <price role="student">1.30</price>
+        </meal>
+        <meal>
+          <name>Warmer Apfelstrudel , Vanillesoße</name>
+          <note>Klimateller</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">3.10</price>
+          <price role="other">3.80</price>
+          <price role="student">1.90</price>
+        </meal>
+      </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Paniertes Putenschnitzel , Ratatouille , Rosmarinkartoffeln</name>
+          <name>Hähnchenbrust natur gebraten , Ratatouille , Rosmarinkartoffeln</name>
           <note>Geflügel</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -14,20 +36,6 @@
           <price role="employee">6.10</price>
           <price role="other">9.60</price>
           <price role="student">4.80</price>
-        </meal>
-      </category>
-      <category name="CampusSpezial">
-        <meal>
-          <name>Pilzragout , Semmelklöße</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">6.30</price>
-          <price role="other">10.00</price>
-          <price role="student">5.00</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -38,6 +46,15 @@
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.50</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Maultaschen gefüllt mit Brokkoli und Pilzrahmsauce</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Vegetarisch</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.50</price>
@@ -115,13 +132,13 @@
       <category name="CampusKlassiker">
         <meal>
           <name>Cheeseburger mit Gurken, Tomaten und Salat , Pommes Frites</name>
-          <note>48</note>
           <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Rind</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Senf und Senferzeugnisse</note>
           <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>enthält tierisches Lab</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <note>mit Antioxidationsmittel</note>
           <note>mit Farbstoff</note>
@@ -184,6 +201,15 @@
     <day date="2022-11-28">
       <category name="CampusKlassiker">
         <meal>
+          <name>Kartoffelgulasch mit Pilzen , Schnittlauch-Schmand , Kräuterreis</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">5.10</price>
+          <price role="other">7.60</price>
+          <price role="student">3.80</price>
+        </meal>
+        <meal>
           <name>Grünkohl , vegetarische Bratwurst , Röstkartoffeln</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Klimateller</note>
@@ -194,15 +220,6 @@
           <price role="employee">5.50</price>
           <price role="other">8.40</price>
           <price role="student">4.20</price>
-        </meal>
-        <meal>
-          <name>Kartoffelgulasch mit Pilzen , Schnittlauch-Schmand , Kräuterreis</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegetarisch</note>
-          <price role="employee">5.10</price>
-          <price role="other">7.60</price>
-          <price role="student">3.80</price>
         </meal>
         <meal>
           <name>Grünkohl , Kochwurst , Röstkartoffeln</name>
@@ -243,7 +260,6 @@
           <note>Geflügel</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>mensaVital</note>
           <price role="employee">1.30</price>
         </meal>
         <meal>
@@ -251,6 +267,7 @@
           <note>Geflügel</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>mensaVital</note>
           <price role="employee">1.30</price>
         </meal>
       </category>
