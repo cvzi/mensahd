@@ -18,6 +18,18 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
+          <name>Grünkohl , vegetarische Bratwurst , Röstkartoffeln</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Klimateller</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.50</price>
+          <price role="other">6.70</price>
+          <price role="student">4.20</price>
+        </meal>
+        <meal>
           <name>Grünkohl , Kochwurst , Röstkartoffeln</name>
           <note>Rind</note>
           <note>Schwein</note>
@@ -30,18 +42,6 @@
           <price role="employee">5.30</price>
           <price role="other">6.50</price>
           <price role="student">4.00</price>
-        </meal>
-        <meal>
-          <name>Grünkohl , vegetarische Bratwurst , Röstkartoffeln</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Klimateller</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.50</price>
-          <price role="other">6.70</price>
-          <price role="student">4.20</price>
         </meal>
       </category>
       <category name="CampusSpezial">
@@ -72,7 +72,19 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta Arcobaleno mit Schinken und Käse , Fusilli</name>
+          <name>Vegane Kokos-Currysoße mit Tomate und Knoblauch , Pasta</name>
+          <note>Klimateller</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Pasta Arcobaleno mit Schinken und Käse , Pasta</name>
           <note>48</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
@@ -87,23 +99,16 @@
           <price role="other">1.15</price>
           <price role="student">0.75</price>
         </meal>
-        <meal>
-          <name>Vegane Aglio Olio mit Tomate und Knoblauch, Fusilli</name>
-          <note>Klimateller</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Gemüsebar des Tages</name>
+          <name>Maiskolben, Blumenkohl, Karottengemüse in Sojarahm , gebratene Champignons , Kurkumareis mit Erbsen</name>
           <note>Klimateller</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -252,19 +257,19 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta in pikanter Zucchini-Tomatensoße , Penne</name>
+          <name>Ragout Bianco mit Rinderhackfleisch und Kräutern , Penne</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Vegetarisch</note>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Ragout Bianco mit Rinderhackfleisch und Kräutern , Penne</name>
+          <name>Pasta in pikanter Zucchini-Tomatensoße , Penne</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Rind</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
@@ -440,16 +445,6 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Spinatsahnesoße , Vollkorn Penne</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
           <name>Pasta Carbonara mit Speck , Vollkorn Penne</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Schwein</note>
@@ -457,6 +452,16 @@
           <note>mit Antioxidationsmittel</note>
           <note>mit Konservierungsstoff</note>
           <note>mit Phosphat</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Spinatsahnesoße , Vollkorn Penne</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
