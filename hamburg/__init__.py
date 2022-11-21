@@ -26,6 +26,8 @@ except ModuleNotFoundError:
 # This parser is similar to Köln: https://github.com/cvzi/mensa/blob/b5673d3437b195057aeea3260e1979b6697ed216/koeln/__init__.py
 
 
+# TODO remove "new" 🆕 from names
+
 headers = {
     'User-Agent': f'{useragentname}/{__version__} ({useragentcomment}) {requests.utils.default_user_agent()}'
 }
@@ -105,7 +107,7 @@ class Parser:
             class_="textlegend--bold")
 
         legend = {
-            "48": "48",
+            "48": "enthält tierisches Lab",  # TODO remove this when it is added to the website?
         }
         for span in legend_spans:
             short = span.text.strip()
