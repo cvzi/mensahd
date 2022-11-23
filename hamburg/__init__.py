@@ -86,7 +86,8 @@ class Parser:
 
     def _parseMealsUrl(self, lazyBuilder, mensaId, t_date):
         found_any_meals = False
-        document = _getMealsDocument(self.meals_url_all_canteens.format(date=t_date))
+        document = _getMealsDocument(
+            self.meals_url_all_canteens.format(date=t_date))
 
         mensaDivs = document.find_all(
             "div", class_="tx-epwerkmenu-menu-location-container")
@@ -125,7 +126,8 @@ class Parser:
             category_wrappers = time_wrapper.find_all(
                 "div", class_="menulist__categorywrapper")
             for category_wrapper in category_wrappers:
-                category_title = category_wrapper.find(class_="menulist__categorytitle")
+                category_title = category_wrapper.find(
+                    class_="menulist__categorytitle")
                 if category_title:
                     category = category_title.text.strip()
                 elif category_wrapper.find(class_="singlemeal--highlight"):
