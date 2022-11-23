@@ -34,23 +34,24 @@ headers = {
 
 # Global vars for caching
 cacheMealsLock = Lock()
-cacheMealsData = {}
+cacheMealsDocuments = {}
 cacheMealsTime = {}
 
 
-def _getMealsURL(url, maxAgeMinutes=30):
-    """Download website, if available use a cached version"""
-    if url in cacheMealsData:
+def _getMealsDocument(url, maxAgeMinutes=20):
+    """Download and parse website, if available use a cached version"""
+    if url in cacheMealsDocuments:
         ageSeconds = (time.time() - cacheMealsTime[url])
         if ageSeconds < maxAgeMinutes * 60:
             logging.debug(f"From cache: {url} [{round(ageSeconds)}s old]")
-            return cacheMealsData[url]
+            return cacheMealsDocuments[url]
 
     content = requests.get(url, headers=headers, timeout=10 * 60).text
+    document = BeautifulSoup(content, "html.parser")
     with cacheMealsLock:
-        cacheMealsData[url] = content
+        cacheMealsDocuments[url] = document
         cacheMealsTime[url] = time.time()
-    return content
+    return document
 
 
 class Parser:
@@ -85,8 +86,7 @@ class Parser:
 
     def _parseMealsUrl(self, lazyBuilder, mensaId, t_date):
         found_any_meals = False
-        content = _getMealsURL(self.meals_url_all_canteens.format(date=t_date))
-        document = BeautifulSoup(content, "html.parser")
+        document = _getMealsDocument(self.meals_url_all_canteens.format(date=t_date))
 
         mensaDivs = document.find_all(
             "div", class_="tx-epwerkmenu-menu-location-container")
@@ -125,7 +125,6 @@ class Parser:
             category_wrappers = time_wrapper.find_all(
                 "div", class_="menulist__categorywrapper")
             for category_wrapper in category_wrappers:
-
                 category_title = category_wrapper.find(class_="menulist__categorytitle")
                 if category_title:
                     category = category_title.text.strip()
