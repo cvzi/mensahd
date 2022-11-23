@@ -126,8 +126,13 @@ class Parser:
                 "div", class_="menulist__categorywrapper")
             for category_wrapper in category_wrappers:
 
-                category = category_wrapper.find(
-                    class_="menulist__categorytitle").text.strip()
+                category_title = category_wrapper.find(class_="menulist__categorytitle")
+                if category_title:
+                    category = category_title.text.strip()
+                elif category_wrapper.find(class_="singlemeal--highlight"):
+                    category = "Highlight"
+                else:
+                    category = "Menü"
 
                 menu_tiles = category_wrapper.find_all(class_="menue-tile")
                 for menu_tile in menu_tiles:
