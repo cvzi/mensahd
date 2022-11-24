@@ -4,9 +4,33 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2022-11-24">
+      <category name="Pottkieker">
+        <meal>
+          <name>Chili con Carne , Baguette Brötchen</name>
+          <note>Rind</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Konservierungsstoff</note>
+          <price role="employee">1.40</price>
+          <price role="other">1.55</price>
+          <price role="student">1.30</price>
+        </meal>
+        <meal>
+          <name>2 Quarkkeulchen , Apfelmus</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Klimateller</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">3.10</price>
+          <price role="other">3.80</price>
+          <price role="student">1.90</price>
+        </meal>
+      </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Cheeseburger mit Gurken, Tomaten und Salat , Pommes Frites</name>
+          <name>Cheeseburger mit Käse, Tomaten und Salat , Pommes Frites</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Rind</note>
@@ -24,6 +48,34 @@
           <price role="student">4.00</price>
         </meal>
       </category>
+      <category name="Pastabar">
+        <meal>
+          <name>Pasta Pollo mit Geflügelbrust in Tomatensoße</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.50</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Vegane Süßkartoffel-Gnocchi mit Curry-Gemüse in Sojasahne</name>
+          <note>Geschwefelt</note>
+          <note>Klimateller</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Farbstoff</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.50</price>
+          <price role="student">0.75</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2022-11-25">
       <category name="CampusWorld">
         <meal>
           <name>All in one Pot - Bulgur/ Soja/Weißkohl/ Cranberries/ Ananas/ Baby Leaf/ Asia Remoulade/Cashews</name>
@@ -37,28 +89,10 @@
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <note>mit Farbstoff</note>
           <note>mit Konservierungsstoff</note>
-          <price role="employee">6.50</price>
-          <price role="other">10.40</price>
-          <price role="student">5.20</price>
+          <price role="employee">4.30</price>
+          <price role="other">6.00</price>
+          <price role="student">3.00</price>
         </meal>
-      </category>
-    </day>
-    <day date="2022-11-25">
-      <category name="CampusVital">
-        <meal>
-          <name>Süßkartoffel-Gnocchi mit Curry-Blumenkohl, Hüttenkäse und Rucola</name>
-          <note>Geschwefelt</note>
-          <note>Klimateller</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Farbstoff</note>
-          <price role="employee">1.30</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
         <meal>
           <name>Schwedische Köttbullar , Rahmsoße , Preiselbeeren, Salzkartoffeln</name>
           <note>Ei und Eierzeugnisse</note>
