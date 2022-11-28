@@ -4,8 +4,61 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2022-11-27">
-      <closed/>
+    <day date="2022-11-28">
+      <category name="Dessert">
+        <meal>
+          <name>Frisch gebackene Pancakes mit Nuss-Noghurt-Creme und Banane</name>
+          <note>Freshly baked pancakes with a nut-yogurt cream and bananas</note>
+          <price role="student">3.00</price>
+          <price role="employee">4.50</price>
+          <price role="other">7.50</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Milchreis mit Apfelkompott und Zimt</name>
+          <note>Rice pudding with apple sauce and cinnamon </note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Minestrone mit Feldgemüse und Hausgemachter Pasta</name>
+          <note>Minestrone with vegetables and housemade pasta</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Weißer Wels mit Mandel-Brokkoli und hausgemachte Bio Pasta</name>
+          <note>White wels catfish with almond-broccoli and housemade organic pasta</note>
+          <price role="student">5.00</price>
+          <price role="employee">7.50</price>
+          <price role="other">12.50</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Gebratenes Wirsinggemüse mit Räuchertofu</name>
+          <note>Braised savoy cabbage with smoked tofu</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Aubergine aus dem Ofen in fruchtiger Tomatensauce und Schafskäse</name>
+          <note>Baked eggplant with fuity tomato sauce and sheep milk cheese</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
