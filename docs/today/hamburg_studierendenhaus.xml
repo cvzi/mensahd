@@ -6,6 +6,15 @@
     <day date="2022-11-28">
       <category name="CampusKlassiker">
         <meal>
+          <name>Kartoffelgulasch mit Pilzen , Schnittlauch-Schmand , Kräuterreis</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">5.10</price>
+          <price role="other">6.30</price>
+          <price role="student">3.80</price>
+        </meal>
+        <meal>
           <name>Currybratwurst , zur Auswahl, BBQ Soße , hot BBQ Soße mit Cola , fruchtige BBQ Soße , Pommes Frites , verschiedene Currypulver nach Wahl</name>
           <note>Geschwefelt</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
@@ -22,15 +31,6 @@
           <price role="employee">5.90</price>
           <price role="other">7.10</price>
           <price role="student">4.60</price>
-        </meal>
-        <meal>
-          <name>Kartoffelgulasch mit Pilzen , Schnittlauch-Schmand , Kräuterreis</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegetarisch</note>
-          <price role="employee">5.10</price>
-          <price role="other">6.30</price>
-          <price role="student">3.80</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -65,15 +65,6 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta Contadino mit Schweinefleisch und Zucchini , Gnocchi</name>
-          <note>Schwein</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
           <name>Sahnesoße mit getrockneten Tomaten und Basilikum , Gnocchi</name>
           <note>Geschwefelt</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
@@ -81,6 +72,15 @@
           <note>Vegetarisch</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <note>mit Konservierungsstoff</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Pasta Contadino mit Schweinefleisch und Zucchini , Gnocchi</name>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -159,8 +159,10 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Hähnchenstreifen al arrabiata, bunte Fusilli</name>
-          <note>Geflügel</note>
+          <name>Pasta Primavera mit Auberginen, Tomaten, Zucchini und Kapern , bunte Fusilli</name>
+          <note>Klimateller</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
@@ -168,10 +170,8 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Pasta Primavera mit Auberginen, Tomaten, Zucchini und Kapern , bunte Fusilli</name>
-          <note>Klimateller</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegan</note>
+          <name>Hähnchenstreifen al arrabiata, bunte Fusilli</name>
+          <note>Geflügel</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
@@ -196,17 +196,6 @@
     <day date="2022-11-30">
       <category name="CampusKlassiker">
         <meal>
-          <name>Hausgemachte Pasta , Hähnchenstreeifen in heller Gemüsesoße</name>
-          <note>Geflügel</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.40</price>
-          <price role="student">3.90</price>
-        </meal>
-        <meal>
           <name>Leberkäse im Ganzen gebacken , Sauerkraut mit Speck , Kartoffelpüree</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Schwein</note>
@@ -217,6 +206,17 @@
           <price role="employee">4.30</price>
           <price role="other">5.50</price>
           <price role="student">3.00</price>
+        </meal>
+        <meal>
+          <name>Hausgemachte Pasta , Hähnchenstreeifen in heller Gemüsesoße</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">5.20</price>
+          <price role="other">6.40</price>
+          <price role="student">3.90</price>
         </meal>
       </category>
       <category name="CampusSpezial">
@@ -286,17 +286,6 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Hausgemachte Lasagne Bolognese , Tomatensoße</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Neu</note>
-          <note>Rind</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">5.80</price>
-          <price role="other">7.00</price>
-          <price role="student">4.50</price>
-        </meal>
-        <meal>
           <name>Bacon Bomb Burger , Pommes Frites</name>
           <note>Alkohol</note>
           <note>Ei und Eierzeugnisse</note>
@@ -319,6 +308,17 @@
           <price role="other">8.00</price>
           <price role="student">5.50</price>
         </meal>
+        <meal>
+          <name>Hausgemachte Lasagne Bolognese , Tomatensoße</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Neu</note>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">5.80</price>
+          <price role="other">7.00</price>
+          <price role="student">4.50</price>
+        </meal>
       </category>
       <category name="CampusVital">
         <meal>
@@ -333,20 +333,20 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Tortellini mit Käsefüllung , Zucchini Walnusssoße</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schalenfrüchte (z.B. Mandel, Haselnüsse, Walnuss etc.)/-erzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <name>Hot &amp; Sweet Hähnchen mit Aubergine in Tomatensoße , Reis</name>
+          <note>Geflügel</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Hot &amp; Sweet Hähnchen mit Aubergine in Tomatensoße , Reis</name>
-          <note>Geflügel</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Tortellini mit Käsefüllung , Zucchini Walnusssoße</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Schalenfrüchte (z.B. Mandel, Haselnüsse, Walnuss etc.)/-erzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
