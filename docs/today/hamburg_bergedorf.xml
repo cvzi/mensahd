@@ -6,6 +6,15 @@
     <day date="2022-11-29">
       <category name="CampusKlassiker">
         <meal>
+          <name>Kartoffel-Hack-Auflauf , Käsesoße</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Rind</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">5.20</price>
+          <price role="other">6.40</price>
+          <price role="student">3.90</price>
+        </meal>
+        <meal>
           <name>Soja-Geschnetzeltes in Erdnusssoße , Nudeln</name>
           <note>Erdnüsse und Erdnusserzeugnisse</note>
           <note>Klimateller</note>
@@ -15,18 +24,9 @@
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <note>mit Konservierungsstoff</note>
-          <price role="employee">4.30</price>
-          <price role="other">5.30</price>
-          <price role="student">3.10</price>
-        </meal>
-        <meal>
-          <name>Kartoffel-Hack-Auflauf , Käsesoße</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Rind</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.40</price>
-          <price role="student">3.90</price>
+          <price role="employee">5.10</price>
+          <price role="other">6.30</price>
+          <price role="student">3.80</price>
         </meal>
       </category>
       <category name="CampusVital">
@@ -108,20 +108,6 @@
     <day date="2022-11-30">
       <category name="CampusKlassiker">
         <meal>
-          <name>Grünkohl , Kochwurst , Röstkartoffeln</name>
-          <note>Rind</note>
-          <note>Schwein</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Geschmacksverstärker</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Phosphat</note>
-          <price role="employee">5.30</price>
-          <price role="other">6.50</price>
-          <price role="student">4.00</price>
-        </meal>
-        <meal>
           <name>Grünkohl mit gerösteten Sonnblumenkernen , Röstkartoffeln</name>
           <note>Klimateller</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -134,6 +120,20 @@
           <price role="employee">5.50</price>
           <price role="other">6.70</price>
           <price role="student">4.20</price>
+        </meal>
+        <meal>
+          <name>Grünkohl , Kochwurst , Röstkartoffeln</name>
+          <note>Rind</note>
+          <note>Schwein</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Geschmacksverstärker</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Phosphat</note>
+          <price role="employee">5.30</price>
+          <price role="other">6.50</price>
+          <price role="student">4.00</price>
         </meal>
       </category>
       <category name="CampusVital">
@@ -215,15 +215,6 @@
       </category>
       <category name="CampusVital">
         <meal>
-          <name>Kokosnuss-Kichererbsen-Curry mit knusprigem Spitzkohl, Reis</name>
-          <note>Klimateller</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">4.10</price>
-          <price role="other">5.30</price>
-          <price role="student">2.80</price>
-        </meal>
-        <meal>
           <name>Rührei , Blattspinat in Rahm , Hausgemachtes Kartoffel-Butterstampf</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
@@ -232,6 +223,15 @@
           <price role="employee">4.50</price>
           <price role="other">5.70</price>
           <price role="student">3.20</price>
+        </meal>
+        <meal>
+          <name>Kokosnuss-Kichererbsen-Curry mit knusprigem Spitzkohl, Reis</name>
+          <note>Klimateller</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.10</price>
+          <price role="other">5.30</price>
+          <price role="student">2.80</price>
         </meal>
       </category>
       <category name="CampusSpezial">
@@ -252,20 +252,20 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Hot &amp; Sweet Hähnchen mit Aubergine in Tomatensoße , Reis</name>
-          <note>Geflügel</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
           <name>Tortellini mit Käsefüllung , Zucchini Walnusssoße</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Schalenfrüchte (z.B. Mandel, Haselnüsse, Walnuss etc.)/-erzeugnisse</note>
           <note>Vegetarisch</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Hot &amp; Sweet Hähnchen mit Aubergine in Tomatensoße , Reis</name>
+          <note>Geflügel</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
