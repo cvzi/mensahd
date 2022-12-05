@@ -4,8 +4,61 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2022-12-04">
-      <closed/>
+    <day date="2022-12-05">
+      <category name="Dessert">
+        <meal>
+          <name>Heidelbeer-Mousse</name>
+          <note>Blueberry mousse</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Hausgemachte Salted Karamell-Creme</name>
+          <note>Housemade salted caramel cream</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Rote-Beete-Suppe mit Meerrettich</name>
+          <note>Beetroot soup with horseradish</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Gyros vom schwäbisch Hällischem mit Tzatziki und Kartoffelspalten</name>
+          <note>Gyros with tzatziki und potato wedges</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Scharfes indisches Kichererbsen-Dal mit Duftreis und Minz-Joghurt</name>
+          <note>Spicy Indian chickpea dal with fragrant rice and mint-yogurt</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Bayrischer Hot-Dog im Laugenstange mit Sauerkraut, Essiggurken und Röstzwiebeln dazu Pommes frites</name>
+          <note>Bavarian hot dog in a pretzel roll with sauerkraut, pickles, fried onions and french fries</note>
+          <price role="student">4.00</price>
+          <price role="employee">6.00</price>
+          <price role="other">10.00</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
