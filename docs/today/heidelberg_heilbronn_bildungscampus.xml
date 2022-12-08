@@ -4,14 +4,59 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2022-12-07">
+    <day date="2022-12-08">
+      <category name="Dessert">
+        <meal>
+          <name>Kaiserschmarrn mit hausgemachter Vanille-Sauce</name>
+          <note>Shredded pancakes with housemade vanilla sauce </note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Hausgemachter Smoothie-Shot im Glas</name>
+          <note>Housemade smoothie shot</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Vegane Tom Kha Gai mit Pilzen und Tofu</name>
+          <note>Vegan Tom Kha Gai with mushrooms and tofu</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Kalbs-Ragout der bäuerlichen Erzeugergemeinschaft mit Rosenkohl und Spätzle</name>
+          <note>Veal ragout with Brussel sprouts and spaetzle noodles</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
       <category name="Vegan">
         <meal>
-          <name>Geschmorte Medaillons vom Butternut-Kürbis mit tomatisierten Reisnudeln und gebratenem Brokkoli</name>
-          <note>Braised butternut squash medaillons with tomato-rice noodles and roasted broccoli</note>
+          <name>Wrap mit Chili-Sin-Carne gefüllt, Kräuterschmand, Mais, Eisbergsalat und hausgemachte Guacamole</name>
+          <note>Wrap filled with chili sin carne, herbed-thick sour cream, corn, iceburg lettuce and housemade guacamole</note>
           <price role="student">4.00</price>
           <price role="employee">6.00</price>
           <price role="other">10.00</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Bohnen-Süßkartoffel Gulasch mit Paprika in pikanter Sauce und Wildreis</name>
+          <note>Bean-sweet potato-goulash in a spicy sauce with wild rice</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
         </meal>
       </category>
     </day>
