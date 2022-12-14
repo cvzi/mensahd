@@ -3,21 +3,21 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2022-12-13">
+    <day date="2022-12-14">
       <category name="Vorspeise">
         <meal>
-          <name>Weiße Bohnensuppe</name>
-          <note>Sellerie</note>
-          <note>Weizen</note>
+          <name>Tagessuppe</name>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Zartweizen-Pfanne mit Kürbis, Rosenkohl und Apfel</name>
+          <name>Veganes Gyros mit veganem Tzatziki, Paprikareis und Weißkrautsalat</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
-          <note>Weizen</note>
+          <note>Senf</note>
+          <note>Soja</note>
           <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
@@ -26,22 +26,22 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Pasta mit Austernpilzen und Frischkäse-Basilikum-Häubchen</name>
+          <name>Hackfleischröllchen mit Pfefferrahmsauce und Spirelli</name>
+          <note>Ei</note>
           <note>Milch und Laktose</note>
+          <note>Rind</note>
           <note>Weizen</note>
-          <note>vegetarisch</note>
-          <price role="employee">6.30</price>
-          <price role="student">3.80</price>
+          <price role="employee">6.10</price>
+          <price role="student">3.60</price>
         </meal>
         <meal>
-          <name>Paprikaknacker mit Paprikasauce und Pommes frites</name>
+          <name>Hähnchenbrustfilet Piccata Milanese mit Tomaten-Spaghetti</name>
+          <note>Geflügel</note>
           <note>Milch und Laktose</note>
-          <note>Schwein</note>
           <note>Sellerie</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Konservierungsstoffen</note>
-          <price role="employee">6.80</price>
-          <price role="student">4.30</price>
+          <note>Weizen</note>
+          <price role="employee">7.20</price>
+          <price role="student">4.70</price>
         </meal>
       </category>
       <category name="Aktion">
@@ -54,7 +54,7 @@
           <price role="student">4.75</price>
         </meal>
         <meal>
-          <name>Conchiglioni Quattro Fromaggi Sauce</name>
+          <name>Fusilloni Quattro Fromaggi Sauce</name>
           <note>Milch und Laktose</note>
           <note>Weizen</note>
           <note>hauseigene Nudelmanufaktur</note>
@@ -63,7 +63,7 @@
           <price role="student">4.45</price>
         </meal>
         <meal>
-          <name>Conchiglioni mit Pute, Champignons und Datteln</name>
+          <name>Fusilloni mit Pute, Champignons und Datteln</name>
           <note>Geflügel</note>
           <note>Weizen</note>
           <note>hauseigene Nudelmanufaktur</note>
@@ -73,13 +73,19 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Karotten-Erbsen-Gemüse</name>
-          <note>Sellerie</note>
+          <name>Tagesgemüse</name>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
         <meal>
-          <name>Pommes frites</name>
+          <name>Paprikareis</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Country Potatoes</name>
+          <note>Weizen</note>
           <note>vegan</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
@@ -95,7 +101,7 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Aprikosenjoghurt</name>
+          <name>Vanillejoghurt</name>
           <note>Milch und Laktose</note>
           <note>vegetarisch</note>
           <price role="employee">1.39</price>
