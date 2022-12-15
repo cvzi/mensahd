@@ -4,6 +4,21 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2022-12-15">
+      <category name="Pottkieker">
+        <meal>
+          <name>#süßeSÜNDE..., Oma´s karamellisierter Kaiserschmarrn , Pflaumenkompott , Apfelmus , Zimt und Zucker</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Lieblingsessen</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Farbstoff</note>
+          <price role="employee">3.10</price>
+          <price role="other">3.80</price>
+          <price role="student">1.90</price>
+        </meal>
+      </category>
       <category name="CampusKlassiker">
         <meal>
           <name>#curryWURSTtag..., vegetarische Currywurst , Grillsoße , Pommes Frites</name>
@@ -279,6 +294,27 @@
         </meal>
       </category>
       <category name="CampusSpezial">
+        <meal>
+          <name>#specialBURGER..,, Hähnchenbrustburger &quot;Tahini-Style&quot; , Kartoffeltwister</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">1.30</price>
+          <price role="other">2.50</price>
+        </meal>
+        <meal>
+          <name>#specialBURGER..,, Gemüseburger &quot;Tahini-Style&quot; , Kartoffeltwister</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">1.30</price>
+          <price role="other">2.50</price>
+        </meal>
         <meal>
           <name>Hühnchenkebap</name>
           <note>Geflügel</note>
@@ -807,29 +843,20 @@
           <price role="employee">1.30</price>
           <price role="other">2.50</price>
         </meal>
-        <meal>
-          <name>#specialBURGER..,, Hähnchenbrustburger &quot;Tahini-Style&quot; , Kartoffeltwister</name>
-          <note>Geflügel</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">1.30</price>
-          <price role="other">2.50</price>
-        </meal>
-        <meal>
-          <name>#specialBURGER..,, Gemüseburger &quot;Tahini-Style&quot; , Kartoffeltwister</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">1.30</price>
-          <price role="other">2.50</price>
-        </meal>
       </category>
       <category name="CampusWorld">
+        <meal>
+          <name>#rocktheWOK..,, Ente aus dem WOK mit frischen Gemüse, Ananas und Soja Soße , Basmatireis</name>
+          <note>Klimateller</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Konservierungsstoff</note>
+          <price role="employee">1.30</price>
+          <price role="other">2.50</price>
+        </meal>
         <meal>
           <name>#rocktheWOK..,, Ente aus dem WOK mit frischen Gemüse, Ananas und Soja Soße , Basmatireis</name>
           <note>Geflügel</note>
@@ -971,18 +998,6 @@
           <note>Lieblingsessen</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-        </meal>
-        <meal>
-          <name>#rocktheWOK..,, Ente aus dem WOK mit frischen Gemüse, Ananas und Soja Soße , Basmatireis</name>
-          <note>Klimateller</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">1.30</price>
-          <price role="other">2.50</price>
         </meal>
       </category>
     </day>
