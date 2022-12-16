@@ -3,12 +3,24 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2022-12-15">
-      <category name="Veganer renner">
+    <day date="2022-12-16">
+      <category name="Vorspeise">
         <meal>
-          <name>Nudelteigtaschen mit Spinatfüllung mit Napolisauce</name>
+          <name>Kürbissuppe</name>
+          <note>Milch und Laktose</note>
           <note>Sellerie</note>
           <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Veganer renner">
+        <meal>
+          <name>Sojageschnetzeltes indische Art und Duftreis</name>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>mit Konservierungsstoffen</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -16,26 +28,28 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Gemüse-Crossies mit Kürbisgemüse und Duftreis</name>
+          <name>Rigatoni mit Schinken-Sahne-Champignonsauce</name>
           <note>Milch und Laktose</note>
+          <note>Schwein</note>
           <note>Sellerie</note>
           <note>Soja</note>
           <note>Weizen</note>
-          <note>vegetarisch</note>
-          <price role="employee">6.70</price>
-          <price role="student">4.20</price>
-        </meal>
-        <meal>
-          <name>Gebackener Fleischkäse mit Bratensauce und Schupfnudeln</name>
-          <note>Ei</note>
-          <note>Rind</note>
-          <note>Schwein</note>
-          <note>Senf</note>
-          <note>Weizen</note>
           <note>mit Antioxidationsmitteln</note>
           <note>mit Konservierungsstoffen</note>
-          <price role="employee">6.80</price>
-          <price role="student">4.30</price>
+          <price role="employee">5.90</price>
+          <price role="student">3.40</price>
+        </meal>
+        <meal>
+          <name>Hamburger Pannfisch mit Dill-Senfsauce und Kartoffelchips</name>
+          <note>Fisch</note>
+          <note>MSC-zertifizierter Fisch (MSC-C-51632)</note>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <price role="employee">7.90</price>
+          <price role="student">5.40</price>
         </meal>
       </category>
       <category name="Aktion">
@@ -90,7 +104,7 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Kokos-Schlemmergemüse</name>
+          <name>Grüne Bohnen</name>
           <note>Sellerie</note>
           <note>vegan</note>
           <price role="employee">1.39</price>
@@ -103,20 +117,16 @@
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Kartoffelpüree</name>
-          <note>Milch und Laktose</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-        <meal>
           <name>Duftreis</name>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Kartoffelchips</name>
+          <note>vegan</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
         </meal>
       </category>
       <category name="Salat">
@@ -129,18 +139,18 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Vanillejoghurt</name>
-          <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-        <meal>
-          <name>Himbeerquark</name>
+          <name>Pudding mit Mokka-Geschmack</name>
           <note>Milch und Laktose</note>
           <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
+        </meal>
+        <meal>
+          <name>Ananasquark</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Buffet">
