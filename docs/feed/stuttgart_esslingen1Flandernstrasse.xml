@@ -3,72 +3,6 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2022-12-16">
-      <category name="Veganer renner">
-        <meal>
-          <name>Sojageschnetzeltes indische Art und Duftreis</name>
-          <note>Sellerie</note>
-          <note>Soja</note>
-          <note>mit Konservierungsstoffen</note>
-          <note>vegan</note>
-          <price role="employee">5.49</price>
-          <price role="student">2.99</price>
-        </meal>
-      </category>
-      <category name="Hauptgericht">
-        <meal>
-          <name>Rigatoni mit Schinken-Sahne-Champignonsauce</name>
-          <note>Milch und Laktose</note>
-          <note>Schwein</note>
-          <note>Sellerie</note>
-          <note>Soja</note>
-          <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Konservierungsstoffen</note>
-          <price role="employee">5.90</price>
-          <price role="student">3.40</price>
-        </meal>
-      </category>
-      <category name="Beilage">
-        <meal>
-          <name>Duftreis</name>
-          <note>vegan</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-      </category>
-      <category name="Salat">
-        <meal>
-          <name>Beilagensalat</name>
-          <note>Ei</note>
-          <note>Milch und Laktose</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Senf</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
-          <note>vegan</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-      </category>
-      <category name="Dessert">
-        <meal>
-          <name>Pfirsichjoghurt</name>
-          <note>Milch und Laktose</note>
-          <note>mit Farbstoffen</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-      </category>
-      <category name="Buffet">
-        <meal>
-          <name>Salatbar und Buffet</name>
-          <price role="employee">1.60</price>
-          <price role="student">1.10</price>
-        </meal>
-      </category>
-    </day>
     <day date="2022-12-17">
       <closed/>
     </day>
@@ -79,6 +13,7 @@
           <note>Hafer</note>
           <note>Sellerie</note>
           <note>Weizen</note>
+          <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
         </meal>
@@ -87,6 +22,7 @@
         <meal>
           <name>Backfisch und Kartoffelsalat mit Remouladensauce</name>
           <note>Ei</note>
+          <note>MSC-zertifizierter Fisch (MSC-C-51632)</note>
           <note>Milch und Laktose</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
@@ -112,6 +48,7 @@
         </meal>
         <meal>
           <name>Salzkartoffeln</name>
+          <note>vegan</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
@@ -125,7 +62,7 @@
           <note>Senf</note>
           <note>mit Antioxidationsmitteln</note>
           <note>mit Farbstoffen</note>
-          <note>vegan</note>
+          <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -134,6 +71,7 @@
         <meal>
           <name>Mousse mit Limone-Joghurt-Geschmack</name>
           <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
@@ -160,8 +98,9 @@
       <category name="Hauptgericht">
         <meal>
           <name>Hähnchenbrustfilet mit Sweet Chili Dip und Pommes frites</name>
-          <price role="employee">7.10</price>
-          <price role="student">4.60</price>
+          <note>Geflügel</note>
+          <price role="employee">6.70</price>
+          <price role="student">4.20</price>
         </meal>
       </category>
       <category name="Beilage">
@@ -186,7 +125,7 @@
           <note>Senf</note>
           <note>mit Antioxidationsmitteln</note>
           <note>mit Farbstoffen</note>
-          <note>vegan</note>
+          <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -214,6 +153,7 @@
           <name>Spaghetti an Tomatensugo mit Kräutern</name>
           <note>Sellerie</note>
           <note>Weizen</note>
+          <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
         </meal>
@@ -221,6 +161,8 @@
       <category name="Hauptgericht">
         <meal>
           <name>Rote Wurst mit Pusztasauce und Country Potatoes</name>
+          <note>Rind</note>
+          <note>Schwein</note>
           <note>Sellerie</note>
           <note>Senf</note>
           <note>Weizen</note>
@@ -248,7 +190,7 @@
           <note>Senf</note>
           <note>mit Antioxidationsmitteln</note>
           <note>mit Farbstoffen</note>
-          <note>vegan</note>
+          <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -258,6 +200,7 @@
           <name>Erdbeerjoghurt</name>
           <note>Milch und Laktose</note>
           <note>mit Farbstoffen</note>
+          <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
@@ -286,7 +229,9 @@
         <meal>
           <name>Zwiebelfleischkäse mit Paprikasauce und Kartoffelpüree</name>
           <note>Milch und Laktose</note>
+          <note>Rind</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Schwein</note>
           <note>Sellerie</note>
           <note>Senf</note>
           <note>Weizen</note>
@@ -304,6 +249,7 @@
           <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>mit Antioxidationsmitteln</note>
           <note>mit Farbstoffen</note>
+          <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -317,7 +263,7 @@
           <note>Senf</note>
           <note>mit Antioxidationsmitteln</note>
           <note>mit Farbstoffen</note>
-          <note>vegan</note>
+          <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -325,57 +271,6 @@
       <category name="Dessert">
         <meal>
           <name>Käsesahne Creme</name>
-          <note>Milch und Laktose</note>
-          <price role="employee">1.59</price>
-          <price role="student">1.19</price>
-        </meal>
-      </category>
-      <category name="Buffet">
-        <meal>
-          <name>Salatbar und Buffet</name>
-          <price role="employee">1.60</price>
-          <price role="student">1.10</price>
-        </meal>
-      </category>
-    </day>
-    <day date="2022-12-23">
-      <category name="Veganer renner">
-        <meal>
-          <name>Kartoffel-Gemüse-Pfanne</name>
-          <note>mit Antioxidationsmitteln</note>
-          <price role="employee">5.49</price>
-          <price role="student">2.99</price>
-        </meal>
-      </category>
-      <category name="Hauptgericht">
-        <meal>
-          <name>Allgäuer Käsespätzle mit Zwiebelschmelze</name>
-          <note>Dinkel</note>
-          <note>Ei</note>
-          <note>Milch und Laktose</note>
-          <note>Weizen</note>
-          <price role="employee">6.70</price>
-          <price role="student">4.20</price>
-        </meal>
-      </category>
-      <category name="Salat">
-        <meal>
-          <name>Beilagensalat</name>
-          <note>Ei</note>
-          <note>Milch und Laktose</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Senf</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
-          <note>vegan</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-      </category>
-      <category name="Dessert">
-        <meal>
-          <name>Nuss-Nougat-Pudding</name>
-          <note>Haselnüsse</note>
           <note>Milch und Laktose</note>
           <note>vegetarisch</note>
           <price role="employee">1.59</price>
@@ -390,7 +285,7 @@
         </meal>
       </category>
     </day>
-    <day date="2022-12-24">
+    <day date="2022-12-23">
       <closed/>
     </day>
   </canteen>
