@@ -4,6 +4,18 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2022-12-19">
+      <category name="Pottkieker">
+        <meal>
+          <name>Ungarische Rindergulaschsuppe</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Rind</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">1.40</price>
+          <price role="other">1.55</price>
+          <price role="student">1.30</price>
+        </meal>
+      </category>
       <category name="CampusKlassiker">
         <meal>
           <name>Chili sin carne , Reis</name>
@@ -52,15 +64,6 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta Contadino mit Schweinefleisch und Zucchini , Gnocchi</name>
-          <note>Schwein</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
           <name>Sahnesoße mit getrockneten Tomaten und Basilikum , Gnocchi</name>
           <note>Geschwefelt</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
@@ -72,13 +75,23 @@
           <price role="other">1.15</price>
           <price role="student">0.75</price>
         </meal>
+        <meal>
+          <name>Pasta Contadino mit Schweinefleisch und Zucchini , Gnocchi</name>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Bunter Gemüsemix mit gelben Karotten, Buttererbsen , Orientalisches Linsengemüse , Chili-Kartoffeln aus dem Ofen, Erbsen-Karotten Gemüse</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <name>Bunter Gemüsemix mit gelben Karotten, Erbsen, Orientalisches Linsengemüse , Chili-Kartoffeln aus dem Ofen, Erbsen-Karotten Gemüse</name>
+          <note>Klimateller</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegetarisch</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
