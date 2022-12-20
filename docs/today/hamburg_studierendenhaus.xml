@@ -4,6 +4,18 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2022-12-20">
+      <category name="Pottkieker">
+        <meal>
+          <name>Grießspeise</name>
+          <note>Klimateller</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">3.10</price>
+          <price role="other">3.80</price>
+          <price role="student">1.90</price>
+        </meal>
+      </category>
       <category name="CampusKlassiker">
         <meal>
           <name>Gemüsefrikadelle , Kresserahmsoße , Kartoffel Möhrenstampf</name>
@@ -43,10 +55,8 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta Primavera mit Auberginen, Tomaten, Zucchini und Kapern , bunte Fusilli</name>
-          <note>Klimateller</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegan</note>
+          <name>Hähnchenstreifen al arrabiata, bunte Fusilli</name>
+          <note>Geflügel</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
@@ -54,8 +64,10 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Hähnchenstreifen al arrabiata, bunte Fusilli</name>
-          <note>Geflügel</note>
+          <name>Pasta Primavera mit Auberginen, Tomaten, Zucchini und Kapern , bunte Fusilli</name>
+          <note>Klimateller</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
