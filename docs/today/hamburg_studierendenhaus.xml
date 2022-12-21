@@ -4,16 +4,29 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2022-12-21">
-      <category name="CampusKlassiker">
+      <category name="Pottkieker">
         <meal>
-          <name>Hausgemachte Pasta , mit Geflügelbrust in Tomatensoße</name>
-          <note>Geflügel</note>
+          <name>Toamten Zucchinisuppe Contadino mit Schweinefleisch</name>
+          <note>Schwein</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.40</price>
+          <price role="other">1.55</price>
+          <price role="student">1.30</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Thüringer Bratwurst , Karottengemüse in Kräuterrahm , Kartoffelpüree</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.40</price>
-          <price role="student">3.90</price>
+          <note>mit Phosphat</note>
+          <price role="employee">4.90</price>
+          <price role="other">6.10</price>
+          <price role="student">3.60</price>
         </meal>
         <meal>
           <name>Hausgemachte Pasta , mit Geflügelbrust in Tomatensoße</name>
@@ -34,20 +47,32 @@
           <price role="other">5.80</price>
           <price role="student">3.30</price>
         </meal>
+      </category>
+      <category name="CampusVital">
         <meal>
-          <name>Thüringer Bratwurst , Karottengemüse in Kräuterrahm , Kartoffelpüree</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schwein</note>
+          <name>Rosmarinhuhn mit Paprika Kichererbsengemüse , Tomatensoße, Couscous</name>
+          <note>Geflügel</note>
+          <note>Geschwefelt</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Phosphat</note>
-          <price role="employee">4.90</price>
-          <price role="other">6.10</price>
-          <price role="student">3.60</price>
+          <price role="employee">5.80</price>
+          <price role="other">7.00</price>
+          <price role="student">4.50</price>
         </meal>
       </category>
       <category name="Pastabar">
+        <meal>
+          <name>Pilzrahmoße mit Waldpilzen und Basilikumöl , Maccaroni</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
         <meal>
           <name>Pasta Don Pepe mit Räucherlachs und Spinat , Maccaroni</name>
           <note>Fisch und Fischerzeugnisse</note>
@@ -55,16 +80,6 @@
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <note>mit Fisch</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
-          <name>Pilzrahmoße mit Waldpilzen und Basilikumöl , Maccaroni</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
