@@ -35,16 +35,6 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Texashacksteak , Paprikarahmsoße , Penne</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Rind</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">5.40</price>
-          <price role="other">6.60</price>
-          <price role="student">4.10</price>
-        </meal>
-        <meal>
           <name>5 Hackbällchen , Paprikarahmsoße , Penne</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
@@ -55,12 +45,22 @@
           <price role="other">6.60</price>
           <price role="student">4.10</price>
         </meal>
+        <meal>
+          <name>Texashacksteak , Paprikarahmsoße , Penne</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Rind</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">5.40</price>
+          <price role="other">6.60</price>
+          <price role="student">4.10</price>
+        </meal>
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Bolognese, , Pasta nach Wahl</name>
-          <note>Rind</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Veg. Pastabar des Tages</name>
+          <note>Klimateller</note>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
@@ -68,9 +68,9 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Veg. Pastabar des Tages</name>
-          <note>Klimateller</note>
-          <note>Vegan</note>
+          <name>Bolognese, , Pasta nach Wahl</name>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
@@ -91,18 +91,6 @@
       </category>
     </day>
     <day date="2022-12-22">
-      <category name="Pottkieker">
-        <meal>
-          <name>Grießspeise , Zimt und Zucker</name>
-          <note>Klimateller</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">3.10</price>
-          <price role="other">3.80</price>
-          <price role="student">1.90</price>
-        </meal>
-      </category>
       <category name="CampusKlassiker">
         <meal>
           <name>Thüringer Bratwurst , Karottengemüse in Kräuterrahm , Hausgemachtes Kartoffel-Butterstampf</name>
@@ -169,15 +157,16 @@
     <day date="2022-12-23">
       <category name="Pottkieker">
         <meal>
-          <name>Germknödel , Vanillesoße</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Klimateller</note>
+          <name>Rindergeschnetzeltes Stroganoff Art , Pasta</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Vegetarisch</note>
+          <note>Rind</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">3.10</price>
-          <price role="other">3.80</price>
-          <price role="student">1.90</price>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
         </meal>
       </category>
       <category name="CampusSpezial">
@@ -205,9 +194,9 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Veg. Pastabar des Tages</name>
-          <note>Klimateller</note>
-          <note>Vegan</note>
+          <name>Pastabar Fleisch oder Hähnchen des Tages</name>
+          <note>Geflügel</note>
+          <note>Rind</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
@@ -215,9 +204,9 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Pastabar Fleisch oder Hähnchen des Tages</name>
-          <note>Geflügel</note>
-          <note>Rind</note>
+          <name>Veg. Pastabar des Tages</name>
+          <note>Klimateller</note>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
