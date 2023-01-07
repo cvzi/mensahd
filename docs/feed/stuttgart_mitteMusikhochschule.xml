@@ -3,7 +3,564 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2023-01-06">
+    <day date="2023-01-07">
+      <closed/>
+    </day>
+    <day date="2023-01-09">
+      <category name="Vorspeise">
+        <meal>
+          <name>Nudelsuppe</name>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Veganer renner">
+        <meal>
+          <name>Penne mit Champignons und Cocktailtomaten</name>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>vegan</note>
+          <price role="employee">5.49</price>
+          <price role="student">2.99</price>
+        </meal>
+      </category>
+      <category name="Hauptgericht">
+        <meal>
+          <name>Mini-Frühlingsrollen mit fruchtiger Currysauce und Duftreis</name>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">7.40</price>
+          <price role="student">4.90</price>
+        </meal>
+        <meal>
+          <name>Paniertes Schweineschnitzel mit Rahmsauce ,Preiselbeeren und Spätzle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Schwein</note>
+          <note>Weizen</note>
+          <price role="employee">7.70</price>
+          <price role="student">5.20</price>
+        </meal>
+      </category>
+      <category name="Beilage">
+        <meal>
+          <name>Erbsen</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Spätzle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+      </category>
+      <category name="Salat">
+        <meal>
+          <name>Beilagensalat</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Dessert">
+        <meal>
+          <name>Creme mit Stracciatella-Geschmack</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+        <meal>
+          <name>Kirschjoghurt</name>
+          <note>Milch und Laktose</note>
+          <note>mit Farbstoffen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Berliner mit Fruchtfüllung</name>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">0.66</price>
+          <price role="student">0.66</price>
+        </meal>
+      </category>
+      <category name="Buffet">
+        <meal>
+          <name>Salatbar und Buffet</name>
+          <price role="employee">1.60</price>
+          <price role="student">1.10</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-01-10">
+      <category name="Vorspeise">
+        <meal>
+          <name>Tomatensuppe</name>
+          <note>Sellerie</note>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Veganer renner">
+        <meal>
+          <name>Alu Gobhi - indisches Blumenkohl-Kartoffel-Curry</name>
+          <note>Hafer</note>
+          <note>Sellerie</note>
+          <note>mit Konservierungsstoffen</note>
+          <note>vegan</note>
+          <price role="employee">5.49</price>
+          <price role="student">2.99</price>
+        </meal>
+      </category>
+      <category name="Hauptgericht">
+        <meal>
+          <name>Vegetarisches Schnitzel mit Käsefüllung an Ratatouille-Gemüse und Schupfnudeln</name>
+          <note>Ei</note>
+          <note>Hafer</note>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>mit Farbstoffen</note>
+          <note>vegetarisch</note>
+          <price role="employee">7.70</price>
+          <price role="student">5.20</price>
+        </meal>
+        <meal>
+          <name>Älpler Makkaroni mit Kartoffeln und Apfelmus</name>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Schwein</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Konservierungsstoffen</note>
+          <price role="employee">6.00</price>
+          <price role="student">3.50</price>
+        </meal>
+      </category>
+      <category name="Beilage">
+        <meal>
+          <name>Ratatouille-Gemüse</name>
+          <note>Sellerie</note>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Reis</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Schupfnudeln</name>
+          <note>Ei</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+      </category>
+      <category name="Salat">
+        <meal>
+          <name>Beilagensalat</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Dessert">
+        <meal>
+          <name>Mousse mit Limone-Joghurt-Geschmack</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+        <meal>
+          <name>Himbeerquark</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+        <meal>
+          <name>Berliner mit Fruchtfüllung</name>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">0.66</price>
+          <price role="student">0.66</price>
+        </meal>
+      </category>
+      <category name="Buffet">
+        <meal>
+          <name>Salatbar und Buffet</name>
+          <price role="employee">1.60</price>
+          <price role="student">1.10</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-01-11">
+      <category name="Vorspeise">
+        <meal>
+          <name>Blumenkohlsuppe</name>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Veganer renner">
+        <meal>
+          <name>Linsen und vegane Spätzle</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>vegan</note>
+          <price role="employee">5.49</price>
+          <price role="student">2.99</price>
+        </meal>
+      </category>
+      <category name="Hauptgericht">
+        <meal>
+          <name>Linsen und Spätzle mit Saiten</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Rind</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Schwein</note>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Farbstoffen</note>
+          <price role="employee">6.40</price>
+          <price role="student">3.90</price>
+        </meal>
+        <meal>
+          <name>Hähnchenkeule an Schaschliksauce mit Schwenkkartoffeln</name>
+          <note>Geflügel</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>mit Süßungsmitteln</note>
+          <price role="employee">7.10</price>
+          <price role="student">4.60</price>
+        </meal>
+      </category>
+      <category name="Beilage">
+        <meal>
+          <name>Kaisergemüse</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Schwenkkartoffeln</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Spätzle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+      </category>
+      <category name="Salat">
+        <meal>
+          <name>Beilagensalat</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Dessert">
+        <meal>
+          <name>Früchtequark</name>
+          <note>Milch und Laktose</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+        <meal>
+          <name>Sahneschokopudding</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+        <meal>
+          <name>Berliner mit Fruchtfüllung</name>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">0.66</price>
+          <price role="student">0.66</price>
+        </meal>
+      </category>
+      <category name="Buffet">
+        <meal>
+          <name>Salatbar und Buffet</name>
+          <price role="employee">1.60</price>
+          <price role="student">1.10</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-01-12">
+      <category name="Vorspeise">
+        <meal>
+          <name>Grießklößchensuppe</name>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Veganer renner">
+        <meal>
+          <name>Bandnudeln mit Rucola-Sonnenblumenkernpesto</name>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">5.49</price>
+          <price role="student">2.99</price>
+        </meal>
+      </category>
+      <category name="Hauptgericht">
+        <meal>
+          <name>Semmelknödel mit Rahmchampignons</name>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>vegetarisch</note>
+          <price role="employee">6.10</price>
+          <price role="student">3.60</price>
+        </meal>
+        <meal>
+          <name>6 Mini Nürnberger Bratwürste mit Bratensauce mit Sauerkraut und Kartoffelpüree</name>
+          <note>Milch und Laktose</note>
+          <note>Rind</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Schwein</note>
+          <note>Senf</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Farbstoffen</note>
+          <note>mit Phosphaten</note>
+          <price role="employee">7.40</price>
+          <price role="student">4.90</price>
+        </meal>
+      </category>
+      <category name="Beilage">
+        <meal>
+          <name>Grüne Bohnen</name>
+          <note>Sellerie</note>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Kartoffelpüree</name>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Farbstoffen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Country Potatoes</name>
+          <note>Weizen</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+      </category>
+      <category name="Salat">
+        <meal>
+          <name>Beilagensalat</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Dessert">
+        <meal>
+          <name>Bayerische Creme mit Zimtkirschen</name>
+          <note>Milch und Laktose</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+        <meal>
+          <name>Früchtemüsli</name>
+          <note>Gerste</note>
+          <note>Hafer</note>
+          <note>Haselnüsse</note>
+          <note>Mandeln</note>
+          <note>Milch und Laktose</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+        <meal>
+          <name>Berliner mit Fruchtfüllung</name>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">0.66</price>
+          <price role="student">0.66</price>
+        </meal>
+      </category>
+      <category name="Buffet">
+        <meal>
+          <name>Salatbar und Buffet</name>
+          <price role="employee">1.60</price>
+          <price role="student">1.10</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-01-13">
+      <category name="Vorspeise">
+        <meal>
+          <name>Kartoffelsuppe</name>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Veganer renner">
+        <meal>
+          <name>Spaghetti mit Sojabolognese</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>mit Alkohol</note>
+          <note>vegan</note>
+          <price role="employee">5.49</price>
+          <price role="student">2.99</price>
+        </meal>
+      </category>
+      <category name="Hauptgericht">
+        <meal>
+          <name>Börek mit Spinatfüllung und Bulgur-Gemüsesalat</name>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Geschmacksverstärkern</note>
+          <note>mit Konservierungsstoffen</note>
+          <note>vegan</note>
+          <price role="employee">7.30</price>
+          <price role="student">4.80</price>
+        </meal>
+        <meal>
+          <name>Seelachs in der Sesampanade mit Sweet Chili Gemüse Sauce und Reis</name>
+          <note>Fisch</note>
+          <note>MSC-zertifizierter Fisch (MSC-C-51632)</note>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Sesam</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Konservierungsstoffen</note>
+          <price role="employee">7.90</price>
+          <price role="student">5.40</price>
+        </meal>
+      </category>
+      <category name="Beilage">
+        <meal>
+          <name>Romanesco mit gerösteten Mandeln</name>
+          <note>Mandeln</note>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Reis</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Salat">
+        <meal>
+          <name>Beilagensalat</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Dessert">
+        <meal>
+          <name>Kokosmilchreis mit Mango</name>
+          <note>Soja</note>
+          <note>vegan</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+        <meal>
+          <name>Mousse au chocolat</name>
+          <note>Milch und Laktose</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+        <meal>
+          <name>Berliner mit Fruchtfüllung</name>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">0.66</price>
+          <price role="student">0.66</price>
+        </meal>
+      </category>
+      <category name="Buffet">
+        <meal>
+          <name>Salatbar und Buffet</name>
+          <price role="employee">1.60</price>
+          <price role="student">1.10</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-01-14">
       <closed/>
     </day>
   </canteen>
