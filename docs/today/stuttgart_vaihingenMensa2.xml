@@ -3,12 +3,13 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2023-01-09">
+    <day date="2023-01-10">
       <category name="Vorspeise">
         <meal>
-          <name>Broccolisuppe</name>
+          <name>Lauchcremsuppe</name>
           <note>Milch und Laktose</note>
           <note>Sellerie</note>
+          <note>Weizen</note>
           <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
@@ -16,9 +17,10 @@
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Penne mit Champignons und Cocktailtomaten</name>
-          <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
+          <name>Alu Gobhi - indisches Blumenkohl-Kartoffel-Curry</name>
+          <note>Hafer</note>
+          <note>Sellerie</note>
+          <note>mit Konservierungsstoffen</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -26,23 +28,25 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Mini-Frühlingsrollen mit fruchtiger Currysauce und Duftreis</name>
-          <note>Milch und Laktose</note>
-          <note>Sellerie</note>
-          <note>Weizen</note>
-          <note>vegetarisch</note>
-          <price role="employee">7.40</price>
-          <price role="student">4.90</price>
-        </meal>
-        <meal>
-          <name>Paniertes Schweineschnitzel mit Rahmsauce ,Preiselbeeren und Spätzle</name>
-          <note>Dinkel</note>
+          <name>Älpler Makkaroni mit Kartoffeln und Apfelmus</name>
           <note>Ei</note>
           <note>Milch und Laktose</note>
           <note>Schwein</note>
+          <note>Sellerie</note>
           <note>Weizen</note>
-          <price role="employee">7.70</price>
-          <price role="student">5.20</price>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Konservierungsstoffen</note>
+          <price role="employee">6.00</price>
+          <price role="student">3.50</price>
+        </meal>
+        <meal>
+          <name>Seelachsfilet auf mediterranem Gemüsebett und Reis</name>
+          <note>Fisch</note>
+          <note>MSC-zertifizierter Fisch (MSC-C-51632)</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <price role="employee">7.90</price>
+          <price role="student">5.40</price>
         </meal>
       </category>
       <category name="Aktion">
@@ -78,7 +82,9 @@
           <price role="student">1.10</price>
         </meal>
         <meal>
-          <name>Wok im OG: Gemüsewok Süß-Sauer mit Duftreis</name>
+          <name>Wok im OG: Gemüsewok Soja-Pflaume mit Mienudeln</name>
+          <note>Soja</note>
+          <note>Weizen</note>
           <note>vegan</note>
           <price role="employee">1.60</price>
           <price role="student">1.10</price>
@@ -96,7 +102,8 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Erbsen</name>
+          <name>Kaisergemüse</name>
+          <note>Sellerie</note>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
@@ -108,13 +115,10 @@
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Spätzle</name>
-          <note>Dinkel</note>
-          <note>Ei</note>
-          <note>Weizen</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.59</price>
-          <price role="student">1.19</price>
+          <name>Reis</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Salat">
@@ -127,28 +131,18 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Kirschjoghurt</name>
-          <note>Milch und Laktose</note>
-          <note>mit Farbstoffen</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-        <meal>
-          <name>Creme mit Stracciatella-Geschmack</name>
+          <name>Mousse mit Limone-Joghurt-Geschmack</name>
           <note>Milch und Laktose</note>
           <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Berliner mit Fruchtfüllung</name>
-          <note>Ei</note>
+          <name>Himbeerquark</name>
           <note>Milch und Laktose</note>
-          <note>Weizen</note>
           <note>vegetarisch</note>
-          <price role="employee">0.66</price>
-          <price role="student">0.66</price>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
         </meal>
       </category>
       <category name="Buffet">
