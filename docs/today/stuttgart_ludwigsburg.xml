@@ -3,14 +3,18 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2023-01-11">
+    <day date="2023-01-12">
+      <category name="Vorspeise">
+        <meal>
+          <name>Tagessuppe</name>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
       <category name="Veganer renner">
         <meal>
-          <name>Linsen und vegane Spätzle</name>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Sellerie</note>
+          <name>Bandnudeln mit Rucola-Sonnenblumenkernpesto</name>
           <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -18,72 +22,76 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Soja-Gemüse-Geschnetzeltes und Duftreis</name>
+          <name>Semmelknödel mit Rahmchampignons</name>
+          <note>Ei</note>
           <note>Milch und Laktose</note>
-          <note>Soja</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
           <note>vegetarisch</note>
-          <price role="employee">5.90</price>
-          <price role="student">3.40</price>
+          <price role="employee">6.10</price>
+          <price role="student">3.60</price>
         </meal>
         <meal>
-          <name>Linsen und Spätzle mit Saiten</name>
-          <note>Dinkel</note>
-          <note>Ei</note>
+          <name>6 Mini Nürnberger Bratwürste mit Bratensauce mit Sauerkraut und Kartoffelpüree</name>
+          <note>Milch und Laktose</note>
           <note>Rind</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Schwein</note>
-          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Farbstoffen</note>
+          <note>mit Phosphaten</note>
+          <price role="employee">7.40</price>
+          <price role="student">4.90</price>
+        </meal>
+        <meal>
+          <name>Scharfe Chicken Wings mit Barbecusauce, Farmersalat und Country Potatoes</name>
+          <note>Ei</note>
+          <note>Geflügel</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Senf</note>
           <note>Weizen</note>
           <note>mit Antioxidationsmitteln</note>
           <note>mit Farbstoffen</note>
-          <price role="employee">6.40</price>
-          <price role="student">3.90</price>
-        </meal>
-        <meal>
-          <name>Kalbfleischbällchen und Duftreis mit Kapernsauce</name>
-          <note>Ei</note>
-          <note>Milch und Laktose</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>Soja</note>
-          <note>Weizen</note>
-          <price role="employee">7.20</price>
-          <price role="student">4.70</price>
+          <note>mit Süßungsmitteln</note>
+          <price role="employee">7.60</price>
+          <price role="student">5.10</price>
         </meal>
       </category>
       <category name="Aktion">
         <meal>
-          <name>Koeriwerk Kalbs-Currywurst und Pommes frites</name>
-          <note>Rind</note>
-          <note>Sellerie</note>
+          <name>Backfisch mit Remouladensauce und Pommes frites</name>
+          <note>Ei</note>
+          <note>MSC-zertifizierter Fisch (MSC-C-51632)</note>
+          <note>Milch und Laktose</note>
           <note>Senf</note>
-          <price role="employee">6.30</price>
-          <price role="student">3.80</price>
+          <note>Weizen</note>
+          <note>mit Farbstoffen</note>
+          <note>mit Süßungsmitteln</note>
+          <price role="employee">7.90</price>
+          <price role="student">5.40</price>
         </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Rahmblumenkohl</name>
+          <name>Tagesgemüse</name>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Kartoffelpüree</name>
           <note>Milch und Laktose</note>
-          <note>Sellerie</note>
-          <note>Soja</note>
-          <note>Weizen</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-        <meal>
-          <name>Schwenkkartoffeln</name>
-          <note>vegan</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-        <meal>
-          <name>Spätzle</name>
-          <note>Dinkel</note>
-          <note>Ei</note>
-          <note>Weizen</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Farbstoffen</note>
           <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Country Potatoes</name>
+          <note>Weizen</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
@@ -92,30 +100,19 @@
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
-        <meal>
-          <name>Schupfnudeln</name>
-          <note>Ei</note>
-          <note>Weizen</note>
-          <price role="employee">1.59</price>
-          <price role="student">1.19</price>
-        </meal>
       </category>
       <category name="Salat">
         <meal>
-          <name>Gebratene Putenbrust und Schupfnudeln mit Barbecusauce,</name>
-          <note>Ei</note>
-          <note>Senf</note>
-          <note>Weizen</note>
-          <note>mit Süßungsmitteln</note>
-          <price role="employee">7.50</price>
-          <price role="student">5.00</price>
+          <name>Beilagensalat</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Dessert">
         <meal>
-          <name>Sahneschokopudding</name>
+          <name>Bayerische Creme mit Zimtkirschen</name>
           <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
@@ -127,12 +124,6 @@
           <note>vegetarisch</note>
           <price role="employee">0.66</price>
           <price role="student">0.66</price>
-        </meal>
-        <meal>
-          <name>Panna Cotta mit Erdbeermus</name>
-          <note>Milch und Laktose</note>
-          <price role="employee">1.59</price>
-          <price role="student">1.19</price>
         </meal>
       </category>
       <category name="Buffet">
