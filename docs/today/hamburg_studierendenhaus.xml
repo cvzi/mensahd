@@ -4,18 +4,18 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2023-01-12">
-      <category name="CampusKlassiker">
+      <category name="Pottkieker">
         <meal>
-          <name>Hausgemachte Lasagne Bolognese , Tomatensoße</name>
+          <name>Karottensuppe mit Ingwer</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Neu</note>
-          <note>Rind</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">5.80</price>
-          <price role="other">7.00</price>
-          <price role="student">4.50</price>
+          <note>Vegetarisch</note>
+          <price role="employee">1.40</price>
+          <price role="other">1.55</price>
+          <price role="student">1.30</price>
         </meal>
+      </category>
+      <category name="CampusKlassiker">
         <meal>
           <name>Basil Burger mit pikanter Thai Mayo , Pommes Frites</name>
           <note>Ei und Eierzeugnisse</note>
@@ -34,6 +34,17 @@
           <price role="employee">6.80</price>
           <price role="other">8.00</price>
           <price role="student">5.50</price>
+        </meal>
+        <meal>
+          <name>Hausgemachte Lasagne Bolognese , Tomatensoße</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Neu</note>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">5.80</price>
+          <price role="other">7.00</price>
+          <price role="student">4.50</price>
         </meal>
       </category>
       <category name="CampusSpezial">
@@ -54,7 +65,7 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Tortellini mit Käsefüllung , Pilzrahmoße mit Waldpilzen und Basilikumöl , Zucchini Walnusssoße</name>
+          <name>Tortellini mit Käsefüllung , Zucchini Walnussoße , mit Waldpilzen und Basilikumöl</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Schalenfrüchte (z.B. Mandel, Haselnüsse, Walnuss etc.)/-erzeugnisse</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
@@ -65,7 +76,7 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Hot &amp; Sweet Hähnchen mit Aubergine in Tomatensoße , Reis</name>
+          <name>Hot &amp; Sweet Hähnchen mit Aubergine in Tomatensoße , Basmatireis</name>
           <note>Geflügel</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -73,24 +84,15 @@
           <price role="other">1.15</price>
           <price role="student">0.75</price>
         </meal>
-        <meal>
-          <name>Tortellini mit Käsefüllung , Pilzrahmoße mit Waldpilzen und Basilikumöl , Zucchini Walnusssoße</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schalenfrüchte (z.B. Mandel, Haselnüsse, Walnuss etc.)/-erzeugnisse</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Blattspinat , Kartoffeln Provencial, pikantes Grillgemüse , Edamame</name>
+          <name>Blattspinat , Indischer Dal mit Linsen und gebratenen Gemüse , pikantes Grillgemüse , griechisches Gemüse , Sesammöhrchen</name>
+          <note>Geschwärzt</note>
           <note>Klimateller</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Senf und Senferzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
