@@ -75,11 +75,16 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Karotten , Auberginen-Zucchini Gemüse , Buttererbsen , Kohlrabi in Rahm , Süßkartoffel Gnocchi</name>
+          <name>Karotten, Erbsen, Kohlrabi in Rahm , Grüne Bohnen mit Sesam und Sojasoße , Gemüse süß sauer aus dem Wok , Süßkartoffel Gnocchi</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegetarisch</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Konservierungsstoff</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -137,23 +142,23 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta &quot;Milano&quot; mit Rindfleisch und Pilzen , Vollkorn Penne</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Rind</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
           <name>Pasta Primavera mit Auberginen, Tomaten, Zucchini und Kapern , bunte Fusilli</name>
           <note>Klimateller</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Pasta &quot;Milano&quot; mit Rindfleisch und Pilzen , Vollkorn Penne</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Antioxidationsmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -279,6 +284,16 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
+          <name>Bauerntopf mit Hackfleisch, Paprika und Kartoffeln</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Neu</note>
+          <note>Rind</note>
+          <note>mit Konservierungsstoff</note>
+          <price role="employee">5.90</price>
+          <price role="other">7.10</price>
+          <price role="student">4.60</price>
+        </meal>
+        <meal>
           <name>Grünkohl , Kasseler Nackenbraten , Röstkartoffeln</name>
           <note>Rind</note>
           <note>Schwein</note>
@@ -290,16 +305,6 @@
           <price role="employee">5.30</price>
           <price role="other">6.50</price>
           <price role="student">4.00</price>
-        </meal>
-        <meal>
-          <name>Bauerntopf mit Hackfleisch, Paprika und Kartoffeln</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Neu</note>
-          <note>Rind</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">5.90</price>
-          <price role="other">7.10</price>
-          <price role="student">4.60</price>
         </meal>
         <meal>
           <name>Grünkohl , Kochwurst , Röstkartoffeln</name>
@@ -413,23 +418,23 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta con lenticchie mit Linsen in pikanter Soße , Vollkorn Fussili</name>
-          <note>Klimateller</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
           <name>Pasta Don Pepe mit Räucherlachs und Spinat , Vollkorn Fussili</name>
           <note>Fisch und Fischerzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <note>mit Fisch</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Pasta con lenticchie mit Linsen in pikanter Soße , Vollkorn Fussili</name>
+          <note>Klimateller</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
