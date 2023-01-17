@@ -4,6 +4,19 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2023-01-17">
+      <category name="Pottkieker">
+        <meal>
+          <name>Germknödel mit Mohnzucker , Vanillesoße</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Klimateller</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">3.10</price>
+          <price role="other">3.80</price>
+          <price role="student">1.90</price>
+        </meal>
+      </category>
       <category name="CampusSpezial">
         <meal>
           <name>Gebratenes Zanderfilet , Lemon Hollandaise , Erbsen, Salzkartoffeln</name>
@@ -22,22 +35,22 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Hähnchenstreifen in Rucola-Soße , Eliche</name>
-          <note>Geflügel</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mensaVital</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.50</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
-          <name>Chili con Corn , Basmatireis</name>
+          <name>Veganes Chili con Corn mit Grünkern , Reis</name>
           <note>Klimateller</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.50</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Pasta mit Hähnchenstreifen in Sahnesauce mit Tomaten</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mensaVital</note>
           <price role="employee">0.95</price>
           <price role="other">1.50</price>
           <price role="student">0.75</price>
