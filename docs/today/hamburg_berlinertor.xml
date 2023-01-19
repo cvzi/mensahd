@@ -4,6 +4,22 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2023-01-19">
+      <category name="Pottkieker">
+        <meal>
+          <name>#süßeSünde..,, Opas hausgemachterApfelschmarrn mit gerösteten Mandeln , Apfelkompott , Zwetschgenröster</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Lieblingsessen</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Schalenfrüchte (z.B. Mandel, Haselnüsse, Walnuss etc.)/-erzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Farbstoff</note>
+          <price role="employee">3.10</price>
+          <price role="other">3.80</price>
+          <price role="student">1.90</price>
+        </meal>
+      </category>
       <category name="CampusKlassiker">
         <meal>
           <name>#curryWURSTtag..., vegetarische Currywurst , Grillsoße , Pommes Frites</name>
@@ -78,59 +94,6 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>#ofenfrisch...bis 16:00 Uhr..,Pizza Sucuk</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Rind</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Geschmacksverstärker</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">6.50</price>
-          <price role="other">7.70</price>
-          <price role="student">5.20</price>
-        </meal>
-        <meal>
-          <name>#ofenfrisch...bis 16:00 Uhr..,Pizza Funghi vegan</name>
-          <note>Klimateller</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Farbstoff</note>
-          <price role="employee">6.20</price>
-          <price role="other">7.40</price>
-          <price role="student">4.90</price>
-        </meal>
-        <meal>
-          <name>#ofenfrisch...bis 16:00 Uhr..,Pizza Proscuitto e Funghi</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schwein</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Phosphat</note>
-          <price role="employee">6.20</price>
-          <price role="other">7.40</price>
-          <price role="student">4.90</price>
-        </meal>
-        <meal>
-          <name>#ofenfrisch...bis 16:00 Uhr..,Pizza Funghi</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">5.90</price>
-          <price role="other">7.10</price>
-          <price role="student">4.60</price>
-        </meal>
-        <meal>
-          <name>#ofenfrisch...bis 16:00 Uhr..,Pizza Margherita</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">5.50</price>
-          <price role="other">6.70</price>
-          <price role="student">4.20</price>
-        </meal>
-        <meal>
           <name>#ofenfrisch...bis 16:00 Uhr..,Pizza Margeritha vegan</name>
           <note>Klimateller</note>
           <note>Vegan</note>
@@ -152,6 +115,59 @@
           <price role="employee">6.30</price>
           <price role="other">7.50</price>
           <price role="student">5.00</price>
+        </meal>
+        <meal>
+          <name>#ofenfrisch...bis 16:00 Uhr..,Pizza Sucuk</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Rind</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Geschmacksverstärker</note>
+          <note>mit Konservierungsstoff</note>
+          <price role="employee">6.50</price>
+          <price role="other">7.70</price>
+          <price role="student">5.20</price>
+        </meal>
+        <meal>
+          <name>#ofenfrisch...bis 16:00 Uhr..,Pizza Proscuitto e Funghi</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Schwein</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Phosphat</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.40</price>
+          <price role="student">4.90</price>
+        </meal>
+        <meal>
+          <name>#ofenfrisch...bis 16:00 Uhr..,Pizza Funghi vegan</name>
+          <note>Klimateller</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Farbstoff</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.40</price>
+          <price role="student">4.90</price>
+        </meal>
+        <meal>
+          <name>#ofenfrisch...bis 16:00 Uhr..,Pizza Funghi</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">5.90</price>
+          <price role="other">7.10</price>
+          <price role="student">4.60</price>
+        </meal>
+        <meal>
+          <name>#ofenfrisch...bis 16:00 Uhr..,Pizza Margherita</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">5.50</price>
+          <price role="other">6.70</price>
+          <price role="student">4.20</price>
         </meal>
       </category>
       <category name="Pastabar">
