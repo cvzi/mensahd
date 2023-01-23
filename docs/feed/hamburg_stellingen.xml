@@ -211,17 +211,6 @@
     <day date="2023-01-26">
       <category name="Pottkieker">
         <meal>
-          <name>Warmer Apfelstrudel , vegane Vanillesoße</name>
-          <note>Klimateller</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">3.10</price>
-          <price role="other">3.80</price>
-          <price role="student">1.90</price>
-        </meal>
-        <meal>
           <name>Kichererbsencurry, pikantes Möhrengemüse</name>
           <note>Klimateller</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -242,22 +231,19 @@
           <price role="other">3.80</price>
           <price role="student">1.90</price>
         </meal>
-      </category>
-      <category name="CampusKlassiker">
         <meal>
-          <name>Grünkohl , Kasselernackenbraten , Kartoffeln</name>
-          <note>Schwein</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
+          <name>Warmer Apfelstrudel , vegane Vanillesoße</name>
+          <note>Klimateller</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Phosphat</note>
-          <price role="employee">5.30</price>
-          <price role="other">6.50</price>
-          <price role="student">4.00</price>
+          <price role="employee">3.10</price>
+          <price role="other">3.80</price>
+          <price role="student">1.90</price>
         </meal>
+      </category>
+      <category name="CampusKlassiker">
         <meal>
           <name>Hähnchen Crossies in Panko Panade , BBQ Soße , Pommes Frites</name>
           <note>Geflügel</note>
@@ -271,6 +257,20 @@
           <price role="employee">5.60</price>
           <price role="other">6.80</price>
           <price role="student">4.30</price>
+        </meal>
+        <meal>
+          <name>Grünkohl , Kasselernackenbraten , Kartoffeln</name>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Phosphat</note>
+          <price role="employee">5.30</price>
+          <price role="other">6.50</price>
+          <price role="student">4.00</price>
         </meal>
       </category>
       <category name="CampusVital">
@@ -354,15 +354,6 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Bauerntopf mit Hackfleisch, Paprika und Kartoffeln</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Rind</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">3.80</price>
-          <price role="other">5.00</price>
-          <price role="student">2.50</price>
-        </meal>
-        <meal>
           <name>Chili con Soy mit Bohnen, Mais und Paprika , Reis</name>
           <note>Klimateller</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -370,6 +361,15 @@
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mensaVital</note>
+          <price role="employee">3.80</price>
+          <price role="other">5.00</price>
+          <price role="student">2.50</price>
+        </meal>
+        <meal>
+          <name>Bauerntopf mit Hackfleisch, Paprika und Kartoffeln</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Rind</note>
+          <note>mit Konservierungsstoff</note>
           <price role="employee">3.80</price>
           <price role="other">5.00</price>
           <price role="student">2.50</price>
@@ -435,6 +435,16 @@
       </category>
       <category name="CampusVital">
         <meal>
+          <name>Hähnchenkeule mit Paprika-Kichererbsen-Gemüse in Tomatensoße, Gemüse-Bulgur</name>
+          <note>Geflügel</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">5.80</price>
+          <price role="other">7.00</price>
+          <price role="student">4.50</price>
+        </meal>
+        <meal>
           <name>Würziges Blumenkohl-Ragout mit Edamame , Wrap</name>
           <note>Klimateller</note>
           <note>Soja und Sojaerzeugnisse</note>
@@ -444,16 +454,6 @@
           <price role="employee">3.80</price>
           <price role="other">5.00</price>
           <price role="student">2.50</price>
-        </meal>
-        <meal>
-          <name>Hähnchenkeule mit Paprika-Kichererbsen-Gemüse in Tomatensoße, Gemüse-Bulgur</name>
-          <note>Geflügel</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">5.80</price>
-          <price role="other">7.00</price>
-          <price role="student">4.50</price>
         </meal>
       </category>
       <category name="CampusWorld">
