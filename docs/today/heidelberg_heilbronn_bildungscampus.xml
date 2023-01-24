@@ -4,14 +4,59 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2023-01-23">
+    <day date="2023-01-24">
+      <category name="Dessert">
+        <meal>
+          <name>Creme Caramel</name>
+          <note>Creme caramel</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Hausgemachtes Bircher Müsli mit Orangen und Trauben</name>
+          <note>Housemade Bircher muesli with oranges and grapes</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Klare Linsensuppe mit gewürfelter Kartoffel und Kräutern</name>
+          <note>Clear lentil soup with diced potatoes and herbs</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Kabeljau "Müllerin Art" mit Zitronen-Kapern-Sud, dazu Wildreis-Mix</name>
+          <note>cod fish with lemon-caper-sauce and wild rice mix</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
       <category name="Vegan">
         <meal>
-          <name>One Pot Wokgemüse mit Mienudeln und Sweet Chili Soße </name>
-          <note>One pot wok vegetables with mie noodles and a sweet chili sauce</note>
+          <name>Zweierlei Hummus mit Grillgemüse und ofenfrisches Grillbrot</name>
+          <note>Duet of hummus with grilled vegetables and fresh bread</note>
           <price role="student">4.00</price>
           <price role="employee">6.00</price>
           <price role="other">10.00</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Geschmorte Paprika aus dem Ofen, gefüllt mit Couscous und würzigem Schafskäse aus dem Ländle</name>
+          <note>Braised peppers stuffed with couscous and spicy sheep`s milk cheese</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
         </meal>
       </category>
     </day>
