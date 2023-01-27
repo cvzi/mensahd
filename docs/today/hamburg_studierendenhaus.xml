@@ -6,14 +6,14 @@
     <day date="2023-01-27">
       <category name="Pottkieker">
         <meal>
-          <name>Ungarische Rindergulaschsuppe</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Rind</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">1.40</price>
-          <price role="other">1.55</price>
-          <price role="student">1.30</price>
+          <name>Kartoffel-Kürbis-Ragout</name>
+          <note>Klimateller</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
         </meal>
         <meal>
           <name>Milchreis mit Zimt &amp; Zucker</name>
@@ -25,14 +25,14 @@
           <price role="student">1.90</price>
         </meal>
         <meal>
-          <name>Kartoffel-Kürbis-Ragout</name>
-          <note>Klimateller</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">3.40</price>
-          <price role="other">4.10</price>
-          <price role="student">2.20</price>
+          <name>Ungarische Rindergulaschsuppe</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Rind</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">1.40</price>
+          <price role="other">1.55</price>
+          <price role="student">1.30</price>
         </meal>
       </category>
       <category name="CampusKlassiker">
@@ -66,16 +66,6 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Gebratenes Seelachsfilet , Blattspinat in Rahm , Salzkartoffeln</name>
-          <note>Fisch und Fischerzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Fisch</note>
-          <price role="employee">6.30</price>
-          <price role="other">7.50</price>
-          <price role="student">5.00</price>
-        </meal>
-        <meal>
           <name>Hausgemachte Gemüselasagne , Tomatensoße</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -86,20 +76,18 @@
           <price role="other">7.00</price>
           <price role="student">4.50</price>
         </meal>
+        <meal>
+          <name>Gebratenes Seelachsfilet , Blattspinat in Rahm , Salzkartoffeln</name>
+          <note>Fisch und Fischerzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Fisch</note>
+          <price role="employee">6.30</price>
+          <price role="other">7.50</price>
+          <price role="student">5.00</price>
+        </meal>
       </category>
       <category name="Pastabar">
-        <meal>
-          <name>Pasta Carbonara mit Speck , Vollkorn Penne</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schwein</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Phosphat</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
         <meal>
           <name>Pasta Florentiner mit Spinat in Sojasahne , Eliche</name>
           <note>Klimateller</note>
@@ -112,13 +100,27 @@
           <price role="other">1.15</price>
           <price role="student">0.75</price>
         </meal>
+        <meal>
+          <name>Pasta Carbonara mit Speck , Vollkorn Penne</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Schwein</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Phosphat</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
       </category>
       <category name="Gemüsebar">
         <meal>
           <name>glasierte rote Beete, pikante Zucchiniwürfel in Tomate, Erbsen-Karotten Gemüse, Fingermöhrchen mit Ingwer und Frühlingslauch</name>
+          <note>Klimateller</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegetarisch</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <note>mit Konservierungsstoff</note>
           <price role="employee">0.95</price>
@@ -127,9 +129,11 @@
         </meal>
         <meal>
           <name>glasierte rote Beete, pikante Zucchiniwürfel in Tomate, Erbsen-Karotten Gemüse, Fingermöhrchen mit Ingwer und Frühlingslauch</name>
+          <note>Klimateller</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegetarisch</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <note>mit Konservierungsstoff</note>
           <price role="employee">0.95</price>
