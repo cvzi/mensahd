@@ -87,10 +87,13 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Bunter Gemüsemix mit gelben Karotten, Buttererbsen , Orientalisches Linsengemüse , Chili-Kartoffeln aus dem Ofen, Erbsen-Karotten Gemüse</name>
+          <name>Bunter Gemüsemix mit gelben Karotten, Fingermöhrchen mit Ingwer und Frühlingslauch , Orientalisches Linsengemüse , Chili-Kartoffeln aus dem Ofen, Erbsen-Karotten Gemüse</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Konservierungsstoff</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -100,16 +103,6 @@
     <day date="2023-01-31">
       <category name="Pottkieker">
         <meal>
-          <name>Milchreis , Apfelmus</name>
-          <note>Klimateller</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Vegetarisch</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">3.10</price>
-          <price role="other">3.80</price>
-          <price role="student">1.90</price>
-        </meal>
-        <meal>
           <name>Geflügelsuppe mit Gemüse , Reis</name>
           <note>Geflügel</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
@@ -118,6 +111,16 @@
           <price role="employee">3.40</price>
           <price role="other">4.10</price>
           <price role="student">2.20</price>
+        </meal>
+        <meal>
+          <name>Milchreis , Apfelmus</name>
+          <note>Klimateller</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">3.10</price>
+          <price role="other">3.80</price>
+          <price role="student">1.90</price>
         </meal>
       </category>
       <category name="CampusKlassiker">
@@ -164,10 +167,8 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta Primavera mit Auberginen, Tomaten, Zucchini und Kapern , bunte Fusilli</name>
-          <note>Klimateller</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegan</note>
+          <name>Hähnchenstreifen al arrabiata, bunte Fusilli</name>
+          <note>Geflügel</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
@@ -175,8 +176,10 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Hähnchenstreifen al arrabiata, bunte Fusilli</name>
-          <note>Geflügel</note>
+          <name>Pasta Primavera mit Auberginen, Tomaten, Zucchini und Kapern , bunte Fusilli</name>
+          <note>Klimateller</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
@@ -294,6 +297,16 @@
     <day date="2023-02-02">
       <category name="Pottkieker">
         <meal>
+          <name>Grießspeise</name>
+          <note>Klimateller</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">3.10</price>
+          <price role="other">3.80</price>
+          <price role="student">1.90</price>
+        </meal>
+        <meal>
           <name>Holsteiner Kartoffeltopf</name>
           <note>Rind</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
@@ -307,18 +320,18 @@
           <price role="other">4.10</price>
           <price role="student">2.20</price>
         </meal>
-        <meal>
-          <name>Grießspeise</name>
-          <note>Klimateller</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">3.10</price>
-          <price role="other">3.80</price>
-          <price role="student">1.90</price>
-        </meal>
       </category>
       <category name="CampusKlassiker">
+        <meal>
+          <name>Hausgemachte Lasagne Bolognese , Tomatensoße</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">5.80</price>
+          <price role="other">7.00</price>
+          <price role="student">4.50</price>
+        </meal>
         <meal>
           <name>Spicy Chicken Burger mit Erdnüssen , Pommes Frites</name>
           <note>Ei und Eierzeugnisse</note>
@@ -335,16 +348,6 @@
           <price role="employee">4.90</price>
           <price role="other">6.10</price>
           <price role="student">3.60</price>
-        </meal>
-        <meal>
-          <name>Hausgemachte Lasagne Bolognese , Tomatensoße</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Rind</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">5.80</price>
-          <price role="other">7.00</price>
-          <price role="student">4.50</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -365,20 +368,20 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Hot &amp; Sweet Hähnchen mit Aubergine in Tomatensoße , Reis</name>
-          <note>Geflügel</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
           <name>Tortellini mit Käsefüllung , Zucchini Walnusssoße</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Schalenfrüchte (z.B. Mandel, Haselnüsse, Walnuss etc.)/-erzeugnisse</note>
           <note>Vegetarisch</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Hot &amp; Sweet Hähnchen mit Aubergine in Tomatensoße , Reis</name>
+          <note>Geflügel</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
