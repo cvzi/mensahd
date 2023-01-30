@@ -19,15 +19,6 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Schweinenackensteak, Ofengemüse mit Kartoffeln und Feta</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schwein</note>
-          <note>enthält tierisches Lab</note>
-          <price role="employee">5.30</price>
-          <price role="other">6.50</price>
-          <price role="student">4.00</price>
-        </meal>
-        <meal>
           <name>Chili sin carne , Reis</name>
           <note>Klimateller</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -38,6 +29,15 @@
           <price role="employee">3.80</price>
           <price role="other">5.00</price>
           <price role="student">2.50</price>
+        </meal>
+        <meal>
+          <name>Schweinenackensteak, Ofengemüse mit Kartoffeln und Feta</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Schwein</note>
+          <note>enthält tierisches Lab</note>
+          <price role="employee">5.30</price>
+          <price role="other">6.50</price>
+          <price role="student">4.00</price>
         </meal>
         <meal>
           <name>Hamburger mit Tomate, Gurke und Salat , Pommes Frites</name>
@@ -73,6 +73,15 @@
       </category>
       <category name="Pastabar">
         <meal>
+          <name>Pasta Contadino mit Schweinefleisch und Zucchini , Pasta</name>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
           <name>Sojasahnesoße mit getrockneten Tomaten und Basilikum , Pasta</name>
           <note>Geschwefelt</note>
           <note>Klimateller</note>
@@ -82,15 +91,6 @@
           <note>Vegetarisch</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <note>mit Konservierungsstoff</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
-          <name>Pasta Contadino mit Schweinefleisch und Zucchini , Pasta</name>
-          <note>Schwein</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -170,8 +170,10 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Hähnchenstreifen al arrabiata, bunte Fusilli</name>
-          <note>Geflügel</note>
+          <name>Pasta Primavera mit Auberginen, Tomaten, Zucchini und Kapern , bunte Fusilli</name>
+          <note>Klimateller</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
@@ -179,10 +181,8 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Pasta Primavera mit Auberginen, Tomaten, Zucchini und Kapern , bunte Fusilli</name>
-          <note>Klimateller</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegan</note>
+          <name>Hähnchenstreifen al arrabiata, bunte Fusilli</name>
+          <note>Geflügel</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
@@ -237,17 +237,6 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Texashacksteak , Pfefferrahmsoße , Kartoffelspalten</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Rind</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">5.70</price>
-          <price role="other">6.90</price>
-          <price role="student">4.40</price>
-        </meal>
-        <meal>
           <name>Beef Sandwich: Saftiges Rindfleisch überzogen mit geschmolzenem Cheddar im Ciabattasandwich</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
@@ -258,6 +247,17 @@
           <price role="employee">5.80</price>
           <price role="other">7.00</price>
           <price role="student">4.50</price>
+        </meal>
+        <meal>
+          <name>Texashacksteak , Pfefferrahmsoße , Kartoffelspalten</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">5.70</price>
+          <price role="other">6.90</price>
+          <price role="student">4.40</price>
         </meal>
       </category>
       <category name="CampusWorld">
