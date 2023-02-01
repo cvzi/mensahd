@@ -309,19 +309,6 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Kochwurst</name>
-          <note>Schwein</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Geschmacksverstärker</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Phosphat</note>
-          <price role="employee">2.15</price>
-          <price role="other">2.30</price>
-          <price role="student">2.00</price>
-        </meal>
-        <meal>
           <name>Ägyptische Falafel mit Hummusfüllung , veganes Tzatziki , Gemüsecouscous , Rotkrautsalat</name>
           <note>Klimateller</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -336,6 +323,19 @@
           <price role="employee">5.90</price>
           <price role="other">7.10</price>
           <price role="student">4.60</price>
+        </meal>
+        <meal>
+          <name>Kochwurst</name>
+          <note>Schwein</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Geschmacksverstärker</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Phosphat</note>
+          <price role="employee">2.15</price>
+          <price role="other">2.30</price>
+          <price role="student">2.00</price>
         </meal>
         <meal>
           <name>Grünkohl , Kochwurst , Röstkartoffeln</name>
@@ -628,6 +628,16 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
+          <name>Putengulasch , Penne</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">5.30</price>
+          <price role="other">6.50</price>
+          <price role="student">4.00</price>
+        </meal>
+        <meal>
           <name>Schweinenackensteak, Pommes Frites , frischer Krautsalat</name>
           <note>Geschwefelt</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
@@ -638,16 +648,6 @@
           <price role="employee">5.05</price>
           <price role="other">6.25</price>
           <price role="student">3.75</price>
-        </meal>
-        <meal>
-          <name>Putengulasch , Penne</name>
-          <note>Geflügel</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">5.30</price>
-          <price role="other">6.50</price>
-          <price role="student">4.00</price>
         </meal>
       </category>
       <category name="CampusVital">
@@ -668,21 +668,21 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>mit cremiger Soße von weißen Bohnen mit Gemüse und Basilikum , Eliche</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
           <name>Hähnchenstreifen in Rucola-Soße , bunte Fusilli</name>
           <note>Geflügel</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <note>mensaVital</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>mit cremiger Soße von weißen Bohnen mit Gemüse und Basilikum , Eliche</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
