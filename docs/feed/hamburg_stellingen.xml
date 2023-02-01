@@ -3,69 +3,23 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2023-01-31">
-      <category name="Pottkieker">
-        <meal>
-          <name>Würziges Blumenkohl-Ragout mit Edamame</name>
-          <note>Klimateller</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">3.40</price>
-          <price role="other">4.10</price>
-          <price role="student">2.20</price>
-        </meal>
-      </category>
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Gemüsefrikadelle , Apfelrotkohl , Stampfkartoffeln</name>
-          <note>Geschwefelt</note>
-          <note>Klimateller</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">4.10</price>
-          <price role="other">5.30</price>
-          <price role="student">2.80</price>
-        </meal>
-      </category>
-      <category name="CampusVital">
-        <meal>
-          <name>Hähnchenkeule mit Paprika-Kichererbsen-Gemüse in Tomatensoße, Gemüse-Bulgur</name>
-          <note>Geflügel</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">5.80</price>
-          <price role="other">7.00</price>
-          <price role="student">4.50</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Schweinefilet, Paprikasoße, Ofengemüse mit Kartoffeln</name>
-          <note>Schwein</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.90</price>
-          <price role="other">8.10</price>
-          <price role="student">5.60</price>
-        </meal>
-      </category>
-    </day>
     <day date="2023-02-01">
       <category name="CampusKlassiker">
         <meal>
-          <name>Paniertes Schweineschnitzel , Blumenkohl in Rahm , Kartoffeln aus dem Ofen</name>
+          <name>Paniertes Schweineschnitzel , Paprikarahmsoße , Blumenkohl, Kartoffeln aus dem Ofen</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Schwein</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">5.10</price>
+          <price role="other">6.30</price>
+          <price role="student">3.80</price>
+        </meal>
+        <meal>
+          <name>Paniertes Putenschnitzel , Paprikarahmsoße , Blumenkohl, Kartoffeln aus dem Ofen</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Farbstoff</note>
           <price role="employee">5.10</price>
           <price role="other">6.30</price>
           <price role="student">3.80</price>
@@ -80,28 +34,6 @@
           <price role="employee">4.60</price>
           <price role="other">5.80</price>
           <price role="student">3.30</price>
-        </meal>
-        <meal>
-          <name>Paniertes Putenschnitzel , Blumenkohl in Rahm , Kartoffeln aus dem Ofen</name>
-          <note>Geflügel</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Farbstoff</note>
-          <price role="employee">5.10</price>
-          <price role="other">6.30</price>
-          <price role="student">3.80</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Tortellini mit Spinat Ricottafüllung , Kirschtomatenragout, Rucola</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">5.30</price>
-          <price role="other">6.50</price>
-          <price role="student">4.00</price>
         </meal>
       </category>
     </day>
@@ -165,22 +97,22 @@
     <day date="2023-02-03">
       <category name="Pottkieker">
         <meal>
-          <name>Vegane Basilikumsoße mit Tomatenwürfel , Vollkorn Penne</name>
-          <note>Klimateller</note>
+          <name>Gemüsecremesuppe mit Hähnchenstreifen &amp; Reis</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">3.40</price>
           <price role="other">4.10</price>
           <price role="student">2.20</price>
         </meal>
         <meal>
-          <name>Gemüsecremesuppe mit Hähnchenstreifen &amp; Reis</name>
-          <note>Geflügel</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <name>Vegane Basilikumsoße mit Tomatenwürfel , Vollkorn Penne</name>
+          <note>Klimateller</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">3.40</price>
           <price role="other">4.10</price>
@@ -243,19 +175,6 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Falafelteller mit Salat-Mix , Tzatziki , Pommes Frites</name>
-          <note>Klimateller</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">5.50</price>
-          <price role="other">6.70</price>
-          <price role="student">4.20</price>
-        </meal>
-        <meal>
           <name>Grillteller mit Salat-Mix , Tzatziki , Pommes Frites</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Geflügel</note>
@@ -267,6 +186,19 @@
           <price role="employee">6.80</price>
           <price role="other">8.00</price>
           <price role="student">5.50</price>
+        </meal>
+        <meal>
+          <name>Falafelteller mit Salat-Mix , Tzatziki , Pommes Frites</name>
+          <note>Klimateller</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">5.50</price>
+          <price role="other">6.70</price>
+          <price role="student">4.20</price>
         </meal>
       </category>
     </day>

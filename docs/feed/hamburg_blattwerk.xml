@@ -3,56 +3,6 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2023-01-31">
-      <category name="CampusVital">
-        <meal>
-          <name>Rote Beete Gnocchi, gebratenes Gemüse , Kürbisrahmsoße</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegetarisch</note>
-          <price role="employee">3.80</price>
-          <price role="other">5.00</price>
-          <price role="student">2.50</price>
-        </meal>
-      </category>
-      <category name="CampusSpezial">
-        <meal>
-          <name>Shakshuka mit Hirtenkäse , Hummus , Baguette</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">5.80</price>
-          <price role="other">7.00</price>
-          <price role="student">4.50</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Hausgemachte Pasta , Tapenade von schwarzen Oliven mit Kräutern und Olivenöl , Orangen Gremolata</name>
-          <note>Geschwärzt</note>
-          <note>Klimateller</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.40</price>
-          <price role="student">3.90</price>
-        </meal>
-      </category>
-      <category name="Gemüsebar">
-        <meal>
-          <name>Sesammöhrchen , Gartenbohnen mit Pfifferlingen und Cherrytomaten, gebratenem Wirsing, Bratkartoffeln</name>
-          <note>Klimateller</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-      </category>
-    </day>
     <day date="2023-02-01">
       <category name="CampusSpezial">
         <meal>
@@ -65,6 +15,17 @@
           <price role="employee">5.80</price>
           <price role="other">7.00</price>
           <price role="student">4.50</price>
+        </meal>
+        <meal>
+          <name>Risotto alla milanese mit marinierter roten Beete und geschmortem Chicorée</name>
+          <note>Alkohol</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <price role="employee">5.05</price>
+          <price role="other">6.25</price>
+          <price role="student">3.75</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -228,21 +189,21 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta Broccoli-Tomate, Vollkorn Penne</name>
-          <note>Klimateller</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Pasta in pikanter Pesto-Sahne-Soße , Vollkorn Penne</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Schalenfrüchte (z.B. Mandel, Haselnüsse, Walnuss etc.)/-erzeugnisse</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Pasta in pikanter Pesto-Sahne-Soße , Vollkorn Penne</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schalenfrüchte (z.B. Mandel, Haselnüsse, Walnuss etc.)/-erzeugnisse</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegetarisch</note>
+          <name>Pasta Broccoli-Tomate, Vollkorn Penne</name>
+          <note>Klimateller</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
@@ -301,9 +262,10 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta Gärtnerin Sugo mit Gemüse-Tomatensoße , Spaghetti</name>
+          <name>Soja-Lauch-Soße , Spaghetti</name>
           <note>Klimateller</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
@@ -312,10 +274,9 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Soja-Lauch-Soße , Spaghetti</name>
+          <name>Pasta Gärtnerin Sugo mit Gemüse-Tomatensoße , Spaghetti</name>
           <note>Klimateller</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
@@ -436,18 +397,6 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta Funghi mit Pilzen in Sahnesoße , Farfalle</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
           <name>Vegane Soja-Chunks in asiatischer Tomatensoße , Farfalle</name>
           <note>Klimateller</note>
           <note>Sesamsamen und Sesamsamenerzeugnisse</note>
@@ -456,6 +405,18 @@
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <note>mit Konservierungsstoff</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Pasta Funghi mit Pilzen in Sahnesoße , Farfalle</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Antioxidationsmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -507,7 +468,7 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Hausgemachte Pasta , mit Paprikagemüse und Gremolata</name>
+          <name>Hausgemachte Pasta , Peperoni e gremolata Paprikagemüse und Gremolata</name>
           <note>Geschwefelt</note>
           <note>Geschwärzt</note>
           <note>Klimateller</note>
