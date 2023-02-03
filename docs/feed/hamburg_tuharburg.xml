@@ -20,13 +20,25 @@
           <price role="student">2.20</price>
         </meal>
       </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Putengulasch , Penne</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">1.30</price>
+          <price role="other">2.50</price>
+        </meal>
+      </category>
       <category name="CampusVital">
         <meal>
-          <name>Kürbis Dal mit Grünkohl aus Sri Lanka , Naturjoghurt , Fladenbrot</name>
+          <name>Kürbis Dal mit Grünkohl aus Sri Lanka , Naturjoghurt , Baguette</name>
           <note>Klimateller</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <note>mit Antioxidationsmittel</note>
           <price role="employee">5.30</price>
           <price role="other">6.50</price>
@@ -49,6 +61,7 @@
           <name>Seelachs frisch vom Grill mit Broccoli - Blumenkohlsalat Sonnenblumenkernen und Limettenschmand</name>
           <note>Fisch und Fischerzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <note>mit Fisch</note>
           <price role="employee">6.80</price>
@@ -58,26 +71,30 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Salsiccia e lenticchie mit Krakauer und Belugalinsen , Fusilli</name>
+          <name>Tortellini mit Käsefüllung</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Rind</note>
-          <note>Schwein</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Senf und Senferzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegetarisch</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Phosphat</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Tapenade di olive von schwarzen Oliven mit Kräutern und Olivenöl , Fusilli</name>
-          <note>Geschwärzt</note>
+          <name>Vegane Tomatensoße Napoli,, Pasta nach Wahl</name>
           <note>Klimateller</note>
           <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Bolognese, , Contadino mit Schweinefleisch und Zucchini, , Pasta nach Wahl</name>
+          <note>Rind</note>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
@@ -87,8 +104,21 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Gemüsebar des Tages</name>
+          <name>Käsespätzle</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Schwarzwurzeln und Pastinaken in Soja-Rahm, , frischer Spitzkohl mit Paprika gebraten,, Fenchel-Lauchgemüse, , Prinzessbohnen,, gebratene Aubergine</name>
           <note>Klimateller</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
@@ -282,23 +312,23 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Milano mit Rindfleisch und Pilzen , Strozzapreti</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Rind</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
           <name>all`Provenzale mit Gemüse , Strozzapreti</name>
           <note>Klimateller</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Milano mit Rindfleisch und Pilzen , Strozzapreti</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Antioxidationsmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
