@@ -4,8 +4,61 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2023-02-05">
-      <closed/>
+    <day date="2023-02-06">
+      <category name="Dessert">
+        <meal>
+          <name>Vanillepudding mit Spekulatiusbruch</name>
+          <note>Vanilla custard on a bed of Spekulatius pieces</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Hausgemachter Grießbrei mit Zimt-Apfelmus</name>
+          <note>Homemade semolina with cinnamon applesauce </note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Süppchen von der Petersilienwurzel mit Haferrahm und Schnittlauchröllchen</name>
+          <note>Parsnip soup with creamed oats and chives</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Weißes Welsfilet auf Gemüsestreifen, Kräuterkartoffeln und Dillsahnesoße</name>
+          <note>Wels catfish on a bed of vegetables served with herb potatoes and a cream dill sauce</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Kürbis-Wirsing-Gemüse mit Knuspertofu  und Naturreis</name>
+          <note>Savoy cabbage, pumpkin with crispy tofu and brown rice</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Gratinierte Ofenkartoffel mit Schafskäse aus dem Ländle, dazu Antipasti-Gemüse und Karottenstroh</name>
+          <note>Baked potatoes au gratin with local sheeps cheese served with Anti pasti vegetables and grated carrot</note>
+          <price role="student">4.50</price>
+          <price role="employee">6.75</price>
+          <price role="other">11.25</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
