@@ -3,58 +3,6 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2023-02-07">
-      <category name="Pottkieker">
-        <meal>
-          <name>Kartoffel-Kürbis-Ragout , Reis</name>
-          <note>Klimateller</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">3.40</price>
-          <price role="other">4.10</price>
-          <price role="student">2.20</price>
-        </meal>
-      </category>
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Geflügelstreifen al arrabiata in pikanter Tomatensoße, Fusilli</name>
-          <note>Geflügel</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">5.30</price>
-          <price role="other">6.50</price>
-          <price role="student">4.00</price>
-        </meal>
-      </category>
-      <category name="CampusSpezial">
-        <meal>
-          <name>Cordon Bleu vom Schweinerücken, Pilzrahmsoße , Pommes Frites</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Schwein</note>
-          <note>Senf und Senferzeugnisse</note>
-          <price role="employee">6.60</price>
-          <price role="other">7.80</price>
-          <price role="student">5.30</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Vollkorn-Penne mit Mangold-Tomaten-Gemüse , Kräutersoße mit Senfkörner , geriebener Käse</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>enthält tierisches Lab</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">4.70</price>
-          <price role="other">5.90</price>
-          <price role="student">3.40</price>
-        </meal>
-      </category>
-    </day>
     <day date="2023-02-08">
       <category name="CampusSpezial">
         <meal>
@@ -143,13 +91,10 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Gebackenes Rotbarschfilet , Senfsoße , pikante Kartoffeln mit Sesam</name>
-          <note>Fisch und Fischerzeugnisse</note>
+          <name>Putensteak, pikante Kartoffeln mit Sesam , Kräuterquark</name>
+          <note>Geflügel</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Senf und Senferzeugnisse</note>
           <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Fisch</note>
           <price role="employee">6.90</price>
           <price role="other">8.10</price>
           <price role="student">5.60</price>
@@ -252,15 +197,6 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Paniertes Schweineschnitzel , Paprikarahmsoße , Blumenkohl, Kartoffeln aus dem Ofen</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schwein</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">5.10</price>
-          <price role="other">6.30</price>
-          <price role="student">3.80</price>
-        </meal>
-        <meal>
           <name>Texashacksteak , Pfefferrahmsoße , Kartoffelspalten</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
@@ -270,6 +206,15 @@
           <price role="employee">5.70</price>
           <price role="other">6.90</price>
           <price role="student">4.40</price>
+        </meal>
+        <meal>
+          <name>Paniertes Schweineschnitzel , Paprikarahmsoße , Blumenkohl, Kartoffeln aus dem Ofen</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Schwein</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">5.10</price>
+          <price role="other">6.30</price>
+          <price role="student">3.80</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -314,16 +259,6 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Omelette gratiniert mit Tomate und Käse , Blattspinat in Rahm</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">4.60</price>
-          <price role="other">5.80</price>
-          <price role="student">3.30</price>
-        </meal>
-        <meal>
           <name>Hamburger mit Rindfleisch, Tomate, Gurke und Nuss-Chili-Majo , Pommes Frites</name>
           <note>Rind</note>
           <note>Schalenfrüchte (z.B. Mandel, Haselnüsse, Walnuss etc.)/-erzeugnisse</note>
@@ -335,6 +270,16 @@
           <price role="employee">6.80</price>
           <price role="other">8.00</price>
           <price role="student">5.50</price>
+        </meal>
+        <meal>
+          <name>Omelette gratiniert mit Tomate und Käse , Blattspinat in Rahm</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">4.60</price>
+          <price role="other">5.80</price>
+          <price role="student">3.30</price>
         </meal>
       </category>
     </day>
