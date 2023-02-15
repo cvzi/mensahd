@@ -4,8 +4,61 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2023-02-14">
-      <closed/>
+    <day date="2023-02-15">
+      <category name="Dessert">
+        <meal>
+          <name>Waldbeerenmüsli im Glas mit Nüssen und Mandarinen</name>
+          <note>Wild berry muesli in a glass with nuts and mandarines</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Hausgemachter Hafer-Milchreis mit  Zimt+Zucker</name>
+          <note>Housemade oat rice pudding with cinnamon sugar</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Schwarzwurzelrahmsuppe mit geröstetem Fladenbrot</name>
+          <note>Cream of black salsify soup with roasted flat bread</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Gebratenes Wildlachsfilet in der Kräuterpanade mit Rahmkohlrabi dazu Rosinen - Couscous mit frischer Minze</name>
+          <note>Sauteed wild salmon filet with an herbed breading, creamy kohlrabi, raisin-couscous and fresh mint</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Hausgemachte Nudeln mit jungem Spinat in Sesamrahm, dazu Champignons vom Grill</name>
+          <note>Housemade noodles with grilled mushrooms and young spinach in a sesame-cream sauce</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Gefüllte Gemüse-Kräuterpfannkuchen, überbacken mit Käseschmelz</name>
+          <note>Stuffed vegetable-herb crepes, topped with melted cheese</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
