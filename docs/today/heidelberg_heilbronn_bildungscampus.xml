@@ -4,14 +4,59 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2023-02-21">
+    <day date="2023-02-22">
+      <category name="Dessert">
+        <meal>
+          <name>Hausgemachtes Birchermüsli mit Orangensaft und Nüssen</name>
+          <note>Housemade bircher muesli with orange juice and nuts</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Bratapfel-Kompott mit veganer Sahne und Haselnusskrokant</name>
+          <note>Baked apple compote with vegan cream and hazelnut crunch</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
       <category name="Suppentopf">
         <meal>
-          <name>Lauchcremesuppe mit hausgemachten Croutons</name>
-          <note>Cream of leek soup with housemade croutons</note>
+          <name>Koreanischer Nudeltopf mit viel Gemüse und scharfem Curry</name>
+          <note>Korean noodle soup with vegetables and spicy curry</note>
           <price role="student">0.55</price>
           <price role="employee">0.85</price>
           <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Gekochtes Rindfleisch  auf Bouillon-Gemüse-Kartoffeln und frischem Meerrettich</name>
+          <note>Beef with vegetables, potatoes and fresh horseradish</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Marinierte Sojastreifen in Tomaten-Basilikumrahm und gesottenem Gemüse</name>
+          <note>Marinated soy strips with a creamy tomato-basil sauce and boiled vegetables</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Gefüllte Teigtaschen in Waldpilzrahm und jungem Lauch-Karotten-Gemüse</name>
+          <note>Filled pasta in a creamy wild mushroom sauce with young leek and carrots</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
         </meal>
       </category>
     </day>
