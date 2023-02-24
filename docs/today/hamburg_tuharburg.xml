@@ -6,22 +6,22 @@
     <day date="2023-02-24">
       <category name="Pottkieker">
         <meal>
-          <name>Kürbissuppe Chili Ingwer</name>
-          <note>Alkohol</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegetarisch</note>
-          <price role="employee">3.40</price>
-          <price role="other">4.10</price>
-          <price role="student">2.20</price>
-        </meal>
-        <meal>
           <name>Gemüsegulasch , Zartweizen mit Gemüse</name>
           <note>Klimateller</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+        <meal>
+          <name>Kürbissuppe Chili Ingwer</name>
+          <note>Alkohol</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegetarisch</note>
           <price role="employee">3.40</price>
           <price role="other">4.10</price>
           <price role="student">2.20</price>
@@ -46,15 +46,17 @@
           <price role="student">5.10</price>
         </meal>
         <meal>
-          <name>Schweinefilet im Stück gebraten, Dijon-Senfsoße , Kartoffel-Bohnensalat</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <name>Currybratwurst, , Kartoffel-Bohnensalat</name>
           <note>Schwein</note>
           <note>Senf und Senferzeugnisse</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Geschmacksverstärker</note>
           <note>mit Konservierungsstoff</note>
-          <price role="employee">6.80</price>
-          <price role="other">8.00</price>
-          <price role="student">5.50</price>
+          <note>mit Phosphat</note>
+          <price role="employee">5.80</price>
+          <price role="other">7.00</price>
+          <price role="student">4.50</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -69,9 +71,9 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pastabar Fleisch oder Hähnchen des Tages</name>
-          <note>Geflügel</note>
+          <name>Bolognese, , Pasta nach Wahl</name>
           <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
@@ -79,10 +81,32 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Veg. Pastabar des Tages</name>
+          <name>Schupfnudeln, , Hausgemachte Rindfleisch - Lasagne</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Rind</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>veganer Cremespinat, , weiße Bohnen mediterraneo vegan, , Pasta nach Wahl</name>
           <note>Klimateller</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Cremespinat</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
@@ -91,8 +115,12 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Gemüsebar des Tages</name>
+          <name>Sojastreifen mit Gemüse, , Mais natur,, Spitzkohl gebraten,, gebratene Champignons</name>
           <note>Klimateller</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
