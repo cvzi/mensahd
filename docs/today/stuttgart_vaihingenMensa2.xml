@@ -3,13 +3,13 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2023-02-23">
+    <day date="2023-02-24">
       <category name="Vorspeise">
         <meal>
-          <name>Kartoffelsuppe</name>
+          <name>Gemüserahmsuppe</name>
           <note>Milch und Laktose</note>
           <note>Sellerie</note>
-          <note>mit Antioxidationsmitteln</note>
+          <note>Weizen</note>
           <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
@@ -17,9 +17,10 @@
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Spaghetti mit Napolisauce</name>
+          <name>Sojageschnetzeltes indische Art und Duftreis</name>
           <note>Sellerie</note>
-          <note>Weizen</note>
+          <note>Soja</note>
+          <note>mit Konservierungsstoffen</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -27,24 +28,29 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Gemüse-Crossies mit Karottengemüse und Duftreis</name>
+          <name>Pasta mit Schinken-Sahne-Champignonsauce</name>
           <note>Milch und Laktose</note>
+          <note>Schwein</note>
           <note>Sellerie</note>
           <note>Soja</note>
           <note>Weizen</note>
-          <note>vegetarisch</note>
-          <price role="employee">6.70</price>
-          <price role="student">4.20</price>
-        </meal>
-        <meal>
-          <name>Gebackener Fleischkäse mit Bratensauce und Pommes frites</name>
-          <note>Rind</note>
-          <note>Schwein</note>
-          <note>Senf</note>
           <note>mit Antioxidationsmitteln</note>
           <note>mit Konservierungsstoffen</note>
-          <price role="employee">6.80</price>
-          <price role="student">4.30</price>
+          <price role="employee">5.60</price>
+          <price role="student">3.10</price>
+        </meal>
+        <meal>
+          <name>Paniertes Seelachsfilet mit Remouladensauce und Kartoffelchips</name>
+          <note>Ei</note>
+          <note>Fisch</note>
+          <note>MSC-zertifizierter Fisch (MSC-C-51632)</note>
+          <note>Milch und Laktose</note>
+          <note>Senf</note>
+          <note>Weizen</note>
+          <note>mit Farbstoffen</note>
+          <note>mit Süßungsmitteln</note>
+          <price role="employee">7.90</price>
+          <price role="student">5.40</price>
         </meal>
       </category>
       <category name="Aktion">
@@ -99,7 +105,7 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Wokgemüse</name>
+          <name>Buntes Gemüse</name>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
@@ -115,6 +121,12 @@
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Kartoffelchips</name>
+          <note>vegan</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
         </meal>
       </category>
       <category name="Salat">
@@ -136,15 +148,17 @@
           <price role="student">0.66</price>
         </meal>
         <meal>
-          <name>Himbeerquark</name>
+          <name>Pfirsichjoghurt</name>
           <note>Milch und Laktose</note>
+          <note>mit Farbstoffen</note>
           <note>vegetarisch</note>
-          <price role="employee">1.59</price>
-          <price role="student">1.19</price>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
         </meal>
         <meal>
-          <name>Bayerische Creme mit Banane</name>
+          <name>Pudding mit Mokka-Geschmack</name>
           <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
