@@ -3,61 +3,7 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2023-02-28">
-      <category name="Pottkieker">
-        <meal>
-          <name>Kartoffel-Kürbis-Ragout , Reis</name>
-          <note>Klimateller</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">3.40</price>
-          <price role="other">4.10</price>
-          <price role="student">2.20</price>
-        </meal>
-      </category>
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Geflügelcurry mit Mandeln , Salzkartoffeln</name>
-          <note>Geflügel</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schalenfrüchte (z.B. Mandel, Haselnüsse, Walnuss etc.)/-erzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">4.50</price>
-          <price role="other">5.70</price>
-          <price role="student">3.20</price>
-        </meal>
-      </category>
-      <category name="CampusVital">
-        <meal>
-          <name>gebackener Hirtenkäse mit Sesamkruste , Minz-Joghurt-Soße , Couscous mit Mandeln, Rosinen und Chili</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schalenfrüchte (z.B. Mandel, Haselnüsse, Walnuss etc.)/-erzeugnisse</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">5.10</price>
-          <price role="other">6.30</price>
-          <price role="student">3.80</price>
-        </meal>
-      </category>
-    </day>
     <day date="2023-03-01">
-      <category name="Pottkieker">
-        <meal>
-          <name>Chili con Corn , Basmatireis</name>
-          <note>Klimateller</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">3.40</price>
-          <price role="other">4.10</price>
-          <price role="student">2.20</price>
-        </meal>
-      </category>
       <category name="CampusKlassiker">
         <meal>
           <name>Hähnchenbrust in Parmesanpanade , tomatisierte Kräutersoße , Hausgemachtes Kartoffel-Butterstampf</name>
@@ -109,20 +55,6 @@
           <price role="other">5.80</price>
           <price role="student">3.30</price>
         </meal>
-        <meal>
-          <name>Grünkohl , Kochwurst , Röstkartoffeln</name>
-          <note>Rind</note>
-          <note>Schwein</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Geschmacksverstärker</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Phosphat</note>
-          <price role="employee">5.30</price>
-          <price role="other">6.50</price>
-          <price role="student">4.00</price>
-        </meal>
       </category>
     </day>
     <day date="2023-03-03">
@@ -148,15 +80,6 @@
           <price role="other">6.40</price>
           <price role="student">3.90</price>
         </meal>
-        <meal>
-          <name>Hühnchen in pikanter Erdnuss-Curry-Soße , Reis</name>
-          <note>Erdnüsse und Erdnusserzeugnisse</note>
-          <note>Geflügel</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.40</price>
-          <price role="student">3.90</price>
-        </meal>
       </category>
     </day>
     <day date="2023-03-06">
@@ -171,6 +94,19 @@
           <price role="employee">3.40</price>
           <price role="other">4.10</price>
           <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Texashacksteak , Pfefferrahmsoße , Kartoffelspalten</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">5.70</price>
+          <price role="other">6.90</price>
+          <price role="student">4.40</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -188,6 +124,161 @@
           <price role="employee">5.40</price>
           <price role="other">6.60</price>
           <price role="student">4.10</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-03-07">
+      <category name="Pottkieker">
+        <meal>
+          <name>LowBowl mit Reis, Erbsen, Kürbis und Kokos</name>
+          <note>Klimateller</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Hähnchenbrust in Tahini-Marinade , Schmand-Joghurt-Soße , Bukhari Dajaj - Orientalischer Gewürzreis</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <price role="employee">5.30</price>
+          <price role="other">6.50</price>
+          <price role="student">4.00</price>
+        </meal>
+      </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Hausgemachte Gemüselasagne , Tomatensoße</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">1.30</price>
+          <price role="other">2.50</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-03-08">
+      <category name="Pottkieker">
+        <meal>
+          <name>Mexikanischer Bohnentopf</name>
+          <note>Klimateller</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Ägyptische Falafel , Knoblauchdip , Krautsalat , Gemüse Bulgur</name>
+          <note>Geschwefelt</note>
+          <note>Klimateller</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Farbstoff</note>
+          <price role="employee">5.50</price>
+          <price role="other">6.70</price>
+          <price role="student">4.20</price>
+        </meal>
+        <meal>
+          <name>Tom Kha Gai Hühner-Kokos-Topf mit Gemüse und Hähnchen , Reis</name>
+          <note>Geflügel</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.40</price>
+          <price role="student">4.90</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-03-09">
+      <category name="Pottkieker">
+        <meal>
+          <name>Holsteiner Kartoffeltopf</name>
+          <note>Klimateller</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Hähnchen Crossies in Panko Panade , BBQ Soße , Kartoffelspalten</name>
+          <note>Geflügel</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">5.60</price>
+          <price role="other">6.80</price>
+          <price role="student">4.30</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Belugalinsen-Tomaten-Curry , Indische Kartoffeln</name>
+          <note>Klimateller</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Farbstoff</note>
+          <price role="employee">3.80</price>
+          <price role="other">5.00</price>
+          <price role="student">2.50</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-03-10">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Hähnchen Cordon Bleu , Hollandaise , Erbsen, Herzoginkartoffeln</name>
+          <note>Alkohol</note>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Konservierungsstoff</note>
+          <price role="employee">5.60</price>
+          <price role="other">6.80</price>
+          <price role="student">4.30</price>
+        </meal>
+        <meal>
+          <name>4 Röstiecken, Kräuterquark , Gurkensalat</name>
+          <note>Klimateller</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">5.60</price>
+          <price role="other">6.80</price>
+          <price role="student">4.30</price>
         </meal>
       </category>
     </day>
