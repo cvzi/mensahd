@@ -4,9 +4,19 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2023-03-02">
+      <category name="Vorspeise">
+        <meal>
+          <name>Karotten-Ingwersuppe</name>
+          <note>Sellerie</note>
+          <note>mit Konservierungsstoffen</note>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
       <category name="Veganer renner">
         <meal>
-          <name>Ofenkartoffel mit veganem Kräuterjoghurt und Salat</name>
+          <name>Ofenkartoffel mit veganem Kräuterdip und Salat</name>
           <note>Soja</note>
           <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
@@ -58,8 +68,9 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Creme mit Tiramisu-Geschmack</name>
+          <name>Pudding mit Mokka-Geschmack</name>
           <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
