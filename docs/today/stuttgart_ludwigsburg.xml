@@ -3,12 +3,20 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2023-03-02">
+    <day date="2023-03-03">
+      <category name="Vorspeise">
+        <meal>
+          <name>Tagessuppe</name>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
       <category name="Veganer renner">
         <meal>
-          <name>Ofenkartoffel mit veganem Kräuterdip und Salat</name>
-          <note>Soja</note>
-          <note>mit Antioxidationsmitteln</note>
+          <name>Spinatnudeln</name>
+          <note>Hafer</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -16,69 +24,35 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Hähnchenbrustfilet mit Curry-Kokos-Sauce und Reis</name>
-          <note>Geflügel</note>
+          <name>Paprika mit Couscousfüllung, an Ratatouille-Gemüse und Kräuterreis</name>
           <note>Sellerie</note>
           <note>Weizen</note>
-          <price role="employee">6.00</price>
-          <price role="student">3.50</price>
-        </meal>
-        <meal>
-          <name>Sojageschnetzeltes Szechuan mit Mienudeln</name>
-          <note>Soja</note>
-          <note>Weizen</note>
-          <note>mit Konservierungsstoffen</note>
           <note>vegan</note>
-          <price role="employee">5.60</price>
-          <price role="student">3.10</price>
+          <price role="employee">7.20</price>
+          <price role="student">4.70</price>
         </meal>
         <meal>
-          <name>Rote Wurst</name>
-          <note>Rind</note>
-          <note>Schwein</note>
-          <note>Senf</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Konservierungsstoffen</note>
-          <price role="employee">6.40</price>
-          <price role="student">3.90</price>
-        </meal>
-      </category>
-      <category name="Aktion">
-        <meal>
-          <name>Linsen und Spätzle mit Saiten</name>
-          <note>Dinkel</note>
+          <name>Fischstäbchen mit Remouladensauce und Salzkartoffeln</name>
           <note>Ei</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Sellerie</note>
-          <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Phosphaten</note>
-          <price role="employee">7.30</price>
-          <price role="student">4.80</price>
-        </meal>
-        <meal>
-          <name>Backfisch mit Remouladensauce und Pommes frites</name>
-          <note>Ei</note>
+          <note>Fisch</note>
           <note>MSC-zertifizierter Fisch (MSC-C-51632)</note>
           <note>Milch und Laktose</note>
           <note>Senf</note>
           <note>Weizen</note>
           <note>mit Farbstoffen</note>
           <note>mit Süßungsmitteln</note>
-          <price role="employee">7.90</price>
-          <price role="student">5.40</price>
+          <price role="employee">7.40</price>
+          <price role="student">4.90</price>
         </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Mienudeln</name>
-          <note>Weizen</note>
-          <note>vegan</note>
+          <name>Tagesgemüse</name>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
         <meal>
-          <name>Reis</name>
+          <name>Salzkartoffeln</name>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
@@ -99,15 +73,10 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Pudding mit Vanille-Geschmack</name>
+          <name>Nuss-Nougat-Pudding</name>
+          <note>Haselnüsse</note>
           <note>Milch und Laktose</note>
           <note>vegetarisch</note>
-          <price role="employee">1.59</price>
-          <price role="student">1.19</price>
-        </meal>
-        <meal>
-          <name>Creme mit Tiramisu-Geschmack</name>
-          <note>Milch und Laktose</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
