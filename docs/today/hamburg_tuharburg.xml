@@ -47,16 +47,6 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Aglio e olio mit Tomate und Knoblauch, Fusilli</name>
-          <note>Klimateller</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
           <name>Arcobaleno mit Schinken und Käse , Fusilli</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
@@ -67,6 +57,16 @@
           <note>mit Farbstoff</note>
           <note>mit Konservierungsstoff</note>
           <note>mit Phosphat</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Aglio e olio mit Tomate und Knoblauch, Fusilli</name>
+          <note>Klimateller</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -220,18 +220,6 @@
       </category>
       <category name="CampusVital">
         <meal>
-          <name>Stufato di Lenticche mit Räuchertofu , Limetten-Joghurt-Dip , Maccaroni</name>
-          <note>Klimateller</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">3.80</price>
-          <price role="other">5.00</price>
-          <price role="student">2.50</price>
-        </meal>
-        <meal>
           <name>Belugalinsen-Tomaten-Curry , Indische Kartoffeln</name>
           <note>Klimateller</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -243,22 +231,34 @@
           <price role="other">5.00</price>
           <price role="student">2.50</price>
         </meal>
+        <meal>
+          <name>Stufato di Lenticche mit Räuchertofu , Limetten-Joghurt-Dip , Maccaroni</name>
+          <note>Klimateller</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">3.80</price>
+          <price role="other">5.00</price>
+          <price role="student">2.50</price>
+        </meal>
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Crema di Zucchine e Pomodoro mit Tomaten-Sahnesoße und Zucchini , Penne</name>
+          <name>Ragù bianco mit Rinderhackfleisch und Kräutern , Penne</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Vegetarisch</note>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Ragù bianco mit Rinderhackfleisch und Kräutern , Penne</name>
+          <name>Crema di Zucchine e Pomodoro mit Tomaten-Sahnesoße und Zucchini , Penne</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Rind</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
@@ -437,9 +437,9 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pastabar Fleisch oder Hähnchen des Tages</name>
-          <note>Geflügel</note>
-          <note>Rind</note>
+          <name>Veg. Pastabar des Tages</name>
+          <note>Klimateller</note>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
@@ -447,9 +447,9 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Veg. Pastabar des Tages</name>
-          <note>Klimateller</note>
-          <note>Vegan</note>
+          <name>Pastabar Fleisch oder Hähnchen des Tages</name>
+          <note>Geflügel</note>
+          <note>Rind</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
