@@ -4,8 +4,61 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2023-03-05">
-      <closed/>
+    <day date="2023-03-06">
+      <category name="Dessert">
+        <meal>
+          <name>Quarkcreme mit Amarettinis und Schokolade</name>
+          <note>Curd cream with amarettinis and chocolate</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Chia-Soja-Creme mit Obst-Topping</name>
+          <note>Chia-soy-cream with fruit topping</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Gebrannte Maisgrießsuppe mit Petersilienpesto</name>
+          <note>Polenta soup with parsley pesto</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Käsegriller vom Hällischen Schwein mit Currysoße und Pommes frites</name>
+          <note>Cheese sausage with curry sauce and French fries</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Asiatische Chilinudeln mit Mungosprossen und eingelegtem Bambus</name>
+          <note>Asian chili noodles with bean sprouts and marinated bamboo</note>
+          <price role="student">4.00</price>
+          <price role="employee">6.00</price>
+          <price role="other">8.00</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Kartoffel-Gnocchi mit Röstzwiebeln, Porreesoße und karamelisierten Selleriewürfeln</name>
+          <note>Potato gnocchi with fried onions, leek sauce and caramelized diced celery root</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
