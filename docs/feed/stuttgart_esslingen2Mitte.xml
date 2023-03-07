@@ -4,6 +4,17 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2023-03-07">
+      <category name="Vorspeise">
+        <meal>
+          <name>Kürbissuppe</name>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
       <category name="Veganer renner">
         <meal>
           <name>Alu Gobhi - indisches Blumenkohl-Kartoffel-Curry</name>
@@ -87,6 +98,16 @@
       </category>
     </day>
     <day date="2023-03-08">
+      <category name="Vorspeise">
+        <meal>
+          <name>Nudelsuppe</name>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
       <category name="Veganer renner">
         <meal>
           <name>Bandnudeln mit Rucola-Sonnenblumenkernpesto</name>
@@ -118,12 +139,6 @@
         </meal>
       </category>
       <category name="Beilage">
-        <meal>
-          <name>Schwenkkartoffeln</name>
-          <note>vegan</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
         <meal>
           <name>Spätzle</name>
           <note>Dinkel</note>
@@ -629,8 +644,8 @@
           <note>Weizen</note>
           <note>mit Alkohol</note>
           <note>vegan</note>
-          <price role="employee">6.40</price>
-          <price role="student">3.90</price>
+          <price role="employee">6.30</price>
+          <price role="student">3.80</price>
         </meal>
         <meal>
           <name>Currywurst und Pommes frites mit Currysauce</name>

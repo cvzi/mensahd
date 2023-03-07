@@ -4,13 +4,6 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2023-03-07">
-      <category name="Vorspeise">
-        <meal>
-          <name>Tagessuppe</name>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-      </category>
       <category name="Veganer renner">
         <meal>
           <name>Alu Gobhi - indisches Blumenkohl-Kartoffel-Curry</name>
@@ -47,19 +40,28 @@
           <price role="employee">6.70</price>
           <price role="student">4.20</price>
         </meal>
+      </category>
+      <category name="Aktion">
         <meal>
-          <name>Seelachsfilet auf mediterranem Gemüsebett und Reis</name>
+          <name>Paniertes Seelachsfilet mit Remouladensauce und Thymiankartoffeln</name>
+          <note>Ei</note>
           <note>Fisch</note>
           <note>MSC-zertifizierter Fisch (MSC-C-51632)</note>
-          <note>Sellerie</note>
+          <note>Milch und Laktose</note>
+          <note>Senf</note>
           <note>Weizen</note>
+          <note>mit Farbstoffen</note>
+          <note>mit Süßungsmitteln</note>
           <price role="employee">7.90</price>
           <price role="student">5.40</price>
         </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Tagesgemüse</name>
+          <name>Blattspinat</name>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -84,6 +86,12 @@
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
+        <meal>
+          <name>und Thymiankartoffeln</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
       </category>
       <category name="Salat">
         <meal>
@@ -95,38 +103,18 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Himbeerquark</name>
+          <name>Mousse au chocolat</name>
           <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Mousse mit Limone-Joghurt-Geschmack</name>
+          <name>Kirschjoghurt</name>
           <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.59</price>
-          <price role="student">1.19</price>
-        </meal>
-      </category>
-      <category name="Buffet">
-        <meal>
-          <name>Salatbuffet</name>
-          <note>Ei</note>
-          <note>Milch und Laktose</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>Sesam</note>
-          <note>Weizen</note>
-          <note>geschwefelt</note>
-          <note>geschwärzt</note>
-          <note>mit Antioxidationsmitteln</note>
           <note>mit Farbstoffen</note>
-          <note>mit Süßungsmitteln</note>
           <note>vegetarisch</note>
-          <price role="employee">1.60</price>
-          <price role="student">1.10</price>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
         </meal>
       </category>
     </day>
@@ -927,8 +915,8 @@
           <note>Weizen</note>
           <note>mit Alkohol</note>
           <note>vegan</note>
-          <price role="employee">6.40</price>
-          <price role="student">3.90</price>
+          <price role="employee">6.30</price>
+          <price role="student">3.80</price>
         </meal>
         <meal>
           <name>Ungarische Kesselwurst mit Gemüseeintopf</name>
