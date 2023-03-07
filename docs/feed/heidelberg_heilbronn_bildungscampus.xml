@@ -5,42 +5,6 @@
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
     <day date="2023-03-06">
-      <category name="Dessert">
-        <meal>
-          <name>Quarkcreme mit Amarettinis und Schokolade</name>
-          <note>Curd cream with amarettinis and chocolate</note>
-          <price role="student">0.75</price>
-          <price role="employee">1.15</price>
-          <price role="other">1.90</price>
-        </meal>
-      </category>
-      <category name="Dessert vegan">
-        <meal>
-          <name>Chia-Soja-Creme mit Obst-Topping</name>
-          <note>Chia-soy-cream with fruit topping</note>
-          <price role="student">0.75</price>
-          <price role="employee">1.15</price>
-          <price role="other">1.90</price>
-        </meal>
-      </category>
-      <category name="Suppentopf">
-        <meal>
-          <name>Gebrannte Maisgrießsuppe mit Petersilienpesto</name>
-          <note>Polenta soup with parsley pesto</note>
-          <price role="student">0.55</price>
-          <price role="employee">0.85</price>
-          <price role="other">1.40</price>
-        </meal>
-      </category>
-      <category name="Tierisch">
-        <meal>
-          <name>Käsegriller vom Hällischen Schwein mit Currysoße und Pommes frites</name>
-          <note>Cheese sausage with curry sauce and French fries</note>
-          <price role="student">0.92</price>
-          <price role="employee">1.20</price>
-          <price role="other">1.94</price>
-        </meal>
-      </category>
       <category name="Vegan">
         <meal>
           <name>Asiatische Chilinudeln mit Mungosprossen und eingelegtem Bambus</name>
@@ -48,15 +12,6 @@
           <price role="student">4.00</price>
           <price role="employee">6.00</price>
           <price role="other">8.00</price>
-        </meal>
-      </category>
-      <category name="Vegetarisch">
-        <meal>
-          <name>Kartoffel-Gnocchi mit Röstzwiebeln, Porreesoße und karamelisierten Selleriewürfeln</name>
-          <note>Potato gnocchi with fried onions, leek sauce and caramelized diced celery root</note>
-          <price role="student">0.92</price>
-          <price role="employee">1.20</price>
-          <price role="other">1.94</price>
         </meal>
       </category>
     </day>
@@ -99,7 +54,7 @@
       </category>
       <category name="Vegan">
         <meal>
-          <name>Kartoffel-Couscous-Küchlein mit Rote-Bete-Chutney und cremigen Gurkensalat</name>
+          <name>Kartoffel-Couscous-Küchlein mit Rote-Beete-Chutney und cremigen Gurkensalat</name>
           <note>Potato-couscous-patty with red beet root chutney and creamy cucumber salad</note>
           <price role="student">4.50</price>
           <price role="employee">6.75</price>
@@ -146,8 +101,8 @@
       </category>
       <category name="Tierisch">
         <meal>
-          <name>Hausgemachtes Putenschnitzel mit Kräuterbutter und Kartoffelsalat</name>
-          <note>Housemade turkey schnitzel with herbed butter and potato salad</note>
+          <name>Hausgemachtes Putenschnitzel mit Kartoffelsalat</name>
+          <note>Housemade turkey schnitzel with potato salad</note>
           <price role="student">0.92</price>
           <price role="employee">1.20</price>
           <price role="other">1.94</price>
@@ -291,19 +246,284 @@
       <closed/>
     </day>
     <day date="2023-03-13">
-      <closed/>
+      <category name="Dessert">
+        <meal>
+          <name>Quarkcreme mit Rosinen und Müsli</name>
+          <note>Quarkcreme mit Rosinen und Müsli</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Bananenkuchen im Glas mit Ahornsirup und Joghurt</name>
+          <note>Bananenkuchen im Glas mit Ahornsirup und Joghurt</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Vegane Paprikasuppe mit Haferrahm</name>
+          <note>Vegane Paprikasuppe mit Haferrahm</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Gyros vom schwäbisch hällischem Schwein mit Wedges und Knoblauchdip</name>
+          <note>Gyros vom schwäbisch hällischem Schwein mit Wedges und Knoblauchdip</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Kartoffelgulasch mit Brechbohnen-Gemüse und Petersilienjoghurt</name>
+          <note>Kartoffelgulasch mit Brechbohnen-Gemüse und Petersilienjoghurt</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Sahnige Limetten Pasta mit Karottenstreifen aus dem Ländle, gerösteten Sonnenblumenkernen und scharfem Minzöl</name>
+          <note>Sahnige Limetten Pasta mit Karottenstreifen aus dem Ländle, gerösteten Sonnenblumenkernen und scharfem Minzöl</note>
+          <price role="student">4.00</price>
+          <price role="employee">6.00</price>
+          <price role="other">8.00</price>
+        </meal>
+      </category>
     </day>
     <day date="2023-03-14">
-      <closed/>
+      <category name="Dessert">
+        <meal>
+          <name>Karamelisierte Apfelspalten mit Vanillesoße und Biskuittaler</name>
+          <note>Karamelisierte Apfelspalten mit Vanillesoße und Biskuittaler</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Cremiger Hafer-Mohn-Pudding</name>
+          <note>Cremiger Hafer-Mohn-Pudding</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Maronen-Lauch-Cremesuppe</name>
+          <note>Maronen-Lauch-Cremesuppe</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Confiertes Filet vom Kabeljau auf Rahmwirsing und Dinkelreis</name>
+          <note>Confiertes Filet vom Kabeljau auf Rahmwirsing und Dinkelreis</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Blumenkohl-Gemüse-Pfanne mit geschmorter Süßkartoffel und Pesto</name>
+          <note>Blumenkohl-Gemüse-Pfanne mit geschmorter Süßkartoffel und Pesto</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Orientalische Linsen-Bulgur Köfte, marinierte Prinzeßböhnchen dazu knuspriges Fladenbrot und Tsatsiki</name>
+          <note>Orientalische Linsen-Bulgur Köfte, marinierte Prinzeßböhnchen dazu knuspriges Fladenbrot und Tsatsiki</note>
+          <price role="student">4.50</price>
+          <price role="employee">6.75</price>
+          <price role="other">9.00</price>
+        </meal>
+      </category>
     </day>
     <day date="2023-03-15">
-      <closed/>
+      <category name="Dessert">
+        <meal>
+          <name>Hausgemachte Butterkeks-Creme und Karameltopping</name>
+          <note>Hausgemachte Butterkeks-Creme und Karameltopping</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Trifle vom Rhabarber, Chia und Zimtsahne</name>
+          <note>Trifle vom Rhabarber, Chia und Zimtsahne</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Hausgemachter Kohleintopf mit Kartoffelwürfel</name>
+          <note>Hausgemachter Kohleintopf mit Kartoffelwürfel</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Maultaschen-Burger im Laugenbrötchen, mit Balsamico Zwiebeln, Sauerkraut und Essiggurken, dazu  Coleslaw-Salat</name>
+          <note>Maultaschen-Burger im Laugenbrötchen, mit Balsamico Zwiebeln, Sauerkraut und Essiggurken, dazu  Coleslaw-Salat</note>
+          <price role="student">5.00</price>
+          <price role="employee">7.50</price>
+          <price role="other">10.00</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Mienudeln mit frischem Wokgemüse und Sweet Chili Sauce</name>
+          <note>Mienudeln mit frischem Wokgemüse und Sweet Chili Sauce</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Sautierte Champignon in Rahm mit jungem Lauch und Semmelknödel</name>
+          <note>Sautierte Champignon in Rahm mit jungem Lauch und Semmelknödel</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
     </day>
     <day date="2023-03-16">
-      <closed/>
+      <category name="Dessert">
+        <meal>
+          <name>Panna Cotta mit Fruchtsoße</name>
+          <note>Panna Cotta mit Fruchtsoße</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Marzipanmousse mit rotem Fruchtmus</name>
+          <note>Marzipanmousse mit rotem Fruchtmus</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Pastinakensüppchen mit frischem Schnittlauch</name>
+          <note>Pastinakensüppchen mit frischem Schnittlauch</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Gefüllte Kalbsbrust aus dem Hohenloher Land mit pochiertem Kohlrabi und Bandnudeln</name>
+          <note>Gefüllte Kalbsbrust aus dem Hohenloher Land mit pochiertem Kohlrabi und Bandnudeln</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Bolognese mit Wurzelgemüse und Sesamparmesan</name>
+          <note>Bolognese mit Wurzelgemüse und Sesamparmesan</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Spinat-Käse-Wrap mit gekräuterten Quinoasalat und gerösteten Kichererbsen</name>
+          <note>Spinat-Käse-Wrap mit gekräuterten Quinoasalat und gerösteten Kichererbsen</note>
+          <price role="student">4.50</price>
+          <price role="employee">6.75</price>
+          <price role="other">9.00</price>
+        </meal>
+      </category>
     </day>
     <day date="2023-03-17">
-      <closed/>
+      <category name="Dessert">
+        <meal>
+          <name>Kirschragout mit Schmandhaube und Schokoladenraspel</name>
+          <note>Kirschragout mit Schmandhaube und Schokoladenraspel</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Mandelpudding mit Zwetschgen-Röster</name>
+          <note>Mandelpudding mit Zwetschgen-Röster</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Hausgemachte Gemüsebrühe mit Flädle</name>
+          <note>Hausgemachte Gemüsebrühe mit Flädle</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Gebackenes Wildlachsfilet in Dill-Senfrahm und Kartoffeln</name>
+          <note>Gebackenes Wildlachsfilet in Dill-Senfrahm und Kartoffeln</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Grünkernbratling von der Frießinger Mühle mit Rosenkohl und Langkornreis</name>
+          <note>Grünkernbratling von der Frießinger Mühle mit Rosenkohl und Langkornreis</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Hausgemachter Langos mit Sauerrahm,Tomatenpesto und grüner Salat</name>
+          <note>Hausgemachter Langos mit Sauerrahm,Tomatenpesto und grüner Salat</note>
+          <price role="student">5.00</price>
+          <price role="employee">7.50</price>
+          <price role="other">10.00</price>
+        </meal>
+      </category>
     </day>
     <day date="2023-03-18">
       <closed/>
