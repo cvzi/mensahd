@@ -4,6 +4,21 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2023-03-13">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>gerösteter Blumenkohl, Paprika Pilaw, grüne Kräutersoße</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Farbstoff</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">6.05</price>
+          <price role="other">7.25</price>
+          <price role="student">4.75</price>
+        </meal>
+      </category>
       <category name="CampusVital">
         <meal>
           <name>Pikantes Rührei mit Libanesischen Kartoffeln</name>
@@ -29,24 +44,9 @@
           <price role="student">2.80</price>
         </meal>
       </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>gerösteter Blumenkohl, Paprika Pilaw, grüne Kräutersoße</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Farbstoff</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">7.10</price>
-          <price role="other">8.30</price>
-          <price role="student">5.80</price>
-        </meal>
-      </category>
       <category name="Pastabar">
         <meal>
-          <name>Crema di pomodori secchi e basilico mit getrockneten Tomaten in Kräutersoße , Fusilli</name>
+          <name>Crema di pomodori secchi e basilico mit getrockneten Tomaten in Kräutersoße</name>
           <note>Geschwefelt</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
@@ -58,7 +58,7 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Carbonara vegetariana , Fusilli</name>
+          <name>Carbonara vegetariana</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Vegetarisch</note>
