@@ -4,13 +4,6 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2023-03-30">
-      <category name="Vorspeise">
-        <meal>
-          <name>Tagessuppe</name>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-      </category>
       <category name="Veganer renner">
         <meal>
           <name>Veganes Pilz-Spinat-Risotto</name>
@@ -39,23 +32,10 @@
           <price role="student">4.80</price>
         </meal>
       </category>
-      <category name="Aktion">
-        <meal>
-          <name>Backfisch mit Remouladensauce und Pommes frites</name>
-          <note>Ei</note>
-          <note>MSC-zertifizierter Fisch (MSC-C-51632)</note>
-          <note>Milch und Laktose</note>
-          <note>Senf</note>
-          <note>Weizen</note>
-          <note>mit Farbstoffen</note>
-          <note>mit Süßungsmitteln</note>
-          <price role="employee">7.90</price>
-          <price role="student">5.40</price>
-        </meal>
-      </category>
       <category name="Beilage">
         <meal>
-          <name>Tagesgemüse</name>
+          <name>Karotten-Erbsen-Gemüse</name>
+          <note>Sellerie</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -76,6 +56,12 @@
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
+        <meal>
+          <name>Country Potatoes</name>
+          <note>Weizen</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
       </category>
       <category name="Salat">
         <meal>
@@ -87,16 +73,15 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Rote Grütze mit Dessertsoße Vanille</name>
-          <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
+          <name>Kokosmilchreis mit Mango</name>
+          <note>Soja</note>
+          <note>vegan</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Kokosmilchreis mit Mango</name>
-          <note>Soja</note>
-          <note>vegan</note>
+          <name>Schokoladenpudding</name>
+          <note>Milch und Laktose</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
