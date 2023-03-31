@@ -4,14 +4,59 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2023-03-30">
+    <day date="2023-03-31">
+      <category name="Dessert">
+        <meal>
+          <name>Panna Cotta mit Orange und Banane</name>
+          <note>Panna cotta with orange and banana</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Choco-Trifle mit selbstgemachter Granola</name>
+          <note>Chocolate-trifle with housemade  granola</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Feuriger Bohnentopf mit Wurzelgemüse</name>
+          <note>Spicy bean stew with root vegetables</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Gebratenes Fischfilet "Müllerin Art" mit sautiertem Mangoldgemüse und buntem Couscous</name>
+          <note>Sauteed fish filet "Müllerin Art" with chard and colorful couscous</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
       <category name="Vegan">
         <meal>
-          <name>Quesadilla gefüllt mit Wurzelgemüse-Hummus und Zwiebelmarmelade, dazu Reisnudelsalat</name>
-          <note>Quesadilla filled with root vegetable-hummus and onion relish, served with rice noodle salad</note>
-          <price role="student">5.00</price>
-          <price role="employee">7.50</price>
-          <price role="other">10.00</price>
+          <name>Zweierlei Hummus mit Grillgemüse dazu ofenfrisches Grillbrot</name>
+          <note>Duet of hummus with grilled vegetables and oven-fresh bread</note>
+          <price role="student">4.00</price>
+          <price role="employee">6.00</price>
+          <price role="other">8.00</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Käsespätzle "schwäbische Art" mit Röstzwiebeln</name>
+          <note>Cheesy-spaetzle noodles "Swabian style" with fried onions</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
         </meal>
       </category>
     </day>
