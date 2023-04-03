@@ -60,10 +60,11 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta des Tages</name>
+          <name>Pasta mit Spinat in Sahnesauce</name>
           <note>Klimateller</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
@@ -72,10 +73,13 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Gemüse des Tages</name>
+          <name>Gartengemüse , gebackene Aubergine, gerösteter Tandoor Broccoli , gebratene Zucchini</name>
           <note>Klimateller</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Farbstoff</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -351,21 +355,21 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Extra: Kartoffelspalten</name>
-          <note>Klimateller</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">1.20</price>
-          <price role="other">1.35</price>
-          <price role="student">1.10</price>
-        </meal>
-        <meal>
           <name>Extra: Pommes Frites</name>
           <note>Klimateller</note>
           <note>Senf und Senferzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.20</price>
+          <price role="other">1.35</price>
+          <price role="student">1.10</price>
+        </meal>
+        <meal>
+          <name>Extra: Kartoffelspalten</name>
+          <note>Klimateller</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">1.20</price>
           <price role="other">1.35</price>
           <price role="student">1.10</price>
@@ -612,6 +616,17 @@
       </category>
       <category name="CampusWorld">
         <meal>
+          <name>Pho GA, kräftiger Hühnereintopf mit gebackener Hähnchenkeule, frischem Gemüse und Reisnudeln</name>
+          <note>Geflügel</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Konservierungsstoff</note>
+          <price role="employee">6.80</price>
+          <price role="other">8.00</price>
+          <price role="student">5.50</price>
+        </meal>
+        <meal>
           <name>Pho chay, kräftige Gemüsebrühe mit gebackenem Tofu, frischem Gemüse und Reisnudeln</name>
           <note>Klimateller</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -623,17 +638,6 @@
           <price role="employee">5.80</price>
           <price role="other">7.00</price>
           <price role="student">4.50</price>
-        </meal>
-        <meal>
-          <name>Pho GA, kräftiger Hühnereintopf mit gebackener Hähnchenkeule, frischem Gemüse und Reisnudeln</name>
-          <note>Geflügel</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">6.80</price>
-          <price role="other">8.00</price>
-          <price role="student">5.50</price>
         </meal>
       </category>
       <category name="Pastabar">
