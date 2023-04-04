@@ -4,8 +4,61 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2023-04-03">
-      <closed/>
+    <day date="2023-04-04">
+      <category name="Dessert">
+        <meal>
+          <name>Panna Cotta mit hausgemachtem Minz-Pesto</name>
+          <note>Panna cotta with housemade mint pesto</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Orientalischer Gewürzpudding mit Granatapfel und Ahornsirup</name>
+          <note>Oriental spiced pudding with pomegrante and maple syrup</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Cremiges Süppchen von der Petersilienwurzel mit Ajvar</name>
+          <note>Creamy parsley root soup with ajvar</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Schwäbische Linsen von der Lauteracher Mühle, dazu Spätzle und Geflügelwienerle</name>
+          <note>Swabian lentils with spaetzle noodles and poultry Vienna sausages</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Gelbes Curry mit Blumenkohl und Karotte mit Zartweizen</name>
+          <note>Yellow curry with cauliflower, carrots and tender wheat</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Hausgemachte wilde Kartoffeln mit mariniertem Pfannengemüse und Sour-Cream</name>
+          <note>Housemade wild potatoes with marinated sauteed vegetables and sour cream</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
