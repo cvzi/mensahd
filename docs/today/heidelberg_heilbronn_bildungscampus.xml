@@ -4,8 +4,61 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2023-04-04">
-      <closed/>
+    <day date="2023-04-05">
+      <category name="Dessert">
+        <meal>
+          <name>Joghurtmousse mit Butterscotchsoße und Beeren</name>
+          <note>Yogurt mousse with a butterscotch sauce and berries</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Kirsch-Zwieback-Trifle</name>
+          <note>Cherry-zwieback-trifle</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Klare Gemüsebrühe mit Süßkartoffeln und Erbsen</name>
+          <note>Clear vegetable broth with sweet potatoes and peas</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Pochierter Seehecht in tomatisiertem Kräuterrahm, Zuckererbsen und Langkornreis</name>
+          <note>Poached hake in a creamy tomato-herb sauce, with snow peas and long grain rice</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Hausgemachte Haferquark-Frikadelle auf cremigem Lauchgemüse und Pasta</name>
+          <note>Housemade oat curd-patty with leek and pasta</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Gefüllte Teigtaschen "al Forno" in Tomatensauce, mit Käse überbacken</name>
+          <note>Stuffed pasta "al Forno" baked with tomato sauce and cheese</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
