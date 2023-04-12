@@ -48,6 +48,16 @@
           <price role="student">4.20</price>
         </meal>
         <meal>
+          <name>Schupfnudeln mit Austernpilzen, Erbsen und Paprika</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">5.30</price>
+          <price role="other">6.50</price>
+          <price role="student">4.00</price>
+        </meal>
+        <meal>
           <name>Frisch aus dem Wok: Gemüse mit Ananas und Soja-Sauce , Basmatireis</name>
           <note>Geschwefelt</note>
           <note>Klimateller</note>
@@ -62,18 +72,20 @@
           <price role="other">5.60</price>
           <price role="student">3.10</price>
         </meal>
-        <meal>
-          <name>Schupfnudeln mit Austernpilzen, Erbsen und Paprika</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">5.30</price>
-          <price role="other">6.50</price>
-          <price role="student">4.00</price>
-        </meal>
       </category>
       <category name="Pastabar">
+        <meal>
+          <name>all`Amatriciana mit Speck und Tomaten , bunte Fusilli</name>
+          <note>Schwein</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Phosphat</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
         <meal>
           <name>Pomodoro asiatico mit asiatischer Tomatensoße und Soja Chunks , Reis</name>
           <note>Klimateller</note>
@@ -83,18 +95,6 @@
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <note>mit Konservierungsstoff</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
-          <name>all`Amatriciana mit Speck und Tomaten , bunte Fusilli</name>
-          <note>Schwein</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Phosphat</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -151,6 +151,19 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
+          <name>Chili sin carne , Reis, Gurke-Mais-Salat</name>
+          <note>Klimateller</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mensaVital</note>
+          <price role="employee">4.40</price>
+          <price role="other">5.60</price>
+          <price role="student">3.10</price>
+        </meal>
+        <meal>
           <name>Cheeseburger mit Gurken, Tomaten und Salat , Pommes Frites</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
@@ -165,19 +178,6 @@
           <price role="employee">5.30</price>
           <price role="other">6.50</price>
           <price role="student">4.00</price>
-        </meal>
-        <meal>
-          <name>Chili sin carne , Reis, Gurke-Mais-Salat</name>
-          <note>Klimateller</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mensaVital</note>
-          <price role="employee">4.40</price>
-          <price role="other">5.60</price>
-          <price role="student">3.10</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -281,9 +281,9 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Veg. Pastabar des Tages</name>
-          <note>Klimateller</note>
-          <note>Vegan</note>
+          <name>Pastabar Fleisch oder Hähnchen des Tages</name>
+          <note>Geflügel</note>
+          <note>Rind</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
@@ -291,9 +291,9 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Pastabar Fleisch oder Hähnchen des Tages</name>
-          <note>Geflügel</note>
-          <note>Rind</note>
+          <name>Veg. Pastabar des Tages</name>
+          <note>Klimateller</note>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
