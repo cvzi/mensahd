@@ -143,7 +143,7 @@
 
     <xsl:if test="$feed">
       <feed name="full" priority="1">
-        <schedule dayOfMonth="*" dayOfWeek="1-5" hour="8" minute="10" retry="65 1 1440" />
+        <schedule dayOfMonth="*" dayOfWeek="*" hour="6-14" minute="10" retry="65 1 1440" />
         <url><xsl:value-of select="$feed" /></url>
         <source><xsl:value-of select="$source" /></source>
       </feed>
@@ -151,7 +151,7 @@
 
     <xsl:if test="$feed_today">
     <feed name="today" priority="0">
-      <schedule dayOfMonth="*" dayOfWeek="1-5" hour="10-14" retry="5 3" />
+      <schedule dayOfMonth="*" dayOfWeek="1-5" hour="6-14" retry="5 3" />
       <url><xsl:value-of select="$feed_today" /></url>
       <source>
         <xsl:choose>
@@ -168,7 +168,7 @@
 
     <xsl:if test="$feed_full">
     <feed name="full" priority="1">
-      <schedule dayOfMonth="*" dayOfWeek="1-5" hour="8" minute="55" retry="60 1 1440" />
+      <schedule dayOfMonth="*" dayOfWeek="*" hour="7,9" minute="11" retry="60 1 1440" />
       <url><xsl:value-of select="$feed_full" /></url>
       <source>
         <xsl:choose>

@@ -19,12 +19,12 @@
       <sunday {sunday} />
     </times>
     <feed name="today" priority="0">
-      <schedule dayOfMonth="*" dayOfWeek="1-5" hour="10-14" retry="5 3" />
+      <schedule dayOfMonth="*" dayOfWeek="1-5" hour="6-14" retry="5 3" />
       <url>{feed_today}</url>
       <source>{source_today}</source>
     </feed>
     <feed name="full" priority="1">
-      <schedule dayOfMonth="*" dayOfWeek="1-5" hour="9" minute="30" retry="60 1 1440" />
+      <schedule dayOfMonth="*" dayOfWeek="*" hour="7,9" minute="20" retry="60 1 1440" />
       <url>{feed_full}</url>
       <source>{source_full}</source>
     </feed>
