@@ -6,11 +6,10 @@
     <day date="2023-04-17">
       <category name="Pottkieker">
         <meal>
-          <name>Kartoffel Gemüsecurry , Korianderdip</name>
+          <name>Kartoffel Gemüsecurry</name>
           <note>Klimateller</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Senf und Senferzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Konservierungsstoff</note>
@@ -21,15 +20,6 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>5 Nürnberger Bratwürstchen, Sauerkraut , Hausgemachtes Kartoffel-Butterstampf</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schwein</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <price role="employee">5.30</price>
-          <price role="other">6.50</price>
-          <price role="student">4.00</price>
-        </meal>
-        <meal>
           <name>4 Röstiecken, Kräuterquark , Gurkensalat</name>
           <note>Klimateller</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
@@ -38,12 +28,22 @@
           <price role="other">5.40</price>
           <price role="student">2.90</price>
         </meal>
+        <meal>
+          <name>5 Nürnberger Bratwürstchen, Sauerkraut , Hausgemachtes Kartoffel-Butterstampf</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <price role="employee">5.30</price>
+          <price role="other">6.50</price>
+          <price role="student">4.00</price>
+        </meal>
       </category>
       <category name="CampusSpezial">
         <meal>
           <name>Süßkartoffel-Amaranth-Burger mit Babyspinat, Karottenstiften und pikanter Erdnuss - Chilicreme</name>
           <note>Erdnüsse und Erdnusserzeugnisse</note>
           <note>Klimateller</note>
+          <note>Senf und Senferzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -68,10 +68,11 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta des Tages</name>
-          <note>Klimateller</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Pasta mit Cherrytomaten,Paprikastreifen und Pesto</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Schalenfrüchte (z.B. Mandel, Haselnüsse, Walnuss etc.)/-erzeugnisse</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
@@ -80,8 +81,9 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Gemüse des Tages</name>
+          <name>Kräuterkartoffeln, Süßkartoffeln, gebackene Aubergine, Gartengemüse</name>
           <note>Klimateller</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
@@ -220,16 +222,6 @@
       </category>
       <category name="CampusVital">
         <meal>
-          <name>Geschmortes Masala - Champignoncurry , Basmatireis</name>
-          <note>Klimateller</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.10</price>
-          <price role="other">6.30</price>
-          <price role="student">3.80</price>
-        </meal>
-        <meal>
           <name>Rosmarinhuhn mit Paprika Kichererbsengemüse , Tomatensoße, Couscous</name>
           <note>Geflügel</note>
           <note>Geschwefelt</note>
@@ -241,19 +233,18 @@
           <price role="other">7.00</price>
           <price role="student">4.50</price>
         </meal>
+        <meal>
+          <name>Geschmortes Masala - Champignoncurry , Basmatireis</name>
+          <note>Klimateller</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.10</price>
+          <price role="other">6.30</price>
+          <price role="student">3.80</price>
+        </meal>
       </category>
       <category name="CampusWorld">
-        <meal>
-          <name>Lángos mit Ratatouillegemüse und Schafskäse überbacken dazu pikanter Spitzkohlsalat</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegetarisch</note>
-          <note>enthält tierisches Lab</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">6.10</price>
-          <price role="other">7.30</price>
-          <price role="student">4.80</price>
-        </meal>
         <meal>
           <name>Lángos mit Speck,Kräutercreme und Käse überbacken dazu pikanter Spitzkohlsalat</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
@@ -261,6 +252,17 @@
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <note>mit Konservierungsstoff</note>
           <note>mit Phosphat</note>
+          <price role="employee">6.10</price>
+          <price role="other">7.30</price>
+          <price role="student">4.80</price>
+        </meal>
+        <meal>
+          <name>Lángos mit Ratatouillegemüse und Schafskäse überbacken dazu pikanter Spitzkohlsalat</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegetarisch</note>
+          <note>enthält tierisches Lab</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">6.10</price>
           <price role="other">7.30</price>
           <price role="student">4.80</price>
@@ -332,22 +334,6 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Gegrilltes Käsesandwich mit geschmolzenem Cheddar, geschmortem Schweinefleisch und Zwiebel-Chutney</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schwein</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Farbstoff</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">6.80</price>
-          <price role="other">8.00</price>
-          <price role="student">5.50</price>
-        </meal>
-        <meal>
           <name>Gegrilltes Käsesandwich mit geschmolzenem Cheddar &amp; Feta, geschmortem Blumenkohl und Zwiebel-Chutney</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
@@ -356,6 +342,22 @@
           <note>Vegetarisch</note>
           <note>enthält tierisches Lab</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Farbstoff</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">6.80</price>
+          <price role="other">8.00</price>
+          <price role="student">5.50</price>
+        </meal>
+        <meal>
+          <name>Gegrilltes Käsesandwich mit geschmolzenem Cheddar, geschmortem Schweinefleisch und Zwiebel-Chutney</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Schwein</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Antioxidationsmittel</note>
           <note>mit Farbstoff</note>
           <note>mit Konservierungsstoff</note>
           <note>mit Süßungsmittel</note>
@@ -497,6 +499,16 @@
       </category>
       <category name="CampusSpezial">
         <meal>
+          <name>Frisch gebackener Flammkuchen mit Schmand, Grillgemüse und Hirtenkäse</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">6.80</price>
+          <price role="other">8.00</price>
+          <price role="student">5.50</price>
+        </meal>
+        <meal>
           <name>Frisch gebackener Flammkuchen mit Schmand. Speck, Zwiebeln und Frühlingslauch</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Schwein</note>
@@ -504,16 +516,6 @@
           <note>mit Antioxidationsmittel</note>
           <note>mit Konservierungsstoff</note>
           <note>mit Phosphat</note>
-          <price role="employee">6.80</price>
-          <price role="other">8.00</price>
-          <price role="student">5.50</price>
-        </meal>
-        <meal>
-          <name>Frisch gebackener Flammkuchen mit Schmand, Grillgemüse und Hirtenkäse</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">6.80</price>
           <price role="other">8.00</price>
           <price role="student">5.50</price>
