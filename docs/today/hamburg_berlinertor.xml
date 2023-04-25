@@ -32,6 +32,17 @@
       </category>
       <category name="CampusSpezial">
         <meal>
+          <name>#specialBURGER..,, Hähnchenbrustburger &quot;Tahini-Style&quot; , Pommes Frites</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">5.75</price>
+          <price role="other">6.95</price>
+          <price role="student">4.45</price>
+        </meal>
+        <meal>
           <name>#specialBURGER..,, Gemüseburger &quot;Tahini-Style&quot; , Pommes Frites</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -43,28 +54,8 @@
           <price role="other">6.70</price>
           <price role="student">4.20</price>
         </meal>
-        <meal>
-          <name>#specialBURGER..,, Hähnchenbrustburger &quot;Tahini-Style&quot; , Pommes Frites</name>
-          <note>Geflügel</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">5.75</price>
-          <price role="other">6.95</price>
-          <price role="student">4.45</price>
-        </meal>
       </category>
       <category name="CampusWorld">
-        <meal>
-          <name>#ofenfrisch...bis 16:00 Uhr..,Pizza Margherita</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">5.50</price>
-          <price role="other">6.70</price>
-          <price role="student">4.20</price>
-        </meal>
         <meal>
           <name>#ofenfrisch...bis 16:00 Uhr..,Pizza Margeritha vegan</name>
           <note>Klimateller</note>
@@ -75,6 +66,15 @@
           <price role="employee">5.80</price>
           <price role="other">7.00</price>
           <price role="student">4.50</price>
+        </meal>
+        <meal>
+          <name>#ofenfrisch...bis 16:00 Uhr..,Pizza Margherita</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">5.50</price>
+          <price role="other">6.70</price>
+          <price role="student">4.20</price>
         </meal>
         <meal>
           <name>#ofenfrisch...bis 16:00 Uhr..,Pizza Salami</name>
@@ -90,6 +90,17 @@
         </meal>
       </category>
       <category name="Pastabar">
+        <meal>
+          <name>Pasta al forno della nonna mit Hähnchenstreifen und Käse überbacken</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Farbstoff</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
         <meal>
           <name>Pommes , Chili Cheese</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
@@ -111,14 +122,34 @@
           <price role="other">1.15</price>
           <price role="student">0.75</price>
         </meal>
+        <meal>
+          <name>Paprikareis, vegan</name>
+          <note>Klimateller</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Fusilli , Tomatensoße, Tofu und Gouda</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Broccoli-Gemüse, vegan, gebratene Champignons, vegan , Grilltomate</name>
+          <name>Champignon-Gemüsepfanne, vegan, frisches Wok-Gemüse, vegan , Grilltomate, vegan, Bratkartoffeln, vegan</name>
           <note>Klimateller</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Konservierungsstoff</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -179,6 +210,19 @@
       </category>
       <category name="CampusSpezial">
         <meal>
+          <name>#YumYumPot..VEGAN..,, Tom Kha Gemüse-Kokos-Topf mit Gemüse und frittierten Tofu , Reis</name>
+          <note>Klimateller</note>
+          <note>Lieblingsessen</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.50</price>
+          <price role="other">6.70</price>
+          <price role="student">4.20</price>
+        </meal>
+        <meal>
           <name>#YumYumPot..,, Tom Kha Gai Hühner-Kokos-Topf mit Gemüse und Hähnchen , Reis</name>
           <note>Geflügel</note>
           <note>Lieblingsessen</note>
@@ -199,32 +243,8 @@
           <price role="other">6.10</price>
           <price role="student">3.60</price>
         </meal>
-        <meal>
-          <name>#YumYumPot..VEGAN..,, Tom Kha Gemüse-Kokos-Topf mit Gemüse und frittierten Tofu , Reis</name>
-          <note>Klimateller</note>
-          <note>Lieblingsessen</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.50</price>
-          <price role="other">6.70</price>
-          <price role="student">4.20</price>
-        </meal>
       </category>
       <category name="Pastabar">
-        <meal>
-          <name>#extraVEGANt pro 100gr. (Self Service)..,, Berner Tellerrösti mit sautierten Gemüsen und veganen Käse gratiniert</name>
-          <note>Klimateller</note>
-          <note>Lieblingsessen</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Farbstoff</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
         <meal>
           <name>Pommes , Chili Cheese</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
@@ -232,6 +252,17 @@
           <note>Senf und Senferzeugnisse</note>
           <note>mit Farbstoff</note>
           <note>mit Konservierungsstoff</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>#extraVEGANt pro 100gr. (Self Service)..,, Berner Tellerrösti mit sautierten Gemüsen und veganen Käse gratiniert</name>
+          <note>Klimateller</note>
+          <note>Lieblingsessen</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Farbstoff</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -383,16 +414,6 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>#ofenfrisch...bis 15:30 Uhr..,, Flammkuchen mit frischen Spinat</name>
-          <note>Lieblingsessen</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">4.90</price>
-          <price role="other">6.10</price>
-          <price role="student">3.60</price>
-        </meal>
-        <meal>
           <name>#frischgeGRILLt..,, Seelachsfilet , gebratene Drillinge, Sauce Hollandaise , Zitrone</name>
           <note>Alkohol</note>
           <note>Ei und Eierzeugnisse</note>
@@ -406,6 +427,16 @@
           <price role="employee">6.75</price>
           <price role="other">7.95</price>
           <price role="student">5.45</price>
+        </meal>
+        <meal>
+          <name>#ofenfrisch...bis 15:30 Uhr..,, Flammkuchen mit frischen Spinat</name>
+          <note>Lieblingsessen</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">4.90</price>
+          <price role="other">6.10</price>
+          <price role="student">3.60</price>
         </meal>
       </category>
       <category name="Pastabar">
