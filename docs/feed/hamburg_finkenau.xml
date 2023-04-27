@@ -6,10 +6,23 @@
     <day date="2023-04-27">
       <category name="Pottkieker">
         <meal>
-          <name>Gemüsegulasch , Zartweizen mit Gemüse</name>
+          <name>Gemüsegulasch , Brot</name>
           <note>Klimateller</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+        <meal>
+          <name>Gemüsegulasch , Brot</name>
+          <note>Klimateller</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegetarisch</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">3.40</price>
@@ -18,6 +31,15 @@
         </meal>
       </category>
       <category name="CampusSpezial">
+        <meal>
+          <name>Hähnchenstreifen,gebratener Blumenkohl mit Kokosmilch, geröstete Sonnenblumenkerne und Basmatireis</name>
+          <note>Geflügel</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.80</price>
+          <price role="other">8.00</price>
+          <price role="student">5.50</price>
+        </meal>
         <meal>
           <name>Fabi's Canadian Poutine mit Steakhousepommes, PulledPork, Cheddar cheese und pikanter Bratensoße</name>
           <note>Alkohol</note>
@@ -34,15 +56,6 @@
           <price role="employee">7.10</price>
           <price role="other">8.30</price>
           <price role="student">5.80</price>
-        </meal>
-        <meal>
-          <name>Hähnchenstreifen,gebratener Blumenkohl mit Kokosmilch, geröstete Sonnenblumenkerne und Basmatireis</name>
-          <note>Geflügel</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.80</price>
-          <price role="other">8.00</price>
-          <price role="student">5.50</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -61,10 +74,10 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Gemüse des Tages</name>
-          <note>Klimateller</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>dicke Bohnen in Rahm , Sesam-Karotten , Süßkartoffeln, Kräuterkartoffeln</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>Vegetarisch</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -181,17 +194,6 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Pikantes Rindfleischcurry Massaman mit Kartoffeln, Karotten und Mungsprossen</name>
-          <note>Rind</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">6.80</price>
-          <price role="other">8.00</price>
-          <price role="student">5.50</price>
-        </meal>
-        <meal>
           <name>Cremiges Risotto mit Gorgonzola, karamellisierten Birnen und Walnuss-Crunch</name>
           <note>Alkohol</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
@@ -203,6 +205,17 @@
           <price role="employee">6.60</price>
           <price role="other">7.80</price>
           <price role="student">5.30</price>
+        </meal>
+        <meal>
+          <name>Pikantes Rindfleischcurry Massaman mit Kartoffeln, Karotten und Mungsprossen</name>
+          <note>Rind</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Konservierungsstoff</note>
+          <price role="employee">6.80</price>
+          <price role="other">8.00</price>
+          <price role="student">5.50</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -264,18 +277,6 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Salatschüssel Hirtenkäse, Falafel, Cranberry, Rotkohl, Granatapfelkernen, Sesamdressing</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">7.20</price>
-          <price role="other">7.80</price>
-          <price role="student">6.50</price>
-        </meal>
-        <meal>
           <name>Kokos - Blumenkohlcurry mit Udonnudeln und Koriander</name>
           <note>Erdnüsse und Erdnusserzeugnisse</note>
           <note>Klimateller</note>
@@ -286,6 +287,18 @@
           <price role="employee">5.80</price>
           <price role="other">7.00</price>
           <price role="student">4.50</price>
+        </meal>
+        <meal>
+          <name>Salatschüssel Hirtenkäse, Falafel, Cranberry, Rotkohl, Granatapfelkernen, Sesamdressing</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">7.20</price>
+          <price role="other">7.80</price>
+          <price role="student">6.50</price>
         </meal>
       </category>
       <category name="Pastabar">
