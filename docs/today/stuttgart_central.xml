@@ -3,20 +3,20 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2023-04-27">
+    <day date="2023-04-28">
       <category name="Vorspeise">
         <meal>
-          <name>Tomatensuppe</name>
-          <note>Sellerie</note>
-          <note>vegan</note>
+          <name>Tagessuppe</name>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Ofenkartoffel mit veganem Kräuterdip und Salat</name>
+          <name>Spinatnudeln</name>
           <note>Hafer</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -24,21 +24,25 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Sojageschnetzeltes Szechuan mit Mienudeln</name>
-          <note>Soja</note>
-          <note>Weizen</note>
-          <note>mit Konservierungsstoffen</note>
-          <note>vegan</note>
-          <price role="employee">5.60</price>
-          <price role="student">3.10</price>
-        </meal>
-        <meal>
-          <name>Hähnchenbrustfilet mit Curry-Kokos-Sauce und Reis</name>
-          <note>Geflügel</note>
+          <name>Paprika mit Couscousfüllung, an Ratatouille-Gemüse und Kräuterreis</name>
           <note>Sellerie</note>
           <note>Weizen</note>
-          <price role="employee">6.00</price>
-          <price role="student">3.50</price>
+          <note>vegan</note>
+          <price role="employee">7.20</price>
+          <price role="student">4.70</price>
+        </meal>
+        <meal>
+          <name>Fischstäbchen mit Remouladensauce und Salzkartoffeln</name>
+          <note>Ei</note>
+          <note>Fisch</note>
+          <note>MSC-zertifizierter Fisch (MSC-C-51632)</note>
+          <note>Milch und Laktose</note>
+          <note>Senf</note>
+          <note>Weizen</note>
+          <note>mit Farbstoffen</note>
+          <note>mit Süßungsmitteln</note>
+          <price role="employee">7.40</price>
+          <price role="student">4.90</price>
         </meal>
       </category>
       <category name="Aktion">
@@ -53,7 +57,7 @@
           <price role="student">4.75</price>
         </meal>
         <meal>
-          <name>Fusilloni mit Erbsen-Pesto</name>
+          <name>Conchiglioni mit Erbsen-Pesto</name>
           <note>Milch und Laktose</note>
           <note>Weizen</note>
           <note>hauseigene Nudelmanufaktur</note>
@@ -62,7 +66,7 @@
           <price role="student">4.45</price>
         </meal>
         <meal>
-          <name>Fusilloni Frutti di Mare</name>
+          <name>Conchiglioni Frutti di Mare</name>
           <note>Krebstiere Krusten- und Schalentiere</note>
           <note>Sellerie</note>
           <note>Weichtiere</note>
@@ -74,7 +78,12 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Karottengemüse</name>
+          <name>Tagesgemüse</name>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Salzkartoffeln</name>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
@@ -99,7 +108,8 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Milchreis mit Kirschen</name>
+          <name>Nuss-Nougat-Pudding</name>
+          <note>Haselnüsse</note>
           <note>Milch und Laktose</note>
           <note>vegetarisch</note>
           <price role="employee">1.59</price>
@@ -112,11 +122,15 @@
           <note>Ei</note>
           <note>Milch und Laktose</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
           <note>Senf</note>
+          <note>Sesam</note>
           <note>Weizen</note>
           <note>geschwefelt</note>
+          <note>geschwärzt</note>
           <note>mit Antioxidationsmitteln</note>
           <note>mit Farbstoffen</note>
+          <note>mit Süßungsmitteln</note>
           <note>vegetarisch</note>
           <price role="employee">1.60</price>
           <price role="student">1.10</price>
