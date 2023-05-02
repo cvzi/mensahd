@@ -4,8 +4,61 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2023-05-01">
-      <closed/>
+    <day date="2023-05-02">
+      <category name="Dessert">
+        <meal>
+          <name>Cremiges Quarkdessert mit Ahornsirup und Granatapfel</name>
+          <note>Creamy curd dessert with maple syrup and pomegranate</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Frische Erdbeeren mit Sahnehäupchen</name>
+          <note>Fresh strawberries topped with cream</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Broccolicremesüppchen mit Hafersahne</name>
+          <note>Broccoli soup with oat cream</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Käsegriller mit fruchtiger Currysoße und Pommes frites</name>
+          <note>Cheese sausage with fruity curry sauce and French fries</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Blumenkohl-Süßkartoffel Curry mit Mango und Langkornreis, dazu Stück Obst</name>
+          <note>Cauliflower-sweet potato curry with mango and long grain rice, served with a piece of fruit</note>
+          <price role="student">2.90</price>
+          <price role="employee">4.35</price>
+          <price role="other">7.25</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Frischer Spargel aus Waghäusel mit Kartoffeln und Sauce Hollandaise</name>
+          <note>Fresh asparagus from Waghäusel with potatoes and hollandaise sauce</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
