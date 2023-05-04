@@ -3,22 +3,21 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2023-05-03">
+    <day date="2023-05-04">
       <category name="Vorspeise">
         <meal>
-          <name>Kartoffelsuppe</name>
-          <note>Milch und Laktose</note>
-          <note>Sellerie</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>vegetarisch</note>
+          <name>Tagessuppe</name>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Bandnudeln mit Rucola-Sonnenblumenkernpesto</name>
+          <name>Linsen und vegane Spätzle</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
           <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -26,23 +25,29 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Putenbrust an Schaschliksauce mit Schwenkkartoffeln</name>
-          <note>Geflügel</note>
+          <name>Vegetarisches Schnitzel mit Käsefüllung an Ratatouille-Gemüse und Schupfnudeln</name>
+          <note>Ei</note>
+          <note>Hafer</note>
+          <note>Milch und Laktose</note>
           <note>Sellerie</note>
           <note>Weizen</note>
-          <note>mit Süßungsmitteln</note>
-          <price role="employee">7.50</price>
-          <price role="student">5.00</price>
-        </meal>
-        <meal>
-          <name>Paniertes Schweineschnitzel mit Rahmsauce ,Preiselbeeren und Pommes</name>
-          <note>Dinkel</note>
-          <note>Ei</note>
-          <note>Milch und Laktose</note>
-          <note>Schwein</note>
-          <note>Weizen</note>
+          <note>mit Farbstoffen</note>
+          <note>vegetarisch</note>
           <price role="employee">7.70</price>
           <price role="student">5.20</price>
+        </meal>
+        <meal>
+          <name>Linsen und Spätzle mit Saiten</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Schwein</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Phosphaten</note>
+          <price role="employee">6.70</price>
+          <price role="student">4.20</price>
         </meal>
       </category>
       <category name="Aktion">
@@ -54,34 +59,32 @@
           <price role="student">4.75</price>
         </meal>
         <meal>
-          <name>Gemüsewok Honig-Pfeffer mit Glasnudeln</name>
-          <note>Soja</note>
-          <note>vegetarisch</note>
+          <name>Gemüsewok Rotes Thai Curry mit Reisnudeln</name>
+          <note>vegan</note>
           <price role="employee">6.95</price>
           <price role="student">4.45</price>
         </meal>
         <meal>
-          <name>Rindfleischstreifen zum Wokgericht</name>
-          <note>Rind</note>
-          <note>Soja</note>
-          <note>Weizen</note>
-          <price role="employee">2.95</price>
-          <price role="student">2.95</price>
+          <name>Schweinefleischstreifen zum Wokgericht</name>
+          <note>Schwein</note>
+          <price role="employee">1.95</price>
+          <price role="student">1.95</price>
         </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Ratatouille-Gemüse</name>
-          <note>Sellerie</note>
-          <note>vegan</note>
+          <name>Tagesgemüse</name>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
         <meal>
-          <name>Schwenkkartoffeln</name>
-          <note>vegan</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
+          <name>Spätzle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
         </meal>
       </category>
       <category name="Salat">
@@ -94,8 +97,13 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Sahneschokopudding</name>
+          <name>Früchtemüsli</name>
+          <note>Gerste</note>
+          <note>Hafer</note>
+          <note>Haselnüsse</note>
+          <note>Mandeln</note>
           <note>Milch und Laktose</note>
+          <note>mit Antioxidationsmitteln</note>
           <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
@@ -107,11 +115,15 @@
           <note>Ei</note>
           <note>Milch und Laktose</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
           <note>Senf</note>
+          <note>Sesam</note>
           <note>Weizen</note>
           <note>geschwefelt</note>
+          <note>geschwärzt</note>
           <note>mit Antioxidationsmitteln</note>
           <note>mit Farbstoffen</note>
+          <note>mit Süßungsmitteln</note>
           <note>vegetarisch</note>
           <price role="employee">1.60</price>
           <price role="student">1.10</price>
