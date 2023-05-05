@@ -4,11 +4,56 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2023-05-04">
+    <day date="2023-05-05">
+      <category name="Dessert">
+        <meal>
+          <name>Hausgemachtes Tiramisu mit Heidelbeeren</name>
+          <note>Housemade tiramisu with blueberries</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Veganer Schokopudding mit Bananenchips</name>
+          <note>Vegan chocolate pudding with banana chips</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Asiatischer Nudel-Gemüse-Topf</name>
+          <note>Asian noodle-vegetable soup</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Gebackener Seehecht auf mediteranem Gemüse und hausgemachter Pasta</name>
+          <note>Baked hake with mediterranean vegetables and housemade pasta</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
       <category name="Vegan">
         <meal>
-          <name>Gemüse-Kartoffelpfanne mit Rucola-Carbonara, Stückobst</name>
-          <note>Vegetable-potato dish with arugula-carbonara, served with a piece of fruit</note>
+          <name>Frischer Spargel aus Waghäusel mit Kartoffeln und veganer Sauce Hollandaise</name>
+          <note>Fresh asparagus from Waghäusel with potatoes and vegan hollandaise sauce</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Gnocchi mit Auberginenragout, Paprikastreifen und gebratenen Zwiebelstreifen, dazu Salat</name>
+          <note>Gnocchi with eggplant ragout, peppers, roasted onions and salad</note>
           <price role="student">2.90</price>
           <price role="employee">4.35</price>
           <price role="other">7.25</price>
