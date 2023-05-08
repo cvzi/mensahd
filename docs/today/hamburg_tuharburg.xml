@@ -65,7 +65,7 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Arcobaleno mit Schinken und Käse , Fusilli</name>
+          <name>Pasta Arcobaleno mit Schinken und Käse</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Schwein</note>
@@ -80,7 +80,7 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Aglio e olio mit Tomate und Knoblauch, Fusilli</name>
+          <name>Pasta Aglio e olio mit Tomate und Knoblauch</name>
           <note>Klimateller</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -92,11 +92,25 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Mais , Blattspinat mit Hirtenkäse , Blumenkohl mit gebräunten Bröseln , Bunte Gemüsemischung mit Karotten , Nusskartoffeln</name>
+          <name>Erbsen-Gemüse, Blattspinat mit Hirtenkäse , Blumenkohl mit Sesam , Bunte Gemüsemischung mit Karotten , Nusskartoffeln</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
           <note>Vegetarisch</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Linsentomaten-Gemüse mit Sojasahne</name>
+          <note>Klimateller</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mensaVital</note>
+          <note>mit Konservierungsstoff</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -404,20 +418,6 @@
       </category>
     </day>
     <day date="2023-05-12">
-      <category name="Menü">
-        <meal>
-          <name>Frisch gegrilltes Rumpsteak, Kartoffelspalten mit Sour Cream</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Rind</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Geschmacksverstärker</note>
-          <price role="employee">11.10</price>
-          <price role="other">11.70</price>
-          <price role="student">10.40</price>
-        </meal>
-      </category>
       <category name="Highlight">
         <meal>
           <name>Makloubeh, Orientalischer Reis mit Zimt, Nüssen, Datteln, Rosinen und Auberginegemüse , Sojajoghurt-Minz Dip</name>
@@ -432,6 +432,20 @@
           <price role="employee">5.50</price>
           <price role="other">6.70</price>
           <price role="student">4.20</price>
+        </meal>
+      </category>
+      <category name="Menü">
+        <meal>
+          <name>Frisch gegrilltes Rumpsteak, Kartoffelspalten mit Sour Cream</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Rind</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Geschmacksverstärker</note>
+          <price role="employee">11.10</price>
+          <price role="other">11.70</price>
+          <price role="student">10.40</price>
         </meal>
       </category>
       <category name="Pottkieker">
@@ -466,9 +480,9 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pastabar Fleisch oder Hähnchen des Tages</name>
-          <note>Geflügel</note>
-          <note>Rind</note>
+          <name>Veg. Pastabar des Tages</name>
+          <note>Klimateller</note>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
@@ -476,9 +490,9 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Veg. Pastabar des Tages</name>
-          <note>Klimateller</note>
-          <note>Vegan</note>
+          <name>Pastabar Fleisch oder Hähnchen des Tages</name>
+          <note>Geflügel</note>
+          <note>Rind</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
