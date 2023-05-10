@@ -16,42 +16,6 @@
       </category>
     </day>
     <day date="2023-05-09">
-      <category name="Dessert">
-        <meal>
-          <name>Vanille-Mousse mit gezuckerten Heidelbeeren</name>
-          <note>Vanilla mousse with sugared blueberries</note>
-          <price role="student">0.75</price>
-          <price role="employee">1.15</price>
-          <price role="other">1.90</price>
-        </meal>
-      </category>
-      <category name="Dessert vegan">
-        <meal>
-          <name>Hausgemachtes Schokoladenmus mit Kirschen</name>
-          <note>Housemade chocolate mousse with cherries</note>
-          <price role="student">0.75</price>
-          <price role="employee">1.15</price>
-          <price role="other">1.90</price>
-        </meal>
-      </category>
-      <category name="Suppentopf">
-        <meal>
-          <name>Pikante Kokosmilchsuppe mit Kidneybohnen und Lauchgemüse</name>
-          <note>Savory coconut milk soup with kidney beans and leeks</note>
-          <price role="student">0.55</price>
-          <price role="employee">0.85</price>
-          <price role="other">1.40</price>
-        </meal>
-      </category>
-      <category name="Tierisch">
-        <meal>
-          <name>Schwäbisches Linsenragout mit Geflügelwienerle und Spätzle</name>
-          <note>Swabian lentil ragout with poultry sausages and spaetzle noodles </note>
-          <price role="student">0.92</price>
-          <price role="employee">1.20</price>
-          <price role="other">1.94</price>
-        </meal>
-      </category>
       <category name="Vegan">
         <meal>
           <name>Veganer Hotdog mit Röstzwiebeln, saure Gurken und Krautsalat, dazu Stück Obst</name>
@@ -59,15 +23,6 @@
           <price role="student">2.90</price>
           <price role="employee">4.35</price>
           <price role="other">7.25</price>
-        </meal>
-      </category>
-      <category name="Vegetarisch">
-        <meal>
-          <name>Frischer Stangenspargel mit Sauce Hollandaise, Kräuterflädle und Kartoffeln</name>
-          <note>Fresh asparagus with hollandaise sauce, herbed pancakes and potatoes</note>
-          <price role="student">0.92</price>
-          <price role="employee">1.20</price>
-          <price role="other">1.94</price>
         </meal>
       </category>
     </day>
@@ -139,8 +94,8 @@
       </category>
       <category name="Dessert vegan">
         <meal>
-          <name>Hausgemachter Chia-Pudding mit Frucht-Kompott, Schokoladiger Sojajoghurt mit Crunch</name>
-          <note>Chocolate soy yogurt with crunch, Housemade chia seed pudding with fruit compote</note>
+          <name>Hausgemachter Chia-Pudding mit Frucht-Kompott</name>
+          <note>Housemade chia seed pudding with fruit compote</note>
           <price role="student">0.75</price>
           <price role="employee">1.15</price>
           <price role="other">1.90</price>
@@ -193,6 +148,15 @@
           <price role="other">1.90</price>
         </meal>
       </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Schokoladiger Sojajoghurt mit Crunch</name>
+          <note>Chocolate soy yogurt with crunch</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
       <category name="Suppentopf">
         <meal>
           <name>Cremiges Paprikasüppchen mit Basilikumpesto</name>
@@ -237,13 +201,172 @@
       <closed/>
     </day>
     <day date="2023-05-15">
-      <closed/>
+      <category name="Dessert">
+        <meal>
+          <name>Cremiger Stracciatella-Joghurt</name>
+          <note>Cremiger Stracciatella-Joghurt</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Chiapudding mit Mandelmilch und frischen Erdbeeren</name>
+          <note>Chiapudding mit Mandelmilch und frischen Erdbeeren</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Cremesuppe vom Wurzelgemüse mit Bärlauch</name>
+          <note>Cremesuppe vom Wurzelgemüse mit Bärlauch</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Gebratene Hähnchenbrust mit Ziegenfrischkäsesoße, Blattspinat und Langkornreis</name>
+          <note>Gebratene Hähnchenbrust mit Ziegenfrischkäsesoße, Blattspinat und Langkornreis</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Kartoffelpfanne mit Kohlrabi, grünen Bohnen und Karottenwürfel in Gewürztunke</name>
+          <note>Kartoffelpfanne mit Kohlrabi, grünen Bohnen und Karottenwürfel in Gewürztunke</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Broccoli-Spargel-Curry mit rotem Reis, dazu Stückobst</name>
+          <note>Housemade noodles with lemon-basil sauce, roasted pumpkin seeds and salad</note>
+          <price role="student">2.90</price>
+          <price role="employee">4.35</price>
+          <price role="other">7.25</price>
+        </meal>
+      </category>
     </day>
     <day date="2023-05-16">
-      <closed/>
+      <category name="Dessert">
+        <meal>
+          <name>Klassischer Schokopudding mit Vanillesoße</name>
+          <note>Klassischer Schokopudding mit Vanillesoße</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Hausgemachtes Mangomousse</name>
+          <note>Hausgemachtes Mangomousse</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Gemüsesuppe mit Kokosmilch und Curry</name>
+          <note>Gemüsesuppe mit Kokosmilch und Curry</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Tag der Currywurst vom Schwein oder Vegetarisch mit verschiedenen Soßen, Beilagen und selfmade Gewürzstation</name>
+          <note>Tag der Currywurst vom Schwein oder Vegetarisch mit verschiedenen Soßen, Beilagen und selfmade Gewürzstation</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Hausgemachter Kartoffel-Gemüsebratling mit Dinkelrisotto und Hafer-Kräuterdip, Salat</name>
+          <note>Housemade noodles with lemon-basil sauce, roasted pumpkin seeds and salad</note>
+          <price role="student">2.90</price>
+          <price role="employee">4.35</price>
+          <price role="other">7.25</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Frischer Stangenspargel aus regionalem Anbau mit Sauce Hollandaise und Petersilienkartoffeln</name>
+          <note>Frischer Stangenspargel aus regionalem Anbau mit Sauce Hollandaise und Petersilienkartoffeln</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
     </day>
     <day date="2023-05-17">
-      <closed/>
+      <category name="Dessert">
+        <meal>
+          <name>Grießbrei mit karamelisierten Apfelragout</name>
+          <note>Grießbrei mit karamelisierten Apfelragout</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Rhabarbergrütze mit Zimtsahne</name>
+          <note>Rhabarbergrütze mit Zimtsahne</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Gekräuterte Spargelsuppe mit Haferrahm</name>
+          <note>Gekräuterte Spargelsuppe mit Haferrahm</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Backfisch mit hausgemachter Remoulade, Grillgemüse und Ofenkartoffeln</name>
+          <note>Backfisch mit hausgemachter Remoulade, Grillgemüse und Ofenkartoffeln</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Kaiserschmarrn mit hausgemachten Apfelkompott, Stückobst</name>
+          <note>Housemade noodles with lemon-basil sauce, roasted pumpkin seeds and salad</note>
+          <price role="student">2.90</price>
+          <price role="employee">4.35</price>
+          <price role="other">7.25</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Spaghetti aglio e olio mit Tomaten-Lauch-Pesto</name>
+          <note>Spaghetti aglio e olio mit Tomaten-Lauch-Pesto</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
     </day>
     <day date="2023-05-18">
       <closed/>
