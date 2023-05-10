@@ -6,6 +6,16 @@
     <day date="2023-05-10">
       <category name="Highlight">
         <meal>
+          <name>Kabeljau mit Grillgemüse und Blechkartoffeln , Koriandersalsa</name>
+          <note>Fisch und Fischerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Fisch</note>
+          <price role="employee">7.20</price>
+          <price role="other">8.40</price>
+          <price role="student">5.90</price>
+        </meal>
+        <meal>
           <name>Gebackener Blumenkohl mit würzigem Bulgur, Rosinen, Mandelsplittern, Rote Beete Salat mit Hirtenkäse</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Schalenfrüchte (z.B. Mandel, Haselnüsse, Walnuss etc.)/-erzeugnisse</note>
@@ -18,16 +28,6 @@
           <price role="employee">5.80</price>
           <price role="other">7.00</price>
           <price role="student">4.50</price>
-        </meal>
-        <meal>
-          <name>Kabeljau mit Grillgemüse und Blechkartoffeln , Koriandersalsa</name>
-          <note>Fisch und Fischerzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Fisch</note>
-          <price role="employee">7.20</price>
-          <price role="other">8.40</price>
-          <price role="student">5.90</price>
         </meal>
       </category>
       <category name="Pottkieker">
@@ -46,16 +46,6 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Spaghetti , Bolognese , Hartkäse gerieben</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Rind</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">4.55</price>
-          <price role="other">5.75</price>
-          <price role="student">3.25</price>
-        </meal>
-        <meal>
           <name>Schupfnudeln mit Frühlingsgemüse , Kräutersoße</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
@@ -64,6 +54,16 @@
           <price role="employee">4.10</price>
           <price role="other">5.30</price>
           <price role="student">2.80</price>
+        </meal>
+        <meal>
+          <name>Spaghetti , Bolognese , Hartkäse gerieben</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">4.55</price>
+          <price role="other">5.75</price>
+          <price role="student">3.25</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -78,12 +78,16 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Pasta Pollo mit Auberginen in Sahnesoße</name>
+          <name>Pasta Arcobaleno mit gerächerter Putenbrust und Käse</name>
           <note>Geflügel</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Farbstoff</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Phosphat</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -101,16 +105,12 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Pasta Arcobaleno mit gerächerter Putenbrust und Käse</name>
+          <name>Pasta Pollo mit Auberginen in Sahnesoße</name>
           <note>Geflügel</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Farbstoff</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Phosphat</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -161,6 +161,14 @@
       </category>
       <category name="CampusVital">
         <meal>
+          <name>Gnocchi-Tomaten-Auflauf mit Mozzarella überbacken</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">4.20</price>
+          <price role="other">5.40</price>
+          <price role="student">2.90</price>
+        </meal>
+        <meal>
           <name>Gemüsepfanne Ingwer Ananas , Basmatireis</name>
           <note>Klimateller</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
@@ -172,14 +180,6 @@
           <note>mit Konservierungsstoff</note>
           <price role="employee">1.30</price>
           <price role="other">2.50</price>
-        </meal>
-        <meal>
-          <name>Gnocchi-Tomaten-Auflauf mit Mozzarella überbacken</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Vegetarisch</note>
-          <price role="employee">4.20</price>
-          <price role="other">5.40</price>
-          <price role="student">2.90</price>
         </meal>
       </category>
       <category name="Pastabar">
