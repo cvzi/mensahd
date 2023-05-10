@@ -4,6 +4,32 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2023-05-10">
+      <category name="Highlight">
+        <meal>
+          <name>Kabeljau mit Grillgemüse und Blechkartoffeln , Koriandersalsa</name>
+          <note>Fisch und Fischerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Fisch</note>
+          <price role="employee">7.20</price>
+          <price role="other">8.40</price>
+          <price role="student">5.90</price>
+        </meal>
+        <meal>
+          <name>Gebackener Blumenkohl mit würzigem Bulgur, Rosinen, Mandelsplittern, Rote Beete Salat mit Hirtenkäse</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Schalenfrüchte (z.B. Mandel, Haselnüsse, Walnuss etc.)/-erzeugnisse</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">5.80</price>
+          <price role="other">7.00</price>
+          <price role="student">4.50</price>
+        </meal>
+      </category>
       <category name="Menü">
         <meal>
           <name>Fischbrötchen , mit Remoulade , Matjesfilets und , Salat und rote Zwiebeln</name>
@@ -19,32 +45,6 @@
           <price role="employee">3.20</price>
           <price role="other">3.80</price>
           <price role="student">2.50</price>
-        </meal>
-      </category>
-      <category name="Highlight">
-        <meal>
-          <name>Gebackener Blumenkohl mit würzigem Bulgur, Rosinen, Mandelsplittern, Rote Beete Salat mit Hirtenkäse</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schalenfrüchte (z.B. Mandel, Haselnüsse, Walnuss etc.)/-erzeugnisse</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">5.80</price>
-          <price role="other">7.00</price>
-          <price role="student">4.50</price>
-        </meal>
-        <meal>
-          <name>Kabeljau mit Grillgemüse und Blechkartoffeln , Koriandersalsa</name>
-          <note>Fisch und Fischerzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Fisch</note>
-          <price role="employee">7.20</price>
-          <price role="other">8.40</price>
-          <price role="student">5.90</price>
         </meal>
       </category>
       <category name="Pottkieker">
@@ -78,16 +78,18 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Crema di Zucchine e Pomodoro mit Tomaten-Sahnesoße und Zucchini , Penne</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Vegetarisch</note>
+          <name>Pasta Crema di Zucchine e Pomodoro mit Tomaten-Sahnesoße und Zucchini</name>
+          <note>Klimateller</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Ragù bianco mit Rinderhackfleisch und Kräutern , Penne</name>
+          <name>Pasta Ragù bianco mit Rinderhackfleisch und Erbsen</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Rind</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -99,11 +101,14 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Ratatouille , Karotten , Mangold mit gerösteten Walnüssen , Prinzessbohnen, Gnocchi</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <name>Mangoldgemüse mit gerösteten Nüssen und Tofu asiatisch , Gnocchi, Gemüsepfanne , Fenchelgemüse mit Kichererbsen , Gemüsepfanne mit Oliven, Zucchini und Paprika, Reis</name>
+          <note>Klimateller</note>
           <note>Schalenfrüchte (z.B. Mandel, Haselnüsse, Walnuss etc.)/-erzeugnisse</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegetarisch</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
