@@ -4,13 +4,6 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2023-05-15">
-      <category name="Vorspeise">
-        <meal>
-          <name>Tagessuppe</name>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-      </category>
       <category name="Veganer renner">
         <meal>
           <name>Gebratene Mienudeln mit Paprika, Weißkraut und Karotten</name>
@@ -22,17 +15,6 @@
         </meal>
       </category>
       <category name="Hauptgericht">
-        <meal>
-          <name>Pilz-Stroganoff mit Gemüse-Pilaw</name>
-          <note>Hafer</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>Weizen</note>
-          <note>mit Süßungsmitteln</note>
-          <note>vegan</note>
-          <price role="employee">6.10</price>
-          <price role="student">3.60</price>
-        </meal>
         <meal>
           <name>Kohlroulade mit Bratensauce und Kartoffelpüree</name>
           <note>Ei</note>
@@ -58,7 +40,8 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Tagesgemüse</name>
+          <name>Buntes Gemüse</name>
+          <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -77,10 +60,17 @@
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
-      </category>
-      <category name="Salat">
         <meal>
-          <name>Beilagensalat</name>
+          <name>Spätzle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+        <meal>
+          <name>Reis</name>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
@@ -101,26 +91,6 @@
           <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
-        </meal>
-      </category>
-      <category name="Buffet">
-        <meal>
-          <name>Salatbuffet</name>
-          <note>Ei</note>
-          <note>Milch und Laktose</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>Sesam</note>
-          <note>Weizen</note>
-          <note>geschwefelt</note>
-          <note>geschwärzt</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
-          <note>mit Süßungsmitteln</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.60</price>
-          <price role="student">1.10</price>
         </meal>
       </category>
     </day>
