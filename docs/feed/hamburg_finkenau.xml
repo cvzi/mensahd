@@ -47,7 +47,7 @@
       </category>
       <category name="Pottkieker">
         <meal>
-          <name>Chili con Corn , Basmatireis</name>
+          <name>Grünkern-Chilli mit Kidneybohnen und Mais , Vollkornreis</name>
           <note>Klimateller</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
@@ -89,8 +89,11 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta des Tages</name>
+          <name>Gebratene Mie-Nudeln mit Karotten,roten Zwiebeln</name>
           <note>Klimateller</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
@@ -101,10 +104,12 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Gemüse des Tages</name>
+          <name>Ägyptische Falafel , Kräuterkartoffeln, Süßkartoffeln, Gartengemüse</name>
           <note>Klimateller</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -271,6 +276,19 @@
           <price role="student">2.20</price>
         </meal>
       </category>
+      <category name="CampusVital">
+        <meal>
+          <name>vegane Penne mit grünem Spargel und Kirschtomaten</name>
+          <note>Klimateller</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">4.20</price>
+          <price role="other">5.40</price>
+          <price role="student">2.90</price>
+        </meal>
+      </category>
       <category name="CampusSpezial">
         <meal>
           <name>Deutscher Spargel, Hollandaise oder Butter , Salzkartoffeln</name>
@@ -371,6 +389,22 @@
           <price role="student">4.30</price>
         </meal>
       </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Schupfnudeln mit Spitzkohl, gebratener Paprika, Sonneblumenhack und Skyr</name>
+          <note>Klimateller</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">5.10</price>
+          <price role="other">6.30</price>
+          <price role="student">3.80</price>
+        </meal>
+      </category>
       <category name="CampusSpezial">
         <meal>
           <name>Salatschüssel mit frischen Babyspinat, Karotten, Kichererbsen, Tofu, Minze, Koriander,Wasabidressing</name>
@@ -392,19 +426,6 @@
         </meal>
       </category>
       <category name="CampusWorld">
-        <meal>
-          <name>Ägyptische Falafel , Knoblauchdip , Krautsalat , Gemüse Bulgur</name>
-          <note>Klimateller</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">5.50</price>
-          <price role="other">6.70</price>
-          <price role="student">4.20</price>
-        </meal>
         <meal>
           <name>Salatschüssel mit Hähnchen, Babyspinat, Karotten, Kichererbsen, Minze, Koriander, Wasabidressing</name>
           <note>Geflügel</note>
@@ -544,14 +565,6 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>3 Kartoffeltaschen mit Kräuter Frischkäsefüllung , Kräuterquark , Gurkensalat</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Vegetarisch</note>
-          <price role="employee">5.70</price>
-          <price role="other">6.90</price>
-          <price role="student">4.40</price>
-        </meal>
-        <meal>
           <name>Leberkäse im Ganzen gebacken , Sauerkraut mit Speck , Kartoffelpüree</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Schwein</note>
@@ -562,6 +575,14 @@
           <price role="employee">4.30</price>
           <price role="other">5.50</price>
           <price role="student">3.00</price>
+        </meal>
+        <meal>
+          <name>3 Kartoffeltaschen mit Kräuter Frischkäsefüllung , Kräuterquark , Gurkensalat</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">5.70</price>
+          <price role="other">6.90</price>
+          <price role="student">4.40</price>
         </meal>
       </category>
       <category name="CampusSpezial">
