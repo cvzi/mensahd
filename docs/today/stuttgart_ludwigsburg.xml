@@ -4,6 +4,18 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2023-05-25">
+      <category name="Vorspeise">
+        <meal>
+          <name>Kräuter-Pilzsuppe</name>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
       <category name="Veganer renner">
         <meal>
           <name>Vollkorn Penne mit Ratatouille</name>
@@ -30,8 +42,25 @@
           <price role="employee">7.30</price>
           <price role="student">4.80</price>
         </meal>
+        <meal>
+          <name>Kartoffel-Zucchini-Gratin</name>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">6.60</price>
+          <price role="student">4.10</price>
+        </meal>
       </category>
       <category name="Aktion">
+        <meal>
+          <name>Cordon bleu vom Schwein und Pommes frites</name>
+          <note>Milch und Laktose</note>
+          <note>Schwein</note>
+          <note>Weizen</note>
+          <price role="employee">7.90</price>
+          <price role="student">5.40</price>
+        </meal>
         <meal>
           <name>Backfisch mit Remouladensauce und Pommes frites</name>
           <note>Ei</note>
@@ -46,6 +75,12 @@
         </meal>
       </category>
       <category name="Beilage">
+        <meal>
+          <name>Kaisergemüse</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
         <meal>
           <name>Petersilienkartoffeln</name>
           <note>vegan</note>
@@ -63,11 +98,37 @@
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
+        <meal>
+          <name>Spätzle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
       </category>
       <category name="Salat">
         <meal>
           <name>Beilagensalat</name>
           <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Dessert">
+        <meal>
+          <name>Sahneschokopudding mit Dessertsoße Vanille</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+        <meal>
+          <name>Erdbeerjoghurt</name>
+          <note>Milch und Laktose</note>
+          <note>mit Farbstoffen</note>
+          <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
