@@ -3,21 +3,19 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2023-05-24">
+    <day date="2023-05-25">
       <category name="Vorspeise">
         <meal>
-          <name>tomatisierte Bohnensuppe</name>
-          <note>Sellerie</note>
-          <note>Weizen</note>
-          <note>vegan</note>
+          <name>Tagessuppe</name>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Rotes-Linsen-Kartoffel-Curry mit Rosinen</name>
+          <name>Vollkorn Penne mit Ratatouille</name>
           <note>Sellerie</note>
+          <note>Weizen</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -25,14 +23,19 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Cordon bleu vom Schwein mit Bratensauce und Pommes frites</name>
-          <note>Milch und Laktose</note>
-          <note>Schwein</note>
-          <note>Senf</note>
+          <name>Chili con Carne und Reis</name>
+          <note>Rind</note>
+          <note>Sellerie</note>
+          <price role="employee">6.90</price>
+          <price role="student">4.40</price>
+        </meal>
+        <meal>
+          <name>Grünkohl-Hanfküchle mit Karottensauce und Petersilienkartoffeln</name>
+          <note>Hafer</note>
           <note>Weizen</note>
-          <note>mit Farbstoffen</note>
-          <price role="employee">7.90</price>
-          <price role="student">5.40</price>
+          <note>vegan</note>
+          <price role="employee">7.30</price>
+          <price role="student">4.80</price>
         </meal>
       </category>
       <category name="Aktion">
@@ -47,7 +50,7 @@
           <price role="student">4.45</price>
         </meal>
         <meal>
-          <name>Campanelle Paprika-Chorizo-Sauce</name>
+          <name>Fusilloni Paprika-Chorizo-Sauce</name>
           <note>Rind</note>
           <note>Schwein</note>
           <note>Sellerie</note>
@@ -61,7 +64,7 @@
           <price role="student">4.95</price>
         </meal>
         <meal>
-          <name>Campanelle Kräuerrahmsauce</name>
+          <name>Fusilloni Kräuerrahmsauce</name>
           <note>Milch und Laktose</note>
           <note>Sellerie</note>
           <note>Weizen</note>
@@ -73,28 +76,26 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Gemischtes Gemüse</name>
-          <note>Sellerie</note>
+          <name>Tagesgemüse</name>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Petersilienkartoffeln</name>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
         <meal>
-          <name>Pommes frites</name>
-          <note>Milch und Laktose</note>
-          <note>Senf</note>
-          <note>mit Farbstoffen</note>
+          <name>Reis</name>
           <note>vegan</note>
-          <price role="employee">1.59</price>
-          <price role="student">1.19</price>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Salat">
         <meal>
           <name>Beilagensalat</name>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>geschwefelt</note>
-          <note>mit Farbstoffen</note>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
@@ -102,13 +103,8 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Früchtemüsli</name>
-          <note>Gerste</note>
-          <note>Hafer</note>
-          <note>Haselnüsse</note>
-          <note>Mandeln</note>
+          <name>Rote Grütze mit Dessertsoße Vanille</name>
           <note>Milch und Laktose</note>
-          <note>mit Antioxidationsmitteln</note>
           <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
@@ -120,11 +116,15 @@
           <note>Ei</note>
           <note>Milch und Laktose</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
           <note>Senf</note>
+          <note>Sesam</note>
           <note>Weizen</note>
           <note>geschwefelt</note>
+          <note>geschwärzt</note>
           <note>mit Antioxidationsmitteln</note>
           <note>mit Farbstoffen</note>
+          <note>mit Süßungsmitteln</note>
           <note>vegetarisch</note>
           <price role="employee">1.60</price>
           <price role="student">1.10</price>
