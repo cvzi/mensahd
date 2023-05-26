@@ -6,7 +6,7 @@
     <day date="2023-05-26">
       <category name="Pottkieker">
         <meal>
-          <name>Blumenkohl Korma, Reis</name>
+          <name>Blumenkohl Korma, Basmatireis</name>
           <note>Klimateller</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -17,8 +17,9 @@
       </category>
       <category name="CampusVital">
         <meal>
-          <name>Scharfes Kürbisgemüse mit Linsen und Rucola, Penne</name>
+          <name>Scharfes Kürbisgemüse mit Linsen und Rucola , Penne</name>
           <note>Klimateller</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
@@ -48,12 +49,14 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Lenticchie mit Linsen in pikanter Tomatensoße , Vollkorn Fussili</name>
+          <name>Pomodoro asiatico mit asiatischer Tomatensoße und Soja Chunks , Vollkorn Fussili</name>
           <note>Klimateller</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Konservierungsstoff</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -61,11 +64,16 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Brechbohne, Cajun Gemüse , Gemüsepfanne Texas, Zuckerschoten</name>
-          <note>Klimateller</note>
+          <name>Cajun Gemüse , Champignons mit Austernpilzen in Kräuterrahm , tomatisiertes Paprika-Karottengemüse, gebratene Paprika , Bratkartoffeln, Bratnudeln mit Gemüsestreifen</name>
+          <note>Geschwefelt</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Farbstoff</note>
+          <note>mit Konservierungsstoff</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -127,10 +135,9 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Salsa bianca mit Räuchertofu in Kräutersoße , Vollkorn Fussili</name>
+          <name>Lenticchie mit Linsen in pikanter Tomatensoße , Vollkorn Fussili</name>
           <note>Klimateller</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
@@ -255,31 +262,6 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Knackiger Spargelsalat</name>
-          <note>Geschwefelt</note>
-          <note>Klimateller</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">4.80</price>
-          <price role="other">6.00</price>
-          <price role="student">3.50</price>
-        </meal>
-        <meal>
-          <name>Ungarisches Rindergulasch , Spätzle</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Rind</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">5.90</price>
-          <price role="other">7.10</price>
-          <price role="student">4.60</price>
-        </meal>
-        <meal>
           <name>vegane Sesamnudeln mit Spargel und Pilzen</name>
           <note>Geschwefelt</note>
           <note>Klimateller</note>
@@ -294,6 +276,31 @@
           <price role="employee">6.20</price>
           <price role="other">7.40</price>
           <price role="student">4.90</price>
+        </meal>
+        <meal>
+          <name>Ungarisches Rindergulasch , Spätzle</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Rind</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">5.90</price>
+          <price role="other">7.10</price>
+          <price role="student">4.60</price>
+        </meal>
+        <meal>
+          <name>Knackiger Spargelsalat</name>
+          <note>Geschwefelt</note>
+          <note>Klimateller</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">4.80</price>
+          <price role="other">6.00</price>
+          <price role="student">3.50</price>
         </meal>
       </category>
       <category name="Pastabar">
