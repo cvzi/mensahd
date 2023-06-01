@@ -6,7 +6,7 @@
     <day date="2023-06-01">
       <category name="Pottkieker">
         <meal>
-          <name>Kartoffel-Kürbis-Ragout , Reis</name>
+          <name>Kartoffel-Karotten-Ragout , Reis</name>
           <note>Klimateller</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
@@ -79,16 +79,6 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Extra: Pommes Frites</name>
-          <note>Klimateller</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.20</price>
-          <price role="other">1.35</price>
-          <price role="student">1.10</price>
-        </meal>
-        <meal>
           <name>Extra: Kartoffelspalten</name>
           <note>Klimateller</note>
           <note>Vegan</note>
@@ -98,13 +88,23 @@
           <price role="other">1.35</price>
           <price role="student">1.10</price>
         </meal>
+        <meal>
+          <name>Extra: Pommes Frites</name>
+          <note>Klimateller</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.20</price>
+          <price role="other">1.35</price>
+          <price role="student">1.10</price>
+        </meal>
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta des Tages</name>
-          <note>Klimateller</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Käsespätzle</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
@@ -113,10 +113,11 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Gemüse des Tages</name>
+          <name>Süßkartoffeln, Erbsen, gebackene Aubergine, gerösteter Blumenkohl</name>
           <note>Klimateller</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mensaVital</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -317,6 +318,20 @@
       </category>
       <category name="CampusSpezial">
         <meal>
+          <name>Caesars salad mit gerösteten Perlgraupen, Ei, Hartkäse und Croutons</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>enthält tierisches Lab</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Konservierungsstoff</note>
+          <price role="employee">5.90</price>
+          <price role="other">7.10</price>
+          <price role="student">4.60</price>
+        </meal>
+        <meal>
           <name>Caesars salad mit Hähnchenstreifen, gerösteten Perlgraupen, Ei, Hartkäse und Croutons</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Geflügel</note>
@@ -330,20 +345,6 @@
           <price role="employee">7.20</price>
           <price role="other">8.40</price>
           <price role="student">5.90</price>
-        </meal>
-        <meal>
-          <name>Caesars salad mit gerösteten Perlgraupen, Ei, Hartkäse und Croutons</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>enthält tierisches Lab</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">5.90</price>
-          <price role="other">7.10</price>
-          <price role="student">4.60</price>
         </meal>
       </category>
       <category name="Pastabar">
