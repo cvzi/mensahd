@@ -3,15 +3,16 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2023-05-30">
+    <day date="2023-06-05">
       <category name="Menü 1">
         <meal>
-          <name>Spaghetti Bolognese, geriebener Edamer , Rucola , Beilagensalat </name>
+          <name>Piccata von der Hähnchenbrust, Tomatensoße , Romanesco , Tagliatelle </name>
+          <note>Ei</note>
+          <note>Geflügel</note>
           <note>Glutenhaltiges Getreide</note>
+          <note>Hausgemacht</note>
           <note>Milch/Laktose</note>
           <note>Portion Preis</note>
-          <note>Rind</note>
-          <note>Schweinefleisch</note>
           <note>Sellerie</note>
           <note>Säuerungsmittel</note>
           <note>Weizen</note>
@@ -24,31 +25,28 @@
       </category>
       <category name="Menü vegan/vegetarisch">
         <meal>
-          <name>Asia-Nudeln , Asia-Gemüse , Süß-Sauer-Soße , veganes Schnitzel </name>
-          <note>Antioxidationsmittel</note>
-          <note>Gerste</note>
-          <note>Glutenhaltiges Getreide</note>
+          <name>tunesische Reispfanne , Blumenkohl-Curry , frische Kräuter </name>
           <note>Portion Preis</note>
+          <note> = Vegan</note>
+          <price role="employee">3.75</price>
+          <price role="other">4.80</price>
+          <price role="student">3.00</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-06-06">
+      <category name="Menü 1">
+        <meal>
+          <name>Hackbraten, Rahm-Bratensoße , Kroketten , Bohnengemüse </name>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Milch/Laktose</note>
+          <note>Portion Preis</note>
+          <note>Schweinefleisch</note>
           <note>Sellerie</note>
-          <note>Senf</note>
           <note>Soja</note>
           <note>Weizen</note>
           <note> = Vegan</note>
-          <price role="employee">3.75</price>
-          <price role="other">4.80</price>
-          <price role="student">3.00</price>
-        </meal>
-      </category>
-    </day>
-    <day date="2023-05-31">
-      <category name="Menü 1">
-        <meal>
-          <name>Hähnchengeschnetzeltes, Langkornreis , Erbsen-Karottengemüse , frische Kräuter </name>
-          <note>Geflügel</note>
-          <note>Milch/Laktose</note>
-          <note>Portion Preis</note>
-          <note>Sellerie</note>
-          <note> = Vegan</note>
+          <note> = Vegetarisch</note>
           <price role="employee">3.75</price>
           <price role="other">4.80</price>
           <price role="student">3.00</price>
@@ -56,11 +54,49 @@
       </category>
       <category name="Menü vegan/vegetarisch">
         <meal>
-          <name>Vollkornspaghetti , Tomatensoße , Tempura Gemüsetsticks , frische Kräuter </name>
+          <name>bunte Spätzlepfanne mit Pilzen, Lauch und Tomaten , Kräuter-Rahmsoße , Rucola , geriebener Mozzarella </name>
+          <note>Ei</note>
           <note>Glutenhaltiges Getreide</note>
+          <note>Milch/Laktose</note>
           <note>Portion Preis</note>
           <note>Sellerie</note>
-          <note>Säuerungsmittel</note>
+          <note>Weizen</note>
+          <note> = Vegan</note>
+          <note> = Vegetarisch</note>
+          <price role="employee">3.75</price>
+          <price role="other">4.80</price>
+          <price role="student">3.00</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2023-06-07">
+      <category name="Menü 1">
+        <meal>
+          <name>Hähnchenschnitzel Knusperpanade, Rahm-Bratensoße , Pommes frites , Erbsen-Karottengemüse </name>
+          <note>Geflügel</note>
+          <note>Gerste</note>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Milch/Laktose</note>
+          <note>Portion Preis</note>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note> = Vegan</note>
+          <note> = Vegetarisch</note>
+          <price role="employee">3.75</price>
+          <price role="other">4.80</price>
+          <price role="student">3.00</price>
+        </meal>
+      </category>
+      <category name="Menü vegan/vegetarisch">
+        <meal>
+          <name>Fagottini mit Tomate-Basilikum , Zucchini-Tomatensoße , mediterranes Gemüse </name>
+          <note>Antioxidationsmittel</note>
+          <note>Farbstoff</note>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Portion Preis</note>
+          <note>Schwefeldioxid Sulfit</note>
+          <note>Sellerie</note>
           <note>Weizen</note>
           <note> = Vegan</note>
           <price role="employee">3.75</price>
@@ -69,44 +105,17 @@
         </meal>
       </category>
     </day>
-    <day date="2023-06-01">
+    <day date="2023-06-09">
       <category name="Menü 1">
         <meal>
-          <name>Tandoori Hähnchenbrust, Linsen-Mango-Gemüse , gebackene Kartoffeln , Limettenecke, frische Kräuter </name>
-          <note>Geflügel</note>
-          <note>Milch/Laktose</note>
-          <note>Portion Preis</note>
-          <note> = Vegan</note>
-          <price role="employee">3.75</price>
-          <price role="other">4.80</price>
-          <price role="student">3.00</price>
-        </meal>
-      </category>
-      <category name="Menü vegan/vegetarisch">
-        <meal>
-          <name>Auberginen-Süßkartoffel-Curry , Langkornreis , geröstete Mandeln , Couscoussalat , frische Kräuter </name>
-          <note>Glutenhaltiges Getreide</note>
-          <note>Mandeln</note>
-          <note>Portion Preis</note>
-          <note>Weizen</note>
-          <note> = Vegan</note>
-          <price role="employee">3.75</price>
-          <price role="other">4.80</price>
-          <price role="student">3.00</price>
-        </meal>
-      </category>
-    </day>
-    <day date="2023-06-02">
-      <category name="Menü 1">
-        <meal>
-          <name>Seelachsfilet in Eihülle, Schnittlauchsoße , Tagliatelle verde , Beilagensalat </name>
+          <name>Seelachsfilet im Sesammantel, Ingwer-Kokossoße , Langkornreis , orientalisches Gemüse </name>
           <note>Ei</note>
           <note>Fisch</note>
           <note>Glutenhaltiges Getreide</note>
           <note>Portion Preis</note>
+          <note>Sesam</note>
           <note>Weizen</note>
           <note> = Vegan</note>
-          <note> = Vegetarisch</note>
           <price role="employee">3.75</price>
           <price role="other">4.80</price>
           <price role="student">3.00</price>
@@ -114,20 +123,11 @@
       </category>
       <category name="Menü vegan/vegetarisch">
         <meal>
-          <name>Chili con Gerste , Baguette-Brötchen , veganer Joghurt , frische Kräuter , Beilagensalat </name>
-          <note>Antioxidationsmittel</note>
-          <note>Farbstoff</note>
-          <note>Gerste</note>
-          <note>Glutenhaltiges Getreide</note>
-          <note>Hafer</note>
-          <note>Mandeln</note>
+          <name>Quinoa-Erbsen-Frikadelle , vegane Aioli , Curry-Reis, frische Kräuter , Beilagensalat </name>
           <note>Portion Preis</note>
-          <note>Schalenfrüchte</note>
           <note>Schwefeldioxid Sulfit</note>
-          <note>Sellerie</note>
           <note>Senf</note>
           <note>Soja</note>
-          <note>Weizen</note>
           <note> = Vegan</note>
           <price role="employee">3.75</price>
           <price role="other">4.80</price>
