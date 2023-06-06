@@ -47,9 +47,9 @@
         <meal>
           <name>Spargel Curry mit Hähnchenbruststreifen , Basmatireis</name>
           <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Neu</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Antioxidationsmittel</note>
           <price role="employee">6.70</price>
           <price role="other">7.90</price>
@@ -58,7 +58,7 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Primavera mit Auberginen, Tomaten, Zucchini und Kapern , bunte Fusilli</name>
+          <name>Primavera mit Auberginen, Tomaten, Zucchini und Kapern , Pasta</name>
           <note>Klimateller</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Vegan</note>
@@ -69,7 +69,7 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Pollo all'Arrabbiata, bunte Fusilli</name>
+          <name>Pollo all'Arrabbiata, Pasta</name>
           <note>Geflügel</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
@@ -80,12 +80,15 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Brechbohnen, Zartweizen mit Gemüse , gebratener Pak Choi , Gartengemüse, Schupfnudeln , Schwarzwurzeln in Rahm</name>
+          <name>gebratene Champignons , Kichererbsenragout mit Räuchertofu , gebratener Pak Choi , gebratenes Gemüse mit Mais und Kidneybohnen, Schupfnudeln</name>
           <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Klimateller</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegetarisch</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <note>mit Konservierungsstoff</note>
           <price role="employee">0.95</price>
@@ -409,19 +412,6 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Frisches Wokgemüse mit Erdnusssoße und Basmaitreis , Hähnchenbrust</name>
-          <note>Erdnüsse und Erdnusserzeugnisse</note>
-          <note>Geflügel</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">7.00</price>
-          <price role="other">8.20</price>
-          <price role="student">5.70</price>
-        </meal>
-        <meal>
           <name>Frisches Wokgemüse mit Erdnusssoße und Basmaitreis</name>
           <note>Erdnüsse und Erdnusserzeugnisse</note>
           <note>Klimateller</note>
@@ -434,6 +424,19 @@
           <price role="employee">4.60</price>
           <price role="other">5.80</price>
           <price role="student">3.30</price>
+        </meal>
+        <meal>
+          <name>Frisches Wokgemüse mit Erdnusssoße und Basmaitreis , Hähnchenbrust</name>
+          <note>Erdnüsse und Erdnusserzeugnisse</note>
+          <note>Geflügel</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Konservierungsstoff</note>
+          <price role="employee">7.00</price>
+          <price role="other">8.20</price>
+          <price role="student">5.70</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -796,8 +799,9 @@
           <note>Rind</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">0.70</price>
-          <price role="other">1.30</price>
+          <price role="employee">10.10</price>
+          <price role="other">10.70</price>
+          <price role="student">9.40</price>
         </meal>
       </category>
       <category name="Pottkieker">
