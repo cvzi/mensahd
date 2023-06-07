@@ -4,14 +4,59 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2023-06-06">
+    <day date="2023-06-07">
+      <category name="Dessert">
+        <meal>
+          <name>Over-Night-Oats</name>
+          <note>Over-Night-Oats</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Panna Cotta mit Mangotopping und Minze</name>
+          <note>Panna cotta with mango topping and mint</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Asiatische Ramensuppe</name>
+          <note>Asian ramen soup</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Pochiertes Rotbarschfilet in Curryrahm mit Erbsengemüse und Schnittlauch-Kartoffeln</name>
+          <note>Poached redfish fillet in curry cream with peas and chive potatoes</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
       <category name="Vegan">
         <meal>
-          <name>Broccoli-Pasta mit pikanter Erdnussbuttersoße und Kokos</name>
-          <note>Broccoli Pasta with Spicy Peanut Butter Sauce and Coconut</note>
+          <name>Hausgemachte Couscousbällchen mit Schmorgemüse in Rahm</name>
+          <note>Homemade couscous balls with stewed vegetables in cream</note>
           <price role="student">2.90</price>
           <price role="employee">4.35</price>
           <price role="other">7.25</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Überbackene Nachos aus dem Ofen mit scharfem Bohnen-Chili, Paprika und Sour-Cream</name>
+          <note>Baked nachos from the oven with hot bean chili, paprika and sour cream</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
         </meal>
       </category>
     </day>
