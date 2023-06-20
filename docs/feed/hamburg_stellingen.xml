@@ -3,58 +3,6 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2023-06-19">
-      <category name="Pottkieker">
-        <meal>
-          <name>Linsen all' Arrabiata, Vollkorn-Penne</name>
-          <note>Klimateller</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">3.40</price>
-          <price role="other">4.10</price>
-          <price role="student">2.20</price>
-        </meal>
-      </category>
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Paniertes Putenschnitzel , Ratatouille , Rosmarinkartoffeln</name>
-          <note>Geflügel</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">6.10</price>
-          <price role="other">7.30</price>
-          <price role="student">4.80</price>
-        </meal>
-      </category>
-      <category name="CampusVital">
-        <meal>
-          <name>Süßkartoffel-Gnocchi mit Curry-Blumenkohl , Sojajoghurt</name>
-          <note>Klimateller</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">4.50</price>
-          <price role="other">5.70</price>
-          <price role="student">3.20</price>
-        </meal>
-      </category>
-      <category name="CampusSpezial">
-        <meal>
-          <name>Omelette gratiniert mit Tomate und Käse , Brechbohnen in Rahm</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Vegetarisch</note>
-          <price role="employee">4.60</price>
-          <price role="other">5.80</price>
-          <price role="student">3.30</price>
-        </meal>
-      </category>
-    </day>
     <day date="2023-06-20">
       <category name="Pottkieker">
         <meal>
@@ -90,13 +38,14 @@
           <note>Senf und Senferzeugnisse</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <note>mit Geschmacksverstärker</note>
-          <price role="employee">1.30</price>
-          <price role="other">2.50</price>
+          <price role="employee">5.90</price>
+          <price role="other">7.10</price>
+          <price role="student">4.60</price>
         </meal>
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Soja Bolognese mit Gemüse , Fusilli</name>
+          <name>Soja-Bolognese mit Gemüse , Fusilli</name>
           <note>Klimateller</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
@@ -134,27 +83,8 @@
           <price role="other">6.90</price>
           <price role="student">4.40</price>
         </meal>
-        <meal>
-          <name>Hähnchenstreifen all'Arrabiata, Penne-Nudeln</name>
-          <note>Geflügel</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">5.70</price>
-          <price role="other">6.90</price>
-          <price role="student">4.40</price>
-        </meal>
       </category>
       <category name="CampusSpezial">
-        <meal>
-          <name>Schweinefiletmedaillons, Dijon-Senfsoße , Prinzessbohnen, Kroketten</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schwein</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">7.10</price>
-          <price role="other">8.30</price>
-          <price role="student">5.80</price>
-        </meal>
         <meal>
           <name>Deutscher Spargel, Kokos-Orangen-Soße , Petersilienkartoffeln</name>
           <note>Klimateller</note>
@@ -179,6 +109,15 @@
           <price role="other">7.40</price>
           <price role="student">4.90</price>
         </meal>
+        <meal>
+          <name>Schweinefiletmedaillons, Pfefferrahmsoße , Gartengemüse, Kroketten</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Schwein</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">7.10</price>
+          <price role="other">8.30</price>
+          <price role="student">5.80</price>
+        </meal>
       </category>
     </day>
     <day date="2023-06-22">
@@ -198,6 +137,18 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
+          <name>Hähnchenbrust im Knuspermantel , BBQ-Grillsoße , Pommes Frites</name>
+          <note>Geflügel</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">4.80</price>
+          <price role="other">6.00</price>
+          <price role="student">3.50</price>
+        </meal>
+        <meal>
           <name>Currybratwurst , BBQ-Grillsoße , Pommes Frites</name>
           <note>Schwein</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -210,18 +161,6 @@
           <price role="employee">5.60</price>
           <price role="other">6.80</price>
           <price role="student">4.30</price>
-        </meal>
-        <meal>
-          <name>Hähnchenbrust im Knuspermantel , BBQ-Grillsoße , Pommes Frites</name>
-          <note>Geflügel</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">4.80</price>
-          <price role="other">6.00</price>
-          <price role="student">3.50</price>
         </meal>
       </category>
       <category name="CampusWorld">
