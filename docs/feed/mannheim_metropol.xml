@@ -3,16 +3,18 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2023-07-03">
+    <day date="2023-07-10">
       <category name="Menü 1">
         <meal>
-          <name>toskanisches Putengulasch, Tagliatelle , frische Kräuter , Beilagensalat </name>
-          <note>Antioxidationsmittel</note>
+          <name>paniertes Schnitzel vom Schwein, Champignonrahmsoße , Salzkartoffeln , frische Kräuter </name>
           <note>Ei</note>
-          <note>Geflügel</note>
           <note>Glutenhaltiges Getreide</note>
+          <note>Milch/Laktose</note>
           <note>Portion Preis</note>
+          <note>Schweinefleisch</note>
           <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Säuerungsmittel</note>
           <note>Weizen</note>
           <note> = Vegan</note>
           <note> = Vegetarisch</note>
@@ -23,11 +25,10 @@
       </category>
       <category name="Menü vegan/vegetarisch">
         <meal>
-          <name>Linsen-Dal-Curry, knackiges Asia-Gemüse , Falafel-Bällchen , Langkornreis </name>
+          <name>One Pott Pasta Erbsen-Champignons , Falafel-Bratling , Garam-Masala-Soße , frische Kräuter </name>
           <note>Glutenhaltiges Getreide</note>
           <note>Portion Preis</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
+          <note>Soja</note>
           <note>Weizen</note>
           <note> = Vegan</note>
           <price role="employee">3.75</price>
@@ -37,17 +38,13 @@
       </category>
       <category name="Wok">
         <meal>
-          <name>Hähnchengeschnetzeltes, scharfe Sojasoße , Wokgemüse , Langkornreis </name>
+          <name>Putenbruststreifen, rotes Thai-Curry, knackiges Asia-Gemüse , Langkornreis </name>
           <note>Geflügel</note>
           <note>Glutenhaltiges Getreide</note>
-          <note>Milch/Laktose</note>
           <note>Portion Preis</note>
-          <note>Sellerie</note>
-          <note>Sesam</note>
           <note>Soja</note>
           <note>Weizen</note>
           <note> = Vegan</note>
-          <note> = Vegetarisch</note>
           <price role="employee">5.00</price>
           <price role="other">6.40</price>
           <price role="student">4.00</price>
@@ -203,28 +200,17 @@
         </meal>
       </category>
     </day>
-    <day date="2023-07-04">
+    <day date="2023-07-11">
       <category name="Menü 1">
         <meal>
-          <name>Weißkohl-Hackfleisch-Haschee, Langkornreis , Beilagensalat </name>
-          <note>Portion Preis</note>
-          <note>Schweinefleisch</note>
-          <note> = Vegan</note>
-          <price role="employee">3.75</price>
-          <price role="other">4.80</price>
-          <price role="student">3.00</price>
-        </meal>
-      </category>
-      <category name="Menü vegan/vegetarisch">
-        <meal>
-          <name>Champignontasche ,, vegane Paprikasoße , Ofengemüse , Kartoffelpüree </name>
+          <name>Bolognese, Tagliatelle , Rucola , geriebener Mozzarella , Tomaten-Gurkensalat </name>
           <note>Antioxidationsmittel</note>
-          <note>Dinkel</note>
           <note>Ei</note>
           <note>Farbstoff</note>
           <note>Glutenhaltiges Getreide</note>
           <note>Milch/Laktose</note>
           <note>Portion Preis</note>
+          <note>Rind</note>
           <note>Schwefeldioxid Sulfit</note>
           <note>Sellerie</note>
           <note>Weizen</note>
@@ -235,19 +221,28 @@
           <price role="student">3.00</price>
         </meal>
       </category>
+      <category name="Menü vegan/vegetarisch">
+        <meal>
+          <name>Kichererbsen-Curry , Basmatireis , Karotten, Beilagensalat </name>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Portion Preis</note>
+          <note>Weizen</note>
+          <note> = Vegan</note>
+          <price role="employee">3.75</price>
+          <price role="other">4.80</price>
+          <price role="student">3.00</price>
+        </meal>
+      </category>
       <category name="Wok">
         <meal>
-          <name>Hähnchengeschnetzeltes, scharfe Sojasoße , Wokgemüse , Langkornreis </name>
+          <name>Putenstreifen, rotes Thai-Curry, knackiges Asia-Gemüse , Langkornreis </name>
           <note>Geflügel</note>
           <note>Glutenhaltiges Getreide</note>
-          <note>Milch/Laktose</note>
           <note>Portion Preis</note>
-          <note>Sellerie</note>
           <note>Sesam</note>
           <note>Soja</note>
           <note>Weizen</note>
           <note> = Vegan</note>
-          <note> = Vegetarisch</note>
           <price role="employee">5.00</price>
           <price role="other">6.40</price>
           <price role="student">4.00</price>
@@ -403,16 +398,16 @@
         </meal>
       </category>
     </day>
-    <day date="2023-07-05">
+    <day date="2023-07-12">
       <category name="Menü 1">
         <meal>
-          <name>bunter Wurstsalat, Pommes frites , frische Kräuter , Beilagensalat </name>
-          <note>Antioxidationsmittel</note>
-          <note>Konservierungsstoff</note>
+          <name>Käse-Lauchsuppe mit Hackfleisch und Kartoffeln, Baguette-Brötchen , frische Kräuter , Beilagensalat </name>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Milch/Laktose</note>
           <note>Portion Preis</note>
-          <note>Schwefeldioxid Sulfit</note>
-          <note>Schweinefleisch</note>
+          <note>Rind</note>
           <note>Sellerie</note>
+          <note>Weizen</note>
           <note> = Vegan</note>
           <price role="employee">3.75</price>
           <price role="other">4.80</price>
@@ -421,7 +416,7 @@
       </category>
       <category name="Menü vegan/vegetarisch">
         <meal>
-          <name>Soja-Bolognese , Vollkornspaghetti , frische Kräuter , Beilagensalat </name>
+          <name>Soja-Bolognese , Vollkornspaghetti , Beilagensalat , frische Kräuter </name>
           <note>Antioxidationsmittel</note>
           <note>Farbstoff</note>
           <note>Portion Preis</note>
@@ -437,17 +432,13 @@
       </category>
       <category name="Wok">
         <meal>
-          <name>Geschnetzeltes vom Schwein, scharfe Sojasoße , Wokgemüse , Langkornreis </name>
+          <name>Putenbruststreifen, rotes Thai-Curry, knackiges Asia-Gemüse , Langkornreis </name>
+          <note>Geflügel</note>
           <note>Glutenhaltiges Getreide</note>
-          <note>Milch/Laktose</note>
           <note>Portion Preis</note>
-          <note>Schweinefleisch</note>
-          <note>Sellerie</note>
-          <note>Sesam</note>
           <note>Soja</note>
           <note>Weizen</note>
           <note> = Vegan</note>
-          <note> = Vegetarisch</note>
           <price role="employee">5.00</price>
           <price role="other">6.40</price>
           <price role="student">4.00</price>
@@ -603,15 +594,20 @@
         </meal>
       </category>
     </day>
-    <day date="2023-07-06">
+    <day date="2023-07-13">
       <category name="Menü 1">
         <meal>
-          <name>One Pott Pasta &quot;Karotten-Curry-Sesam&quot; , Hähnchenschnitzel, frische Kräuter </name>
+          <name>Hähnchenroulade mit Brokkoli, Mais-Lauch-Rösti , Tsatsiki , rote Zwiebelringe </name>
           <note>Geflügel</note>
           <note>Glutenhaltiges Getreide</note>
+          <note>Milch/Laktose</note>
           <note>Portion Preis</note>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Soja</note>
           <note>Weizen</note>
           <note> = Vegan</note>
+          <note> = Vegetarisch</note>
           <price role="employee">3.75</price>
           <price role="other">4.80</price>
           <price role="student">3.00</price>
@@ -619,18 +615,10 @@
       </category>
       <category name="Menü vegan/vegetarisch">
         <meal>
-          <name>Paprika-Tomaten-Bulgur , vegane Hackbällchen , veganer Joghurt-Minz-Dip , frische Kräuter </name>
-          <note>Antioxidationsmittel</note>
-          <note>Gerste</note>
-          <note>Glutenhaltiges Getreide</note>
-          <note>Hafer</note>
+          <name>Auberginen-Süßkartoffel-Curry , Mandel-Basmatireis , Beilagensalat , frische Kräuter </name>
           <note>Mandeln</note>
           <note>Portion Preis</note>
           <note>Schalenfrüchte</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>Soja</note>
-          <note>Weizen</note>
           <note> = Vegan</note>
           <price role="employee">3.75</price>
           <price role="other">4.80</price>
@@ -639,17 +627,14 @@
       </category>
       <category name="Wok">
         <meal>
-          <name>Geschnetzeltes vom Schwein, scharfe Sojasoße , Wokgemüse , Langkornreis </name>
+          <name>Putenstreifen, rotes Thai-Curry, knackiges Asia-Gemüse , Langkornreis </name>
+          <note>Geflügel</note>
           <note>Glutenhaltiges Getreide</note>
-          <note>Milch/Laktose</note>
           <note>Portion Preis</note>
-          <note>Schweinefleisch</note>
-          <note>Sellerie</note>
           <note>Sesam</note>
           <note>Soja</note>
           <note>Weizen</note>
           <note> = Vegan</note>
-          <note> = Vegetarisch</note>
           <price role="employee">5.00</price>
           <price role="other">6.40</price>
           <price role="student">4.00</price>
@@ -804,12 +789,18 @@
         </meal>
       </category>
     </day>
-    <day date="2023-07-07">
+    <day date="2023-07-14">
       <category name="Menü 1">
         <meal>
-          <name>Seelachsfilet Bordelaise, Schnittlauchsoße , Salzkartoffeln , Beilagensalat </name>
+          <name>gebackenes Hokifilet, Remoulade , Bratkartoffeln , weißer Bohnensalat </name>
+          <note>Ei</note>
           <note>Fisch</note>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Konservierungsstoff</note>
+          <note>Milch/Laktose</note>
           <note>Portion Preis</note>
+          <note>Schwefeldioxid Sulfit</note>
+          <note>Weizen</note>
           <note> = Vegan</note>
           <note> = Vegetarisch</note>
           <price role="employee">3.75</price>
@@ -819,17 +810,17 @@
       </category>
       <category name="Menü vegan/vegetarisch">
         <meal>
-          <name>Valess Schnitzel , Alm-Sauce , Marktgemüse , Schupfnudeln </name>
-          <note>Ei</note>
+          <name>Asia-Nudeln , Asia-Gemüse , Süß-Sauer-Soße , veganes Schnitzel </name>
+          <note>Antioxidationsmittel</note>
+          <note>Gerste</note>
           <note>Glutenhaltiges Getreide</note>
-          <note>Hafer</note>
-          <note>Milch/Laktose</note>
           <note>Portion Preis</note>
+          <note>Schwefeldioxid Sulfit</note>
           <note>Sellerie</note>
-          <note>Säuerungsmittel</note>
+          <note>Senf</note>
+          <note>Soja</note>
           <note>Weizen</note>
           <note> = Vegan</note>
-          <note> = Vegetarisch</note>
           <price role="employee">3.75</price>
           <price role="other">4.80</price>
           <price role="student">3.00</price>
@@ -837,17 +828,13 @@
       </category>
       <category name="Wok">
         <meal>
-          <name>Geschnetzeltes vom Schwein, scharfe Sojasoße , Wokgemüse , Langkornreis </name>
+          <name>Putenbruststreifen, rotes Thai-Curry, knackiges Asia-Gemüse , Langkornreis </name>
+          <note>Geflügel</note>
           <note>Glutenhaltiges Getreide</note>
-          <note>Milch/Laktose</note>
           <note>Portion Preis</note>
-          <note>Schweinefleisch</note>
-          <note>Sellerie</note>
-          <note>Sesam</note>
           <note>Soja</note>
           <note>Weizen</note>
           <note> = Vegan</note>
-          <note> = Vegetarisch</note>
           <price role="employee">5.00</price>
           <price role="other">6.40</price>
           <price role="student">4.00</price>
