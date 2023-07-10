@@ -4,8 +4,61 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2023-07-09">
-      <closed/>
+    <day date="2023-07-10">
+      <category name="Dessert">
+        <meal>
+          <name>Griechischer Sahnejoghurt mit Walnüssen und Honig</name>
+          <note>Greek cream yoghurt with walnuts and honey</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Obstsalat mit frischen Früchten der Saison</name>
+          <note>Fruit salad with fresh seasonal fruits</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Sahniges Karottensüppchen mit Kräutercroutons</name>
+          <note>Creamy carrot soup with herb croutons</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Bratwurst vom heimischen Rind mit fruchtiger Currysoße und Pommes Frites</name>
+          <note>Bratwurst from local beef with a fruity curry sauce and French fries</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Gelbes Curry mit Blumenkohl und Karotte mit Bulgur, dazu Stückobst</name>
+          <note>Yellow curry with cauliflower and carrot with bulgur, with slices of fruit</note>
+          <price role="student">2.90</price>
+          <price role="employee">4.35</price>
+          <price role="other">7.25</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Gefüllte Teigtaschen "al Forno" in Tomatensauce, mit Käse überbacken</name>
+          <note>Filled dumplings "al Forno" in tomato sauce, gratinated with cheese</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
