@@ -4,13 +4,6 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2023-07-17">
-      <category name="Vorspeise">
-        <meal>
-          <name>Tagessuppe</name>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-      </category>
       <category name="Veganer renner">
         <meal>
           <name>Vollkornspaghetti mit Sojabolognese</name>
@@ -33,14 +26,14 @@
           <price role="student">4.90</price>
         </meal>
         <meal>
-          <name>Fleischküchle mit Baked Beans und gebackenen Kartoffelscheiben</name>
+          <name>Fleischküchle mit Rahmsauce und gebackenen Kartoffelscheiben</name>
           <note>Ei</note>
+          <note>Milch und Laktose</note>
           <note>Rind</note>
           <note>Schwein</note>
           <note>Weizen</note>
-          <note>mit Süßungsmitteln</note>
-          <price role="employee">7.90</price>
-          <price role="student">5.40</price>
+          <price role="employee">7.50</price>
+          <price role="student">5.00</price>
         </meal>
         <meal>
           <name>Überbackenes Hähnchenbrustfilet an Tomatensugo mit Kräutern und Bandnudeln</name>
@@ -68,19 +61,11 @@
           <price role="student">5.20</price>
         </meal>
       </category>
-      <category name="Aktion">
-        <meal>
-          <name>Paniertes Schweineschnitzel und Pommes frites</name>
-          <note>Ei</note>
-          <note>Schwein</note>
-          <note>Weizen</note>
-          <price role="employee">7.20</price>
-          <price role="student">4.70</price>
-        </meal>
-      </category>
       <category name="Beilage">
         <meal>
-          <name>Tagesgemüse</name>
+          <name>Karotten-Erbsen-Gemüse</name>
+          <note>Sellerie</note>
+          <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -90,14 +75,13 @@
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Bandnudeln</name>
-          <note>Weizen</note>
-          <note>vegan</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
+          <name>Gebackene Kartoffelscheiben</name>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Gebackene Kartoffelscheiben</name>
+          <name>Bayerische Creme mit Zimtkirschen</name>
+          <note>Milch und Laktose</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
@@ -111,13 +95,6 @@
         </meal>
       </category>
       <category name="Dessert">
-        <meal>
-          <name>Exotischer Obstsalat</name>
-          <note>mit Antioxidationsmitteln</note>
-          <note>vegan</note>
-          <price role="employee">1.59</price>
-          <price role="student">1.19</price>
-        </meal>
         <meal>
           <name>Aprikosenjoghurt</name>
           <note>Milch und Laktose</note>
