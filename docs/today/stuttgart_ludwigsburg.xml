@@ -3,10 +3,18 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2023-07-20">
+    <day date="2023-07-21">
+      <category name="Vorspeise">
+        <meal>
+          <name>Tagessuppe</name>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
       <category name="Veganer renner">
         <meal>
-          <name>Vollkorn Penne mit Ratatouille</name>
+          <name>Gemüse-Knusperfrikadelle mit veganer Kräutercremesauce und Reis</name>
+          <note>Hafer</note>
           <note>Sellerie</note>
           <note>Weizen</note>
           <note>vegan</note>
@@ -16,69 +24,38 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Chili con Carne und Reis</name>
-          <note>Rind</note>
-          <note>Sellerie</note>
-          <price role="employee">6.90</price>
-          <price role="student">4.40</price>
-        </meal>
-        <meal>
-          <name>Gemüsestrudel mit Kräuterquark und Salat</name>
-          <note>Ei</note>
+          <name>Waldpilzragout mit Kartoffelplätzchen und Sour-Cream Dip</name>
           <note>Milch und Laktose</note>
           <note>Sellerie</note>
           <note>Weizen</note>
-          <price role="employee">7.80</price>
-          <price role="student">5.30</price>
+          <note>vegetarisch</note>
+          <price role="employee">7.20</price>
+          <price role="student">4.70</price>
         </meal>
         <meal>
-          <name>Cordon bleu vom Schwein mit Bratensauce mit Kartoffelplätzchen</name>
-          <note>Milch und Laktose</note>
-          <note>Weizen</note>
-          <price role="employee">7.70</price>
-          <price role="student">5.20</price>
-        </meal>
-      </category>
-      <category name="Aktion">
-        <meal>
-          <name>Backfisch mit Remouladensauce und Pommes frites</name>
+          <name>Backfisch mit Frankfurter Grüne Sauce und Salzkartoffeln</name>
           <note>Ei</note>
           <note>MSC-zertifizierter Fisch (MSC-C-51632)</note>
           <note>Milch und Laktose</note>
           <note>Senf</note>
           <note>Weizen</note>
-          <note>mit Farbstoffen</note>
-          <note>mit Süßungsmitteln</note>
           <price role="employee">7.90</price>
           <price role="student">5.40</price>
         </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Kaisergemüse</name>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-        <meal>
           <name>Pommes frites</name>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Petersilienkartoffeln</name>
+          <name>Kartoffelsalat</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
-          <price role="employee">1.59</price>
-          <price role="student">1.19</price>
-        </meal>
-        <meal>
-          <name>Reis</name>
-          <note>vegan</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-        <meal>
-          <name>Kartoffelplätzchen</name>
-          <note>Weizen</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
@@ -93,16 +70,17 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Früchtequark</name>
+          <name>Ananasquark</name>
           <note>Milch und Laktose</note>
-          <note>mit Antioxidationsmitteln</note>
+          <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Erdbeerjoghurt</name>
+          <name>Nuss-Nougat-Pudding</name>
+          <note>Haselnüsse</note>
           <note>Milch und Laktose</note>
-          <note>mit Farbstoffen</note>
+          <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
