@@ -3,11 +3,19 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2023-07-24">
+    <day date="2023-07-25">
+      <category name="Vorspeise">
+        <meal>
+          <name>Tagessuppe</name>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
       <category name="Veganer renner">
         <meal>
-          <name>Penne mit Champignons und Cocktailtomaten</name>
-          <note>Weizen</note>
+          <name>Vegane Paella</name>
+          <note>Sellerie</note>
+          <note>geschwärzt</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -15,48 +23,69 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Sesam-Karotten-Knuspersticks mit Sweet Chili Sauce und Duftreis</name>
-          <note>Sellerie</note>
-          <note>Sesam</note>
+          <name>Kartoffel-Gemüseauflauf</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">5.80</price>
+          <price role="student">3.30</price>
+        </meal>
+        <meal>
+          <name>Schweinebraten mit Rahmsauce und Spätzle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Schwein</note>
           <note>Weizen</note>
-          <note>mit Süßungsmitteln</note>
-          <note>vegan</note>
+          <price role="employee">6.70</price>
+          <price role="student">4.20</price>
+        </meal>
+        <meal>
+          <name>Seelachsfilet auf mediterranem Zartweizen mit Zucchini, Oliven und getrockneten Tomaten</name>
+          <note>Fisch</note>
+          <note>MSC-zertifizierter Fisch (MSC-C-51632)</note>
+          <note>Weizen</note>
+          <note>geschwärzt</note>
           <price role="employee">7.90</price>
           <price role="student">5.40</price>
         </meal>
         <meal>
-          <name>Rote Wurst und Pommes frites mit Pusztasauce</name>
-          <note>Rind</note>
-          <note>Schwein</note>
-          <note>Sellerie</note>
+          <name>Gebackener Hirtenkäse mit buntem Salatteller und Brötchen</name>
+          <note>Milch und Laktose</note>
+          <note>Roggen</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Senf</note>
+          <note>Soja</note>
+          <note>Weizen</note>
           <note>mit Antioxidationsmitteln</note>
+          <note>vegetarisch</note>
+          <price role="employee">7.30</price>
+          <price role="student">4.80</price>
+        </meal>
+      </category>
+      <category name="Aktion">
+        <meal>
+          <name>Hamburger und Pommes frites</name>
+          <note>Ei</note>
+          <note>Rind</note>
+          <note>Senf</note>
+          <note>Sesam</note>
+          <note>Weizen</note>
+          <note>mit Farbstoffen</note>
           <note>mit Konservierungsstoffen</note>
           <note>mit Süßungsmitteln</note>
-          <price role="employee">6.40</price>
-          <price role="student">3.90</price>
-        </meal>
-        <meal>
-          <name>Lasagne mit Tomatensauce</name>
-          <note>Ei</note>
-          <note>Milch und Laktose</note>
-          <note>Rind</note>
-          <note>Sellerie</note>
-          <note>Weizen</note>
-          <price role="employee">7.70</price>
-          <price role="student">5.20</price>
+          <price role="employee">7.45</price>
+          <price role="student">4.95</price>
         </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Grüne Bohnen</name>
-          <note>Sellerie</note>
-          <note>vegan</note>
+          <name>Tagesgemüse</name>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
         <meal>
-          <name>Duftreis</name>
+          <name>Gemüsezartweizen</name>
+          <note>Weizen</note>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
@@ -67,10 +96,13 @@
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Thymiankartoffeln</name>
-          <note>vegan</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
+          <name>Spätzle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
         </meal>
       </category>
       <category name="Salat">
@@ -83,16 +115,14 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Kirschjoghurt</name>
+          <name>Mousse mit Limone-Joghurt-Geschmack</name>
           <note>Milch und Laktose</note>
-          <note>mit Farbstoffen</note>
           <note>vegetarisch</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Nuss-Nougat-Pudding</name>
-          <note>Haselnüsse</note>
+          <name>Milchreis</name>
           <note>Milch und Laktose</note>
           <note>vegetarisch</note>
           <price role="employee">1.59</price>

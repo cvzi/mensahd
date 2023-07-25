@@ -3,14 +3,13 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2023-07-24">
+    <day date="2023-07-25">
       <category name="Vorspeise">
         <meal>
-          <name>Pilzcremesuppe</name>
+          <name>Gemüserahmsuppe</name>
           <note>Milch und Laktose</note>
           <note>Sellerie</note>
           <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
           <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
@@ -18,8 +17,9 @@
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Penne mit Champignons und Cocktailtomaten</name>
-          <note>Weizen</note>
+          <name>Vegane Paella</name>
+          <note>Sellerie</note>
+          <note>geschwärzt</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -27,17 +27,14 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Rote Wurst mit Pusztasauce und Country Potatoes</name>
-          <note>Rind</note>
+          <name>Schweinebraten mit Rahmsauce und Spätzle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
           <note>Schwein</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
           <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Konservierungsstoffen</note>
-          <note>mit Süßungsmitteln</note>
-          <price role="employee">6.40</price>
-          <price role="student">3.90</price>
+          <price role="employee">6.70</price>
+          <price role="student">4.20</price>
         </meal>
         <meal>
           <name>Lasagne mit Tomatensauce</name>
@@ -107,7 +104,7 @@
           <price role="student">1.10</price>
         </meal>
         <meal>
-          <name>Pizza mit Grillgemüse</name>
+          <name>Pizza mit Büffelmozzarella</name>
           <note>Milch und Laktose</note>
           <note>Weizen</note>
           <note>vegetarisch</note>
@@ -124,6 +121,14 @@
           <price role="student">8.50</price>
         </meal>
         <meal>
+          <name>Pizza mit Grillgemüse</name>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">11.00</price>
+          <price role="student">8.50</price>
+        </meal>
+        <meal>
           <name>Pizza Salami</name>
           <note>Milch und Laktose</note>
           <note>Schwein</note>
@@ -132,27 +137,33 @@
           <price role="employee">11.00</price>
           <price role="student">8.50</price>
         </meal>
-        <meal>
-          <name>Pizza mit Büffelmozzarella</name>
-          <note>Milch und Laktose</note>
-          <note>Weizen</note>
-          <note>vegetarisch</note>
-          <price role="employee">11.00</price>
-          <price role="student">8.50</price>
-        </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Karotten-Erbsen-Gemüse</name>
-          <note>Sellerie</note>
+          <name>Blattspinat</name>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
         <meal>
-          <name>Country Potatoes</name>
+          <name>Pommes frites</name>
+          <note>vegan</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+        <meal>
+          <name>Gemüsezartweizen</name>
           <note>Weizen</note>
           <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Spätzle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
@@ -167,15 +178,14 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Kirschjoghurt</name>
+          <name>Mousse mit Limone-Joghurt-Geschmack</name>
           <note>Milch und Laktose</note>
-          <note>mit Farbstoffen</note>
           <note>vegetarisch</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Pudding mit Vanille-Geschmack</name>
+          <name>Milchreis</name>
           <note>Milch und Laktose</note>
           <note>vegetarisch</note>
           <price role="employee">1.59</price>
