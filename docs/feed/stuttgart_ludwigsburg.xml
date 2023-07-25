@@ -4,13 +4,6 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2023-07-25">
-      <category name="Vorspeise">
-        <meal>
-          <name>Tagessuppe</name>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-      </category>
       <category name="Veganer renner">
         <meal>
           <name>Vegane Paella</name>
@@ -22,6 +15,16 @@
         </meal>
       </category>
       <category name="Hauptgericht">
+        <meal>
+          <name>Rote Wurst und Pommes frites</name>
+          <note>Rind</note>
+          <note>Schwein</note>
+          <note>Senf</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Konservierungsstoffen</note>
+          <price role="employee">6.40</price>
+          <price role="student">3.90</price>
+        </meal>
         <meal>
           <name>Kartoffel-Gemüseauflauf</name>
           <note>Milch und Laktose</note>
@@ -39,53 +42,11 @@
           <price role="employee">6.70</price>
           <price role="student">4.20</price>
         </meal>
-        <meal>
-          <name>Seelachsfilet auf mediterranem Zartweizen mit Zucchini, Oliven und getrockneten Tomaten</name>
-          <note>Fisch</note>
-          <note>MSC-zertifizierter Fisch (MSC-C-51632)</note>
-          <note>Weizen</note>
-          <note>geschwärzt</note>
-          <price role="employee">7.90</price>
-          <price role="student">5.40</price>
-        </meal>
-        <meal>
-          <name>Gebackener Hirtenkäse mit buntem Salatteller und Brötchen</name>
-          <note>Milch und Laktose</note>
-          <note>Roggen</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Senf</note>
-          <note>Soja</note>
-          <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>vegetarisch</note>
-          <price role="employee">7.30</price>
-          <price role="student">4.80</price>
-        </meal>
-      </category>
-      <category name="Aktion">
-        <meal>
-          <name>Hamburger und Pommes frites</name>
-          <note>Ei</note>
-          <note>Rind</note>
-          <note>Senf</note>
-          <note>Sesam</note>
-          <note>Weizen</note>
-          <note>mit Farbstoffen</note>
-          <note>mit Konservierungsstoffen</note>
-          <note>mit Süßungsmitteln</note>
-          <price role="employee">7.45</price>
-          <price role="student">4.95</price>
-        </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Tagesgemüse</name>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-        <meal>
-          <name>Gemüsezartweizen</name>
-          <note>Weizen</note>
+          <name>Grüne Bohnen</name>
+          <note>Sellerie</note>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
@@ -104,6 +65,12 @@
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
+        <meal>
+          <name>Thymiankartoffeln</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
       </category>
       <category name="Salat">
         <meal>
@@ -115,14 +82,24 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Mousse mit Limone-Joghurt-Geschmack</name>
+          <name>Kirschjoghurt</name>
+          <note>Milch und Laktose</note>
+          <note>mit Farbstoffen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Nuss-Nougat-Pudding</name>
+          <note>Haselnüsse</note>
           <note>Milch und Laktose</note>
           <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Milchreis</name>
+          <name>Nuss-Nougat-Pudding</name>
+          <note>Haselnüsse</note>
           <note>Milch und Laktose</note>
           <note>vegetarisch</note>
           <price role="employee">1.59</price>
