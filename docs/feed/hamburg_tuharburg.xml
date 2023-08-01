@@ -57,9 +57,10 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Belugalinsenragout , Pasta</name>
+          <name>Schwarze Bohnensoße mit Räuchertofu , Pasta</name>
           <note>Klimateller</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
@@ -68,10 +69,9 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Schwarze Bohnensoße mit Räuchertofu , Pasta</name>
+          <name>Belugalinsenragout , Pasta</name>
           <note>Klimateller</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
@@ -163,9 +163,9 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Veg. Pastabar des Tages</name>
-          <note>Klimateller</note>
-          <note>Vegan</note>
+          <name>Pastabar Fleisch oder Hähnchen des Tages</name>
+          <note>Geflügel</note>
+          <note>Rind</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
@@ -173,9 +173,9 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Pastabar Fleisch oder Hähnchen des Tages</name>
-          <note>Geflügel</note>
-          <note>Rind</note>
+          <name>Veg. Pastabar des Tages</name>
+          <note>Klimateller</note>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
@@ -433,6 +433,15 @@
       </category>
       <category name="Pastabar">
         <meal>
+          <name>Contadino mit Schweinefleisch und Zucchini , Gnocchi</name>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
           <name>Crema di pomodori secchi e basilico mit getrockneten Tomaten in Kräutersoße , Gnocchi</name>
           <note>Geschwefelt</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
@@ -440,15 +449,6 @@
           <note>Vegetarisch</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <note>mit Konservierungsstoff</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
-          <name>Contadino mit Schweinefleisch und Zucchini , Gnocchi</name>
-          <note>Schwein</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -529,10 +529,8 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Primavera mit Auberginen, Tomaten, Zucchini und Kapern , bunte Fusilli</name>
-          <note>Klimateller</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegan</note>
+          <name>Pollo all'Arrabbiata, bunte Fusilli</name>
+          <note>Geflügel</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
@@ -540,8 +538,10 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Pollo all'Arrabbiata, bunte Fusilli</name>
-          <note>Geflügel</note>
+          <name>Primavera mit Auberginen, Tomaten, Zucchini und Kapern , bunte Fusilli</name>
+          <note>Klimateller</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
@@ -586,6 +586,21 @@
       </category>
       <category name="CampusSpezial">
         <meal>
+          <name>Grünkern-Käse Medaillons , Schnittlauchdip , Blechkartoffeln, Blattsalat mit Karotte</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Geschwefelt</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">5.90</price>
+          <price role="other">7.10</price>
+          <price role="student">4.60</price>
+        </meal>
+        <meal>
           <name>NEUes Gericht für dich gekocht..., veganer Wrap Dürüm Kebab mit Salat und White Smoke BBQ Soße</name>
           <note>Geschwefelt</note>
           <note>Klimateller</note>
@@ -600,21 +615,6 @@
           <price role="employee">5.70</price>
           <price role="other">6.90</price>
           <price role="student">4.40</price>
-        </meal>
-        <meal>
-          <name>Grünkern-Käse Medaillons , Schnittlauchdip , Blechkartoffeln, Blattsalat mit Karotte</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Geschwefelt</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">5.90</price>
-          <price role="other">7.10</price>
-          <price role="student">4.60</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -724,9 +724,9 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Veg. Pastabar des Tages</name>
-          <note>Klimateller</note>
-          <note>Vegan</note>
+          <name>Pastabar Fleisch oder Hähnchen des Tages</name>
+          <note>Geflügel</note>
+          <note>Rind</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
@@ -734,9 +734,9 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Pastabar Fleisch oder Hähnchen des Tages</name>
-          <note>Geflügel</note>
-          <note>Rind</note>
+          <name>Veg. Pastabar des Tages</name>
+          <note>Klimateller</note>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
