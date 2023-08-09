@@ -52,6 +52,19 @@
           <price role="student">4.70</price>
         </meal>
       </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Kalter Teller: Vegetarisches Schnitzel mit frischem Kartoffelsalat</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Klimateller</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">1.30</price>
+          <price role="other">2.50</price>
+        </meal>
+      </category>
       <category name="CampusWorld">
         <meal>
           <name>Hühnchen in Kokos Soße , Sesammöhrchen , Basmatireis</name>
@@ -67,20 +80,20 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Bolognese , Vollkorn Penne</name>
-          <note>Rind</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Funghi di bosco e basilico mit Waldpilzen und Basilikum , Vollkorn Penne</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegetarisch</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Funghi di bosco e basilico mit Waldpilzen und Basilikum , Vollkorn Penne</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegetarisch</note>
+          <name>Bolognese , Vollkorn Penne</name>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
@@ -370,49 +383,22 @@
           <price role="student">3.80</price>
         </meal>
       </category>
-      <category name="CampusSpezial">
-        <meal>
-          <name>Vegane Maultaschen , Ratatouille , Petersilie</name>
-          <note>Klimateller</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">5.70</price>
-          <price role="other">6.90</price>
-          <price role="student">4.40</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Putengyros, Tzatziki , Krautsalat , Paprikareis</name>
-          <note>Geflügel</note>
-          <note>Geschwefelt</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">6.80</price>
-          <price role="other">8.00</price>
-          <price role="student">5.50</price>
-        </meal>
-      </category>
       <category name="Pastabar">
         <meal>
-          <name>Broccoli e Gorgonzola mit Gorgonzola und Broccoli , Conchiglie</name>
+          <name>Saporita mit Rindfleisch und Paprika , Conchiglie</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Vegetarisch</note>
-          <note>enthält tierisches Lab</note>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Saporita mit Rindfleisch und Paprika , Conchiglie</name>
+          <name>Broccoli e Gorgonzola mit Gorgonzola und Broccoli , Conchiglie</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Rind</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>enthält tierisches Lab</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
@@ -448,15 +434,6 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Penne , Tomatensoße</name>
-          <note>Klimateller</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">1.30</price>
-          <price role="other">2.50</price>
-        </meal>
-        <meal>
           <name>Homemade paniertes Putenschnitzel , Bayrischer Kartoffelsalat mit Gurken</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Geflügel</note>
@@ -469,6 +446,15 @@
           <price role="student">4.60</price>
         </meal>
         <meal>
+          <name>Penne , Tomatensoße</name>
+          <note>Klimateller</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">1.30</price>
+          <price role="other">2.50</price>
+        </meal>
+        <meal>
           <name>Geflügelcurry mit Mandeln , Salzkartoffeln</name>
           <note>Geflügel</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
@@ -478,43 +464,6 @@
           <price role="employee">4.50</price>
           <price role="other">5.70</price>
           <price role="student">3.20</price>
-        </meal>
-      </category>
-      <category name="CampusVital">
-        <meal>
-          <name>scharfe Kokos-Limonen Suppe mit Udon-Nudeln</name>
-          <note>Klimateller</note>
-          <note>Neu</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">5.60</price>
-          <price role="other">6.80</price>
-          <price role="student">4.30</price>
-        </meal>
-      </category>
-      <category name="CampusSpezial">
-        <meal>
-          <name>Gebratenes Zanderfilet , Salat mit Blattsalaten, Karotte, Radieschen und Paprika, hausgemachtes Balsamico Dressing</name>
-          <note>Fisch und Fischerzeugnisse</note>
-          <note>Geschwefelt</note>
-          <note>Klimateller</note>
-          <note>Neu</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Farbstoff</note>
-          <price role="employee">7.20</price>
-          <price role="other">8.40</price>
-          <price role="student">5.90</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -584,14 +533,13 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Spaghetti , Bolognese , Hartkäse gerieben</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Rind</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Penne , Tomatensoße</name>
+          <note>Klimateller</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">4.60</price>
-          <price role="other">5.80</price>
-          <price role="student">3.30</price>
+          <price role="employee">1.30</price>
+          <price role="other">2.50</price>
         </meal>
         <meal>
           <name>Hausgemachte Pasta Arrabiata</name>
@@ -602,30 +550,6 @@
           <price role="employee">5.20</price>
           <price role="other">6.40</price>
           <price role="student">3.90</price>
-        </meal>
-        <meal>
-          <name>Penne , Tomatensoße</name>
-          <note>Klimateller</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">1.30</price>
-          <price role="other">2.50</price>
-        </meal>
-      </category>
-      <category name="CampusVital">
-        <meal>
-          <name>Grüne Gemüsepfanne mit Erdnusssoße , Vollkornreis</name>
-          <note>Erdnüsse und Erdnusserzeugnisse</note>
-          <note>Klimateller</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">4.40</price>
-          <price role="other">5.60</price>
-          <price role="student">3.10</price>
         </meal>
       </category>
       <category name="CampusSpezial">
@@ -769,28 +693,6 @@
           <price role="student">5.60</price>
         </meal>
       </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Asia-Reis-Pot, Sojastreifen, Kimchi, Gurke, Frühlingszwiebel, Koriander, Erdnüsse und Chilimajo</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Erdnüsse und Erdnusserzeugnisse</note>
-          <note>Klimateller</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Farbstoff</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">4.50</price>
-          <price role="other">5.70</price>
-          <price role="student">3.20</price>
-        </meal>
-      </category>
       <category name="Pastabar">
         <meal>
           <name>Crema di Zucchine e Pomodoro mit Tomaten-Sahnesoße und Zucchini , Eliche</name>
@@ -854,20 +756,6 @@
           <price role="student">3.40</price>
         </meal>
       </category>
-      <category name="CampusVital">
-        <meal>
-          <name>Belugalinsen-Tomaten-Curry , Indische Kartoffeln</name>
-          <note>Klimateller</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Farbstoff</note>
-          <price role="employee">3.60</price>
-          <price role="other">4.80</price>
-          <price role="student">2.30</price>
-        </meal>
-      </category>
       <category name="CampusSpezial">
         <meal>
           <name>Gebratenes Zanderfilet , Salat mit Blattsalaten, Karotte, Radieschen und Paprika, hausgemachtes Balsamico Dressing</name>
@@ -884,30 +772,8 @@
           <price role="other">8.40</price>
           <price role="student">5.90</price>
         </meal>
-        <meal>
-          <name>Hühnchen in pikanter Erdnuss-Curry-Soße , Reis</name>
-          <note>Erdnüsse und Erdnusserzeugnisse</note>
-          <note>Geflügel</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.40</price>
-          <price role="student">3.90</price>
-        </meal>
       </category>
       <category name="CampusWorld">
-        <meal>
-          <name>Crepe mit Gemüse-Hummusfüllung , Rotkrautsalat Levante</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">4.70</price>
-          <price role="other">5.90</price>
-          <price role="student">3.40</price>
-        </meal>
         <meal>
           <name>Asia-Reis-Pot, Sojastreifen, Kimchi, Gurke, Frühlingszwiebel, Koriander, Erdnüsse und Chilimajo</name>
           <note>Ei und Eierzeugnisse</note>
@@ -931,23 +797,23 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Lenticchie mit Linsen in pikanter Tomatensoße , Vollkorn Fussili</name>
-          <note>Klimateller</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
           <name>Don Pepe mit Räucherlachs und Spinat in Sahnesoße , Vollkorn Fussili</name>
           <note>Fisch und Fischerzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <note>mit Fisch</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Lenticchie mit Linsen in pikanter Tomatensoße , Vollkorn Fussili</name>
+          <note>Klimateller</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
