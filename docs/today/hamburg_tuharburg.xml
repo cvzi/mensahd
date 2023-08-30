@@ -37,6 +37,21 @@
       </category>
       <category name="CampusSpezial">
         <meal>
+          <name>4 Cevapcici , Ofengemüse mit Kartoffeln , Schafskäse-Joghurt Dip</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Rind</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>enthält tierisches Lab</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Farbstoff</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">6.50</price>
+          <price role="other">7.70</price>
+          <price role="student">5.20</price>
+        </meal>
+        <meal>
           <name>Amaranth Burger , Rotkraut Coleslaw , Walnuss Senf Soße , Pommes Frites</name>
           <note>Geschwefelt</note>
           <note>Klimateller</note>
@@ -53,47 +68,22 @@
           <price role="other">8.20</price>
           <price role="student">5.70</price>
         </meal>
-        <meal>
-          <name>4 Cevapcici , Ofengemüse mit Kartoffeln , Schafskäse-Joghurt Dip</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Rind</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>enthält tierisches Lab</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Farbstoff</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">6.50</price>
-          <price role="other">7.70</price>
-          <price role="student">5.20</price>
-        </meal>
       </category>
       <category name="Pastabar">
-        <meal>
-          <name>Tomaten Belugalinsenragout, Pasta nach Wahl</name>
-          <note>Klimateller</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
-          <name>Pak Choi in Currycreme, Pasta nach Wahl</name>
-          <note>Klimateller</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
         <meal>
           <name>veganer Cremespinat , Pasta nach Wahl</name>
           <note>Klimateller</note>
           <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Tomaten Belugalinsenragout, Pasta nach Wahl</name>
+          <note>Klimateller</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
@@ -110,6 +100,16 @@
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <note>mensaVital</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Pak Choi in Currycreme, Pasta nach Wahl</name>
+          <note>Klimateller</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -293,9 +293,9 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pastabar Fleisch oder Hähnchen des Tages</name>
-          <note>Geflügel</note>
-          <note>Rind</note>
+          <name>Veg. Pastabar des Tages</name>
+          <note>Klimateller</note>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
@@ -303,9 +303,9 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Veg. Pastabar des Tages</name>
-          <note>Klimateller</note>
-          <note>Vegan</note>
+          <name>Pastabar Fleisch oder Hähnchen des Tages</name>
+          <note>Geflügel</note>
+          <note>Rind</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
