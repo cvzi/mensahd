@@ -6,15 +6,13 @@
     <day date="2023-09-01">
       <category name="Pottkieker">
         <meal>
-          <name>Sojageschnetzeltes in Currysoße , Reis</name>
+          <name>Holsteiner Kartoffeltopf , Baguette</name>
           <note>Klimateller</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
           <price role="employee">3.40</price>
           <price role="other">4.10</price>
           <price role="student">2.20</price>
@@ -22,7 +20,7 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Hähnchen Cordon Bleu , Hollandaise , Erbsen, Pommes Frites</name>
+          <name>Hähnchen Cordon Bleu , Hollandaise , Blattsalate , Pommes Frites</name>
           <note>Alkohol</note>
           <note>Ei und Eierzeugnisse</note>
           <note>Geflügel</note>
@@ -51,13 +49,16 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Soja Bolognese mit Gemüse , bunte Fusilli</name>
+          <name>Soja Bolognese mit Gemüse , Nudeln</name>
+          <note>Geschwefelt</note>
           <note>Klimateller</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Konservierungsstoff</note>
           <price role="employee">4.20</price>
           <price role="other">5.40</price>
           <price role="student">2.90</price>
@@ -65,9 +66,21 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pastabar Fleisch oder Hähnchen des Tages</name>
-          <note>Geflügel</note>
+          <name>Cevapcici , scharfe Paprikarahmsoße , Pasta nach Wahl</name>
+          <note>Ei und Eierzeugnisse</note>
           <note>Rind</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Konservierungsstoff</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Linsenragout, Pasta nach Wahl</name>
+          <note>Klimateller</note>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
@@ -75,8 +88,10 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Veg. Pastabar des Tages</name>
+          <name>Marokkanisches Kichererbsenragut , Pasta nach Wahl</name>
           <note>Klimateller</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
@@ -87,10 +102,25 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Gemüsebar des Tages</name>
+          <name>Pfannengemüse, Anti-Pasti Gemüse , Zuckerschoten, Ofengemüse mit Kartoffeln, Gemüsecouscous</name>
+          <note>Geschwefelt</note>
           <note>Klimateller</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Farbstoff</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>gebratener Halloumi Käse</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Vegetarisch</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -247,23 +277,23 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>all`Provenzale mit Gemüse , Strozzapreti</name>
-          <note>Klimateller</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
           <name>Milano mit Rindfleisch und Pilzen , Strozzapreti</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Rind</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <note>mit Antioxidationsmittel</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>all`Provenzale mit Gemüse , Strozzapreti</name>
+          <note>Klimateller</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
