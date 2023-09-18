@@ -62,21 +62,23 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Contadino mit Schweinefleisch und Zucchini , Gnocchi</name>
+          <name>Nerone mit Schweinefleisch und Gemüse , Pasta</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Schwein</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Crema di pomodori secchi e basilico mit getrockneten Tomaten in Kräutersoße , Gnocchi</name>
+          <name>Crema di pomodori secchi e basilico mit getrockneten Tomaten in Kräutersoße , Pasta</name>
           <note>Geschwefelt</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Klimateller</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Konservierungsstoff</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
@@ -85,10 +87,12 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Bunter Gemüsemix mit gelben Karotten, Buttererbsen , Glacierte Pastinaken mit Honig, Orientalisches Linsengemüse , Chili-Kartoffeln aus dem Ofen</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <name>gebratene Champignons , Erbsen, Pastinaken mit Kräuter, Orientalisches Linsengemüse , Basmatireis, Chili-Kartoffeln aus dem Ofen</name>
+          <note>Klimateller</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegetarisch</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -783,19 +787,6 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>vegane Currywurst , Grillsoße , Pommes Frites</name>
-          <note>Klimateller</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">5.40</price>
-          <price role="other">6.60</price>
-          <price role="student">4.10</price>
-        </meal>
-        <meal>
           <name>Bacon Bomb Burger , Pommes Frites</name>
           <note>Alkohol</note>
           <note>Ei und Eierzeugnisse</note>
@@ -816,12 +807,25 @@
           <price role="other">8.10</price>
           <price role="student">5.60</price>
         </meal>
+        <meal>
+          <name>vegane Currywurst , Grillsoße , Pommes Frites</name>
+          <note>Klimateller</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">5.40</price>
+          <price role="other">6.60</price>
+          <price role="student">4.10</price>
+        </meal>
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pastabar Fleisch oder Hähnchen des Tages</name>
-          <note>Geflügel</note>
-          <note>Rind</note>
+          <name>Veg. Pastabar des Tages</name>
+          <note>Klimateller</note>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
@@ -829,9 +833,9 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Veg. Pastabar des Tages</name>
-          <note>Klimateller</note>
-          <note>Vegan</note>
+          <name>Pastabar Fleisch oder Hähnchen des Tages</name>
+          <note>Geflügel</note>
+          <note>Rind</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
@@ -910,9 +914,9 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Veg. Pastabar des Tages</name>
-          <note>Klimateller</note>
-          <note>Vegan</note>
+          <name>Pastabar Fleisch oder Hähnchen des Tages</name>
+          <note>Geflügel</note>
+          <note>Rind</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
@@ -920,9 +924,9 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Pastabar Fleisch oder Hähnchen des Tages</name>
-          <note>Geflügel</note>
-          <note>Rind</note>
+          <name>Veg. Pastabar des Tages</name>
+          <note>Klimateller</note>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
