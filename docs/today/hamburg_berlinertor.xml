@@ -46,17 +46,6 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Putengyros, Tzatziki , Krautsalat , Paprikareis</name>
-          <note>Geflügel</note>
-          <note>Geschwefelt</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">6.80</price>
-          <price role="other">8.00</price>
-          <price role="student">5.50</price>
-        </meal>
-        <meal>
           <name>Pizza Sucuk Large</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Rind</note>
@@ -98,24 +87,35 @@
           <price role="other">6.90</price>
           <price role="student">4.40</price>
         </meal>
+        <meal>
+          <name>Putengyros, Tzatziki , Krautsalat , Paprikareis</name>
+          <note>Geflügel</note>
+          <note>Geschwefelt</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">6.80</price>
+          <price role="other">8.00</price>
+          <price role="student">5.50</price>
+        </meal>
       </category>
       <category name="Pastabar">
-        <meal>
-          <name>Broccoli e Gorgonzola mit Gorgonzola und Broccoli , Penne</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Vegetarisch</note>
-          <note>enthält tierisches Lab</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
         <meal>
           <name>Hühnchen in Kokos Soße , Penne</name>
           <note>Geflügel</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Broccoli e Gorgonzola mit Gorgonzola und Broccoli , Penne</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>enthält tierisches Lab</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
@@ -212,23 +212,23 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>all`Provenzale mit Gemüse , Strozzapreti</name>
-          <note>Klimateller</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
           <name>Milano mit Rindfleisch und Pilzen , Vollkorn Penne</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Rind</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <note>mit Antioxidationsmittel</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>all`Provenzale mit Gemüse , Strozzapreti</name>
+          <note>Klimateller</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -420,6 +420,15 @@
       </category>
       <category name="CampusWorld">
         <meal>
+          <name>Frisch gebackene PIZZA LARGE nach Wahl (versch. Sorten) ab 4,40 / 5,70 / 6,90 (auch TAKE AWAY)</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">5.70</price>
+          <price role="other">6.90</price>
+          <price role="student">4.40</price>
+        </meal>
+        <meal>
           <name>Asia-Reis-Pot, Sojastreifen, Kimchi, Gurke, Frühlingszwiebel, Koriander, Erdnüsse und Chilimajo</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Erdnüsse und Erdnusserzeugnisse</note>
@@ -439,33 +448,24 @@
           <price role="other">5.70</price>
           <price role="student">3.20</price>
         </meal>
-        <meal>
-          <name>Frisch gebackene PIZZA LARGE nach Wahl (versch. Sorten) ab 4,40 / 5,70 / 6,90 (auch TAKE AWAY)</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">5.70</price>
-          <price role="other">6.90</price>
-          <price role="student">4.40</price>
-        </meal>
       </category>
       <category name="Pastabar">
-        <meal>
-          <name>Crema di fagioli bianchi mit weißen Bohnen, Gemüse und Basilikum , Eliche</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
         <meal>
           <name>Salsa rucola di pollo mit Hähnchenstreifen in Rucolasoße , Eliche</name>
           <note>Geflügel</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <note>mensaVital</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Crema di fagioli bianchi mit weißen Bohnen, Gemüse und Basilikum , Eliche</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -541,23 +541,23 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Lenticchie mit Linsen in pikanter Tomatensoße , Vollkorn Fussili</name>
-          <note>Klimateller</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
           <name>Don Pepe mit Räucherlachs und Spinat in Sahnesoße , Vollkorn Fussili</name>
           <note>Fisch und Fischerzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <note>mit Fisch</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Lenticchie mit Linsen in pikanter Tomatensoße , Vollkorn Fussili</name>
+          <note>Klimateller</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
