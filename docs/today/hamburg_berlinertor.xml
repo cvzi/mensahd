@@ -46,15 +46,6 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Frisch gebackene PIZZA LARGE nach Wahl (versch. Sorten) ab 4,40 / 5,70 / 6,90 (auch TAKE AWAY)</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">5.70</price>
-          <price role="other">6.90</price>
-          <price role="student">4.40</price>
-        </meal>
-        <meal>
           <name>Putengyros, Tzatziki , Krautsalat , Paprikareis</name>
           <note>Geflügel</note>
           <note>Geschwefelt</note>
@@ -64,15 +55,6 @@
           <price role="employee">6.80</price>
           <price role="other">8.00</price>
           <price role="student">5.50</price>
-        </meal>
-        <meal>
-          <name>Pizza Funghi Large</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">6.10</price>
-          <price role="other">7.30</price>
-          <price role="student">4.80</price>
         </meal>
         <meal>
           <name>Pizza Sucuk Large</name>
@@ -98,10 +80,28 @@
           <price role="other">7.40</price>
           <price role="student">4.90</price>
         </meal>
+        <meal>
+          <name>Pizza Funghi Large</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">6.10</price>
+          <price role="other">7.30</price>
+          <price role="student">4.80</price>
+        </meal>
+        <meal>
+          <name>Frisch gebackene PIZZA LARGE nach Wahl (versch. Sorten) ab 4,40 / 5,70 / 6,90 (auch TAKE AWAY)</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">5.70</price>
+          <price role="other">6.90</price>
+          <price role="student">4.40</price>
+        </meal>
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Broccoli e Gorgonzola mit Gorgonzola und Broccoli , Conchiglie</name>
+          <name>Broccoli e Gorgonzola mit Gorgonzola und Broccoli , Penne</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Vegetarisch</note>
           <note>enthält tierisches Lab</note>
@@ -111,10 +111,11 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Saporita mit Rindfleisch und Paprika , Conchiglie</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Rind</note>
+          <name>Hühnchen in Kokos Soße , Penne</name>
+          <note>Geflügel</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
@@ -123,11 +124,10 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Karotten , Auberginen-Zucchini Gemüse , karamellisierte Schwarzwurzeln , Kohlrabi in Rahm , Süßkartoffel Gnocchi</name>
+          <name>Broccoli-Kohlrabi Gemüse , Auberginen-Zucchini Gemüse , karamellisierte Karotten</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -451,21 +451,21 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Salsa rucola di pollo mit Hähnchenstreifen in Rucolasoße , Eliche</name>
-          <note>Geflügel</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mensaVital</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
           <name>Crema di fagioli bianchi mit weißen Bohnen, Gemüse und Basilikum , Eliche</name>
           <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegetarisch</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Salsa rucola di pollo mit Hähnchenstreifen in Rucolasoße , Eliche</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mensaVital</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -515,6 +515,15 @@
       </category>
       <category name="CampusWorld">
         <meal>
+          <name>Frisch gebackene PIZZA LARGE nach Wahl (versch. Sorten) ab 4,40 / 5,70 / 6,90 (auch TAKE AWAY)</name>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">5.70</price>
+          <price role="other">6.90</price>
+          <price role="student">4.40</price>
+        </meal>
+        <meal>
           <name>Wrap mit Falafel, rote Beete Hummus , Krautsalat</name>
           <note>Geschwefelt</note>
           <note>Klimateller</note>
@@ -528,15 +537,6 @@
           <price role="employee">4.60</price>
           <price role="other">5.80</price>
           <price role="student">3.30</price>
-        </meal>
-        <meal>
-          <name>Frisch gebackene PIZZA LARGE nach Wahl (versch. Sorten) ab 4,40 / 5,70 / 6,90 (auch TAKE AWAY)</name>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">5.70</price>
-          <price role="other">6.90</price>
-          <price role="student">4.40</price>
         </meal>
       </category>
       <category name="Pastabar">
