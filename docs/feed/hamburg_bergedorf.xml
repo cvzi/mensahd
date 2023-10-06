@@ -3,69 +3,32 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2023-10-05">
-      <category name="Pottkieker">
-        <meal>
-          <name>Holsteiner Kartoffeltopf</name>
-          <note>Klimateller</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">3.40</price>
-          <price role="other">4.10</price>
-          <price role="student">2.20</price>
-        </meal>
-      </category>
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Hähnchen Crossies , BBQ Soße</name>
-          <note>Geflügel</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">4.85</price>
-          <price role="other">5.95</price>
-          <price role="student">3.60</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>vegane Tom Kha Gai Suppe mit Tofu und Basmatireis</name>
-          <note>Klimateller</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">5.60</price>
-          <price role="other">6.80</price>
-          <price role="student">4.30</price>
-        </meal>
-      </category>
-    </day>
     <day date="2023-10-06">
       <category name="Pottkieker">
         <meal>
-          <name>Gemüsegulasch , Zartweizen</name>
+          <name>Gemüsegulasch , Vollkornreis</name>
           <note>Klimateller</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">3.40</price>
           <price role="other">4.10</price>
           <price role="student">2.20</price>
         </meal>
       </category>
       <category name="CampusKlassiker">
+        <meal>
+          <name>Eier in Senfsoße , Salzkartoffeln, Rote Beete Salat</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">4.40</price>
+          <price role="other">5.60</price>
+          <price role="student">3.10</price>
+        </meal>
         <meal>
           <name>Hähnchen Cordon Bleu , Hollandaise</name>
           <note>Alkohol</note>
@@ -79,18 +42,6 @@
           <price role="employee">4.10</price>
           <price role="other">5.10</price>
           <price role="student">2.90</price>
-        </meal>
-        <meal>
-          <name>Eier in Senfsoße , Salzkartoffeln, Rote Beete Salat</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschl. Laktose)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">4.40</price>
-          <price role="other">5.60</price>
-          <price role="student">3.10</price>
         </meal>
       </category>
     </day>
@@ -254,10 +205,8 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta Primavera mit Auberginen, Tomaten, Zucchini und Kapern</name>
-          <note>Klimateller</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegan</note>
+          <name>Pasta Pollo all'Arrabbiata</name>
+          <note>Geflügel</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
@@ -265,8 +214,10 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Pasta Pollo all'Arrabbiata</name>
-          <note>Geflügel</note>
+          <name>Pasta Primavera mit Auberginen, Tomaten, Zucchini und Kapern</name>
+          <note>Klimateller</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
