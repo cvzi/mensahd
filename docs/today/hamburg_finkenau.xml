@@ -6,11 +6,13 @@
     <day date="2023-10-16">
       <category name="Pottkieker">
         <meal>
-          <name>Kichererbsencurry, pikantes Möhrengemüse</name>
+          <name>Kartoffel-Kichererbsencurry</name>
           <note>Klimateller</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Konservierungsstoff</note>
           <price role="employee">3.40</price>
           <price role="other">4.10</price>
           <price role="student">2.20</price>
@@ -43,6 +45,20 @@
       </category>
       <category name="CampusWorld">
         <meal>
+          <name>Gebratene Hähnchenstreifen mit frischem Wokgemüse, Erdnusssoße und Basmaitreis</name>
+          <note>Erdnüsse und Erdnusserzeugnisse</note>
+          <note>Geflügel</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Konservierungsstoff</note>
+          <price role="employee">6.50</price>
+          <price role="other">7.70</price>
+          <price role="student">5.20</price>
+        </meal>
+        <meal>
           <name>Frisches Wokgemüse mit Erdnusssoße und Basmaitreis</name>
           <note>Erdnüsse und Erdnusserzeugnisse</note>
           <note>Klimateller</note>
@@ -57,27 +73,14 @@
           <price role="other">7.00</price>
           <price role="student">4.50</price>
         </meal>
-        <meal>
-          <name>Gebratene Hähnchenstreifen mit frischem Wokgemüse, Erdnusssoße und Basmaitreis</name>
-          <note>Erdnüsse und Erdnusserzeugnisse</note>
-          <note>Geflügel</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">6.50</price>
-          <price role="other">7.70</price>
-          <price role="student">5.20</price>
-        </meal>
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta des Tages</name>
-          <note>Klimateller</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Pasta mit Gorgonzola-Spinatsahnesauce</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>enthält tierisches Lab</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
@@ -86,10 +89,11 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Gemüse des Tages</name>
+          <name>gebackene Aubergine, gebratene Zucchini, Cajun-Süßkartoffeln, Sellerie- Kartoffelstampf</name>
           <note>Klimateller</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -390,15 +394,6 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Gnocchi-Tomaten-Auflauf mit Mozzarella überbacken</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
-          <note>mit Farbstoff</note>
-          <price role="employee">4.50</price>
-          <price role="other">5.70</price>
-          <price role="student">3.20</price>
-        </meal>
-        <meal>
           <name>Hähnchen Cordon Bleu mit Putenschinken aus Formfleisch , Hollandaise , Erbsen, Herzoginkartoffeln</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Geflügel</note>
@@ -409,6 +404,15 @@
           <price role="employee">6.20</price>
           <price role="other">7.40</price>
           <price role="student">4.90</price>
+        </meal>
+        <meal>
+          <name>Gnocchi-Tomaten-Auflauf mit Mozzarella überbacken</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>mit Farbstoff</note>
+          <price role="employee">4.50</price>
+          <price role="other">5.70</price>
+          <price role="student">3.20</price>
         </meal>
       </category>
       <category name="CampusWorld">
