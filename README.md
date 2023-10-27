@@ -27,7 +27,7 @@ und [Studierendenwerk Hamburg](https://www.stwhh.de/speiseplan/),
 
 
 Links:
-*   See the resulting feeds at [https://mensahd.herokuapp.com/api](https://mensahd.herokuapp.com/api)
+*   See the resulting feeds at [https://cvzi.github.io/mensahd/](https://cvzi.github.io/mensahd/)
 *   [Understand OpenMensa’s Parser Concept](https://doc.openmensa.org/parsers/understand/)
 *   OpenMensa [XML schema](https://doc.openmensa.org/feed/v2/)
 *   OpenMensa Android app on [f-droid](https://f-droid.org/en/packages/de.uni_potsdam.hpi.openmensa/), [playstore](https://play.google.com/store/apps/details?id=de.uni_potsdam.hpi.openmensa), [github](https://github.com/domoritz/open-mensa-android)
