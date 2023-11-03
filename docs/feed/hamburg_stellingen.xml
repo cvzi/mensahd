@@ -3,71 +3,17 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2023-11-02">
-      <category name="Pottkieker">
-        <meal>
-          <name>WarmBowl mit Kürbis, Gemüse, Reis &amp; Kokos</name>
-          <note>Klimateller</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">3.40</price>
-          <price role="other">4.10</price>
-          <price role="student">2.20</price>
-        </meal>
-      </category>
-      <category name="CampusVital">
-        <meal>
-          <name>Hähnchenbrust mit roter Curry-Soße , Asia-Gemüse, Reis</name>
-          <note>Geflügel</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mensaVital</note>
-          <price role="employee">6.00</price>
-          <price role="other">7.20</price>
-          <price role="student">4.70</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Würzige Thai-Soja-Bolognese , vegane Mie-Nudeln</name>
-          <note>Klimateller</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">4.60</price>
-          <price role="other">5.80</price>
-          <price role="student">3.30</price>
-        </meal>
-        <meal>
-          <name>Köfte , Tomaten-Gurken-Salat , Tzatziki , Pommes Frites</name>
-          <note>Geschwefelt</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Neu</note>
-          <note>Rind</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">6.40</price>
-          <price role="other">7.60</price>
-          <price role="student">5.10</price>
-        </meal>
-      </category>
-    </day>
     <day date="2023-11-03">
       <category name="Pottkieker">
         <meal>
-          <name>Linsen-Chili mit Grünkern und Grünkohl</name>
+          <name>Linsen-Chili mit Grünkern und Grünkohl-Topping</name>
           <note>Klimateller</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Senf und Senferzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Geschmacksverstärker</note>
           <price role="employee">3.40</price>
           <price role="other">4.10</price>
           <price role="student">2.20</price>
@@ -75,7 +21,20 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Gebackene Seelachsfiletwürfel , kleine Ofenkartoffeln, Paprikaquark</name>
+          <name>Hamburger mit Rindfleisch-Patty, Kürbis-Sesam-Majo, Salat, Tomate &amp; Gurke , Pommes Frites</name>
+          <note>Rind</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <price role="employee">6.80</price>
+          <price role="other">8.00</price>
+          <price role="student">5.50</price>
+        </meal>
+        <meal>
+          <name>Gebackene Seelachsfiletwürfel , kleine Ofenkartoffeln, Kräuterquark</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Fisch und Fischerzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -87,19 +46,19 @@
           <price role="other">6.40</price>
           <price role="student">3.90</price>
         </meal>
+      </category>
+      <category name="CampusWorld">
         <meal>
-          <name>Basil Burger mit pikanter Thai Mayo , Pommes Frites</name>
-          <note>Rind</note>
-          <note>Schalenfrüchte (z.B. Mandel, Haselnüsse, Walnuss etc.)/-erzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <name>Vegane Thai-Soja-Bolognese , Mie-Nudeln</name>
+          <note>Klimateller</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
           <note>mit Konservierungsstoff</note>
-          <price role="employee">6.80</price>
-          <price role="other">8.00</price>
-          <price role="student">5.50</price>
+          <price role="employee">4.60</price>
+          <price role="other">5.80</price>
+          <price role="student">3.30</price>
         </meal>
       </category>
     </day>
@@ -142,7 +101,7 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Putensteak, Tzatziki , Krautsalat , Paprikareis</name>
+          <name>Putensteak, Tzatziki , Krautsalat , kleine Ofenkartoffeln</name>
           <note>Geflügel</note>
           <note>Geschwefelt</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -331,6 +290,16 @@
         </meal>
       </category>
       <category name="Pottkieker">
+        <meal>
+          <name>Veganer Kokosmilch-Reis , Zimt-Zucker</name>
+          <note>Klimateller</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.10</price>
+          <price role="other">3.80</price>
+          <price role="student">1.90</price>
+        </meal>
         <meal>
           <name>Gemüsegulasch , Wrap</name>
           <note>Klimateller</note>
