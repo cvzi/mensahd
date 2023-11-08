@@ -198,7 +198,7 @@ class Parser:
             else:
                 self.xmlnames.append(mensa["xml"])
 
-        #self.xmlnames = ["mitteMusikhochschule","nordKunstakademie", "mitteMensa1Holzgartenstrasse", "vaihingenMensa2", "esslingen1Flandernstrasse", "ludwigsburg"]
+        # self.xmlnames = ["mitteMusikhochschule","nordKunstakademie", "mitteMensa1Holzgartenstrasse", "vaihingenMensa2", "esslingen1Flandernstrasse", "ludwigsburg"]
         # self.xmlnames += [("esslingen2Mitte", ["Vorspeise", "Hauptgericht 1", "Hauptgericht 2", "Bio-Gericht"])] #"http://www.hs-esslingen.de/de/hochschule/service/mensa/speiseplan-stadtmitte.html")]
         # self.xmlnames += [("goeppingen", ["Hauptgericht 1", "Bio-Gericht"])] # https://www.studierendenwerk-stuttgart.de/cafeteria/cafeteria-bau-4-eg-goeppingen
 
