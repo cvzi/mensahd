@@ -94,23 +94,23 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta Milano mit Rindfleisch und Pilzen</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Rind</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
           <name>Pasta all`Provenzale mit Gemüse</name>
           <note>Klimateller</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Pasta Milano mit Rindfleisch und Pilzen</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Antioxidationsmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -146,16 +146,6 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Putengulasch</name>
-          <note>Geflügel</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">4.45</price>
-          <price role="other">5.55</price>
-          <price role="student">3.20</price>
-        </meal>
-        <meal>
           <name>Hausgemachte vegetarische Grünkohl-Lasagne</name>
           <note>Alkohol</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -164,6 +154,16 @@
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <price role="employee">1.30</price>
           <price role="other">2.50</price>
+        </meal>
+        <meal>
+          <name>Putengulasch</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">4.45</price>
+          <price role="other">5.55</price>
+          <price role="student">3.20</price>
         </meal>
       </category>
       <category name="CampusVital">
@@ -200,18 +200,6 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>all`Amatriciana mit Speck und Tomaten , bunte Fusilli</name>
-          <note>Schwein</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Phosphat</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
           <name>Pasta Pomodoro asiatico mit asiatischer Tomatensoße und Soja Chunks</name>
           <note>Klimateller</note>
           <note>Sesamsamen und Sesamsamenerzeugnisse</note>
@@ -220,6 +208,18 @@
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <note>mit Konservierungsstoff</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>all`Amatriciana mit Speck und Tomaten , bunte Fusilli</name>
+          <note>Schwein</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Phosphat</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -392,9 +392,8 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Lenticchie mit Linsen in pikanter Tomatensoße , Farfalle</name>
+          <name>Broccoli e pomodoro mit Broccoli und Tomate, Farfalle</name>
           <note>Klimateller</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
@@ -403,8 +402,9 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Broccoli e pomodoro mit Broccoli und Tomate, Farfalle</name>
+          <name>Lenticchie mit Linsen in pikanter Tomatensoße , Farfalle</name>
           <note>Klimateller</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
