@@ -19,17 +19,6 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Hausgemachte vegetarische Grünkohl-Lasagne</name>
-          <note>Alkohol</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegetarisch</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">5.40</price>
-          <price role="other">6.60</price>
-          <price role="student">4.10</price>
-        </meal>
-        <meal>
           <name>Putengulasch , Spätzle</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Geflügel</note>
@@ -39,6 +28,17 @@
           <price role="employee">5.20</price>
           <price role="other">6.40</price>
           <price role="student">3.90</price>
+        </meal>
+        <meal>
+          <name>Hausgemachte vegetarische Grünkohl-Lasagne</name>
+          <note>Alkohol</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegetarisch</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">5.40</price>
+          <price role="other">6.60</price>
+          <price role="student">4.10</price>
         </meal>
       </category>
       <category name="CampusVital">
@@ -75,26 +75,6 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta all`Amatriciana mit Rind und Tomaten</name>
-          <note>Rind</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
-          <name>Pasta Milano mit Rindfleisch und Pilzen</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Rind</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
           <name>Veganer Shepherd's Pie</name>
           <note>Alkohol</note>
           <note>Klimateller</note>
@@ -118,6 +98,26 @@
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
           <note>mit Konservierungsstoff</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Pasta all`Amatriciana mit Rind und Tomaten</name>
+          <note>Rind</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Pasta Milano mit Rindfleisch und Pilzen</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
+          <note>mit Antioxidationsmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -293,8 +293,9 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Broccoli e pomodoro mit Broccoli und Tomate, Farfalle</name>
+          <name>Lenticchie mit Linsen in pikanter Tomatensoße , Farfalle</name>
           <note>Klimateller</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
@@ -303,9 +304,8 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Lenticchie mit Linsen in pikanter Tomatensoße , Farfalle</name>
+          <name>Broccoli e pomodoro mit Broccoli und Tomate, Farfalle</name>
           <note>Klimateller</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>glutenhaltiges Getreide und daraus hergestellte Erzeugnisse (z. B. Weizen, Roggen, Gerste etc.)</note>
