@@ -4,8 +4,61 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2023-11-30">
-      <closed/>
+    <day date="2023-12-01">
+      <category name="Dessert">
+        <meal>
+          <name>Pflaumenröster mit hausgemachten Streuseln</name>
+          <note>plum roaster with homemade crumble</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Veganer Brownie im Glas mit Vanillefrosting</name>
+          <note>Vegan brownie in a glass with vanilla frosting</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Selleriesuppe mit Apfelwürfel und Minze</name>
+          <note>Celery soup with apple cubes and mint</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Gebratenes Buntbarschfilet auf Fenchel-Tomaten-Reis</name>
+          <note>Fried tilapia fillet on fennel-tomato rice</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Vegane Gemüse-Paella mit Haferschmand, Stückobst</name>
+          <note>Vegan vegetable paella with oat sour cream and pieces of fruit</note>
+          <price role="student">2.90</price>
+          <price role="employee">4.35</price>
+          <price role="other">7.25</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Hausgemachter Gemüsekuchen vom Blech</name>
+          <note>Homemade vegetable cake</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
