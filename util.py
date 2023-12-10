@@ -25,7 +25,7 @@ def xml_escape(s, escape_double_quotes=False):
 def xmlRemoveInvalidChars(s):
     # https://www.w3.org/TR/xml/#char32
     restricted_chars = re.compile(
-        '[^\u0009\u000A\u000D\u0020-\uD7FF\uE000-\uFFFD\u10000-\u10FFFF]')
+        r'[^\u0009\u000A\u000D\u0020-\uD7FF\uE000-\uFFFD\u10000-\u10FFFF]')
     return restricted_chars.sub('', s)
 
 
