@@ -4,13 +4,6 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2023-12-20">
-      <category name="Vorspeise">
-        <meal>
-          <name>Tagessuppe</name>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-      </category>
       <category name="Veganer renner">
         <meal>
           <name>Indisches Auberginencurry mit Kichererbsenreis</name>
@@ -22,6 +15,15 @@
         </meal>
       </category>
       <category name="Hauptgericht">
+        <meal>
+          <name>Penne Bolognese überbacken</name>
+          <note>Milch und Laktose</note>
+          <note>Rind</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <price role="employee">7.60</price>
+          <price role="student">5.10</price>
+        </meal>
         <meal>
           <name>Germknödel mit Mohnbutter mit Dessertsoße Vanille</name>
           <note>Ei</note>
@@ -41,38 +43,11 @@
           <price role="employee">6.40</price>
           <price role="student">3.90</price>
         </meal>
-        <meal>
-          <name>Hähnchen Cordon bleu und Pommes frites</name>
-          <note>Geflügel</note>
-          <note>Milch und Laktose</note>
-          <note>Weizen</note>
-          <note>mit Konservierungsstoffen</note>
-          <note>mit Phosphaten</note>
-          <price role="employee">7.70</price>
-          <price role="student">5.20</price>
-        </meal>
-      </category>
-      <category name="Aktion">
-        <meal>
-          <name>Asia Bar Gebratene Mienudeln Garnitur Asia Gebratener Reis</name>
-          <note>Ei</note>
-          <note>Fisch</note>
-          <note>Krebstiere Krusten- und Schalentiere</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>Sesam</note>
-          <note>Soja</note>
-          <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
-          <note>vegetarisch</note>
-          <price role="employee">18.10</price>
-          <price role="student">12.50</price>
-        </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Tagesgemüse</name>
+          <name>Buntes Gemüse</name>
+          <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -92,20 +67,12 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Pudding mit Nuss-Geschmack</name>
-          <note>Mandeln</note>
+          <name>Früchtequark</name>
           <note>Milch und Laktose</note>
+          <note>mit Antioxidationsmitteln</note>
           <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
-        </meal>
-        <meal>
-          <name>Erdbeerjoghurt</name>
-          <note>Milch und Laktose</note>
-          <note>mit Farbstoffen</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Buffet">
@@ -183,24 +150,6 @@
           <note>mit Phosphaten</note>
           <price role="employee">7.00</price>
           <price role="student">4.50</price>
-        </meal>
-      </category>
-      <category name="Aktion">
-        <meal>
-          <name>Asia Bar Gebratene Mienudeln Gebratener Reis</name>
-          <note>Ei</note>
-          <note>Fisch</note>
-          <note>Geflügel</note>
-          <note>Krebstiere Krusten- und Schalentiere</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>Sesam</note>
-          <note>Soja</note>
-          <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
-          <price role="employee">18.10</price>
-          <price role="student">12.50</price>
         </meal>
       </category>
       <category name="Beilage">
