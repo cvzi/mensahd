@@ -20,7 +20,7 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Ägyptische Falafel mit Hummusfüllung (So,Sl,Se,GlW), veganes Tzatziki , Vollkornreis, Rotkrautsalat</name>
+          <name>Ägyptische Falafel mit Hummus-Tahinfüllung (So,Sl,Se,GlW), veganes Tzatziki , Vollkornreis, Rotkrautsalat</name>
           <note>Klimateller</note>
           <note>Senf und Senferzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
@@ -56,6 +56,16 @@
       </category>
       <category name="Pastabar">
         <meal>
+          <name>tägliche Gemüsebar:, Kartoffelgratin mit Gorgonzola und Mozzarella , Rosenkohl , Röstkartoffeln Provencial mit buntem Gemüse</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.50</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
           <name>Pasta Pennette (GlW), mit Hähnchenstreifen ,Pilzen und Kräutern in Sahnesauce (Mi,GlW)</name>
           <note>Geflügel</note>
           <price role="employee">0.95</price>
@@ -78,19 +88,22 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Veganes Jailhouse-Chili , Fladenbrot (Se,GlW)</name>
-          <note>Klimateller</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mensaVital</note>
+          <name>Paniertes Schweineschnitzel (GlW), Zitrone, Röstkartoffeln, Gurkensalat</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwein</note>
           <price role="employee">4.40</price>
           <price role="other">6.20</price>
           <price role="student">3.10</price>
         </meal>
       </category>
       <category name="CampusVital">
+        <meal>
+          <name>All in one pot: Vollkornreis, Tandoori Chicken, Avocado, Linsen, Cranberries, Chia (1,2,3,So,Mi,Sl,Sf,GlW)</name>
+          <note>Geflügel</note>
+          <price role="employee">5.60</price>
+          <price role="other">8.60</price>
+          <price role="student">4.30</price>
+        </meal>
         <meal>
           <name>All in one pot: Reis, Tandoori Sojastreifen,Kichererbsen, Avocado, Cranberries, Chia (1,2,3,So,Sl,Sf,GlW)</name>
           <note>Geflügel</note>
@@ -100,23 +113,17 @@
           <price role="other">8.60</price>
           <price role="student">4.30</price>
         </meal>
-        <meal>
-          <name>All in one pot: Vollkornreis, Tandoori Chicken, Avocado, Linsen, Cranberries, Chia (1,2,3,So,Mi,Sl,Sf,GlW)</name>
-          <note>Geflügel</note>
-          <price role="employee">5.60</price>
-          <price role="other">8.60</price>
-          <price role="student">4.30</price>
-        </meal>
       </category>
-      <category name="Pastabar">
+      <category name="CampusSpezial">
         <meal>
-          <name>Vegane Maultaschen (GlW), Tomatensoße</name>
+          <name>Veganes Jailhouse-Chili , Fladenbrot (Se,GlW)</name>
           <note>Klimateller</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.50</price>
-          <price role="student">0.75</price>
+          <note>mensaVital</note>
+          <price role="employee">1.30</price>
         </meal>
       </category>
     </day>
@@ -136,15 +143,6 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Rote Bete Gnocchi mit Pilzen und Rucola</name>
-          <note>Klimateller</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.40</price>
-          <price role="other">8.20</price>
-          <price role="student">4.10</price>
-        </meal>
-        <meal>
           <name>5 Nürnberger Bratwürstchen, Sauerkraut (vegan) , Kartoffelpüree</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Schwein</note>
@@ -152,6 +150,15 @@
           <price role="employee">5.20</price>
           <price role="other">7.80</price>
           <price role="student">3.90</price>
+        </meal>
+        <meal>
+          <name>Rote Bete Gnocchi mit Pilzen und Rucola</name>
+          <note>Klimateller</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.40</price>
+          <price role="other">8.20</price>
+          <price role="student">4.10</price>
         </meal>
       </category>
       <category name="CampusVital">
