@@ -3,49 +3,6 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-01-22">
-      <category name="Veganer renner">
-        <meal>
-          <name>Penne mit Champignons und Cocktailtomaten</name>
-          <note>Weizen</note>
-          <note>vegan</note>
-          <price role="employee">5.49</price>
-          <price role="student">2.99</price>
-        </meal>
-      </category>
-      <category name="Hauptgericht">
-        <meal>
-          <name>Lasagne mit Tomatensauce</name>
-          <note>Ei</note>
-          <note>Milch und Laktose</note>
-          <note>Rind</note>
-          <note>Sellerie</note>
-          <note>Weizen</note>
-          <price role="employee">7.70</price>
-          <price role="student">5.20</price>
-        </meal>
-      </category>
-      <category name="Salat">
-        <meal>
-          <name>Beilagensalat</name>
-          <note>Milch und Laktose</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Senf</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>vegan</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-      </category>
-      <category name="Dessert">
-        <meal>
-          <name>Karamellpudding</name>
-          <note>Milch und Laktose</note>
-          <price role="employee">1.59</price>
-          <price role="student">1.19</price>
-        </meal>
-      </category>
-    </day>
     <day date="2024-01-23">
       <category name="Veganer renner">
         <meal>
@@ -288,13 +245,20 @@
       <category name="Salat">
         <meal>
           <name>Beilagensalat</name>
-          <note>Ei</note>
           <note>Milch und Laktose</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Senf</note>
           <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
           <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Dessert">
+        <meal>
+          <name>Erdbeerjoghurt</name>
+          <note>Milch und Laktose</note>
+          <note>mit Farbstoffen</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -305,7 +269,6 @@
         <meal>
           <name>Kichererbsen-Curry mit Duftreis</name>
           <note>Sellerie</note>
-          <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
         </meal>
@@ -316,7 +279,6 @@
           <note>Mandeln</note>
           <note>Milch und Laktose</note>
           <note>Weizen</note>
-          <note>vegetarisch</note>
           <price role="employee">5.80</price>
           <price role="student">3.30</price>
         </meal>
@@ -324,29 +286,29 @@
           <name>Schweinegulasch mit Paprika und Spätzle</name>
           <note>Dinkel</note>
           <note>Ei</note>
-          <note>Schwein</note>
           <note>Weizen</note>
           <price role="employee">7.90</price>
           <price role="student">5.40</price>
         </meal>
       </category>
+      <category name="Beilage">
+        <meal>
+          <name>Spätzle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Weizen</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+      </category>
       <category name="Salat">
         <meal>
           <name>Beilagensalat</name>
-          <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Dessert">
-        <meal>
-          <name>Heidelbeerjoghurt</name>
-          <note>Milch und Laktose</note>
-          <note>mit Farbstoffen</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
         <meal>
           <name>Creme mit Tiramisu-Geschmack</name>
           <note>Milch und Laktose</note>
@@ -364,7 +326,6 @@
           <note>Senf</note>
           <note>Soja</note>
           <note>mit Antioxidationsmitteln</note>
-          <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
         </meal>
@@ -374,7 +335,10 @@
           <name>Fleischküchle mit Rahmsauce und Spirelli</name>
           <note>Ei</note>
           <note>Milch und Laktose</note>
+          <note>Senf</note>
+          <note>Soja</note>
           <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
           <price role="employee">6.80</price>
           <price role="student">4.30</price>
         </meal>
@@ -382,7 +346,6 @@
       <category name="Beilage">
         <meal>
           <name>Paprikareis</name>
-          <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -390,35 +353,30 @@
       <category name="Salat">
         <meal>
           <name>Beilagensalat</name>
-          <note>Ei</note>
-          <note>Milch und Laktose</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Senf</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
-          <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Dessert">
         <meal>
-          <name>Weißes Mousse au chocolat</name>
+          <name>Erdbeerjoghurt</name>
           <note>Milch und Laktose</note>
-          <price role="employee">1.59</price>
-          <price role="student">1.19</price>
+          <note>mit Farbstoffen</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
         </meal>
       </category>
     </day>
     <day date="2024-02-01">
       <category name="Veganer renner">
         <meal>
-          <name>Linsen und vegane Spätzle</name>
+          <name>Linsen und Spätzle und vegane Spätzle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
           <note>Weizen</note>
           <note>mit Antioxidationsmitteln</note>
-          <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
         </meal>
@@ -429,7 +387,6 @@
           <note>Dinkel</note>
           <note>Ei</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Schwein</note>
           <note>Sellerie</note>
           <note>Senf</note>
           <note>Weizen</note>
@@ -445,7 +402,6 @@
           <note>Dinkel</note>
           <note>Ei</note>
           <note>Weizen</note>
-          <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
@@ -453,13 +409,6 @@
       <category name="Salat">
         <meal>
           <name>Beilagensalat</name>
-          <note>Ei</note>
-          <note>Milch und Laktose</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Senf</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
-          <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -468,7 +417,6 @@
         <meal>
           <name>Mandarinenquark</name>
           <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
@@ -509,14 +457,16 @@
       <category name="Salat">
         <meal>
           <name>Beilagensalat</name>
-          <note>Ei</note>
-          <note>Milch und Laktose</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Senf</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Dessert">
+        <meal>
+          <name>Weißes Mousse au chocolat</name>
+          <note>Milch und Laktose</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
         </meal>
       </category>
     </day>
