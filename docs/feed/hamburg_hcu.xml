@@ -6,7 +6,7 @@
     <day date="2024-01-25">
       <category name="Pottkieker">
         <meal>
-          <name>Erbsensuppe mit Räuchertofu (So,Sl,GlW)</name>
+          <name>Erbsensuppe mit Kartoffeln und Gemüse (So,Sl,GlW)</name>
           <note>Klimateller</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -17,15 +17,6 @@
       </category>
       <category name="CampusVital">
         <meal>
-          <name>Glasnudelsalat mit Rindfleisch, Erdnüssen, Röstzwiebeln und Teriyaki (2,3,En,So,Se,GlW)</name>
-          <note>Neu</note>
-          <note>Rind</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.60</price>
-          <price role="other">8.60</price>
-          <price role="student">4.30</price>
-        </meal>
-        <meal>
           <name>Glasnudelsalat mit Sojastreifen, Erdnüssen, Röstzwiebeln und Teriyaki (2,3,En,So,Se,GlW)</name>
           <note>Klimateller</note>
           <note>Neu</note>
@@ -35,10 +26,19 @@
           <price role="other">8.60</price>
           <price role="student">4.30</price>
         </meal>
+        <meal>
+          <name>Glasnudelsalat mit Rindfleisch, Erdnüssen, Röstzwiebeln und Teriyaki (2,3,En,So,Se,GlW)</name>
+          <note>Neu</note>
+          <note>Rind</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.60</price>
+          <price role="other">8.60</price>
+          <price role="student">4.30</price>
+        </meal>
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Burger mit Blumenkohlbratling, Römersalat, Karottenstiften und Gorgonzolakäse (3,Ei,Mi,Sw,GlW), Pfeffer Knoblauchmayonaise , Pommes Frites</name>
+          <name>Burger mit Blumenkohlbratling,Eisbergsalat, Karottenstiften (3,Ei,Mi,Sw,GlW), Gorgonzola-Knoblauchmayonaise , Pommes Frites</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Senf und Senferzeugnisse</note>
@@ -53,11 +53,12 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>hausgemachte Köfte mit Hirtenkäsefüllung (Ei,Mi,GlW), Tomaten-Gurken-Salsa , Tzatziki , Reis</name>
+          <name>Rindfleisch-Köfte (Ei,Mi,GlW), Tomaten-Gurken-Salsa , Hirtenkäse-Kräuterquark , pikanter Reis</name>
           <note>Geschwefelt</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Rind</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>mit Antioxidationsmittel</note>
           <price role="employee">6.40</price>
           <price role="other">10.20</price>
@@ -66,9 +67,8 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta Penne in pikanter Tomatensauce mit Chorizo und Fenchel (GlW)</name>
+          <name>Pierogi mit Quarkfüllung (1,Ei,Mi,Sl,GlW), mit pikanter Tomatensauce mit Chorizo und Fenchel</name>
           <note>Schwein</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.50</price>
           <price role="student">0.75</price>
@@ -157,6 +157,13 @@
       </category>
       <category name="CampusWorld">
         <meal>
+          <name>Putenbraten mit Bratensauce , und &quot;Stuffing&quot; aus Weißbrot, getrockneten Aprikosen und Thymian (3,5,Mi,Sw,GlW), Rosenkohl, Röstkartoffeln</name>
+          <note>Alkohol</note>
+          <note>Geflügel</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <price role="employee">1.30</price>
+        </meal>
+        <meal>
           <name>Vegane Köfte-Bowl (So,GlW,GlG), mit Reis, veganes Tzatziki , Tomatensalat mit Minze</name>
           <note>Geschwefelt</note>
           <note>Klimateller</note>
@@ -169,13 +176,6 @@
           <price role="employee">5.20</price>
           <price role="other">7.80</price>
           <price role="student">3.90</price>
-        </meal>
-        <meal>
-          <name>Putenbraten mit Bratensauce , und &quot;Stuffing&quot; aus Weißbrot, getrockneten Aprikosen und Thymian (3,5,Mi,Sw,GlW), Rosenkohl, Röstkartoffeln</name>
-          <note>Alkohol</note>
-          <note>Geflügel</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <price role="employee">1.30</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -340,6 +340,14 @@
       </category>
       <category name="CampusSpezial">
         <meal>
+          <name>Asia-Reis-Pot, Hähnchenstreifen, Kimchi, Gurke, Frühlingszwiebel, Koriander, Erdnüsse und Chilimajo (2,En,So,Sl,Sf,Se,GlW)</name>
+          <note>Geflügel</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.90</price>
+          <price role="other">11.20</price>
+          <price role="student">5.60</price>
+        </meal>
+        <meal>
           <name>Hamburger Pannfisch Burger (9,Fi,Se,Sw,GlW), Senf-Dill Soße , Pommes Frites</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Geschwefelt</note>
@@ -350,14 +358,6 @@
           <note>mit Farbstoff</note>
           <note>mit Fisch</note>
           <note>mit Süßungsmittel</note>
-          <price role="employee">6.90</price>
-          <price role="other">11.20</price>
-          <price role="student">5.60</price>
-        </meal>
-        <meal>
-          <name>Asia-Reis-Pot, Hähnchenstreifen, Kimchi, Gurke, Frühlingszwiebel, Koriander, Erdnüsse und Chilimajo (2,En,So,Sl,Sf,Se,GlW)</name>
-          <note>Geflügel</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">6.90</price>
           <price role="other">11.20</price>
           <price role="student">5.60</price>
