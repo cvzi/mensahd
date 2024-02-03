@@ -3,16 +3,15 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-02-02">
+    <day date="2024-02-05">
       <category name="Pottkieker">
         <meal>
-          <name>Mexikanischer Bohnentopf</name>
+          <name>Kokos-Kürbis Curry , Reis</name>
           <note>Klimateller</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Konservierungsstoff</note>
           <price role="employee">3.40</price>
           <price role="other">4.40</price>
           <price role="student">2.20</price>
@@ -20,40 +19,291 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>vegetrische Bällchen in Kapernsoße (1,So,Mi,Sl,GlW,GlG), Salzkartoffeln, Rote Beete Salat</name>
+          <name>Kräuterrührei , Bratkartoffeln, Salatgarnitur</name>
+          <note>Ei und Eierzeugnisse</note>
           <note>Klimateller</note>
-          <note>Neu</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Vegetarisch</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">5.20</price>
-          <price role="other">7.80</price>
-          <price role="student">3.90</price>
+          <price role="employee">4.90</price>
+          <price role="other">7.20</price>
+          <price role="student">3.60</price>
         </meal>
       </category>
-      <category name="CampusSpezial">
+      <category name="CampusVital">
         <meal>
-          <name>Blattsalate mit Wild Karachi-Dressing, gerösteten Kürbis und veganem Pulled spicy (Sf,Se,Sw,GlH)</name>
+          <name>Tagliatelle mit Kürbiscreme und gerösteten Kürbiskerne (So,Sl,GlW)</name>
           <note>Klimateller</note>
+          <note>Neu</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.80</price>
-          <price role="other">9.00</price>
-          <price role="student">4.50</price>
+          <price role="employee">4.00</price>
+          <price role="other">5.40</price>
+          <price role="student">2.70</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Ungarisches Rindergulasch , Spätzle (Ei,GlW)</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Rind</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">6.30</price>
+          <price role="other">10.00</price>
+          <price role="student">5.00</price>
         </meal>
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pomodoro e Gorgonzola mit Tomatensoße und Gorgonzola , Fusilli (GlW)</name>
+          <name>Aglio e olio mit Tomate und Knoblauch, Fusilli (GlW)</name>
+          <note>Klimateller</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.50</price>
+          <price role="student">0.75</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-02-06">
+      <category name="Pottkieker">
+        <meal>
+          <name>LowBowl mit Reis, Erbsen, Kürbis und Kokos</name>
+          <note>Klimateller</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.40</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>4 Röstiecken, Kräuterquark , Gurkensalat</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">4.20</price>
+          <price role="other">5.80</price>
+          <price role="student">2.90</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Bowl Prik Nahm Pla mit gebackenem Kabeljau in (2,3,Fi,So,Sw,GlW), Backteig Asia (GlW), Chili-Soja-Dressing (2,3,Fi,So,GlW)</name>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Fisch</note>
+          <price role="employee">6.50</price>
+          <price role="other">10.40</price>
+          <price role="student">5.20</price>
+        </meal>
+      </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Grünkern Käsemedallions (Ei,So,Mi,Se,GlW,GlD), Schnittlauchdip , Mediterrane Kartoffel Gemüsepfanne</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">5.90</price>
+          <price role="other">9.20</price>
+          <price role="student">4.60</price>
+        </meal>
+      </category>
+      <category name="Pastabar">
+        <meal>
+          <name>Pasta Pennette (GlW), mit Rindfleisch-Bolognese mit Knoblauch und Tomate</name>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.50</price>
+          <price role="student">0.75</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-02-07">
+      <category name="Pottkieker">
+        <meal>
+          <name>Tomaten-Kokossuppe (3,So,Sl,GlW), Reis</name>
+          <note>Klimateller</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.40</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Currybratwurst , Grillsoße , Pommes Frites</name>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Geschmacksverstärker</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Phosphat</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">5.60</price>
+          <price role="other">8.60</price>
+          <price role="student">4.30</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Stufato di Lenticche geschmorte Linsen mit Räuchertofu (So,GlW), Sojajoghurt-Zitronen Dip , Maccaroni (GlW)</name>
+          <note>Klimateller</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">3.80</price>
+          <price role="other">5.00</price>
+          <price role="student">2.50</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Mini Frühlingsrollen (So,GlW), Bratnudeln mit Gemüsestreifen (2,So,Se,GlW), scharfer Asia-Dip</name>
+          <note>Klimateller</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Farbstoff</note>
+          <price role="employee">5.40</price>
+          <price role="other">8.20</price>
+          <price role="student">4.10</price>
+        </meal>
+      </category>
+      <category name="Pastabar">
+        <meal>
+          <name>Vegane Gnocchi mit Rosenkohl und getrockneten Tomaten mit Petersilienpesto</name>
+          <note>Geschwefelt</note>
+          <note>Klimateller</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.50</price>
+          <price role="student">0.75</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-02-08">
+      <category name="Pottkieker">
+        <meal>
+          <name>Holsteiner Kartoffeltopf (So,Sl,Sw,GlW)</name>
+          <note>Klimateller</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.40</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Sojagulasch mit Paprika und Champignons , Salzkartoffeln</name>
+          <note>Klimateller</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.80</price>
+          <price role="other">7.00</price>
+          <price role="student">3.50</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>veganes Rosenkohl-Edamame-Curry mit Udon-Nudeln</name>
+          <note>Klimateller</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.40</price>
+          <price role="other">6.20</price>
+          <price role="student">3.10</price>
+        </meal>
+      </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Susländer grobe Bratwurst , Rahmwirsing (Mi,Sl,GlW), Bratkartoffeln</name>
+          <note>Schwein</note>
+          <note>mit Phosphat</note>
+          <price role="employee">6.50</price>
+          <price role="other">10.40</price>
+          <price role="student">5.20</price>
+        </meal>
+      </category>
+      <category name="Pastabar">
+        <meal>
+          <name>Broccoli e Gorgonzola mit Gorgonzola und Broccoli , Conchiglie (GlW)</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Vegetarisch</note>
           <price role="employee">0.95</price>
           <price role="other">1.50</price>
           <price role="student">0.75</price>
         </meal>
+      </category>
+    </day>
+    <day date="2024-02-09">
+      <category name="Pottkieker">
         <meal>
-          <name>Pomodoro e Gorgonzola mit Tomatensoße und Gorgonzola , Fusilli (GlW)</name>
+          <name>Gemüsegulasch , Zartweizen (GlW)</name>
+          <note>Klimateller</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.40</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Broccoli Nuggets (Ei,So,Mi,Sl,GlW,GlG), auf Pfannengemüse, Curryreis , Ajvar Dip</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <price role="employee">5.90</price>
+          <price role="other">9.20</price>
+          <price role="student">4.60</price>
+        </meal>
+      </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>VEGAN Chili Fries sin carne (Pommes mit Chili und Sojadip)</name>
+          <note>Klimateller</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.20</price>
+          <price role="other">9.80</price>
+          <price role="student">4.90</price>
+        </meal>
+        <meal>
+          <name>Omelette gratiniert mit Tomate und Käse , Blattspinat in Rahm (Mi,GlW), Salzkartoffeln</name>
+          <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Vegetarisch</note>
+          <price role="employee">5.00</price>
+          <price role="other">7.40</price>
+          <price role="student">3.70</price>
+        </meal>
+      </category>
+      <category name="Pastabar">
+        <meal>
+          <name>Pasta cavolo riccio mit Grünkohl, getrocknete Tomaten (2,So,Sl,Sf,GlW), Eliche (GlW)</name>
+          <note>Klimateller</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.50</price>
           <price role="student">0.75</price>
