@@ -4,8 +4,61 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2024-02-04">
-      <closed/>
+    <day date="2024-02-05">
+      <category name="Dessert">
+        <meal>
+          <name>Blaubeer Crumble mit Schlagsahne</name>
+          <note>Blueberry crumble with whipped cream</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Pudding von der Hafermilch und Schokolade</name>
+          <note>Pudding made from oat milk and chocolate</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Blumenkohlsuppe mit Sojasahne und gerösteten Saaten</name>
+          <note>Cauliflower soup with soy cream and roasted seeds</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Schwäbisch Hällische Rindsbratwurst mit Sauerkraut und hausgemachtem Kartoffelpüree</name>
+          <note>Swabian Hellish beef sausages with Sauerkraut and homemade mashed potatoes</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Cremige Polenta mit Ratatouille, Schnittlauch-Haferdip und Stückobst</name>
+          <note>Creamy polenta with ratatouille, chive oat dip and pieces of fruit</note>
+          <price role="student">2.90</price>
+          <price role="employee">4.35</price>
+          <price role="other">7.25</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Gnocchipfanne mit Romanesco und Röstzwiebeln</name>
+          <note>Gnocchi pan with Romanesco and fried onions</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
