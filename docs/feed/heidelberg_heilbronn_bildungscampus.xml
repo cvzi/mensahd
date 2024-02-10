@@ -49,33 +49,6 @@
       </category>
     </day>
     <day date="2024-02-09">
-      <category name="Dessert">
-        <meal>
-          <name>Rote Beerengrütze mit hausgemachtem Bisquit</name>
-          <note>Red berry jelly with homemade biscuit</note>
-          <price role="student">0.75</price>
-          <price role="employee">1.15</price>
-          <price role="other">1.90</price>
-        </meal>
-      </category>
-      <category name="Dessert vegan">
-        <meal>
-          <name>Trifle vom Chiapudding mit Früchten und Zimtsahne</name>
-          <note>Chia pudding trifle with fruit and cinnamon cream</note>
-          <price role="student">0.75</price>
-          <price role="employee">1.15</price>
-          <price role="other">1.90</price>
-        </meal>
-      </category>
-      <category name="Tierisch">
-        <meal>
-          <name>Auf der Haut gebratener Seehecht mit Tahini-Paprikaragout, dazu gelben Reis</name>
-          <note>Hake fried on the skin with tahini-pepper ragout, served with yellow rice</note>
-          <price role="student">0.92</price>
-          <price role="employee">1.20</price>
-          <price role="other">1.94</price>
-        </meal>
-      </category>
       <category name="Vegan">
         <meal>
           <name>Kartoffeln und Bete aus dem Ofen mit veganem Kräuterdip, dazu Stückobst</name>
@@ -83,15 +56,6 @@
           <price role="student">2.90</price>
           <price role="employee">4.35</price>
           <price role="other">7.25</price>
-        </meal>
-      </category>
-      <category name="Vegetarisch">
-        <meal>
-          <name>Bulgur Knödel mit Gorgonzolasoße und Lauch</name>
-          <note>Bulgur dumplings with gorgonzola sauce and leek</note>
-          <price role="student">0.92</price>
-          <price role="employee">1.20</price>
-          <price role="other">1.94</price>
         </meal>
       </category>
     </day>
@@ -102,19 +66,284 @@
       <closed/>
     </day>
     <day date="2024-02-12">
-      <closed/>
+      <category name="Dessert">
+        <meal>
+          <name>Beeren-Frischkäsecreme mit Crunch</name>
+          <note>Berry cream cheese cream with crunch</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Hausgemachter Bienenstichkuchen im Glas</name>
+          <note>Homemade bee sting cake in a jar</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Tomaten-Haferrahmsuppe mit Basilikum</name>
+          <note>Tomato oat cream soup with basil</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Putengulasch mit Gewürzrotkohl und Serviettenknödel</name>
+          <note>Turkey goulash with spiced red cabbage and napkin dumplings</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Chana Masala, indisches Kichererbsencurry mit Gewürzreis</name>
+          <note>Chana Masala, Indian chickpea curry with spiced rice</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Pizza Margherita, dazu Blattsalat</name>
+          <note>Pizza Margherita, served with lettuce</note>
+          <price role="student">2.90</price>
+          <price role="employee">4.35</price>
+          <price role="other">7.25</price>
+        </meal>
+      </category>
     </day>
     <day date="2024-02-13">
-      <closed/>
+      <category name="Dessert">
+        <meal>
+          <name>Der Klassiker: Schokoladenpudding mit Vanillesauce</name>
+          <note>The classic: chocolate pudding with vanilla sauce</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Mangomousse mit gerösteten Kokosflocken</name>
+          <note>Mango mousse with roasted coconut flakes</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Grüne Gemüsesuppe mit Sauerrahm</name>
+          <note>Green vegetable soup with sour cream</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Saftiger Kasselernacken vom Hällischem Landschwein mit grünen Bohnen und Kartoffelklößen</name>
+          <note>Juicy Kassler neck from Hällischen country pig with green beans and potato dumpling</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Pasta mit Kürbis-Pilz-Bolognese, dazu Blattsalat</name>
+          <note>Pasta with pumpkin and mushroom Bolognese, served with lettuce</note>
+          <price role="student">2.90</price>
+          <price role="employee">4.35</price>
+          <price role="other">7.25</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Gedämpfter Rosenkohl unter einer Kartoffelkruste in Kräuterrahm</name>
+          <note>Steamed Brussels sprouts under a potato crust in herb cream</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
     </day>
     <day date="2024-02-14">
-      <closed/>
+      <category name="Dessert">
+        <meal>
+          <name>Maisgrießbrei von der Friesinger Mühle mit Apfelmus</name>
+          <note>Corn semolina porridge from the Frießinger Mühle with applesauce</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Cremiger Haferpudding mit Dampfmohn und Kürbis</name>
+          <note>Creamy oat pudding with poppy seeds and pumpkin</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Klare Brühe mit Eierstich und Gemüsewürfel</name>
+          <note>Clear broth with egg custard and diced vegetables</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Welsfilet aus der Pfanne nach Art der Müllerin mit Grillgemüse der Saison und Ofenkartoffeln</name>
+          <note>Catfish fillet from the pan in the miller's style with grilled seasonal vegetables and baked potatoes</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Hirse-Linsen-Bouletten mit Sellerie Wasabi Stampf und Mangoldgemüse</name>
+          <note>Millet and lentil meatballs with celery wasabi mash and chard</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Gemüse Enchiladas mit würzigem Käsedip, dazu Stückobst</name>
+          <note>Vegetable enchiladas with spicy cheese dip, served with pieces of fruit</note>
+          <price role="student">2.90</price>
+          <price role="employee">4.35</price>
+          <price role="other">7.25</price>
+        </meal>
+      </category>
     </day>
     <day date="2024-02-15">
-      <closed/>
+      <category name="Dessert">
+        <meal>
+          <name>Gelierte Himbeeren mit hausgemachtem Baiser und Schlagcreme</name>
+          <note>Jellied raspberries with homemade meringue and whipped cream</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Knuspriges Pflaumen-Schichtdessert</name>
+          <note>Crispy layered plum dessert</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Kartoffelcremesuppe mit Majoran</name>
+          <note>Cream of potato soup with marjoram</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Königsberger Kochklops vom heimischen Rind in Kapernsoße, glasierten Karotten und Petersilienkartoffeln</name>
+          <note>Königsberger Kochklops made from local beef in caper sauce, glazed carrots and parsley potatoes</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Chili Sin Carne mit roten Linsen und Basmatireis</name>
+          <note>Chili Sin Carne with red lentils and basmati rice</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Geschmorte Auberginen in Tomatensugo mit Couscous, dazu Stückobst</name>
+          <note>Braised eggplant in tomato sugo with couscous, served with fruit</note>
+          <price role="student">2.90</price>
+          <price role="employee">4.35</price>
+          <price role="other">7.25</price>
+        </meal>
+      </category>
     </day>
     <day date="2024-02-16">
-      <closed/>
+      <category name="Dessert">
+        <meal>
+          <name>Bananensplit</name>
+          <note>banana split</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Erdnuß-Pudddingcreme mit karamelisierten Apfel</name>
+          <note>Peanut pudding cream with caramelized apple</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Veganes Petersilienwurzelsüppchen mit Sojasahne</name>
+          <note>Vegan parsley root soup with soy cream</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Gebratene Filetstreifen vom Seelachs mit roten Zwiebeln, Broccoli und Pilzen in Rahm, dazu Pasta</name>
+          <note>Fried fillet strips of pollock with red onions, broccoli, mushrooms in cream and pasta</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Hausgemachter Karotten-Käse-Pfannkuchen mit Sauerrahmdip und grünem Salat</name>
+          <note>Homemade carrot and cheese pancakes with sour cream dip and green salad</note>
+          <price role="student">2.90</price>
+          <price role="employee">4.35</price>
+          <price role="other">7.25</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Gebratene Schupfnudeln in Spitzkohlrahm und Kräuterpesto</name>
+          <note>Fried Schupfnudeln in pointed cabbage cream and herb pesto</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
     </day>
     <day date="2024-02-17">
       <closed/>
