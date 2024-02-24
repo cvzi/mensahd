@@ -3,10 +3,10 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-02-23">
+    <day date="2024-02-26">
       <category name="Pottkieker">
         <meal>
-          <name>Indische Tomaten-Linsensuppe (Sf,GlW)</name>
+          <name>Schwarze Bohnensuppe mit Räuchertofu (So,Sl,GlW)</name>
           <note>Klimateller</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -17,26 +17,166 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Mac and Cheese (1,Mi,Sl,Sf,GlW), Eisbergsalat mit Tomate</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <name>Hähnchenbrust im Knuspermantel (GlW), Joghurt-Zitronen-Dip</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <price role="employee">4.60</price>
+          <price role="other">5.60</price>
+          <price role="student">3.40</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Süßkartoffel-Gnocchi mit geröstetem Blumenkohl, Sojajoghurt-Minz Dip</name>
+          <note>Klimateller</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">4.50</price>
+          <price role="other">5.70</price>
+          <price role="student">3.20</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-02-27">
+      <category name="Pottkieker">
+        <meal>
+          <name>Zartweizen-Tomatentopf mit Pilzen (Sl,Sw,GlW)</name>
+          <note>Klimateller</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Hähnchen Drum Sticks auf Pfannengemüse, Ajvar Dip , Curryreis</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <price role="employee">6.10</price>
+          <price role="other">7.30</price>
+          <price role="student">4.80</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Indisches Buttercurry , mariniertes Quorn</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Vegetarisch</note>
-          <price role="employee">5.00</price>
-          <price role="other">6.20</price>
-          <price role="student">3.70</price>
+          <price role="employee">4.55</price>
+          <price role="other">5.65</price>
+          <price role="student">3.30</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-02-28">
+      <category name="Pottkieker">
+        <meal>
+          <name>Orientalisches Gemüsecurry</name>
+          <note>Klimateller</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Gnocchi-Tomaten-Auflauf mit Mozzarella überbacken</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">4.20</price>
+          <price role="other">5.40</price>
+          <price role="student">2.90</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Hackbraten mit Chiliglasur (2,9,Ei,So,Mi,Sf,GlW), Zwiebelsoße</name>
+          <note>Neu</note>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <price role="employee">4.75</price>
+          <price role="other">5.75</price>
+          <price role="student">3.55</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-02-29">
+      <category name="Pottkieker">
+        <meal>
+          <name>Türkische Linsen-Bulgur-Suppe (Sl,GlW), Wrap (GlW)</name>
+          <note>Klimateller</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
         </meal>
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>veganer Wrap Dürüm Kebab mit Salat und BBQ-Soße (2,3,5,So,Sf,Sw,GlW), Krautsalat</name>
-          <note>Geschwefelt</note>
+          <name>Paniertes Putenschnitzel (GlW)</name>
+          <note>Geflügel</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.60</price>
+          <price role="other">5.60</price>
+          <price role="student">3.40</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>All in one Pot: Bulgur, Soja, Weißkohl, Cranberries, Ananas, Asia-Majo, Cashew (2,So,Sl,Sf,Sw,GlW,NCa)</name>
           <note>Klimateller</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.30</price>
+          <price role="other">2.50</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-03-01">
+      <category name="Pottkieker">
+        <meal>
+          <name>Blumenkohl Korma, Reis</name>
+          <note>Klimateller</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Soja-Bolognese mit Gemüse , bunte Fusilli (GlW)</name>
+          <note>Klimateller</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.20</price>
+          <price role="other">5.40</price>
+          <price role="student">2.90</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Tortellini mit Spinat Ricottafüllung (Ei,Mi,GlW), Walnuss-Senfsoße (2,5,Mi,Sl,Sf,Sw,GlW,GlG,NWa), mediterrane Salatbeilage</name>
+          <note>Vegetarisch</note>
           <note>mit Antioxidationsmittel</note>
-          <price role="employee">5.60</price>
-          <price role="other">6.80</price>
-          <price role="student">4.30</price>
+          <price role="employee">5.30</price>
+          <price role="other">6.50</price>
+          <price role="student">4.00</price>
         </meal>
       </category>
     </day>
