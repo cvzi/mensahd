@@ -37,7 +37,157 @@
   <body>
     <main>
       <article>Parser for <a target="_blank" href="https://openmensa.org">openmensa.org</a>. The parser runs in a <a target="_blank" title="What's a Github action?" href="https://docs.github.com/en/actions">Github action<sup>❓</sup></a> and pushes the XML feeds to this page</article>
-      <article><h3><a href="https://github.com/cvzi/mensahd/actions/">🗿 Parser status</a></h3></article>
+      <article><h3><a href="https://github.com/cvzi/mensahd/actions/">🗿 Parser status</a></h3>
+<pre>heidelberg/zeughaus:
+Traceback (most recent call last):
+  File "/home/runner/work/mensahd/mensahd/updateFeeds.py", line 145, in updateFeeds
+    content = getattr(parser, feedMethod)(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 268, in feed_today
+    return _generateFeed(stream, name, 'today', age_seconds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 162, in _generateFeed
+    dom = defusedxml.lxml.parse(source)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.2/x64/lib/python3.12/site-packages/defusedxml/lxml.py", line 135, in parse
+    elementtree = _etree.parse(source, parser, base_url=base_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "src/lxml/etree.pyx", line 3547, in lxml.etree.parse
+  File "src/lxml/parser.pxi", line 1969, in lxml.etree._parseDocument
+  File "src/lxml/parser.pxi", line 1989, in lxml.etree._parseMemoryDocument
+  File "src/lxml/parser.pxi", line 1876, in lxml.etree._parseDoc
+  File "src/lxml/parser.pxi", line 1164, in lxml.etree._BaseParser._parseDoc
+  File "src/lxml/parser.pxi", line 633, in lxml.etree._ParserContext._handleParseResultDoc
+  File "src/lxml/parser.pxi", line 743, in lxml.etree._handleParseResult
+  File "src/lxml/parser.pxi", line 672, in lxml.etree._raiseParseError
+  File "<string>", line 877
+lxml.etree.XMLSyntaxError: Premature end of data in tag gericht line 873, line 877, column 1
+
+heidelberg/triplex:
+Traceback (most recent call last):
+  File "/home/runner/work/mensahd/mensahd/updateFeeds.py", line 145, in updateFeeds
+    content = getattr(parser, feedMethod)(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 268, in feed_today
+    return _generateFeed(stream, name, 'today', age_seconds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 162, in _generateFeed
+    dom = defusedxml.lxml.parse(source)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.2/x64/lib/python3.12/site-packages/defusedxml/lxml.py", line 135, in parse
+    elementtree = _etree.parse(source, parser, base_url=base_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "src/lxml/etree.pyx", line 3547, in lxml.etree.parse
+  File "src/lxml/parser.pxi", line 1969, in lxml.etree._parseDocument
+  File "src/lxml/parser.pxi", line 1989, in lxml.etree._parseMemoryDocument
+  File "src/lxml/parser.pxi", line 1876, in lxml.etree._parseDoc
+  File "src/lxml/parser.pxi", line 1164, in lxml.etree._BaseParser._parseDoc
+  File "src/lxml/parser.pxi", line 633, in lxml.etree._ParserContext._handleParseResultDoc
+  File "src/lxml/parser.pxi", line 743, in lxml.etree._handleParseResult
+  File "src/lxml/parser.pxi", line 672, in lxml.etree._raiseParseError
+  File "<string>", line 877
+lxml.etree.XMLSyntaxError: Premature end of data in tag gericht line 873, line 877, column 1
+
+heidelberg/inf304:
+Traceback (most recent call last):
+  File "/home/runner/work/mensahd/mensahd/updateFeeds.py", line 145, in updateFeeds
+    content = getattr(parser, feedMethod)(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 268, in feed_today
+    return _generateFeed(stream, name, 'today', age_seconds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 162, in _generateFeed
+    dom = defusedxml.lxml.parse(source)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.2/x64/lib/python3.12/site-packages/defusedxml/lxml.py", line 135, in parse
+    elementtree = _etree.parse(source, parser, base_url=base_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "src/lxml/etree.pyx", line 3547, in lxml.etree.parse
+  File "src/lxml/parser.pxi", line 1969, in lxml.etree._parseDocument
+  File "src/lxml/parser.pxi", line 1989, in lxml.etree._parseMemoryDocument
+  File "src/lxml/parser.pxi", line 1876, in lxml.etree._parseDoc
+  File "src/lxml/parser.pxi", line 1164, in lxml.etree._BaseParser._parseDoc
+  File "src/lxml/parser.pxi", line 633, in lxml.etree._ParserContext._handleParseResultDoc
+  File "src/lxml/parser.pxi", line 743, in lxml.etree._handleParseResult
+  File "src/lxml/parser.pxi", line 672, in lxml.etree._raiseParseError
+  File "<string>", line 877
+lxml.etree.XMLSyntaxError: Premature end of data in tag gericht line 873, line 877, column 1
+
+heidelberg/heilbronn_sontheim:
+Traceback (most recent call last):
+  File "/home/runner/work/mensahd/mensahd/updateFeeds.py", line 145, in updateFeeds
+    content = getattr(parser, feedMethod)(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 268, in feed_today
+    return _generateFeed(stream, name, 'today', age_seconds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 162, in _generateFeed
+    dom = defusedxml.lxml.parse(source)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.2/x64/lib/python3.12/site-packages/defusedxml/lxml.py", line 135, in parse
+    elementtree = _etree.parse(source, parser, base_url=base_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "src/lxml/etree.pyx", line 3547, in lxml.etree.parse
+  File "src/lxml/parser.pxi", line 1969, in lxml.etree._parseDocument
+  File "src/lxml/parser.pxi", line 1989, in lxml.etree._parseMemoryDocument
+  File "src/lxml/parser.pxi", line 1876, in lxml.etree._parseDoc
+  File "src/lxml/parser.pxi", line 1164, in lxml.etree._BaseParser._parseDoc
+  File "src/lxml/parser.pxi", line 633, in lxml.etree._ParserContext._handleParseResultDoc
+  File "src/lxml/parser.pxi", line 743, in lxml.etree._handleParseResult
+  File "src/lxml/parser.pxi", line 672, in lxml.etree._raiseParseError
+  File "<string>", line 877
+lxml.etree.XMLSyntaxError: Premature end of data in tag gericht line 873, line 877, column 1
+
+heidelberg/heilbronn_bildungscampus:
+Traceback (most recent call last):
+  File "/home/runner/work/mensahd/mensahd/updateFeeds.py", line 145, in updateFeeds
+    content = getattr(parser, feedMethod)(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 268, in feed_today
+    return _generateFeed(stream, name, 'today', age_seconds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 162, in _generateFeed
+    dom = defusedxml.lxml.parse(source)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.2/x64/lib/python3.12/site-packages/defusedxml/lxml.py", line 135, in parse
+    elementtree = _etree.parse(source, parser, base_url=base_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "src/lxml/etree.pyx", line 3547, in lxml.etree.parse
+  File "src/lxml/parser.pxi", line 1969, in lxml.etree._parseDocument
+  File "src/lxml/parser.pxi", line 1989, in lxml.etree._parseMemoryDocument
+  File "src/lxml/parser.pxi", line 1876, in lxml.etree._parseDoc
+  File "src/lxml/parser.pxi", line 1164, in lxml.etree._BaseParser._parseDoc
+  File "src/lxml/parser.pxi", line 633, in lxml.etree._ParserContext._handleParseResultDoc
+  File "src/lxml/parser.pxi", line 743, in lxml.etree._handleParseResult
+  File "src/lxml/parser.pxi", line 672, in lxml.etree._raiseParseError
+  File "<string>", line 877
+lxml.etree.XMLSyntaxError: Premature end of data in tag gericht line 873, line 877, column 1
+
+heidelberg/kiau:
+Traceback (most recent call last):
+  File "/home/runner/work/mensahd/mensahd/updateFeeds.py", line 145, in updateFeeds
+    content = getattr(parser, feedMethod)(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 268, in feed_today
+    return _generateFeed(stream, name, 'today', age_seconds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 162, in _generateFeed
+    dom = defusedxml.lxml.parse(source)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.2/x64/lib/python3.12/site-packages/defusedxml/lxml.py", line 135, in parse
+    elementtree = _etree.parse(source, parser, base_url=base_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "src/lxml/etree.pyx", line 3547, in lxml.etree.parse
+  File "src/lxml/parser.pxi", line 1969, in lxml.etree._parseDocument
+  File "src/lxml/parser.pxi", line 1989, in lxml.etree._parseMemoryDocument
+  File "src/lxml/parser.pxi", line 1876, in lxml.etree._parseDoc
+  File "src/lxml/parser.pxi", line 1164, in lxml.etree._BaseParser._parseDoc
+  File "src/lxml/parser.pxi", line 633, in lxml.etree._ParserContext._handleParseResultDoc
+  File "src/lxml/parser.pxi", line 743, in lxml.etree._handleParseResult
+  File "src/lxml/parser.pxi", line 672, in lxml.etree._raiseParseError
+  File "<string>", line 877
+lxml.etree.XMLSyntaxError: Premature end of data in tag gericht line 873, line 877, column 1
+</pre></article>
       <article>
 <ol style="list-style-type:none">
 <li><h3 id="eppelheim"><a href="https://cvzi.github.io/mensahd/eppelheim.json">🐏 eppelheim.json</a></h3>
