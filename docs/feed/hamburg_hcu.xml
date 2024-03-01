@@ -3,73 +3,17 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-02-29">
-      <category name="Pottkieker">
-        <meal>
-          <name>Türkische Linsensuppe , Wrap (GlW)</name>
-          <note>Klimateller</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">3.40</price>
-          <price role="other">4.40</price>
-          <price role="student">2.20</price>
-        </meal>
-      </category>
-      <category name="CampusVital">
-        <meal>
-          <name>vegane Spanische Albondigas, Tomaten-Paprikasugo (So,GlW,GlG), vegane Aioli , Gemüse-Reis</name>
-          <note>Klimateller</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">4.60</price>
-          <price role="other">6.60</price>
-          <price role="student">3.30</price>
-        </meal>
-      </category>
-      <category name="CampusSpezial">
-        <meal>
-          <name>Paniertes Putenschnitzel (GlW), Ratatouille , Rosmarinkartoffeln</name>
-          <note>Geflügel</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.10</price>
-          <price role="other">9.60</price>
-          <price role="student">4.80</price>
-        </meal>
-      </category>
-      <category name="Pastabar">
-        <meal>
-          <name>tägliche Gemüseauswahl:, Prinzessbohnen mit Tofuwürfeln (2,So,GlW), Röstkartoffeln, Karotten Pastinakenmix mit frischer Petersilie, Orientalisches Gemüse mit Kichererbsen</name>
-          <note>Klimateller</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.50</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
-          <name>Due formaggio e nocciola mit zweierlei Käse und gerösteter Haselnuss (Mi,Sl,NHa), Eliche (GlW)</name>
-          <note>Klimateller</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.50</price>
-          <price role="student">0.75</price>
-        </meal>
-      </category>
-    </day>
     <day date="2024-03-01">
       <category name="Pottkieker">
         <meal>
-          <name>Blumenkohl Korma, Reis</name>
+          <name>Kartoffel Gemüsecurry , Korianderdip</name>
           <note>Klimateller</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Konservierungsstoff</note>
           <price role="employee">3.40</price>
           <price role="other">4.40</price>
           <price role="student">2.20</price>
@@ -77,25 +21,32 @@
       </category>
       <category name="CampusVital">
         <meal>
-          <name>Gemüsefrittata , Schnittlauchquark , Salat mit Italian Dressing</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Klimateller</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegetarisch</note>
-          <price role="employee">4.90</price>
-          <price role="other">7.20</price>
-          <price role="student">3.60</price>
-        </meal>
-        <meal>
-          <name>Grüne Gemüsepfanne mit Erdnusssoße (2,En,So,GlW), Vollkornreis</name>
+          <name>Grüne Gemüsepfanne mit Erdnusssoße (2,En,So,GlW), Reis</name>
           <note>Klimateller</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">4.40</price>
           <price role="other">6.20</price>
           <price role="student">3.10</price>
+        </meal>
+      </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Blumenkohl-Käse-Bratling (Ei,Mi,GlW), Curryrahmwirsing (Mi,GlW), Salzkartoffeln</name>
+          <note>Vegetarisch</note>
+          <price role="employee">1.30</price>
+        </meal>
+      </category>
+      <category name="Pastabar">
+        <meal>
+          <name>Gebratene Pierogi mit Kartoffel-Quarkfüllung (Ei,Mi,GlW), Kürbiscreme und Champignons , Rucola</name>
+          <note>Klimateller</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.50</price>
+          <price role="student">0.75</price>
         </meal>
       </category>
     </day>
