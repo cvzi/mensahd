@@ -6,10 +6,10 @@
     <day date="2024-03-15">
       <category name="Vorspeise">
         <meal>
-          <name>Schnittlauchsuppe</name>
+          <name>Kräutercremesuppe</name>
           <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
-          <note>Soja</note>
           <note>Weizen</note>
           <note>vegetarisch</note>
           <price role="employee">1.39</price>
@@ -18,7 +18,7 @@
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Gemüse-Knusperfrikadelle mit veganer Kräutercremesauce und Reis</name>
+          <name>Gemüse-Knusperfrikadelle mit veganer Sauce und Reis</name>
           <note>Hafer</note>
           <note>Sellerie</note>
           <note>Weizen</note>
@@ -29,7 +29,7 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Waldpilzragout mit Kartoffelplätzchen und Sour-Cream Dip</name>
+          <name>Waldpilzragout mit Kartoffelplätzchen und Sour-Cream</name>
           <note>Milch und Laktose</note>
           <note>Sellerie</note>
           <note>Weizen</note>
@@ -38,7 +38,7 @@
           <price role="student">4.70</price>
         </meal>
         <meal>
-          <name>Backfisch mit Frankfurter Grüne Sauce und Salzkartoffeln</name>
+          <name>Backfisch mit grüner Sauce und Salzkartoffeln</name>
           <note>Ei</note>
           <note>MSC-zertifizierter Fisch (MSC-C-51632)</note>
           <note>Milch und Laktose</note>
@@ -47,6 +47,13 @@
           <note>Weizen</note>
           <price role="employee">7.90</price>
           <price role="student">5.40</price>
+        </meal>
+        <meal>
+          <name>Chili con Carne und Reis</name>
+          <note>Rind</note>
+          <note>Sellerie</note>
+          <price role="employee">6.80</price>
+          <price role="student">4.30</price>
         </meal>
       </category>
       <category name="Beilage">
@@ -57,14 +64,17 @@
           <price role="student">0.99</price>
         </meal>
         <meal>
-          <name>Kartoffelsalat</name>
+          <name>Salzkartoffeln</name>
           <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
+        </meal>
+        <meal>
+          <name>Reis</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Salat">
@@ -77,15 +87,13 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Ananasquark</name>
+          <name>Panna Cotta mit Erdbeermus</name>
           <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Nuss-Nougat-Pudding</name>
-          <note>Haselnüsse</note>
+          <name>Sahneschokopudding</name>
           <note>Milch und Laktose</note>
           <note>vegetarisch</note>
           <price role="employee">1.59</price>
