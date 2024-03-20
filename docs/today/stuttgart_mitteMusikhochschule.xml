@@ -3,10 +3,10 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-03-19">
+    <day date="2024-03-20">
       <category name="Vorspeise">
         <meal>
-          <name>Tomatensuppe</name>
+          <name>Gemüsebrühe mit frischen Kräutern</name>
           <note>Sellerie</note>
           <note>vegan</note>
           <price role="employee">1.39</price>
@@ -15,9 +15,9 @@
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Vegane Paella</name>
+          <name>Karotten-Gnocchi-Ragout</name>
           <note>Sellerie</note>
-          <note>geschwärzt</note>
+          <note>Weizen</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -25,36 +25,46 @@
       </category>
       <category name="Hauptgericht">
         <meal>
+          <name>Bulgur-Gemüsepfanne mit Sojajoghurt-Kräuter Dip</name>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">6.50</price>
+          <price role="student">4.00</price>
+        </meal>
+        <meal>
+          <name>Spaghetti Bolognese mit Reibekäse</name>
+          <note>Milch und Laktose</note>
+          <note>Rind</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <price role="employee">6.90</price>
+          <price role="student">4.40</price>
+        </meal>
+        <meal>
           <name>Schweinebraten mit Rahmsauce und Spätzle</name>
           <note>Dinkel</note>
           <note>Ei</note>
           <note>Milch und Laktose</note>
           <note>Schwein</note>
           <note>Weizen</note>
-          <price role="employee">6.70</price>
-          <price role="student">4.20</price>
-        </meal>
-        <meal>
-          <name>Penne mit Champignons und Cocktailtomaten</name>
-          <note>Weizen</note>
-          <note>vegan</note>
-          <price role="employee">5.40</price>
-          <price role="student">2.90</price>
+          <price role="employee">6.60</price>
+          <price role="student">4.10</price>
         </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Vichy Karotten</name>
+          <name>Kaisergemüse</name>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
         <meal>
-          <name>Spätzle</name>
-          <note>Dinkel</note>
-          <note>Ei</note>
+          <name>Kartoffelplätzchen</name>
           <note>Weizen</note>
-          <note>vegetarisch</note>
+          <note>vegan</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
@@ -69,6 +79,13 @@
       </category>
       <category name="Dessert">
         <meal>
+          <name>Waldbeerenquark</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+        <meal>
           <name>Milchreis</name>
           <note>Milch und Laktose</note>
           <note>vegetarisch</note>
@@ -76,11 +93,31 @@
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Creme mit Stracciatella-Geschmack</name>
+          <name>Milchreis</name>
           <note>Milch und Laktose</note>
           <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
+        </meal>
+      </category>
+      <category name="Buffet">
+        <meal>
+          <name>Salatbuffet</name>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Sesam</note>
+          <note>Weizen</note>
+          <note>geschwefelt</note>
+          <note>geschwärzt</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Farbstoffen</note>
+          <note>mit Süßungsmitteln</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.60</price>
+          <price role="student">1.10</price>
         </meal>
       </category>
     </day>
