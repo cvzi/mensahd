@@ -4,27 +4,25 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2024-03-21">
-      <category name="CampusKlassiker">
-        <meal>
-          <name>vegane Bratwurst, Zwiebelsoße , pikantes Möhrengemüse , veganes hausgemachtes Kartoffelpüree</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Farbstoff</note>
-          <price role="employee">6.80</price>
-          <price role="other">8.00</price>
-          <price role="student">5.50</price>
-        </meal>
-      </category>
       <category name="CampusVital">
         <meal>
-          <name>scharfe Kokos-Limonen-Suppe mit Udon-Nudeln (2,3,So,Sl,Se,Sw,GlW)</name>
+          <name>scharfe Kokos-Limonen-Suppe, Gemüse, Basmatireis und Sesam (2,3,So,Sl,Se,Sw,GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">5.60</price>
           <price role="other">6.80</price>
           <price role="student">4.30</price>
+        </meal>
+      </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Blumenkohl im Backteig (Ei,GlW), Pommes Frites , Paprikarahmsoße</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <price role="employee">5.65</price>
+          <price role="other">6.85</price>
+          <price role="student">4.35</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -34,6 +32,14 @@
           <price role="employee">5.20</price>
           <price role="other">6.40</price>
           <price role="student">3.90</price>
+        </meal>
+        <meal>
+          <name>Couscoussalat mit Cranberrys, Mangoldsalat, Walnuss und white smoke BBQ Soße (Sl,Sf,GlW,NWa)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.95</price>
+          <price role="other">6.15</price>
+          <price role="student">3.65</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -238,6 +244,14 @@
       </category>
       <category name="CampusSpezial">
         <meal>
+          <name>Spanischer Linseneintopf mit veganen Hackbällchen (3,5,So,Sl,Sf,Sw,GlW,GlG), Fladenbrot (Se,GlW)</name>
+          <note>Neu</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.30</price>
+          <price role="other">2.50</price>
+        </meal>
+        <meal>
           <name>Vollkorn Gemüsebratling auf buntem Couscous (3,5,Ei,Sl,Sw,GlW), Joghurt-Limetten-Dip</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Neu</note>
@@ -247,29 +261,21 @@
           <price role="other">5.90</price>
           <price role="student">3.40</price>
         </meal>
-        <meal>
-          <name>Spanischer Linseneintopf mit veganen Hackbällchen (3,5,So,Sl,Sf,Sw,GlW,GlG), Fladenbrot (Se,GlW)</name>
-          <note>Neu</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.30</price>
-          <price role="other">2.50</price>
-        </meal>
       </category>
       <category name="Pastabar">
+        <meal>
+          <name>Funghi di bosco e basilico mit Waldpilzen und Basilikum (Mi,Sw,GlW,GlG), Maccaroni (GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
         <meal>
           <name>all`Arrabbiata mit scharfer Tomatensoße und Sojastreifen , Maccaroni (GlW)</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
-          <name>Funghi di bosco e basilico mit Waldpilzen und Basilikum (Mi,Sw,GlW,GlG), Maccaroni (GlW)</name>
-          <note>Vegetarisch</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
