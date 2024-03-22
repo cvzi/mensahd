@@ -3,75 +3,6 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-03-21">
-      <category name="CampusVital">
-        <meal>
-          <name>scharfe Kokos-Limonen-Suppe, Gemüse, Basmatireis und Sesam (2,3,So,Sl,Se,Sw,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.60</price>
-          <price role="other">6.80</price>
-          <price role="student">4.30</price>
-        </meal>
-      </category>
-      <category name="CampusSpezial">
-        <meal>
-          <name>Blumenkohl im Backteig (Ei,GlW), Pommes Frites , Paprikarahmsoße</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegetarisch</note>
-          <price role="employee">5.65</price>
-          <price role="other">6.85</price>
-          <price role="student">4.35</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Hausgemachte Pasta (GlW), hausgemachtes rote Beete Pesto mit Hartkäse und Ruccola (2,Ei,Mi,NMa)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.40</price>
-          <price role="student">3.90</price>
-        </meal>
-        <meal>
-          <name>Couscoussalat mit Cranberrys, Mangoldsalat, Walnuss und white smoke BBQ Soße (Sl,Sf,GlW,NWa)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">4.95</price>
-          <price role="other">6.15</price>
-          <price role="student">3.65</price>
-        </meal>
-      </category>
-      <category name="Pastabar">
-        <meal>
-          <name>Aglio e olio mit Tomate und Knoblauch, Stortelli Rigati (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
-          <name>Dello chef mit Pilzen und Zucchini (1,Ei,Mi,GlW,GlG), Stortelli Rigati (GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-      </category>
-      <category name="Gemüsebar">
-        <meal>
-          <name>Knoblauch Champignons aus dem Ofen (1,2,5,So,Sw,GlW), Frühlingsgemüse , Spitzkohl in Rahm , Petersilienkartoffeln</name>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Farbstoff</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-      </category>
-    </day>
     <day date="2024-03-22">
       <category name="CampusKlassiker">
         <meal>
@@ -91,27 +22,37 @@
       </category>
       <category name="CampusSpezial">
         <meal>
+          <name>Hausgemachter Kartoffel-Karottenstampf , vegane Bratwurst, Petersiliensoße</name>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Farbstoff</note>
+          <price role="employee">5.75</price>
+          <price role="other">6.95</price>
+          <price role="student">4.45</price>
+        </meal>
+        <meal>
           <name>Gebackene Aubergine mit Gemüse-Bulgurfüllung, Zitronen-Soja-Joghurt, Walnuss und Ganatapfel (So,Se,GlW,NWa)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.50</price>
-          <price role="other">6.70</price>
-          <price role="student">4.20</price>
+          <price role="employee">5.75</price>
+          <price role="other">6.95</price>
+          <price role="student">4.45</price>
         </meal>
       </category>
       <category name="Pastabar">
-        <meal>
-          <name>Crema di spinaci mit Spinat in Käse-Sahnesoße (Mi,Sl,GlW), Eliche (GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
         <meal>
           <name>all`Provenzale mit Gemüse , Eliche (GlW)</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Crema di spinaci mit Spinat in Käse-Sahnesoße (Mi,Sl,GlW), Eliche (GlW)</name>
+          <note>Vegetarisch</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -244,14 +185,6 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Spanischer Linseneintopf mit veganen Hackbällchen (3,5,So,Sl,Sf,Sw,GlW,GlG), Fladenbrot (Se,GlW)</name>
-          <note>Neu</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.30</price>
-          <price role="other">2.50</price>
-        </meal>
-        <meal>
           <name>Vollkorn Gemüsebratling auf buntem Couscous (3,5,Ei,Sl,Sw,GlW), Joghurt-Limetten-Dip</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Neu</note>
@@ -261,21 +194,29 @@
           <price role="other">5.90</price>
           <price role="student">3.40</price>
         </meal>
+        <meal>
+          <name>Spanischer Linseneintopf mit veganen Hackbällchen (3,5,So,Sl,Sf,Sw,GlW,GlG), Fladenbrot (Se,GlW)</name>
+          <note>Neu</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.30</price>
+          <price role="other">2.50</price>
+        </meal>
       </category>
       <category name="Pastabar">
-        <meal>
-          <name>Funghi di bosco e basilico mit Waldpilzen und Basilikum (Mi,Sw,GlW,GlG), Maccaroni (GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
         <meal>
           <name>all`Arrabbiata mit scharfer Tomatensoße und Sojastreifen , Maccaroni (GlW)</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Funghi di bosco e basilico mit Waldpilzen und Basilikum (Mi,Sw,GlW,GlG), Maccaroni (GlW)</name>
+          <note>Vegetarisch</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
