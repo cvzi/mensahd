@@ -3,10 +3,10 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-03-27">
+    <day date="2024-03-28">
       <category name="Pottkieker">
         <meal>
-          <name>Tomaten-Kokossuppe (3,So,Sl,GlW), Reis</name>
+          <name>Minestrone (Sl,Sw,GlW), Ciabatta (GlW,GlG)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">3.40</price>
@@ -14,25 +14,24 @@
           <price role="student">2.20</price>
         </meal>
       </category>
-      <category name="CampusVital">
-        <meal>
-          <name>Bowl Prik Nahm Pla mit gebackenem Seelachsfilet in (2,3,Fi,So,Sw,GlW), Backteig Asia (GlW), Chili-Soja-Dressing (2,3,Fi,So,GlW)</name>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Fisch</note>
-          <price role="employee">6.50</price>
-          <price role="other">7.70</price>
-          <price role="student">5.20</price>
-        </meal>
-      </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Spanischer Linseneintopf mit veganen Hackbällchen (3,5,So,Sl,Sf,Sw,GlW,GlG), Fladenbrot (Se,GlW)</name>
-          <note>Neu</note>
+          <name>veganes Sandwich Banh Mi mit Gemüse und kleinem Salat (1,2,So,Sf,Se,GlW,GlG,GlH)</name>
+          <note>Alkohol</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.10</price>
-          <price role="other">6.30</price>
-          <price role="student">3.80</price>
+          <price role="employee">6.60</price>
+          <price role="other">7.80</price>
+          <price role="student">5.30</price>
+        </meal>
+        <meal>
+          <name>Paniertes Putenschnitzel (GlW), Ratatouille , Rosmarinkartoffeln</name>
+          <note>Geflügel</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.10</price>
+          <price role="other">7.30</price>
+          <price role="student">4.80</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -40,13 +39,6 @@
           <name>Pasta des Tages (GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
-          <name>Funghi di bosco e basilico mit Waldpilzen und Basilikum (Mi,Sw,GlW,GlG)</name>
-          <note>Vegetarisch</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -61,50 +53,6 @@
           <price role="other">1.15</price>
           <price role="student">0.75</price>
         </meal>
-      </category>
-    </day>
-    <day date="2024-03-28">
-      <category name="Pottkieker">
-        <meal>
-          <name>Minestrone (Sl,Sw,GlW), Ciabatta (GlW,GlG)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">3.40</price>
-          <price role="other">4.10</price>
-          <price role="student">2.20</price>
-        </meal>
-      </category>
-      <category name="CampusSpezial">
-        <meal>
-          <name>Paniertes Putenschnitzel (GlW), Ratatouille , Rosmarinkartoffeln</name>
-          <note>Geflügel</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.10</price>
-          <price role="other">7.30</price>
-          <price role="student">4.80</price>
-        </meal>
-        <meal>
-          <name>veganes Sandwich Banh Mi mit Gemüse und kleinem Salat (1,2,So,Sf,Se,GlW,GlG,GlH)</name>
-          <note>Alkohol</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.60</price>
-          <price role="other">7.80</price>
-          <price role="student">5.30</price>
-        </meal>
-      </category>
-      <category name="Pastabar">
-        <meal>
-          <name>Pasta des Tages (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-      </category>
-      <category name="Gemüsebar">
         <meal>
           <name>Gemüse des Tages</name>
           <note>Vegan</note>
@@ -157,7 +105,8 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta des Tages (GlW)</name>
+          <name>all`Provenzale mit Gemüse</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
@@ -165,8 +114,7 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>all`Provenzale mit Gemüse</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <name>Pasta des Tages (GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
@@ -285,7 +233,7 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta salsa di noci mit Paprika-Nuss-Soße, getrocknete Tomaten (Sl,NHa)</name>
+          <name>Pasta des Tages (GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
@@ -293,7 +241,7 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Pasta des Tages (GlW)</name>
+          <name>Pasta salsa di noci mit Paprika-Nuss-Soße, getrocknete Tomaten (Sl,NHa)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
