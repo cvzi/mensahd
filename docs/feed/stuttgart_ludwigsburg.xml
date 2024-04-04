@@ -4,6 +4,18 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2024-04-04">
+      <category name="Vorspeise">
+        <meal>
+          <name>Kräuter-Pilzsuppe</name>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
       <category name="Veganer renner">
         <meal>
           <name>Spaghetti mit Napolisauce</name>
@@ -20,6 +32,7 @@
           <note>Ei</note>
           <note>Sellerie</note>
           <note>Weizen</note>
+          <note>vegetarisch</note>
           <price role="employee">7.00</price>
           <price role="student">4.50</price>
         </meal>
@@ -76,6 +89,15 @@
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
+        <meal>
+          <name>Spätzle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
       </category>
       <category name="Salat">
         <meal>
@@ -88,13 +110,6 @@
       <category name="Dessert">
         <meal>
           <name>Himbeerquark</name>
-          <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.59</price>
-          <price role="student">1.19</price>
-        </meal>
-        <meal>
-          <name>Karamellpudding</name>
           <note>Milch und Laktose</note>
           <note>vegetarisch</note>
           <price role="employee">1.59</price>
@@ -130,13 +145,6 @@
       </category>
     </day>
     <day date="2024-04-05">
-      <category name="Vorspeise">
-        <meal>
-          <name>Tagessuppe</name>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-      </category>
       <category name="Veganer renner">
         <meal>
           <name>Sojageschnetzeltes indische Art und Duftreis</name>
@@ -186,11 +194,6 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Tagesgemüse</name>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-        <meal>
           <name>Duftreis</name>
           <note>vegan</note>
           <price role="employee">1.39</price>
@@ -223,33 +226,6 @@
           <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
-        </meal>
-        <meal>
-          <name>Pudding mit Mokka-Geschmack</name>
-          <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.59</price>
-          <price role="student">1.19</price>
-        </meal>
-      </category>
-      <category name="Buffet">
-        <meal>
-          <name>Salatbuffet</name>
-          <note>Ei</note>
-          <note>Milch und Laktose</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>Sesam</note>
-          <note>Weizen</note>
-          <note>geschwefelt</note>
-          <note>geschwärzt</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
-          <note>mit Süßungsmitteln</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.60</price>
-          <price role="student">1.10</price>
         </meal>
       </category>
     </day>
