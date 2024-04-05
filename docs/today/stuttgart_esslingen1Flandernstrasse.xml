@@ -3,12 +3,13 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-04-04">
+    <day date="2024-04-05">
       <category name="Veganer renner">
         <meal>
-          <name>Spaghetti mit Napolisauce</name>
+          <name>Sojageschnetzeltes indische Art und Duftreis</name>
           <note>Sellerie</note>
-          <note>Weizen</note>
+          <note>Soja</note>
+          <note>mit Konservierungsstoffen</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -16,19 +17,27 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Käseknacker mit Paprikasauce und Pommes frites</name>
+          <name>Gebratenes Seelachsfilet mit Dill-Senfsauce und Kartoffelchips</name>
+          <note>Fisch</note>
+          <note>MSC-zertifizierter Fisch (MSC-C-51632)</note>
           <note>Milch und Laktose</note>
-          <note>Schwein</note>
           <note>Sellerie</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Konservierungsstoffen</note>
-          <price role="employee">7.40</price>
-          <price role="student">4.90</price>
+          <note>Senf</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <price role="employee">7.90</price>
+          <price role="student">5.40</price>
         </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Pommes frites</name>
+          <name>Duftreis</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Gebackene Kartoffelscheiben</name>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
@@ -49,11 +58,12 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Himbeerquark</name>
+          <name>Pfirsichjoghurt</name>
           <note>Milch und Laktose</note>
+          <note>mit Farbstoffen</note>
           <note>vegetarisch</note>
-          <price role="employee">1.59</price>
-          <price role="student">1.19</price>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Buffet">
