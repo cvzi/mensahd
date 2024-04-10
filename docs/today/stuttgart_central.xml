@@ -3,22 +3,19 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-04-09">
+    <day date="2024-04-10">
       <category name="Vorspeise">
         <meal>
-          <name>Maultaschensuppe</name>
-          <note>Sellerie</note>
-          <note>Weizen</note>
-          <note>vegan</note>
+          <name>Tagessuppe</name>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Chili sin Carne und Reis</name>
+          <name>Penne an Tomatensugo mit Kräutern</name>
           <note>Sellerie</note>
-          <note>Soja</note>
+          <note>Weizen</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -26,26 +23,29 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Ofenkartoffel mit veganem Sour Creme Dip und Salat</name>
-          <note>Hafer</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>vegan</note>
-          <price role="employee">6.30</price>
-          <price role="student">3.80</price>
+          <name>Milchreis mit Kirschen und Zimt Zucker</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">5.60</price>
+          <price role="student">3.10</price>
         </meal>
         <meal>
-          <name>Schweinebraten mit Jägersauce und Kartoffelknödel</name>
+          <name>Hähnchen-Döner mit Joghurt-Knoblauch-Dip</name>
+          <note>Geflügel</note>
           <note>Milch und Laktose</note>
-          <note>Schwein</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Senf</note>
+          <note>Sesam</note>
           <note>Weizen</note>
           <note>mit Antioxidationsmitteln</note>
-          <price role="employee">7.70</price>
-          <price role="student">5.20</price>
+          <note>mit Farbstoffen</note>
+          <price role="employee">7.90</price>
+          <price role="student">5.40</price>
         </meal>
       </category>
       <category name="Aktion">
         <meal>
-          <name>Maccheroni fiore Quattro Fromaggi Sauce</name>
+          <name>Campanelle Quattro Fromaggi Sauce</name>
           <note>Milch und Laktose</note>
           <note>Weizen</note>
           <note>hauseigene Nudelmanufaktur</note>
@@ -54,7 +54,7 @@
           <price role="student">4.45</price>
         </meal>
         <meal>
-          <name>Maccheroni fiore all'amatricana</name>
+          <name>Campanelle all'amatricana</name>
           <note>Schwein</note>
           <note>Sellerie</note>
           <note>Weizen</note>
@@ -67,19 +67,26 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Kürbis Karotten Gemüse</name>
+          <name>Tagesgemüse</name>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Penne</name>
+          <note>Weizen</note>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
         <meal>
-          <name>Reis</name>
+          <name>Risoleekartoffeln</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>vegan</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Kartoffelknödel</name>
+          <name>Pommes frites</name>
           <note>vegan</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
@@ -95,7 +102,8 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Sahneschokopudding</name>
+          <name>Creme Brûlée</name>
+          <note>Ei</note>
           <note>Milch und Laktose</note>
           <note>vegetarisch</note>
           <price role="employee">1.59</price>
@@ -108,11 +116,15 @@
           <note>Ei</note>
           <note>Milch und Laktose</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
           <note>Senf</note>
+          <note>Sesam</note>
           <note>Weizen</note>
           <note>geschwefelt</note>
+          <note>geschwärzt</note>
           <note>mit Antioxidationsmitteln</note>
           <note>mit Farbstoffen</note>
+          <note>mit Süßungsmitteln</note>
           <note>vegetarisch</note>
           <price role="employee">1.60</price>
           <price role="student">1.10</price>
