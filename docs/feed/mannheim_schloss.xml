@@ -181,26 +181,6 @@
           <price role="student">5.50</price>
         </meal>
       </category>
-      <category name="Pastatheke">
-        <meal>
-          <name>Farfalle , Käse-Lauchsoße mit Hackfleisch, Zitronen-Kurkuma-Soße , italienische Paprikasoße </name>
-          <note>Antioxidationsmittel</note>
-          <note>Farbstoff</note>
-          <note>Glutenhaltiges Getreide</note>
-          <note>Milch/Laktose</note>
-          <note>Portion Preis</note>
-          <note>Rind</note>
-          <note>Schwefeldioxid Sulfit</note>
-          <note>Sellerie</note>
-          <note>Säuerungsmittel</note>
-          <note>Weizen</note>
-          <note> = Vegan</note>
-          <note> = Vegetarisch</note>
-          <price role="employee">3.50</price>
-          <price role="other">4.48</price>
-          <price role="student">2.80</price>
-        </meal>
-      </category>
       <category name="Salatbuffet">
         <meal>
           <name>Blattsalate , Rohkostsalate , Antipasti , Bauernsalat , Tomaten und Mozzarella , Schwarzwurzelsalat , Radieschen , Kichererbsensalat </name>
@@ -259,12 +239,14 @@
     <day date="2024-04-10">
       <category name="Menü 1">
         <meal>
-          <name>Hähnchengeschnetzeltes, Karottengemüse , Gemüse-Kartoffelpuffer , frische Kräuter </name>
+          <name>Hähnchengeschnetzeltes, Hähnchenschnitzel, Karottengemüse , Gemüse-Kartoffelpuffer , frische Kräuter </name>
           <note>Geflügel</note>
+          <note>Glutenhaltiges Getreide</note>
           <note>Milch/Laktose</note>
           <note>Portion Preis</note>
           <note>Sellerie</note>
           <note>Säuerungsmittel</note>
+          <note>Weizen</note>
           <note> = Vegan</note>
           <note> = Vegetarisch</note>
           <price role="employee">3.75</price>
@@ -302,16 +284,15 @@
       </category>
       <category name="Pastatheke">
         <meal>
-          <name>Farfalle , Geflügel-Bolognese, Zitronen-Kurkuma-Soße , italienische Paprikasoße </name>
+          <name>Farfalle , Vollkorn-Fusilli, Käse-Lauchsoße mit Hackfleisch, Zitronen-Kurkuma-Soße , italienische Paprikasoße </name>
           <note>Antioxidationsmittel</note>
           <note>Farbstoff</note>
-          <note>Geflügel</note>
           <note>Glutenhaltiges Getreide</note>
           <note>Milch/Laktose</note>
           <note>Portion Preis</note>
+          <note>Rind</note>
           <note>Schwefeldioxid Sulfit</note>
           <note>Sellerie</note>
-          <note>Soja</note>
           <note>Säuerungsmittel</note>
           <note>Weizen</note>
           <note> = Vegan</note>
@@ -346,12 +327,19 @@
       </category>
       <category name="Themenpark">
         <meal>
-          <name>paniertes Schnitzel vom Schwein, Valess Schnitzel , Marktgemüse </name>
+          <name>paniertes Schnitzel vom Schwein, Valess Schnitzel , Marktgemüse , Bratensoße, Kartoffelpüree , Spinatcremesuppe </name>
+          <note>Alkohol</note>
+          <note>Antioxidationsmittel</note>
           <note>Ei</note>
+          <note>Farbstoff</note>
           <note>Glutenhaltiges Getreide</note>
           <note>Hafer</note>
           <note>Milch/Laktose</note>
+          <note>Rind</note>
+          <note>Schwefeldioxid Sulfit</note>
           <note>Schweinefleisch</note>
+          <note>Sellerie</note>
+          <note>Soja</note>
           <note>Säuerungsmittel</note>
           <note>Weizen</note>
           <note>pro 100g Preis</note>
@@ -448,19 +436,13 @@
       </category>
       <category name="Salatbuffet">
         <meal>
-          <name>Blattsalate , Rohkostsalate , Joghurt-Dressing , Balsamico-Dressing , Kräuter-Vinaigrette , verschiedene Toppings </name>
+          <name>Blattsalate , Rohkostsalate , Antipasti , Bauernsalat , Gurkensalat , Fetawürfel , Tomaten und Mozzarella , Coleslaw </name>
           <note>Antioxidationsmittel</note>
-          <note>Erdnüsse</note>
+          <note>Ei</note>
           <note>Farbstoff</note>
-          <note>Glutenhaltiges Getreide</note>
-          <note>Hafer</note>
-          <note>Haselnüsse</note>
-          <note>Mandeln</note>
           <note>Milch/Laktose</note>
           <note>Schwefeldioxid Sulfit</note>
-          <note>Senf</note>
-          <note>Sesam</note>
-          <note>Walnüsse</note>
+          <note>geschwärzt</note>
           <note>pro 100g Preis</note>
           <note> = Vegan</note>
           <note> = Vegetarisch</note>
@@ -489,9 +471,13 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Obstsalat </name>
+          <name>Obstsalat , Vanillepudding , Erdbeeren , Fruchtjoghurt </name>
+          <note>Farbstoff</note>
           <note>Glas Preis</note>
+          <note>Milch/Laktose</note>
+          <note>Säuerungsmittel</note>
           <note> = Vegan</note>
+          <note> = Vegetarisch</note>
           <price role="employee">1.50</price>
           <price role="other">1.92</price>
           <price role="student">1.20</price>
