@@ -3,15 +3,13 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-04-11">
+    <day date="2024-04-12">
       <category name="Veganer renner">
         <meal>
-          <name>Gemüseeintopf nach Pichelsteiner Art mit Dinkelbrötchen</name>
-          <note>Dinkel</note>
-          <note>Gerste</note>
-          <note>Roggen</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <name>Spaghetti mit Sojabolognese</name>
           <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Weizen</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -19,26 +17,33 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Gnocchi- Gemüsepfanne mit mariniertem Tofu und Tomatensauce</name>
-          <note>Sellerie</note>
-          <note>Soja</note>
+          <name>Fischstäbchen oder Seelachsfilet paniert mit Remouladensauce und Salzkartoffeln</name>
+          <note>Fisch</note>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Senf</note>
           <note>Weizen</note>
-          <note>vegan</note>
-          <price role="employee">6.70</price>
-          <price role="student">4.20</price>
+          <note>mit Farbstoffen</note>
+          <note>mit Süßungsmitteln</note>
+          <price role="employee">7.40</price>
+          <price role="student">4.90</price>
         </meal>
+      </category>
+      <category name="Beilage">
         <meal>
-          <name>Hähnchenbrustfilet mit Curry-Kokos-Sauce und Reis</name>
-          <note>Geflügel</note>
-          <note>Sellerie</note>
-          <note>Weizen</note>
-          <price role="employee">6.00</price>
-          <price role="student">3.50</price>
+          <name>Salzkartoffeln</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>vegan</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
         </meal>
       </category>
       <category name="Salat">
         <meal>
           <name>Beilagensalat</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Senf</note>
+          <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
@@ -46,14 +51,7 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Karamellpudding</name>
-          <note>Milch und Laktose</note>
-          <price role="employee">1.59</price>
-          <price role="student">1.19</price>
-        </meal>
-        <meal>
-          <name>Creme Brûlée</name>
-          <note>Ei</note>
+          <name>Sahneschokopudding</name>
           <note>Milch und Laktose</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
