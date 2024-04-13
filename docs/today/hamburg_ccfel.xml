@@ -3,26 +3,128 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-04-12">
+    <day date="2024-04-15">
       <category name="CampusKlassiker">
         <meal>
-          <name>Linsenbolognese in pikanter Soße , bunte Fusilli (GlW)</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Tortellini mit Rinderhackfüllung (GlW), Tomatensoße</name>
+          <note>Rind</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.25</price>
+          <price role="other">5.45</price>
+          <price role="student">2.95</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Soja-Geschnetzeltes in Erdnusssoße (2,En,So,Sl,GlW), Wok-Gemüse, Reis</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.80</price>
+          <price role="other">7.00</price>
+          <price role="student">4.50</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-04-16">
+      <category name="CampusSpezial">
+        <meal>
+          <name>gebackenes Rotbarschfilet (Fi,GlW), Tartarensoße , Schnittlauchkartoffeln</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Farbstoff</note>
+          <note>mit Fisch</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">6.80</price>
+          <price role="other">8.00</price>
+          <price role="student">5.50</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Spinatknödel , Rahmsauerkraut , gebratene Zwiebeln</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <price role="employee">5.40</price>
+          <price role="other">6.60</price>
+          <price role="student">4.10</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-04-17">
+      <category name="CampusVital">
+        <meal>
+          <name>Belugalinsen-Tomaten-Curry , Indische Kartoffeln</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Farbstoff</note>
           <price role="employee">3.80</price>
           <price role="other">5.00</price>
           <price role="student">2.50</price>
         </meal>
       </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Hühnchen in Kokos Soße , Sesammöhrchen , Basmatireis</name>
+          <note>Geflügel</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.80</price>
+          <price role="other">7.00</price>
+          <price role="student">4.50</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-04-18">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Hausgemachte Lasagne Bolognese (Mi,Sl,GlW), Tomatensoße</name>
+          <note>Rind</note>
+          <price role="employee">5.80</price>
+          <price role="other">7.00</price>
+          <price role="student">4.50</price>
+        </meal>
+      </category>
       <category name="CampusVital">
         <meal>
-          <name>Gnocchi-Tomaten-Auflauf mit Mozzarella überbacken</name>
+          <name>4 Röstiecken, Kräuterquark , Gurkensalat</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Vegetarisch</note>
           <price role="employee">4.20</price>
           <price role="other">5.40</price>
           <price role="student">2.90</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-04-19">
+      <category name="CampusVital">
+        <meal>
+          <name>Vegetarisch gefüllte Paprikaschote (Ei,So,Sl,Sf,GlW), Currysoße (Mi,Sf,GlW,GlG), Reis</name>
+          <note>Vegetarisch</note>
+          <price role="employee">5.30</price>
+          <price role="other">6.50</price>
+          <price role="student">4.00</price>
+        </meal>
+      </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Grünkern-Käse-Medaillons (Ei,So,Mi,Se,GlW,GlD), Schnittlauch-Dip , Blechkartoffeln, Blattsalat mit Karotte</name>
+          <note>Geschwefelt</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegetarisch</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">5.90</price>
+          <price role="other">7.10</price>
+          <price role="student">4.60</price>
         </meal>
       </category>
     </day>
