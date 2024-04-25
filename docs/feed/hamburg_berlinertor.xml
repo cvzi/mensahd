@@ -20,14 +20,6 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Hähnchenbrust in Parmesanpanade (Mi,GlW), tomatisierte Kräutersoße (Mi,GlW,GlG), Hausgemachtes Kartoffel-Butterstampf</name>
-          <note>Geflügel</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <price role="employee">5.90</price>
-          <price role="other">7.10</price>
-          <price role="student">4.60</price>
-        </meal>
-        <meal>
           <name>Currybratwurst oder , Geflügel Bratwurst oder , vegane Currybratwurst mit , scharfe Grillsoße , Grillsoße oder , Pommes Frites , verschiedene Currypulver nach Wahl</name>
           <note>Geflügel</note>
           <note>Rind</note>
@@ -54,6 +46,14 @@
           <price role="other">5.40</price>
           <price role="student">2.90</price>
         </meal>
+        <meal>
+          <name>Hähnchenbrust in Parmesanpanade (Mi,GlW), tomatisierte Kräutersoße (Mi,GlW,GlG), Hausgemachtes Kartoffel-Butterstampf</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <price role="employee">5.90</price>
+          <price role="other">7.10</price>
+          <price role="student">4.60</price>
+        </meal>
       </category>
       <category name="CampusWorld">
         <meal>
@@ -64,11 +64,11 @@
           <price role="student">4.60</price>
         </meal>
         <meal>
-          <name>Pizza Sucuk Large (2,3,4,Mi,GlW)</name>
-          <note>Rind</note>
-          <price role="employee">6.70</price>
-          <price role="other">7.90</price>
-          <price role="student">5.40</price>
+          <name>Pizza Funghi Large (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">6.10</price>
+          <price role="other">7.30</price>
+          <price role="student">4.80</price>
         </meal>
         <meal>
           <name>Pizza Margherita Large (Mi,GlW)</name>
@@ -78,27 +78,27 @@
           <price role="student">4.40</price>
         </meal>
         <meal>
-          <name>Pizza Funghi Large (Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">6.10</price>
-          <price role="other">7.30</price>
-          <price role="student">4.80</price>
+          <name>Pizza Sucuk Large (2,3,4,Mi,GlW)</name>
+          <note>Rind</note>
+          <price role="employee">6.70</price>
+          <price role="other">7.90</price>
+          <price role="student">5.40</price>
         </meal>
       </category>
       <category name="Pastabar">
-        <meal>
-          <name>Pasta salsa di noci mit Paprika-Nuss-Soße, getrocknete Tomaten (Sl,NHa), Eliche (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
         <meal>
           <name>Salsa rucola di pollo mit Hähnchenstreifen in Rucolasoße , bunte Fusilli (GlW)</name>
           <note>Geflügel</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>mensaVital</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Pasta salsa di noci mit Paprika-Nuss-Soße, getrocknete Tomaten (Sl,NHa), Eliche (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -140,11 +140,41 @@
       </category>
       <category name="CampusWorld">
         <meal>
+          <name>Pizza Margeritha vegan Large (1,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.90</price>
+          <price role="other">7.10</price>
+          <price role="student">4.60</price>
+        </meal>
+        <meal>
+          <name>Frisch gebackene PIZZA LARGE nach Wahl (versch. Sorten) ab 4,40 / 5,70 / 6,90 (auch TAKE AWAY) (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">5.70</price>
+          <price role="other">6.90</price>
+          <price role="student">4.40</price>
+        </meal>
+        <meal>
+          <name>Pizza Margherita Large (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">5.70</price>
+          <price role="other">6.90</price>
+          <price role="student">4.40</price>
+        </meal>
+        <meal>
           <name>Pizza Funghi Large (Mi,GlW)</name>
           <note>Vegetarisch</note>
           <price role="employee">6.10</price>
           <price role="other">7.30</price>
           <price role="student">4.80</price>
+        </meal>
+        <meal>
+          <name>Pizza Funghi vegan Large (1,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.40</price>
+          <price role="other">7.60</price>
+          <price role="student">5.10</price>
         </meal>
         <meal>
           <name>Crepe mit Gemüse-Hummusfüllung (Ei,Mi,Sl,Se,GlW), Rotkrautsalat Levante</name>
@@ -156,47 +186,16 @@
           <price role="student">3.40</price>
         </meal>
         <meal>
-          <name>Pizza Margeritha vegan Large (1,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.90</price>
-          <price role="other">7.10</price>
-          <price role="student">4.60</price>
-        </meal>
-        <meal>
-          <name>Pizza Margherita Large (Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">5.70</price>
-          <price role="other">6.90</price>
-          <price role="student">4.40</price>
-        </meal>
-        <meal>
           <name>Pizza Rucola mit Rucola, Grana Padano, Knoblauch und Käse Large (2,Ei,Mi,GlW)</name>
           <note>Vegetarisch</note>
           <price role="employee">6.60</price>
           <price role="other">7.80</price>
           <price role="student">5.30</price>
         </meal>
-        <meal>
-          <name>Pizza Funghi vegan Large (1,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.40</price>
-          <price role="other">7.60</price>
-          <price role="student">5.10</price>
-        </meal>
-        <meal>
-          <name>Frisch gebackene PIZZA LARGE nach Wahl (versch. Sorten) ab 4,40 / 5,70 / 6,90 (auch TAKE AWAY) (Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">5.70</price>
-          <price role="other">6.90</price>
-          <price role="student">4.40</price>
-        </meal>
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Lenticchie mit Linsen in pikanter Tomatensoße , Farfalle (GlW)</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Broccoli e pomodoro mit Broccoli und Tomate, Farfalle (GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
@@ -204,7 +203,8 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Broccoli e pomodoro mit Broccoli und Tomate, Farfalle (GlW)</name>
+          <name>Lenticchie mit Linsen in pikanter Tomatensoße , Farfalle (GlW)</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
@@ -260,13 +260,6 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Flammkuchen Elsässer Art mit Speck, Zwiebeln und Schmand (2,3,Mi,GlW)</name>
-          <note>Schwein</note>
-          <price role="employee">5.55</price>
-          <price role="other">6.75</price>
-          <price role="student">4.25</price>
-        </meal>
-        <meal>
           <name>Mini Frühlingsrollen (So,GlW), Bratnudeln mit Gemüsestreifen (2,So,Se,GlW), scharfer Asia-Dip</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -284,6 +277,13 @@
         <meal>
           <name>Flammkuchen mit Rahmspinat (Mi,GlW)</name>
           <note>Vegetarisch</note>
+          <price role="employee">5.55</price>
+          <price role="other">6.75</price>
+          <price role="student">4.25</price>
+        </meal>
+        <meal>
+          <name>Flammkuchen Elsässer Art mit Speck, Zwiebeln und Schmand (2,3,Mi,GlW)</name>
+          <note>Schwein</note>
           <price role="employee">5.55</price>
           <price role="other">6.75</price>
           <price role="student">4.25</price>
@@ -349,13 +349,6 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Gebratenes Seelachsfilet (Fi,GlW), Blattspinat in Rahm (Mi,GlW), Salzkartoffeln</name>
-          <note>mit Fisch</note>
-          <price role="employee">5.80</price>
-          <price role="other">7.00</price>
-          <price role="student">4.50</price>
-        </meal>
-        <meal>
           <name>Cheddarburger mit Gurken, Tomaten und Salat (1,2,3,9,Ei,Mi,Sf,Se,Sw,GlW), Pommes Frites</name>
           <note>Rind</note>
           <note>Senf und Senferzeugnisse</note>
@@ -363,21 +356,28 @@
           <price role="other">7.60</price>
           <price role="student">5.10</price>
         </meal>
+        <meal>
+          <name>Gebratenes Seelachsfilet (Fi,GlW), Blattspinat in Rahm (Mi,GlW), Salzkartoffeln</name>
+          <note>mit Fisch</note>
+          <price role="employee">5.80</price>
+          <price role="other">7.00</price>
+          <price role="student">4.50</price>
+        </meal>
       </category>
       <category name="CampusWorld">
-        <meal>
-          <name>Pizza Rucola mit Rucola, Grana Padano, Knoblauch und Käse Large (2,Ei,Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">6.60</price>
-          <price role="other">7.80</price>
-          <price role="student">5.30</price>
-        </meal>
         <meal>
           <name>Pizza Sucuk Large (2,3,4,Mi,GlW)</name>
           <note>Rind</note>
           <price role="employee">6.70</price>
           <price role="other">7.90</price>
           <price role="student">5.40</price>
+        </meal>
+        <meal>
+          <name>Pizza Rucola mit Rucola, Grana Padano, Knoblauch und Käse Large (2,Ei,Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">6.60</price>
+          <price role="other">7.80</price>
+          <price role="student">5.30</price>
         </meal>
         <meal>
           <name>Pizza Margherita Large (Mi,GlW)</name>
@@ -389,17 +389,17 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pollo al pomodoro mit Hähnchenstreifen in Tomatensoße , Vollkorn Fussili (GlW)</name>
-          <note>Geflügel</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Pasta sugo di porri mit Sonnenblumenhack-Lauchsoße (1,So,Sl,Sf,GlW), Vollkorn Fussili (GlW)</name>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Pasta sugo di porri mit Sonnenblumenhack-Lauchsoße (1,So,Sl,Sf,GlW), Vollkorn Fussili (GlW)</name>
-          <note>Vegan</note>
+          <name>Pollo al pomodoro mit Hähnchenstreifen in Tomatensoße , Vollkorn Fussili (GlW)</name>
+          <note>Geflügel</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
@@ -477,15 +477,15 @@
           <price role="student">4.25</price>
         </meal>
         <meal>
-          <name>Flammkuchen Teriyaki mit Räuchertofu, asiatischem Gemüse, Sesam (2,So,Mi,GlW)</name>
-          <note>Vegetarisch</note>
+          <name>Flammkuchen mit Geflügelsalami und frischen Tomaten (1,2,3,Mi,GlW)</name>
+          <note>Geflügel</note>
           <price role="employee">5.55</price>
           <price role="other">6.75</price>
           <price role="student">4.25</price>
         </meal>
         <meal>
-          <name>Flammkuchen mit Geflügelsalami und frischen Tomaten (1,2,3,Mi,GlW)</name>
-          <note>Geflügel</note>
+          <name>Flammkuchen Teriyaki mit Räuchertofu, asiatischem Gemüse, Sesam (2,So,Mi,GlW)</name>
+          <note>Vegetarisch</note>
           <price role="employee">5.55</price>
           <price role="other">6.75</price>
           <price role="student">4.25</price>
@@ -493,19 +493,19 @@
       </category>
       <category name="Pastabar">
         <meal>
+          <name>Due formaggio e nocciola mit zweierlei Käse und gerösteter Haselnuss (Mi,Sl,NHa), Eliche (GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
           <name>Boscaiola mit Pilzen und Speck , Bunte Nudeln (GlW)</name>
           <note>Schwein</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Antioxidationsmittel</note>
           <note>mit Konservierungsstoff</note>
           <note>mit Phosphat</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
-          <name>Due formaggio e nocciola mit zweierlei Käse und gerösteter Haselnuss (Mi,Sl,NHa), Eliche (GlW)</name>
-          <note>Vegetarisch</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -550,14 +550,29 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Frisch gebackene PIZZA LARGE nach Wahl (versch. Sorten) ab 4,40 / 5,70 / 6,90 (auch TAKE AWAY) (Mi,GlW)</name>
+          <name>vegane Tom Kha Gai Suppe mit Tofu und Basmatireis (2,3,So,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.60</price>
+          <price role="other">6.80</price>
+          <price role="student">4.30</price>
+        </meal>
+        <meal>
+          <name>Pizza Funghi Large (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">6.10</price>
+          <price role="other">7.30</price>
+          <price role="student">4.80</price>
+        </meal>
+        <meal>
+          <name>Pizza Margherita Large (Mi,GlW)</name>
           <note>Vegetarisch</note>
           <price role="employee">5.70</price>
           <price role="other">6.90</price>
           <price role="student">4.40</price>
         </meal>
         <meal>
-          <name>Pizza Margherita Large (Mi,GlW)</name>
+          <name>Frisch gebackene PIZZA LARGE nach Wahl (versch. Sorten) ab 4,40 / 5,70 / 6,90 (auch TAKE AWAY) (Mi,GlW)</name>
           <note>Vegetarisch</note>
           <price role="employee">5.70</price>
           <price role="other">6.90</price>
@@ -579,14 +594,6 @@
           <price role="student">5.30</price>
         </meal>
         <meal>
-          <name>vegane Tom Kha Gai Suppe mit Tofu und Basmatireis (2,3,So,Sw,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.60</price>
-          <price role="other">6.80</price>
-          <price role="student">4.30</price>
-        </meal>
-        <meal>
           <name>Pizza Funghi vegan Large (1,GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -594,28 +601,21 @@
           <price role="other">7.60</price>
           <price role="student">5.10</price>
         </meal>
-        <meal>
-          <name>Pizza Funghi Large (Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">6.10</price>
-          <price role="other">7.30</price>
-          <price role="student">4.80</price>
-        </meal>
       </category>
       <category name="Pastabar">
-        <meal>
-          <name>Crema di funghi ostrica mit Austernpilze in Sahnesoße (Mi,Sl,GlW,GlG), Farfalle (GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
         <meal>
           <name>Saporita mit Soja und Paprika , Eliche (GlW)</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Crema di funghi ostrica mit Austernpilze in Sahnesoße (Mi,Sl,GlW,GlG), Farfalle (GlW)</name>
+          <note>Vegetarisch</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
