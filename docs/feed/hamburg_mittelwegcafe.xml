@@ -131,6 +131,14 @@
       </category>
       <category name="Food Angebot im Café Mittelweg">
         <meal>
+          <name>Salatteller (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.30</price>
+          <price role="other">4.90</price>
+          <price role="student">3.60</price>
+        </meal>
+        <meal>
           <name>Caesars Salat mit Hähnchenbrust (2,3,8,Ei,Mi,Sf,Sw,GlW)</name>
           <note>Geflügel</note>
           <price role="employee">5.80</price>
@@ -185,14 +193,6 @@
           <price role="employee">4.50</price>
           <price role="other">5.10</price>
           <price role="student">3.80</price>
-        </meal>
-        <meal>
-          <name>Salatteller (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">4.30</price>
-          <price role="other">4.90</price>
-          <price role="student">3.60</price>
         </meal>
       </category>
     </day>
@@ -352,71 +352,148 @@
         </meal>
       </category>
     </day>
-    <day date="2024-05-10">
-      <category name="Food Angebot im Café Mittelweg">
+    <day date="2024-05-13">
+      <category name="Pottkieker">
         <meal>
-          <name>Salatteller (GlW)</name>
+          <name>Feijoada vegana, brasilianische Bohnensuppe mit Gemüse</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">4.30</price>
-          <price role="other">4.90</price>
-          <price role="student">3.60</price>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
         </meal>
+      </category>
+      <category name="CampusSpezial">
         <meal>
-          <name>Caesars Salat mit Hähnchenbrust (2,3,8,Ei,Mi,Sf,Sw,GlW)</name>
+          <name>Dönerteller Geflügel mit Krautsalat , Tzatziki , Pommes Frites</name>
           <note>Geflügel</note>
-          <price role="employee">5.80</price>
-          <price role="other">6.40</price>
-          <price role="student">5.10</price>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>mit Geschmacksverstärker</note>
+          <price role="employee">6.80</price>
+          <price role="other">8.00</price>
+          <price role="student">5.50</price>
         </meal>
+      </category>
+    </day>
+    <day date="2024-05-14">
+      <category name="Pottkieker">
         <meal>
-          <name>Pomodoro Soße (1,GlW)</name>
+          <name>Kartoffel-Kürbis-Ragout , Reis</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">4.60</price>
-          <price role="other">5.20</price>
-          <price role="student">3.90</price>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
         </meal>
+      </category>
+      <category name="CampusKlassiker">
         <meal>
-          <name>Kartoffelgratin mit Spinat und Hirtenkäse</name>
-          <note>Ei und Eierzeugnisse</note>
+          <name>Matjesfilets , Matjessoße Hausfrauen Art , Salzkartoffeln</name>
+          <note>Fisch und Fischerzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
-          <price role="employee">4.50</price>
-          <price role="other">5.10</price>
-          <price role="student">3.80</price>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>mit Fisch</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">5.30</price>
+          <price role="other">6.50</price>
+          <price role="student">4.00</price>
         </meal>
+      </category>
+    </day>
+    <day date="2024-05-15">
+      <category name="Pottkieker">
         <meal>
-          <name>Bolognese Soße (Sl,GlW)</name>
-          <note>Alkohol</note>
-          <note>Rind</note>
+          <name>Graupentopf mit Kartoffeln und Gemüse (Sl,Sw,GlG)</name>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">4.60</price>
-          <price role="other">5.20</price>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Putengulasch (Mi,Sl,GlW), Penne (GlW)</name>
+          <note>Geflügel</note>
+          <price role="employee">5.20</price>
+          <price role="other">6.40</price>
           <price role="student">3.90</price>
         </meal>
+      </category>
+      <category name="CampusSpezial">
         <meal>
-          <name>Flammkuchen Elsässer Art mit Speck, Zwiebeln und Schmand (2,3,Mi,GlW)</name>
+          <name>Ägyptische Falafel mit Hummusfüllung (So,Sl,Se,GlW), veganes Tzatziki , Gemüsecouscous (Sl,GlW), Rotkrautsalat</name>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">5.90</price>
+          <price role="other">7.10</price>
+          <price role="student">4.60</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-05-16">
+      <category name="Pottkieker">
+        <meal>
+          <name>Pastinaken-Süßkartoffelsuppe mit Quinoa</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>5 Nürnberger Bratwürstchen, Sauerkraut (vegan) , Kartoffelpüree</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Schwein</note>
-          <price role="employee">4.90</price>
-          <price role="other">5.50</price>
-          <price role="student">4.20</price>
-        </meal>
-        <meal>
-          <name>Flammkuchen Griechische Art mit Peperoni und Hirtenkaese (2,3,5,Mi,GlW)</name>
-          <note>Vegetarisch</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <price role="employee">5.20</price>
-          <price role="other">5.80</price>
-          <price role="student">4.50</price>
+          <price role="other">6.40</price>
+          <price role="student">3.90</price>
         </meal>
+      </category>
+      <category name="CampusVital">
         <meal>
-          <name>Kartoffelgratin Broccoli</name>
-          <note>Ei und Eierzeugnisse</note>
+          <name>Ofenkartoffel mit Spinat und Cherrytomaten überbacken</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Vegetarisch</note>
           <price role="employee">4.50</price>
-          <price role="other">5.10</price>
-          <price role="student">3.80</price>
+          <price role="other">5.70</price>
+          <price role="student">3.20</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-05-17">
+      <category name="Pottkieker">
+        <meal>
+          <name>Indische Tomaten-Linsensuppe (Sf,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Mac and Cheese (1,Mi,Sl,Sf,GlW), Eisbergsalat mit Tomate</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">5.00</price>
+          <price role="other">6.20</price>
+          <price role="student">3.70</price>
         </meal>
       </category>
     </day>
