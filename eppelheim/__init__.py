@@ -224,7 +224,7 @@ def _generateCanteenMeta(name, url_template):
 
         data = {
             "name": mensa["name"],
-            "adress": "%s %s %s %s" % (mensa["name"], mensa["strasse"], mensa["plz"], mensa["ort"]),
+            "adress": "%s, %s %s" % (mensa["strasse"], mensa["plz"], mensa["ort"]),
             "city": mensa["ort"],
             "phone": mensa["phone"],
             "latitude": mensa["latitude"],

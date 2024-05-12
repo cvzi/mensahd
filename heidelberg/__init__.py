@@ -188,7 +188,7 @@ def _generateCanteenMeta(source, name, url_template):
 
         data = {
             "name": desiredName[mensa["xml"]],
-            "adress": "%s %s %s %s" % (mensa["name"], mensa["strasse"], mensa["plz"], mensa["ort"]),
+            "adress": "%s, %s %s" % (mensa["strasse"], mensa["plz"], mensa["ort"]),
             "city": mensa["ort"],
             "latitude": mensa["latitude"],
             "longitude": mensa["longitude"],
