@@ -4,7 +4,7 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Stuttgart Mitte, Mensa Musikhochschule</name>
-    <address>Stuttgart Mitte, Mensa Musikhochschule Urbanstraße 25 70182 Stuttgart</address>
+    <address>Urbanstraße 25, 70182 Stuttgart</address>
     <city>Stuttgart</city>
     <phone>+49 711 685 83913</phone>
     <location latitude="48.7784" longitude="9.1864" />
@@ -19,7 +19,7 @@
       <sunday closed="true" />
     </times>
     <feed name="today" priority="0">
-      <schedule dayOfMonth="*" dayOfWeek="1-5" hour="6-14" retry="5 3" />
+      <schedule dayOfMonth="*" dayOfWeek="1-5" hour="6-14" minute="5" retry="5 3" />
       <url>https://cvzi.github.io/mensahd/today/stuttgart_mitteMusikhochschule.xml</url>
       <source>https://www.studierendenwerk-stuttgart.de/essen/speiseplan/</source>
     </feed>
