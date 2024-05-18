@@ -3,10 +3,66 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-05-17">
+    <day date="2024-05-21">
       <category name="Pottkieker">
         <meal>
-          <name>Indische Tomaten-Linsensuppe (Sf,GlW)</name>
+          <name>Chili mit Grünkern und Gemüse (1,Sl,Sf,GlD)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.40</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Marinierstes Lachsfilet , auf Bulgur-Gemüse-Salat (3,5,Sw,GlW), Ajvar Dip</name>
+          <note>Fisch und Fischerzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>mit Fisch</note>
+          <price role="employee">7.10</price>
+          <price role="other">11.60</price>
+          <price role="student">5.80</price>
+        </meal>
+      </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Basil Rindfleisch-Burger mit pikanter Thai Mayo (2,3,Ei,Fi,Mi,Sf,Se,Lu,GlW,GlG,NCa), Pommes Frites</name>
+          <note>Rind</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>mit Fisch</note>
+          <price role="employee">6.80</price>
+          <price role="other">11.00</price>
+          <price role="student">5.50</price>
+        </meal>
+      </category>
+      <category name="Pastabar">
+        <meal>
+          <name>Vegane Pasta (GlW), mit weißem und grünem Spargel, Kirschtomaten, und Bärlauchpesto</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.50</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Indisches Buttercurry , mariniertes Quorn , Basmatireis</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.50</price>
+          <price role="student">0.75</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-05-22">
+      <category name="Pottkieker">
+        <meal>
+          <name>Orientalisches Gemüsecurry</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">3.40</price>
@@ -16,44 +72,135 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Burger Green Oat mit japanischem Wirsing-Wakame-Salat (1,2,3,9,10,So,Sf,Se,GlW,GlH), Pommes Frites</name>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.30</price>
-          <price role="other">10.00</price>
-          <price role="student">5.00</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>veganer Grillteller (2,So,GlW,GlG), Ajvar Dip , Reis, bunter Weißkrautsalat</name>
-          <note>Geschwefelt</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
+          <name>Schweinefiletmedaillons, Chimichurri , gebratene Karotten, gebratene Drillinge</name>
+          <note>Schwein</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Antioxidationsmittel</note>
-          <price role="employee">6.20</price>
-          <price role="other">9.80</price>
-          <price role="student">4.90</price>
+          <price role="employee">6.80</price>
+          <price role="other">11.00</price>
+          <price role="student">5.50</price>
+        </meal>
+        <meal>
+          <name>Vegetarisch gefüllte Paprikaschote (Ei,So,Sl,Sf,GlW), Currysoße (Mi,Sf,GlW,GlG), Reis</name>
+          <note>Vegetarisch</note>
+          <price role="employee">1.30</price>
         </meal>
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Frisch zubereitet: Veganer Wok &quot;Honey Pepper&quot; mit Sojastreifen und Gemüse , Reis</name>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegetarisch</note>
+          <name>Broccoli e pomodoro mit Broccoli und Tomate, Farfalle (GlW)</name>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.50</price>
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Vegane Pasta (GlW), mit weißem und grünem Spargel, Kirschtomaten</name>
+          <name>Schupfnudeln mit Spitzkohl, gebratener Paprika, Sonnenblumenhack und veganem Skyr (1,3,So,Sl,Sf,GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.50</price>
+          <price role="student">0.75</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-05-23">
+      <category name="Pottkieker">
+        <meal>
+          <name>Türkische Linsen-Bulgur-Suppe (Sl,GlW), Wrap (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.40</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Paniertes Putenschnitzel (GlW), Ratatouille , Rosmarinkartoffeln</name>
+          <note>Geflügel</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.30</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>All in one Pot: Bulgur, Soja, Weißkohl, Cranberries, Ananas, Asia-Majo, Cashew (2,So,Sl,Sf,Sw,GlW,NCa)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.60</price>
+          <price role="other">8.60</price>
+          <price role="student">4.30</price>
+        </meal>
+      </category>
+      <category name="Pastabar">
+        <meal>
+          <name>Pasta Pennette mit Mangold (GlW), mit Frischkäsesoße mit getrockneten Tomaten (3,5,Mi,Sf,Sw,GlW,GlG)</name>
+          <note>Neu</note>
+          <note>Vegetarisch</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.50</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Hähnchen Gemüsepfanne mit grünem Spargel (2,So,GlW,NCa)</name>
+          <note>Geflügel</note>
+          <note>Neu</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.50</price>
+          <price role="student">0.75</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-05-24">
+      <category name="Pottkieker">
+        <meal>
+          <name>Blumenkohl Korma, Reis</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.40</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Gemüsefrittata , Schnittlauchquark , Salat mit Italian Dressing</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <price role="employee">1.30</price>
+        </meal>
+        <meal>
+          <name>vegane Spanische Hackbällchen in Tomaten Dattelsoße (So,Sl,GlW,GlG), vegane Aioli , Röstkartoffelwürfel</name>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.45</price>
+          <price role="other">8.30</price>
+          <price role="student">4.15</price>
+        </meal>
+      </category>
+      <category name="Pastabar">
+        <meal>
+          <name>Afrikanische Gemüse Kartoffel Tajine , Knoblauchdip , Fladenbrot (Se,GlW)</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.50</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Tortellini mit Spinat Ricottafüllung (Ei,Mi,GlW), Walnuss-Senfsoße (2,5,Mi,Sl,Sf,Sw,GlW,GlG,NWa), mediterrane Salatbeilage</name>
+          <note>Vegetarisch</note>
+          <note>mit Antioxidationsmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.50</price>
           <price role="student">0.75</price>
