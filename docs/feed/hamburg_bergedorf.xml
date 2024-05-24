@@ -6,7 +6,9 @@
     <day date="2024-05-24">
       <category name="Pottkieker">
         <meal>
-          <name>Blumenkohl Korma, Reis</name>
+          <name>Kokos-Linsen-Curry</name>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">3.40</price>
@@ -16,7 +18,7 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Soja-Bolognese mit Gemüse , bunte Fusilli (GlW)</name>
+          <name>Soja-Bolognese mit Gemüse , Nudeln (GlW)</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
@@ -28,7 +30,7 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>veganer Wrap Pulled BBQ mit Salat (So,Sf,Sw,GlW,GlH)</name>
+          <name>veganer Wrap Gyros Style mit Salat (So,Sf,Sw,GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">5.10</price>
@@ -38,7 +40,23 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta Crema di funghi ostrica mit Austernpilze in Sahnesoße (Mi,Sl,GlW,GlG)</name>
+          <name>Asiatische Reispfanne</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Käsespätzle mit Röstzwiebeln (Ei,Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Pasta Crema di Zucchine e Pomodoro mit Tomaten-Sahnesoße und Zucchini (Mi,GlW)</name>
           <note>Vegetarisch</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
@@ -55,10 +73,9 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>glasierte rote Beete, Broccoli, Fingermöhrchen mit Ingwer und Frühlingslauch</name>
+          <name>glasierte rote Beete, Spanisches Pfannengemüse, Bratkartoffeln</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Farbstoff</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -161,13 +178,6 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Deutscher Spargel</name>
-          <note>Vegetarisch</note>
-          <price role="employee">6.20</price>
-          <price role="other">7.40</price>
-          <price role="student">4.90</price>
-        </meal>
-        <meal>
           <name>gebackenes Rotbarschfilet (Fi,GlW), Tartarensoße</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -184,6 +194,13 @@
         <meal>
           <name>Deutscher Spargel</name>
           <note>Alkohol</note>
+          <note>Vegetarisch</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.40</price>
+          <price role="student">4.90</price>
+        </meal>
+        <meal>
+          <name>Deutscher Spargel</name>
           <note>Vegetarisch</note>
           <price role="employee">6.20</price>
           <price role="other">7.40</price>
@@ -235,6 +252,14 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
+          <name>Hähnchen Crossies (GlW,GlG)</name>
+          <note>Geflügel</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.85</price>
+          <price role="other">5.95</price>
+          <price role="student">3.60</price>
+        </meal>
+        <meal>
           <name>Chili Fries sin carne , Tofunese</name>
           <note>Geschwärzt</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
@@ -246,14 +271,6 @@
           <price role="employee">5.20</price>
           <price role="other">6.40</price>
           <price role="student">3.90</price>
-        </meal>
-        <meal>
-          <name>Hähnchen Crossies (GlW,GlG)</name>
-          <note>Geflügel</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">4.85</price>
-          <price role="other">5.95</price>
-          <price role="student">3.60</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -270,17 +287,17 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Funghi di bosco e basilico mit Waldpilzen und Basilikum (Mi,Sw,GlW,GlG), Maccaroni (GlW)</name>
-          <note>Vegetarisch</note>
+          <name>Bolognese , Maccaroni (GlW)</name>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Bolognese , Maccaroni (GlW)</name>
-          <note>Rind</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Funghi di bosco e basilico mit Waldpilzen und Basilikum (Mi,Sw,GlW,GlG), Maccaroni (GlW)</name>
+          <note>Vegetarisch</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -339,16 +356,16 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Tortellini mit Käsefüllung (Mi,GlW), Noci di zucchine mit Zucchini-Walnusssoße (Mi,GlW,GlG,NWa)</name>
-          <note>Vegetarisch</note>
+          <name>Pasta Pomodoro Melanzane di Pollo Tomatensoße mit Aubergine und Hähnchen (Sw,GlW)</name>
+          <note>Geflügel</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Pasta Pomodoro Melanzane di Pollo Tomatensoße mit Aubergine und Hähnchen (Sw,GlW)</name>
-          <note>Geflügel</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Tortellini mit Käsefüllung (Mi,GlW), Noci di zucchine mit Zucchini-Walnusssoße (Mi,GlW,GlG,NWa)</name>
+          <note>Vegetarisch</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
