@@ -4,6 +4,18 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2024-05-28">
+      <category name="Pottkieker">
+        <meal>
+          <name>Marokkanische Kichererbsensuppe</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
       <category name="CampusVital">
         <meal>
           <name>Rosmarinhuhn mit Paprika-Kichererbsengemüse , Tomatensoße, Couscous (Sl,GlW)</name>
@@ -27,14 +39,6 @@
           <price role="student">5.20</price>
         </meal>
         <meal>
-          <name>Deutscher Spargel, Hollandaise (Ei,Mi,Sl,Sw,GlW), Salzkartoffeln</name>
-          <note>Alkohol</note>
-          <note>Vegetarisch</note>
-          <price role="employee">6.20</price>
-          <price role="other">7.40</price>
-          <price role="student">4.90</price>
-        </meal>
-        <meal>
           <name>Deutscher Spargel, zerlassene Butter , Salzkartoffeln</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Vegetarisch</note>
@@ -47,6 +51,14 @@
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Farbstoff</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.40</price>
+          <price role="student">4.90</price>
+        </meal>
+        <meal>
+          <name>Deutscher Spargel, Hollandaise (Ei,Mi,Sl,Sw,GlW), Salzkartoffeln</name>
+          <note>Alkohol</note>
+          <note>Vegetarisch</note>
           <price role="employee">6.20</price>
           <price role="other">7.40</price>
           <price role="student">4.90</price>
@@ -64,7 +76,7 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta mit Nuss-Bolognese und Ruccola (Sl,GlW,NHa)</name>
+          <name>Pasta mit Spitzkohl-Curryrahm (Sl,GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
@@ -72,7 +84,7 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Pasta mit Spitzkohl-Curryrahm (Sl,GlW)</name>
+          <name>Pasta mit Nuss-Bolognese und Ruccola (Sl,GlW,NHa)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
