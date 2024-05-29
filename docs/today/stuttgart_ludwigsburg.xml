@@ -3,20 +3,18 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-05-28">
+    <day date="2024-05-29">
       <category name="Vorspeise">
         <meal>
-          <name>Tomatensuppe</name>
-          <note>Sellerie</note>
+          <name>Tagessuppe</name>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Zartweizen-Pfanne</name>
-          <note>Weizen</note>
-          <note>geschwärzt</note>
+          <name>Geschwenkte Risoleekartoffeln mit grünen Bohnen und Paprika Dip</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -24,40 +22,64 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Bandnudeln mit Austernpilzen und Frischkäse-Basilikum-Häubchen</name>
-          <note>Milch und Laktose</note>
+          <name>Schupfnudelnpfanne mit Zucchini, Paprika und Chilidip</name>
+          <note>Hafer</note>
           <note>Weizen</note>
-          <note>vegetarisch</note>
-          <price role="employee">7.00</price>
-          <price role="student">4.50</price>
+          <note>mit Süßungsmitteln</note>
+          <note>vegan</note>
+          <price role="employee">6.70</price>
+          <price role="student">4.20</price>
         </meal>
         <meal>
-          <name>Hackfleischröllchen mit Pfefferrahmsauce und Spirelli</name>
-          <note>Ei</note>
-          <note>Milch und Laktose</note>
-          <note>Rind</note>
-          <note>Weizen</note>
-          <price role="employee">6.50</price>
-          <price role="student">4.00</price>
-        </meal>
-        <meal>
-          <name>Paniertes Schollenfilet mit dänischer Remoulade und Bratkartoffeln</name>
-          <note>Ei</note>
-          <note>Fisch</note>
-          <note>MSC-zertifizierter Fisch (MSC-C-51632)</note>
+          <name>Gebratene Putenbrust an Sauce Robert mit Weißwein und Kräuternudeln</name>
+          <note>Geflügel</note>
           <note>Milch und Laktose</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Senf</note>
           <note>Weizen</note>
-          <note>mit Farbstoffen</note>
+          <note>mit Alkohol</note>
           <note>mit Süßungsmitteln</note>
           <price role="employee">7.90</price>
           <price role="student">5.40</price>
         </meal>
+        <meal>
+          <name>Hähnchenbrustfilet Piccata Milanese mit Tomaten-Spaghetti</name>
+          <note>Geflügel</note>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <price role="employee">7.40</price>
+          <price role="student">4.90</price>
+        </meal>
+      </category>
+      <category name="Aktion">
+        <meal>
+          <name>Burger Bar</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Gerste</note>
+          <note>Hafer</note>
+          <note>Milch und Laktose</note>
+          <note>Rind</note>
+          <note>Roggen</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Schwein</note>
+          <note>Senf</note>
+          <note>Sesam</note>
+          <note>Weizen</note>
+          <note>geschwefelt</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Farbstoffen</note>
+          <note>mit Konservierungsstoffen</note>
+          <note>mit Phosphaten</note>
+          <note>mit Süßungsmitteln</note>
+          <price role="employee">29.00</price>
+          <price role="student">20.00</price>
+        </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Buntes Gemüse</name>
+          <name>Tagesgemüse</name>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -67,9 +89,8 @@
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Bratkartoffeln</name>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>vegan</note>
+          <name>Country Potatoes</name>
+          <note>Weizen</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
@@ -84,22 +105,16 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Nuss-Nougat-Pudding</name>
-          <note>Haselnüsse</note>
+          <name>Karamellpudding</name>
           <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Früchtequark</name>
+          <name>Vanillejoghurt</name>
           <note>Milch und Laktose</note>
-          <note>mit Antioxidationsmitteln</note>
-          <price role="employee">1.59</price>
-          <price role="student">1.19</price>
-        </meal>
-        <meal>
-          <name>Aprikosenjoghurt</name>
-          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
