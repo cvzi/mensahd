@@ -6,8 +6,7 @@
     <day date="2024-05-31">
       <category name="Pottkieker">
         <meal>
-          <name>Gelbe Linsensuppe mit Mango</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Blumenkohl Korma, Blechkartoffeln</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">3.40</price>
@@ -15,18 +14,17 @@
           <price role="student">2.20</price>
         </meal>
       </category>
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Fritten Oriental mit Falaffel und Grillgemüse (GlW), Hummus</name>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.50</price>
-          <price role="other">6.70</price>
-          <price role="student">4.20</price>
-        </meal>
-      </category>
       <category name="CampusVital">
+        <meal>
+          <name>Pikantes Rührei mit Libanesischen Kartoffeln</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.50</price>
+          <price role="other">5.70</price>
+          <price role="student">3.20</price>
+        </meal>
         <meal>
           <name>Burrito Bowl mit Sonnenblumenhack, Petersilie-Knoblauch-Dip (1,3,Sl,Sf,GlH), Tomaten-Gurken-Salsa</name>
           <note>Geschwefelt</note>
@@ -38,18 +36,16 @@
           <price role="other">6.80</price>
           <price role="student">4.30</price>
         </meal>
-        <meal>
-          <name>Pikantes Rührei mit Libanesischen Kartoffeln</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">4.50</price>
-          <price role="other">5.70</price>
-          <price role="student">3.20</price>
-        </meal>
       </category>
       <category name="CampusWorld">
+        <meal>
+          <name>Pizza Funghi vegan Large (1,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.40</price>
+          <price role="other">7.60</price>
+          <price role="student">5.10</price>
+        </meal>
         <meal>
           <name>Frisch gebackene PIZZA LARGE nach Wahl (versch. Sorten) ab 4,40 / 5,70 / 6,90 (auch TAKE AWAY) (Mi,GlW)</name>
           <note>Vegetarisch</note>
@@ -58,11 +54,18 @@
           <price role="student">4.40</price>
         </meal>
         <meal>
-          <name>Pizza Funghi Large (Mi,GlW)</name>
+          <name>Pizza Rucola mit Rucola, Grana Padano, Knoblauch und Käse Large (2,Ei,Mi,GlW)</name>
           <note>Vegetarisch</note>
-          <price role="employee">6.10</price>
-          <price role="other">7.30</price>
-          <price role="student">4.80</price>
+          <price role="employee">6.60</price>
+          <price role="other">7.80</price>
+          <price role="student">5.30</price>
+        </meal>
+        <meal>
+          <name>Pizza Margherita Large (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">5.70</price>
+          <price role="other">6.90</price>
+          <price role="student">4.40</price>
         </meal>
         <meal>
           <name>Pizza Margeritha vegan Large (1,GlW)</name>
@@ -73,31 +76,16 @@
           <price role="student">4.60</price>
         </meal>
         <meal>
-          <name>Pizza Margherita Large (Mi,GlW)</name>
+          <name>Pizza Funghi Large (Mi,GlW)</name>
           <note>Vegetarisch</note>
-          <price role="employee">5.70</price>
-          <price role="other">6.90</price>
-          <price role="student">4.40</price>
-        </meal>
-        <meal>
-          <name>Pizza Funghi vegan Large (1,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.40</price>
-          <price role="other">7.60</price>
-          <price role="student">5.10</price>
-        </meal>
-        <meal>
-          <name>Pizza Rucola mit Rucola, Grana Padano, Knoblauch und Käse Large (2,Ei,Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">6.60</price>
-          <price role="other">7.80</price>
-          <price role="student">5.30</price>
+          <price role="employee">6.10</price>
+          <price role="other">7.30</price>
+          <price role="student">4.80</price>
         </meal>
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta spinaci e arachidi mit Spinat-Erdnusssoße (2,En,So,Sl,GlW,NMa), Farfalle (GlW)</name>
+          <name>gebratene Zucchini-Paprika Gemüse</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
@@ -105,8 +93,16 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Pasta al forno della nonna mit Käse überbacken (Ei,Mi,GlW)</name>
+          <name>Pasta con Crema di pesto mit Gemüse und Pestocreme (Mi,Sl,GlW,GlG,NCa)</name>
           <note>Vegetarisch</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Bratnudeln mit Gemüsestreifen (2,So,Se,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -114,16 +110,9 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Maisgemüse in Tomatenrahm , Ingwermöhrchen mit Sesam , Gemüse süß sauer aus dem Wok , Grüne Bohnen mit Sesam und Sojasoße (2,So,Se,GlW), Gemüse Sesamreis , Kartoffelgratin</name>
-          <note>Ei und Eierzeugnisse</note>
+          <name>Broccoli natur, vegan, Karotten natur, vegan , Blattspinat in Rahm (Mi,GlW)</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegetarisch</note>
-          <note>mit Konservierungsstoff</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
