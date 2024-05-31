@@ -4,8 +4,61 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2024-05-30">
-      <closed/>
+    <day date="2024-05-31">
+      <category name="Dessert">
+        <meal>
+          <name>Rote Beerengrütze mit Vanillecreme</name>
+          <note>Red berry jelly with vanilla cream</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Trifle vom Chiapudding mit Früchten und Zimtsahne</name>
+          <note>Chia pudding trifle with fruit and cinnamon cream</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Cremesuppe von der Pastinake und Kartoffel</name>
+          <note>Creamy parsnip and potato soup</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Auf der Haut gebratener Seehecht mit Tahini-Paprikaragout, dazu gelben Reis</name>
+          <note>Hake fried on the skin with tahini-pepper ragout, served with yellow rice</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Kartoffeln und Bete aus dem Ofen mit veganem Kräuterdip, dazu Stückobst</name>
+          <note>Potatoes and beets from the oven with a vegan herb dip and a fruit</note>
+          <price role="student">2.90</price>
+          <price role="employee">4.35</price>
+          <price role="other">7.25</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Hausgemachte Nudeln mit Gorgonzolasoße und Lauch</name>
+          <note>Homemade Pasta with gorgonzola sauce and leek</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
