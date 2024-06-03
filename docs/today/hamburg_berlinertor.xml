@@ -27,20 +27,20 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Deutscher Spargel, Hollandaise , Salzkartoffeln</name>
-          <note>Alkohol</note>
-          <note>Ei und Eierzeugnisse</note>
+          <name>Deutscher Spargel, zerlassene Butter , Salzkartoffeln</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegetarisch</note>
           <price role="employee">6.20</price>
           <price role="other">7.40</price>
           <price role="student">4.90</price>
         </meal>
         <meal>
-          <name>Deutscher Spargel, zerlassene Butter , Salzkartoffeln</name>
+          <name>Deutscher Spargel, Hollandaise , Salzkartoffeln</name>
+          <note>Alkohol</note>
+          <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegetarisch</note>
           <price role="employee">6.20</price>
           <price role="other">7.40</price>
@@ -93,8 +93,10 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Tomatensoße, Pasta (GlW)</name>
-          <note>Vegan</note>
+          <name>Curry-Kokosnuss Sauce mit Hähnchenstreifen , Pasta (GlW)</name>
+          <note>Geflügel</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
@@ -108,10 +110,8 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Curry-Kokosnuss Sauce mit Hähnchenstreifen , Pasta (GlW)</name>
-          <note>Geflügel</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
+          <name>Tomatensoße, Pasta (GlW)</name>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
@@ -452,6 +452,14 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
+          <name>Gnocchi-Tomaten-Auflauf mit Mozzarella überbacken</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">4.80</price>
+          <price role="other">6.00</price>
+          <price role="student">3.50</price>
+        </meal>
+        <meal>
           <name>Vegane Bällchen in Kapernsoße (1,So,Sl,Sw,GlW,GlG), Reis, Rote Beete Salat</name>
           <note>Alkohol</note>
           <note>Vegan</note>
@@ -460,14 +468,6 @@
           <price role="employee">5.20</price>
           <price role="other">6.40</price>
           <price role="student">3.90</price>
-        </meal>
-        <meal>
-          <name>Gnocchi-Tomaten-Auflauf mit Mozzarella überbacken</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
-          <price role="employee">4.80</price>
-          <price role="other">6.00</price>
-          <price role="student">3.50</price>
         </meal>
       </category>
       <category name="CampusVital">
@@ -482,7 +482,7 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Flammkuchen mit Rahmspinat (Mi,GlW)</name>
+          <name>Flammkuchen mit geschmolzenen Camembert und Apfelwürfel (Mi,GlW)</name>
           <note>Vegetarisch</note>
           <price role="employee">5.55</price>
           <price role="other">6.75</price>
@@ -496,7 +496,7 @@
           <price role="student">4.90</price>
         </meal>
         <meal>
-          <name>Flammkuchen mit geschmolzenen Camembert und Apfelwürfel (Mi,GlW)</name>
+          <name>Flammkuchen mit Rahmspinat (Mi,GlW)</name>
           <note>Vegetarisch</note>
           <price role="employee">5.55</price>
           <price role="other">6.75</price>
