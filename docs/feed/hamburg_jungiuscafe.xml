@@ -3,37 +3,6 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-06-04">
-      <category name="Pottkieker">
-        <meal>
-          <name>Chili con Corn (Sl,GlD), Basmatireis</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">3.40</price>
-          <price role="other">4.10</price>
-          <price role="student">2.20</price>
-        </meal>
-      </category>
-      <category name="CampusSpezial">
-        <meal>
-          <name>Gebratenes Seelachsfilet (Fi,GlW), Blattspinat in Rahm (Mi,GlW), Salzkartoffeln</name>
-          <note>mit Fisch</note>
-          <price role="employee">6.70</price>
-          <price role="other">7.90</price>
-          <price role="student">5.40</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Asia-Reis-Pot, Sojastreifen, Kimchi, Gurke, Frühlingszwiebel, Koriander, Erdnüsse und Chilimajo (1,2,3,9,Ei,En,So,Sl,Sf,Se,GlW)</name>
-          <note>Vegetarisch</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">4.50</price>
-          <price role="other">5.70</price>
-          <price role="student">3.20</price>
-        </meal>
-      </category>
-    </day>
     <day date="2024-06-05">
       <category name="CampusKlassiker">
         <meal>
@@ -106,6 +75,77 @@
       </category>
     </day>
     <day date="2024-06-10">
+      <category name="Pottkieker">
+        <meal>
+          <name>Kokos-Kürbis-Curry , Reis</name>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Kräuterrührei , Bratkartoffeln, Salatgarnitur</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">4.90</price>
+          <price role="other">6.10</price>
+          <price role="student">3.60</price>
+        </meal>
+      </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Texashacksteak (Ei,GlW), Pfefferrahmsoße (Mi,Sl,GlW), Kartoffelspalten (GlW)</name>
+          <note>Rind</note>
+          <price role="employee">5.70</price>
+          <price role="other">6.90</price>
+          <price role="student">4.40</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-06-11">
+      <category name="Pottkieker">
+        <meal>
+          <name>LowBowl mit Reis, Erbsen, Kürbis und Kokos</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Gebackene Seelachsfiletwürfel (Fi,Mi,GlW), Remoulade , Kräuterkartoffeln</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Farbstoff</note>
+          <note>mit Fisch</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">4.20</price>
+          <price role="other">5.40</price>
+          <price role="student">2.90</price>
+        </meal>
+        <meal>
+          <name>4 Röstiecken, Kräuterquark , Gurkensalat</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">4.20</price>
+          <price role="other">5.40</price>
+          <price role="student">2.90</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-06-12">
       <category name="CampusSpezial">
         <meal>
           <name>Deutscher Spargel, Hollandaise , Salzkartoffeln</name>
@@ -119,10 +159,6 @@
           <price role="other">7.40</price>
           <price role="student">4.90</price>
         </meal>
-      </category>
-    </day>
-    <day date="2024-06-12">
-      <category name="CampusSpezial">
         <meal>
           <name>Deutscher Spargel, zerlassene Butter , Salzkartoffeln</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -130,6 +166,74 @@
           <price role="employee">6.20</price>
           <price role="other">7.40</price>
           <price role="student">4.90</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Ungarisches Rindergulasch , Spätzle (Ei,GlW)</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Rind</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">6.30</price>
+          <price role="other">7.50</price>
+          <price role="student">5.00</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-06-13">
+      <category name="Pottkieker">
+        <meal>
+          <name>Holsteiner Kartoffeltopf (So,Sl,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Hausgemachte Gemüselasagne (So,Mi,Sl,GlW), Tomatensoße</name>
+          <note>Vegetarisch</note>
+          <price role="employee">6.30</price>
+          <price role="other">7.50</price>
+          <price role="student">5.00</price>
+        </meal>
+        <meal>
+          <name>Susländer grobe Bratwurst , Ananas Sauerkraut, Bratkartoffeln</name>
+          <note>Schwein</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Phosphat</note>
+          <price role="employee">5.60</price>
+          <price role="other">6.80</price>
+          <price role="student">4.30</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-06-14">
+      <category name="Pottkieker">
+        <meal>
+          <name>Gemüsegulasch , Zartweizen (GlW)</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Lupinen-Bolognese , Penne (GlW)</name>
+          <note>Lupine und - erzeugnisse</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Farbstoff</note>
+          <price role="employee">4.20</price>
+          <price role="other">5.40</price>
+          <price role="student">2.90</price>
         </meal>
       </category>
     </day>
