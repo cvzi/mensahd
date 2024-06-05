@@ -3,22 +3,24 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-06-04">
+    <day date="2024-06-05">
       <category name="Vorspeise">
         <meal>
-          <name>Indische Curry suppe</name>
+          <name>Kräuter-Pilzsuppe</name>
+          <note>Milch und Laktose</note>
           <note>Sellerie</note>
           <note>Weizen</note>
-          <note>vegan</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Chili sin Carne und Reis</name>
+          <name>Penne an Tomatensugo mit Kräutern</name>
           <note>Sellerie</note>
-          <note>Soja</note>
+          <note>Weizen</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -26,24 +28,36 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Ofenkartoffel mit veganem Sour Creme Dip und Salat</name>
-          <note>Hafer</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>vegan</note>
-          <price role="employee">6.30</price>
-          <price role="student">3.80</price>
+          <name>Milchreis mit Kirschen und Zimt Zucker</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">5.60</price>
+          <price role="student">3.10</price>
         </meal>
         <meal>
-          <name>Schweinebraten mit Jägersauce mit Kartoffelknödel und</name>
+          <name>Schweinebraten mit Jägersauce und Nudeln</name>
           <note>Milch und Laktose</note>
           <note>Schwein</note>
           <note>Weizen</note>
           <note>mit Antioxidationsmitteln</note>
-          <price role="employee">7.70</price>
-          <price role="student">5.20</price>
+          <price role="employee">7.60</price>
+          <price role="student">5.10</price>
         </meal>
         <meal>
-          <name>Bunter Salatteller mit paniertem Schweineschnitzel</name>
+          <name>Hähnchen-Döner mit Joghurt-Knoblauch-Dip</name>
+          <note>Geflügel</note>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Senf</note>
+          <note>Sesam</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Farbstoffen</note>
+          <price role="employee">7.90</price>
+          <price role="student">5.40</price>
+        </meal>
+        <meal>
+          <name>Bunter Salatteller mit Paniertes Schweineschnitzel</name>
           <note>Ei</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Schwein</note>
@@ -53,33 +67,18 @@
           <price role="employee">7.90</price>
           <price role="student">5.40</price>
         </meal>
+        <meal>
+          <name>Bunter Salatteller mit Veganes Schnitzel</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Senf</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>vegan</note>
+          <price role="employee">7.70</price>
+          <price role="student">5.20</price>
+        </meal>
       </category>
       <category name="Aktion">
-        <meal>
-          <name>Burger Bar</name>
-          <note>Dinkel</note>
-          <note>Ei</note>
-          <note>Gerste</note>
-          <note>Hafer</note>
-          <note>Milch und Laktose</note>
-          <note>Rind</note>
-          <note>Roggen</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Schwein</note>
-          <note>Senf</note>
-          <note>Sesam</note>
-          <note>Weizen</note>
-          <note>geschwefelt</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
-          <note>mit Konservierungsstoffen</note>
-          <note>mit Phosphaten</note>
-          <note>mit Süßungsmitteln</note>
-          <note>vegan</note>
-          <note>vegetarisch</note>
-          <price role="employee">2.90</price>
-          <price role="student">2.00</price>
-        </meal>
         <meal>
           <name>Wok im OG: Gemüsewok Grünes Thai Curry mit Duftreis Hähnchenstreifen zum Wokgericht</name>
           <note>Geflügel</note>
@@ -116,18 +115,11 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Orientalisches Gemüse</name>
-          <note>Sellerie</note>
+          <name>Romanesco mit gerösteten Mandeln</name>
+          <note>Mandeln</note>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
-        </meal>
-        <meal>
-          <name>Country Potatoes</name>
-          <note>Weizen</note>
-          <note>vegan</note>
-          <price role="employee">1.59</price>
-          <price role="student">1.19</price>
         </meal>
         <meal>
           <name>Pommes frites</name>
@@ -136,13 +128,8 @@
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Reis</name>
-          <note>vegan</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-        <meal>
-          <name>Kartoffelknödel</name>
+          <name>Risoleekartoffeln</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>vegan</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
@@ -158,14 +145,20 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Sahneschokopudding</name>
+          <name>Früchtemüsli</name>
+          <note>Gerste</note>
+          <note>Hafer</note>
+          <note>Haselnüsse</note>
+          <note>Mandeln</note>
           <note>Milch und Laktose</note>
+          <note>mit Antioxidationsmitteln</note>
           <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Käsesahne Creme</name>
+          <name>Creme Brûlée</name>
+          <note>Ei</note>
           <note>Milch und Laktose</note>
           <note>vegetarisch</note>
           <price role="employee">1.59</price>
