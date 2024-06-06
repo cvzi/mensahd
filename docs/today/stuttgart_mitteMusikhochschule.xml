@@ -3,13 +3,13 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-06-05">
+    <day date="2024-06-06">
       <category name="Vorspeise">
         <meal>
-          <name>Petersiliensuppe</name>
+          <name>Grießklößchensuppe</name>
+          <note>Ei</note>
           <note>Milch und Laktose</note>
           <note>Sellerie</note>
-          <note>Soja</note>
           <note>Weizen</note>
           <note>vegetarisch</note>
           <price role="employee">1.39</price>
@@ -18,9 +18,12 @@
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Penne an Tomatensugo mit Kräutern</name>
+          <name>Gemüseeintopf nach Pichelsteiner Art mit Dinkelbrötchen</name>
+          <note>Dinkel</note>
+          <note>Gerste</note>
+          <note>Roggen</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
-          <note>Weizen</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -28,43 +31,40 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Milchreis mit Kirschen und Zimt Zucker</name>
-          <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
-          <price role="employee">5.60</price>
-          <price role="student">3.10</price>
+          <name>Hähnchenkeule mit Orangensauce und Gemüse-Couscous</name>
+          <note>Geflügel</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <price role="employee">7.70</price>
+          <price role="student">5.20</price>
         </meal>
         <meal>
-          <name>Wurstgulasch mit Risoleekartoffeln</name>
-          <note>Rind</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Schwein</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>mit Antioxidationsmitteln</note>
+          <name>Wrap mit Gemüse und Kidneybohnenmus</name>
+          <note>Weizen</note>
           <note>mit Konservierungsstoffen</note>
-          <note>mit Süßungsmitteln</note>
-          <price role="employee">7.10</price>
-          <price role="student">4.60</price>
+          <note>vegan</note>
+          <price role="employee">6.50</price>
+          <price role="student">4.00</price>
         </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Gemischtes Gemüse</name>
+          <name>Ratatouille-Gemüse</name>
           <note>Sellerie</note>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
         <meal>
-          <name>Pommes frites</name>
+          <name>Gemüse-Couscous</name>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>vegan</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Risoleekartoffeln</name>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>vegan</note>
+          <name>Pommes frites</name>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
@@ -79,17 +79,15 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Creme Brûlée</name>
-          <note>Ei</note>
+          <name>Pudding mit Vanille-Geschmack</name>
           <note>Milch und Laktose</note>
           <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Heidelbeerquark</name>
+          <name>Creme mit Tiramisu-Geschmack</name>
           <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
