@@ -4,6 +4,16 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2024-06-11">
+      <category name="Pottkieker">
+        <meal>
+          <name>mexikanischer Bohneneintopf (So,Sl,GlW), Basmatireis</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
       <category name="CampusVital">
         <meal>
           <name>Lachsfilet auf buntem Gemüse-Couscous (3,5,Fi,Sl,Sw,GlW), Joghurt-Zitronen-Dip</name>
@@ -17,21 +27,10 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Deutscher Spargel, Hollandaise , Salzkartoffeln</name>
-          <note>Alkohol</note>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegetarisch</note>
-          <price role="employee">6.20</price>
-          <price role="other">7.40</price>
-          <price role="student">4.90</price>
-        </meal>
-        <meal>
-          <name>Deutscher Spargel, zerlassene Butter , Salzkartoffeln</name>
+          <name>Deutscher Spargel, zerlassene Butter ODER zerlassene Margarine , Salzkartoffeln</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Vegetarisch</note>
+          <note>mit Farbstoff</note>
           <price role="employee">6.20</price>
           <price role="other">7.40</price>
           <price role="student">4.90</price>
@@ -41,6 +40,18 @@
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Farbstoff</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.40</price>
+          <price role="student">4.90</price>
+        </meal>
+        <meal>
+          <name>Deutscher Spargel, Hollandaise , Salzkartoffeln</name>
+          <note>Alkohol</note>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
           <price role="employee">6.20</price>
           <price role="other">7.40</price>
           <price role="student">4.90</price>
@@ -69,9 +80,15 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Kräuterkartoffeln, Pommes Frites , gebratener Pak Choi (2,So,GlW), gerösteter Blumenkohl , Süßkartoffeln, gebratene Zucchini</name>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <name>Kräuterkartoffeln, gebratene Karotten, gebratener Pak Choi (2,So,GlW), Süßkartoffeln, gebratene Zucchini</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Kräuterkartoffeln, gebratene Karotten, gebratener Pak Choi (2,So,GlW), Süßkartoffeln, gebratene Zucchini</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
@@ -105,6 +122,15 @@
       </category>
       <category name="CampusWorld">
         <meal>
+          <name>Gebratene Pierogi mit Kartoffel-Quarkfüllung (1,Ei,Mi,Sl,GlW), Kräuterquark , Rote Beete Salat</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">5.20</price>
+          <price role="other">6.40</price>
+          <price role="student">3.90</price>
+        </meal>
+        <meal>
           <name>Cremiges Kräuter-Risotto mit frischen Champignons vom Grill und einem Kürbis - Espuma</name>
           <note>Alkohol</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -115,15 +141,6 @@
           <price role="employee">6.10</price>
           <price role="other">7.30</price>
           <price role="student">4.80</price>
-        </meal>
-        <meal>
-          <name>Gebratene Pierogi mit Kartoffel-Quarkfüllung (1,Ei,Mi,Sl,GlW), Kräuterquark , Rote Beete Salat</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.40</price>
-          <price role="student">3.90</price>
         </meal>
         <meal>
           <name>Djaj Mahshi - Limetten–Hähnchenkeule auf Auberginen – Bulgur mit Granatapfelkernen und Joghurt (3,Mi,Sl,Sw,GlW)</name>
