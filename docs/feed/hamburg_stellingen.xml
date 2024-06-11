@@ -3,41 +3,6 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-06-10">
-      <category name="Pottkieker">
-        <meal>
-          <name>WarmBowl mit Kürbis, Kokos, Reis &amp; Edamame</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">3.40</price>
-          <price role="other">4.10</price>
-          <price role="student">2.20</price>
-        </meal>
-      </category>
-      <category name="CampusSpezial">
-        <meal>
-          <name>Texashacksteak (Ei,GlW), Tomaten-Gurken-Salsa, Rosmarinkartoffeln</name>
-          <note>Rind</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.70</price>
-          <price role="other">6.90</price>
-          <price role="student">4.40</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Mini-Frühlingsrollen (So,GlW), scharfer Asia-Dip, Wok-Gemüse, Curryreis</name>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.40</price>
-          <price role="other">6.60</price>
-          <price role="student">4.10</price>
-        </meal>
-      </category>
-    </day>
     <day date="2024-06-11">
       <category name="Pottkieker">
         <meal>
@@ -45,6 +10,7 @@
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Geschmacksverstärker</note>
           <price role="employee">3.40</price>
           <price role="other">4.10</price>
           <price role="student">2.20</price>
@@ -52,11 +18,9 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Rindergulasch mit Paprika , Spätzle mit Gemüsestreifen (Ei,Sl,GlW)</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <name>Rindergulasch mit Paprika, Spätzle mit Gemüsestreifen (Ei,Sl,GlW)</name>
           <note>Rind</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>mit Süßungsmittel</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">6.30</price>
           <price role="other">7.50</price>
           <price role="student">5.00</price>
@@ -64,7 +28,7 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Falafelbällchen mit Gemüsereis (Sl,Se,GlW), Pfirsich-Tomaten-Chutney</name>
+          <name>Falafelbällchen mit würzigem Gemüsereis (Sl,Se,GlW), Pfirsich-Tomaten-Chutney</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">5.20</price>
@@ -76,10 +40,13 @@
     <day date="2024-06-12">
       <category name="Pottkieker">
         <meal>
-          <name>WarmBowl mit Tomate, Edamame &amp; Reis</name>
+          <name>Asia-Suppe mit Gemüse &amp; Reis</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Konservierungsstoff</note>
           <price role="employee">3.40</price>
           <price role="other">4.10</price>
           <price role="student">2.20</price>
@@ -100,18 +67,6 @@
           <price role="employee">5.60</price>
           <price role="other">6.80</price>
           <price role="student">4.30</price>
-        </meal>
-      </category>
-      <category name="CampusSpezial">
-        <meal>
-          <name>Frischer Stangenspargel, Hollandaise , Petersilienkartoffeln</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegetarisch</note>
-          <price role="employee">6.20</price>
-          <price role="other">7.40</price>
-          <price role="student">4.90</price>
         </meal>
       </category>
     </day>
@@ -343,6 +298,15 @@
     <day date="2024-06-21">
       <category name="Pottkieker">
         <meal>
+          <name>Kürbis Arrabiata , Penne (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Geschmacksverstärker</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+        <meal>
           <name>Kokos Milchreis Vegan , Apfelkompott , Zimt und Zucker</name>
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
@@ -351,15 +315,6 @@
           <price role="employee">3.10</price>
           <price role="other">3.80</price>
           <price role="student">1.90</price>
-        </meal>
-        <meal>
-          <name>Kürbis Arrabiata , Penne (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Geschmacksverstärker</note>
-          <price role="employee">3.40</price>
-          <price role="other">4.10</price>
-          <price role="student">2.20</price>
         </meal>
       </category>
       <category name="CampusKlassiker">
