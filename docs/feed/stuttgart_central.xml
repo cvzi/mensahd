@@ -6,7 +6,12 @@
     <day date="2024-06-18">
       <category name="Vorspeise">
         <meal>
-          <name>Tagessuppe</name>
+          <name>Maultaschensuppe</name>
+          <note>Ei</note>
+          <note>Rind</note>
+          <note>Schwein</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -101,16 +106,11 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Tagesgemüse</name>
+          <name>Blumenkohl</name>
+          <note>Sellerie</note>
+          <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
-        </meal>
-        <meal>
-          <name>Bratkartoffeln</name>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>vegan</note>
-          <price role="employee">1.59</price>
-          <price role="student">1.19</price>
         </meal>
         <meal>
           <name>Penne</name>
@@ -228,6 +228,31 @@
           <note>mit Konservierungsstoffen</note>
           <price role="employee">12.00</price>
           <price role="student">9.50</price>
+        </meal>
+      </category>
+      <category name="Aktion">
+        <meal>
+          <name>Fusilloni Zucchini Mozzarella und schwarze Oliven</name>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>geschwärzt</note>
+          <note>hauseigene Nudelmanufaktur</note>
+          <note>vegetarisch</note>
+          <price role="employee">6.95</price>
+          <price role="student">4.45</price>
+        </meal>
+        <meal>
+          <name>Fusilloni Carbonara</name>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Schwein</note>
+          <note>Weizen</note>
+          <note>hauseigene Nudelmanufaktur</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Konservierungsstoffen</note>
+          <price role="employee">7.45</price>
+          <price role="student">4.95</price>
         </meal>
       </category>
       <category name="Beilage">
@@ -583,10 +608,9 @@
       <category name="Veganer renner">
         <meal>
           <name>Gebratene Mienudeln mit Paprika, Weißkraut und Karotten</name>
-          <note>Ei</note>
           <note>Soja</note>
           <note>Weizen</note>
-          <note>vegetarisch</note>
+          <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
         </meal>
@@ -732,7 +756,6 @@
       <category name="Aktion">
         <meal>
           <name>Gemüsewok Rotes Thai Curry mit Mienudeln</name>
-          <note>Ei</note>
           <note>Weizen</note>
           <note>vegetarisch</note>
           <price role="employee">6.95</price>
