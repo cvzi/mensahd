@@ -3,57 +3,17 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-06-18">
-      <category name="CampusWorld">
-        <meal>
-          <name>Asiatischer Schweinekrustenbraten mit Teriyakiglace (So,Se,GlW), Ingwer - Gurkensalat , Limetten-Koriander-Salsa , Basmatireis</name>
-          <note>Schwein</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">6.50</price>
-          <price role="other">7.70</price>
-          <price role="student">5.20</price>
-        </meal>
-        <meal>
-          <name>Maultaschen auf Blattsalaten mit Italiandressing und Tomatenwürfeln (1,3,5,Mi,Sf,Se,Sw,GlW)</name>
-          <note>Neu</note>
-          <note>Vegetarisch</note>
-          <price role="employee">5.50</price>
-          <price role="other">6.70</price>
-          <price role="student">4.20</price>
-        </meal>
-        <meal>
-          <name>Hühnchen in Kokos Soße (2,So,Sl,GlW), Sesammöhrchen , Basmatireis</name>
-          <note>Geflügel</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.80</price>
-          <price role="other">7.00</price>
-          <price role="student">4.50</price>
-        </meal>
-      </category>
-      <category name="Pastabar">
-        <meal>
-          <name>Pasta des Tages (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-      </category>
-      <category name="Gemüsebar">
-        <meal>
-          <name>Gemüse des Tages</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-      </category>
-    </day>
     <day date="2024-06-19">
+      <category name="Pottkieker">
+        <meal>
+          <name>Chili con Corn (Sl,GlD), Tortilla Chips</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
       <category name="CampusVital">
         <meal>
           <name>Geschmortes Masala - Champignoncurry , Basmatireis</name>
@@ -223,15 +183,19 @@
       </category>
     </day>
     <day date="2024-06-24">
-      <category name="CampusWorld">
+      <category name="CampusSpezial">
         <meal>
-          <name>Gebratene Hähnchenstreifen mit frischem Wokgemüse, Spicy-Ginger-Sauce, Koriander und Basmaitreis (1,2,5,En,So,Sw,GlW)</name>
-          <note>Geflügel</note>
+          <name>Vegane Maultaschen (GlW), Ratatouille , Petersilie</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">7.20</price>
-          <price role="other">8.40</price>
-          <price role="student">5.90</price>
+          <price role="employee">5.70</price>
+          <price role="other">6.90</price>
+          <price role="student">4.40</price>
         </meal>
+      </category>
+      <category name="CampusWorld">
         <meal>
           <name>Frisches Wokgemüse mit Spicy-Ginger - Soße, Koriander und Basmaitreis (1,2,5,En,So,Sw,GlW)</name>
           <note>Vegan</note>
@@ -239,6 +203,25 @@
           <price role="employee">6.10</price>
           <price role="other">7.30</price>
           <price role="student">4.80</price>
+        </meal>
+        <meal>
+          <name>Putengyros, Tzatziki , Krautsalat , Paprikareis</name>
+          <note>Geflügel</note>
+          <note>Geschwefelt</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">6.80</price>
+          <price role="other">8.00</price>
+          <price role="student">5.50</price>
+        </meal>
+        <meal>
+          <name>Gebratene Hähnchenstreifen mit frischem Wokgemüse, Spicy-Ginger-Sauce, Koriander und Basmaitreis (1,2,5,En,So,Sw,GlW)</name>
+          <note>Geflügel</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">7.20</price>
+          <price role="other">8.40</price>
+          <price role="student">5.90</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -263,6 +246,37 @@
       </category>
     </day>
     <day date="2024-06-25">
+      <category name="Pottkieker">
+        <meal>
+          <name>Chili con Corn (Sl,GlD), Basmatireis</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>scharfe Kokos-Limonen-Suppe mit Udon-Nudeln (2,3,So,Sl,Se,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.60</price>
+          <price role="other">6.80</price>
+          <price role="student">4.30</price>
+        </meal>
+      </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Gebratenes Seelachsfilet (Fi,GlW), Chipotlesoße (mild) (1,2,5,9,So,Sw,GlW), pikanter Karottensalat , Röstkartoffeln</name>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Fisch</note>
+          <price role="employee">6.70</price>
+          <price role="other">7.90</price>
+          <price role="student">5.40</price>
+        </meal>
+      </category>
       <category name="Pastabar">
         <meal>
           <name>Pasta des Tages (GlW)</name>
@@ -285,6 +299,39 @@
       </category>
     </day>
     <day date="2024-06-26">
+      <category name="Pottkieker">
+        <meal>
+          <name>Möhrensuppe mit Ingwer , Baguette Brötchen (GlW,GlR)</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Spaghetti (GlW), Bolognese , Hartkäse gerieben</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <price role="employee">4.60</price>
+          <price role="other">5.80</price>
+          <price role="student">3.30</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Grüne Gemüsepfanne mit Erdnusssoße (2,En,So,GlW), Vollkornreis</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.40</price>
+          <price role="other">5.60</price>
+          <price role="student">3.10</price>
+        </meal>
+      </category>
       <category name="CampusWorld">
         <meal>
           <name>Zhu Rou Chao Mian - Gebratene Nudeln aus dem Wok mit Schweinefleisch,Cashewkernen,Pak Choi,Sprossen (1,2,4,Ei,So,Se,Wt,GlW,NCa)</name>
@@ -317,6 +364,26 @@
       </category>
     </day>
     <day date="2024-06-27">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Hähnchenbrust in Parmesanpanade (Mi,GlW), tomatisierte Kräutersoße (Mi,GlW,GlG), Hausgemachtes Kartoffel-Butterstampf</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <price role="employee">5.90</price>
+          <price role="other">7.10</price>
+          <price role="student">4.60</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Süßkartoffel-Linsengemüse mit Römersalat und Limetten-Senf-Dressing (3,Sf,NMa)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.10</price>
+          <price role="other">6.30</price>
+          <price role="student">3.80</price>
+        </meal>
+      </category>
       <category name="CampusWorld">
         <meal>
           <name>Breath of the Tiger BOWL mit Panko-Tofu (2,Ei,So,GlW), Zitronengras - Basmatireis, Spicy Limetten-Edamame , Madras-Kürbis, gebratene Mungo-Sprossen (2,So,Se,GlW), Ingwer marinierte Mango, geschmorter Pakchoi , Spicy Pepper Sauce ,</name>
@@ -356,6 +423,27 @@
       </category>
     </day>
     <day date="2024-06-28">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Vegane Bällchen in Kapernsoße (1,So,Sl,Sw,GlW,GlG), Reis, Rote Beete Salat</name>
+          <note>Alkohol</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">5.20</price>
+          <price role="other">6.40</price>
+          <price role="student">3.90</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Pad Thai Reisnudeln mit Gemüse und Ei (2,Ei,So,Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">4.40</price>
+          <price role="other">5.60</price>
+          <price role="student">3.10</price>
+        </meal>
+      </category>
       <category name="CampusWorld">
         <meal>
           <name>Makloubeh, Orientalischer Reis mit Zimt, Nüssen, Datteln, Rosinen, Granatapfel und Grill-Aubergine (So,Sl,Se,NMa,NWa)</name>
