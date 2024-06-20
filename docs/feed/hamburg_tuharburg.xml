@@ -45,19 +45,17 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Funghi di bosco e basilico mit Waldpilzen und Basilikum , Maccaroni (GlW)</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Tortellini mit Käsefüllung (Mi,GlW), Noci di zucchine mit Zucchini-Walnusssoße (So,GlW,NWa)</name>
+          <note>Vegetarisch</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Tortellini mit Käsefüllung (Mi,GlW), Noci di zucchine mit Zucchini-Walnusssoße (So,GlW,NWa)</name>
-          <note>Vegetarisch</note>
+          <name>Ratatouille mit veganen Hackbällchen (So,Sl,Sw,GlW,GlG), Pasta (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mensaVital</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -71,10 +69,21 @@
           <price role="other">1.15</price>
           <price role="student">0.75</price>
         </meal>
+        <meal>
+          <name>Funghi di bosco e basilico mit Waldpilzen und Basilikum , Maccaroni (GlW)</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Blattspinat , Wok-Gemüse, Rosenkohl , Edamame , Rosmarinkartoffeln</name>
+          <name>Blattspinat in Sojarahm , Wok-Gemüse, Rosenkohl , Edamame , Rosmarinkartoffeln</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
@@ -214,18 +223,18 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Broccoli e Gorgonzola mit Gorgonzola und Broccoli , Conchiglie (GlW)</name>
+          <name>Saporita mit Rindfleisch und Paprika , Conchiglie (GlW)</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Saporita mit Rindfleisch und Paprika , Conchiglie (GlW)</name>
+          <name>Broccoli e Gorgonzola mit Gorgonzola und Broccoli , Conchiglie (GlW)</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Rind</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -409,16 +418,6 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Homemade paniertes Putenschnitzel (Ei,GlW), Steirischer Kartoffelsalat mit Kürbiskernen</name>
-          <note>Geflügel</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">5.90</price>
-          <price role="other">7.10</price>
-          <price role="student">4.60</price>
-        </meal>
-        <meal>
           <name>Matjesfilets , Matjessoße Hausfrauen Art , Salzkartoffeln</name>
           <note>Fisch und Fischerzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -429,6 +428,16 @@
           <price role="employee">5.30</price>
           <price role="other">6.50</price>
           <price role="student">4.00</price>
+        </meal>
+        <meal>
+          <name>Homemade paniertes Putenschnitzel (Ei,GlW), Steirischer Kartoffelsalat mit Kürbiskernen</name>
+          <note>Geflügel</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <price role="employee">5.90</price>
+          <price role="other">7.10</price>
+          <price role="student">4.60</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -444,18 +453,18 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Salsa rucola di pollo mit Hähnchenstreifen in Rucolasoße , bunte Fusilli (GlW)</name>
-          <note>Geflügel</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>mensaVital</note>
+          <name>Pasta salsa di noci mit Paprika-Nuss-Soße, getrocknete Tomaten (Sl,NHa), Eliche (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Pasta salsa di noci mit Paprika-Nuss-Soße, getrocknete Tomaten (Sl,NHa), Eliche (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Salsa rucola di pollo mit Hähnchenstreifen in Rucolasoße , bunte Fusilli (GlW)</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>mensaVital</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -519,7 +528,8 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Broccoli e pomodoro mit Broccoli und Tomate, Farfalle (GlW)</name>
+          <name>Lenticchie mit Linsen in pikanter Tomatensoße , Farfalle (GlW)</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
@@ -527,8 +537,7 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Lenticchie mit Linsen in pikanter Tomatensoße , Farfalle (GlW)</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Broccoli e pomodoro mit Broccoli und Tomate, Farfalle (GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>

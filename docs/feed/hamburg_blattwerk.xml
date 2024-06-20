@@ -4,6 +4,15 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2024-06-20">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Hausgemachte Gemüselasagne (So,Mi,Sl,GlW), Tomatensoße</name>
+          <note>Vegetarisch</note>
+          <price role="employee">5.80</price>
+          <price role="other">7.00</price>
+          <price role="student">4.50</price>
+        </meal>
+      </category>
       <category name="CampusVital">
         <meal>
           <name>Rote-Linsen-Medaillons (Sl,GlW), grüne Bohnen mit Knoblauch und Ingwer, Sojajoghurt-Minz Dip , Naanbrot (2,Mi,GlW)</name>
@@ -17,7 +26,7 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Grünes Wokgemüse mit Sojasoße (2,So,GlW), geschmorter Räuchertofu (So,GlW), vegane Mi-Nudeln (So,GlW)</name>
+          <name>Wokgemüse mit Rotebeete,Kichererbsen und Sojasoße (2,So,GlW), geschmorter Räuchertofu (So,GlW), vegane Mi-Nudeln (So,GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">6.20</price>
@@ -27,7 +36,7 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>italienischer Nudelsalat (2,3,5,Mi,Sw,GlW)</name>
+          <name>Nudelsalat mit Cerry-Tomaten,Hirtenkäse und Joghurt Dip (2,3,5,Mi,Sw,GlW)</name>
           <note>Vegetarisch</note>
           <price role="employee">5.10</price>
           <price role="other">6.30</price>
@@ -48,16 +57,16 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta al forno greco griechischer Nudelauflauf (Ei,Mi,GlW)</name>
+          <name>Crema di funghi mit Champignons in Cremesoße , bunte Fusilli (GlW)</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegetarisch</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Crema di funghi mit Champignons in Cremesoße , bunte Fusilli (GlW)</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Pasta al forno greco griechischer Nudelauflauf (Ei,Mi,GlW)</name>
           <note>Vegetarisch</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
@@ -158,9 +167,8 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Soia e Porri mit Lauch und Sojasahne , Spaghetti (GlW)</name>
+          <name>Giardinera mit Gemüse in Tomatensoße , Spaghetti (GlW)</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
@@ -168,8 +176,9 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Giardinera mit Gemüse in Tomatensoße , Spaghetti (GlW)</name>
+          <name>Soia e Porri mit Lauch und Sojasahne , Spaghetti (GlW)</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
@@ -214,17 +223,17 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Due formaggio e nocciola mit zweierlei Käse und gerösteter Haselnuss (Mi,Sl,NHa), Maccaroni (GlW)</name>
-          <note>Vegetarisch</note>
+          <name>Sugo ai funghi mit pikanter Pilz-Gemüse-Soße , Farfalle (GlW)</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Sugo ai funghi mit pikanter Pilz-Gemüse-Soße , Farfalle (GlW)</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Due formaggio e nocciola mit zweierlei Käse und gerösteter Haselnuss (Mi,Sl,NHa), Maccaroni (GlW)</name>
+          <note>Vegetarisch</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
