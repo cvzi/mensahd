@@ -18,17 +18,6 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Putengyros, Tzatziki , Krautsalat , Paprikareis</name>
-          <note>Geflügel</note>
-          <note>Geschwefelt</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">6.80</price>
-          <price role="other">8.00</price>
-          <price role="student">5.50</price>
-        </meal>
-        <meal>
           <name>Gebratene Hähnchenstreifen mit frischem Wokgemüse, Spicy-Ginger-Sauce, Koriander und Basmaitreis (1,2,5,En,So,Sw,GlW)</name>
           <note>Geflügel</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -43,6 +32,17 @@
           <price role="employee">6.10</price>
           <price role="other">7.30</price>
           <price role="student">4.80</price>
+        </meal>
+        <meal>
+          <name>Putengyros, Tzatziki , Krautsalat , Paprikareis</name>
+          <note>Geflügel</note>
+          <note>Geschwefelt</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">6.80</price>
+          <price role="other">8.00</price>
+          <price role="student">5.50</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -297,15 +297,28 @@
       </category>
     </day>
     <day date="2024-07-01">
-      <category name="CampusWorld">
+      <category name="Pottkieker">
         <meal>
-          <name>Gebratene Hähnchenstreifen mit frischem Wokgemüse, Teriyakisoße, Koriander und Basmaitreis (2,So,Sw,GlW)</name>
-          <note>Geflügel</note>
+          <name>Kokos-Kürbis-Curry , Reis</name>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">7.00</price>
-          <price role="other">8.20</price>
-          <price role="student">5.70</price>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
         </meal>
+      </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Texashacksteak (Ei,GlW)</name>
+          <note>Rind</note>
+          <price role="employee">5.70</price>
+          <price role="other">6.90</price>
+          <price role="student">4.40</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
         <meal>
           <name>Frisches Wokgemüse mit Teriyaki - Soße, Koriander und Basmaitreis (2,So,Sw,GlW)</name>
           <note>Vegan</note>
@@ -313,6 +326,14 @@
           <price role="employee">5.80</price>
           <price role="other">7.00</price>
           <price role="student">4.50</price>
+        </meal>
+        <meal>
+          <name>Gebratene Hähnchenstreifen mit frischem Wokgemüse, Teriyakisoße, Koriander und Basmaitreis (2,So,Sw,GlW)</name>
+          <note>Geflügel</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">7.00</price>
+          <price role="other">8.20</price>
+          <price role="student">5.70</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -337,6 +358,27 @@
       </category>
     </day>
     <day date="2024-07-02">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>4 Röstiecken, Kräuterquark , Gurkensalat</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">4.20</price>
+          <price role="other">5.40</price>
+          <price role="student">2.90</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Hähnchenbrust in Tahini-Marinade , Schmand-Joghurt-Soße , Bukhari Dajaj - Orientalischer Gewürzreis</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <price role="employee">5.30</price>
+          <price role="other">6.50</price>
+          <price role="student">4.00</price>
+        </meal>
+      </category>
       <category name="CampusSpezial">
         <meal>
           <name>Gebratenes Seelachsfilet (Fi,GlW), Kimchi (2,So,GlW), Basmatireis</name>
@@ -369,20 +411,50 @@
       </category>
     </day>
     <day date="2024-07-03">
-      <category name="CampusSpezial">
+      <category name="CampusKlassiker">
         <meal>
-          <name>Caesars salad mit Hähnchenstreifen, gerösteten Perlgraupen, Ei, Hartkäse und Croutons (2,Ei,So,Mi,Sl,Sf,GlW,GlG)</name>
-          <note>Geflügel</note>
-          <price role="employee">7.20</price>
-          <price role="other">8.40</price>
-          <price role="student">5.90</price>
+          <name>Currybratwurst , Grillsoße , Pommes Frites</name>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Geschmacksverstärker</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Phosphat</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">5.60</price>
+          <price role="other">6.80</price>
+          <price role="student">4.30</price>
         </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Stufato di Lenticche geschmorte Linsen mit Räuchertofu (So,GlW), Sojajoghurt-Zitronen Dip , Maccaroni (GlW)</name>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">5.80</price>
+          <price role="other">7.00</price>
+          <price role="student">4.50</price>
+        </meal>
+      </category>
+      <category name="CampusSpezial">
         <meal>
           <name>Caesars salad mit gerösteten Perlgraupen, Ei, Hartkäse und Croutons (2,Ei,Mi,Sl,Sf,GlW,GlG)</name>
           <note>Vegetarisch</note>
           <price role="employee">5.90</price>
           <price role="other">7.10</price>
           <price role="student">4.60</price>
+        </meal>
+        <meal>
+          <name>Caesars salad mit Hähnchenstreifen, gerösteten Perlgraupen, Ei, Hartkäse und Croutons (2,Ei,So,Mi,Sl,Sf,GlW,GlG)</name>
+          <note>Geflügel</note>
+          <price role="employee">7.20</price>
+          <price role="other">8.40</price>
+          <price role="student">5.90</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -407,7 +479,46 @@
       </category>
     </day>
     <day date="2024-07-04">
+      <category name="Pottkieker">
+        <meal>
+          <name>Holsteiner Kartoffeltopf (So,Sl,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Hähnchen Crossies (GlW,GlG), BBQ Soße , Pommes Frites</name>
+          <note>Geflügel</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">5.90</price>
+          <price role="other">7.10</price>
+          <price role="student">4.60</price>
+        </meal>
+      </category>
       <category name="CampusWorld">
+        <meal>
+          <name>Oasis in the desert BOWL mit Sesam-Chicken , Bulgur mit Datteln (GlW), gebackener Blumenkohl mit Ahornsirup , Rote Beete, marinierte Riesenbohne , Karotten-Hummus , frische Minz - Gurke , Sesam-Joghurt , karamelisierter</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <price role="employee">7.20</price>
+          <price role="other">8.40</price>
+          <price role="student">5.90</price>
+        </meal>
+        <meal>
+          <name>Mande</name>
+        </meal>
         <meal>
           <name>Oasis in the desert BOWL, Bulgur mit Datteln (GlW), gebackener Blumenkohl mit Ahornsirup , Rote Beete, marinierte Riesenbohne , Karotten-Hummus , frische Minz - Gurke , Sesam-Joghurt , karamelisierter Mandel-Crunch (NMa),</name>
           <note>Senf und Senferzeugnisse</note>
@@ -425,19 +536,16 @@
           <name>geröste</name>
         </meal>
         <meal>
-          <name>Oasis in the desert BOWL mit Sesam-Chicken , Bulgur mit Datteln (GlW), gebackener Blumenkohl mit Ahornsirup , Rote Beete, marinierte Riesenbohne , Karotten-Hummus , frische Minz - Gurke , Sesam-Joghurt , karamelisierter</name>
-          <note>Geflügel</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <name>Ägyptische Falafel mit persischem Gewürzreis (Sl,Se,GlW), Pfirsich-Tomaten-Chutney</name>
+          <note>Geschwefelt</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Antioxidationsmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">7.20</price>
-          <price role="other">8.40</price>
-          <price role="student">5.90</price>
-        </meal>
-        <meal>
-          <name>Mande</name>
+          <price role="employee">5.20</price>
+          <price role="other">6.40</price>
+          <price role="student">3.90</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -463,6 +571,14 @@
     </day>
     <day date="2024-07-05">
       <category name="CampusSpezial">
+        <meal>
+          <name>One Pot Quinoa mit Avocado, Paprika und veganem Joghurt (3,Sl,GlH)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.40</price>
+          <price role="other">5.60</price>
+          <price role="student">3.10</price>
+        </meal>
         <meal>
           <name>Baked Potato &quot;Mexican&quot; mit Chili sin carne, Kidneybohnen, Mais, Jalapeneos, Nachos , Kräuter Dip (3,GlH)</name>
           <note>Ei und Eierzeugnisse</note>
