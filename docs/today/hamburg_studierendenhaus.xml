@@ -16,11 +16,16 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Hausgemachte Pasta (GlW), Putengulasch (Mi,Sl,GlW)</name>
-          <note>Geflügel</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.40</price>
-          <price role="student">3.90</price>
+          <name>Matjesfilets , Matjessoße Hausfrauen Art , Salzkartoffeln</name>
+          <note>Fisch und Fischerzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>mit Fisch</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">5.30</price>
+          <price role="other">6.50</price>
+          <price role="student">4.00</price>
         </meal>
         <meal>
           <name>Veganes Jailhouse-Chili , Wrap (GlW), Sojajoghurt-Zitronen Dip</name>
@@ -36,32 +41,27 @@
           <price role="student">3.20</price>
         </meal>
         <meal>
-          <name>Matjesfilets , Matjessoße Hausfrauen Art , Salzkartoffeln</name>
-          <note>Fisch und Fischerzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>mit Fisch</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">5.30</price>
-          <price role="other">6.50</price>
-          <price role="student">4.00</price>
+          <name>Hausgemachte Pasta (GlW), Putengulasch (Mi,Sl,GlW)</name>
+          <note>Geflügel</note>
+          <price role="employee">5.20</price>
+          <price role="other">6.40</price>
+          <price role="student">3.90</price>
         </meal>
       </category>
       <category name="CampusVital">
-        <meal>
-          <name>Pikanter Bulgur Salat mit Falafel Taler und Tahini Dip (4,Mi,Se,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">4.80</price>
-          <price role="other">6.00</price>
-          <price role="student">3.50</price>
-        </meal>
         <meal>
           <name>All in one pot: Vollkornreis, Tandoori Chicken, Avocado, Linsen, Cranberries, Chia (1,2,3,So,Mi,Sl,Sf,GlW)</name>
           <note>Geflügel</note>
           <price role="employee">5.60</price>
           <price role="other">6.80</price>
           <price role="student">4.30</price>
+        </meal>
+        <meal>
+          <name>Pikanter Bulgur Salat mit Falafel Taler und Tahini Dip (4,Mi,Se,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">4.80</price>
+          <price role="other">6.00</price>
+          <price role="student">3.50</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -76,20 +76,20 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pomodoro asiatico mit asiatischer Tomatensoße und Soja Chunks (2,So,Se,GlW), spanisches Kartoffelgemüse</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
           <name>all`Amatriciana mit Speck und Tomaten , bunte Fusilli (GlW)</name>
           <note>Schwein</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Antioxidationsmittel</note>
           <note>mit Konservierungsstoff</note>
           <note>mit Phosphat</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Pomodoro asiatico mit asiatischer Tomatensoße und Soja Chunks (2,So,Se,GlW), spanisches Kartoffelgemüse</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -110,6 +110,24 @@
       </category>
     </day>
     <day date="2024-06-27">
+      <category name="Menü">
+        <meal>
+          <name>Spareribs , BBQ Soße , Cole slaw Salat , Pommes Frites</name>
+          <note>Alkohol</note>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Farbstoff</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">7.20</price>
+          <price role="other">7.80</price>
+          <price role="student">6.50</price>
+        </meal>
+      </category>
       <category name="Pottkieker">
         <meal>
           <name>Pastinaken-Süßkartoffelsuppe mit Quinoa</name>
@@ -123,22 +141,6 @@
         </meal>
       </category>
       <category name="CampusKlassiker">
-        <meal>
-          <name>Spareribs , BBQ Soße , Cole slaw Salat , Pommes Frites</name>
-          <note>Alkohol</note>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwein</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Farbstoff</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">7.80</price>
-          <price role="other">9.00</price>
-          <price role="student">6.50</price>
-        </meal>
         <meal>
           <name>Panko paniertes Hähnchenschnitzel (Ei,GlW), Sweet Chili Dip (2,3,5,9,So,Sw,GlW), Spicy Kartoffelspalten</name>
           <note>Geflügel</note>
@@ -224,7 +226,8 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Broccoli e pomodoro mit Broccoli und Tomate, Farfalle (GlW)</name>
+          <name>Lenticchie mit Linsen in pikanter Tomatensoße , Farfalle (GlW)</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
@@ -232,8 +235,7 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Lenticchie mit Linsen in pikanter Tomatensoße , Farfalle (GlW)</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Broccoli e pomodoro mit Broccoli und Tomate, Farfalle (GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
