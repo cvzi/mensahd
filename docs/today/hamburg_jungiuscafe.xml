@@ -4,19 +4,7 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2024-06-27">
-      <category name="Pottkieker">
-        <meal>
-          <name>Pastinaken-Süßkartoffelsuppe mit Quinoa</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">3.40</price>
-          <price role="other">4.10</price>
-          <price role="student">2.20</price>
-        </meal>
-      </category>
-      <category name="CampusKlassiker">
+      <category name="Menü">
         <meal>
           <name>Spareribs , BBQ Soße , Cole slaw Salat , Pommes Frites</name>
           <note>Alkohol</note>
@@ -29,9 +17,21 @@
           <note>mit Farbstoff</note>
           <note>mit Konservierungsstoff</note>
           <note>mit Süßungsmittel</note>
-          <price role="employee">7.80</price>
-          <price role="other">9.00</price>
+          <price role="employee">7.20</price>
+          <price role="other">7.80</price>
           <price role="student">6.50</price>
+        </meal>
+      </category>
+      <category name="Pottkieker">
+        <meal>
+          <name>Pastinaken-Süßkartoffelsuppe mit Quinoa</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
         </meal>
       </category>
       <category name="CampusVital">
@@ -62,20 +62,20 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Mac and Cheese (1,Mi,Sl,Sf,GlW), Eisbergsalat mit Tomate</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegetarisch</note>
-          <price role="employee">5.00</price>
-          <price role="other">6.20</price>
-          <price role="student">3.70</price>
-        </meal>
-        <meal>
           <name>Broccoli Nuggets (Ei,So,Mi,Sl,GlW,GlG), scharfer Asia-Dip, Pommes Frites</name>
           <note>Senf und Senferzeugnisse</note>
           <note>Vegetarisch</note>
           <price role="employee">5.55</price>
           <price role="other">6.75</price>
           <price role="student">4.25</price>
+        </meal>
+        <meal>
+          <name>Mac and Cheese (1,Mi,Sl,Sf,GlW), Eisbergsalat mit Tomate</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">5.00</price>
+          <price role="other">6.20</price>
+          <price role="student">3.70</price>
         </meal>
       </category>
     </day>
