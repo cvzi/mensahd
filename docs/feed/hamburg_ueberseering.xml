@@ -30,7 +30,7 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Frisches Wokgemüse mit Teriyaki - Soße, Koriander und Basmaitreis (2,So,Sw,GlW)</name>
+          <name>Frisches Wokgemüse mit Teriyaki - Soße, Koriander und Basmaitreis (2,So,Se,Sw,GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">5.80</price>
@@ -38,7 +38,7 @@
           <price role="student">4.50</price>
         </meal>
         <meal>
-          <name>Gebratene Hähnchenstreifen mit frischem Wokgemüse, Teriyakisoße, Koriander und Basmaitreis (2,So,Sw,GlW)</name>
+          <name>Gebratene Hähnchenstreifen mit frischem Wokgemüse, Teriyakisoße, Koriander und Basmaitreis (2,So,Se,Sw,GlW)</name>
           <note>Geflügel</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">7.00</price>
@@ -48,9 +48,8 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta des Tages (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Pasta mit Käsesauce,Ruccola und Cherrytomaten (1,Mi,Sl,GlW)</name>
+          <note>Vegetarisch</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -58,7 +57,7 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Gemüse des Tages</name>
+          <name>Kräuterkartoffeln</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
@@ -336,6 +335,20 @@
       </category>
     </day>
     <day date="2024-07-08">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Chili sin carne , Fladenbrot (Se,GlW), Gurken-Mais-Salat</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mensaVital</note>
+          <price role="employee">4.40</price>
+          <price role="other">5.60</price>
+          <price role="student">3.10</price>
+        </meal>
+      </category>
       <category name="CampusSpezial">
         <meal>
           <name>gebackenes Rotbarschfilet (Fi,GlW), Tartarensoße , Kartoffeln</name>
@@ -392,6 +405,31 @@
       </category>
     </day>
     <day date="2024-07-09">
+      <category name="CampusVital">
+        <meal>
+          <name>Blumenkohl-Käse-Bratling (Ei,Mi,GlW), Hausgemachter Kartoffelstampf , Buttererbsen , Hollandaise</name>
+          <note>Alkohol</note>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <price role="employee">5.80</price>
+          <price role="other">7.00</price>
+          <price role="student">4.50</price>
+        </meal>
+        <meal>
+          <name>Rosmarinhuhn mit Paprika-Kichererbsengemüse , Tomatensoße, Couscous (Sl,GlW)</name>
+          <note>Geflügel</note>
+          <note>Geschwefelt</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Farbstoff</note>
+          <price role="employee">5.80</price>
+          <price role="other">7.00</price>
+          <price role="student">4.50</price>
+        </meal>
+      </category>
       <category name="CampusWorld">
         <meal>
           <name>Udon Nudeln mit Rindfleisch und Edamame, frischer Koriander (2,En,So,Sl,Se,GlW)</name>
@@ -424,7 +462,26 @@
       </category>
     </day>
     <day date="2024-07-10">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Käsespätzle mit Röstzwiebeln (Ei,Mi,GlW), Salat</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <price role="employee">4.20</price>
+          <price role="other">5.40</price>
+          <price role="student">2.90</price>
+        </meal>
+      </category>
       <category name="CampusWorld">
+        <meal>
+          <name>Schwedische Köttbullar (Ei,GlW), Rahmsoße (Mi,Sl,GlW), Preiselbeeren, Salzkartoffeln</name>
+          <note>Rind</note>
+          <note>Schwein</note>
+          <price role="employee">4.30</price>
+          <price role="other">5.50</price>
+          <price role="student">3.00</price>
+        </meal>
         <meal>
           <name>Seelachsfilet vom Grill mit scharfem Ingwer-Bohnengemüse, Erdnusscreme und Crunch (2,Fi,En,So,Se,GlW), Basmatireis</name>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -466,16 +523,19 @@
           <price role="other">7.10</price>
           <price role="student">4.60</price>
         </meal>
+        <meal>
+          <name>Thüringer Bratwurst , Karottengemüse in Kräuterrahm (Mi,GlW), Hausgemachtes Kartoffel-Butterstampf</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>mit Phosphat</note>
+          <price role="employee">4.90</price>
+          <price role="other">6.10</price>
+          <price role="student">3.60</price>
+        </meal>
       </category>
       <category name="CampusSpezial">
-        <meal>
-          <name>Shoyu-Ramen mit kräftiger Gemüsebrühe, Gemüse, Shitake, Mu Err, Ei, Tofu und Koriander (1,2,Ei,So,Sl,Se,GlW)</name>
-          <note>Vegetarisch</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.90</price>
-          <price role="other">8.10</price>
-          <price role="student">5.60</price>
-        </meal>
         <meal>
           <name>Süßkartoffel-Gnocchi mit geröstetem Blumenkohl, Sojajoghurt-Minz Dip</name>
           <note>Soja und Sojaerzeugnisse</note>
@@ -485,6 +545,14 @@
           <price role="employee">4.50</price>
           <price role="other">5.70</price>
           <price role="student">3.20</price>
+        </meal>
+        <meal>
+          <name>Shoyu-Ramen mit kräftiger Gemüsebrühe, Gemüse, Shitake, Mu Err, Ei, Tofu und Koriander (1,2,Ei,So,Sl,Se,GlW)</name>
+          <note>Vegetarisch</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.90</price>
+          <price role="other">8.10</price>
+          <price role="student">5.60</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -519,7 +587,28 @@
       </category>
     </day>
     <day date="2024-07-12">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>vegane Sesamnudeln mit Spargel und Pilzen (2,3,5,So,Se,Sw,GlW)</name>
+          <note>Neu</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.40</price>
+          <price role="student">4.90</price>
+        </meal>
+      </category>
       <category name="CampusSpezial">
+        <meal>
+          <name>Veganes Knusperschnitzel (GlW), Korianderdip , pikantes Möhrengemüse , Kartoffelspalten (GlW)</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.80</price>
+          <price role="other">7.00</price>
+          <price role="student">4.50</price>
+        </meal>
         <meal>
           <name>Ziegenkäse auf cremigem Rote-Beete-Risotto und Walnuss - Crunsh (2,9,Mi,Sl,GlW,NWa)</name>
           <note>Vegetarisch</note>
