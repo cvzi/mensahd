@@ -37,9 +37,15 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta des Tages (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Pasta mit Kürbis in Rahm (Mi,Sl,GlW,GlG)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Pasta mit Käsesauce,Ruccola und Cherrytomaten (1,Mi,Sl,GlW)</name>
+          <note>Vegetarisch</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -47,9 +53,14 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Gemüse des Tages</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Kräuterkartoffeln, gebratener Pak Choi (2,So,GlW), Spicy Erbsen , gebratene Karotten Madras , gebratene Paprika , Ingwer-Knoblauch Brechbohnen</name>
+          <note>Geschwefelt</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>mit Farbstoff</note>
+          <note>mit Konservierungsstoff</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -57,6 +68,18 @@
       </category>
     </day>
     <day date="2024-07-03">
+      <category name="Pottkieker">
+        <meal>
+          <name>Kokos-Kürbis-Curry , Reis</name>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
       <category name="CampusKlassiker">
         <meal>
           <name>Currybratwurst , Grillsoße , Pommes Frites</name>
@@ -89,18 +112,18 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Caesars salad mit Hähnchenstreifen, gerösteten Perlgraupen, Ei, Hartkäse und Croutons (2,Ei,So,Mi,Sl,Sf,GlW,GlG)</name>
-          <note>Geflügel</note>
-          <price role="employee">7.20</price>
-          <price role="other">8.40</price>
-          <price role="student">5.90</price>
-        </meal>
-        <meal>
           <name>Caesars salad mit gerösteten Perlgraupen, Ei, Hartkäse und Croutons (2,Ei,Mi,Sl,Sf,GlW,GlG)</name>
           <note>Vegetarisch</note>
           <price role="employee">5.90</price>
           <price role="other">7.10</price>
           <price role="student">4.60</price>
+        </meal>
+        <meal>
+          <name>Caesars salad mit Hähnchenstreifen, gerösteten Perlgraupen, Ei, Hartkäse und Croutons (2,Ei,So,Mi,Sl,Sf,GlW,GlG)</name>
+          <note>Geflügel</note>
+          <price role="employee">7.20</price>
+          <price role="other">8.40</price>
+          <price role="student">5.90</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -151,21 +174,6 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Oasis in the desert BOWL mit Sesam-Chicken , Bulgur mit Datteln (GlW), gebackener Blumenkohl mit Ahornsirup , Rote Beete, marinierte Riesenbohne , Karotten-Hummus , frische Minz - Gurke , Sesam-Joghurt , karamelisierter</name>
-          <note>Geflügel</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">7.20</price>
-          <price role="other">8.40</price>
-          <price role="student">5.90</price>
-        </meal>
-        <meal>
-          <name>Mande</name>
-        </meal>
-        <meal>
           <name>Oasis in the desert BOWL, Bulgur mit Datteln (GlW), gebackener Blumenkohl mit Ahornsirup , Rote Beete, marinierte Riesenbohne , Karotten-Hummus , frische Minz - Gurke , Sesam-Joghurt , karamelisierter Mandel-Crunch (NMa),</name>
           <note>Senf und Senferzeugnisse</note>
           <note>Sesamsamen und Sesamsamenerzeugnisse</note>
@@ -180,6 +188,21 @@
         </meal>
         <meal>
           <name>geröste</name>
+        </meal>
+        <meal>
+          <name>Oasis in the desert BOWL mit Sesam-Chicken , Bulgur mit Datteln (GlW), gebackener Blumenkohl mit Ahornsirup , Rote Beete, marinierte Riesenbohne , Karotten-Hummus , frische Minz - Gurke , Sesam-Joghurt , karamelisierter</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <price role="employee">7.20</price>
+          <price role="other">8.40</price>
+          <price role="student">5.90</price>
+        </meal>
+        <meal>
+          <name>Mande</name>
         </meal>
         <meal>
           <name>Ägyptische Falafel mit persischem Gewürzreis (Sl,Se,GlW), Pfirsich-Tomaten-Chutney</name>
