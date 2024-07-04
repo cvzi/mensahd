@@ -485,7 +485,7 @@
       </category>
       <category name="Lassi">
         <meal>
-          <name>Erdbeeren , Joghurt , Bananen , Milch , Vanille </name>
+          <name>Himbeeren , Joghurt , Äpfel , Milch </name>
           <note>Glas Preis</note>
           <note>Milch/Laktose</note>
           <note> = Vegan</note>
@@ -497,13 +497,30 @@
       </category>
       <category name="Smoothie">
         <meal>
-          <name>Rhabarber , Bananen , Apfelsaft , Minze </name>
+          <name>Cantaloupe-Melone , Birnen , Bananen , Apfelsaft </name>
           <note>Glas Preis</note>
-          <note>Säuerungsmittel</note>
           <note> = Vegan</note>
           <price role="employee">2.50</price>
           <price role="other">3.20</price>
           <price role="student">2.00</price>
+        </meal>
+      </category>
+      <category name="Cibo Crudo Wrap">
+        <meal>
+          <name>Weizenfladen , Schafskäse , Joghurt-Kräuter-Dip , Rotkrautsalat , Eisbergsalat , Gurken , Karotten , Tomaten </name>
+          <note>Antioxidationsmittel</note>
+          <note>Ei</note>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Milch/Laktose</note>
+          <note>Portion Preis</note>
+          <note>Schwefeldioxid Sulfit</note>
+          <note>Senf</note>
+          <note>Weizen</note>
+          <note> = Vegan</note>
+          <note> = Vegetarisch</note>
+          <price role="employee">3.75</price>
+          <price role="other">4.80</price>
+          <price role="student">3.00</price>
         </meal>
       </category>
       <category name="Dessert">
@@ -562,23 +579,12 @@
           <price role="student">3.50</price>
         </meal>
       </category>
-      <category name="Spring Ciabatta">
-        <meal>
-          <name>Ciabatta-Brötchen , Erbsen-Hummus , gepickelte rote Paprika , Chinakohl </name>
-          <note>Portion Preis</note>
-          <note>Weizen</note>
-          <note> = Vegan</note>
-          <note> = Vegetarisch</note>
-          <price role="employee">3.75</price>
-          <price role="other">4.80</price>
-          <price role="student">3.00</price>
-        </meal>
-      </category>
     </day>
     <day date="2024-07-04">
       <category name="Menü 1">
         <meal>
-          <name>hausgemachter Fleischkäse, Zwiebelsoße, Kroketten , Beilagensalat </name>
+          <name>hausgemachter Fleischkäse, Zwiebelsoße, Spätzle , Beilagensalat </name>
+          <note>Ei</note>
           <note>Gerste</note>
           <note>Glutenhaltiges Getreide</note>
           <note>Hausgemacht</note>
@@ -600,10 +606,12 @@
       </category>
       <category name="Menü vegan">
         <meal>
-          <name>Tortellini Verdura , Knoblauch-Gemüsesoße , Rucola , Beilagensalat </name>
+          <name>Süßkartoffel-Gnocchi , Knoblauch-Gemüsesoße , Marktgemüse , Rucola , Beilagensalat </name>
           <note>Glutenhaltiges Getreide</note>
           <note>Portion Preis</note>
           <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Säuerungsmittel</note>
           <note>Weizen</note>
           <note> = Vegan</note>
           <price role="employee">3.75</price>
@@ -619,6 +627,7 @@
           <note>Mandeln</note>
           <note>Milch/Laktose</note>
           <note>Portion Preis</note>
+          <note>Senf</note>
           <note>Weizen</note>
           <note> = Vegan</note>
           <note> = Vegetarisch</note>
@@ -661,7 +670,7 @@
       </category>
       <category name="Lassi">
         <meal>
-          <name>Erdbeeren , Joghurt , Bananen , Milch , Vanille </name>
+          <name>Himbeeren , Joghurt , Äpfel , Milch </name>
           <note>Glas Preis</note>
           <note>Milch/Laktose</note>
           <note> = Vegan</note>
@@ -673,13 +682,30 @@
       </category>
       <category name="Smoothie">
         <meal>
-          <name>Rhabarber , Bananen , Apfelsaft , Minze </name>
+          <name>Cantaloupe-Melone , Birnen , Bananen , Apfelsaft </name>
           <note>Glas Preis</note>
-          <note>Säuerungsmittel</note>
           <note> = Vegan</note>
           <price role="employee">2.50</price>
           <price role="other">3.20</price>
           <price role="student">2.00</price>
+        </meal>
+      </category>
+      <category name="Cibo Crudo Wrap">
+        <meal>
+          <name>Weizenfladen , Schafskäse , Joghurt-Kräuter-Dip , Rotkrautsalat , Eisbergsalat , Gurken , Karotten , Tomaten </name>
+          <note>Antioxidationsmittel</note>
+          <note>Ei</note>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Milch/Laktose</note>
+          <note>Portion Preis</note>
+          <note>Schwefeldioxid Sulfit</note>
+          <note>Senf</note>
+          <note>Weizen</note>
+          <note> = Vegan</note>
+          <note> = Vegetarisch</note>
+          <price role="employee">3.75</price>
+          <price role="other">4.80</price>
+          <price role="student">3.00</price>
         </meal>
       </category>
       <category name="Dessert">
@@ -695,7 +721,7 @@
       </category>
       <category name="Frühlings Bowl">
         <meal>
-          <name>Vollkorn-Fusilli, gebratene Vegosstreifen , Sour Cream vegan , Lauch , Mais , Karotten</name>
+          <name>Vollkorn-Fusilli, gebratene Vegosstreifen , Sour Cream vegan , Lauch , Mais , Karotten </name>
           <note>Glutenhaltiges Getreide</note>
           <note>Hafer</note>
           <note>Portion Preis</note>
@@ -728,26 +754,16 @@
       <category name="Quinoa Bowl">
         <meal>
           <name>Odenwälder Quinoa , Tomaten-Zucchini-Chutney , marinierter Fetakäse , Minze , Blattpetersilie </name>
+          <note>Antioxidationsmittel</note>
           <note>Milch/Laktose</note>
           <note>Portion Preis</note>
           <note>Schwefeldioxid Sulfit</note>
+          <note>geschwefelt</note>
           <note> = Vegan</note>
           <note> = Vegetarisch</note>
           <price role="employee">4.38</price>
           <price role="other">5.60</price>
           <price role="student">3.50</price>
-        </meal>
-      </category>
-      <category name="Spring Ciabatta">
-        <meal>
-          <name>Ciabatta-Brötchen , Erbsen-Hummus , gepickelte rote Paprika , Chinakohl </name>
-          <note>Portion Preis</note>
-          <note>Weizen</note>
-          <note> = Vegan</note>
-          <note> = Vegetarisch</note>
-          <price role="employee">3.75</price>
-          <price role="other">4.80</price>
-          <price role="student">3.00</price>
         </meal>
       </category>
     </day>
@@ -835,7 +851,7 @@
       </category>
       <category name="Lassi">
         <meal>
-          <name>Erdbeeren , Joghurt , Bananen , Milch , Vanille </name>
+          <name>Himbeeren , Joghurt , Äpfel , Milch </name>
           <note>Glas Preis</note>
           <note>Milch/Laktose</note>
           <note> = Vegan</note>
@@ -847,13 +863,30 @@
       </category>
       <category name="Smoothie">
         <meal>
-          <name>Rhabarber , Bananen , Apfelsaft , Minze </name>
+          <name>Cantaloupe-Melone , Birnen , Bananen , Apfelsaft </name>
           <note>Glas Preis</note>
-          <note>Säuerungsmittel</note>
           <note> = Vegan</note>
           <price role="employee">2.50</price>
           <price role="other">3.20</price>
           <price role="student">2.00</price>
+        </meal>
+      </category>
+      <category name="Cibo Crudo Wrap">
+        <meal>
+          <name>Weizenfladen , Schafskäse , Joghurt-Kräuter-Dip , Rotkrautsalat , Eisbergsalat , Gurken , Karotten , Tomaten </name>
+          <note>Antioxidationsmittel</note>
+          <note>Ei</note>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Milch/Laktose</note>
+          <note>Portion Preis</note>
+          <note>Schwefeldioxid Sulfit</note>
+          <note>Senf</note>
+          <note>Weizen</note>
+          <note> = Vegan</note>
+          <note> = Vegetarisch</note>
+          <price role="employee">3.75</price>
+          <price role="other">4.80</price>
+          <price role="student">3.00</price>
         </meal>
       </category>
       <category name="Dessert">
@@ -913,18 +946,6 @@
           <price role="employee">4.38</price>
           <price role="other">5.60</price>
           <price role="student">3.50</price>
-        </meal>
-      </category>
-      <category name="Spring Ciabatta">
-        <meal>
-          <name>Ciabatta-Brötchen , Erbsen-Hummus , gepickelte rote Paprika , Chinakohl </name>
-          <note>Portion Preis</note>
-          <note>Weizen</note>
-          <note> = Vegan</note>
-          <note> = Vegetarisch</note>
-          <price role="employee">3.75</price>
-          <price role="other">4.80</price>
-          <price role="student">3.00</price>
         </meal>
       </category>
     </day>
