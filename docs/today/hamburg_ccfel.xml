@@ -3,28 +3,124 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-07-05">
+    <day date="2024-07-08">
       <category name="CampusKlassiker">
         <meal>
-          <name>Soja-Bolognese mit Gemüse , bunte Fusilli (GlW)</name>
+          <name>Cheeseburger mit Gurken, Tomaten und Salat (1,2,3,9,Ei,Mi,Sf,Se,Sw,GlW), Pommes Frites</name>
+          <note>Rind</note>
+          <note>Senf und Senferzeugnisse</note>
+          <price role="employee">5.30</price>
+          <price role="other">6.50</price>
+          <price role="student">4.00</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Soja-Geschnetzeltes in Erdnusssoße (2,En,So,Sl,GlW), Wok-Gemüse, Reis</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.80</price>
+          <price role="other">7.00</price>
+          <price role="student">4.50</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-07-09">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Vegetarisch gefüllte Kohlroulade (Ei,So,GlW,GlD), Kümmelsoße , Salzkartoffeln</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.10</price>
+          <price role="other">6.30</price>
+          <price role="student">3.80</price>
+        </meal>
+        <meal>
+          <name>Asiatische Reispfanne mit Rinderhack und buntem Gemüse (1,2,So,Se,GlW)</name>
+          <note>Rind</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.60</price>
+          <price role="other">5.80</price>
+          <price role="student">3.30</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-07-10">
+      <category name="CampusWorld">
+        <meal>
+          <name>Maultaschen auf Blattsalaten mit Italiandressing und Tomatenwürfeln, Fladenbrot (1,3,5,Mi,Sf,Se,Sw,GlW)</name>
+          <note>Neu</note>
+          <note>Vegetarisch</note>
+          <price role="employee">5.50</price>
+          <price role="other">6.70</price>
+          <price role="student">4.20</price>
+        </meal>
+        <meal>
+          <name>Hühnchen in Kokos Soße , Sesammöhrchen , Basmatireis</name>
+          <note>Geflügel</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.80</price>
+          <price role="other">7.00</price>
+          <price role="student">4.50</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-07-11">
+      <category name="CampusSpezial">
+        <meal>
+          <name>All in one pot: Reisnudeln, Tofuwürfel, Salat, Erdnüsse, Apfel, Röstzwiebeln (2,En,So,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.70</price>
+          <price role="other">5.90</price>
+          <price role="student">3.40</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>hausgemachte Köfte mit Hirtenkäsefüllung (Ei,Mi,GlW), Tomaten-Gurken-Salsa , Tzatziki , Reis</name>
+          <note>Geschwefelt</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Rind</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">6.40</price>
+          <price role="other">7.60</price>
+          <price role="student">5.10</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-07-12">
+      <category name="CampusSpezial">
+        <meal>
+          <name>Grünkern-Käse-Medaillons (Ei,So,Mi,Se,GlW,GlD), Schnittlauch-Dip , Blechkartoffeln, Blattsalat mit Karotte</name>
+          <note>Geschwefelt</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegetarisch</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">5.90</price>
+          <price role="other">7.10</price>
+          <price role="student">4.60</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>veganer Grillteller (2,So,GlW,GlG), Ajvar Dip , Reis, Weißkrautsalat</name>
+          <note>Geschwefelt</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Senf und Senferzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">4.20</price>
-          <price role="other">5.40</price>
-          <price role="student">2.90</price>
-        </meal>
-      </category>
-      <category name="CampusVital">
-        <meal>
-          <name>vegane Spanische Hackbällchen in Tomaten Dattelsoße (So,Sl,GlW,GlG), vegane Aioli , Röstkartoffelwürfel</name>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.45</price>
-          <price role="other">6.65</price>
-          <price role="student">4.15</price>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.40</price>
+          <price role="student">4.90</price>
         </meal>
       </category>
     </day>
