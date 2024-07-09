@@ -3,38 +3,8 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-07-08">
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Cheeseburger mit Gurken, Tomaten und Salat (1,2,3,9,Ei,Mi,Sf,Se,Sw,GlW), Pommes Frites</name>
-          <note>Rind</note>
-          <note>Senf und Senferzeugnisse</note>
-          <price role="employee">5.30</price>
-          <price role="other">6.50</price>
-          <price role="student">4.00</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Soja-Geschnetzeltes in Erdnusssoße (2,En,So,Sl,GlW), Wok-Gemüse, Reis</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.80</price>
-          <price role="other">7.00</price>
-          <price role="student">4.50</price>
-        </meal>
-      </category>
-    </day>
     <day date="2024-07-09">
       <category name="CampusKlassiker">
-        <meal>
-          <name>Asiatische Reispfanne mit Rinderhack und buntem Gemüse (1,2,So,Se,GlW)</name>
-          <note>Rind</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">4.60</price>
-          <price role="other">5.80</price>
-          <price role="student">3.30</price>
-        </meal>
         <meal>
           <name>Vegetarisch gefüllte Kohlroulade (Ei,So,GlW,GlD), Kümmelsoße , Salzkartoffeln</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -43,6 +13,14 @@
           <price role="employee">5.10</price>
           <price role="other">6.30</price>
           <price role="student">3.80</price>
+        </meal>
+        <meal>
+          <name>Asiatische Reispfanne mit Rinderhack und buntem Gemüse (1,2,So,Se,GlW)</name>
+          <note>Rind</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.60</price>
+          <price role="other">5.80</price>
+          <price role="student">3.30</price>
         </meal>
       </category>
     </day>
@@ -82,8 +60,12 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>hausgemachte Köfte mit Hirtenkäsefüllung (Ei,Mi,GlW)</name>
+          <name>hausgemachte Köfte mit Hirtenkäsefüllung (Ei,Mi,GlW), Tomaten-Gurken-Salsa , Tzatziki , Kartoffelspalten (GlW)</name>
+          <note>Geschwefelt</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Rind</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>mit Antioxidationsmittel</note>
           <price role="employee">6.40</price>
           <price role="other">7.60</price>
           <price role="student">5.10</price>
@@ -106,9 +88,14 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>veganer Grillteller (2,So,GlW,GlG)</name>
+          <name>veganer Grillteller (2,So,GlW,GlG), Ajvar Dip , Kartoffelspalten (GlW), Weißkrautsalat</name>
+          <note>Geschwefelt</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
           <price role="employee">6.20</price>
           <price role="other">7.40</price>
           <price role="student">4.90</price>
@@ -167,18 +154,6 @@
     <day date="2024-07-17">
       <category name="CampusSpezial">
         <meal>
-          <name>Planted Nuggets (GlW), Pommes Frites , Grillsoße</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">5.30</price>
-          <price role="other">6.50</price>
-          <price role="student">4.00</price>
-        </meal>
-        <meal>
           <name>Beef Brisket , Kräutercreme , Brechbohnen, Röstkartoffeln</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -191,6 +166,18 @@
           <price role="employee">6.80</price>
           <price role="other">8.00</price>
           <price role="student">5.50</price>
+        </meal>
+        <meal>
+          <name>Planted Nuggets (GlW), Pommes Frites , Grillsoße</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">5.30</price>
+          <price role="other">6.50</price>
+          <price role="student">4.00</price>
         </meal>
       </category>
     </day>
