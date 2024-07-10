@@ -4,6 +4,18 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2024-07-10">
+      <category name="Pottkieker">
+        <meal>
+          <name>Marokkanische Kichererbsensuppe</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
       <category name="CampusKlassiker">
         <meal>
           <name>Käsespätzle mit Röstzwiebeln (Ei,Mi,GlW), Salat</name>
@@ -16,15 +28,15 @@
           <price role="other">5.40</price>
           <price role="student">2.90</price>
         </meal>
+        <meal>
+          <name>Paniertes Schweineschnitzel (GlW), Rahmsoße (Mi,Sl,GlW), Preiselbeeren, Salzkartoffeln</name>
+          <note>Schwein</note>
+          <price role="employee">5.10</price>
+          <price role="other">6.30</price>
+          <price role="student">3.80</price>
+        </meal>
       </category>
       <category name="CampusWorld">
-        <meal>
-          <name>vegane Köttbullar (So,GlW,GlG), Rahmsoße (Mi,Sl,GlW), Preiselbeeren, Salzkartoffeln</name>
-          <note>Vegetarisch</note>
-          <price role="employee">4.40</price>
-          <price role="other">5.60</price>
-          <price role="student">3.10</price>
-        </meal>
         <meal>
           <name>Seelachsfilet vom Grill mit scharfem Ingwer-Bohnengemüse, Erdnusscreme und Crunch (2,Fi,En,So,Se,GlW), Basmatireis</name>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -32,6 +44,13 @@
           <price role="employee">7.20</price>
           <price role="other">8.40</price>
           <price role="student">5.90</price>
+        </meal>
+        <meal>
+          <name>vegane Köttbullar (So,GlW,GlG), Rahmsoße (Mi,Sl,GlW), Preiselbeeren, Salzkartoffeln</name>
+          <note>Vegetarisch</note>
+          <price role="employee">4.40</price>
+          <price role="other">5.60</price>
+          <price role="student">3.10</price>
         </meal>
         <meal>
           <name>Schwedische Köttbullar (Ei,GlW), Rahmsoße (Mi,Sl,GlW), Preiselbeeren, Salzkartoffeln</name>
