@@ -3,21 +3,21 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-07-10">
+    <day date="2024-07-11">
       <category name="Vorspeise">
         <meal>
-          <name>Gulaschsuppe</name>
-          <note>Schwein</note>
-          <note>Weizen</note>
+          <name>Tagessuppe</name>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Karotten-Gnocchi-Ragout</name>
+          <name>Schupfnudel-Sauerkraut-Pfanne</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
           <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -25,53 +25,77 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Penne Bolognese mit Reibekäse</name>
+          <name>Omelette mit Blattspinat und Salzkartoffeln</name>
+          <note>Ei</note>
           <note>Milch und Laktose</note>
-          <note>Rind</note>
-          <note>Sellerie</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Weizen</note>
-          <price role="employee">6.90</price>
-          <price role="student">4.40</price>
+          <note>vegetarisch</note>
+          <price role="employee">6.40</price>
+          <price role="student">3.90</price>
         </meal>
         <meal>
-          <name>Tafelspitz mit Meerrettichsauce und Schnittlauchkartoffeln</name>
-          <note>Milch und Laktose</note>
+          <name>Gebackener Fleischkäse mit Zwiebelsauce und Kartoffelsalat</name>
           <note>Rind</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Schwein</note>
           <note>Sellerie</note>
-          <note>Weizen</note>
-          <note>geschwefelt</note>
+          <note>Senf</note>
           <note>mit Antioxidationsmitteln</note>
-          <price role="employee">8.90</price>
-          <price role="student">6.40</price>
+          <note>mit Konservierungsstoffen</note>
+          <price role="employee">7.40</price>
+          <price role="student">4.90</price>
         </meal>
       </category>
       <category name="Aktion">
         <meal>
-          <name>Gemüsewok Honig-Pfeffer mit Glasnudeln</name>
+          <name>Hanoi Glasnudel Bowl mit Hackfleisch</name>
+          <note>Rind</note>
           <note>Soja</note>
-          <note>vegetarisch</note>
+          <note>mit Konservierungsstoffen</note>
+          <note>mit Süßungsmitteln</note>
+          <price role="employee">7.25</price>
+          <price role="student">4.75</price>
+        </meal>
+        <meal>
+          <name>Gemüsewok Curry mit Reisnudeln</name>
+          <note>vegan</note>
           <price role="employee">6.95</price>
           <price role="student">4.45</price>
         </meal>
         <meal>
-          <name>Rindfleischstreifen zum Wokgericht</name>
-          <note>Rind</note>
-          <note>Soja</note>
-          <note>Weizen</note>
-          <price role="employee">2.95</price>
-          <price role="student">2.95</price>
+          <name>Schweinefleischstreifen zum Wokgericht</name>
+          <note>Schwein</note>
+          <price role="employee">1.95</price>
+          <price role="student">1.95</price>
         </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Mais-Paprika-Gemüse</name>
+          <name>Tagesgemüse</name>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Kartoffelsalat</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>vegan</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+        <meal>
+          <name>Mandelreis</name>
+          <note>Mandeln</note>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
         <meal>
-          <name>Pommes frites</name>
+          <name>Salzkartoffeln</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>vegan</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
@@ -87,11 +111,12 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Waldbeerenquark</name>
+          <name>Erdbeerjoghurt</name>
           <note>Milch und Laktose</note>
+          <note>mit Farbstoffen</note>
           <note>vegetarisch</note>
-          <price role="employee">1.59</price>
-          <price role="student">1.19</price>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Buffet">
@@ -100,10 +125,15 @@
           <note>Ei</note>
           <note>Milch und Laktose</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
           <note>Senf</note>
+          <note>Sesam</note>
           <note>Weizen</note>
+          <note>geschwefelt</note>
+          <note>geschwärzt</note>
           <note>mit Antioxidationsmitteln</note>
           <note>mit Farbstoffen</note>
+          <note>mit Süßungsmitteln</note>
           <note>vegetarisch</note>
           <price role="employee">1.60</price>
           <price role="student">1.10</price>
