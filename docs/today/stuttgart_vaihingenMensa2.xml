@@ -3,8 +3,210 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-07-14">
-      <closed/>
+    <day date="2024-07-15">
+      <category name="Vorspeise">
+        <meal>
+          <name>Gemüserahmsuppe</name>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Veganer renner">
+        <meal>
+          <name>Tomaten-Hirse mit Haselnüssen</name>
+          <note>Haselnüsse</note>
+          <note>vegan</note>
+          <price role="employee">5.49</price>
+          <price role="student">2.99</price>
+        </meal>
+      </category>
+      <category name="Hauptgericht">
+        <meal>
+          <name>Allgäuer Käsespätzle mit Zwiebelschmelze</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">6.70</price>
+          <price role="student">4.20</price>
+        </meal>
+        <meal>
+          <name>Frittierte Tintenfischringe mit Zitrone, Knoblauch-Dip und Pommes frites</name>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Senf</note>
+          <note>Weichtiere</note>
+          <note>Weizen</note>
+          <note>mit Farbstoffen</note>
+          <price role="employee">7.40</price>
+          <price role="student">4.90</price>
+        </meal>
+        <meal>
+          <name>Bunter Salatteller mit Paniertes Schweineschnitzel</name>
+          <note>Ei</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Schwein</note>
+          <note>Senf</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <price role="employee">7.90</price>
+          <price role="student">5.40</price>
+        </meal>
+        <meal>
+          <name>Bunter Salatteller mit Veganes Schnitzel</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Senf</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>vegan</note>
+          <price role="employee">7.70</price>
+          <price role="student">5.20</price>
+        </meal>
+      </category>
+      <category name="Aktion">
+        <meal>
+          <name>Burger Bar</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Gerste</note>
+          <note>Hafer</note>
+          <note>Milch und Laktose</note>
+          <note>Rind</note>
+          <note>Roggen</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Schwein</note>
+          <note>Senf</note>
+          <note>Sesam</note>
+          <note>Weizen</note>
+          <note>geschwefelt</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Farbstoffen</note>
+          <note>mit Konservierungsstoffen</note>
+          <note>mit Phosphaten</note>
+          <note>mit Süßungsmitteln</note>
+          <note>vegan</note>
+          <note>vegetarisch</note>
+          <price role="employee">2.90</price>
+          <price role="student">2.00</price>
+        </meal>
+        <meal>
+          <name>Wok im OG: Gemüsewok Curry mit Duftreis Hähnchenstreifen zum Wokgericht</name>
+          <note>Geflügel</note>
+          <price role="employee">1.60</price>
+          <price role="student">1.10</price>
+        </meal>
+        <meal>
+          <name>Wok im OG: Gemüsewok Curry mit Duftreis Räuchertofu zum Wokgericht</name>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">1.60</price>
+          <price role="student">1.10</price>
+        </meal>
+        <meal>
+          <name>Flammkuchen Griechischer Art</name>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Konservierungsstoffen</note>
+          <note>vegetarisch</note>
+          <price role="employee">7.45</price>
+          <price role="student">4.95</price>
+        </meal>
+        <meal>
+          <name>Flammkuchen Elsässer Art</name>
+          <note>Milch und Laktose</note>
+          <note>Schwein</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Konservierungsstoffen</note>
+          <price role="employee">7.45</price>
+          <price role="student">4.95</price>
+        </meal>
+      </category>
+      <category name="Beilage">
+        <meal>
+          <name>Chinagemüse</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Burger Bar EG:                      Country Potatoes</name>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+        <meal>
+          <name>Pommes frites</name>
+          <note>vegan</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+        <meal>
+          <name>Bratkartoffeln</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>vegan</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+      </category>
+      <category name="Salat">
+        <meal>
+          <name>Beilagensalat</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Dessert">
+        <meal>
+          <name>Himbeerquark</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+        <meal>
+          <name>Früchtemüsli</name>
+          <note>Gerste</note>
+          <note>Hafer</note>
+          <note>Haselnüsse</note>
+          <note>Mandeln</note>
+          <note>Milch und Laktose</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+      </category>
+      <category name="Buffet">
+        <meal>
+          <name>Salatbuffet</name>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Sesam</note>
+          <note>Weizen</note>
+          <note>geschwefelt</note>
+          <note>geschwärzt</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Farbstoffen</note>
+          <note>mit Süßungsmitteln</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.60</price>
+          <price role="student">1.10</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
