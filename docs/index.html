@@ -55,6 +55,16 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.12.4/x64/lib/python3.12/_strptime.py", line 333, in _strptime
     raise ValueError("time data %r does not match format %r" %
 ValueError: time data '015.07.2024' does not match format '%d.%m.%Y'
+
+mannheim/wohlgelegen:
+Traceback (most recent call last):
+  File "/home/runner/work/mensahd/mensahd/updateFeeds.py", line 145, in updateFeeds
+    content = getattr(parser, feedMethod)(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/mensahd/mensahd/mannheim/__init__.py", line 85, in feed
+    fromTo = document.find("h2").text.strip()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'text'
 </pre></article>
       <article>
 <ol style="list-style-type:none">
