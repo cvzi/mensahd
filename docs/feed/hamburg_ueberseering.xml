@@ -3,65 +3,11 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-07-23">
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Hähnchenkeule Sticks auf Pfannengemüse, Ajvar Dip , Curryreis</name>
-          <note>Geflügel</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <price role="employee">6.10</price>
-          <price role="other">7.30</price>
-          <price role="student">4.80</price>
-        </meal>
-      </category>
-      <category name="CampusVital">
-        <meal>
-          <name>Lachsfilet auf buntem Gemüse-Bulgur (3,5,Fi,Sl,Sw,GlW), Joghurt-Zitronen-Dip</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Fisch</note>
-          <price role="employee">7.10</price>
-          <price role="other">8.30</price>
-          <price role="student">5.80</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Indisches Buttercurry , mariniertes Quorn , Basmatireis</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
-          <price role="employee">5.30</price>
-          <price role="other">6.50</price>
-          <price role="student">4.00</price>
-        </meal>
-      </category>
-      <category name="Pastabar">
-        <meal>
-          <name>Pasta des Tages (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-      </category>
-      <category name="Gemüsebar">
-        <meal>
-          <name>Gemüse des Tages</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-      </category>
-    </day>
     <day date="2024-07-24">
       <category name="Pottkieker">
         <meal>
-          <name>Grünkern-Chilli mit Süßkartoffeln,Mais und Kidneybohnen (Sl,GlD)</name>
+          <name>Grünkern-Chilli mit Mais und Kidneybohnen (Sl,GlD), Curryreis</name>
+          <note>Senf und Senferzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">3.40</price>
@@ -70,6 +16,14 @@
         </meal>
       </category>
       <category name="CampusKlassiker">
+        <meal>
+          <name>Gebratenes Seelachsfilet (Fi,GlW), Kräutersoße (Mi,GlW,GlG), Salzkartoffeln</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>mit Fisch</note>
+          <price role="employee">5.90</price>
+          <price role="other">7.10</price>
+          <price role="student">4.60</price>
+        </meal>
         <meal>
           <name>Hähnchenbrust in Parmesanpanade (Mi,GlW), Kräutersoße (Mi,GlW,GlG), Salzkartoffeln</name>
           <note>Geflügel</note>
@@ -81,19 +35,17 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>gebackener Panko - Tofu (2,Ei,So,GlW), Pakchoi - Sprossengemüse (2,So,Se,GlW), Spicy Pepper Sauce , Basmatireis</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <name>gebackener Panko - Tofu (2,Ei,So,GlW), Pakchoi - Sprossengemüse (2,So,Se,GlW), Erdnussdip (En,So,GlW), Basmatireis</name>
           <note>Vegetarisch</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">5.80</price>
           <price role="other">7.00</price>
           <price role="student">4.50</price>
         </meal>
         <meal>
-          <name>Kross gebackenes Panko-Chicken (3,GlW), Pakchoi - Sprossengemüse (2,So,Se,GlW), Spicy Pepper Sauce , Basmatireis</name>
-          <note>Ei und Eierzeugnisse</note>
+          <name>Kross gebackenes Panko-Chicken (3,GlW), Pakchoi - Sprossengemüse (2,So,Se,GlW), Erdnussdip (En,So,GlW), Basmatireis</name>
           <note>Geflügel</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">6.90</price>
           <price role="other">8.10</price>
           <price role="student">5.60</price>
@@ -133,9 +85,8 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Vegane Carbonara mit Tofuwürfel (1,So,Sl,Sf,GlW), Conchiglie (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Vegetarische Carbonara mit Räuchertofu (1,So,Mi,Sl,Sf,GlW,GlG), Conchiglie (GlW)</name>
+          <note>Vegetarisch</note>
           <price role="employee">4.10</price>
           <price role="other">5.30</price>
           <price role="student">2.80</price>
