@@ -4,8 +4,61 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2024-07-28">
-      <closed/>
+    <day date="2024-07-29">
+      <category name="Dessert">
+        <meal>
+          <name>Kokoscreme mit Beeren</name>
+          <note>Coconut cream with berries</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Hausgemachter Kirsch-Apfel-Kuchen im Glas</name>
+          <note>Homemade cherry-apple cake in a jar</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Tomaten-Haferrahmsuppe mit Basilikum</name>
+          <note>Tomato-oat cream soup with basil</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Saftiger Kassler Nacken vom Hällischen Landschwein mit grünen Bohnen und Schmorkartoffeln</name>
+          <note>Juicy smoked pork neck from Hällischen country pig with green beans and braised potatoes</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Chana Masala, indisches Kichererbsencurry mit Gewürzreis</name>
+          <note>Chana Masala, Indian chickpea curry with spiced rice</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Pizza Margherita, dazu Blattsalat</name>
+          <note>Pizza Margherita with lettuce</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
