@@ -3,14 +3,14 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-07-29">
+    <day date="2024-07-30">
       <category name="Vorspeise">
         <meal>
-          <name>Kartoffelsuppe</name>
+          <name>Flädlesuppe</name>
+          <note>Ei</note>
           <note>Milch und Laktose</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
-          <note>mit Antioxidationsmitteln</note>
+          <note>Weizen</note>
           <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
@@ -18,9 +18,8 @@
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Hirsecurry-Pfanne mit Soja-Würzdip</name>
+          <name>Chili sin Carne und Reis</name>
           <note>Sellerie</note>
-          <note>Senf</note>
           <note>Soja</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
@@ -29,23 +28,21 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Vegane Maultaschen mit Zwiebelschmelze und Kartoffelsalat</name>
+          <name>Ofenkartoffel mit Kräuterquark und Salat</name>
+          <note>Milch und Laktose</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>vegan</note>
-          <price role="employee">7.10</price>
-          <price role="student">4.60</price>
+          <note>vegetarisch</note>
+          <price role="employee">6.30</price>
+          <price role="student">3.80</price>
         </meal>
         <meal>
-          <name>Hähnchenbrustfilet mit Curry-Kokos-Sauce und Reis</name>
-          <note>Geflügel</note>
-          <note>Sellerie</note>
+          <name>Schweinebraten mit Jägersauce und Bratkartoffeln</name>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Schwein</note>
           <note>Weizen</note>
-          <price role="employee">6.00</price>
-          <price role="student">3.50</price>
+          <price role="employee">7.90</price>
+          <price role="student">5.40</price>
         </meal>
       </category>
       <category name="Aktion">
@@ -62,6 +59,16 @@
           <price role="student">1.10</price>
         </meal>
         <meal>
+          <name>Flammkuchen Elsässer Art</name>
+          <note>Milch und Laktose</note>
+          <note>Schwein</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Konservierungsstoffen</note>
+          <price role="employee">7.45</price>
+          <price role="student">4.95</price>
+        </meal>
+        <meal>
           <name>Flammkuchen Griechischer Art</name>
           <note>Milch und Laktose</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
@@ -75,9 +82,10 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Rosenkohl</name>
-          <note>Sellerie</note>
-          <note>vegan</note>
+          <name>Blattspinat</name>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -88,11 +96,14 @@
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Kartoffelsalat</name>
+          <name>Reis</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Bratkartoffeln</name>
           <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
@@ -108,16 +119,16 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Erdbeerjoghurt</name>
+          <name>Sahneschokopudding</name>
           <note>Milch und Laktose</note>
-          <note>mit Farbstoffen</note>
           <note>vegetarisch</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Schwarz-weiße Schokoladenmousse</name>
+          <name>Käsesahne Creme</name>
           <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
