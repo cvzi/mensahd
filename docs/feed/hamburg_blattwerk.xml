@@ -3,71 +3,10 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-07-29">
-      <category name="CampusVital">
-        <meal>
-          <name>Bowl mit gebratenen Soja- Streifen, Edamame, Erdnüsse, Staudensellerie, Orange, und schwarzem Sesam (2,3,5,En,So,Sl,Se,Sw,GlW), Udon-Nudeln (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.90</price>
-          <price role="other">7.10</price>
-          <price role="student">4.60</price>
-        </meal>
-      </category>
-      <category name="CampusSpezial">
-        <meal>
-          <name>Lupinen-Bolognese , Penne (GlW)</name>
-          <note>Lupine und - erzeugnisse</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Farbstoff</note>
-          <price role="employee">4.30</price>
-          <price role="other">5.50</price>
-          <price role="student">3.00</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Schupfnudeln mit Champignons, Spitzkohl und marinierten Tofuscheiben (1,2,So,Sf,Sw,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.00</price>
-          <price role="other">7.20</price>
-          <price role="student">4.70</price>
-        </meal>
-      </category>
-      <category name="Pastabar">
-        <meal>
-          <name>Crema di pomodori secchi e basilico mit getrockneten Tomaten in Kräutersoße (2,5,Mi,Sw,GlW,GlG), Fusilli (GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
-          <name>Carbonara vegetariana (Ei,Mi,GlW,GlG), Fusilli (GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-      </category>
-      <category name="Gemüsebar">
-        <meal>
-          <name>Gemüsemix mit gelben Karotten, Buttererbsen , Glacierte Pastinaken mit Honig, Chili-Kartoffeln aus dem Ofen</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-      </category>
-    </day>
     <day date="2024-07-30">
       <category name="CampusVital">
         <meal>
-          <name>Maultaschen auf Blattsalaten mit Italiandressing und Tomatenwürfeln, Fladenbrot (1,3,5,Mi,Sf,Se,Sw,GlW)</name>
+          <name>Maultaschen auf Blattsalaten mit Italiandressing und Tomatenwürfeln (1,3,5,Mi,Sf,Sw,GlW)</name>
           <note>Neu</note>
           <note>Vegetarisch</note>
           <price role="employee">5.50</price>
@@ -97,11 +36,18 @@
           <price role="other">6.40</price>
           <price role="student">3.90</price>
         </meal>
+        <meal>
+          <name>Zitronen Couscous mit geschmortem Tomaten-Auberginen antipasti und marinieten Räuchertofu (So,Sl,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.15</price>
+          <price role="other">6.35</price>
+          <price role="student">3.85</price>
+        </meal>
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Lenticchie mit Linsen in pikanter Tomatensoße , bunte Fusilli (GlW)</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Pasta con le melanzane mit Auberginen in Tomatensoße (Sw,GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
@@ -109,8 +55,10 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Pasta al forno di melanzane Nudelauflauf mit Auberginen (1,Mi,Sw,GlW)</name>
-          <note>Vegetarisch</note>
+          <name>Lenticchie mit Linsen in pikanter Tomatensoße , bunte Fusilli (GlW)</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -159,18 +107,18 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>all`Arrabbiata mit scharfer Tomatensoße und Sojastreifen , Maccaroni (GlW)</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Funghi di bosco e basilico mit Waldpilzen und Basilikum (Mi,Sw,GlW,GlG), Maccaroni (GlW)</name>
+          <note>Vegetarisch</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Funghi di bosco e basilico mit Waldpilzen und Basilikum (Mi,Sw,GlW,GlG), Maccaroni (GlW)</name>
-          <note>Vegetarisch</note>
+          <name>all`Arrabbiata mit scharfer Tomatensoße und Sojastreifen , Maccaroni (GlW)</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -575,17 +523,17 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Salsa bianca mit Räuchertofu in Kräutersoße (So,Sl,GlW), Penne (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Broccoli e Gorgonzola mit Gorgonzola und Broccoli , Penne (GlW)</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Broccoli e Gorgonzola mit Gorgonzola und Broccoli , Penne (GlW)</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
+          <name>Salsa bianca mit Räuchertofu in Kräutersoße (So,Sl,GlW), Penne (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
