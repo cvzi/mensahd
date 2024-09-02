@@ -4,8 +4,61 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2024-09-01">
-      <closed/>
+    <day date="2024-09-02">
+      <category name="Dessert">
+        <meal>
+          <name>Mandelpudding mit Bananentopping und Himbeere</name>
+          <note>Almond pudding with banana topping and raspberry</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Apfelkuchen im Glas</name>
+          <note>Apple pie in a glass</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Grünes Cremesüppchen mit Hafer und Koriander</name>
+          <note>Green cream soup with oats and coriander</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Putengeschnetzeltes mit Waldpilzen, Röstitaler und grünes Gemüse</name>
+          <note>Turkey slices with wild mushrooms, Röstitaler cheese and green vegetables</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Rotes Curry mit Wurzelgemüse und Edamame, dazu Zartweizen</name>
+          <note>Red curry with root vegetables and edamame, served with tender wheat</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Chili Cheese Fries mit Bohnen und Mais</name>
+          <note>Chili Cheese Fries with beans and corn</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
