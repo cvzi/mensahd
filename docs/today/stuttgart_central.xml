@@ -3,20 +3,22 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-09-10">
+    <day date="2024-09-11">
       <category name="Vorspeise">
         <meal>
-          <name>Gemüsebrühe mit frischen Kräutern</name>
-          <note>Sellerie</note>
-          <note>vegan</note>
+          <name>Tagessuppe</name>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Kichererbsen-Curry mit Duftreis</name>
+          <name>Veganes Gyros mit veganem Tzatziki, Paprikareis und Weißkrautsalat</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Soja</note>
+          <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -24,26 +26,29 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Bandnudeln mit Pesto</name>
-          <note>Mandeln</note>
-          <note>Milch und Laktose</note>
+          <name>Geröstete Schinkennudeln mit Ei</name>
+          <note>Ei</note>
+          <note>Schwein</note>
           <note>Weizen</note>
-          <note>vegetarisch</note>
-          <price role="employee">5.80</price>
-          <price role="student">3.30</price>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Konservierungsstoffen</note>
+          <price role="employee">6.70</price>
+          <price role="student">4.20</price>
         </meal>
         <meal>
-          <name>Fleischküchle mit Spätzle und Bratensauce</name>
+          <name>Paniertes Schweineschnitzel mit Jägersauce und Kräuterknöpfle</name>
           <note>Dinkel</note>
           <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Schwein</note>
           <note>Weizen</note>
-          <price role="employee">7.90</price>
-          <price role="student">5.40</price>
+          <price role="employee">7.70</price>
+          <price role="student">5.20</price>
         </meal>
       </category>
       <category name="Aktion">
         <meal>
-          <name>Maccheroni fiore Paprika-Chorizo-Sauce</name>
+          <name>Campanelle Paprika-Chorizo-Sauce</name>
           <note>Rind</note>
           <note>Schwein</note>
           <note>Sellerie</note>
@@ -57,7 +62,7 @@
           <price role="student">4.95</price>
         </meal>
         <meal>
-          <name>Maccheroni fiore Quattro Fromaggi Sauce</name>
+          <name>Campanelle Quattro Fromaggi Sauce</name>
           <note>Milch und Laktose</note>
           <note>Weizen</note>
           <note>hauseigene Nudelmanufaktur</note>
@@ -68,17 +73,30 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Ratatouille-Gemüse</name>
-          <note>Sellerie</note>
-          <note>vegan</note>
+          <name>Tagesgemüse</name>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
         <meal>
-          <name>Duftreis</name>
+          <name>Paprikareis</name>
           <note>vegan</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
+          <price role="employee">1.25</price>
+          <price role="student">0.90</price>
+        </meal>
+        <meal>
+          <name>Pommes frites</name>
+          <note>vegan</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+        <meal>
+          <name>Kräuterknöpfle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
         </meal>
       </category>
       <category name="Salat">
@@ -91,8 +109,10 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Creme mit Tiramisu-Geschmack</name>
+          <name>Nuss-Nougat-Pudding</name>
+          <note>Haselnüsse</note>
           <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
@@ -103,11 +123,15 @@
           <note>Ei</note>
           <note>Milch und Laktose</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
           <note>Senf</note>
+          <note>Sesam</note>
           <note>Weizen</note>
           <note>geschwefelt</note>
+          <note>geschwärzt</note>
           <note>mit Antioxidationsmitteln</note>
           <note>mit Farbstoffen</note>
+          <note>mit Süßungsmitteln</note>
           <note>vegetarisch</note>
           <price role="employee">1.60</price>
           <price role="student">1.10</price>
