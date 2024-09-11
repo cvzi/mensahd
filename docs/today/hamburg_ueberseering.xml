@@ -4,6 +4,16 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2024-09-11">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Hähnchenbrust in Parmesanpanade (Mi,GlW), Kräutersoße (So,Mi,GlW,GlG), Hausgemachter Kartoffelstampf</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <price role="employee">5.90</price>
+          <price role="other">7.10</price>
+          <price role="student">4.60</price>
+        </meal>
+      </category>
       <category name="CampusVital">
         <meal>
           <name>Spaghetti in Basilikum Knoblauchsoße mit Melanzane Bällchen (1,3,5,Mi,Sw,GlW)</name>
@@ -32,20 +42,20 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Frisches Wokgemüse mit Erdnusssoße und Mie-Nudeln (2,En,So,Sl,Sw,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.80</price>
-          <price role="other">7.00</price>
-          <price role="student">4.50</price>
-        </meal>
-        <meal>
-          <name>Gebratene Hähnchenstreifen mit frischem Wokgemüse, Erdnusssoße und Mie-Nudeln (2,En,So,Sl,Se,Sw,GlW)</name>
+          <name>Gebratene Hähnchenstreifen mit frischem Wokgemüse, Erdnusssoße und Basmati Reis (2,En,So,Sl,Se,Sw,GlW)</name>
           <note>Geflügel</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">6.50</price>
           <price role="other">7.70</price>
           <price role="student">5.20</price>
+        </meal>
+        <meal>
+          <name>Frisches Wokgemüse mit Erdnusssoße und Basmati Reis (2,En,So,Sl,Se,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.80</price>
+          <price role="other">7.00</price>
+          <price role="student">4.50</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -59,9 +69,10 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>gebackene Aubergine, gebratene Zucchini, gebratene Karotten, gebratene Paprika , Süßkartoffeln, Kräuterkartoffeln</name>
+          <name>gebackene Aubergine, gebratene Zucchini, gebratene Karotten , gebratene Paprika , Süßkartoffeln, Kräuterkartoffeln</name>
           <note>Geschwefelt</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Farbstoff</note>
