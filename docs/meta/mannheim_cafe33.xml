@@ -3,11 +3,11 @@
 <?xml-stylesheet type="text/css" href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css"?>
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <name>Mannheim, Mensa am Schloss</name>
-    <address>Bismarckstraße 10, 68159 </address>
+    <name>Mannheim, Popakademie Café 33</name>
+    <address>Hafenstraße 33, 68159 Mannheim</address>
     <city>Mannheim</city>
-    <phone>+49 621 49072333</phone>
-    <location latitude="49.48484" longitude="8.45952"/>
+    <phone/>
+    <location latitude="49.496304" longitude="8.457344"/>
     <times type="opening">
       <monday closed="true"/>
       <tuesday closed="true"/>
@@ -19,8 +19,8 @@
     </times>
     <feed name="full" priority="1">
       <schedule dayOfMonth="*" dayOfWeek="*" hour="6-14" minute="10" retry="65 1 1440"/>
-      <url>https://cvzi.github.io/mensahd/feed/mannheim_schloss.xml</url>
-      <source>https://www.stw-ma.de/essen-trinken/speiseplaene/wochenansicht?location=610&amp;lang=de</source>
+      <url>https://cvzi.github.io/mensahd/feed/mannheim_cafe33.xml</url>
+      <source>https://www.stw-ma.de/essen-trinken/speiseplaene/wochenansicht?location=717&amp;lang=de</source>
     </feed>
   </canteen>
 </openmensa>
