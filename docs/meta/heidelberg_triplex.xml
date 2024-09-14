@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/basic.css" type="text/css"?>
+<?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
+<openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
+  <canteen>
+    <name>Heidelberg, Triplex-Mensa am Uniplatz</name>
+    <address>Grabengasse 14, 69117 Heidelberg</address>
+    <city>Heidelberg</city>
+    <!--<phone></phone>-->
+    <location latitude="49.410596" longitude="8.705868" />
+    <!--<availability></availability>-->
+    <times type="opening">
+      <monday open="11:00-14:00" />
+      <tuesday open="11:00-14:00" />
+      <wednesday open="11:00-14:00" />
+      <thursday open="11:00-14:00" />
+      <friday open="11:00-14:00" />
+      <saturday closed="true" />
+      <sunday closed="true" />
+    </times>
+    <feed name="today" priority="0">
+      <schedule dayOfMonth="*" dayOfWeek="1-5" hour="6-14" retry="5 3" />
+      <url>https://cvzi.github.io/mensahd/today/heidelberg_triplex.xml</url>
+      <source>https://www.studentenwerk.uni-heidelberg.de/de/speiseplan_neu</source>
+    </feed>
+    <feed name="full" priority="1">
+      <schedule dayOfMonth="*" dayOfWeek="*" hour="7,9" minute="20" retry="60 1 1440" />
+      <url>https://cvzi.github.io/mensahd/feed/heidelberg_triplex.xml</url>
+      <source>https://www.studentenwerk.uni-heidelberg.de/de/speiseplan_neu</source>
+    </feed>
+  </canteen>
+</openmensa>

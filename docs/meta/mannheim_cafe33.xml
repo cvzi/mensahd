@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-stylesheet type="text/css" href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/basic.css"?>
+<?xml-stylesheet type="text/css" href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css"?>
+<openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
+  <canteen>
+    <name>Mannheim, Popakademie Café 33</name>
+    <address>Hafenstraße 33, 68159 Mannheim</address>
+    <city>Mannheim</city>
+    <phone/>
+    <location latitude="49.496304" longitude="8.457344"/>
+    <times type="opening">
+      <monday closed="true"/>
+      <tuesday closed="true"/>
+      <wednesday closed="true"/>
+      <thursday closed="true"/>
+      <friday closed="true"/>
+      <saturday closed="true"/>
+      <sunday closed="true"/>
+    </times>
+    <feed name="full" priority="1">
+      <schedule dayOfMonth="*" dayOfWeek="*" hour="6-14" minute="10" retry="65 1 1440"/>
+      <url>https://cvzi.github.io/mensahd/feed/mannheim_cafe33.xml</url>
+      <source>https://www.stw-ma.de/essen-trinken/speiseplaene/wochenansicht?location=717&amp;lang=de</source>
+    </feed>
+  </canteen>
+</openmensa>

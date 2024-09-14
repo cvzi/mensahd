@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/basic.css" type="text/css"?>
+<?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
+<openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
+  <canteen>
+    <name>Ulm, Hochschule Ulm Mensa</name>
+    <address>Hochschule Ulm, Prittwitzstraße, 89075 Ulm</address>
+    <city>Ulm</city>
+    <phone>+49 731 50 28218</phone>
+    <location latitude="48.4084144" longitude="9.9993706" />
+    <!--<availability></availability>-->
+    <times type="opening">
+      <monday open="11:45-13:45" />
+      <tuesday open="11:45-13:45" />
+      <wednesday open="11:45-13:45" />
+      <thursday open="11:45-13:45" />
+      <friday open="11:45-13:45" />
+      <saturday open="11:45-13:45" />
+      <sunday open="11:45-13:45" />
+    </times>
+    <feed name="full" priority="1">
+      <schedule dayOfMonth="*" dayOfWeek="*" hour="6-14" minute="30" retry="60 1 1440" />
+      <url>https://cvzi.github.io/mensahd/feed/ulm_hochschule.xml</url>
+      <source>https://www.uni-ulm.de/mensaplan/#Prittwitzstr</source>
+    </feed>
+  </canteen>
+</openmensa>
