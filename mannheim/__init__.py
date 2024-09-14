@@ -6,6 +6,7 @@ import datetime
 import requests
 import logging
 import urllib
+import urllib.parse
 import bs4
 
 
@@ -26,9 +27,10 @@ class Parser:
     headers = {
         'User-Agent': f'{useragentname}/{__version__} ({useragentcomment}) {requests.utils.default_user_agent()}'
     }
-    meals_current_week = 'https://menuplan.eurest.at/CurrentWeek/{ref}.xml'
-    meals_next_week = 'https://menuplan.eurest.at/NextWeek/{ref}.xml'
-    source_url = 'https://menuplan.eurest.at/menu.html?current_url=%2FCurrentWeek%2F{ref}.xml'
+
+    source_url = "https://www.stw-ma.de/essen-trinken/speiseplaene/wochenansicht"
+    source_parameters = "?location={location}&date={year}-{month}-{day}&lang=de"
+    source_parameters_meta = "?location={location}&lang=de"
 
     def correct_capitalization(self, s): return s[0].upper() + s[1:].lower()
 
@@ -55,15 +57,19 @@ class Parser:
         if ref not in self.canteens:
             return f"Unknown canteen with ref='{xml_escape(ref)}'"
 
-        if "url" not in self.canteens[ref]:
-            return f"Canteen with ref='{xml_escape(ref)}' has no source url"
+        if "loc" not in self.canteens[ref]:
+            return f"Canteen with ref='{xml_escape(ref)}' has no loc-id"
 
         today = now_local()
         if today.weekday() == 6:  # Sunday
             today += datetime.timedelta(days=1)  # Tomorrow
 
-        url = self.canteens[ref]["url"].format(year=today.strftime(
-            '%Y'), month=today.strftime('%m'), day=today.strftime('%d'))
+        url = self.source_url + self.source_parameters.format(
+            location=self.canteens[ref]["loc"],
+            year=today.strftime('%Y'),
+            month=today.strftime('%m'),
+            day=today.strftime('%d')
+        )
 
         if not url.startswith("http://") and not url.startswith("https://"):
             raise RuntimeError("url is not an allowed URL: '%s'" % url)
@@ -107,7 +113,7 @@ class Parser:
             guest_multiplier = 1.60
 
         table = document.find("table", {"id": "previewTable"})
-        if not table:
+        if not table or not isinstance(table, bs4.Tag):
             # previewTable not found, e.g. temporary closed
             # Set 7 days closed
             for i in range(7):
@@ -242,7 +248,7 @@ class Parser:
             "latitude": xml_str_param(mensa["latitude"]),
             "longitude": xml_str_param(mensa["longitude"]),
             "feed": xml_str_param(self.url_template.format(metaOrFeed='feed', mensaReference=urllib.parse.quote(ref))),
-            "source": xml_str_param(mensa["source"]),
+            "source": xml_str_param(self.source_url + self.source_parameters_meta.format(location=self.canteens[ref]["loc"])),
         }
 
         if "phone" in mensa:
@@ -276,4 +282,4 @@ if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
     p = Parser("http://localhost/{metaOrFeed}/mannheim_{mensaReference}.xml")
     print(p.feed("schloss"))
-    # print(p.meta("schloss"))
+    print(p.meta("schloss"))
