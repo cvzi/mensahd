@@ -4,8 +4,61 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2024-09-15">
-      <closed/>
+    <day date="2024-09-16">
+      <category name="Dessert">
+        <meal>
+          <name>Himbeerpudding mit Sauerrahm und Minze</name>
+          <note>Raspberry pudding with sour cream and mint</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Hausgemachtes Schokoladenmousse mit Kirschen</name>
+          <note>Homemade chocolate mousse with cherries</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Klassische Kartoffelsuppe</name>
+          <note>Classic potato soup</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Geschmorte Rinderroulade aus dem Ländle im eigenen Sud gegart, Urkarottengemüse und Dampfkartoffeln</name>
+          <note>Braised beef roulade from the Ländle cooked in its own juices, heirloom carrots and steamed potatoes</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Würzige Ofenkartoffeln mit veganem Hafer Quark-Dip und Schmorgemüse</name>
+          <note>Spicy baked potatoes with vegan oat quark dip and braised vegetables</note>
+          <price role="student">2.90</price>
+          <price role="employee">4.35</price>
+          <price role="other">7.25</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Zucchini Flatbread mit Ziegenfrischkäse, Honig und Rosmarin</name>
+          <note>Zucchini flatbread with goat's cheese, honey and rosemary</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
