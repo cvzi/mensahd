@@ -3,32 +3,131 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-09-20">
-      <category name="Menü">
+    <day date="2024-09-23">
+      <category name="CampusKlassiker">
         <meal>
-          <name>Süßkartoffelpommes , Gurkensalat mit Chili und schwarzem Sesam , Bohnenmus , Kräuterdip , Limette</name>
-          <note>Geschwefelt</note>
+          <name>Hähnchenfilets in Soja Pflaumen Soße , Reis</name>
+          <note>Geflügel</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.40</price>
+          <price role="other">7.60</price>
+          <price role="student">5.10</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Süßkartoffel-Gnocchi mit geröstetem Blumenkohl, Sojajoghurt-Minz Dip</name>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Antioxidationsmittel</note>
-          <note>mit Farbstoff</note>
-          <price role="employee">5.65</price>
-          <price role="other">6.25</price>
-          <price role="student">4.95</price>
+          <price role="employee">4.50</price>
+          <price role="other">5.70</price>
+          <price role="student">3.20</price>
         </meal>
       </category>
+    </day>
+    <day date="2024-09-24">
       <category name="CampusKlassiker">
         <meal>
-          <name>Mac and Cheese (1,Mi,Sl,Sf,GlW), Eisbergsalat mit Tomate</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <name>Hähnchenbrust im Knuspermantel (GlW), Joghurt-Zitronen-Dip , glasierte Honigmöhren, Gemüse Bulgur (Sl,GlW)</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <price role="employee">6.10</price>
+          <price role="other">7.30</price>
+          <price role="student">4.80</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Pennette in Tomatensoße mit Gemüsebällchen (Ei,GlW)</name>
           <note>Vegetarisch</note>
-          <price role="employee">5.00</price>
-          <price role="other">6.20</price>
-          <price role="student">3.70</price>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.00</price>
+          <price role="other">5.20</price>
+          <price role="student">2.70</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-09-25">
+      <category name="CampusVital">
+        <meal>
+          <name>Makkaroni-Tomatenauflauf mit Basilikumsoße (Ei,Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">4.40</price>
+          <price role="other">5.60</price>
+          <price role="student">3.10</price>
+        </meal>
+      </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Bratwurst Chorizo Art, Weizenrisotto mit Erbsen (Mi,Sl,GlW), Tomaten-Karottensalat , Pimento Senf</name>
+          <note>Geschwefelt</note>
+          <note>Neu</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Schwein</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <price role="employee">6.40</price>
+          <price role="other">7.60</price>
+          <price role="student">5.10</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-09-26">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Leberkäse im Ganzen gebacken , Süßer Senf , Bayrischer Kartoffelsalat mit Gurken</name>
+          <note>Schwein</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Phosphat</note>
+          <price role="employee">4.60</price>
+          <price role="other">5.80</price>
+          <price role="student">3.30</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>All in one Pot: Bulgur, Soja, Weißkohl, Cranberries, Ananas, Asia-Majo, Cashew (2,So,Sl,Sf,Sw,GlW,NCa)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.60</price>
+          <price role="other">6.80</price>
+          <price role="student">4.30</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-09-27">
+      <category name="CampusVital">
+        <meal>
+          <name>Planted Chicken Filet in Kräutermarinade , Tomatensoße, Erbsen , Kräuterreis</name>
+          <note>Geschwefelt</note>
+          <note>Neu</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Farbstoff</note>
+          <price role="employee">6.10</price>
+          <price role="other">7.30</price>
+          <price role="student">4.80</price>
+        </meal>
+      </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Tortellini mit Spinat Ricottafüllung (Ei,Mi,GlW), Walnuss-Senfsoße (2,5,Mi,Sl,Sf,Sw,GlW,GlG,NWa), mediterrane Salatbeilage</name>
+          <note>Vegetarisch</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">5.30</price>
+          <price role="other">6.50</price>
+          <price role="student">4.00</price>
         </meal>
       </category>
     </day>
