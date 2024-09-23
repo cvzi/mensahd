@@ -4,16 +4,6 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2024-09-23">
-      <category name="Menü">
-        <meal>
-          <name>Süße Kartoffeldonuts mit Zimt und Zucker (GlW), Vanillesoße</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
-          <price role="employee">1.90</price>
-          <price role="other">1.90</price>
-          <price role="student">1.90</price>
-        </meal>
-      </category>
       <category name="CampusKlassiker">
         <meal>
           <name>Vegane Bällchen in Dijon-Senf-Kapernsoße (1,So,Sl,Sf,Sw,GlW,GlG), Basmatireis, Rote Beete Salat</name>
@@ -188,6 +178,14 @@
       </category>
       <category name="CampusWorld">
         <meal>
+          <name>Udon Nudeln mit Rindfleisch und Edamame, frischer Koriander (2,So,Sl,Se,GlW)</name>
+          <note>Rind</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.80</price>
+          <price role="other">7.00</price>
+          <price role="student">4.50</price>
+        </meal>
+        <meal>
           <name>Ägyptische Falafel mit persischem Gewürzreis (Sl,Se,GlW), Pfirsich-Tomaten-Chutney</name>
           <note>Geschwefelt</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
@@ -198,14 +196,6 @@
           <price role="employee">5.20</price>
           <price role="other">6.40</price>
           <price role="student">3.90</price>
-        </meal>
-        <meal>
-          <name>Udon Nudeln mit Rindfleisch und Edamame, frischer Koriander (2,So,Sl,Se,GlW)</name>
-          <note>Rind</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.80</price>
-          <price role="other">7.00</price>
-          <price role="student">4.50</price>
         </meal>
       </category>
       <category name="Pastabar">
