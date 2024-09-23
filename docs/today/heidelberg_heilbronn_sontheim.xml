@@ -4,8 +4,39 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Sontheim</name>
-    <day date="2024-09-22">
-      <closed/>
+    <day date="2024-09-23">
+      <category name="Buffet">
+        <meal>
+          <name>Kräutercremesuppe</name>
+          <note>Herb cream soup</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+        <meal>
+          <name>Limetten Buttermilch Creme</name>
+          <note>Lime Buttermilk Cream</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+        <meal>
+          <name>Pilzragout mit Semmelknödel</name>
+          <note>Mushroom ragout with bread dumplings</note>
+          <price role="student">2.90</price>
+          <price role="employee">4.35</price>
+          <price role="other">7.25</price>
+        </meal>
+        <meal>
+          <name>Schlemmerbuffet je 100g Reichhaltige Auswahl an frischen Salaten, Gemüse-, Fisch-, Geflügel-, Schweine- und Rindfleisch- und vegetarischen und veganen Gerichten, Schwäbisches Wurstgulasch; Bulgurgemüse</name>
+          <note>Gourmet buffet each 100g Rich variety of fresh salads, vegetable/fish/poultry/pork/beef and vegetarian and vegan dishes
+, Swabian sausage goulash; bulgur vegetables
+</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
