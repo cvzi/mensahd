@@ -4,9 +4,18 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2024-09-23">
+      <category name="Menü">
+        <meal>
+          <name>Süße Kartoffeldonuts mit Zimt und Zucker (GlW), Sanddorn-Schmand</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <price role="employee">1.90</price>
+          <price role="other">1.90</price>
+          <price role="student">1.90</price>
+        </meal>
+      </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Vegane Bällchen in Dijon-Senf-Kapernsoße (1,So,Sl,Sf,Sw,GlW,GlG), Reis, Rote Beete Salat</name>
+          <name>Vegane Bällchen in Dijon-Senf-Kapernsoße (1,So,Sl,Sf,Sw,GlW,GlG), Basmatireis, Rote Beete Salat</name>
           <note>Alkohol</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -29,6 +38,15 @@
       </category>
       <category name="CampusWorld">
         <meal>
+          <name>Kross gebackenes Panko-Chicken (3,GlW), Pakchoi - Sprossengemüse (2,So,Se,GlW), Spicy Pepper Sauce , Basmatireis</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <price role="employee">6.90</price>
+          <price role="other">8.10</price>
+          <price role="student">5.60</price>
+        </meal>
+        <meal>
           <name>Indisches Buttercurry , mariniertes Quorn , Basmatireis</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -45,15 +63,6 @@
           <price role="employee">5.80</price>
           <price role="other">7.00</price>
           <price role="student">4.50</price>
-        </meal>
-        <meal>
-          <name>Kross gebackenes Panko-Chicken (3,GlW), Pakchoi - Sprossengemüse (2,So,Se,GlW), Spicy Pepper Sauce , Basmatireis</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Geflügel</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <price role="employee">6.90</price>
-          <price role="other">8.10</price>
-          <price role="student">5.60</price>
         </meal>
       </category>
       <category name="Pastabar">
