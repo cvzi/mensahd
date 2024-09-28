@@ -3,10 +3,12 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-09-27">
+    <day date="2024-09-30">
       <category name="Pottkieker">
         <meal>
-          <name>Gemüse-Kartffell Korma, Reis</name>
+          <name>Tofu-Gemüse-Topf</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">3.40</price>
@@ -16,44 +18,111 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Gemüse-Pilz Bolognese , Penne (GlW)</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">4.20</price>
-          <price role="other">5.40</price>
-          <price role="student">2.90</price>
+          <name>Schweinekotelette gebraten, Pilzsoße , Kartoffelspalten (GlW)</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwein</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">1.30</price>
+          <price role="other">2.50</price>
         </meal>
+      </category>
+      <category name="CampusWorld">
         <meal>
-          <name>vegane Currybratwurst , Grillsoße , Pommes Frites</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
+          <name>Soja-Geschnetzeltes in Erdnusssoße (2,En,So,Sl,GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">4.90</price>
-          <price role="other">6.10</price>
+          <price role="employee">5.05</price>
+          <price role="other">6.15</price>
+          <price role="student">3.80</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-10-01">
+      <category name="Pottkieker">
+        <meal>
+          <name>Grünes Steckrübencurry mit Kokosmilch und grüne Erbsen, Reis</name>
+          <note>Neu</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Burrito Bowl mit Sonnenblumenhack, Petersilie-Knoblauch-Dip (1,3,Sl,Sf,GlH), Tomaten-Gurken-Salsa</name>
+          <note>Geschwefelt</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">4.85</price>
+          <price role="other">5.95</price>
           <price role="student">3.60</price>
         </meal>
       </category>
-      <category name="Pastabar">
+      <category name="CampusSpezial">
         <meal>
-          <name>Rosmarinkartoffeln</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mensaVital</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
+          <name>2 Fischfrikadellen (Fi,Mi,GlW), Remoulade</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Neu</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Farbstoff</note>
+          <note>mit Fisch</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">3.15</price>
+          <price role="other">4.25</price>
+          <price role="student">1.90</price>
         </meal>
+      </category>
+    </day>
+    <day date="2024-10-02">
+      <category name="Pottkieker">
         <meal>
-          <name>3 erlei Gnocchi mit Spitzkohl, gebratener Paprika, Sonnenblumenhack und veganem Skyr (1,3,So,Sl,Sf,GlW)</name>
+          <name>Fasolada Griechischer Bohnensuppe mit Sellerie, Karotten und Baguette</name>
+          <note>Neu</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Pommes mit Chili Cheese Soße und Röstzwiebeln (1,Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">4.10</price>
+          <price role="other">5.30</price>
+          <price role="student">2.80</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Spaghetti in Basilikum Knoblauchsoße mit Melanzane Bällchen (1,3,5,Mi,Sw,GlW)</name>
+          <note>Neu</note>
+          <note>Vegetarisch</note>
+          <note>mensaVital</note>
+          <price role="employee">5.20</price>
+          <price role="other">6.40</price>
+          <price role="student">3.90</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Hühnchen in Kokos Soße</name>
+          <note>Geflügel</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.30</price>
+          <price role="other">5.30</price>
+          <price role="student">3.10</price>
         </meal>
       </category>
     </day>
