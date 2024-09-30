@@ -38,7 +38,170 @@
     <main>
       <article>Parser for <a target="_blank" href="https://openmensa.org">openmensa.org</a>. The parser runs in a <a target="_blank" title="What's a Github action?" href="https://docs.github.com/en/actions">Github action<sup>❓</sup></a> and pushes the XML feeds to this page</article>
       <article><h3><a href="https://github.com/cvzi/mensahd/actions/">🗿 Parser status</a></h3>
-<pre>mannheim/wagon:
+<pre>eppelheim/dhbw:
+Traceback (most recent call last):
+  File "/home/runner/work/mensahd/mensahd/updateFeeds.py", line 145, in updateFeeds
+    content = getattr(parser, feedMethod)(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/mensahd/mensahd/eppelheim/__init__.py", line 250, in feed
+    return self.handler(self.canteens[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/mensahd/mensahd/eppelheim/__init__.py", line 128, in parse_url
+    categoryName = strongs[0].text.strip().strip(":").strip()
+                   ~~~~~~~^^^
+IndexError: list index out of range
+
+heidelberg/zeughaus:
+Traceback (most recent call last):
+  File "/home/runner/work/mensahd/mensahd/updateFeeds.py", line 145, in updateFeeds
+    content = getattr(parser, feedMethod)(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 268, in feed_today
+    return _generateFeed(stream, name, 'today', age_seconds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 162, in _generateFeed
+    dom = defusedxml.lxml.parse(source)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/defusedxml/lxml.py", line 135, in parse
+    elementtree = _etree.parse(source, parser, base_url=base_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "src/lxml/etree.pyx", line 3589, in lxml.etree.parse
+  File "src/lxml/parser.pxi", line 1975, in lxml.etree._parseDocument
+  File "src/lxml/parser.pxi", line 1995, in lxml.etree._parseMemoryDocument
+  File "src/lxml/parser.pxi", line 1882, in lxml.etree._parseDoc
+  File "src/lxml/parser.pxi", line 1164, in lxml.etree._BaseParser._parseDoc
+  File "src/lxml/parser.pxi", line 633, in lxml.etree._ParserContext._handleParseResultDoc
+  File "src/lxml/parser.pxi", line 743, in lxml.etree._handleParseResult
+  File "src/lxml/parser.pxi", line 672, in lxml.etree._raiseParseError
+  File "<string>", line 1506
+lxml.etree.XMLSyntaxError: Opening and ending tag mismatch: tagesplan line 1504 and mensa, line 1506, column 9
+
+heidelberg/triplex:
+Traceback (most recent call last):
+  File "/home/runner/work/mensahd/mensahd/updateFeeds.py", line 145, in updateFeeds
+    content = getattr(parser, feedMethod)(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 268, in feed_today
+    return _generateFeed(stream, name, 'today', age_seconds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 162, in _generateFeed
+    dom = defusedxml.lxml.parse(source)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/defusedxml/lxml.py", line 135, in parse
+    elementtree = _etree.parse(source, parser, base_url=base_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "src/lxml/etree.pyx", line 3589, in lxml.etree.parse
+  File "src/lxml/parser.pxi", line 1975, in lxml.etree._parseDocument
+  File "src/lxml/parser.pxi", line 1995, in lxml.etree._parseMemoryDocument
+  File "src/lxml/parser.pxi", line 1882, in lxml.etree._parseDoc
+  File "src/lxml/parser.pxi", line 1164, in lxml.etree._BaseParser._parseDoc
+  File "src/lxml/parser.pxi", line 633, in lxml.etree._ParserContext._handleParseResultDoc
+  File "src/lxml/parser.pxi", line 743, in lxml.etree._handleParseResult
+  File "src/lxml/parser.pxi", line 672, in lxml.etree._raiseParseError
+  File "<string>", line 1506
+lxml.etree.XMLSyntaxError: Opening and ending tag mismatch: tagesplan line 1504 and mensa, line 1506, column 9
+
+heidelberg/inf304:
+Traceback (most recent call last):
+  File "/home/runner/work/mensahd/mensahd/updateFeeds.py", line 145, in updateFeeds
+    content = getattr(parser, feedMethod)(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 268, in feed_today
+    return _generateFeed(stream, name, 'today', age_seconds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 162, in _generateFeed
+    dom = defusedxml.lxml.parse(source)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/defusedxml/lxml.py", line 135, in parse
+    elementtree = _etree.parse(source, parser, base_url=base_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "src/lxml/etree.pyx", line 3589, in lxml.etree.parse
+  File "src/lxml/parser.pxi", line 1975, in lxml.etree._parseDocument
+  File "src/lxml/parser.pxi", line 1995, in lxml.etree._parseMemoryDocument
+  File "src/lxml/parser.pxi", line 1882, in lxml.etree._parseDoc
+  File "src/lxml/parser.pxi", line 1164, in lxml.etree._BaseParser._parseDoc
+  File "src/lxml/parser.pxi", line 633, in lxml.etree._ParserContext._handleParseResultDoc
+  File "src/lxml/parser.pxi", line 743, in lxml.etree._handleParseResult
+  File "src/lxml/parser.pxi", line 672, in lxml.etree._raiseParseError
+  File "<string>", line 1506
+lxml.etree.XMLSyntaxError: Opening and ending tag mismatch: tagesplan line 1504 and mensa, line 1506, column 9
+
+heidelberg/heilbronn_sontheim:
+Traceback (most recent call last):
+  File "/home/runner/work/mensahd/mensahd/updateFeeds.py", line 145, in updateFeeds
+    content = getattr(parser, feedMethod)(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 268, in feed_today
+    return _generateFeed(stream, name, 'today', age_seconds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 162, in _generateFeed
+    dom = defusedxml.lxml.parse(source)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/defusedxml/lxml.py", line 135, in parse
+    elementtree = _etree.parse(source, parser, base_url=base_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "src/lxml/etree.pyx", line 3589, in lxml.etree.parse
+  File "src/lxml/parser.pxi", line 1975, in lxml.etree._parseDocument
+  File "src/lxml/parser.pxi", line 1995, in lxml.etree._parseMemoryDocument
+  File "src/lxml/parser.pxi", line 1882, in lxml.etree._parseDoc
+  File "src/lxml/parser.pxi", line 1164, in lxml.etree._BaseParser._parseDoc
+  File "src/lxml/parser.pxi", line 633, in lxml.etree._ParserContext._handleParseResultDoc
+  File "src/lxml/parser.pxi", line 743, in lxml.etree._handleParseResult
+  File "src/lxml/parser.pxi", line 672, in lxml.etree._raiseParseError
+  File "<string>", line 1506
+lxml.etree.XMLSyntaxError: Opening and ending tag mismatch: tagesplan line 1504 and mensa, line 1506, column 9
+
+heidelberg/heilbronn_bildungscampus:
+Traceback (most recent call last):
+  File "/home/runner/work/mensahd/mensahd/updateFeeds.py", line 145, in updateFeeds
+    content = getattr(parser, feedMethod)(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 268, in feed_today
+    return _generateFeed(stream, name, 'today', age_seconds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 162, in _generateFeed
+    dom = defusedxml.lxml.parse(source)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/defusedxml/lxml.py", line 135, in parse
+    elementtree = _etree.parse(source, parser, base_url=base_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "src/lxml/etree.pyx", line 3589, in lxml.etree.parse
+  File "src/lxml/parser.pxi", line 1975, in lxml.etree._parseDocument
+  File "src/lxml/parser.pxi", line 1995, in lxml.etree._parseMemoryDocument
+  File "src/lxml/parser.pxi", line 1882, in lxml.etree._parseDoc
+  File "src/lxml/parser.pxi", line 1164, in lxml.etree._BaseParser._parseDoc
+  File "src/lxml/parser.pxi", line 633, in lxml.etree._ParserContext._handleParseResultDoc
+  File "src/lxml/parser.pxi", line 743, in lxml.etree._handleParseResult
+  File "src/lxml/parser.pxi", line 672, in lxml.etree._raiseParseError
+  File "<string>", line 1506
+lxml.etree.XMLSyntaxError: Opening and ending tag mismatch: tagesplan line 1504 and mensa, line 1506, column 9
+
+heidelberg/kiau:
+Traceback (most recent call last):
+  File "/home/runner/work/mensahd/mensahd/updateFeeds.py", line 145, in updateFeeds
+    content = getattr(parser, feedMethod)(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 268, in feed_today
+    return _generateFeed(stream, name, 'today', age_seconds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 162, in _generateFeed
+    dom = defusedxml.lxml.parse(source)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/defusedxml/lxml.py", line 135, in parse
+    elementtree = _etree.parse(source, parser, base_url=base_url)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "src/lxml/etree.pyx", line 3589, in lxml.etree.parse
+  File "src/lxml/parser.pxi", line 1975, in lxml.etree._parseDocument
+  File "src/lxml/parser.pxi", line 1995, in lxml.etree._parseMemoryDocument
+  File "src/lxml/parser.pxi", line 1882, in lxml.etree._parseDoc
+  File "src/lxml/parser.pxi", line 1164, in lxml.etree._BaseParser._parseDoc
+  File "src/lxml/parser.pxi", line 633, in lxml.etree._ParserContext._handleParseResultDoc
+  File "src/lxml/parser.pxi", line 743, in lxml.etree._handleParseResult
+  File "src/lxml/parser.pxi", line 672, in lxml.etree._raiseParseError
+  File "<string>", line 1506
+lxml.etree.XMLSyntaxError: Opening and ending tag mismatch: tagesplan line 1504 and mensa, line 1506, column 9
+
+mannheim/wagon:
 Traceback (most recent call last):
   File "/home/runner/work/mensahd/mensahd/updateFeeds.py", line 145, in updateFeeds
     content = getattr(parser, feedMethod)(
