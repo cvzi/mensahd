@@ -3,21 +3,26 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-09-30">
+    <day date="2024-10-01">
       <category name="Vorspeise">
         <meal>
-          <name>Meditarane Gemüsesuppe</name>
+          <name>Kartoffelsuppe</name>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
-          <note>vegan</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Gnocchi in Spinatsauce mit gerösteten Sonnenblumenkernen</name>
+          <name>Alu Gobhi - indisches Blumenkohl-Kartoffel-Curry</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
-          <note>Weizen</note>
+          <note>Soja</note>
+          <note>mit Konservierungsstoffen</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -25,29 +30,32 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Hähnchengyros mit Tzatziki und Pommes frites</name>
-          <note>Geflügel</note>
-          <note>Milch und Laktose</note>
-          <price role="employee">7.80</price>
-          <price role="student">5.30</price>
+          <name>Börek mit Spinatfüllung und Bulgur-Gemüsesalat</name>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Geschmacksverstärkern</note>
+          <note>mit Konservierungsstoffen</note>
+          <note>vegan</note>
+          <price role="employee">7.50</price>
+          <price role="student">5.00</price>
         </meal>
         <meal>
-          <name>6 Mini Nürnberger Bratwürste mit Bratensauce mit Sauerkraut und Kartoffelpüree</name>
-          <note>Milch und Laktose</note>
-          <note>Rind</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Schwein</note>
-          <note>Senf</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
-          <note>mit Phosphaten</note>
-          <price role="employee">7.70</price>
-          <price role="student">5.20</price>
+          <name>Seelachsfilet auf mediterranem Gemüsebett und Reis</name>
+          <note>Fisch</note>
+          <note>MSC-zertifizierter Fisch (MSC-C-51632)</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <price role="employee">7.90</price>
+          <price role="student">5.40</price>
         </meal>
       </category>
       <category name="Aktion">
         <meal>
           <name>Nudel Bar</name>
+          <note>Ei</note>
+          <note>Mandeln</note>
           <note>Milch und Laktose</note>
           <note>Sellerie</note>
           <note>Soja</note>
@@ -62,12 +70,9 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Rahmblumenkohl</name>
-          <note>Milch und Laktose</note>
+          <name>Karotten-Erbsen-Gemüse</name>
           <note>Sellerie</note>
-          <note>Soja</note>
-          <note>Weizen</note>
-          <note>vegetarisch</note>
+          <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -78,12 +83,8 @@
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Kartoffelpüree</name>
-          <note>Milch und Laktose</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
-          <note>vegetarisch</note>
+          <name>Reis</name>
+          <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -98,17 +99,16 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Kirschjoghurt</name>
+          <name>Mousse mit Limone-Joghurt-Geschmack</name>
           <note>Milch und Laktose</note>
-          <note>mit Farbstoffen</note>
           <note>vegetarisch</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Creme mit Stracciatella-Geschmack</name>
-          <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
+          <name>Kokosmilchreis mit Mango</name>
+          <note>Soja</note>
+          <note>vegan</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
@@ -124,6 +124,7 @@
           <note>Sesam</note>
           <note>Weizen</note>
           <note>geschwefelt</note>
+          <note>geschwärzt</note>
           <note>mit Antioxidationsmitteln</note>
           <note>mit Farbstoffen</note>
           <note>mit Süßungsmitteln</note>
