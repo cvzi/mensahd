@@ -3,41 +3,6 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-09-30">
-      <category name="Pottkieker">
-        <meal>
-          <name>Tomaten-Bohnen-Suppe mit Kartoffelwürfel</name>
-          <note>Neu</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">3.40</price>
-          <price role="other">4.10</price>
-          <price role="student">2.20</price>
-        </meal>
-      </category>
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Gebackene Seelachs-Nuggets (Fi,Mi,GlW), pikante Majonnaise mit Tomate, Zwiebel &amp; Gurke , Pommes Frites</name>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>mit Fisch</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.40</price>
-          <price role="student">3.90</price>
-        </meal>
-      </category>
-      <category name="CampusSpezial">
-        <meal>
-          <name>Hirtenkäse mit Ofengemüse , Tomatenbulgur (GlW)</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
-          <price role="employee">5.80</price>
-          <price role="other">7.00</price>
-          <price role="student">4.50</price>
-        </meal>
-      </category>
-    </day>
     <day date="2024-10-01">
       <category name="Pottkieker">
         <meal>
@@ -75,7 +40,7 @@
     <day date="2024-10-02">
       <category name="Pottkieker">
         <meal>
-          <name>Steckrübencurry mit Kokosmilch und grüne Erbsen</name>
+          <name>Steckrübencurry mit Kokosmilch und grüne Erbsen, Reis</name>
           <note>Neu</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -86,9 +51,12 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Kartoffel-Wedges auf Chili sin Carne</name>
+          <name>Kartoffel-Wedges auf Chili sin Carne , Tofunese</name>
+          <note>Geschwärzt</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">5.20</price>
@@ -98,9 +66,10 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Hähnchenstreifen in Kokos-Curry-Soße</name>
+          <name>Hähnchenstreifen in Kokos-Curry-Soße , Sesam-Karotten , Reis</name>
           <note>Geflügel</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">5.80</price>
@@ -122,17 +91,6 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Rinderhacksteak (Ei,GlW), BBQ-Grill-Soße , Pommes Frites</name>
-          <note>Rind</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">5.70</price>
-          <price role="other">6.90</price>
-          <price role="student">4.40</price>
-        </meal>
-        <meal>
           <name>Currybratwurst , BBQ-Grill-Soße , Pommes Frites</name>
           <note>Schwein</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -145,6 +103,17 @@
           <price role="employee">5.60</price>
           <price role="other">6.80</price>
           <price role="student">4.30</price>
+        </meal>
+        <meal>
+          <name>Rinderhacksteak (Ei,GlW), BBQ-Grill-Soße , Pommes Frites</name>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">5.70</price>
+          <price role="other">6.90</price>
+          <price role="student">4.40</price>
         </meal>
       </category>
       <category name="CampusVital">
