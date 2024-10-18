@@ -3,21 +3,23 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-10-17">
+    <day date="2024-10-18">
       <category name="Vorspeise">
         <meal>
-          <name>Linsensuppe</name>
+          <name>Lauchcremsuppe</name>
+          <note>Milch und Laktose</note>
           <note>Sellerie</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>vegan</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Kartoffel-Gemüse-Pfanne</name>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <name>Tomaten-Spaghetti mit Erbsencreme und Chiliflocken</name>
+          <note>Sellerie</note>
+          <note>Weizen</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -25,69 +27,59 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Überbackener Blumenkohl mit Kräuterrahmsauce und Petersilienkartoffeln</name>
+          <name>Falafel mit Gemüse-Couscous und Knoblauchdip</name>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">6.80</price>
+          <price role="student">4.30</price>
+        </meal>
+        <meal>
+          <name>Kichererbsen-Curry mit Duftreis</name>
+          <note>Sellerie</note>
+          <note>vegan</note>
+          <price role="employee">5.40</price>
+          <price role="student">2.90</price>
+        </meal>
+        <meal>
+          <name>Schlemmerfilet à la bordelaise mit Dillsauce und Vollkornreis</name>
+          <note>Fisch</note>
+          <note>MSC-zertifizierter Fisch (MSC-C-51632)</note>
           <note>Milch und Laktose</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
           <note>Soja</note>
           <note>Weizen</note>
-          <note>vegetarisch</note>
-          <price role="employee">6.70</price>
-          <price role="student">4.20</price>
-        </meal>
-        <meal>
-          <name>Cevapcici mit Djuvec-Reis und Ajvar</name>
-          <note>Ei</note>
-          <note>Rind</note>
-          <note>Sellerie</note>
-          <note>Weizen</note>
-          <price role="employee">7.50</price>
-          <price role="student">5.00</price>
-        </meal>
-        <meal>
-          <name>Limettenspaghetti mit Campignons, Erbsen und Cashenüssen</name>
-          <note>Cashewnüsse</note>
-          <note>Walnüsse</note>
-          <note>Weizen</note>
-          <note>vegan</note>
-          <price role="employee">7.60</price>
-          <price role="student">5.10</price>
-        </meal>
-      </category>
-      <category name="Aktion">
-        <meal>
-          <name>Chinagemüse Gemüsewok Curry mit Duftreis</name>
-          <note>Sellerie</note>
-          <note>Soja</note>
-          <note>vegan</note>
-          <price role="employee">6.95</price>
-          <price role="student">4.45</price>
-        </meal>
-        <meal>
-          <name>Tofu zum Wokgericht</name>
-          <note>100% Bio nach EG-Öko-Verordnung (DE-ÖKO-006)</note>
-          <note>Soja</note>
-          <note>vegan</note>
-          <price role="employee">1.95</price>
-          <price role="student">1.95</price>
+          <price role="employee">7.10</price>
+          <price role="student">4.60</price>
         </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Rosenkohl</name>
+          <name>Broccoli mit Mandeln</name>
+          <note>Mandeln</note>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
         <meal>
-          <name>Djuvec-Reis</name>
+          <name>Vollkornreis</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Gemüse-Couscous</name>
           <note>Sellerie</note>
+          <note>Weizen</note>
           <note>vegan</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Pommes frites</name>
+          <name>Country Potatoes</name>
+          <note>Weizen</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
@@ -102,15 +94,17 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Himbeerquark</name>
+          <name>Birne-Quitte-Mascarpone Creme</name>
           <note>Milch und Laktose</note>
+          <note>mit Konservierungsstoffen</note>
           <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Weißes Mousse au chocolat</name>
+          <name>Himbeerquark</name>
           <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
