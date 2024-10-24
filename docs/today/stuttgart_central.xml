@@ -3,12 +3,13 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-10-23">
+    <day date="2024-10-24">
       <category name="Vorspeise">
         <meal>
-          <name>Erbsencremesuppe</name>
+          <name>Kräuter-Pilzsuppe</name>
           <note>Milch und Laktose</note>
           <note>Sellerie</note>
+          <note>Weizen</note>
           <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
@@ -16,9 +17,9 @@
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Rotes-Linsen-Kartoffel-Curry mit Rosinen</name>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <name>Vollkorn Penne mit mediterranem Gemüse</name>
           <note>Sellerie</note>
+          <note>Weizen</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -26,26 +27,28 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Bami Noodles</name>
-          <note>Geflügel</note>
+          <name>Chili con Carne und Reis</name>
+          <note>Rind</note>
           <note>Sellerie</note>
-          <note>Soja</note>
-          <note>Weizen</note>
-          <price role="employee">6.40</price>
-          <price role="student">3.90</price>
+          <price role="employee">6.90</price>
+          <price role="student">4.40</price>
         </meal>
         <meal>
-          <name>Schnitzel vom Schwein mit Bratensauce und Pommes frites</name>
+          <name>Hirschgulasch Rotkraut und Semmelknödel</name>
+          <note>Ei</note>
           <note>Milch und Laktose</note>
-          <note>Schwein</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
           <note>Weizen</note>
-          <price role="employee">7.90</price>
-          <price role="student">5.40</price>
+          <note>mit Alkohol</note>
+          <note>vegetarisch</note>
+          <price role="employee">8.40</price>
+          <price role="student">5.90</price>
         </meal>
       </category>
       <category name="Aktion">
         <meal>
-          <name>Fusilloni Zucchini Mozzarella und schwarze Oliven</name>
+          <name>Campanelle Zucchini Mozzarella und schwarze Oliven</name>
           <note>Milch und Laktose</note>
           <note>Sellerie</note>
           <note>Weizen</note>
@@ -56,7 +59,7 @@
           <price role="student">4.45</price>
         </meal>
         <meal>
-          <name>Fusilloni Carbonara</name>
+          <name>Campanelle Carbonara</name>
           <note>Ei</note>
           <note>Milch und Laktose</note>
           <note>Schwein</note>
@@ -70,14 +73,19 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Gemischtes Gemüse</name>
-          <note>Sellerie</note>
+          <name>Tagesgemüse</name>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Reis</name>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
         <meal>
-          <name>Pommes frites</name>
+          <name>Petersilienkartoffeln</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>vegan</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
@@ -93,14 +101,9 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Früchtemüsli</name>
-          <note>Gerste</note>
-          <note>Hafer</note>
-          <note>Haselnüsse</note>
-          <note>Mandeln</note>
-          <note>Milch und Laktose</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>vegetarisch</note>
+          <name>Kokosmilchreis mit Mango</name>
+          <note>Soja</note>
+          <note>vegan</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
@@ -111,11 +114,15 @@
           <note>Ei</note>
           <note>Milch und Laktose</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
           <note>Senf</note>
+          <note>Sesam</note>
           <note>Weizen</note>
           <note>geschwefelt</note>
+          <note>geschwärzt</note>
           <note>mit Antioxidationsmitteln</note>
           <note>mit Farbstoffen</note>
+          <note>mit Süßungsmitteln</note>
           <note>vegetarisch</note>
           <price role="employee">1.60</price>
           <price role="student">1.10</price>
