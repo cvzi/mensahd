@@ -4,18 +4,6 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2024-10-29">
-      <category name="Vorspeise">
-        <meal>
-          <name>Flädlesuppe</name>
-          <note>Ei</note>
-          <note>Milch und Laktose</note>
-          <note>Sellerie</note>
-          <note>Weizen</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-      </category>
       <category name="Veganer renner">
         <meal>
           <name>Vegane Paella</name>
@@ -44,10 +32,23 @@
           <price role="employee">6.70</price>
           <price role="student">4.20</price>
         </meal>
+        <meal>
+          <name>Rote Wurst mit Pusztasauce und Country Potatoes</name>
+          <note>Rind</note>
+          <note>Schwein</note>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Konservierungsstoffen</note>
+          <note>mit Süßungsmitteln</note>
+          <price role="employee">6.70</price>
+          <price role="student">4.20</price>
+        </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>mit Sauerkraut</name>
+          <name>Sauerkraut</name>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
@@ -58,6 +59,18 @@
           <note>Ei</note>
           <note>Weizen</note>
           <note>vegetarisch</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+        <meal>
+          <name>und Country Potatoes</name>
+          <note>Weizen</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+        <meal>
+          <name>und Country Potatoes</name>
+          <note>Weizen</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
