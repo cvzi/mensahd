@@ -3,21 +3,25 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-10-30">
+    <day date="2024-10-31">
       <category name="Vorspeise">
         <meal>
-          <name>Gemüsebrühe mit frischen Kräutern</name>
+          <name>Kartoffelsuppe</name>
+          <note>Milch und Laktose</note>
           <note>Sellerie</note>
-          <note>vegan</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Kürbis-Karotten-Gnocchi-Ragout</name>
+          <name>Schupfnudel-Sauerkraut-Pfanne</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
           <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -25,36 +29,67 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Bulgur-Gemüsepfanne mit Sojajoghurt-Kräuter Dip</name>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>Soja</note>
+          <name>Omelette mit Blattspinat und Salzkartoffeln</name>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Weizen</note>
-          <note>vegan</note>
-          <price role="employee">6.50</price>
-          <price role="student">4.00</price>
+          <note>vegetarisch</note>
+          <price role="employee">6.40</price>
+          <price role="student">3.90</price>
         </meal>
         <meal>
-          <name>Spaghetti Bolognese mit Reibekäse</name>
-          <note>Milch und Laktose</note>
+          <name>Gebackener Fleischkäse mit Zwiebelsauce und Kartoffelsalat</name>
           <note>Rind</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Schwein</note>
           <note>Sellerie</note>
+          <note>Senf</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Konservierungsstoffen</note>
+          <price role="employee">7.40</price>
+          <price role="student">4.90</price>
+        </meal>
+      </category>
+      <category name="Aktion">
+        <meal>
+          <name>Chinagemüse Gemüsewok Soja-Pflaume mit Duftreis</name>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>vegan</note>
+          <price role="employee">6.95</price>
+          <price role="student">4.45</price>
+        </meal>
+        <meal>
+          <name>Würziges Rinderhackfleisch zum Wokgericht</name>
+          <note>Rind</note>
+          <note>Soja</note>
           <note>Weizen</note>
-          <price role="employee">6.90</price>
-          <price role="student">4.40</price>
+          <price role="employee">1.95</price>
+          <price role="student">1.95</price>
         </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Karotten-Erbsen-Gemüse</name>
-          <note>Sellerie</note>
+          <name>Romanesco mit gerösteten Mandeln</name>
+          <note>Mandeln</note>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
         <meal>
-          <name>Kartoffelplätzchen</name>
-          <note>Weizen</note>
+          <name>Salzkartoffeln</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>vegan</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+        <meal>
+          <name>Kartoffelsalat</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
@@ -70,6 +105,13 @@
       </category>
       <category name="Dessert">
         <meal>
+          <name>Pudding mit Sahne Vanille-Geschmack</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+        <meal>
           <name>Waldbeerenquark</name>
           <note>Milch und Laktose</note>
           <note>vegetarisch</note>
@@ -77,8 +119,7 @@
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Nuss-Nougat-Pudding Pudding mit Sahne Vanille-Geschmack</name>
-          <note>Haselnüsse</note>
+          <name>Waldbeerenquark</name>
           <note>Milch und Laktose</note>
           <note>vegetarisch</note>
           <price role="employee">1.59</price>
