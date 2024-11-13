@@ -98,6 +98,13 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
+          <name>Hausgemachte Lasagne Bolognese (Mi,Sl,GlW), Tomatensoße</name>
+          <note>Rind</note>
+          <price role="employee">5.80</price>
+          <price role="other">7.00</price>
+          <price role="student">4.50</price>
+        </meal>
+        <meal>
           <name>Susländer Currywurst , BBQ Soße , Pommes Frites</name>
           <note>Schwein</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -109,13 +116,6 @@
           <price role="employee">5.40</price>
           <price role="other">6.60</price>
           <price role="student">4.10</price>
-        </meal>
-        <meal>
-          <name>Hausgemachte Lasagne Bolognese (Mi,Sl,GlW), Tomatensoße</name>
-          <note>Rind</note>
-          <price role="employee">5.80</price>
-          <price role="other">7.00</price>
-          <price role="student">4.50</price>
         </meal>
       </category>
       <category name="CampusVital">
@@ -140,16 +140,16 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta Pomodoro Melanzane di Pollo Tomatensoße mit Aubergine und Hähnchen (Sw,GlW)</name>
-          <note>Geflügel</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Tortellini mit Käsefüllung (Mi,GlW), Noci di zucchine mit Zucchini-Walnusssoße (Mi,GlW,GlG,NWa)</name>
+          <note>Vegetarisch</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Tortellini mit Käsefüllung (Mi,GlW), Noci di zucchine mit Zucchini-Walnusssoße (Mi,GlW,GlG,NWa)</name>
-          <note>Vegetarisch</note>
+          <name>Pasta Pomodoro Melanzane di Pollo Tomatensoße mit Aubergine und Hähnchen (Sw,GlW)</name>
+          <note>Geflügel</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -403,15 +403,6 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Spaghetti (GlW), Bolognese , Hartkäse gerieben</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Rind</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <price role="employee">4.60</price>
-          <price role="other">5.80</price>
-          <price role="student">3.30</price>
-        </meal>
-        <meal>
           <name>Grünkohl , Kasseler Nackenbraten , Röstkartoffeln</name>
           <note>Schwein</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -423,6 +414,15 @@
           <price role="employee">5.30</price>
           <price role="other">6.50</price>
           <price role="student">4.00</price>
+        </meal>
+        <meal>
+          <name>Spaghetti (GlW), Bolognese , Hartkäse gerieben</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <price role="employee">4.60</price>
+          <price role="other">5.80</price>
+          <price role="student">3.30</price>
         </meal>
       </category>
       <category name="CampusVital">
@@ -520,17 +520,17 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta Salsa rucola di pollo mit Hähnchenstreifen in Rucolasoße (Mi,Sl,GlW)</name>
-          <note>Geflügel</note>
-          <note>mensaVital</note>
+          <name>Pasta salsa di noci mit Paprika-Nuss-Soße, getrocknete Tomaten (Sl,GlW,NHa)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Pasta salsa di noci mit Paprika-Nuss-Soße, getrocknete Tomaten (Sl,GlW,NHa)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Pasta Salsa rucola di pollo mit Hähnchenstreifen in Rucolasoße (Mi,Sl,GlW)</name>
+          <note>Geflügel</note>
+          <note>mensaVital</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -595,7 +595,8 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Broccoli e pomodoro mit Broccoli und Tomate, Farfalle (GlW)</name>
+          <name>Lenticchie mit Linsen in pikanter Tomatensoße , Farfalle (GlW)</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
@@ -603,8 +604,7 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Lenticchie mit Linsen in pikanter Tomatensoße , Farfalle (GlW)</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Broccoli e pomodoro mit Broccoli und Tomate, Farfalle (GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
