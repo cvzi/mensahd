@@ -3,12 +3,11 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-11-20">
+    <day date="2024-11-21">
       <category name="Vorspeise">
         <meal>
-          <name>Indische Curry suppe</name>
+          <name>Tomatensuppe</name>
           <note>Sellerie</note>
-          <note>Weizen</note>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
@@ -16,9 +15,12 @@
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Penne an Tomatensugo mit Kräutern</name>
+          <name>Gemüseeintopf nach Pichelsteiner Art mit Dinkelbrötchen</name>
+          <note>Dinkel</note>
+          <note>Gerste</note>
+          <note>Roggen</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
-          <note>Weizen</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -26,35 +28,31 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Milchreis mit Kirschen und Zimt Zucker</name>
-          <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
-          <price role="employee">5.60</price>
-          <price role="student">3.10</price>
+          <name>Gnocchi- Gemüsepfanne mit mariniertem Tofu und Tomatensauce</name>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">6.70</price>
+          <price role="student">4.20</price>
         </meal>
         <meal>
-          <name>Begrenztes Angebot im OG: Käseknacker mit Barbecuesauce, und Pommes frites</name>
-          <note>Milch und Laktose</note>
-          <note>Schwein</note>
-          <note>Senf</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Konservierungsstoffen</note>
-          <note>mit Süßungsmitteln</note>
-          <price role="employee">7.50</price>
-          <price role="student">5.00</price>
-        </meal>
-        <meal>
-          <name>Hähnchen-Döner mit Joghurt-Knoblauch-Dip</name>
+          <name>Hähnchenkeule mit Orangensauce Gemüse-Zartweizen</name>
           <note>Geflügel</note>
-          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <price role="employee">7.70</price>
+          <price role="student">5.20</price>
+        </meal>
+        <meal>
+          <name>Vegane Mini-Hackbällchen mit Knoblauchdip und Pommes frites</name>
           <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Senf</note>
-          <note>Sesam</note>
+          <note>Soja</note>
           <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
-          <price role="employee">7.90</price>
-          <price role="student">5.40</price>
+          <note>vegan</note>
+          <price role="employee">7.30</price>
+          <price role="student">4.80</price>
         </meal>
       </category>
       <category name="Aktion">
@@ -115,7 +113,7 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Rosenkohl</name>
+          <name>Bohnen-Paprika-Gemüse</name>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
@@ -133,6 +131,13 @@
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
+        <meal>
+          <name>Gemüsezartweizen</name>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
       </category>
       <category name="Salat">
         <meal>
@@ -144,15 +149,20 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Veganer Hafer Schokopudding</name>
-          <note>100% Bio nach EG-Öko-Verordnung (DE-ÖKO-006)</note>
-          <note>Hafer</note>
+          <name>Vegane Waldbeerencreme</name>
           <note>vegan</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Buttermilchdessert Mango</name>
+          <name>Milchreis mit Kirschen</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+        <meal>
+          <name>Milchreis mit Kirschen</name>
           <note>Milch und Laktose</note>
           <note>vegetarisch</note>
           <price role="employee">1.59</price>
