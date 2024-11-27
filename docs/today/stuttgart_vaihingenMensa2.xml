@@ -3,10 +3,10 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-11-26">
+    <day date="2024-11-27">
       <category name="Vorspeise">
         <meal>
-          <name>Pilzcremesuppe mit Croutons</name>
+          <name>Gemüserahmsuppe mit Croutons</name>
           <note>Milch und Laktose</note>
           <note>Sellerie</note>
           <note>Sesam</note>
@@ -18,10 +18,9 @@
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Aloo Gobi - indisches Blumenkohl-Kartoffel-Curry</name>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <name>Vegane Paella</name>
           <note>Sellerie</note>
-          <note>mit Konservierungsstoffen</note>
+          <note>geschwärzt</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -29,28 +28,34 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Börek mit Spinatfüllung und Bulgur-Gemüsesalat</name>
+          <name>Begrenztes Angebot im OG Hähnchencurry mit Mienudeln</name>
+          <note>Geflügel</note>
+          <note>Milch und Laktose</note>
           <note>Sellerie</note>
-          <note>Soja</note>
           <note>Weizen</note>
           <note>mit Antioxidationsmitteln</note>
-          <note>mit Geschmacksverstärkern</note>
-          <note>mit Konservierungsstoffen</note>
-          <note>vegan</note>
           <price role="employee">7.50</price>
           <price role="student">5.00</price>
         </meal>
         <meal>
-          <name>Gebackener Fleischkäse an Bratensauce mit grobem Senf und Kartoffelsalat</name>
-          <note>Rind</note>
+          <name>Hähnchenkeule an Schaschliksauce mit Schwenkkartoffeln</name>
+          <note>Geflügel</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Schwein</note>
           <note>Sellerie</note>
-          <note>Senf</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Konservierungsstoffen</note>
-          <price role="employee">7.40</price>
-          <price role="student">4.90</price>
+          <note>Weizen</note>
+          <note>mit Süßungsmitteln</note>
+          <price role="employee">7.70</price>
+          <price role="student">5.20</price>
+        </meal>
+        <meal>
+          <name>Paniertes Schweineschnitzel ,Preiselbeeren mit Rahmsauce und Spätzle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Schwein</note>
+          <note>Weizen</note>
+          <price role="employee">7.90</price>
+          <price role="student">5.40</price>
         </meal>
       </category>
       <category name="Aktion">
@@ -118,7 +123,7 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Kaisergemüse</name>
+          <name>Orientalisches Gemüse</name>
           <note>Sellerie</note>
           <note>vegan</note>
           <price role="employee">1.39</price>
@@ -138,11 +143,17 @@
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Kartoffelsalat</name>
+          <name>Spätzle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+        <meal>
+          <name>Schwenkkartoffeln</name>
           <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
@@ -158,27 +169,19 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Mousse mit Limone-Joghurt-Geschmack</name>
+          <name>Sahneschokopudding</name>
           <note>Milch und Laktose</note>
           <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Veganer Hafer Schokopudding</name>
-          <note>100% Bio nach EG-Öko-Verordnung (DE-ÖKO-006)</note>
+          <name>Veganer Früchtequark</name>
           <note>Hafer</note>
+          <note>Soja</note>
           <note>vegan</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
-        </meal>
-        <meal>
-          <name>Kirschjoghurt</name>
-          <note>Milch und Laktose</note>
-          <note>mit Farbstoffen</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Buffet">
