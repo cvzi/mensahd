@@ -2,5 +2,26 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/basic.css" type="text/css"?>
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
-  <canteen/>
+  <canteen>
+    <day date="2024-11-29">
+      <category name="CampusVital">
+        <meal>
+          <name>Pennette mit Haselnuss Pesto und Rucola (2,Ei,Mi,GlW,NHa)</name>
+          <price role="employee">4.50</price>
+          <price role="other">5.70</price>
+          <price role="student">3.20</price>
+        </meal>
+      </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Broccoli-Nussecke (Sl,GlW,GlH,NHa), Salzkartoffeln, Kräuterquark</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">4.70</price>
+          <price role="other">5.90</price>
+          <price role="student">3.40</price>
+        </meal>
+      </category>
+    </day>
+  </canteen>
 </openmensa>
