@@ -3,13 +3,12 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-12-02">
+    <day date="2024-12-03">
       <category name="Vorspeise">
         <meal>
-          <name>Pilzcremesuppe mit Croutons</name>
+          <name>Gemüserahmsuppe</name>
           <note>Milch und Laktose</note>
           <note>Sellerie</note>
-          <note>Sesam</note>
           <note>Weizen</note>
           <note>vegetarisch</note>
           <price role="employee">1.39</price>
@@ -18,10 +17,8 @@
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Spinatnudeln</name>
+          <name>Rosmarin Polenta mit Ratatouille</name>
           <note>Sellerie</note>
-          <note>Soja</note>
-          <note>Weizen</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -29,25 +26,25 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Maultaschen mit Zwiebelsauce und Kartoffelsalat</name>
-          <note>Ei</note>
+          <name>Penne Bolognese überbacken</name>
+          <note>Milch und Laktose</note>
           <note>Rind</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Schwein</note>
           <note>Sellerie</note>
-          <note>Senf</note>
           <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
-          <price role="employee">7.40</price>
-          <price role="student">4.90</price>
+          <price role="employee">7.60</price>
+          <price role="student">5.10</price>
         </meal>
         <meal>
-          <name>Orientalisches Hähnchenragout mit Gemüse-Couscous</name>
-          <note>Geflügel</note>
-          <note>Sellerie</note>
+          <name>Hokifilet mit Brokkoligemüse, gerösteten Kartoffeln und Senf-Kräuter-Dip</name>
+          <note>Ei</note>
+          <note>Fisch</note>
+          <note>MSC-zertifizierter Fisch (MSC-C-51632)</note>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Senf</note>
           <note>Weizen</note>
-          <price role="employee">6.70</price>
-          <price role="student">4.20</price>
+          <price role="employee">7.90</price>
+          <price role="student">5.40</price>
         </meal>
       </category>
       <category name="Aktion">
@@ -77,17 +74,12 @@
           <price role="student">2.00</price>
         </meal>
         <meal>
-          <name>Wok im OG: Gemüsewok Ingwer-Ananas mit Duftreis Hähnchenstreifen zum Wokgericht</name>
+          <name>Wok im OG: Gemüsewok Soja-Pflaume mit Mienudeln Hähnchenstreifen zum Wokgericht</name>
           <note>Geflügel</note>
+          <note>Soja</note>
+          <note>Weizen</note>
           <price role="employee">1.60</price>
           <price role="student">1.10</price>
-        </meal>
-        <meal>
-          <name>Pizza Margherita</name>
-          <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
-          <price role="employee">8.00</price>
-          <price role="student">5.50</price>
         </meal>
         <meal>
           <name>Pizza Salami</name>
@@ -105,10 +97,18 @@
           <price role="employee">8.50</price>
           <price role="student">6.00</price>
         </meal>
+        <meal>
+          <name>Pizza Margherita</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">8.00</price>
+          <price role="student">5.50</price>
+        </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Bohnen-Paprika-Gemüse</name>
+          <name>Rosenkohl</name>
+          <note>Sellerie</note>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
@@ -127,19 +127,8 @@
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Gemüse-Couscous</name>
-          <note>Sellerie</note>
-          <note>Weizen</note>
-          <note>vegan</note>
-          <price role="employee">1.59</price>
-          <price role="student">1.19</price>
-        </meal>
-        <meal>
-          <name>Kartoffelsalat</name>
+          <name>Bratkartoffeln</name>
           <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
@@ -155,17 +144,20 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Heidelbeerjoghurt</name>
-          <note>Milch und Laktose</note>
-          <note>mit Farbstoffen</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
+          <name>Veganer Schokopudding mit Kirschen</name>
+          <note>Hafer</note>
+          <note>vegan</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Nuss-Nougat-Pudding</name>
+          <name>Früchtemüsli</name>
+          <note>Gerste</note>
+          <note>Hafer</note>
           <note>Haselnüsse</note>
+          <note>Mandeln</note>
           <note>Milch und Laktose</note>
+          <note>mit Antioxidationsmitteln</note>
           <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
