@@ -3,59 +3,50 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-12-03">
+    <day date="2024-12-04">
       <category name="Vorspeise">
         <meal>
-          <name>Maultaschensuppe</name>
-          <note>Ei</note>
-          <note>Rind</note>
-          <note>Schwein</note>
-          <note>Sellerie</note>
-          <note>Weizen</note>
+          <name>Tagessuppe</name>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
       </category>
-      <category name="Buffet">
+      <category name="Veganer renner">
         <meal>
-          <name>Salatbuffet</name>
-          <note>Ei</note>
-          <note>Milch und Laktose</note>
+          <name>Indisches Auberginencurry mit Kichererbsenreis</name>
           <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Senf</note>
-          <note>Weizen</note>
-          <note>geschwefelt</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.60</price>
-          <price role="student">1.10</price>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>mit Konservierungsstoffen</note>
+          <note>vegan</note>
+          <price role="employee">5.49</price>
+          <price role="student">2.99</price>
         </meal>
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Gnocchi in Spinatsauce mit gerösteten Sonnenblumenkernen</name>
+          <name>Germknödel mit Dessertsoße Vanille</name>
+          <note>Ei</note>
           <note>Milch und Laktose</note>
-          <note>Sellerie</note>
           <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Konservierungsstoffen</note>
-          <price role="employee">7.30</price>
-          <price role="student">4.80</price>
+          <note>vegetarisch</note>
+          <price role="employee">5.80</price>
+          <price role="student">3.30</price>
         </meal>
         <meal>
-          <name>Penne Bolognese überbacken</name>
+          <name>Hähnchen Cordon bleu und Pommes frites</name>
+          <note>Geflügel</note>
           <note>Milch und Laktose</note>
-          <note>Rind</note>
-          <note>Sellerie</note>
           <note>Weizen</note>
-          <price role="employee">7.60</price>
-          <price role="student">5.10</price>
+          <note>mit Konservierungsstoffen</note>
+          <note>mit Phosphaten</note>
+          <price role="employee">7.70</price>
+          <price role="student">5.20</price>
         </meal>
       </category>
       <category name="Aktion">
         <meal>
-          <name>Maccheroni fiore mit Erbsen-Pesto</name>
+          <name>Campanelle mit Erbsen-Pesto</name>
           <note>Milch und Laktose</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Weizen</note>
@@ -65,7 +56,7 @@
           <price role="student">4.45</price>
         </meal>
         <meal>
-          <name>Maccheroni fiore Al Tonno e Pomodori</name>
+          <name>Campanelle Al Tonno e Pomodori</name>
           <note>Fisch</note>
           <note>Sellerie</note>
           <note>Weizen</note>
@@ -77,21 +68,15 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Rahmblumenkohl</name>
-          <note>Milch und Laktose</note>
-          <note>Sellerie</note>
-          <note>Soja</note>
-          <note>Weizen</note>
-          <note>vegetarisch</note>
+          <name>Tagesgemüse</name>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
         <meal>
-          <name>Penne</name>
-          <note>Weizen</note>
+          <name>Pommes frites</name>
           <note>vegan</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
         </meal>
       </category>
       <category name="Salat">
@@ -104,16 +89,32 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Früchtemüsli</name>
-          <note>Gerste</note>
-          <note>Hafer</note>
-          <note>Haselnüsse</note>
-          <note>Mandeln</note>
+          <name>Erdbeerjoghurt</name>
           <note>Milch und Laktose</note>
-          <note>mit Antioxidationsmitteln</note>
+          <note>mit Farbstoffen</note>
           <note>vegetarisch</note>
-          <price role="employee">1.59</price>
-          <price role="student">1.19</price>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Buffet">
+        <meal>
+          <name>Salatbuffet</name>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Sesam</note>
+          <note>Weizen</note>
+          <note>geschwefelt</note>
+          <note>geschwärzt</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Farbstoffen</note>
+          <note>mit Süßungsmitteln</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.60</price>
+          <price role="student">1.10</price>
         </meal>
       </category>
     </day>
