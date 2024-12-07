@@ -3,10 +3,49 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-12-06">
+    <day date="2024-12-09">
+      <category name="CampusVital">
+        <meal>
+          <name>Penne mit Auberginen-Tomaten-Soße &amp; Rucola (Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.80</price>
+          <price role="other">6.00</price>
+          <price role="student">3.50</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-12-10">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Rindergeschnetzeltes &quot;Stroganoff Art&quot; mit Rote Bete, Gurke &amp; Pilzen in Rahmsoße , Spätzle (Ei,GlW)</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Rind</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.40</price>
+          <price role="student">4.90</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Ofengemüse mit Rosmarinkartoffen, Tahin-Sojajoghurt</name>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">6.10</price>
+          <price role="other">7.30</price>
+          <price role="student">4.80</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-12-11">
       <category name="Pottkieker">
         <meal>
-          <name>Blumenkohl-Brokkoli-Curry mit Edamame , Reis</name>
+          <name>Kichererbsen-Möhren-Curry mit Röstkartoffeln und Soja-Joghurt</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
@@ -18,12 +57,93 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Veganes Knusperschnitzel (GlW), Rosmarinkartoffeln, Gurkensalat, Kräuterquark</name>
+          <name>Gebackenes Rotbarschfilet (Fi,GlW), pikante Mayonnaise mit Gurke &amp; Paprika , Kräuterkartoffeln</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>mit Fisch</note>
+          <price role="employee">6.80</price>
+          <price role="other">8.00</price>
+          <price role="student">5.50</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Penne (GlW), Steckrüben-Kürbis-Soße (Mi,GlW,GlG), rote Beete Bacon</name>
+          <note>Neu</note>
           <note>Vegetarisch</note>
-          <price role="employee">5.80</price>
-          <price role="other">7.00</price>
-          <price role="student">4.50</price>
+          <price role="employee">4.50</price>
+          <price role="other">5.70</price>
+          <price role="student">3.20</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-12-12">
+      <category name="Pottkieker">
+        <meal>
+          <name>Gemüsegulasch , Wrap (GlW)</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Grünkohl (Sl,Sf,GlH), Kochwurst , Röstkartoffeln</name>
+          <note>Schwein</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Geschmacksverstärker</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Phosphat</note>
+          <price role="employee">5.30</price>
+          <price role="other">6.50</price>
+          <price role="student">4.00</price>
+        </meal>
+        <meal>
+          <name>Rigatoni (GlW), vegane Carbonara mit Tofuwürfel &amp; Rucola (1,So,Sl,Sf,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.10</price>
+          <price role="other">5.30</price>
+          <price role="student">2.80</price>
+        </meal>
+        <meal>
+          <name>Grünkohl (Sl,Sf,GlH), Kasseler Nackenbraten , Röstkartoffeln</name>
+          <note>Schwein</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <price role="employee">5.30</price>
+          <price role="other">6.50</price>
+          <price role="student">4.00</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-12-13">
+      <category name="Pottkieker">
+        <meal>
+          <name>Tomatensuppe mit Edamame &amp; Zartweizen (So,Sl,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Grünkohl , vegane Bratwurst, Röstkartoffeln</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.50</price>
+          <price role="other">6.70</price>
+          <price role="student">4.20</price>
         </meal>
       </category>
     </day>
