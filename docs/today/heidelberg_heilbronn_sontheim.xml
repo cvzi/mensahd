@@ -4,8 +4,37 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Sontheim</name>
-    <day date="2024-12-08">
-      <closed/>
+    <day date="2024-12-09">
+      <category name="Buffet">
+        <meal>
+          <name>Rote-Bete-Suppe</name>
+          <note>beetroot soup</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+        <meal>
+          <name>Kokospudding mit Minze</name>
+          <note>coconut pudding with mint</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+        <meal>
+          <name>Erbsenrisotto mit gerösteten Sonnenblumenkernen, dazu Pfannengemüse</name>
+          <note>Pea risotto with roasted sunflower seeds and pan-fried vegetables</note>
+          <price role="student">2.90</price>
+          <price role="employee">4.35</price>
+          <price role="other">7.25</price>
+        </meal>
+        <meal>
+          <name>Rindergeschnetzeltes, Spätzlegemüsepfanne</name>
+          <note>Beefstripes with, swebian noodlespan</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
