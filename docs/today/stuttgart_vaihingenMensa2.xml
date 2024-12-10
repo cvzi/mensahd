@@ -3,23 +3,26 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-12-09">
+    <day date="2024-12-10">
       <category name="Vorspeise">
         <meal>
-          <name>Karotten-Ingwersuppe</name>
+          <name>Kartoffelsuppe</name>
           <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
-          <note>mit Konservierungsstoffen</note>
-          <note>vegan</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Gebratene Mienudeln mit Paprika, Weißkraut und Karotten</name>
-          <note>Soja</note>
+          <name>Linsen und vegane Spätzle</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
           <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -27,23 +30,25 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Kohlroulade mit Bratensauce und Kartoffelpüree</name>
+          <name>Linsen und Spätzle mit Saiten</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Schwein</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Phosphaten</note>
+          <price role="employee">7.00</price>
+          <price role="student">4.50</price>
+        </meal>
+        <meal>
+          <name>Paniertes Schweineschnitzel mit Jägersauce und Spätzle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
           <note>Milch und Laktose</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Schwein</note>
-          <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
-          <price role="employee">6.40</price>
-          <price role="student">3.90</price>
-        </meal>
-        <meal>
-          <name>Hähnchebrustfilet mit Käuterfrischkäsefüllung , Zitronen-Knoblauchsauce und Spirelli</name>
-          <note>Geflügel</note>
-          <note>Milch und Laktose</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Sellerie</note>
-          <note>Soja</note>
           <note>Weizen</note>
           <price role="employee">7.70</price>
           <price role="student">5.20</price>
@@ -66,34 +71,11 @@
           <price role="employee">1.16</price>
           <price role="student">0.80</price>
         </meal>
-        <meal>
-          <name>Pizza Margherita</name>
-          <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
-          <price role="employee">8.00</price>
-          <price role="student">5.50</price>
-        </meal>
-        <meal>
-          <name>Pizza Salami</name>
-          <note>Milch und Laktose</note>
-          <note>Schwein</note>
-          <note>Senf</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Konservierungsstoffen</note>
-          <price role="employee">9.00</price>
-          <price role="student">6.50</price>
-        </meal>
-        <meal>
-          <name>Pizza Mediterran</name>
-          <note>vegan</note>
-          <price role="employee">8.50</price>
-          <price role="student">6.00</price>
-        </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Broccoli</name>
-          <note>Mandeln</note>
+          <name>Karotten-Erbsen-Gemüse</name>
+          <note>Sellerie</note>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
@@ -105,14 +87,20 @@
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Kartoffelpüree</name>
-          <note>Milch und Laktose</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
+          <name>Spätzle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Weizen</note>
           <note>vegetarisch</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+        <meal>
+          <name>Bratkartoffeln</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>vegan</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
         </meal>
       </category>
       <category name="Salat">
@@ -125,16 +113,20 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Pfirsichjoghurt</name>
+          <name>Himbeerquark</name>
           <note>Milch und Laktose</note>
-          <note>mit Farbstoffen</note>
           <note>vegetarisch</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Sahneschokopudding</name>
+          <name>Früchtemüsli</name>
+          <note>Gerste</note>
+          <note>Hafer</note>
+          <note>Haselnüsse</note>
+          <note>Mandeln</note>
           <note>Milch und Laktose</note>
+          <note>mit Antioxidationsmitteln</note>
           <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
