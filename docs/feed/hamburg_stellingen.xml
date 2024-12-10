@@ -3,25 +3,24 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-12-09">
-      <category name="CampusVital">
+    <day date="2024-12-10">
+      <category name="Pottkieker">
         <meal>
-          <name>Penne mit Auberginen-Tomaten-Soße &amp; Rucola (Sw,GlW)</name>
+          <name>Tomaten-Linsensuppe (Sf,GlW), Bulgur (Sl,GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">4.80</price>
-          <price role="other">6.00</price>
-          <price role="student">3.50</price>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
         </meal>
       </category>
-    </day>
-    <day date="2024-12-10">
       <category name="CampusKlassiker">
         <meal>
-          <name>Rindergeschnetzeltes &quot;Stroganoff Art&quot; mit Rote Bete, Gurke &amp; Pilzen in Rahmsoße , Spätzle (Ei,GlW)</name>
+          <name>Rindergeschnetzeltes &quot;Stroganoff Art&quot; mit Rote Bete, Gurke &amp; Pilzen , Spätzle (Ei,GlW)</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Rind</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Senf und Senferzeugnisse</note>
           <note>mit Süßungsmittel</note>
           <price role="employee">6.20</price>
           <price role="other">7.40</price>
@@ -45,8 +44,9 @@
     <day date="2024-12-11">
       <category name="Pottkieker">
         <meal>
-          <name>Kichererbsen-Möhren-Curry mit Röstkartoffeln und Soja-Joghurt</name>
+          <name>Kichererbsen-Möhren-Curry mit Röstkartoffeln &amp; Tahin-Topping</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -68,9 +68,11 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Penne (GlW), Steckrüben-Kürbis-Soße (Mi,GlW,GlG), rote Beete Bacon</name>
+          <name>Penne (GlW), Steckrüben-Kürbis-Soße , rote Beete Bacon</name>
           <note>Neu</note>
-          <note>Vegetarisch</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">4.50</price>
           <price role="other">5.70</price>
           <price role="student">3.20</price>
@@ -91,6 +93,16 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
+          <name>Grünkohl (Sl,Sf,GlH), Kasseler Nackenbraten , Röstkartoffeln</name>
+          <note>Schwein</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <price role="employee">5.30</price>
+          <price role="other">6.50</price>
+          <price role="student">4.00</price>
+        </meal>
+        <meal>
           <name>Grünkohl (Sl,Sf,GlH), Kochwurst , Röstkartoffeln</name>
           <note>Schwein</note>
           <note>Senf und Senferzeugnisse</note>
@@ -110,16 +122,6 @@
           <price role="employee">4.10</price>
           <price role="other">5.30</price>
           <price role="student">2.80</price>
-        </meal>
-        <meal>
-          <name>Grünkohl (Sl,Sf,GlH), Kasseler Nackenbraten , Röstkartoffeln</name>
-          <note>Schwein</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">5.30</price>
-          <price role="other">6.50</price>
-          <price role="student">4.00</price>
         </meal>
       </category>
     </day>
@@ -144,6 +146,151 @@
           <price role="employee">5.50</price>
           <price role="other">6.70</price>
           <price role="student">4.20</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-12-16">
+      <category name="Pottkieker">
+        <meal>
+          <name>Tex-Mex-Bohnensuppe mit Räuchertofu (So,Sl,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Hähnchenbrust mit Gemüse in Soja-Pflaumen-Soße , Reis</name>
+          <note>Geflügel</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.40</price>
+          <price role="other">7.60</price>
+          <price role="student">5.10</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Rote-Beete-Gnocchi mit Blumenkohl &amp; Rucola, Sojajoghurt</name>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">4.50</price>
+          <price role="other">5.70</price>
+          <price role="student">3.20</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-12-17">
+      <category name="Pottkieker">
+        <meal>
+          <name>Gemüsecurry mit Kichererbsen &amp; Kartoffeln</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Hähnchenbrust im Knuspermantel (GlW), Curry-Joghurt , Gemüse-Mix , Bulgur (Sl,GlW)</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <price role="employee">6.10</price>
+          <price role="other">7.30</price>
+          <price role="student">4.80</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Rigatoni mit Gemüsebällchen &amp; Tomatensoße, Rucola (Ei,GlW)</name>
+          <note>Vegetarisch</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.00</price>
+          <price role="other">5.20</price>
+          <price role="student">2.70</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-12-18">
+      <category name="Pottkieker">
+        <meal>
+          <name>Tomatensuppe mit Pilzen &amp; Zartweizen (Sl,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Soja-Bolognese mit Gemüse , Fusilli (GlW), veganes Topping</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Farbstoff</note>
+          <price role="employee">4.20</price>
+          <price role="other">5.40</price>
+          <price role="student">2.90</price>
+        </meal>
+      </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Schweinenackenbraten, Pfefferrahmsoße , Rosenkohl , Ofenkartoffeln</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Neu</note>
+          <note>Schwein</note>
+          <price role="employee">5.70</price>
+          <price role="other">6.90</price>
+          <price role="student">4.40</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2024-12-19">
+      <category name="Pottkieker">
+        <meal>
+          <name>Blumenkohl-Curry mit Edamame , Reis</name>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.40</price>
+          <price role="other">4.10</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Blumenkohl-Käse-Bratling (Ei,Mi,GlW), Gemüse in Rahm (So,Sl,GlW), pikante Kartoffeln mit Sesam</name>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <price role="employee">4.10</price>
+          <price role="other">5.30</price>
+          <price role="student">2.80</price>
+        </meal>
+      </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Paniertes Putenschnitzel (GlW), Ratatouille , pikante Kartoffeln mit Sesam</name>
+          <note>Geflügel</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.10</price>
+          <price role="other">7.30</price>
+          <price role="student">4.80</price>
         </meal>
       </category>
     </day>
