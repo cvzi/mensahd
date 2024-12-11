@@ -3,26 +3,22 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2024-12-10">
+    <day date="2024-12-11">
       <category name="Vorspeise">
         <meal>
-          <name>Kartoffelsuppe</name>
-          <note>Milch und Laktose</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <name>Linsensuppe</name>
           <note>Sellerie</note>
           <note>mit Antioxidationsmitteln</note>
-          <note>vegetarisch</note>
+          <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Linsen und vegane Spätzle</name>
+          <name>Kichererbsen-Curry mit Reis</name>
           <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
-          <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -30,20 +26,15 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Linsen und Spätzle mit Saiten</name>
-          <note>Dinkel</note>
-          <note>Ei</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Schwein</note>
+          <name>Vegane Tortelloni mit Basilikum-Gemüsesauce</name>
           <note>Sellerie</note>
           <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Phosphaten</note>
-          <price role="employee">7.00</price>
-          <price role="student">4.50</price>
+          <note>vegan</note>
+          <price role="employee">6.40</price>
+          <price role="student">3.90</price>
         </meal>
         <meal>
-          <name>Paniertes Schweineschnitzel mit Jägersauce und Spätzle</name>
+          <name>Begrenztes Angebot im OG: Paniertes Schweineschnitzel mit Jägersauce und Spätzle</name>
           <note>Dinkel</note>
           <note>Ei</note>
           <note>Milch und Laktose</note>
@@ -53,8 +44,40 @@
           <price role="employee">7.70</price>
           <price role="student">5.20</price>
         </meal>
+        <meal>
+          <name>Schweinegeschnetzeltes nach Zürcher Art mit Kartoffelrösti</name>
+          <note>Milch und Laktose</note>
+          <note>Schwein</note>
+          <price role="employee">7.90</price>
+          <price role="student">5.40</price>
+        </meal>
       </category>
       <category name="Aktion">
+        <meal>
+          <name>Burger Bar</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Gerste</note>
+          <note>Hafer</note>
+          <note>Milch und Laktose</note>
+          <note>Rind</note>
+          <note>Roggen</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Schwein</note>
+          <note>Senf</note>
+          <note>Sesam</note>
+          <note>Weizen</note>
+          <note>geschwefelt</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Farbstoffen</note>
+          <note>mit Konservierungsstoffen</note>
+          <note>mit Phosphaten</note>
+          <note>mit Süßungsmitteln</note>
+          <note>vegan</note>
+          <note>vegetarisch</note>
+          <price role="employee">2.90</price>
+          <price role="student">2.00</price>
+        </meal>
         <meal>
           <name>Nudel Bar</name>
           <note>Ei</note>
@@ -70,6 +93,29 @@
           <note>vegetarisch</note>
           <price role="employee">1.16</price>
           <price role="student">0.80</price>
+        </meal>
+        <meal>
+          <name>Pizza Salami</name>
+          <note>Milch und Laktose</note>
+          <note>Schwein</note>
+          <note>Senf</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Konservierungsstoffen</note>
+          <price role="employee">9.00</price>
+          <price role="student">6.50</price>
+        </meal>
+        <meal>
+          <name>Pizza Mediterran</name>
+          <note>vegan</note>
+          <price role="employee">8.50</price>
+          <price role="student">6.00</price>
+        </meal>
+        <meal>
+          <name>Pizza Margherita</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">8.00</price>
+          <price role="student">5.50</price>
         </meal>
       </category>
       <category name="Beilage">
@@ -87,11 +133,9 @@
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Spätzle</name>
-          <note>Dinkel</note>
-          <note>Ei</note>
+          <name>Burger Bar EG:                      Country Potatoes</name>
           <note>Weizen</note>
-          <note>vegetarisch</note>
+          <note>vegan</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
@@ -101,6 +145,12 @@
           <note>vegan</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
+        </meal>
+        <meal>
+          <name>Reis</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Salat">
@@ -113,21 +163,16 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Himbeerquark</name>
+          <name>Mandarinen Mascarpone Creme</name>
           <note>Milch und Laktose</note>
           <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
         <meal>
-          <name>Früchtemüsli</name>
-          <note>Gerste</note>
+          <name>Hafergenuss Rote Früchte</name>
           <note>Hafer</note>
-          <note>Haselnüsse</note>
-          <note>Mandeln</note>
-          <note>Milch und Laktose</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>vegetarisch</note>
+          <note>vegan</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
