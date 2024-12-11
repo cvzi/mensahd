@@ -4,6 +4,16 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2024-12-11">
+      <category name="Vorspeise">
+        <meal>
+          <name>Linsensuppe</name>
+          <note>Sellerie</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
       <category name="Veganer renner">
         <meal>
           <name>Kichererbsen-Curry mit Duftreis</name>
@@ -54,22 +64,33 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Hafergenuss Rote Früchte</name>
+          <name>Veganes Früchtemüsli</name>
+          <note>Gerste</note>
           <note>Hafer</note>
+          <note>Haselnüsse</note>
+          <note>Mandeln</note>
+          <note>Soja</note>
+          <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
-          <price role="employee">1.59</price>
-          <price role="student">1.19</price>
-        </meal>
-        <meal>
-          <name>Mandarinen Mascarpone Creme</name>
-          <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
         </meal>
       </category>
     </day>
     <day date="2024-12-12">
+      <category name="Vorspeise">
+        <meal>
+          <name>Pfifferlingrahmsuppe mit Weißwein</name>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>mit Alkohol</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
       <category name="Veganer renner">
         <meal>
           <name>Kartoffel-Gemüse-Pfanne</name>
@@ -109,8 +130,23 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Djuvec-Reis</name>
+          <name>, Rotkraut</name>
+          <note>Milch und Laktose</note>
           <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>und Kartoffelknödel</name>
+          <note>vegan</note>
+          <price role="employee">1.59</price>
+          <price role="student">1.19</price>
+        </meal>
+        <meal>
+          <name>und Petersilienkartoffeln</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>vegan</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
@@ -126,13 +162,6 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Himbeerquark</name>
-          <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.59</price>
-          <price role="student">1.19</price>
-        </meal>
-        <meal>
           <name>Veganes Schokoladen - Zimt Mousse</name>
           <note>Hafer</note>
           <note>Haselnüsse</note>
@@ -142,26 +171,6 @@
           <note>vegan</note>
           <price role="employee">1.59</price>
           <price role="student">1.19</price>
-        </meal>
-      </category>
-      <category name="Buffet">
-        <meal>
-          <name>Salatbuffet</name>
-          <note>Ei</note>
-          <note>Milch und Laktose</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>Sesam</note>
-          <note>Weizen</note>
-          <note>geschwefelt</note>
-          <note>geschwärzt</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
-          <note>mit Süßungsmitteln</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.60</price>
-          <price role="student">1.10</price>
         </meal>
       </category>
     </day>

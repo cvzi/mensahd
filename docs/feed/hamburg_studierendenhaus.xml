@@ -18,18 +18,33 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Hausgemachte Pasta (GlW), Ragù bianco mit Rinderhackfleisch und Champignons , Rucola</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Rind</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Putengulasch (Mi,Sl,GlW), Penne (GlW)</name>
+          <note>Geflügel</note>
           <price role="employee">5.20</price>
           <price role="other">6.40</price>
           <price role="student">3.90</price>
         </meal>
         <meal>
-          <name>Putengulasch (Mi,Sl,GlW), Penne (GlW)</name>
-          <note>Geflügel</note>
+          <name>Rosenkohleintopf</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Geschmacksverstärker</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Phosphat</note>
+          <price role="employee">3.50</price>
+          <price role="other">4.70</price>
+          <price role="student">2.20</price>
+        </meal>
+        <meal>
+          <name>Hausgemachte Pasta (GlW), Ragù bianco mit Rinderhackfleisch und Champignons , Rucola</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Rind</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <price role="employee">5.20</price>
           <price role="other">6.40</price>
           <price role="student">3.90</price>
@@ -48,6 +63,16 @@
           <price role="student">4.60</price>
         </meal>
       </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Ofengemüse mit veganer Tahin Joghurt Creme und gerösteten Mandeln (So,Se,NMa)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.10</price>
+          <price role="other">7.30</price>
+          <price role="student">4.80</price>
+        </meal>
+      </category>
       <category name="Pastabar">
         <meal>
           <name>Pomodoro asiatico mit asiatischer Tomatensoße und Soja Chunks (2,So,Se,GlW), bunte Fusilli (GlW)</name>
@@ -58,9 +83,8 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>all`Amatriciana mit Speck und Tomaten , bunte Fusilli (GlW)</name>
+          <name>all`Amatriciana mit Speck und Tomaten , Bèchamel-Kartoffeln (1,Mi,Sl,GlW)</name>
           <note>Schwein</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Antioxidationsmittel</note>
           <note>mit Konservierungsstoff</note>
           <note>mit Phosphat</note>
@@ -71,10 +95,11 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Weiße Bohnen mediterraneo, Bèchamel-Kartoffeln (1,Mi,Sl,GlW), Karotten Pastinakenmix mit frischer Petersilie, Auberginen mit Balsamico Bianco , Couscous mit Mandeln, Rosinen und Chili (Sl,GlW,NMa)</name>
+          <name>Weiße Bohnen mediterraneo, Karotten Pastinakenmix mit frischer Petersilie, Auberginen mit Balsamico Bianco , Couscous mit Mandeln, Rosinen und Chili (Sl,GlW,NMa)</name>
           <note>Geschwefelt</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegetarisch</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Antioxidationsmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
@@ -104,6 +129,24 @@
           <price role="student">3.20</price>
         </meal>
       </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Veganer Nudelauflauf (1,GlW), Penne alla Norma mit Auberginen-Tomaten (Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.40</price>
+          <price role="other">5.60</price>
+          <price role="student">3.10</price>
+        </meal>
+        <meal>
+          <name>Veganer Nudelauflauf (1,GlW), Penne alla Norma mit Auberginen-Tomaten (Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.40</price>
+          <price role="other">5.60</price>
+          <price role="student">3.10</price>
+        </meal>
+      </category>
       <category name="CampusSpezial">
         <meal>
           <name>Fischburger (2,3,9,Ei,Fi,Sf,Se,GlW), Pommes Frites</name>
@@ -125,19 +168,19 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta salsa di noci mit Paprika-Nuss-Soße, getrocknete Tomaten (Sl,NHa), Eliche (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
-        <meal>
           <name>Salsa rucola di pollo mit Hähnchenstreifen in Rucolasoße , Eliche (GlW)</name>
           <note>Geflügel</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>mensaVital</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Pasta salsa di noci mit Paprika-Nuss-Soße, getrocknete Tomaten (Sl,NHa), Eliche (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
@@ -189,8 +232,7 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Lenticchie mit Linsen in pikanter Tomatensoße , Farfalle (GlW)</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Broccoli e pomodoro mit Broccoli und Tomate, Farfalle (GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
@@ -198,7 +240,8 @@
           <price role="student">0.75</price>
         </meal>
         <meal>
-          <name>Broccoli e pomodoro mit Broccoli und Tomate, Farfalle (GlW)</name>
+          <name>Lenticchie mit Linsen in pikanter Tomatensoße , Farfalle (GlW)</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
@@ -340,19 +383,19 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Homemade paniertes Putenschnitzel (Ei,GlW), Preiselbeer Pfeffersoße (Mi,Sl,GlW), Spicy Kartoffelspalten</name>
-          <note>Geflügel</note>
-          <price role="employee">5.90</price>
-          <price role="other">7.10</price>
-          <price role="student">4.60</price>
-        </meal>
-        <meal>
           <name>Hähnchenbrust im Knuspermantel (GlW), Joghurt-Zitronen-Dip , glasierte Honigmöhren, Gemüse Bulgur (Sl,GlW)</name>
           <note>Geflügel</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <price role="employee">6.10</price>
           <price role="other">7.30</price>
           <price role="student">4.80</price>
+        </meal>
+        <meal>
+          <name>Homemade paniertes Putenschnitzel (Ei,GlW), Preiselbeer Pfeffersoße (Mi,Sl,GlW), Spicy Kartoffelspalten</name>
+          <note>Geflügel</note>
+          <price role="employee">5.90</price>
+          <price role="other">7.10</price>
+          <price role="student">4.60</price>
         </meal>
       </category>
       <category name="CampusWorld">

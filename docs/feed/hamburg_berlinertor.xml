@@ -28,28 +28,21 @@
       </category>
       <category name="CampusVital">
         <meal>
-          <name>All in one pot: Vollkornreis, Tandoori Chicken, Avocado, Linsen, Cranberries, Chia (1,2,3,So,Mi,Sl,Sf,GlW)</name>
-          <note>Geflügel</note>
-          <price role="employee">5.60</price>
-          <price role="other">6.80</price>
-          <price role="student">4.30</price>
-        </meal>
-        <meal>
           <name>All in one pot: Vollkornreis, Tandoori Tofu, Avocado, Linsen, Cranberries, Chia (1,2,3,So,Mi,Sl,Sf,GlW)</name>
           <note>Vegetarisch</note>
           <price role="employee">5.00</price>
           <price role="other">6.20</price>
           <price role="student">3.70</price>
         </meal>
+        <meal>
+          <name>All in one pot: Vollkornreis, Tandoori Chicken, Avocado, Linsen, Cranberries, Chia (1,2,3,So,Mi,Sl,Sf,GlW)</name>
+          <note>Geflügel</note>
+          <price role="employee">5.60</price>
+          <price role="other">6.80</price>
+          <price role="student">4.30</price>
+        </meal>
       </category>
       <category name="CampusWorld">
-        <meal>
-          <name>Frisch gebackene PIZZA LARGE nach Wahl (versch. Sorten) ab 4,40 / 5,70 / 6,90 (auch TAKE AWAY) (Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">5.70</price>
-          <price role="other">6.90</price>
-          <price role="student">4.40</price>
-        </meal>
         <meal>
           <name>Tagliatelle (GlW), Steckrüben-Kürbissoße mit Thymian (Mi,GlW,GlG), rote Beete Bacon</name>
           <note>Neu</note>
@@ -57,6 +50,13 @@
           <price role="employee">4.50</price>
           <price role="other">5.70</price>
           <price role="student">3.20</price>
+        </meal>
+        <meal>
+          <name>Frisch gebackene PIZZA LARGE nach Wahl (versch. Sorten) ab 4,40 / 5,70 / 6,90 (auch TAKE AWAY) (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">5.70</price>
+          <price role="other">6.90</price>
+          <price role="student">4.40</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -108,14 +108,18 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Grünkohl , vegane Bratwurst, Röstkartoffeln</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Grünkohl , Kochwurst , Röstkartoffeln</name>
+          <note>Rind</note>
+          <note>Schwein</note>
           <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.50</price>
-          <price role="other">6.70</price>
-          <price role="student">4.20</price>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Geschmacksverstärker</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Phosphat</note>
+          <price role="employee">5.30</price>
+          <price role="other">6.50</price>
+          <price role="student">4.00</price>
         </meal>
         <meal>
           <name>Grünkohl , Kasseler Nackenbraten , Röstkartoffeln</name>
@@ -131,18 +135,14 @@
           <price role="student">4.00</price>
         </meal>
         <meal>
-          <name>Grünkohl , Kochwurst , Röstkartoffeln</name>
-          <note>Rind</note>
-          <note>Schwein</note>
+          <name>Grünkohl , vegane Bratwurst, Röstkartoffeln</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Geschmacksverstärker</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Phosphat</note>
-          <price role="employee">5.30</price>
-          <price role="other">6.50</price>
-          <price role="student">4.00</price>
+          <price role="employee">5.50</price>
+          <price role="other">6.70</price>
+          <price role="student">4.20</price>
         </meal>
       </category>
       <category name="CampusVital">
@@ -161,13 +161,6 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Frisch gebackene PIZZA LARGE nach Wahl (versch. Sorten) ab 4,40 / 5,70 / 6,90 (auch TAKE AWAY) (Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">5.70</price>
-          <price role="other">6.90</price>
-          <price role="student">4.40</price>
-        </meal>
-        <meal>
           <name>Vegane Tom Kha Gai Suppe mit Tofu und Basmatireis (2,3,So,Sw,GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -185,22 +178,29 @@
           <price role="other">7.70</price>
           <price role="student">5.20</price>
         </meal>
+        <meal>
+          <name>Frisch gebackene PIZZA LARGE nach Wahl (versch. Sorten) ab 4,40 / 5,70 / 6,90 (auch TAKE AWAY) (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">5.70</price>
+          <price role="other">6.90</price>
+          <price role="student">4.40</price>
+        </meal>
       </category>
       <category name="Pastabar">
-        <meal>
-          <name>Pasta salsa di noci mit Paprika-Nuss-Soße, getrocknete Tomaten (Sl,NHa), Eliche (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">0.95</price>
-          <price role="other">1.15</price>
-          <price role="student">0.75</price>
-        </meal>
         <meal>
           <name>Salsa rucola di pollo mit Hähnchenstreifen in Rucolasoße , bunte Fusilli (GlW)</name>
           <note>Geflügel</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>mensaVital</note>
+          <price role="employee">0.95</price>
+          <price role="other">1.15</price>
+          <price role="student">0.75</price>
+        </meal>
+        <meal>
+          <name>Pasta salsa di noci mit Paprika-Nuss-Soße, getrocknete Tomaten (Sl,NHa), Eliche (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">0.95</price>
           <price role="other">1.15</price>
           <price role="student">0.75</price>
