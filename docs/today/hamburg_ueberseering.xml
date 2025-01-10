@@ -4,18 +4,19 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-01-10">
+      <category name="Pottkieker">
+        <meal>
+          <name>Chili con Corn (Sl,GlD), Basmatireis</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.50</price>
+          <price role="other">4.70</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
       <category name="CampusWorld">
         <meal>
-          <name>Gebratene Pierogi mit Kartoffel-Quarkfüllung (1,Ei,Mi,Sl,GlW), Kräuterdip , Rote Beete Salat</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">5.45</price>
-          <price role="other">6.65</price>
-          <price role="student">4.15</price>
-        </meal>
-        <meal>
-          <name>Let's WOK, frisches Gemüse aus dem WOK (2,So,Sl,Sw,GlW), würzige Teriyaki-Sauce (2,So,GlW), Tofusteak (2,So,GlW), Basmatireis, verschiedene Toppings</name>
+          <name>Let's WOK, marinierte Sojastreifen (2,So,GlW), frisches Gemüse aus dem WOK (2,So,Sl,Sw,GlW), würzige Teriyaki-Sauce (2,So,GlW), Basmatireis, verschiedene Toppings</name>
           <note>Erdnüsse und Erdnusserzeugnisse</note>
           <note>Sesamsamen und Sesamsamenerzeugnisse</note>
           <note>Vegan</note>
@@ -23,6 +24,15 @@
           <price role="employee">6.70</price>
           <price role="other">7.90</price>
           <price role="student">5.40</price>
+        </meal>
+        <meal>
+          <name>gebratene Piroggen mit Kartoffel,Zwiebelnfüllung (1,Ei,Mi,Sl,GlW), Kräuterdip , Rote Beete Salat</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">5.45</price>
+          <price role="other">6.65</price>
+          <price role="student">4.15</price>
         </meal>
       </category>
       <category name="Pastabar">
