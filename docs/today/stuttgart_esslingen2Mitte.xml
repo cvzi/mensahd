@@ -4,6 +4,17 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-01-10">
+      <category name="Vorspeise">
+        <meal>
+          <name>Kürbissuppe mit Ingwer</name>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
       <category name="Veganer renner">
         <meal>
           <name>Reispfanne mit Naturreis und Weißkraut-,Paprikagemüse</name>
@@ -58,6 +69,12 @@
       </category>
       <category name="Beilage">
         <meal>
+          <name>Balkangemüse</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
           <name>Bratkartoffeln</name>
           <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>vegan</note>
@@ -80,6 +97,15 @@
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Dessert">
+        <meal>
+          <name>Mousse mit Blutorangen-Geschmack</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
         </meal>
       </category>
     </day>
