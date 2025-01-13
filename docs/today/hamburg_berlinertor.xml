@@ -17,6 +17,14 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
+          <name>Paniertes Schweineschnitzel (Ei,GlW), Kartoffel Steckrüben Stampf , Champignonrahmsoße (Mi,Sl,GlW)</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwein</note>
+          <price role="employee">7.10</price>
+          <price role="other">8.30</price>
+          <price role="student">5.80</price>
+        </meal>
+        <meal>
           <name>Gebackene Seelachsfiletwürfel (Fi,Mi,GlW), Remoulade , Pommes Frites</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -30,23 +38,8 @@
           <price role="other">6.65</price>
           <price role="student">4.15</price>
         </meal>
-        <meal>
-          <name>Paniertes Schweineschnitzel (Ei,GlW), Kartoffel Steckrüben Stampf , Champignonrahmsoße (Mi,Sl,GlW)</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwein</note>
-          <price role="employee">7.10</price>
-          <price role="other">8.30</price>
-          <price role="student">5.80</price>
-        </meal>
       </category>
       <category name="CampusWorld">
-        <meal>
-          <name>Frisch gebackene PIZZA LARGE nach Wahl (versch. Sorten) ab 4,70 / 6,00 / 7,20 (auch TAKE AWAY) (Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">6.00</price>
-          <price role="other">7.20</price>
-          <price role="student">4.70</price>
-        </meal>
         <meal>
           <name>Spanischer Linseneintopf mit veganen Hackbällchen (3,5,So,Sl,Sf,Sw,GlW,GlG), Fladenbrot (Se,GlW)</name>
           <note>Vegan</note>
@@ -54,6 +47,13 @@
           <price role="employee">5.35</price>
           <price role="other">6.55</price>
           <price role="student">4.05</price>
+        </meal>
+        <meal>
+          <name>Frisch gebackene PIZZA LARGE nach Wahl (versch. Sorten) ab 4,70 / 6,00 / 7,20 (auch TAKE AWAY) (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">6.00</price>
+          <price role="other">7.20</price>
+          <price role="student">4.70</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -128,15 +128,6 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Hamburger mit Tomate, Gurke und Salat (1,2,3,9,Ei,Sf,Se,GlW), Pommes Frites</name>
-          <note>Rind</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.20</price>
-          <price role="other">7.40</price>
-          <price role="student">4.90</price>
-        </meal>
-        <meal>
           <name>Veganer Hamburger mit Gemüseschnitzel, Tomaten und Gewürzgurke (2,9,Sf,Se,GlW,GlD), Pommes Frites</name>
           <note>Senf und Senferzeugnisse</note>
           <note>Vegan</note>
@@ -155,21 +146,23 @@
           <price role="other">8.45</price>
           <price role="student">5.95</price>
         </meal>
+        <meal>
+          <name>Hamburger mit Tomate, Gurke und Salat (1,2,3,9,Ei,Sf,Se,GlW), Pommes Frites</name>
+          <note>Rind</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.40</price>
+          <price role="student">4.90</price>
+        </meal>
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Flammkuchen Elsässer Art mit Speck, Zwiebeln und Schmand (2,3,Mi,GlW)</name>
-          <note>Schwein</note>
-          <price role="employee">5.90</price>
-          <price role="other">7.10</price>
-          <price role="student">4.60</price>
-        </meal>
-        <meal>
-          <name>Flammkuchen mit Chicken Asia Style (Mi,GlW)</name>
-          <note>Geflügel</note>
-          <price role="employee">6.55</price>
-          <price role="other">7.75</price>
-          <price role="student">5.25</price>
+          <name>Flammkuchen mit Apfelwürfel, Zimt und Zucker (Mi,GlW,NHa)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">5.50</price>
+          <price role="other">6.70</price>
+          <price role="student">4.20</price>
         </meal>
         <meal>
           <name>Flammkuchen mit Schmand, Käse und Frühlingszwiebeln (Mi,GlW)</name>
@@ -179,11 +172,18 @@
           <price role="student">4.20</price>
         </meal>
         <meal>
-          <name>Flammkuchen mit Apfelwürfel, Zimt und Zucker (Mi,GlW,NHa)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">5.50</price>
-          <price role="other">6.70</price>
-          <price role="student">4.20</price>
+          <name>Flammkuchen mit Chicken Asia Style (Mi,GlW)</name>
+          <note>Geflügel</note>
+          <price role="employee">6.55</price>
+          <price role="other">7.75</price>
+          <price role="student">5.25</price>
+        </meal>
+        <meal>
+          <name>Flammkuchen Elsässer Art mit Speck, Zwiebeln und Schmand (2,3,Mi,GlW)</name>
+          <note>Schwein</note>
+          <price role="employee">5.90</price>
+          <price role="other">7.10</price>
+          <price role="student">4.60</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -371,13 +371,6 @@
           <price role="student">5.25</price>
         </meal>
         <meal>
-          <name>Flammkuchen mit Schmand, Käse und Frühlingszwiebeln (Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">5.50</price>
-          <price role="other">6.70</price>
-          <price role="student">4.20</price>
-        </meal>
-        <meal>
           <name>Flammkuchen mit geschmolzenen Camembert und Apfelwürfel (Mi,GlW)</name>
           <note>Vegetarisch</note>
           <price role="employee">5.90</price>
@@ -391,20 +384,27 @@
           <price role="other">7.10</price>
           <price role="student">4.60</price>
         </meal>
+        <meal>
+          <name>Flammkuchen mit Schmand, Käse und Frühlingszwiebeln (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">5.50</price>
+          <price role="other">6.70</price>
+          <price role="student">4.20</price>
+        </meal>
       </category>
       <category name="Pastabar">
-        <meal>
-          <name>Tortellini mit Käsefüllung (Mi,GlW), Noci di zucchine mit Zucchini-Walnusssoße (Mi,GlW,GlG,NWa)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
         <meal>
           <name>Pomodoro Melanzane di Pollo Tomatensoße mit Aubergine und Hähnchen , Reis</name>
           <note>Geflügel</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Tortellini mit Käsefüllung (Mi,GlW), Noci di zucchine mit Zucchini-Walnusssoße (Mi,GlW,GlG,NWa)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
