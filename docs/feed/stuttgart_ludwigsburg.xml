@@ -4,6 +4,17 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-01-13">
+      <category name="Vorspeise">
+        <meal>
+          <name>Kräuter-Pilzsuppe</name>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
       <category name="Veganer renner">
         <meal>
           <name>Tomaten-Hirse mit Haselnüssen</name>
@@ -15,14 +26,26 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Allgäuer Käsespätzle mit Zwiebelschmelze</name>
-          <note>Dinkel</note>
+          <name>Köttbullar und Kartoffelpüree mit Rahmsauce</name>
           <note>Ei</note>
           <note>Milch und Laktose</note>
+          <note>Rind</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Schwein</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Farbstoffen</note>
+          <price role="employee">7.30</price>
+          <price role="student">4.80</price>
+        </meal>
+        <meal>
+          <name>Spaghetti mit Tomatensauce und Reibekäse</name>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
           <note>Weizen</note>
           <note>vegetarisch</note>
-          <price role="employee">6.70</price>
-          <price role="student">4.20</price>
+          <price role="employee">5.90</price>
+          <price role="student">3.40</price>
         </meal>
         <meal>
           <name>Bratwurst mit Sauerkraut und Kartoffelpüree</name>
@@ -49,6 +72,16 @@
         </meal>
       </category>
       <category name="Beilage">
+        <meal>
+          <name>Rahmblumenkohl</name>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
         <meal>
           <name>Kartoffelpüree</name>
           <note>Milch und Laktose</note>
@@ -91,8 +124,8 @@
           <note>Milch und Laktose</note>
           <note>mit Farbstoffen</note>
           <note>vegetarisch</note>
-          <price role="employee">1.49</price>
-          <price role="student">1.09</price>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
         </meal>
       </category>
       <category name="Buffet">
@@ -129,11 +162,8 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Kaiserschmarrn mit Rosinen und Apfelmus</name>
-          <note>Ei</note>
-          <note>Mandeln</note>
+          <name>Milchreis mit Apfelmus und Zimt Zucker</name>
           <note>Milch und Laktose</note>
-          <note>Weizen</note>
           <note>mit Antioxidationsmitteln</note>
           <note>vegetarisch</note>
           <price role="employee">5.60</price>
