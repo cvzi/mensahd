@@ -43,6 +43,15 @@
       </category>
       <category name="CampusSpezial">
         <meal>
+          <name>Veganer Hamburger mit Gemüseschnitzel, Tomaten und Gewürzgurke (2,9,Sf,Se,GlW,GlD), Pommes Frites</name>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.95</price>
+          <price role="other">7.15</price>
+          <price role="student">4.65</price>
+        </meal>
+        <meal>
           <name>Gebackene Kartoffeldonuts mit kleinem Salat (Sf,GlW), Kräuterdip , rote Salsa, pikant , Erbsen Guacamole (NMa)</name>
           <note>Senf und Senferzeugnisse</note>
           <note>Vegan</note>
@@ -51,15 +60,6 @@
           <price role="employee">7.25</price>
           <price role="other">8.45</price>
           <price role="student">5.95</price>
-        </meal>
-        <meal>
-          <name>Veganer Hamburger mit Gemüseschnitzel, Tomaten und Gewürzgurke (2,9,Sf,Se,GlW,GlD), Pommes Frites</name>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.95</price>
-          <price role="other">7.15</price>
-          <price role="student">4.65</price>
         </meal>
         <meal>
           <name>Hamburger mit Tomate, Gurke und Salat (1,2,3,9,Ei,Sf,Se,GlW), Pommes Frites</name>
@@ -87,28 +87,21 @@
           <price role="student">4.20</price>
         </meal>
         <meal>
-          <name>Flammkuchen mit Chicken Asia Style (Mi,GlW)</name>
-          <note>Geflügel</note>
-          <price role="employee">6.55</price>
-          <price role="other">7.75</price>
-          <price role="student">5.25</price>
-        </meal>
-        <meal>
           <name>Flammkuchen mit Apfelwürfel, Zimt und Zucker (Mi,GlW,NHa)</name>
           <note>Vegetarisch</note>
           <price role="employee">5.50</price>
           <price role="other">6.70</price>
           <price role="student">4.20</price>
         </meal>
+        <meal>
+          <name>Flammkuchen mit Chicken Asia Style (Mi,GlW)</name>
+          <note>Geflügel</note>
+          <price role="employee">6.55</price>
+          <price role="other">7.75</price>
+          <price role="student">5.25</price>
+        </meal>
       </category>
       <category name="Pastabar">
-        <meal>
-          <name>Pasta con Funghi mit Pilzen in Sahnesoße und Käse (3,Mi,Sl,Sw,GlW,GlG)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
         <meal>
           <name>Pasta mit Gemüse und Kokosmilch (Sw,GlW)</name>
           <note>Vegan</note>
@@ -122,6 +115,13 @@
           <note>Geflügel</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Pasta con Funghi mit Pilzen in Sahnesoße und Käse (3,Mi,Sl,Sw,GlW,GlG)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -153,18 +153,18 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>All in one pot: Wok-Nudeln, Putenbrust, Karotten, Süßkartoffel und Sesam (2,Ei,So,Mi,Se,GlW)</name>
-          <note>Geflügel</note>
-          <price role="employee">6.50</price>
-          <price role="other">7.70</price>
-          <price role="student">5.20</price>
-        </meal>
-        <meal>
           <name>All in one pot: Wok-Nudeln, Soja, Karotten, Süßkartoffel und Sesam (2,Ei,So,Mi,Sl,Se,GlW)</name>
           <note>Vegetarisch</note>
           <price role="employee">5.90</price>
           <price role="other">7.10</price>
           <price role="student">4.60</price>
+        </meal>
+        <meal>
+          <name>All in one pot: Wok-Nudeln, Putenbrust, Karotten, Süßkartoffel und Sesam (2,Ei,So,Mi,Se,GlW)</name>
+          <note>Geflügel</note>
+          <price role="employee">6.50</price>
+          <price role="other">7.70</price>
+          <price role="student">5.20</price>
         </meal>
       </category>
       <category name="CampusSpezial">
@@ -179,13 +179,6 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Frisch gebackene PIZZA LARGE nach Wahl (versch. Sorten) ab 4,70 / 6,00 / 7,20 (auch TAKE AWAY) (Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">6.00</price>
-          <price role="other">7.20</price>
-          <price role="student">4.70</price>
-        </meal>
-        <meal>
           <name>Schwedische Köttbullar (Ei,GlW), Rahmsoße (Mi,Sl,GlW), Preiselbeeren, Salzkartoffeln</name>
           <note>Rind</note>
           <note>Schwein</note>
@@ -193,21 +186,28 @@
           <price role="other">5.70</price>
           <price role="student">3.20</price>
         </meal>
+        <meal>
+          <name>Frisch gebackene PIZZA LARGE nach Wahl (versch. Sorten) ab 4,70 / 6,00 / 7,20 (auch TAKE AWAY) (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">6.00</price>
+          <price role="other">7.20</price>
+          <price role="student">4.70</price>
+        </meal>
       </category>
       <category name="Pastabar">
+        <meal>
+          <name>Pasta (GlW), Putengulasch (Mi,Sl,GlW)</name>
+          <note>Geflügel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
         <meal>
           <name>Pasta (GlW), Soja-Bolognese mit Gemüse</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>Pasta (GlW), Putengulasch (Mi,Sl,GlW)</name>
-          <note>Geflügel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -389,18 +389,11 @@
           <price role="student">4.60</price>
         </meal>
         <meal>
-          <name>Flammkuchen mit Rucola und geriebenen Hartkäse (Mi,GlW)</name>
+          <name>Flammkuchen mit Apfelwürfel, Zimt und Zucker (Mi,GlW,NHa)</name>
           <note>Vegetarisch</note>
-          <price role="employee">6.55</price>
-          <price role="other">7.75</price>
-          <price role="student">5.25</price>
-        </meal>
-        <meal>
-          <name>Flammkuchen Teriyaki mit Räuchertofu, asiatischem Gemüse, Sesam (2,So,Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">5.90</price>
-          <price role="other">7.10</price>
-          <price role="student">4.60</price>
+          <price role="employee">5.50</price>
+          <price role="other">6.70</price>
+          <price role="student">4.20</price>
         </meal>
         <meal>
           <name>Flammkuchen mit geschmolzenen Camembert und Apfelwürfel (Mi,GlW)</name>
@@ -410,25 +403,32 @@
           <price role="student">4.60</price>
         </meal>
         <meal>
-          <name>Flammkuchen mit Apfelwürfel, Zimt und Zucker (Mi,GlW,NHa)</name>
+          <name>Flammkuchen Teriyaki mit Räuchertofu, asiatischem Gemüse, Sesam (2,So,Mi,GlW)</name>
           <note>Vegetarisch</note>
-          <price role="employee">5.50</price>
-          <price role="other">6.70</price>
-          <price role="student">4.20</price>
+          <price role="employee">5.90</price>
+          <price role="other">7.10</price>
+          <price role="student">4.60</price>
+        </meal>
+        <meal>
+          <name>Flammkuchen mit Rucola und geriebenen Hartkäse (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">6.55</price>
+          <price role="other">7.75</price>
+          <price role="student">5.25</price>
         </meal>
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta spinaci e arachidi mit Spinat-Erdnusssoße (2,En,So,Sl,GlW,NMa), Farfalle (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Pasta al forno della nonna mit Käse überbacken (Ei,Mi,GlW)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Pasta al forno della nonna mit Käse überbacken (Ei,Mi,GlW)</name>
-          <note>Vegetarisch</note>
+          <name>Pasta spinaci e arachidi mit Spinat-Erdnusssoße (2,En,So,Sl,GlW,NMa), Farfalle (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
