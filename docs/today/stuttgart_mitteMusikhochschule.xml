@@ -3,11 +3,10 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-01-16">
+    <day date="2025-01-17">
       <category name="Vorspeise">
         <meal>
-          <name>Grießklößchensuppe</name>
-          <note>Ei</note>
+          <name>Pilzcremesuppe</name>
           <note>Milch und Laktose</note>
           <note>Sellerie</note>
           <note>Weizen</note>
@@ -18,11 +17,10 @@
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Linsen und vegane Spätzle</name>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <name>Tomaten-Pilaw mit Räuchertofu</name>
           <note>Sellerie</note>
+          <note>Soja</note>
           <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -30,17 +28,26 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Linsen und Spätzle mit Saiten</name>
-          <note>Dinkel</note>
-          <note>Ei</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Schwein</note>
+          <name>Süßkartoffel-Schupfnudeln mit Curry-Erdnuss-Sauce und Chinagemüse</name>
+          <note>Erdnuss</note>
+          <note>Milch und Laktose</note>
           <note>Sellerie</note>
+          <note>Soja</note>
           <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Phosphaten</note>
-          <price role="employee">7.00</price>
-          <price role="student">4.50</price>
+          <note>vegetarisch</note>
+          <price role="employee">6.90</price>
+          <price role="student">4.40</price>
+        </meal>
+        <meal>
+          <name>Frittierte Tintenfischringe mit Zitrone, Knoblauch-Dip und Pommes frites</name>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Senf</note>
+          <note>Weichtiere</note>
+          <note>Weizen</note>
+          <note>mit Farbstoffen</note>
+          <price role="employee">7.40</price>
+          <price role="student">4.90</price>
         </meal>
         <meal>
           <name>Quinoa-Grünkohl-Strudel mit veganem Sour-Cream Dip und Salat</name>
@@ -50,48 +57,29 @@
           <note>Soja</note>
           <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
-          <price role="employee">7.40</price>
-          <price role="student">4.90</price>
-        </meal>
-      </category>
-      <category name="Aktion">
-        <meal>
-          <name>Chinagemüse Gemüsewok Soja-Pflaume mit Reisnudeln</name>
-          <note>Sellerie</note>
-          <note>Soja</note>
-          <note>vegan</note>
-          <price role="employee">6.95</price>
-          <price role="student">4.45</price>
-        </meal>
-        <meal>
-          <name>Hähnchenstreifen zum Wokgericht</name>
-          <note>Geflügel</note>
-          <price role="employee">1.95</price>
-          <price role="student">1.95</price>
+          <price role="employee">7.30</price>
+          <price role="student">4.80</price>
         </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Rahmkarotten</name>
-          <note>Milch und Laktose</note>
-          <note>Sellerie</note>
-          <note>Soja</note>
-          <note>vegetarisch</note>
+          <name>Kaisergemüse</name>
+          <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
         <meal>
-          <name>Spätzle</name>
-          <note>Dinkel</note>
-          <note>Ei</note>
-          <note>Weizen</note>
-          <note>vegetarisch</note>
+          <name>Kartoffelsalat</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>vegan</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Country Potatoes</name>
-          <note>Weizen</note>
+          <name>Pommes frites</name>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
@@ -106,6 +94,12 @@
       </category>
       <category name="Dessert">
         <meal>
+          <name>Panna Cotta mit Erdbeermus</name>
+          <note>Milch und Laktose</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
+        </meal>
+        <meal>
           <name>Pfirsichquark</name>
           <note>Milch und Laktose</note>
           <note>vegetarisch</note>
@@ -113,9 +107,9 @@
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Veganer Schokopudding mit Kirschen</name>
-          <note>Soja</note>
-          <note>vegan</note>
+          <name>Pfirsichquark</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
