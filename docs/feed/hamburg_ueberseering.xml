@@ -17,7 +17,7 @@
       </category>
       <category name="CampusVital">
         <meal>
-          <name>Grüne Gemüsepfanne mit Erdnusssoße (2,En,So,GlW), Vollkornreis</name>
+          <name>Grüne Gemüsepfanne mit Erdnusssoße (2,En,So,GlW), Reis</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">4.60</price>
@@ -37,9 +37,7 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta des Tages (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Pasta mit Brokkoli-Gorgonzolasauce (Mi,Sl,GlW)</name>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -47,9 +45,11 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Gemüse des Tages</name>
+          <name>Weißkohl , Süßkartoffeln, gerösteter Blumenkohl, Erbsen , Kräuterkartoffeln, Spitzkohl</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Farbstoff</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -233,16 +233,6 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Let's WOK, Hähnchenstreifen, frisches Gemüse aus dem WOK (2,So,Sl,Sw,GlW), würzige Teriyaki-Sauce (2,So,GlW), Basmatireis, verschiedene Toppings</name>
-          <note>Erdnüsse und Erdnusserzeugnisse</note>
-          <note>Geflügel</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">7.55</price>
-          <price role="other">8.75</price>
-          <price role="student">6.25</price>
-        </meal>
-        <meal>
           <name>Let's WOK, frisches Gemüse aus dem WOK (2,So,Sl,Sw,GlW), würzige Teriyaki-Sauce (2,So,GlW), Basmatireis, verschiedene Toppings</name>
           <note>Erdnüsse und Erdnusserzeugnisse</note>
           <note>Sesamsamen und Sesamsamenerzeugnisse</note>
@@ -259,6 +249,16 @@
           <price role="employee">5.90</price>
           <price role="other">7.10</price>
           <price role="student">4.60</price>
+        </meal>
+        <meal>
+          <name>Let's WOK, Hähnchenstreifen, frisches Gemüse aus dem WOK (2,So,Sl,Sw,GlW), würzige Teriyaki-Sauce (2,So,GlW), Basmatireis, verschiedene Toppings</name>
+          <note>Erdnüsse und Erdnusserzeugnisse</note>
+          <note>Geflügel</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">7.55</price>
+          <price role="other">8.75</price>
+          <price role="student">6.25</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -285,6 +285,14 @@
     <day date="2025-01-29">
       <category name="CampusKlassiker">
         <meal>
+          <name>4 Röstiecken, Kräuterquark , Gurkensalat</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">5.65</price>
+          <price role="other">6.85</price>
+          <price role="student">4.35</price>
+        </meal>
+        <meal>
           <name>Currybratwurst , Grillsoße , Pommes Frites</name>
           <note>Schwein</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -307,14 +315,6 @@
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Konservierungsstoff</note>
           <note>mit Süßungsmittel</note>
-          <price role="employee">5.65</price>
-          <price role="other">6.85</price>
-          <price role="student">4.35</price>
-        </meal>
-        <meal>
-          <name>4 Röstiecken, Kräuterquark , Gurkensalat</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
           <price role="employee">5.65</price>
           <price role="other">6.85</price>
           <price role="student">4.35</price>
@@ -376,14 +376,16 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Let's WOK, Hähnchenstreifen, frisches Gemüse aus dem WOK (2,So,Sl,Sw,GlW), feurige grüne Kokossauce (2,3,So,GlW), Basmatireis, verschiedene Toppings</name>
-          <note>Erdnüsse und Erdnusserzeugnisse</note>
-          <note>Geflügel</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <name>Ägyptische Falafel mit persischem Gewürzreis (Sl,Se,GlW), Ananas-Tomaten-Chutney</name>
+          <note>Geschwefelt</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">7.55</price>
-          <price role="other">8.75</price>
-          <price role="student">6.25</price>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">5.45</price>
+          <price role="other">6.65</price>
+          <price role="student">4.15</price>
         </meal>
         <meal>
           <name>Let's WOK, frisches Gemüse aus dem WOK (2,So,Sl,Sw,GlW), feurige grüne Kokossauce (2,3,So,GlW), Basmatireis, verschiedene Toppings</name>
@@ -396,16 +398,14 @@
           <price role="student">5.40</price>
         </meal>
         <meal>
-          <name>Ägyptische Falafel mit persischem Gewürzreis (Sl,Se,GlW), Ananas-Tomaten-Chutney</name>
-          <note>Geschwefelt</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
+          <name>Let's WOK, Hähnchenstreifen, frisches Gemüse aus dem WOK (2,So,Sl,Sw,GlW), feurige grüne Kokossauce (2,3,So,GlW), Basmatireis, verschiedene Toppings</name>
+          <note>Erdnüsse und Erdnusserzeugnisse</note>
+          <note>Geflügel</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">5.45</price>
-          <price role="other">6.65</price>
-          <price role="student">4.15</price>
+          <price role="employee">7.55</price>
+          <price role="other">8.75</price>
+          <price role="student">6.25</price>
         </meal>
       </category>
       <category name="Pastabar">
