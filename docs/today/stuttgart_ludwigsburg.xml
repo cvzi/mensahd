@@ -4,13 +4,6 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-01-31">
-      <category name="Vorspeise">
-        <meal>
-          <name>Tagessuppe</name>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-      </category>
       <category name="Veganer renner">
         <meal>
           <name>Spaghetti mit Sojabolognese</name>
@@ -23,6 +16,16 @@
         </meal>
       </category>
       <category name="Hauptgericht">
+        <meal>
+          <name>Hähnchencurry und Duftreis</name>
+          <note>Geflügel</note>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <price role="employee">6.50</price>
+          <price role="student">4.00</price>
+        </meal>
         <meal>
           <name>Fischstäbchen mit Remouladensauce und Salzkartoffeln</name>
           <note>Ei</note>
@@ -37,18 +40,11 @@
           <price role="employee">7.40</price>
           <price role="student">4.90</price>
         </meal>
-        <meal>
-          <name>Paprika mit Couscousfüllung, an Ratatouille-Gemüse und Kräuterreis</name>
-          <note>Sellerie</note>
-          <note>Weizen</note>
-          <note>vegan</note>
-          <price role="employee">7.20</price>
-          <price role="student">4.70</price>
-        </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Tagesgemüse</name>
+          <name>Buntes Gemüse</name>
+          <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -75,40 +71,17 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Nuss-Nougat-Pudding</name>
-          <note>Haselnüsse</note>
-          <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.69</price>
-          <price role="student">1.29</price>
-        </meal>
-        <meal>
-          <name>Mousse mit Mango- Joghurt- Geschmack</name>
-          <note>Ei</note>
-          <note>Haselnüsse</note>
+          <name>Creme mit Tiramisu-Geschmack</name>
           <note>Milch und Laktose</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
-      </category>
-      <category name="Buffet">
         <meal>
-          <name>Salatbuffet</name>
-          <note>Ei</note>
-          <note>Milch und Laktose</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>Sesam</note>
-          <note>Weizen</note>
-          <note>geschwefelt</note>
-          <note>geschwärzt</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
-          <note>mit Süßungsmitteln</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.60</price>
-          <price role="student">1.10</price>
+          <name>Hafergenuss Rote Früchte</name>
+          <note>Hafer</note>
+          <note>vegan</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
         </meal>
       </category>
     </day>
