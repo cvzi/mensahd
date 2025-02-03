@@ -4,13 +4,6 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-02-03">
-      <category name="Vorspeise">
-        <meal>
-          <name>Tagessuppe</name>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-      </category>
       <category name="Veganer renner">
         <meal>
           <name>Gnocchi mit Tomatensauce Rucolagarnitur</name>
@@ -22,14 +15,6 @@
         </meal>
       </category>
       <category name="Hauptgericht">
-        <meal>
-          <name>Soja-Gemüse-Geschnetzeltes und Duftreis</name>
-          <note>Milch und Laktose</note>
-          <note>Soja</note>
-          <note>vegetarisch</note>
-          <price role="employee">5.90</price>
-          <price role="student">3.40</price>
-        </meal>
         <meal>
           <name>Hähnchengyros mit Tzatziki und Pommes frites</name>
           <note>Geflügel</note>
@@ -53,7 +38,8 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Tagesgemüse</name>
+          <name>Buntes Gemüse</name>
+          <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -64,12 +50,6 @@
           <note>mit Antioxidationsmitteln</note>
           <note>mit Farbstoffen</note>
           <note>vegetarisch</note>
-          <price role="employee">1.49</price>
-          <price role="student">1.09</price>
-        </meal>
-        <meal>
-          <name>Duftreis</name>
-          <note>vegan</note>
           <price role="employee">1.49</price>
           <price role="student">1.09</price>
         </meal>
@@ -89,16 +69,16 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Creme mit Stracciatella-Geschmack</name>
+          <name>Nuss-Nougat-Pudding</name>
+          <note>Haselnüsse</note>
           <note>Milch und Laktose</note>
           <note>vegetarisch</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Kirschjoghurt</name>
+          <name>Aprikosenjoghurt</name>
           <note>Milch und Laktose</note>
-          <note>mit Farbstoffen</note>
           <note>vegetarisch</note>
           <price role="employee">1.49</price>
           <price role="student">1.09</price>
