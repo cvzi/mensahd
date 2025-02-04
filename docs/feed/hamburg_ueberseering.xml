@@ -6,14 +6,6 @@
     <day date="2025-02-04">
       <category name="CampusWorld">
         <meal>
-          <name>Gebratene Nudeln aus dem Wok mit karamellisiertem Ingwer-Schweinefleisch (1,2,4,Ei,So,Se,Wt,GlW,NCa)</name>
-          <note>Schwein</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">7.20</price>
-          <price role="other">8.40</price>
-          <price role="student">5.90</price>
-        </meal>
-        <meal>
           <name>Spanischer Linseneintopf mit veganen Hackbällchen (3,5,So,Sl,Sf,Sw,GlW,GlG), Fladenbrot (Se,GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -21,12 +13,18 @@
           <price role="other">6.55</price>
           <price role="student">4.05</price>
         </meal>
+        <meal>
+          <name>Gebratene Nudeln aus dem Wok mit karamellisiertem Ingwer-Schweinefleisch (1,2,4,Ei,So,Se,Wt,GlW,NCa)</name>
+          <note>Schwein</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">7.20</price>
+          <price role="other">8.40</price>
+          <price role="student">5.90</price>
+        </meal>
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta des Tages (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Pasta mit Cherrytomaten und Tomaten-Basilikumpesto (Mi,Sl,GlW,NCa)</name>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -34,7 +32,8 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Gemüse des Tages</name>
+          <name>gerösteter Blumenkohl, Asiatische Gemüsepfanne (2,So,GlW), gebratene Zucchini, Süßkartoffeln, gebratene Karotten, Chili Weißkohl , Kräuterkartoffeln, gebratenem Wirsing, Blumenkohl, grüne Bohnen mit Knoblauch und Ingwer</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
@@ -326,19 +325,19 @@
       </category>
       <category name="CampusWorld">
         <meal>
+          <name>Tagliatelle (GlW), Steckrüben-Kürbissoße mit Thymian (Mi,GlW,GlG), rote Beete Bacon</name>
+          <note>Vegetarisch</note>
+          <price role="employee">4.70</price>
+          <price role="other">5.90</price>
+          <price role="student">3.40</price>
+        </meal>
+        <meal>
           <name>Udon Nudeln mit geschmortem Rindfleisch Edamame,Mu Err,Koriander (2,So,Sl,Se,GlW)</name>
           <note>Rind</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">7.60</price>
           <price role="other">8.80</price>
           <price role="student">6.30</price>
-        </meal>
-        <meal>
-          <name>Tagliatelle (GlW), Steckrüben-Kürbissoße mit Thymian (Mi,GlW,GlG), rote Beete Bacon</name>
-          <note>Vegetarisch</note>
-          <price role="employee">4.70</price>
-          <price role="other">5.90</price>
-          <price role="student">3.40</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -379,15 +378,6 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>gebackener Panko - Tofu (2,So,GlW), Sprossengemüse (2,So,Se,GlW), Spicy Pepper Sauce , Basmatireis</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
-          <price role="employee">6.70</price>
-          <price role="other">7.90</price>
-          <price role="student">5.40</price>
-        </meal>
-        <meal>
           <name>Kross gebackenes Panko-Chicken (3,GlW), Sprossengemüse (2,So,Se,GlW), Spicy Pepper Sauce , Basmatireis</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Geflügel</note>
@@ -395,6 +385,15 @@
           <price role="employee">7.60</price>
           <price role="other">8.80</price>
           <price role="student">6.30</price>
+        </meal>
+        <meal>
+          <name>gebackener Panko - Tofu (2,So,GlW), Sprossengemüse (2,So,Se,GlW), Spicy Pepper Sauce , Basmatireis</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">6.70</price>
+          <price role="other">7.90</price>
+          <price role="student">5.40</price>
         </meal>
         <meal>
           <name>Bibimbap Bowl mit Sonnenblumenhack und Champignons (2,3,5,So,Sl,Sf,Se,Sw,GlW)</name>
