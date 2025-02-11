@@ -6,6 +6,17 @@
     <day date="2025-02-11">
       <category name="CampusKlassiker">
         <meal>
+          <name>Thüringer Bratwurst , Hausgemachtes Kartoffel-Butterstampf , geschmortes Apfel-Zwiebel Gemüse, Petersilie</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>mit Phosphat</note>
+          <price role="employee">5.80</price>
+          <price role="other">7.00</price>
+          <price role="student">4.50</price>
+        </meal>
+        <meal>
           <name>Schwedische Köttbullar (Ei,GlW), Hausgemachtes Kartoffel-Butterstampf , geschmortes Apfel-Zwiebel Gemüse, Petersilie</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Rind</note>
@@ -20,17 +31,6 @@
           <price role="employee">7.60</price>
           <price role="other">8.80</price>
           <price role="student">6.30</price>
-        </meal>
-        <meal>
-          <name>Thüringer Bratwurst , Hausgemachtes Kartoffel-Butterstampf , geschmortes Apfel-Zwiebel Gemüse, Petersilie</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwein</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>mit Phosphat</note>
-          <price role="employee">5.80</price>
-          <price role="other">7.00</price>
-          <price role="student">4.50</price>
         </meal>
       </category>
       <category name="CampusSpezial">
@@ -139,14 +139,6 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Bibimbap Bowl mit Sonnenblumenhack und Champignons (2,3,5,So,Sl,Sf,Se,Sw,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.40</price>
-          <price role="other">7.60</price>
-          <price role="student">5.10</price>
-        </meal>
-        <meal>
           <name>Kross gebackenes Panko-Chicken (3,GlW), Sprossengemüse (2,So,Se,GlW), Spicy Pepper Sauce , Basmatireis</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Geflügel</note>
@@ -154,6 +146,14 @@
           <price role="employee">7.60</price>
           <price role="other">8.80</price>
           <price role="student">6.30</price>
+        </meal>
+        <meal>
+          <name>Bibimbap Bowl mit Sonnenblumenhack und Champignons (2,3,5,So,Sl,Sf,Se,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.40</price>
+          <price role="other">7.60</price>
+          <price role="student">5.10</price>
         </meal>
         <meal>
           <name>gebackener Panko - Tofu (2,So,GlW), Sprossengemüse (2,So,Se,GlW), Spicy Pepper Sauce , Basmatireis</name>
@@ -292,20 +292,20 @@
     <day date="2025-02-18">
       <category name="CampusKlassiker">
         <meal>
-          <name>Vegane Carbonara mit Tofuwürfel (1,So,Sl,Sf,GlW), Conchiglie (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">4.30</price>
-          <price role="other">5.50</price>
-          <price role="student">3.00</price>
-        </meal>
-        <meal>
           <name>Hähnchenbrust im Knuspermantel (GlW), Joghurt-Zitronen-Dip , glasierte Honigmöhren, Gemüse Bulgur (Sl,GlW)</name>
           <note>Geflügel</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <price role="employee">6.40</price>
           <price role="other">7.60</price>
           <price role="student">5.10</price>
+        </meal>
+        <meal>
+          <name>Vegane Carbonara mit Tofuwürfel (1,So,Sl,Sf,GlW), Conchiglie (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.30</price>
+          <price role="other">5.50</price>
+          <price role="student">3.00</price>
         </meal>
       </category>
       <category name="CampusSpezial">
@@ -359,13 +359,12 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Indisches Buttercurry , mariniertes Quorn , Basmatireis</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
-          <price role="employee">5.60</price>
-          <price role="other">6.80</price>
-          <price role="student">4.30</price>
+          <name>Spicy Lao-Gan-Ma Mienudeln mit Blattspinat,Erdnüssen und Koriander (1,2,En,So,Sl,Se,GlW), Gegrillter Ingwer-Tofu (2,So,Se,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.75</price>
+          <price role="other">7.95</price>
+          <price role="student">5.45</price>
         </meal>
         <meal>
           <name>Spicy Lao-Gan-Ma Mienudeln mit Blattspinat,Erdnüssen und Koriander (1,2,En,So,Sl,Se,GlW), Gebackenes Panko - Chicken (3,GlW)</name>
@@ -376,12 +375,13 @@
           <price role="student">6.20</price>
         </meal>
         <meal>
-          <name>Spicy Lao-Gan-Ma Mienudeln mit Blattspinat,Erdnüssen und Koriander (1,2,En,So,Sl,Se,GlW), Gegrillter Ingwer-Tofu (2,So,Se,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.75</price>
-          <price role="other">7.95</price>
-          <price role="student">5.45</price>
+          <name>Indisches Buttercurry , mariniertes Quorn , Basmatireis</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">5.60</price>
+          <price role="other">6.80</price>
+          <price role="student">4.30</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -419,6 +419,14 @@
       </category>
       <category name="CampusSpezial">
         <meal>
+          <name>Tortellini mit Spinat Ricottafüllung (Ei,Mi,GlW), Walnuss-Senfsoße (2,5,Mi,Sl,Sf,Sw,GlW,GlG,NWa), mediterrane Salatbeilage</name>
+          <note>Vegetarisch</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">5.55</price>
+          <price role="other">6.75</price>
+          <price role="student">4.25</price>
+        </meal>
+        <meal>
           <name>Paniertes Putenschnitzel (GlW), Ratatouille , Rosmarinkartoffeln</name>
           <note>Geflügel</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -426,14 +434,6 @@
           <price role="employee">6.40</price>
           <price role="other">7.60</price>
           <price role="student">5.10</price>
-        </meal>
-        <meal>
-          <name>Tortellini mit Spinat Ricottafüllung (Ei,Mi,GlW), Walnuss-Senfsoße (2,5,Mi,Sl,Sf,Sw,GlW,GlG,NWa), mediterrane Salatbeilage</name>
-          <note>Vegetarisch</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">5.55</price>
-          <price role="other">6.75</price>
-          <price role="student">4.25</price>
         </meal>
       </category>
       <category name="Pastabar">
