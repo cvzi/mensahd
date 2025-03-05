@@ -4,13 +4,6 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-03-05">
-      <category name="Vorspeise">
-        <meal>
-          <name>Tagessuppe</name>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-      </category>
       <category name="Veganer renner">
         <meal>
           <name>Karotten-Gnocchi-Ragout</name>
@@ -56,10 +49,23 @@
           <price role="employee">7.70</price>
           <price role="student">5.20</price>
         </meal>
+        <meal>
+          <name>Matjesfilet mit Hausfrauensauce und Petersilienkartoffeln</name>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Senf</note>
+          <note>Weizen</note>
+          <note>mit Konservierungsstoffen</note>
+          <note>mit Süßungsmitteln</note>
+          <price role="employee">8.40</price>
+          <price role="student">5.90</price>
+        </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Tagesgemüse</name>
+          <name>Karotten-Erbsen-Gemüse</name>
+          <note>Sellerie</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -86,19 +92,23 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Waldbeerenquark</name>
-          <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
+          <name>Veganer Früchtequark</name>
+          <note>Hafer</note>
+          <note>Soja</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Veganes Haferdessert Saltet Caramel</name>
-          <note>100% Bio nach EG-Öko-Verordnung (DE-ÖKO-006)</note>
-          <note>Hafer</note>
-          <note>vegan</note>
+          <name>Sahneschokopudding</name>
+          <note>Milch und Laktose</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
+        </meal>
+        <meal>
+          <name>Aprikosenjoghurt</name>
+          <note>Milch und Laktose</note>
+          <price role="employee">1.49</price>
+          <price role="student">1.09</price>
         </meal>
       </category>
     </day>
