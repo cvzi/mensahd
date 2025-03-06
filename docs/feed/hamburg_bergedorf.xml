@@ -3,12 +3,12 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-03-05">
+    <day date="2025-03-06">
       <category name="Pottkieker">
         <meal>
-          <name>Kokos-Kürbis-Curry , Reis</name>
+          <name>Cassoulet- Bohneneintopf</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Senf und Senferzeugnisse</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">3.50</price>
@@ -16,24 +16,6 @@
           <price role="student">2.20</price>
         </meal>
       </category>
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Putengulasch (Mi,Sl,GlW), Penne (GlW)</name>
-          <note>Geflügel</note>
-          <price role="employee">5.45</price>
-          <price role="other">6.65</price>
-          <price role="student">4.15</price>
-        </meal>
-        <meal>
-          <name>Pizza vegetaria (6,Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.40</price>
-          <price role="student">3.90</price>
-        </meal>
-      </category>
-    </day>
-    <day date="2025-03-06">
       <category name="CampusKlassiker">
         <meal>
           <name>Caesar Burger (1,3,9,Ei,Sf,GlW), Pommes Frites</name>
@@ -85,7 +67,7 @@
     <day date="2025-03-10">
       <category name="Pottkieker">
         <meal>
-          <name>Schwarze Bohnensuppe mit Räuchertofu (So,Sl,GlW)</name>
+          <name>Cassoulet- Bohneneintopf mit Räuchertofu (So,Sl,Sf,GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">3.50</price>
@@ -94,6 +76,15 @@
         </meal>
       </category>
       <category name="CampusKlassiker">
+        <meal>
+          <name>Königsberger Klopse, Salzkartoffeln, Rote Beete Salat</name>
+          <note>Rind</note>
+          <note>Schwein</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">1.30</price>
+          <price role="other">2.50</price>
+        </meal>
         <meal>
           <name>Hähnchenfilets in Soja Pflaumen Soße , Reis</name>
           <note>Geflügel</note>
@@ -106,50 +97,8 @@
           <price role="student">5.55</price>
         </meal>
       </category>
-      <category name="CampusVital">
-        <meal>
-          <name>Süßkartoffel-Gnocchi mit geröstetem Blumenkohl, Sojajoghurt-Minz Dip</name>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">4.90</price>
-          <price role="other">6.10</price>
-          <price role="student">3.60</price>
-        </meal>
-      </category>
     </day>
     <day date="2025-03-11">
-      <category name="Pottkieker">
-        <meal>
-          <name>Zartweizen-Tomatentopf mit Pilzen (Sl,Sw,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">3.50</price>
-          <price role="other">4.70</price>
-          <price role="student">2.20</price>
-        </meal>
-      </category>
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Hähnchenbrust im Knuspermantel (GlW), Joghurt-Zitronen-Dip , glasierte Honigmöhren, Gemüse Bulgur (Sl,GlW)</name>
-          <note>Geflügel</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <price role="employee">6.40</price>
-          <price role="other">7.60</price>
-          <price role="student">5.10</price>
-        </meal>
-        <meal>
-          <name>Vegane Carbonara mit Tofuwürfel (1,So,Sl,Sf,GlW), Conchiglie (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">4.25</price>
-          <price role="other">5.45</price>
-          <price role="student">2.95</price>
-        </meal>
-      </category>
-    </day>
-    <day date="2025-03-12">
       <category name="Pottkieker">
         <meal>
           <name>Orientalisches Gemüsecurry</name>
@@ -161,6 +110,37 @@
           <price role="employee">3.50</price>
           <price role="other">4.70</price>
           <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Kürbis Steckrübenbratling (GlW), Wirsing in Chilicreme (So,Sl,GlW), veganes hausgemachtes Kartoffelpüree</name>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Farbstoff</note>
+          <price role="employee">4.25</price>
+          <price role="other">5.45</price>
+          <price role="student">2.95</price>
+        </meal>
+        <meal>
+          <name>Hähnchenbrust im Knuspermantel (GlW), Joghurt-Zitronen-Dip , glasierte Honigmöhren, Gemüse Bulgur (Sl,GlW)</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <price role="employee">6.40</price>
+          <price role="other">7.60</price>
+          <price role="student">5.10</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2025-03-12">
+      <category name="CampusVital">
+        <meal>
+          <name>Wrap mit Glasnudeln und Sonnenblumenhack (2,So,Sl,Sf,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.30</price>
+          <price role="other">2.50</price>
         </meal>
       </category>
       <category name="CampusSpezial">
@@ -177,18 +157,6 @@
           <price role="student">4.70</price>
         </meal>
       </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Veganer Sloppy Joes Burger mit gebratenen Sojahack, gepickelten Zwiebeln und Gewürzgurke (1,2,3,9,So,Sf,GlW), Cole Slaw mit Sojamajo , Pommes Frites</name>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.10</price>
-          <price role="other">7.30</price>
-          <price role="student">4.80</price>
-        </meal>
-      </category>
     </day>
     <day date="2025-03-13">
       <category name="Pottkieker">
@@ -201,39 +169,28 @@
           <price role="student">2.20</price>
         </meal>
       </category>
-      <category name="CampusVital">
-        <meal>
-          <name>Lachsfilet auf buntem Gemüse-Couscous (3,5,Fi,Sl,Sw,GlW), Joghurt-Zitronen-Dip</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Fisch</note>
-          <price role="employee">7.45</price>
-          <price role="other">8.65</price>
-          <price role="student">6.15</price>
-        </meal>
-      </category>
       <category name="CampusWorld">
         <meal>
-          <name>All in one Pot: Bulgur, Soja, Weißkohl, Cranberries, Ananas, Asia-Majo, Cashew (2,So,Sl,Sf,Sw,GlW,NCa)</name>
+          <name>Mini Frühlingsrollen (So,GlW), Bratnudeln mit Gemüsestreifen (2,So,Se,GlW), scharfer Asia-Dip</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.05</price>
-          <price role="other">7.25</price>
-          <price role="student">4.75</price>
+          <price role="employee">1.30</price>
+          <price role="other">2.50</price>
+        </meal>
+        <meal>
+          <name>hausgemachte Köfte mit Hirtenkäsefüllung (Ei,Mi,GlW), Pommes Frites , Tzatziki , Weißkrautsalat</name>
+          <note>Geschwefelt</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Rind</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">1.30</price>
+          <price role="other">2.50</price>
         </meal>
       </category>
     </day>
     <day date="2025-03-14">
-      <category name="Pottkieker">
-        <meal>
-          <name>Blumenkohl Korma, Reis</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">3.50</price>
-          <price role="other">4.70</price>
-          <price role="student">2.20</price>
-        </meal>
-      </category>
       <category name="CampusKlassiker">
         <meal>
           <name>Soja-Bolognese mit Gemüse , bunte Fusilli (GlW)</name>

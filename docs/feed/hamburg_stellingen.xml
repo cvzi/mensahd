@@ -3,42 +3,6 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-03-05">
-      <category name="Pottkieker">
-        <meal>
-          <name>Möhren-Tajine mit Soja-Joghurt</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">3.50</price>
-          <price role="other">4.70</price>
-          <price role="student">2.20</price>
-        </meal>
-      </category>
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Putengulasch (Mi,Sl,GlW), Penne (GlW)</name>
-          <note>Geflügel</note>
-          <price role="employee">5.45</price>
-          <price role="other">6.65</price>
-          <price role="student">4.15</price>
-        </meal>
-      </category>
-      <category name="CampusSpezial">
-        <meal>
-          <name>Ägyptische Falafel mit Hummusfüllung (So,Sl,Se,GlW), veganes Tzatziki , Gemüsecouscous (Sl,GlW), Rotkrautsalat</name>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">6.50</price>
-          <price role="other">7.70</price>
-          <price role="student">5.20</price>
-        </meal>
-      </category>
-    </day>
     <day date="2025-03-06">
       <category name="Pottkieker">
         <meal>
@@ -151,20 +115,20 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Vegane Carbonara mit Tofuwürfel (1,So,Sl,Sf,GlW), Penne (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">4.25</price>
-          <price role="other">5.45</price>
-          <price role="student">2.95</price>
-        </meal>
-        <meal>
           <name>Hähnchenbrust im Knuspermantel (GlW), Joghurt-Zitronen-Dip , glasierte Honigmöhren, Gemüse Bulgur (Sl,GlW)</name>
           <note>Geflügel</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <price role="employee">6.40</price>
           <price role="other">7.60</price>
           <price role="student">5.10</price>
+        </meal>
+        <meal>
+          <name>Vegane Carbonara mit Tofuwürfel (1,So,Sl,Sf,GlW), Penne (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.25</price>
+          <price role="other">5.45</price>
+          <price role="student">2.95</price>
         </meal>
       </category>
     </day>
@@ -184,6 +148,13 @@
       </category>
       <category name="CampusSpezial">
         <meal>
+          <name>Gemüselasagne (Ei,So,Mi,GlW), Tomatensoße</name>
+          <note>Vegetarisch</note>
+          <price role="employee">6.60</price>
+          <price role="other">7.80</price>
+          <price role="student">5.30</price>
+        </meal>
+        <meal>
           <name>Schweinenackenbraten, Bratensoße , Apfelrotkohl , Petersilienkartoffeln</name>
           <note>Geschwefelt</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
@@ -194,13 +165,6 @@
           <price role="employee">6.00</price>
           <price role="other">7.20</price>
           <price role="student">4.70</price>
-        </meal>
-        <meal>
-          <name>Gemüselasagne (Ei,So,Mi,GlW), Tomatensoße</name>
-          <note>Vegetarisch</note>
-          <price role="employee">6.60</price>
-          <price role="other">7.80</price>
-          <price role="student">5.30</price>
         </meal>
       </category>
     </day>
@@ -217,6 +181,16 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
+          <name>Soja-Bolognese mit Gemüse , Penne (GlW)</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.40</price>
+          <price role="other">5.60</price>
+          <price role="student">3.10</price>
+        </meal>
+        <meal>
           <name>Leberkäse im Ganzen gebacken , Süßer Senf , Bayrischer Kartoffelsalat mit Gurken</name>
           <note>Schwein</note>
           <note>Senf und Senferzeugnisse</note>
@@ -227,16 +201,6 @@
           <price role="employee">5.05</price>
           <price role="other">6.25</price>
           <price role="student">3.75</price>
-        </meal>
-        <meal>
-          <name>Soja-Bolognese mit Gemüse , Penne (GlW)</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">4.40</price>
-          <price role="other">5.60</price>
-          <price role="student">3.10</price>
         </meal>
       </category>
     </day>
