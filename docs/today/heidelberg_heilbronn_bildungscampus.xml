@@ -4,8 +4,61 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2025-03-09">
-      <closed/>
+    <day date="2025-03-10">
+      <category name="Dessert">
+        <meal>
+          <name>Vanillecreme mit geröstetetem Rosinenbrot</name>
+          <note>Vanillecreme mit geröstetetem Rosinenbrot</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Hafermilchreis mit Sauerkirschragout</name>
+          <note>Hafermilchreis mit Sauerkirschragout</note>
+          <price role="student">0.75</price>
+          <price role="employee">1.15</price>
+          <price role="other">1.90</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Tomatensuppe mit Harissa und Erbsen</name>
+          <note>Tomatensuppe mit Harissa und Erbsen</note>
+          <price role="student">0.55</price>
+          <price role="employee">0.85</price>
+          <price role="other">1.40</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Mariniertes Steak vom heimischen Landschwein mit Kartoffelspalten und hausgemachter BBQ Soße</name>
+          <note>Mariniertes Steak vom heimischen Landschwein mit Kartoffelspalten und hausgemachter BBQ Soße</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Zweierlei Kartoffel-Curry mit Erdnuß und weißer Sesam</name>
+          <note>Zweierlei Kartoffel-Curry mit Erdnuß und weißer Sesam</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Hausgemachte Pasta in cremiger Zucchini-Fetasoße</name>
+          <note>Hausgemachte Pasta in cremiger Zucchini-Fetasoße</note>
+          <price role="student">2.90</price>
+          <price role="employee">4.35</price>
+          <price role="other">7.25</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
