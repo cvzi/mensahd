@@ -4,6 +4,16 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-03-10">
+      <category name="Pottkieker">
+        <meal>
+          <name>Linsensuppe mit Räuchertofu (So,Sl,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.50</price>
+          <price role="other">4.70</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
       <category name="CampusKlassiker">
         <meal>
           <name>Hähnchenfilets in Soja Pflaumen Soße , Reis</name>
@@ -38,16 +48,6 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Zucchini in Tomatencremesoße</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
           <name>Arcobaleno mit Schinken in Paprikacreme , Pasta (GlW)</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
@@ -56,6 +56,16 @@
           <note>mit Antioxidationsmittel</note>
           <note>mit Konservierungsstoff</note>
           <note>mit Phosphat</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Zucchini in Tomatencremesoße</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -176,14 +186,6 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Schupfnudeln mit Spitzkohl, gebratener Paprika, Sonnenblumenhack und veganem Skyr (1,3,So,Sl,Sf,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">7.40</price>
-          <price role="other">8.60</price>
-          <price role="student">6.10</price>
-        </meal>
-        <meal>
           <name>vegane Currybratwurst , Grillsoße , Kartoffelspalten (GlW)</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Senf und Senferzeugnisse</note>
@@ -194,6 +196,14 @@
           <price role="employee">5.65</price>
           <price role="other">6.85</price>
           <price role="student">4.35</price>
+        </meal>
+        <meal>
+          <name>Schupfnudeln mit Spitzkohl, gebratener Paprika, Sonnenblumenhack und veganem Skyr (1,3,So,Sl,Sf,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">7.40</price>
+          <price role="other">8.60</price>
+          <price role="student">6.10</price>
         </meal>
       </category>
       <category name="CampusSpezial">
@@ -211,18 +221,18 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Crema di Zucchine e Pomodoro mit Tomaten-Sahnesoße und Zucchini , Penne (GlW)</name>
+          <name>Ragù bianco mit Rinderhackfleisch und Kräutern , Penne (GlW)</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Ragù bianco mit Rinderhackfleisch und Kräutern , Penne (GlW)</name>
+          <name>Crema di Zucchine e Pomodoro mit Tomaten-Sahnesoße und Zucchini , Penne (GlW)</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Rind</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
