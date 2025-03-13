@@ -4,6 +4,17 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-03-13">
+      <category name="Vorspeise">
+        <meal>
+          <name>Blumenkohlrahmsuppe mit Curry</name>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
       <category name="Veganer renner">
         <meal>
           <name>Linsen und vegane Spätzle</name>
@@ -19,7 +30,9 @@
       <category name="Hauptgericht">
         <meal>
           <name>Blätterteig Spinatstrudel mit Tomatensalsa und Salat</name>
-          <note>vegan</note>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
           <price role="employee">7.90</price>
           <price role="student">5.40</price>
         </meal>
@@ -38,6 +51,13 @@
         </meal>
       </category>
       <category name="Beilage">
+        <meal>
+          <name>Kaisergemüse</name>
+          <note>Sellerie</note>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
         <meal>
           <name>Spätzle</name>
           <note>Dinkel</note>
@@ -58,11 +78,12 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Veganer Schokopudding mit Kirschen</name>
-          <note>Soja</note>
-          <note>vegan</note>
-          <price role="employee">1.69</price>
-          <price role="student">1.29</price>
+          <name>Grießpudding mit Sahne</name>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.49</price>
+          <price role="student">1.09</price>
         </meal>
       </category>
       <category name="Buffet">
