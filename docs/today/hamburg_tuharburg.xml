@@ -4,17 +4,6 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-03-19">
-      <category name="Pottkieker">
-        <meal>
-          <name>Fasolada Griechischer Bohnensuppe mit Sellerie, Karotten und Baguette</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">3.50</price>
-          <price role="other">4.70</price>
-          <price role="student">2.20</price>
-        </meal>
-      </category>
       <category name="CampusKlassiker">
         <meal>
           <name>Käsespätzle mit Röstzwiebeln (Ei,Mi,GlW), Salat</name>
@@ -43,7 +32,7 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Hühnchen in Kokos Soße , Sesammöhrchen , Basmatireis</name>
+          <name>Hühnchen in Kokos Soße , Sesammöhrchen , Reis</name>
           <note>Geflügel</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Sesamsamen und Sesamsamenerzeugnisse</note>
@@ -56,14 +45,25 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Funghi di bosco e basilico mit Waldpilzen und Basilikum (Mi,Sw,GlW,GlG), Maccaroni (GlW)</name>
-          <note>Vegetarisch</note>
+          <name>Waldpilzsoße , Pasta (GlW)</name>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Bolognese mit Rindfleisch , Maccaroni (GlW)</name>
+          <name>Bolognese mit Rindfleisch</name>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Bolognese mit Rindfleisch</name>
           <note>Rind</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
