@@ -3,28 +3,127 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-03-21">
+    <day date="2025-03-24">
       <category name="CampusKlassiker">
         <meal>
-          <name>4 Röstiecken, Kräuterquark , Gurkensalat</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
-          <price role="employee">4.60</price>
-          <price role="other">5.80</price>
-          <price role="student">3.30</price>
+          <name>Orange Chicken (2,3,5,So,Se,Sw,GlW), Bratreis mit Gemüse (2,3,So,GlW)</name>
+          <note>Geflügel</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.80</price>
+          <price role="other">8.00</price>
+          <price role="student">5.50</price>
         </meal>
       </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Eier in Senfsoße (Ei,Mi,Sf,GlW,GlG), Hausgemachtes Kartoffel-Butterstampf , Rote Beete Salat</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">5.35</price>
+          <price role="other">6.55</price>
+          <price role="student">4.05</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2025-03-25">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Paniertes Schweineschnitzel (GlW), Cole slaw Salat , Pommes Frites , Zitrone</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwein</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Farbstoff</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">5.20</price>
+          <price role="other">6.40</price>
+          <price role="student">3.90</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>gebackener Hirtenkäse mit Sesamkruste (Mi,Se,GlW), Minz-Joghurt-Soße , Couscous mit Mandeln, Rosinen und Chili (Sl,GlW,NMa)</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">5.35</price>
+          <price role="other">6.55</price>
+          <price role="student">4.05</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2025-03-26">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Spaghetti (GlW), Bolognese , Hartkäse gerieben</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <price role="employee">4.80</price>
+          <price role="other">6.00</price>
+          <price role="student">3.50</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Süßkartoffel-Linsengemüse mit Römersalat und Limetten-Senf-Dressing (3,Sf,NMa)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.65</price>
+          <price role="other">6.85</price>
+          <price role="student">4.35</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2025-03-27">
       <category name="CampusSpezial">
         <meal>
-          <name>Grünkern-Käse-Medaillons (Ei,So,Mi,Se,GlW,GlD), Schnittlauch-Dip , Blechkartoffeln, Blattsalat mit Karotte</name>
+          <name>Hamburger Pannfisch Burger (9,Fi,Sf,Se,Sw,GlW), Senf-Dill-Soße , Pommes Frites</name>
+          <note>Ei und Eierzeugnisse</note>
           <note>Geschwefelt</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegetarisch</note>
+          <note>Senf und Senferzeugnisse</note>
           <note>mit Antioxidationsmittel</note>
-          <price role="employee">6.35</price>
-          <price role="other">7.55</price>
-          <price role="student">5.05</price>
+          <note>mit Farbstoff</note>
+          <note>mit Fisch</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">7.60</price>
+          <price role="other">8.80</price>
+          <price role="student">6.30</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Soja-Geschnetzeltes in Erdnusssoße (2,En,So,Sl,GlW), Wok-Gemüse, Reis</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.40</price>
+          <price role="other">7.60</price>
+          <price role="student">5.10</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2025-03-28">
+      <category name="CampusVital">
+        <meal>
+          <name>Broccoli-Nussecke (Sl,GlW,GlH,NHa), Salzkartoffeln, Kräuterquark</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">5.00</price>
+          <price role="other">6.20</price>
+          <price role="student">3.70</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Wintersalat mit Feldsalat, Chicoree, Radiccio, Kartoffel, Birne, Walnuss, Rote Beete (Sf,Se,NWa), Dinkel-Bratling (Ei,So,GlW,GlD)</name>
+          <note>Vegetarisch</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.45</price>
+          <price role="other">7.65</price>
+          <price role="student">5.15</price>
         </meal>
       </category>
     </day>
