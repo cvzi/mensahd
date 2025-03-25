@@ -3,93 +3,6 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-03-24">
-      <category name="Pottkieker">
-        <meal>
-          <name>Kichererbsencurry, pikantes Möhrengemüse</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">3.50</price>
-          <price role="other">4.70</price>
-          <price role="student">2.20</price>
-        </meal>
-      </category>
-      <category name="CampusVital">
-        <meal>
-          <name>gebackener Hirtenkäse mit Sesamkruste (Mi,Se,GlW), Minz-Joghurt-Soße , Couscous mit Mandeln, Rosinen und Chili (Sl,GlW,NMa)</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
-          <price role="employee">5.35</price>
-          <price role="other">6.55</price>
-          <price role="student">4.05</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Pizza Margeritha vegan Large (1,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.25</price>
-          <price role="other">7.45</price>
-          <price role="student">4.95</price>
-        </meal>
-        <meal>
-          <name>Putengyros, Tzatziki , Krautsalat , Pommes Frites</name>
-          <note>Geflügel</note>
-          <note>Geschwefelt</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">7.40</price>
-          <price role="other">8.60</price>
-          <price role="student">6.10</price>
-        </meal>
-        <meal>
-          <name>Pizza Margherita Large (Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">6.00</price>
-          <price role="other">7.20</price>
-          <price role="student">4.70</price>
-        </meal>
-        <meal>
-          <name>Pizza Salami Large (1,2,3,Mi,GlW)</name>
-          <note>Schwein</note>
-          <price role="employee">6.25</price>
-          <price role="other">7.45</price>
-          <price role="student">4.95</price>
-        </meal>
-      </category>
-      <category name="Pastabar">
-        <meal>
-          <name>Pasta mit Pollo al pomodoro mit Hähnchenstreifen in Tomatensoße (Sl,GlW)</name>
-          <note>Geflügel</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>Pasta mit Soja-Geschnetzeltes in Erdnusssoße (2,En,So,Sl,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-      </category>
-      <category name="Gemüsebar">
-        <meal>
-          <name>Aubergine-Rustica mit Cherrytomaten, Broccoli, natur, vegan, Blechkartoffeln</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-      </category>
-    </day>
     <day date="2025-03-25">
       <category name="Pottkieker">
         <meal>
@@ -290,13 +203,6 @@
           <price role="student">5.25</price>
         </meal>
         <meal>
-          <name>Frisch gebackene FLAMMKUCHEN nach Wahl (versch. Sorten) ab 4,20 / 5,50 / 6,70 (auch TAKE AWAY) (Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">5.50</price>
-          <price role="other">6.70</price>
-          <price role="student">4.20</price>
-        </meal>
-        <meal>
           <name>All in one Pot: Paneer, Bohnen, Blumenkohl, Karotte , Birnen-Chutney , Kokosreis</name>
           <note>Geschwefelt</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -309,22 +215,29 @@
           <price role="other">7.05</price>
           <price role="student">4.55</price>
         </meal>
+        <meal>
+          <name>Frisch gebackene FLAMMKUCHEN nach Wahl (versch. Sorten) ab 4,20 / 5,50 / 6,70 (auch TAKE AWAY) (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">5.50</price>
+          <price role="other">6.70</price>
+          <price role="student">4.20</price>
+        </meal>
       </category>
       <category name="Pastabar">
+        <meal>
+          <name>Pasta salsa di noci mit Paprika-Nuss-Soße, getrocknete Tomaten (Sl,NHa), Eliche (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
         <meal>
           <name>Salsa rucola di pollo mit Hähnchenstreifen in Rucolasoße , bunte Fusilli (GlW)</name>
           <note>Geflügel</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>mensaVital</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>Pasta salsa di noci mit Paprika-Nuss-Soße, getrocknete Tomaten (Sl,NHa), Eliche (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -386,7 +299,8 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Broccoli e pomodoro mit Broccoli und Tomate, Farfalle (GlW)</name>
+          <name>Lenticchie mit Linsen in pikanter Tomatensoße , Farfalle (GlW)</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
@@ -394,8 +308,7 @@
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Lenticchie mit Linsen in pikanter Tomatensoße , Farfalle (GlW)</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Broccoli e pomodoro mit Broccoli und Tomate, Farfalle (GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>

@@ -3,24 +3,18 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-03-24">
+    <day date="2025-03-25">
       <category name="Vorspeise">
         <meal>
-          <name>Kartoffel-Paprika-Suppe</name>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Sellerie</note>
-          <note>Weizen</note>
-          <note>vegan</note>
+          <name>Tagessuppe</name>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Hirsecurry-Pfanne mit Soja-Würzdip</name>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <name>Chili sin Carne und Reis</name>
           <note>Sellerie</note>
-          <note>Senf</note>
           <note>Soja</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
@@ -29,28 +23,37 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Vegane Maultaschen mit Zwiebelschmelze und Kartoffelsalat</name>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
+          <name>Spaghetti mit Bärlauch</name>
+          <note>Ei</note>
+          <note>Haselnüsse</note>
+          <note>Milch und Laktose</note>
           <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>vegan</note>
-          <price role="employee">7.10</price>
-          <price role="student">4.60</price>
+          <note>mit Konservierungsstoffen</note>
+          <note>vegetarisch</note>
+          <price role="employee">6.29</price>
+          <price role="student">3.79</price>
         </meal>
         <meal>
-          <name>Hähnchenbrustfilet mit Curry-Kokos-Sauce und Reis</name>
-          <note>Geflügel</note>
-          <note>Sellerie</note>
+          <name>Schweinebraten mit Jägersauce und Spätzle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Schwein</note>
           <note>Weizen</note>
-          <price role="employee">7.30</price>
-          <price role="student">4.80</price>
+          <price role="employee">7.70</price>
+          <price role="student">5.20</price>
         </meal>
       </category>
       <category name="Aktion">
         <meal>
-          <name>Casarecce mit Rote Linsen Bolognese</name>
+          <name>Hähnchenbruststreifen Topping für Bärlauch-Spaghetti</name>
+          <note>Geflügel</note>
+          <price role="employee">1.95</price>
+          <price role="student">1.95</price>
+        </meal>
+        <meal>
+          <name>Maccheroni fiore mit Rote Linsen Bolognese</name>
           <note>Sellerie</note>
           <note>Weizen</note>
           <note>hauseigene Nudelmanufaktur</note>
@@ -59,7 +62,7 @@
           <price role="student">4.45</price>
         </meal>
         <meal>
-          <name>Casarecce mit gebratenen Champignons und Kochschinken</name>
+          <name>Maccheroni fiore mit gebratenen Champignons und Kochschinken</name>
           <note>Milch und Laktose</note>
           <note>Schwein</note>
           <note>Weizen</note>
@@ -72,12 +75,22 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Kartoffelsalat</name>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>mit Antioxidationsmitteln</note>
+          <name>Tagesgemüse</name>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Reis</name>
           <note>vegan</note>
+          <price role="employee">1.49</price>
+          <price role="student">1.09</price>
+        </meal>
+        <meal>
+          <name>Spätzle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
@@ -92,12 +105,12 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Erdbeerjoghurt</name>
-          <note>Milch und Laktose</note>
-          <note>mit Farbstoffen</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.49</price>
-          <price role="student">1.09</price>
+          <name>Veganer Grießpudding mit Pfirsich</name>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
         </meal>
       </category>
       <category name="Buffet">
@@ -106,11 +119,15 @@
           <note>Ei</note>
           <note>Milch und Laktose</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
           <note>Senf</note>
+          <note>Sesam</note>
           <note>Weizen</note>
           <note>geschwefelt</note>
+          <note>geschwärzt</note>
           <note>mit Antioxidationsmitteln</note>
           <note>mit Farbstoffen</note>
+          <note>mit Süßungsmitteln</note>
           <note>vegetarisch</note>
           <price role="employee">1.60</price>
           <price role="student">1.10</price>
