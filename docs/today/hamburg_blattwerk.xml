@@ -4,7 +4,28 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-03-27">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>vegane Currybratwurst , Grillsoße , Pommes Frites</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">5.65</price>
+          <price role="other">6.85</price>
+          <price role="student">4.35</price>
+        </meal>
+      </category>
       <category name="CampusSpezial">
+        <meal>
+          <name>Blattspinat in Rahm (Mi,GlW), Spinat Frischkäse Maultaschen mit Joghurt und geröstetem Karotten (Ei,Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">5.00</price>
+          <price role="other">6.20</price>
+          <price role="student">3.70</price>
+        </meal>
         <meal>
           <name>Veganer Shepherd's Pie (1,So,Sl,Sf,Sw,GlW)</name>
           <note>Alkohol</note>
@@ -13,13 +34,6 @@
           <price role="employee">5.55</price>
           <price role="other">6.75</price>
           <price role="student">4.25</price>
-        </meal>
-        <meal>
-          <name>Blattspinat in Rahm (Mi,GlW), Spinat Frischkäse Maultaschen mit Joghurt und geröstetem Karotten (Ei,Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">5.00</price>
-          <price role="other">6.20</price>
-          <price role="student">3.70</price>
         </meal>
       </category>
       <category name="CampusWorld">
