@@ -4,6 +4,16 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-04-01">
+      <category name="Pottkieker">
+        <meal>
+          <name>Soja-Cilli mit Mais,Kidneybohnen (So,Sl,GlD), Basmatireis</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.50</price>
+          <price role="other">4.70</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
       <category name="CampusKlassiker">
         <meal>
           <name>Vegane Carbonara mit Tofuwürfel (1,So,Sl,Sf,GlW), Conchiglie (GlW)</name>
@@ -147,20 +157,20 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Spicy Lao-Gan-Ma Mienudeln mit Blattspinat,Erdnüssen und Koriander (1,2,En,So,Sl,Se,GlW), Gegrillter Ingwer-Tofu (2,So,Se,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.90</price>
-          <price role="other">8.10</price>
-          <price role="student">5.60</price>
-        </meal>
-        <meal>
           <name>Spicy Lao-Gan-Ma Mienudeln mit Blattspinat,Erdnüssen und Koriander (1,2,En,So,Sl,Se,GlW), Gebackenes Panko - Chicken (3,GlW)</name>
           <note>Geflügel</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">7.65</price>
           <price role="other">8.85</price>
           <price role="student">6.35</price>
+        </meal>
+        <meal>
+          <name>Spicy Lao-Gan-Ma Mienudeln mit Blattspinat,Erdnüssen und Koriander (1,2,En,So,Sl,Se,GlW), Gegrillter Ingwer-Tofu (2,So,Se,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.90</price>
+          <price role="other">8.10</price>
+          <price role="student">5.60</price>
         </meal>
       </category>
       <category name="Pastabar">
