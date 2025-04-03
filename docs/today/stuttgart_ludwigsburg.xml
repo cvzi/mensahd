@@ -3,64 +3,71 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-04-02">
+    <day date="2025-04-03">
+      <category name="Vorspeise">
+        <meal>
+          <name>Tagessuppe</name>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
       <category name="Veganer renner">
         <meal>
-          <name>Bandnudeln mit Rucola-Sonnenblumenkernpesto</name>
-          <note>Weizen</note>
+          <name>Vollkornreispfanne mit Zucchini, Paprika und Auberginen</name>
+          <note>Sellerie</note>
+          <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
         </meal>
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Hähnchenkeule an Schaschliksauce mit Schwenkkartoffeln</name>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <name>Hausgemachte Lasagne mit Sojabolognese</name>
           <note>Sellerie</note>
+          <note>Soja</note>
           <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">6.70</price>
+          <price role="student">4.20</price>
+        </meal>
+        <meal>
+          <name>Scharfe Chicken Wings mit Barbecuesauce, Farmersalat und Country Potatoes</name>
+          <note>Ei</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Senf</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
           <note>mit Süßungsmitteln</note>
           <price role="employee">7.90</price>
           <price role="student">5.40</price>
         </meal>
         <meal>
-          <name>Paniertes Schweineschnitzel ,Preiselbeeren mit Rahmsauce und Spätzle</name>
-          <note>Dinkel</note>
+          <name>Vegetarisches Schnitzel mit Käsefüllung an Ratatouille-Gemüse und Schupfnudeln</name>
           <note>Ei</note>
-          <note>Milch und Laktose</note>
-          <note>Schwein</note>
-          <note>Weizen</note>
-          <price role="employee">7.70</price>
-          <price role="student">5.20</price>
-        </meal>
-        <meal>
-          <name>Mini-Frühlingsrollen mit fruchtiger Currysauce und Duftreis</name>
+          <note>Hafer</note>
           <note>Milch und Laktose</note>
           <note>Sellerie</note>
           <note>Weizen</note>
+          <note>mit Farbstoffen</note>
           <note>vegetarisch</note>
-          <price role="employee">7.50</price>
-          <price role="student">5.00</price>
+          <price role="employee">7.70</price>
+          <price role="student">5.20</price>
         </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Buntes Gemüse</name>
+          <name>Tagesgemüse</name>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
         <meal>
-          <name>Spätzle</name>
-          <note>Dinkel</note>
-          <note>Ei</note>
-          <note>Weizen</note>
-          <note>vegetarisch</note>
+          <name>Pommes frites</name>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Schwenkkartoffeln</name>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>vegan</note>
+          <name>Country Potatoes</name>
+          <note>Weizen</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
@@ -75,15 +82,13 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Sahneschokopudding</name>
+          <name>Bayerische Creme mit Zimtkirschen</name>
           <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Veganer Früchtequark</name>
-          <note>Hafer</note>
+          <name>Veganer Pudding mit Vanille-Geschmack und Himbeersauce</name>
           <note>Soja</note>
           <note>vegan</note>
           <price role="employee">1.69</price>
