@@ -4,6 +4,16 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-04-04">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Vegetarisches Schnitzel in Knusperpanade (Ei,Mi,GlW,GlH), Paprikarahmsoße (Mi,GlW,GlG), Pommes Frites</name>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <price role="employee">6.00</price>
+          <price role="other">7.20</price>
+          <price role="student">4.70</price>
+        </meal>
+      </category>
       <category name="CampusSpezial">
         <meal>
           <name>Veganer Sloppy Joes Burger mit gebratenen Sojahack, gepickelten Zwiebeln und Gewürzgurke (1,2,3,9,So,Sf,GlW), Cole Slaw mit Sojamajo , Pommes Frites</name>
@@ -18,6 +28,12 @@
       </category>
       <category name="CampusWorld">
         <meal>
+          <name>Zitronenbulgur mit Hirtenkäse und rote Beetepesto (2,Ei,Mi,GlW,NMa)</name>
+          <price role="employee">5.15</price>
+          <price role="other">6.35</price>
+          <price role="student">3.85</price>
+        </meal>
+        <meal>
           <name>Gebratene Pierogi mit Kartoffel-Quarkfüllung (1,Ei,Mi,Sl,GlW), Dill-Quark , Rote Beete Salat</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Vegetarisch</note>
@@ -29,14 +45,14 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Crema di spinaci mit Spinat in Käse-Sahnesoße (Mi,Sl,GlW,GlG), Eliche (GlW)</name>
+          <name>Crema di spinaci mit Spinat in Käse-Sahnesoße (Mi,Sl,GlW,GlG), Pasta (GlW)</name>
           <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>all`Provenzale mit Gemüse , Eliche (GlW)</name>
+          <name>all`Provenzale mit Gemüse , Pasta (GlW)</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -141,17 +157,17 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Lenticchie mit Linsen in pikanter Tomatensoße , bunte Fusilli (GlW)</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Pasta al forno di melanzane Nudelauflauf mit Auberginen (1,Mi,Sw,GlW)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Pasta al forno di melanzane Nudelauflauf mit Auberginen (1,Mi,Sw,GlW)</name>
-          <note>Vegetarisch</note>
+          <name>Lenticchie mit Linsen in pikanter Tomatensoße , bunte Fusilli (GlW)</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -269,16 +285,16 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Crema di funghi mit Champignons in Cremesoße , bunte Fusilli (GlW)</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Pasta al forno greco griechischer Nudelauflauf (Ei,Mi,GlW)</name>
           <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Pasta al forno greco griechischer Nudelauflauf (Ei,Mi,GlW)</name>
+          <name>Crema di funghi mit Champignons in Cremesoße , bunte Fusilli (GlW)</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
