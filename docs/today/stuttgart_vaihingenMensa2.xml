@@ -3,13 +3,12 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-04-08">
+    <day date="2025-04-09">
       <category name="Vorspeise">
         <meal>
-          <name>Kartoffelsuppe</name>
+          <name>Blumenkohlcremesuppe</name>
           <note>Milch und Laktose</note>
           <note>Sellerie</note>
-          <note>mit Antioxidationsmitteln</note>
           <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
@@ -17,10 +16,11 @@
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Sojageschnetzeltes indische Art und Duftreis</name>
+          <name>Linsen und vegane Spätzle</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
-          <note>Soja</note>
-          <note>mit Konservierungsstoffen</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -28,19 +28,28 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Backfisch mit Remouladensauce und Kartoffelsalat</name>
+          <name>Begrenztes Angebot: Hausgemachte Lasagne mit Sojabolognese</name>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">6.70</price>
+          <price role="student">4.20</price>
+        </meal>
+        <meal>
+          <name>Linsen und Spätzle mit Saiten</name>
+          <note>Dinkel</note>
           <note>Ei</note>
-          <note>MSC-zertifizierter Fisch (MSC-C-51632)</note>
-          <note>Milch und Laktose</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Schwein</note>
           <note>Sellerie</note>
           <note>Senf</note>
           <note>Weizen</note>
           <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
-          <note>mit Süßungsmitteln</note>
-          <price role="employee">7.90</price>
-          <price role="student">5.40</price>
+          <note>mit Konservierungsstoffen</note>
+          <note>mit Phosphaten</note>
+          <price role="employee">7.00</price>
+          <price role="student">4.50</price>
         </meal>
       </category>
       <category name="Aktion">
@@ -74,12 +83,9 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Rahmblumenkohl</name>
-          <note>Milch und Laktose</note>
+          <name>Kaisergemüse</name>
           <note>Sellerie</note>
-          <note>Soja</note>
-          <note>Weizen</note>
-          <note>vegetarisch</note>
+          <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -88,22 +94,6 @@
           <note>vegan</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
-        </meal>
-        <meal>
-          <name>Kartoffelsalat</name>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>vegan</note>
-          <price role="employee">1.69</price>
-          <price role="student">1.29</price>
-        </meal>
-        <meal>
-          <name>Duftreis</name>
-          <note>vegan</note>
-          <price role="employee">1.49</price>
-          <price role="student">1.09</price>
         </meal>
       </category>
       <category name="Salat">
@@ -116,8 +106,10 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Panna Cotta mit Erdbeermus</name>
+          <name>Nuss-Nougat-Pudding</name>
+          <note>Haselnüsse</note>
           <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
