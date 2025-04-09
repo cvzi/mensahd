@@ -21,14 +21,6 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Cremige Udonnudeln in einer Kokos - Erdnusssauce mit Gemüse, Koriander und Crunch (2,3,En,So,Sl,Sf,Se,Sw,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">7.20</price>
-          <price role="other">8.40</price>
-          <price role="student">5.90</price>
-        </meal>
-        <meal>
           <name>Hühnchen in Kokos Soße , Sesammöhrchen , Basmatireis</name>
           <note>Geflügel</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -39,12 +31,27 @@
           <price role="other">7.30</price>
           <price role="student">4.80</price>
         </meal>
+        <meal>
+          <name>Cremige Udonnudeln in einer Kokos - Erdnusssauce mit Gemüse, Koriander und Crunch (2,3,En,So,Sl,Sf,Se,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">7.20</price>
+          <price role="other">8.40</price>
+          <price role="student">5.90</price>
+        </meal>
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta des Tages (GlW)</name>
+          <name>Pasta mit Tomatensauce und Paprika und Zucchini (Sl,GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Pasta mit Champignonsauce (Mi,GlW)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -52,9 +59,11 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Gemüse des Tages</name>
-          <note>Vegan</note>
+          <name>Kräuterkartoffeln, Süßkartoffeln, Spitzkohl, Chili Weißkohl , Mie-Nudeln (Ei,GlW), gebratene Zucchini, Karotten Rustica</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mensaVital</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -63,14 +72,6 @@
     </day>
     <day date="2025-04-10">
       <category name="CampusWorld">
-        <meal>
-          <name>Zitronenhähnchen , Kräuterdip , gerösteter Broccoli, Basmatireis</name>
-          <note>Geflügel</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <price role="employee">6.70</price>
-          <price role="other">7.90</price>
-          <price role="student">5.40</price>
-        </meal>
         <meal>
           <name>Let's WOK, frisches Gemüse aus dem WOK (2,So,Sl,Sw,GlW), spicy sweet&amp;sauer Sauce, Basmatireis, verschiedene Toppings</name>
           <note>Erdnüsse und Erdnusserzeugnisse</note>
@@ -82,12 +83,6 @@
           <price role="student">5.50</price>
         </meal>
         <meal>
-          <name>Conchiglie mit Joghurt, Fetakäse, Erbsen und Chili (Mi,GlW)</name>
-          <price role="employee">4.40</price>
-          <price role="other">5.60</price>
-          <price role="student">3.10</price>
-        </meal>
-        <meal>
           <name>Let's WOK, Hähnchenstreifen, frisches Gemüse aus dem WOK (2,So,Sl,Sw,GlW), spicy sweet&amp;sauer Sauce, Basmatireis, verschiedene Toppings</name>
           <note>Erdnüsse und Erdnusserzeugnisse</note>
           <note>Geflügel</note>
@@ -96,6 +91,20 @@
           <price role="employee">7.70</price>
           <price role="other">8.90</price>
           <price role="student">6.40</price>
+        </meal>
+        <meal>
+          <name>Zitronenhähnchen , Kräuterdip , gerösteter Broccoli, Basmatireis</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <price role="employee">6.70</price>
+          <price role="other">7.90</price>
+          <price role="student">5.40</price>
+        </meal>
+        <meal>
+          <name>Conchiglie mit Joghurt, Fetakäse, Erbsen und Chili (Mi,GlW)</name>
+          <price role="employee">4.40</price>
+          <price role="other">5.60</price>
+          <price role="student">3.10</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -175,15 +184,14 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Putengyros, Tzatziki , Krautsalat , Reis</name>
-          <note>Geflügel</note>
-          <note>Geschwefelt</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">7.40</price>
-          <price role="other">8.60</price>
-          <price role="student">6.10</price>
+          <name>Let's WOK, frisches Gemüse aus dem WOK (2,So,Sl,Sw,GlW), pikante Ingwersauce (1,2,5,En,So,Sw,GlW), Basmatireis, verschiedene Toppings</name>
+          <note>Erdnüsse und Erdnusserzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.35</price>
+          <price role="other">7.55</price>
+          <price role="student">5.05</price>
         </meal>
         <meal>
           <name>Let's WOK, Hähnchenstreifen, frisches Gemüse aus dem WOK (2,So,Sl,Sw,GlW), pikante Ingwersauce (1,2,5,En,So,Sw,GlW), Basmatireis, verschiedene Toppings</name>
@@ -196,14 +204,15 @@
           <price role="student">6.45</price>
         </meal>
         <meal>
-          <name>Let's WOK, frisches Gemüse aus dem WOK (2,So,Sl,Sw,GlW), pikante Ingwersauce (1,2,5,En,So,Sw,GlW), Basmatireis, verschiedene Toppings</name>
-          <note>Erdnüsse und Erdnusserzeugnisse</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.35</price>
-          <price role="other">7.55</price>
-          <price role="student">5.05</price>
+          <name>Putengyros, Tzatziki , Krautsalat , Reis</name>
+          <note>Geflügel</note>
+          <note>Geschwefelt</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">7.40</price>
+          <price role="other">8.60</price>
+          <price role="student">6.10</price>
         </meal>
       </category>
       <category name="Gemüsebar">
