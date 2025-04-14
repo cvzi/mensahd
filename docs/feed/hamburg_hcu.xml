@@ -37,7 +37,9 @@
       <category name="CampusSpezial">
         <meal>
           <name>Dönerteller Geflügel mit Krautsalat , Tzatziki , Pommes Frites</name>
+          <note>Alkohol</note>
           <note>Geflügel</note>
+          <note>Geschwefelt</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Senf und Senferzeugnisse</note>
@@ -49,10 +51,20 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Saporita mit Rindfleisch und Paprika , Conchiglie (GlW)</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <name>Saporita mit Rindfleisch und Paprika (Mi,Sl,GlW,GlG), Conchiglie (GlW)</name>
           <note>Rind</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.70</price>
+          <price role="student">0.85</price>
+        </meal>
+      </category>
+      <category name="Gemüsebar">
+        <meal>
+          <name>glasiertes Wurzelgemüse , gerösteter Blumenkohl, Erbsen , Maisgemüse</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>mit Farbstoff</note>
           <price role="employee">1.10</price>
           <price role="other">1.70</price>
           <price role="student">0.85</price>
