@@ -4,5 +4,34 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Sontheim</name>
+    <day date="2025-04-14">
+      <category name="Buffet">
+        <meal>
+          <name>Tagessuppe</name>
+          <note>soup of the day</note>
+        </meal>
+        <meal>
+          <name>Träumereien</name>
+          <note>sweet delights </note>
+          <price role="student">0.90</price>
+          <price role="employee">1.40</price>
+          <price role="other">2.00</price>
+        </meal>
+        <meal>
+          <name>Erbsenrisotto mit Pfannengemüse</name>
+          <note>Pea risotto with pan-fried vegetables</note>
+          <price role="student">2.90</price>
+          <price role="employee">4.35</price>
+          <price role="other">7.25</price>
+        </meal>
+        <meal>
+          <name>Schwäbische Linsen mit Spätzle und Geflügelsaiten</name>
+          <note>Swabian lentils with Spätzle and poultry strings sausages</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+    </day>
   </canteen>
 </openmensa>
