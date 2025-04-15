@@ -59,14 +59,7 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Milano mit Rindfleisch und Pilzen (3,Mi,Sl,GlW,GlG), Strozzapreti (GlW)</name>
-          <note>Rind</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>all`Provenzale mit Gemüse , Strozzapreti (GlW)</name>
+          <name>all`Provenzale mit Gemüse , Pasta (GlW)</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -74,13 +67,20 @@
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
+        <meal>
+          <name>Milano mit Rindfleisch und Pilzen (3,Mi,Sl,GlW,GlG), Pasta (GlW)</name>
+          <note>Rind</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Sesammöhrchen , Gartenbohnen mit Pfifferlingen und Cherrytomaten, gebratenem Wirsing, Maiskolben , Bratkartoffeln</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>Vegetarisch</note>
+          <name>Schwarzwurzeln mit Karotten, Gartenbohnen mit Pfifferlingen und Cherrytomaten, Wirsing in Sojarahm , Maisgemüse</name>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -261,18 +261,16 @@
           <price role="other">7.60</price>
           <price role="student">5.10</price>
         </meal>
-      </category>
-      <category name="CampusSpezial">
         <meal>
-          <name>Vegane Maultaschen (GlW), Ratatouille , Petersilie</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Vegane Carbonara mit Tofuwürfel (1,So,Sl,Sf,GlW), Conchiglie (GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.40</price>
-          <price role="other">7.60</price>
-          <price role="student">5.10</price>
+          <price role="employee">4.25</price>
+          <price role="other">5.45</price>
+          <price role="student">2.95</price>
         </meal>
+      </category>
+      <category name="CampusSpezial">
         <meal>
           <name>Hamburger mit Tomate, Gurke und Salat (1,2,3,9,Ei,Sf,Se,Sw,GlW), Pommes Frites</name>
           <note>Rind</note>
@@ -285,17 +283,17 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pollo al pomodoro mit Hähnchenstreifen in Tomatensoße , Vollkorn Fussili (GlW)</name>
-          <note>Geflügel</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Pasta sugo di porri mit Sonnenblumenhack-Lauchsoße (1,So,Sl,Sf,GlW), Vollkorn Fussili (GlW)</name>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Pasta sugo di porri mit Sonnenblumenhack-Lauchsoße (1,So,Sl,Sf,GlW), Vollkorn Fussili (GlW)</name>
-          <note>Vegan</note>
+          <name>Pollo al pomodoro mit Hähnchenstreifen in Tomatensoße , Vollkorn Fussili (GlW)</name>
+          <note>Geflügel</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
@@ -402,14 +400,6 @@
           <price role="other">5.80</price>
           <price role="student">3.30</price>
         </meal>
-        <meal>
-          <name>Homemade paniertes Putenschnitzel (Ei,GlW), Paprikarahmsoße (Mi,GlW,GlG), Pommes Frites</name>
-          <note>Geflügel</note>
-          <note>Senf und Senferzeugnisse</note>
-          <price role="employee">6.20</price>
-          <price role="other">7.40</price>
-          <price role="student">4.90</price>
-        </meal>
       </category>
       <category name="CampusVital">
         <meal>
@@ -420,6 +410,17 @@
           <price role="employee">7.45</price>
           <price role="other">8.65</price>
           <price role="student">6.15</price>
+        </meal>
+      </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Paniertes Putenschnitzel (GlW), Ratatouille , Rosmarinkartoffeln</name>
+          <note>Geflügel</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.60</price>
+          <price role="other">7.80</price>
+          <price role="student">5.30</price>
         </meal>
       </category>
       <category name="Pastabar">
