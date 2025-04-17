@@ -196,7 +196,13 @@ def _generateCanteenMeta(source, name, url_template):
         template = f.read()
 
     shortname = name
-    name = nameMap[shortname]
+    if shortname not in nameMap or shortname not in nameMapMeta:
+        shortname = _getShortNameMeta(name)
+        if shortname not in nameMap:
+            return getEmptyFeed("Unknown canteen - wrong name or meta name?")
+
+    name = nameMapMeta[shortname]
+    pretty_name = desiredName[nameMap[shortname]]
 
     for mensa in obj["mensen"]:
         if not mensa["xml"]:
@@ -206,7 +212,7 @@ def _generateCanteenMeta(source, name, url_template):
             continue
 
         data = {
-            "name": desiredName[mensa["xml"]],
+            "name": pretty_name,
             "adress": "%s, %s %s" % (mensa["strasse"], mensa["plz"], mensa["ort"]),
             "city": mensa["ort"],
             "latitude": mensa["latitude"],
