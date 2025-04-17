@@ -37,28 +37,7 @@
   <body>
     <main>
       <article>Parser for <a target="_blank" href="https://openmensa.org">openmensa.org</a>. The parser runs in a <a target="_blank" title="What's a Github action?" href="https://docs.github.com/en/actions">Github action<sup>❓</sup></a> and pushes the XML feeds to this page</article>
-      <article><h3><a href="https://github.com/cvzi/mensahd/actions/">🗿 Parser status</a></h3>
-<pre>heidelberg:
-Traceback (most recent call last):
-  File "/home/runner/work/mensahd/mensahd/updateFeeds.py", line 109, in updateFeeds
-    content = parser.json()
-              ^^^^^^^^^^^^^
-  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 257, in json
-    return _generateCanteenList_JSON(stream, self.url_template)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 234, in _generateCanteenList_JSON
-    obj = json.loads(source.read().decode("iso-8859-1"))
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.10/x64/lib/python3.12/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.10/x64/lib/python3.12/json/decoder.py", line 338, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.10/x64/lib/python3.12/json/decoder.py", line 356, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-</pre></article>
+      <article><h3><a href="https://github.com/cvzi/mensahd/actions/">🗿 Parser status</a></h3></article>
       <article>
 <ol style="list-style-type:none">
 <li><h3 id="eppelheim"><a href="https://cvzi.github.io/mensahd/eppelheim.json">🐏 eppelheim.json</a></h3>
@@ -131,6 +110,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
   <li><a href="https://cvzi.github.io/mensahd/feed/heidelberg_heilbronn_bildungscampus.xml">🍱 feed/heidelberg_heilbronn_bildungscampus.xml</a></li>
   <li><a href="https://cvzi.github.io/mensahd/meta/heidelberg_heilbronn_bildungscampus.xml">🈺 meta/heidelberg_heilbronn_bildungscampus.xml</a></li>
   <li><a href="https://cvzi.github.io/mensahd/today/heidelberg_heilbronn_bildungscampus.xml">🍱 today/heidelberg_heilbronn_bildungscampus.xml</a></li>
+  <li><a href="https://cvzi.github.io/mensahd/feed/heidelberg_heilbronn_sontheim.xml">🍱 feed/heidelberg_heilbronn_sontheim.xml</a></li>
   <li><a href="https://cvzi.github.io/mensahd/meta/heidelberg_heilbronn_sontheim.xml">🈺 meta/heidelberg_heilbronn_sontheim.xml</a></li>
   <li><a href="https://cvzi.github.io/mensahd/today/heidelberg_heilbronn_sontheim.xml">🍱 today/heidelberg_heilbronn_sontheim.xml</a></li>
   <li><a href="https://cvzi.github.io/mensahd/feed/heidelberg_inf304.xml">🍱 feed/heidelberg_inf304.xml</a></li>
