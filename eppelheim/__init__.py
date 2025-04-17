@@ -125,6 +125,9 @@ def parse_url(url, today=False):
         for p in div.find_all("p"):
             notes = []
             strongs = p.find_all("strong")
+            if not strongs:
+                canteen.setDayClosed(date)
+                continue
             categoryName = strongs[0].text.strip().strip(":").strip()
             priceText = strongs[-1].text.strip()
             for strong in strongs:
