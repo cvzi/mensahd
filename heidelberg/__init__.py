@@ -48,7 +48,7 @@ nameMap = {
     "zeughaus": "zeughaus-Mensa im Marstall",
     "triplex": "Triplex-Mensa am Uniplatz",
     "inf304": "Mensa Im Neuenheimer Feld 304",
-    "heilbronn_sontheim": "Mensa Heilbronn",
+    "heilbronn_sontheim": "Mensa Heilbronn TechCampus",
     "heilbronn_bildungscampus": "Mensa Bildungscampus Heilbronn",
     "kiau": "Mensa Künzelsau"
 }
@@ -58,7 +58,7 @@ desiredName = {
     "zeughaus-Mensa im Marstall": "Heidelberg, zeughaus-Mensa im Marstall",
     "Triplex-Mensa am Uniplatz": "Heidelberg, Triplex-Mensa am Uniplatz",
     "Mensa Im Neuenheimer Feld 304": "Heidelberg, Mensa Im Neuenheimer Feld 304",
-    "Mensa Heilbronn": "Heilbronn, Mensa Sontheim",
+    "Mensa Heilbronn TechCampus": "Heilbronn, Mensa Sontheim",
     "Mensa Bildungscampus Heilbronn": "Heilbronn, Mensa Bildungscampus/Europaplatz",
     "Mensa Künzelsau": "Künzelsau, Mensa Reinhold-Würth-Hochschule"
 }
@@ -172,7 +172,7 @@ def _generateFeed(source, name, date='', lastFetched=0):
 
 def _generateCanteenMeta(source, name, url_template):
     """Generate an openmensa XML meta feed from the source feed using an XML template"""
-    obj = json.loads(source.read().decode("utf-8-sig"))
+    obj = json.loads(source.read().decode("iso-8859-1"))
     with open(metaTemplateFile) as f:
         template = f.read()
 
@@ -231,7 +231,7 @@ def _generateCanteenMeta(source, name, url_template):
 
 def _generateCanteenList_JSON(source, url_template):
     """Generate a JSON file for openmensa.org containing basic information about all available canteens"""
-    obj = json.loads(source.read().decode("utf-8-sig"))
+    obj = json.loads(source.read().decode("iso-8859-1"))
     data = {}
 
     for mensa in obj["mensen"]:
