@@ -38,20 +38,7 @@
     <main>
       <article>Parser for <a target="_blank" href="https://openmensa.org">openmensa.org</a>. The parser runs in a <a target="_blank" title="What's a Github action?" href="https://docs.github.com/en/actions">Github action<sup>❓</sup></a> and pushes the XML feeds to this page</article>
       <article><h3><a href="https://github.com/cvzi/mensahd/actions/">🗿 Parser status</a></h3>
-<pre>eppelheim/dhbw:
-Traceback (most recent call last):
-  File "/home/runner/work/mensahd/mensahd/updateFeeds.py", line 145, in updateFeeds
-    content = getattr(parser, feedMethod)(
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/mensahd/mensahd/eppelheim/__init__.py", line 250, in feed
-    return self.handler(self.canteens[name])
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/mensahd/mensahd/eppelheim/__init__.py", line 128, in parse_url
-    categoryName = strongs[0].text.strip().strip(":").strip()
-                   ~~~~~~~^^^
-IndexError: list index out of range
-
-heidelberg:
+<pre>heidelberg:
 Traceback (most recent call last):
   File "/home/runner/work/mensahd/mensahd/updateFeeds.py", line 109, in updateFeeds
     content = parser.json()
