@@ -53,6 +53,17 @@ nameMap = {
     "kiau": "Mensa Künzelsau"
 }
 
+# Maps arbitrary ids to the actual names in the Meta JSON file.
+nameMapMeta = {
+    "zeughaus": "zeughaus-Mensa im Marstall",
+    "triplex": "Triplex-Mensa am Uniplatz",
+    "inf304": "Mensa Im Neuenheimer Feld 304",
+    "heilbronn_sontheim": "Mensa Heilbronn",
+    "heilbronn_bildungscampus": "Mensa Bildungscampus Heilbronn",
+    "kiau": "Mensa Künzelsau"
+}
+
+
 # Maps actual names from the XML feed to the desired names, that will be shown on openmensa.org
 desiredName = {
     "zeughaus-Mensa im Marstall": "Heidelberg, zeughaus-Mensa im Marstall",
@@ -93,6 +104,14 @@ def _getShortName(longname):
         if nameMap[short] == longname:
             return short
     return None
+
+def _getShortNameMeta(longname):
+    """Reverse function for global nameMapMeta dict"""
+    for short in nameMapMeta:
+        if nameMapMeta[short] == longname:
+            return short
+    return None
+
 
 
 def _getMealsURL():
@@ -172,7 +191,7 @@ def _generateFeed(source, name, date='', lastFetched=0):
 
 def _generateCanteenMeta(source, name, url_template):
     """Generate an openmensa XML meta feed from the source feed using an XML template"""
-    obj = json.loads(source.read().decode("iso-8859-1"))
+    obj = json.loads(source.read().decode("utf-8-sig"))
     with open(metaTemplateFile) as f:
         template = f.read()
 
@@ -231,14 +250,14 @@ def _generateCanteenMeta(source, name, url_template):
 
 def _generateCanteenList_JSON(source, url_template):
     """Generate a JSON file for openmensa.org containing basic information about all available canteens"""
-    obj = json.loads(source.read().decode("iso-8859-1"))
+    obj = json.loads(source.read().decode("utf-8-sig"))
     data = {}
 
     for mensa in obj["mensen"]:
         if not mensa["xml"]:
             continue
 
-        shortName = _getShortName(mensa["xml"])
+        shortName = _getShortNameMeta(mensa["xml"])
 
         data[shortName] = url_template.format(
             metaOrFeed='meta', mensaReference=urllib.parse.quote(shortName))
