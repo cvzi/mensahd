@@ -3,73 +3,6 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-04-24">
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Vegetarisches Schnitzel mit Pilzrahmsoße (Ei,So,Mi,Sl,Sw,GlW,GlH), Pommes Frites</name>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegetarisch</note>
-          <price role="employee">6.40</price>
-          <price role="other">7.60</price>
-          <price role="student">5.10</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Hausgemachte Pasta (GlW), &quot;Funghi porcini&quot; mit Steinpilzen und Tomatensugo</name>
-          <note>Alkohol</note>
-          <note>Geschwefelt</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Farbstoff</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.40</price>
-          <price role="student">3.90</price>
-        </meal>
-        <meal>
-          <name>Bowl mit Karotten Wakame Salat, Röstinchen und orientalischer rote Beete (1,2,3,5,So,Sl,Se,Sw,GlW), Kirschtomaten-Konfit , Erbsen-Dip</name>
-          <note>Geschwefelt</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Farbstoff</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">5.80</price>
-          <price role="other">7.00</price>
-          <price role="student">4.50</price>
-        </meal>
-        <meal>
-          <name>Glasnudelsalat mit Gemüse, Frühlingsrolle, Sesam und Asiadip (2,3,5,So,Se,Sw,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.80</price>
-          <price role="other">7.00</price>
-          <price role="student">4.50</price>
-        </meal>
-      </category>
-      <category name="Pastabar">
-        <meal>
-          <name>Dello chef mit Zucchini, Sahne und Kräuter (Mi,GlW,GlG), Pasta (GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>Aglio e olio Tomatesoße mit Olivenöl und Knoblauch, Pasta (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-      </category>
-    </day>
     <day date="2025-04-25">
       <category name="CampusVital">
         <meal>
@@ -78,6 +11,18 @@
           <price role="employee">4.30</price>
           <price role="other">5.50</price>
           <price role="student">3.00</price>
+        </meal>
+      </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Soja-Bolognese mit Gemüse , Pasta (GlW)</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.00</price>
+          <price role="other">6.20</price>
+          <price role="student">3.70</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -94,17 +39,41 @@
       </category>
       <category name="Pastabar">
         <meal>
+          <name>all`Provenzale mit Gemüse , Vollkorn Penne (GlW)</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
           <name>Crema di spinaci mit Spinat in Käse-Sahnesoße (Mi,Sl,GlW,GlG), Vollkorn Penne (GlW)</name>
           <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
+      </category>
+      <category name="Gemüsebar">
         <meal>
-          <name>all`Provenzale mit Gemüse , Vollkorn Penne (GlW)</name>
+          <name>Kohlrabigemüse , Rahmgemüse mit Karotten und Erbsen , gebratene Paprika , gebratene Bohnen mit Kräutern</name>
+          <note>Geschwefelt</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>Vegetarisch</note>
+          <note>mit Farbstoff</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Kohlrabigemüse , Rahmgemüse mit Karotten und Erbsen , gebratene Paprika , gebratene Bohnen mit Kräutern</name>
+          <note>Geschwefelt</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegetarisch</note>
+          <note>mit Farbstoff</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -151,14 +120,14 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Carbonara vegetariana (Ei,Mi,GlW,GlG), Strozzapreti (GlW)</name>
+          <name>Crema di pomodori secchi e basilico mit getrockneten Tomaten in Kräutersoße (2,5,Mi,Sw,GlW,GlG), Strozzapreti (GlW)</name>
           <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Crema di pomodori secchi e basilico mit getrockneten Tomaten in Kräutersoße (2,5,Mi,Sw,GlW,GlG), Strozzapreti (GlW)</name>
+          <name>Carbonara vegetariana (Ei,Mi,GlW,GlG), Strozzapreti (GlW)</name>
           <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
@@ -209,17 +178,17 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta al forno di melanzane Nudelauflauf mit Auberginen (1,Mi,Sw,GlW)</name>
-          <note>Vegetarisch</note>
+          <name>Lenticchie mit Linsen in pikanter Tomatensoße , bunte Fusilli (GlW)</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Lenticchie mit Linsen in pikanter Tomatensoße , bunte Fusilli (GlW)</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Pasta al forno di melanzane Nudelauflauf mit Auberginen (1,Mi,Sw,GlW)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -263,18 +232,18 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Funghi di bosco e basilico mit Waldpilzen und Basilikum (Mi,Sw,GlW,GlG), Farfalle (GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
           <name>all`Arrabbiata mit scharfer Tomatensoße und Sojastreifen , Farfalle (GlW)</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Funghi di bosco e basilico mit Waldpilzen und Basilikum (Mi,Sw,GlW,GlG), Farfalle (GlW)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -326,16 +295,16 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Crema di pesto mit Gemüse und Pestocreme (Mi,Sl,GlW,GlG,NCa), Maccaroni (GlW)</name>
-          <note>Vegetarisch</note>
+          <name>Broccoli e pomodoro mit Broccoli und Tomate, Maccaroni (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Broccoli e pomodoro mit Broccoli und Tomate, Maccaroni (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Crema di pesto mit Gemüse und Pestocreme (Mi,Sl,GlW,GlG,NCa), Maccaroni (GlW)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
