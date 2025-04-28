@@ -4,6 +4,15 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-04-28">
+      <category name="Highlight">
+        <meal>
+          <name>Mie-Nudeln mit Huhn und Broccoli aus dem Wok (Ei,So,Mi,Sl,Sw,GlW,NCa)</name>
+          <note>Geflügel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+      </category>
       <category name="Pottkieker">
         <meal>
           <name>Tofu-Gemüse-Topf</name>
@@ -53,13 +62,6 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Mie-Nudeln mit Huhn und Broccoli aus dem Wok (Ei,So,Mi,Sl,Sw,GlW,NCa)</name>
-          <note>Geflügel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
           <name>Gebratene Mie-Nudeln mit Wok Gemüse, Tofuwürfeln und Omelettestreifen (1,Ei,So,Mi,Sf,Sw,GlW)</name>
           <note>Vegetarisch</note>
           <price role="employee">1.10</price>
@@ -92,18 +94,18 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Crispy Burger Vegan (Se,Sw,GlW,GlG), vegane Remoulade (9,So,Sf,Sw,GlH), Pommes Frites</name>
+          <name>Crispy Chicken Burger (1,3,9,Ei,Sf,Sw,GlW), Pommes Frites</name>
+          <note>Geflügel</note>
           <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">6.50</price>
           <price role="other">7.70</price>
           <price role="student">5.20</price>
         </meal>
         <meal>
-          <name>Crispy Chicken Burger (1,3,9,Ei,Sf,Sw,GlW), Pommes Frites</name>
-          <note>Geflügel</note>
+          <name>Crispy Burger Vegan (Se,Sw,GlW,GlG), vegane Remoulade (9,So,Sf,Sw,GlH), Pommes Frites</name>
           <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">6.50</price>
           <price role="other">7.70</price>
@@ -194,18 +196,18 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Frisch gebackene FLAMMKUCHEN nach Wahl (versch. Sorten) ab 4,20 / 5,50 / 6,70 (auch TAKE AWAY) (Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">5.50</price>
-          <price role="other">6.70</price>
-          <price role="student">4.20</price>
-        </meal>
-        <meal>
           <name>Flammkuchen des Tages mit Geflügelsalami und frischen Tomaten (1,2,3,Mi,GlW)</name>
           <note>Geflügel</note>
           <price role="employee">5.90</price>
           <price role="other">7.10</price>
           <price role="student">4.60</price>
+        </meal>
+        <meal>
+          <name>Frisch gebackene FLAMMKUCHEN nach Wahl (versch. Sorten) ab 4,20 / 5,50 / 6,70 (auch TAKE AWAY) (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">5.50</price>
+          <price role="other">6.70</price>
+          <price role="student">4.20</price>
         </meal>
       </category>
       <category name="Pastabar">
