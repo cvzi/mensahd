@@ -6,7 +6,8 @@
     <day date="2025-04-29">
       <category name="Pottkieker">
         <meal>
-          <name>Fasolada Griechischer Bohnensuppe mit Sellerie, Karotten und Baguette (Sl,GlW)</name>
+          <name>Kichererbsen-Linsencurry , Baguette (GlW)</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">3.50</price>
@@ -33,7 +34,7 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Seelachsfilet mit Kräuterkruste (Fi,Mi,GlW), Tomaten-Gemüse Sugo, hausgemachtes Kartoffelpüree</name>
+          <name>Gebackenes Alaska Seelachsfilet (Fi,GlW), Tomaten-Gemüse Sugo, hausgemachtes Kartoffelpüree</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>mit Fisch</note>
           <price role="employee">7.25</price>
@@ -43,7 +44,7 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Soja-Geschnetzeltes in Erdnusssoße (2,En,So,Sl,GlW), Wok-Gemüse, Reis</name>
+          <name>Soja-Geschnetzeltes in Erdnusssoße mit Gemüse (2,En,So,Sl,GlW), Reis</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">6.40</price>
@@ -53,8 +54,9 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Primavera mit Auberginen, Tomaten, Zucchini und Kapern , bunte Fusilli (GlW)</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <name>Zucchini in Currycreme , Pasta (GlW)</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
@@ -62,7 +64,27 @@
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Pollo all'Arrabbiata, bunte Fusilli (GlW)</name>
+          <name>Zucchini in Tomatencremesoße</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Edamame in Kerbelrahm</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Pollo all'Arrabbiata scharf, Pasta (GlW)</name>
           <note>Geflügel</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
@@ -72,9 +94,8 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Brechbohnen, Zartweizen mit Gemüse (Sl,GlW), gebratener Pak Choi (2,So,GlW), Gartengemüse, Schupfnudeln (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Broccoli, Rosenkohl, Rote Beete Stäbchen (Mi,GlW), Gartengemüse, Schupfnudeln (GlW)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -177,6 +198,14 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
+          <name>Mac and Cheese (1,Mi,Sl,Sf,GlW), Eisbergsalat</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">5.50</price>
+          <price role="other">6.70</price>
+          <price role="student">4.20</price>
+        </meal>
+        <meal>
           <name>Fritten Oriental mit Falaffel und Grillgemüse (GlW), Hummus</name>
           <note>Sesamsamen und Sesamsamenerzeugnisse</note>
           <note>Vegan</note>
@@ -184,14 +213,6 @@
           <price role="employee">5.85</price>
           <price role="other">7.05</price>
           <price role="student">4.55</price>
-        </meal>
-        <meal>
-          <name>Mac and Cheese (1,Mi,Sl,Sf,GlW), Eisbergsalat</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegetarisch</note>
-          <price role="employee">5.50</price>
-          <price role="other">6.70</price>
-          <price role="student">4.20</price>
         </meal>
       </category>
       <category name="CampusVital">
@@ -212,16 +233,16 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta al forno della nonna mit Käse überbacken (Ei,Mi,GlW)</name>
-          <note>Vegetarisch</note>
+          <name>Pasta spinaci e arachidi mit Spinat-Erdnusssoße (2,En,So,Sl,GlW,NMa), Farfalle (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Pasta spinaci e arachidi mit Spinat-Erdnusssoße (2,En,So,Sl,GlW,NMa), Farfalle (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Pasta al forno della nonna mit Käse überbacken (Ei,Mi,GlW)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
