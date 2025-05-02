@@ -142,18 +142,18 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Veggie Hamburger mit Cheddar. Gemüseschnitzel, Tomaten und Gewürzgurke (1,2,9,Mi,Se,GlW,GlD), Kartoffeltwister (GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">6.90</price>
-          <price role="other">8.10</price>
-          <price role="student">5.60</price>
-        </meal>
-        <meal>
           <name>Cheddarburger mit Gurken, Tomaten und Salat, (1,2,3,9,Ei,Mi,Sf,Se,Sw,GlW), Kartoffeltwister (GlW)</name>
           <note>Rind</note>
           <price role="employee">7.25</price>
           <price role="other">8.45</price>
           <price role="student">5.95</price>
+        </meal>
+        <meal>
+          <name>Veggie Hamburger mit Cheddar. Gemüseschnitzel, Tomaten und Gewürzgurke (1,2,9,Mi,Se,GlW,GlD), Kartoffeltwister (GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">6.90</price>
+          <price role="other">8.10</price>
+          <price role="student">5.60</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -213,14 +213,6 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>All in one pot: Reis paellastyle mit Geflügel (2,So,Sl,GlW)</name>
-          <note>Geflügel</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.75</price>
-          <price role="other">7.95</price>
-          <price role="student">5.45</price>
-        </meal>
-        <meal>
           <name>All in one pot: Reis paellastyle vegan (2,So,Sl,GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -228,10 +220,18 @@
           <price role="other">6.80</price>
           <price role="student">4.30</price>
         </meal>
+        <meal>
+          <name>All in one pot: Reis paellastyle mit Geflügel (2,So,Sl,GlW)</name>
+          <note>Geflügel</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.75</price>
+          <price role="other">7.95</price>
+          <price role="student">5.45</price>
+        </meal>
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Sojageschnetzeltes mit Waldpilzen (So,Sl,GlW)</name>
+          <name>Sojageschnetzeltes mit Waldpilzen (So,Sl,GlW), Kroketten (GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mensaVital</note>
@@ -300,7 +300,7 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Veganes Gemüse süß sauer aus dem Wok</name>
+          <name>Veganes Gemüse süß sauer aus dem Wok , vegane Mi-Nudeln (So,GlW)</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Senf und Senferzeugnisse</note>
@@ -338,7 +338,9 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Tagliatelle (GlW)</name>
+          <name>Tagliatelle (GlW), all`Arrabbiata mit scharfer Tomatensoße und Sojastreifen , Rucola mit Tomatenwürfeln</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">5.25</price>
