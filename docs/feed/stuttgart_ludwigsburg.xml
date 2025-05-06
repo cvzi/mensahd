@@ -4,13 +4,6 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-05-06">
-      <category name="Vorspeise">
-        <meal>
-          <name>Tagessuppe</name>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-      </category>
       <category name="Veganer renner">
         <meal>
           <name>Kichererbsen-Curry mit Duftreis</name>
@@ -52,7 +45,8 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Tagesgemüse</name>
+          <name>Ratatouille-Gemüse</name>
+          <note>Sellerie</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -68,8 +62,9 @@
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Kroketten</name>
-          <note>Roggen</note>
+          <name>Spätzle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
           <note>Weizen</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
@@ -85,14 +80,18 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Rote Grütze mit Dessertsoße Vanille</name>
+          <name>Früchtemüsli</name>
+          <note>Gerste</note>
+          <note>Hafer</note>
+          <note>Haselnüsse</note>
+          <note>Mandeln</note>
           <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
+          <note>mit Antioxidationsmitteln</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Creme mit Tiramisu-Geschmack</name>
+          <name>Himbeerquark</name>
           <note>Milch und Laktose</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
