@@ -4,6 +4,18 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-05-06">
+      <category name="Pottkieker">
+        <meal>
+          <name>Kartoffel-Gemüse-Lauch Suppe</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.50</price>
+          <price role="other">4.70</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
       <category name="CampusKlassiker">
         <meal>
           <name>Orange Chicken (2,3,5,So,Se,Sw,GlW), Gemüsereis</name>
@@ -61,11 +73,11 @@
           <name>Putenbruststreifen in Rahmsoße</name>
           <note>Geflügel</note>
           <note>Geschwefelt</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Senf und Senferzeugnisse</note>
           <note>mit Farbstoff</note>
           <note>mit Konservierungsstoff</note>
-          <note>mit Süßungsmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -73,8 +85,7 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Sesammöhrchen , Gartenbohnen mit Pfifferlingen und Cherrytomaten, gebratenem Wirsing</name>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <name>Fingermöhrchen, Schwarzwurzeln, gebratener Wirsing mit Curry, Erbsen, Prinzessbohnen, Broccoli</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
