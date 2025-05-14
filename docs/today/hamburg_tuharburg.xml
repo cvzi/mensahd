@@ -16,7 +16,7 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Fischbrötchen (So,GlW,GlG), mit Remoulade , Matjesfilets und , Salat und Zwiebeln</name>
+          <name>Fischbrötchen (So,GlW,GlG), mit Remoulade , Matjesfilets, , Salat und Zwiebeln</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Fisch und Fischerzeugnisse</note>
           <note>Senf und Senferzeugnisse</note>
@@ -29,14 +29,16 @@
           <price role="student">3.60</price>
         </meal>
       </category>
-      <category name="CampusSpezial">
+      <category name="CampusVital">
         <meal>
-          <name>Gnocchiauflauf Florentin mit veganer Bolognese und Blattspinat (So,Mi,Sl,GlW)</name>
+          <name>Gnocchiauflauf Florentin mit veganer Bolognese, Blattspinat und Basilikumsoße (So,Mi,Sl,GlW)</name>
           <note>Vegetarisch</note>
-          <price role="employee">6.60</price>
-          <price role="other">7.80</price>
-          <price role="student">5.30</price>
+          <price role="employee">6.20</price>
+          <price role="other">7.40</price>
+          <price role="student">4.90</price>
         </meal>
+      </category>
+      <category name="CampusSpezial">
         <meal>
           <name>Grillgemüse Burger (Se,Sw,GlW,GlH), Pommes Frites</name>
           <note>Senf und Senferzeugnisse</note>
@@ -59,18 +61,26 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Crema di Zucchine e Pomodoro mit Tomaten-Sahnesoße und Zucchini , Penne (GlW)</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
+          <name>Crema di Zucchine e Pomodoro in Curry-Tomatensoße, Pasta (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Ragù bianco mit Rinderhackfleisch und Kräutern , Penne (GlW)</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <name>Pasta Bolognese mit Sonnenblumenhack (1,So,Sl,Sf,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Rinderhack mit Paprika und Tomaten , Pasta (GlW)</name>
           <note>Rind</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -78,11 +88,20 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Ratatouille , Karotten , Mangold mit gerösteten Walnüssen (NWa), Prinzessbohnen, Gnocchi</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>gerösteter Broccoli, Erbsen, Prinzessbohnen, Kohlrabigemüse , Gartengemüse</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Farbstoff</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Blattspinat in Rahm</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
