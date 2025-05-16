@@ -3,61 +3,6 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-05-15">
-      <category name="Pottkieker">
-        <meal>
-          <name>Holsteiner Kartoffeltopf</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">3.50</price>
-          <price role="other">4.70</price>
-          <price role="student">2.20</price>
-        </meal>
-      </category>
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Hähnchen Crossies (GlW), BBQ Soße , Pommes Frites</name>
-          <note>Geflügel</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">6.35</price>
-          <price role="other">7.55</price>
-          <price role="student">5.05</price>
-        </meal>
-      </category>
-      <category name="CampusSpezial">
-        <meal>
-          <name>Chili con Carne , Creme Fraiche , Gewürzreis</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Neu</note>
-          <note>Rind</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">5.90</price>
-          <price role="other">7.10</price>
-          <price role="student">4.60</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Ägyptische Falafel mit persischem Gewürzreis (Sl,Se,GlW), Pfirsich-Tomaten-Chutney</name>
-          <note>Geschwefelt</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">5.70</price>
-          <price role="other">6.90</price>
-          <price role="student">4.40</price>
-        </meal>
-      </category>
-    </day>
     <day date="2025-05-16">
       <category name="Pottkieker">
         <meal>
@@ -110,6 +55,16 @@
       </category>
       <category name="CampusSpezial">
         <meal>
+          <name>Veganes Knusperschnitzel (GlW), Pommes Frites , Vegane Hollandaise, Erbsen</name>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Farbstoff</note>
+          <price role="employee">6.60</price>
+          <price role="other">7.80</price>
+          <price role="student">5.30</price>
+        </meal>
+        <meal>
           <name>Hähnchen Cordon Bleu (2,Mi,GlW), Hollandaise , Erbsen, Pommes Frites</name>
           <note>Alkohol</note>
           <note>Ei und Eierzeugnisse</note>
@@ -118,16 +73,6 @@
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Senf und Senferzeugnisse</note>
-          <price role="employee">6.60</price>
-          <price role="other">7.80</price>
-          <price role="student">5.30</price>
-        </meal>
-        <meal>
-          <name>Veganes Knusperschnitzel (GlW), Pommes Frites , Vegane Hollandaise, Erbsen</name>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Farbstoff</note>
           <price role="employee">6.60</price>
           <price role="other">7.80</price>
           <price role="student">5.30</price>
@@ -252,22 +197,23 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
+          <name>vegane Currybratwurst , Grillsoße , Pommes Frites</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">1.30</price>
+          <price role="other">2.50</price>
+        </meal>
+        <meal>
           <name>Pennette in Tomatensoße mit Gemüsebällchen (Ei,GlW)</name>
           <note>Vegetarisch</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">4.25</price>
           <price role="other">5.45</price>
           <price role="student">2.95</price>
-        </meal>
-      </category>
-      <category name="CampusSpezial">
-        <meal>
-          <name>Quinoa-Erbsen-Bratling, Röstkartoffeln, Gurkensalat</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.20</price>
-          <price role="other">7.40</price>
-          <price role="student">4.90</price>
         </meal>
       </category>
     </day>
