@@ -6,6 +6,15 @@
     <day date="2025-05-19">
       <category name="Pottkieker">
         <meal>
+          <name>Gemüsegulasch , Zartweizen (GlW)</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.50</price>
+          <price role="other">4.70</price>
+          <price role="student">2.20</price>
+        </meal>
+        <meal>
           <name>Kartoffel-Lauch Suppe , Kaiserbrötchen (GlW)</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
@@ -15,17 +24,22 @@
           <price role="other">4.70</price>
           <price role="student">2.20</price>
         </meal>
-        <meal>
-          <name>Gemüsegulasch , Zartweizen (GlW)</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">3.50</price>
-          <price role="other">4.70</price>
-          <price role="student">2.20</price>
-        </meal>
       </category>
       <category name="CampusKlassiker">
+        <meal>
+          <name>Dattel-Curry Falafel (GlW), grünem Hummus , Rotkrautsalat , Pfirsich-Tomaten-Chutney , gebackene Süßkartoffel, oder persischem Gewürzreis (Sl,Se,GlW)</name>
+          <note>Geschwefelt</note>
+          <note>Neu</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">7.10</price>
+          <price role="other">8.30</price>
+          <price role="student">5.80</price>
+        </meal>
         <meal>
           <name>vegane Currybratwurst , zur Auswahl, BBQ Soße , Hot Cola BBQ Soße , fruchtige BBQ Soße , Pommes Frites , verschiedene Currypulver nach Wahl</name>
           <note>Geschwefelt</note>
@@ -60,17 +74,6 @@
           <price role="other">7.40</price>
           <price role="student">4.90</price>
         </meal>
-        <meal>
-          <name>Dattel-Curry Falafel (GlW), grünem Hummus , Rotkrautsalat , gebackene Süßkartoffel</name>
-          <note>Neu</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">7.10</price>
-          <price role="other">8.30</price>
-          <price role="student">5.80</price>
-        </meal>
       </category>
       <category name="CampusSpezial">
         <meal>
@@ -89,7 +92,14 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Contadino mit Schweinefleisch und Zucchini , Gnocchi</name>
+          <name>Crema di pomodori secchi e basilico mit getrockneten Tomaten in Kräutersoße (2,5,Mi,Sw,GlW,GlG), Gnocchi</name>
+          <note>Vegetarisch</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Contadino mit Schweinefleisch und Zucchini , Chili-Kartoffeln aus dem Ofen</name>
           <note>Schwein</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -97,20 +107,14 @@
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
-        <meal>
-          <name>Crema di pomodori secchi e basilico mit getrockneten Tomaten in Kräutersoße (2,5,Mi,Sw,GlW,GlG), Gnocchi</name>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Gemüsemix mit Karotten, Brokkoli und Bohnen, Buttererbsen , Kohlrabi-Bärlauch Gemüse , Orientalisches Linsengemüse , Chili-Kartoffeln aus dem Ofen</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <name>Gemüsemix mit Karotten, Brokkoli und Bohnen, Erbsen , Kohlrabi-Bärlauch Gemüse , Orientalisches Linsengemüse , Fingermöhrchen mit Ingwer und Frühlingslauch , glasierte rote Beete</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegetarisch</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Farbstoff</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -222,20 +226,20 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Deutscher Spargel, Hollandaise , Salzkartoffeln</name>
-          <note>Alkohol</note>
-          <note>Ei und Eierzeugnisse</note>
+          <name>Deutscher Spargel, zerlassene Butter , Salzkartoffeln</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegetarisch</note>
           <price role="employee">7.20</price>
           <price role="other">8.40</price>
           <price role="student">5.90</price>
         </meal>
         <meal>
-          <name>Deutscher Spargel, zerlassene Butter , Salzkartoffeln</name>
+          <name>Deutscher Spargel, Hollandaise , Salzkartoffeln</name>
+          <note>Alkohol</note>
+          <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegetarisch</note>
           <price role="employee">7.20</price>
           <price role="other">8.40</price>
@@ -337,16 +341,16 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Tortellini mit Käsefüllung (Mi,GlW), Noci di zucchine mit Zucchini-Walnusssoße (Mi,GlW,GlG,NWa)</name>
-          <note>Vegetarisch</note>
+          <name>Pomodoro Melanzane di Pollo Tomatensoße mit Aubergine und Hähnchen , Tortellini mit Käsefüllung (Mi,GlW)</name>
+          <note>Geflügel</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Pomodoro Melanzane di Pollo Tomatensoße mit Aubergine und Hähnchen , Tortellini mit Käsefüllung (Mi,GlW)</name>
-          <note>Geflügel</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <name>Tortellini mit Käsefüllung (Mi,GlW), Noci di zucchine mit Zucchini-Walnusssoße (Mi,GlW,GlG,NWa)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -495,16 +499,6 @@
     <day date="2025-05-27">
       <category name="CampusKlassiker">
         <meal>
-          <name>Homemade paniertes Putenschnitzel (Ei,GlW), Pfefferrahmsoße , Pommes Frites</name>
-          <note>Geflügel</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <price role="employee">6.20</price>
-          <price role="other">7.40</price>
-          <price role="student">4.90</price>
-        </meal>
-        <meal>
           <name>Matjesfilets , Matjessoße Hausfrauen Art , kleine Salzkartoffeln</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Fisch und Fischerzeugnisse</note>
@@ -519,6 +513,16 @@
           <price role="employee">5.25</price>
           <price role="other">6.45</price>
           <price role="student">3.95</price>
+        </meal>
+        <meal>
+          <name>Homemade paniertes Putenschnitzel (Ei,GlW), Pfefferrahmsoße , Pommes Frites</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.40</price>
+          <price role="student">4.90</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -563,20 +567,20 @@
       </category>
       <category name="Pastabar">
         <meal>
+          <name>Pomodoro asiatico mit asiatischer Tomatensoße und Soja Chunks (2,So,Se,GlW), Bunte Fusilli (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
           <name>all`Amatriciana mit Speck und Tomaten , bunte Fusilli (GlW)</name>
           <note>Schwein</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Antioxidationsmittel</note>
           <note>mit Konservierungsstoff</note>
           <note>mit Phosphat</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>Pomodoro asiatico mit asiatischer Tomatensoße und Soja Chunks (2,So,Se,GlW), Bunte Fusilli (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
