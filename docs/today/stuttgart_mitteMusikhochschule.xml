@@ -3,12 +3,14 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-05-21">
+    <day date="2025-05-22">
       <category name="Vorspeise">
         <meal>
-          <name>Curry-Kokos-Suppe</name>
+          <name>Flädlesuppe</name>
+          <note>Ei</note>
           <note>Milch und Laktose</note>
           <note>Sellerie</note>
+          <note>Weizen</note>
           <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
@@ -16,9 +18,12 @@
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Penne an Tomatensugo mit Kräutern</name>
+          <name>Bunter Gemüseeintopf mit Dinkelbrötchen</name>
+          <note>Dinkel</note>
+          <note>Gerste</note>
+          <note>Roggen</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
-          <note>Weizen</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -26,46 +31,57 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Milchreis und Zimt Zucker</name>
-          <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
-          <price role="employee">5.60</price>
-          <price role="student">3.10</price>
-        </meal>
-        <meal>
-          <name>Wurstgulasch mit Risoleekartoffeln</name>
-          <note>Rind</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Schwein</note>
+          <name>Gnocchi- Gemüsepfanne mit mariniertem Tofu und Tomatensauce</name>
           <note>Sellerie</note>
-          <note>Senf</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Konservierungsstoffen</note>
-          <note>mit Süßungsmitteln</note>
-          <price role="employee">7.10</price>
-          <price role="student">4.60</price>
-        </meal>
-        <meal>
-          <name>Hirsecurry-Pfanne mit Soja-Würzdip</name>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
           <note>Soja</note>
+          <note>Weizen</note>
           <note>vegan</note>
-          <price role="employee">5.40</price>
-          <price role="student">2.90</price>
+          <price role="employee">6.70</price>
+          <price role="student">4.20</price>
+        </meal>
+        <meal>
+          <name>2 Crispy Drumsticks mit Orangensauce Gemüse-Zartweizen</name>
+          <note>Geflügel</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>mit Phosphaten</note>
+          <price role="employee">7.90</price>
+          <price role="student">5.40</price>
+        </meal>
+      </category>
+      <category name="Aktion">
+        <meal>
+          <name>Chinagemüse</name>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">6.95</price>
+          <price role="student">4.45</price>
+        </meal>
+        <meal>
+          <name>Hähnchenstreifen zum Wokgericht</name>
+          <note>Geflügel</note>
+          <price role="employee">1.95</price>
+          <price role="student">1.95</price>
         </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Grüne Bohnen</name>
-          <note>Sellerie</note>
+          <name>Buntes Gemüse</name>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
         <meal>
-          <name>Pommes frites</name>
+          <name>Reis</name>
+          <note>vegan</note>
+          <price role="employee">1.49</price>
+          <price role="student">1.09</price>
+        </meal>
+        <meal>
+          <name>Country Potatoes</name>
+          <note>Weizen</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
@@ -80,19 +96,19 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Veganes Früchtemüsli</name>
-          <note>Gerste</note>
-          <note>Hafer</note>
-          <note>Haselnüsse</note>
-          <note>Mandeln</note>
-          <note>Soja</note>
-          <note>mit Antioxidationsmitteln</note>
+          <name>Vegane Waldbeerencreme</name>
           <note>vegan</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Waldbeerenquark</name>
+          <name>Creme mit Tiramisu-Geschmack</name>
+          <note>Milch und Laktose</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
+        </meal>
+        <meal>
+          <name>Waldbeerenquark Milchreis</name>
           <note>Milch und Laktose</note>
           <note>vegetarisch</note>
           <price role="employee">1.69</price>
