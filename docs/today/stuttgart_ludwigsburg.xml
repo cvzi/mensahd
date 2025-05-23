@@ -3,24 +3,20 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-05-22">
+    <day date="2025-05-23">
       <category name="Vorspeise">
         <meal>
-          <name>Eierflockensuppe</name>
-          <note>Ei</note>
-          <note>Sellerie</note>
+          <name>Tagessuppe</name>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Bunter Gemüseeintopf mit Dinkelbrötchen</name>
-          <note>Dinkel</note>
-          <note>Gerste</note>
-          <note>Roggen</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <name>Spaghetti mit Sojabolognese</name>
           <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Weizen</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -28,43 +24,46 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Gnocchi- Gemüsepfanne mit mariniertem Tofu und Tomatensauce</name>
+          <name>Vegetarisches Schnitzel mit Käsefüllung an Ratatouille-Gemüse und Schupfnudeln</name>
+          <note>Ei</note>
+          <note>Hafer</note>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>mit Farbstoffen</note>
+          <note>vegetarisch</note>
+          <price role="employee">7.70</price>
+          <price role="student">5.20</price>
+        </meal>
+        <meal>
+          <name>Fischstäbchen mit Remouladensauce und Pommes frites</name>
+          <note>Ei</note>
+          <note>Fisch</note>
+          <note>MSC-zertifizierter Fisch (MSC-C-51632)</note>
+          <note>Milch und Laktose</note>
+          <note>Senf</note>
+          <note>Weizen</note>
+          <note>mit Farbstoffen</note>
+          <note>mit Süßungsmitteln</note>
+          <price role="employee">7.40</price>
+          <price role="student">4.90</price>
+        </meal>
+        <meal>
+          <name>Kartoffelrösti mit Champignon-Gemüseragout</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
           <note>Soja</note>
           <note>Weizen</note>
           <note>vegan</note>
-          <price role="employee">6.70</price>
-          <price role="student">4.20</price>
-        </meal>
-        <meal>
-          <name>2 Crispy Drumsticks mit Orangensauce Gemüse-Zartweizen</name>
-          <note>Geflügel</note>
-          <note>Sellerie</note>
-          <note>Weizen</note>
-          <note>mit Phosphaten</note>
-          <price role="employee">7.90</price>
-          <price role="student">5.40</price>
-        </meal>
-        <meal>
-          <name>Wrap mit Gemüse und Kidneybohnenmus</name>
-          <note>Weizen</note>
-          <note>mit Konservierungsstoffen</note>
-          <note>vegan</note>
-          <price role="employee">6.50</price>
-          <price role="student">4.00</price>
+          <price role="employee">6.10</price>
+          <price role="student">3.60</price>
         </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Buntes Gemüse</name>
+          <name>Tagesgemüse</name>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
-        </meal>
-        <meal>
-          <name>Reis</name>
-          <note>vegan</note>
-          <price role="employee">1.49</price>
-          <price role="student">1.09</price>
         </meal>
         <meal>
           <name>Pommes frites</name>
@@ -72,9 +71,10 @@
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Risoleekartoffeln</name>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>vegan</note>
+          <name>Schupfnudeln</name>
+          <note>Ei</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
@@ -89,25 +89,20 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Creme mit Tiramisu-Geschmack</name>
+          <name>Nuss-Nougat-Pudding</name>
+          <note>Haselnüsse</note>
           <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Veganes Haferdessert Saltet Caramel</name>
-          <note>100% Bio nach EG-Öko-Verordnung (DE-ÖKO-006)</note>
-          <note>Hafer</note>
-          <note>vegan</note>
+          <name>Mousse mit Mango- Joghurt- Geschmack</name>
+          <note>Ei</note>
+          <note>Haselnüsse</note>
+          <note>Milch und Laktose</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
-        </meal>
-        <meal>
-          <name>Erdbeerjoghurt</name>
-          <note>Milch und Laktose</note>
-          <note>mit Farbstoffen</note>
-          <price role="employee">1.49</price>
-          <price role="student">1.09</price>
         </meal>
       </category>
       <category name="Buffet">
