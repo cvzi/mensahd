@@ -3,8 +3,51 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-05-25">
-      <closed/>
+    <day date="2025-05-26">
+      <category name="Veganer renner">
+        <meal>
+          <name>Gnocchi mit Tomatensauce und Rucolagarnitur</name>
+          <note>Sellerie</note>
+          <note>vegan</note>
+          <price role="employee">5.49</price>
+          <price role="student">2.99</price>
+        </meal>
+      </category>
+      <category name="Hauptgericht">
+        <meal>
+          <name>Hähnchengyros mit Tzatziki und Pommes frites</name>
+          <note>Geflügel</note>
+          <note>Milch und Laktose</note>
+          <price role="employee">7.80</price>
+          <price role="student">5.30</price>
+        </meal>
+      </category>
+      <category name="Beilage">
+        <meal>
+          <name>Pommes frites</name>
+          <note>vegan</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
+        </meal>
+      </category>
+      <category name="Salat">
+        <meal>
+          <name>Beilagensalat</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Dessert">
+        <meal>
+          <name>Kirschjoghurt</name>
+          <note>Milch und Laktose</note>
+          <note>mit Farbstoffen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.49</price>
+          <price role="student">1.09</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
