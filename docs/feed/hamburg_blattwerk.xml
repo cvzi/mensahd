@@ -3,30 +3,8 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-05-28">
-      <category name="CampusVital">
-        <meal>
-          <name>vegane Tom Kha Suppe mit Tofu und Basmatireis (2,3,So,Sw,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.90</price>
-          <price role="other">7.10</price>
-          <price role="student">4.60</price>
-        </meal>
-      </category>
+    <day date="2025-05-30">
       <category name="CampusSpezial">
-        <meal>
-          <name>Hausgemachter Kartoffelstampf , Sauerkraut (vegan) , gebratene Champingnons</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegetarisch</note>
-          <price role="employee">5.60</price>
-          <price role="other">6.80</price>
-          <price role="student">4.30</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
         <meal>
           <name>Spanischer Linseneintopf mit veganen Hackbällchen (3,5,So,Sl,Sf,Sw,GlW,GlG), Fladenbrot (Se,GlW)</name>
           <note>Vegan</note>
@@ -35,46 +13,7 @@
           <price role="other">6.55</price>
           <price role="student">4.05</price>
         </meal>
-        <meal>
-          <name>Pikanter Kartoffelsalat mit Ajva, saurer Sahne und Frittata mit Artischoken und Käse</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Geschwefelt</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">5.90</price>
-          <price role="other">7.10</price>
-          <price role="student">4.60</price>
-        </meal>
       </category>
-      <category name="Pastabar">
-        <meal>
-          <name>Tomatensoße mit Aubergine , Pasta (GlW)</name>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-      </category>
-      <category name="Gemüsebar">
-        <meal>
-          <name>Blumenkohl mit veganer Hollandaise , gebratenem Gemüse, Broccoli</name>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-      </category>
-    </day>
-    <day date="2025-05-30">
       <category name="CampusWorld">
         <meal>
           <name>Tikka Masala mit Soja , Basmatireis</name>
@@ -89,6 +28,16 @@
       </category>
       <category name="Pastabar">
         <meal>
+          <name>Salsa bianca mit Räuchertofu in Kräutersoße</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
           <name>Broccoli e Pomodoro mit Tomatensoße und Broccoli</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -97,12 +46,11 @@
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
+      </category>
+      <category name="Gemüsebar">
         <meal>
-          <name>Salsa bianca mit Räuchertofu in Kräutersoße , Penne (GlW)</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>gebratene Champignons, Buttererbsen, Kohlrabi in Rahm, Bohnen mit Zwiebelmarmelade (1,So,Mi,Sl,GlW)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -122,6 +70,16 @@
       </category>
       <category name="CampusSpezial">
         <meal>
+          <name>Möhren-Broccoli-Pfanne mit Kichererbsen, Sojajoghurt Dip mit Sesam , Bulgur (Sl,GlW)</name>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.50</price>
+          <price role="other">5.70</price>
+          <price role="student">3.20</price>
+        </meal>
+        <meal>
           <name>Deutscher Spargel, Hollandaise , Salzkartoffeln</name>
           <note>Alkohol</note>
           <note>Ei und Eierzeugnisse</note>
@@ -132,16 +90,6 @@
           <price role="employee">7.20</price>
           <price role="other">8.40</price>
           <price role="student">5.90</price>
-        </meal>
-        <meal>
-          <name>Möhren-Broccoli-Pfanne mit Kichererbsen, Sojajoghurt Dip mit Sesam , Bulgur (Sl,GlW)</name>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">4.50</price>
-          <price role="other">5.70</price>
-          <price role="student">3.20</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -213,16 +161,16 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Salsa di zucca al curry mit Kürbis, Curry und Kokos (So,Sl,Sf,GlW), Farfalle (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Crema di funghi ostrica mit Austernpilze in Sahnesoße (Mi,Sl,GlW,GlG), Farfalle (GlW)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Crema di funghi ostrica mit Austernpilze in Sahnesoße (Mi,Sl,GlW,GlG), Farfalle (GlW)</name>
-          <note>Vegetarisch</note>
+          <name>Salsa di zucca al curry mit Kürbis, Curry und Kokos (So,Sl,Sf,GlW), Farfalle (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -325,6 +273,20 @@
       </category>
       <category name="CampusWorld">
         <meal>
+          <name>Hausgemachte Pasta (GlW), Funghi porcini mit Steinpilzen und Soja-Tomatensugo</name>
+          <note>Alkohol</note>
+          <note>Geschwefelt</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Farbstoff</note>
+          <price role="employee">5.20</price>
+          <price role="other">6.40</price>
+          <price role="student">3.90</price>
+        </meal>
+        <meal>
           <name>Bowl mit Karotten Wakame Salat, Röstinchen und orientalischer rote Beete (1,2,3,5,So,Sl,Se,Sw,GlW), Kirschtomaten-Konfit , Erbsen-Dip</name>
           <note>Geschwefelt</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
@@ -338,20 +300,6 @@
           <price role="employee">5.80</price>
           <price role="other">7.00</price>
           <price role="student">4.50</price>
-        </meal>
-        <meal>
-          <name>Hausgemachte Pasta (GlW), Funghi porcini mit Steinpilzen und Soja-Tomatensugo</name>
-          <note>Alkohol</note>
-          <note>Geschwefelt</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Farbstoff</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.40</price>
-          <price role="student">3.90</price>
         </meal>
       </category>
       <category name="Pastabar">
