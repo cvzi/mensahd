@@ -14,17 +14,21 @@
           <price role="student">3.30</price>
         </meal>
       </category>
-      <category name="CampusWorld">
+      <category name="CampusSpezial">
         <meal>
-          <name>Let's WOK, Hähnchenstreifen, frisches Gemüse aus dem WOK (2,So,Sl,Sw,GlW), würzige Teriyaki-Sauce (2,So,GlW), Basmatireis, verschiedene Toppings</name>
-          <note>Erdnüsse und Erdnusserzeugnisse</note>
-          <note>Geflügel</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">7.70</price>
-          <price role="other">8.90</price>
-          <price role="student">6.40</price>
+          <name>Deutscher Spargel, Hollandaise , Salzkartoffeln</name>
+          <note>Alkohol</note>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <price role="employee">7.20</price>
+          <price role="other">8.40</price>
+          <price role="student">5.90</price>
         </meal>
+      </category>
+      <category name="CampusWorld">
         <meal>
           <name>Let's WOK, frisches Gemüse aus dem WOK (2,So,Sl,Sw,GlW), würzige Teriyaki-Sauce (2,So,GlW), Basmatireis, verschiedene Toppings</name>
           <note>Erdnüsse und Erdnusserzeugnisse</note>
@@ -34,6 +38,16 @@
           <price role="employee">6.70</price>
           <price role="other">7.90</price>
           <price role="student">5.40</price>
+        </meal>
+        <meal>
+          <name>Let's WOK, Hähnchenstreifen, frisches Gemüse aus dem WOK (2,So,Sl,Sw,GlW), würzige Teriyaki-Sauce (2,So,GlW), Basmatireis, verschiedene Toppings</name>
+          <note>Erdnüsse und Erdnusserzeugnisse</note>
+          <note>Geflügel</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">7.70</price>
+          <price role="other">8.90</price>
+          <price role="student">6.40</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -47,31 +61,6 @@
         </meal>
       </category>
       <category name="Gemüsebar">
-        <meal>
-          <name>gebratene Mungosprossen (2,So,GlW), Bohne:, gebratene Bohnen, Bohnen mit Knoblauch und Ingwer, Erbsen:, Erbsen, Spicy Erbsen , Blumenkohl:, Blumenkohl, gebackener Cajun - Blumenkohl, gebackener Tandoori - Blumenkohl , Blumenkohl mit</name>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>mit Farbstoff</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>Sesammarinade</name>
-        </meal>
-        <meal>
-          <name>Gebackenes / Frittiertes:, Kartoffelspalten (GlW), Steakhouse - Pommes, Röstiecken, Röstinchen, Aufläufe:, Kartoffelgratin , Kartoffel - Gemüsegratin (Mi,GlW,GlG), Kartoffel - Blumenkohlgratin (Mi,GlW,GlG), Gnocchi - Auflauf (Mi,GlW,GlG),</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>Spätzle</name>
-        </meal>
         <meal>
           <name>Gebackenes / Frittiertes:, Kartoffelspalten (GlW), Steakhouse - Pommes, Röstiecken, Röstinchen, Aufläufe:, Kartoffelgratin , Kartoffel - Gemüsegratin (Mi,GlW,GlG), Kartoffel - Blumenkohlgratin (Mi,GlW,GlG), Gnocchi - Auflauf (Mi,GlW,GlG),</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -96,6 +85,19 @@
         </meal>
         <meal>
           <name>roten L</name>
+        </meal>
+        <meal>
+          <name>gebratene Mungosprossen (2,So,GlW), Bohne:, gebratene Bohnen, Bohnen mit Knoblauch und Ingwer, Erbsen:, Erbsen, Spicy Erbsen , Blumenkohl:, Blumenkohl, gebackener Cajun - Blumenkohl, gebackener Tandoori - Blumenkohl , Blumenkohl mit</name>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>mit Farbstoff</note>
+          <note>mit Konservierungsstoff</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Sesammarinade</name>
         </meal>
       </category>
     </day>
@@ -345,18 +347,6 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Gebackenes / Frittiertes:, Kartoffelspalten (GlW), Steakhouse - Pommes, Röstiecken, Röstinchen, Aufläufe:, Kartoffelgratin , Kartoffel - Gemüsegratin (Mi,GlW,GlG), Kartoffel - Blumenkohlgratin (Mi,GlW,GlG), Gnocchi - Auflauf (Mi,GlW,GlG),</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>Spätzle</name>
-        </meal>
-        <meal>
           <name>gebratene Mungosprossen (2,So,GlW), Bohne:, gebratene Bohnen, Bohnen mit Knoblauch und Ingwer, Erbsen:, Erbsen, Spicy Erbsen , Blumenkohl:, Blumenkohl, gebackener Cajun - Blumenkohl, gebackener Tandoori - Blumenkohl , Blumenkohl mit</name>
           <note>Senf und Senferzeugnisse</note>
           <note>Vegetarisch</note>
@@ -381,6 +371,18 @@
         </meal>
         <meal>
           <name>roten L</name>
+        </meal>
+        <meal>
+          <name>Gebackenes / Frittiertes:, Kartoffelspalten (GlW), Steakhouse - Pommes, Röstiecken, Röstinchen, Aufläufe:, Kartoffelgratin , Kartoffel - Gemüsegratin (Mi,GlW,GlG), Kartoffel - Blumenkohlgratin (Mi,GlW,GlG), Gnocchi - Auflauf (Mi,GlW,GlG),</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Spätzle</name>
         </meal>
         <meal>
           <name>Gebackenes / Frittiertes:, Kartoffelspalten (GlW), Steakhouse - Pommes, Röstiecken, Röstinchen, Aufläufe:, Kartoffelgratin , Kartoffel - Gemüsegratin (Mi,GlW,GlG), Kartoffel - Blumenkohlgratin (Mi,GlW,GlG), Gnocchi - Auflauf (Mi,GlW,GlG),</name>
