@@ -4,6 +4,16 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-06-06">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Vegetarisches Schnitzel mit Pilzrahmsoße (Ei,So,Mi,Sl,Sw,GlW,GlH), Pommes Frites</name>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <price role="employee">6.40</price>
+          <price role="other">7.60</price>
+          <price role="student">5.10</price>
+        </meal>
+      </category>
       <category name="CampusVital">
         <meal>
           <name>Cous-Cous One Pot mit getrockneten Tomaten, Erbsen und Joghurt (2,5,Mi,Sl,Sw,GlW)</name>
@@ -13,7 +23,28 @@
           <price role="student">3.00</price>
         </meal>
       </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Deutscher Spargel, Hollandaise , Salzkartoffeln</name>
+          <note>Alkohol</note>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <price role="employee">7.20</price>
+          <price role="other">8.40</price>
+          <price role="student">5.90</price>
+        </meal>
+      </category>
       <category name="CampusWorld">
+        <meal>
+          <name>Bunte-Nudelsalat mit Antipasti Tomaten (Sl,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.30</price>
+          <price role="other">2.50</price>
+        </meal>
         <meal>
           <name>Möhren-Broccoli-Pfanne mit Kichererbsen, Sojajoghurt Dip mit Sesam , Bulgur (Sl,GlW)</name>
           <note>Sesamsamen und Sesamsamenerzeugnisse</note>
@@ -27,17 +58,17 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Crema di spinaci mit Spinat in Käse-Sahnesoße (Mi,Sl,GlW,GlG), Vollkorn Penne (GlW)</name>
-          <note>Vegetarisch</note>
+          <name>all`Provenzale mit Gemüse , Vollkorn Penne (GlW)</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>all`Provenzale mit Gemüse , Vollkorn Penne (GlW)</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Crema di spinaci mit Spinat in Käse-Sahnesoße (Mi,Sl,GlW,GlG), Vollkorn Penne (GlW)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
