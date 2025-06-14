@@ -3,71 +3,6 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-06-13">
-      <category name="Pottkieker">
-        <meal>
-          <name>Gelbe Linsensuppe mit Mango</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">3.50</price>
-          <price role="other">4.70</price>
-          <price role="student">2.20</price>
-        </meal>
-      </category>
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Spaghetti mit Ratatouillegemüse und Hirtenkäse (Mi,Sw,GlW)</name>
-          <note>Vegetarisch</note>
-          <note>mensaVital</note>
-          <price role="employee">5.15</price>
-          <price role="other">6.35</price>
-          <price role="student">3.85</price>
-        </meal>
-      </category>
-      <category name="CampusVital">
-        <meal>
-          <name>Burrito Bowl mit Sonnenblumenhack, Petersilie-Knoblauch-Dip (1,3,Sl,Sf,GlH), Tomaten-Gurken-Salsa</name>
-          <note>Geschwefelt</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">6.15</price>
-          <price role="other">7.35</price>
-          <price role="student">4.85</price>
-        </meal>
-      </category>
-      <category name="Pastabar">
-        <meal>
-          <name>Pasta (GlW), Gorgonzola-Sahnesoße</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>Pasta (GlW), Asiatische Gemüsesoße süß-sauer</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-      </category>
-      <category name="Gemüsebar">
-        <meal>
-          <name>Karotten, vegan, Blumenkohl in Rahm (Mi,GlW,GlG)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-      </category>
-    </day>
     <day date="2025-06-16">
       <category name="Pottkieker">
         <meal>
@@ -117,13 +52,6 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Broccoli in einer Gorgonzola- Sahnesoße , Conchiglie (GlW)</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
           <name>Grüne Gemüsepfanne mit Erdnusssoße (2,En,So,GlW), Vollkornreis</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -136,6 +64,13 @@
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Rind</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Broccoli in einer Gorgonzola- Sahnesoße , Conchiglie (GlW)</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -203,18 +138,18 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Frisch gebackene FLAMMKUCHEN nach Wahl (versch. Sorten) ab 4,20 / 5,50 / 6,70 (auch TAKE AWAY) (Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">5.50</price>
-          <price role="other">6.70</price>
-          <price role="student">4.20</price>
-        </meal>
-        <meal>
           <name>Flammkuchen des Tages: mit Sucuk, Zwiebeln und frischen Tomaten (2,3,4,Mi,GlW)</name>
           <note>Rind</note>
           <price role="employee">6.55</price>
           <price role="other">7.75</price>
           <price role="student">5.25</price>
+        </meal>
+        <meal>
+          <name>Frisch gebackene FLAMMKUCHEN nach Wahl (versch. Sorten) ab 4,20 / 5,50 / 6,70 (auch TAKE AWAY) (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">5.50</price>
+          <price role="other">6.70</price>
+          <price role="student">4.20</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -308,20 +243,20 @@
       </category>
       <category name="Pastabar">
         <meal>
+          <name>asiatischer Tomatensoße und Sojawürfeln (2,So,Se,GlW), Reis</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
           <name>Tomatensoße mit Speckwürfel , Bunte Fusilli (GlW)</name>
           <note>Schwein</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Antioxidationsmittel</note>
           <note>mit Konservierungsstoff</note>
           <note>mit Phosphat</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>asiatischer Tomatensoße und Sojawürfeln (2,So,Se,GlW), Reis</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -356,6 +291,14 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
+          <name>Putengeschnetzeltes Zürcher Art , Tagliatelle (GlW)</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <price role="employee">6.30</price>
+          <price role="other">7.50</price>
+          <price role="student">5.00</price>
+        </meal>
+        <meal>
           <name>Currybratwurst oder , Geflügel Bratwurst oder, veggie Bratwurst , scharfe Grillsoße oder , Grillsoße , Pommes Frites , verschiedene Currypulver nach Wahl</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Geflügel</note>
@@ -372,14 +315,6 @@
           <price role="employee">6.20</price>
           <price role="other">7.40</price>
           <price role="student">4.90</price>
-        </meal>
-        <meal>
-          <name>Putengeschnetzeltes Zürcher Art , Tagliatelle (GlW)</name>
-          <note>Geflügel</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <price role="employee">6.30</price>
-          <price role="other">7.50</price>
-          <price role="student">5.00</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -453,7 +388,7 @@
       </category>
       <category name="CampusVital">
         <meal>
-          <name>Tikka Masala mit Soja</name>
+          <name>Tikka Masala mit Soja , Kräuter-Chili-Kartoffeln</name>
           <note>Sesamsamen und Sesamsamenerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
