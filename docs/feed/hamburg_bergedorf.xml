@@ -55,13 +55,6 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Badisches Pfannenglück nach Maultaschenart (1,Ei,Mi,GlD)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
           <name>Schwäbische Käseknöpfle (1,Ei,GlW,GlD)</name>
           <note>Vegetarisch</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -69,24 +62,15 @@
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
+        <meal>
+          <name>Badisches Pfannenglück nach Maultaschenart (1,Ei,Mi,GlD)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
       </category>
       <category name="Gemüsebar">
-        <meal>
-          <name>Niedersächsische Ofenkartoffeln vegan</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>Schleswig Holsteinisches Bohnengemüse vegan</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
         <meal>
           <name>Buntes Ofengemüse</name>
           <note>Vegan</note>
@@ -100,6 +84,22 @@
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Farbstoff</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Schleswig Holsteinisches Bohnengemüse vegan</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Niedersächsische Ofenkartoffeln vegan</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -298,19 +298,6 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Pulled Pork BBQ Fries , Cole slaw</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwein</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Farbstoff</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">6.25</price>
-          <price role="other">7.45</price>
-          <price role="student">4.95</price>
-        </meal>
-        <meal>
           <name>Pulled BBQ Fries (Sf,GlH), Cole slaw</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -323,16 +310,21 @@
           <price role="other">7.45</price>
           <price role="student">4.95</price>
         </meal>
+        <meal>
+          <name>Pulled Pork BBQ Fries , Cole slaw</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwein</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Farbstoff</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">6.25</price>
+          <price role="other">7.45</price>
+          <price role="student">4.95</price>
+        </meal>
       </category>
       <category name="Pastabar">
-        <meal>
-          <name>Fusilli (GlW), Aglio e olio mit Tomate und Knoblauch in Olivenöl</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
         <meal>
           <name>Fusilli (GlW), Schinkenstreifen in einer Käse- Sahnesoße</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -342,6 +334,14 @@
           <note>mit Antioxidationsmittel</note>
           <note>mit Konservierungsstoff</note>
           <note>mit Phosphat</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Fusilli (GlW), Aglio e olio mit Tomate und Knoblauch in Olivenöl</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -554,12 +554,6 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Eliche (GlW), Gorgonzola- Hartkäsesoße, gerösteten Haselnüssen und Basilikum (Mi,Sl,NHa)</name>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
           <name>Bunte Nudeln (GlW), Tomatensoße mit Waldpilzen und Speck</name>
           <note>Schwein</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -567,6 +561,12 @@
           <note>mit Antioxidationsmittel</note>
           <note>mit Konservierungsstoff</note>
           <note>mit Phosphat</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Eliche (GlW), Gorgonzola- Hartkäsesoße, gerösteten Haselnüssen und Basilikum (Mi,Sl,NHa)</name>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -599,13 +599,6 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Veganes Vischbrötchen mit Brunnenkressecreme und Radieschen- Gurkensalat (3,5,So,Mi,Sf,Sw,GlW), Amazing Fries</name>
-          <note>Vegetarisch</note>
-          <price role="employee">7.25</price>
-          <price role="other">8.45</price>
-          <price role="student">5.95</price>
-        </meal>
-        <meal>
           <name>Veganer Crispy Caesar Burger (3,Sf,GlW,GlG), Pommes Frites</name>
           <note>Senf und Senferzeugnisse</note>
           <note>Vegan</note>
@@ -613,6 +606,13 @@
           <price role="employee">6.30</price>
           <price role="other">7.50</price>
           <price role="student">5.00</price>
+        </meal>
+        <meal>
+          <name>Veganes Vischbrötchen mit Brunnenkressecreme und Radieschen- Gurkensalat (3,5,So,Mi,Sf,Sw,GlW), Amazing Fries</name>
+          <note>Vegetarisch</note>
+          <price role="employee">7.25</price>
+          <price role="other">8.45</price>
+          <price role="student">5.95</price>
         </meal>
       </category>
       <category name="Pastabar">
