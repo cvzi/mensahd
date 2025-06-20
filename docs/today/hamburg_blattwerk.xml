@@ -4,17 +4,6 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-06-20">
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Omelette , Blattspinat, Bratkartoffeln</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
-          <price role="employee">5.35</price>
-          <price role="other">6.55</price>
-          <price role="student">4.05</price>
-        </meal>
-      </category>
       <category name="CampusVital">
         <meal>
           <name>Frisches Gemüse aus dem Wok in Hoisin-Soße (1,2,So,Se,Sw,GlW), Basmatireis</name>
@@ -36,14 +25,6 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Quinoa-Kokos-Karottensalat mit Tofu und Blumenkohl</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.30</price>
-          <price role="other">2.50</price>
-        </meal>
-        <meal>
           <name>Chili Fries sin carne , Tofunese</name>
           <note>Geschwärzt</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
@@ -56,21 +37,30 @@
           <price role="other">6.65</price>
           <price role="student">4.15</price>
         </meal>
+        <meal>
+          <name>Quinoa-Kokos-Karottensalat mit Tofu und Blumenkohl (1,So,Sl,Se,GlW)</name>
+          <note>Alkohol</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.30</price>
+          <price role="other">2.50</price>
+        </meal>
       </category>
       <category name="Pastabar">
+        <meal>
+          <name>Broccoli in - Sahnesoße , Penne (GlW)</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
         <meal>
           <name>Räuchertofu in Kräuter- Cremesoße , Penne (GlW)</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>Broccoli in einer Gorgonzola- Sahnesoße , Penne (GlW)</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
