@@ -3,49 +3,10 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-06-19">
-      <category name="Pottkieker">
-        <meal>
-          <name>Erbsencremesuppe</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">3.50</price>
-          <price role="other">4.70</price>
-          <price role="student">2.20</price>
-        </meal>
-      </category>
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Dattel-Curry Falafel (GlW), grünem Hummus , Salat , Süßkartoffelpürree</name>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">7.10</price>
-          <price role="other">8.30</price>
-          <price role="student">5.80</price>
-        </meal>
-        <meal>
-          <name>Paniertes Schweineschnitzel (GlW), Cole slaw Salat , Pommes Frites</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwein</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Farbstoff</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.40</price>
-          <price role="student">3.90</price>
-        </meal>
-      </category>
-    </day>
     <day date="2025-06-20">
       <category name="Pottkieker">
         <meal>
-          <name>Möhrensuppe mit Ingwer</name>
+          <name>Möhren-Süßkartoffelsuppe mit Ingwer</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
@@ -67,8 +28,7 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Vegane Bällchen in Kapernsoße (1,So,Sl,Sw,GlW,GlG), Reis, Rote Beete Salat</name>
-          <note>Alkohol</note>
+          <name>Vegane Bällchen in Kräutersoße (1,So,Sl,GlW,GlG), Reis, Rote Beete</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Süßungsmittel</note>
@@ -99,11 +59,11 @@
           <price role="student">4.60</price>
         </meal>
         <meal>
-          <name>Pulled BBQ Fries (Sf,GlH), Cole slaw</name>
+          <name>Pulled Pork BBQ Fries , Cole slaw</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwein</note>
           <note>Senf und Senferzeugnisse</note>
-          <note>Vegetarisch</note>
           <note>mit Antioxidationsmittel</note>
           <note>mit Farbstoff</note>
           <note>mit Süßungsmittel</note>
@@ -112,11 +72,11 @@
           <price role="student">4.95</price>
         </meal>
         <meal>
-          <name>Pulled Pork BBQ Fries , Cole slaw</name>
+          <name>Pulled BBQ Fries (Sf,GlH), Cole slaw</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwein</note>
           <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
           <note>mit Antioxidationsmittel</note>
           <note>mit Farbstoff</note>
           <note>mit Süßungsmittel</note>
@@ -169,6 +129,18 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
+          <name>vegane Currybratwurst , Grillsoße , Pommes Frites</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">5.65</price>
+          <price role="other">6.85</price>
+          <price role="student">4.35</price>
+        </meal>
+        <meal>
           <name>Currybratwurst , Grillsoße , Pommes Frites</name>
           <note>Schwein</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -182,18 +154,6 @@
           <price role="employee">5.90</price>
           <price role="other">7.10</price>
           <price role="student">4.60</price>
-        </meal>
-        <meal>
-          <name>vegane Currybratwurst , Grillsoße , Pommes Frites</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">5.65</price>
-          <price role="other">6.85</price>
-          <price role="student">4.35</price>
         </meal>
       </category>
     </day>
