@@ -4,8 +4,37 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Sontheim</name>
-    <day date="2025-06-22">
-      <closed/>
+    <day date="2025-06-23">
+      <category name="Buffet">
+        <meal>
+          <name>Tagessuppe</name>
+          <note>soup of the day</note>
+          <price role="student">0.90</price>
+          <price role="employee">1.40</price>
+          <price role="other">2.00</price>
+        </meal>
+        <meal>
+          <name>Träumereien</name>
+          <note>sweet delights </note>
+          <price role="student">0.90</price>
+          <price role="employee">1.40</price>
+          <price role="other">2.00</price>
+        </meal>
+        <meal>
+          <name>Bohnen-Gemüseragout mit Zartweizen</name>
+          <note>Bean and vegetable ragout with soft wheat</note>
+          <price role="student">2.90</price>
+          <price role="employee">4.35</price>
+          <price role="other">7.25</price>
+        </meal>
+        <meal>
+          <name>Griechische Pasta Pfanne, Püree, Oberländer Rostbratwurst aus der Region</name>
+          <note>Greek pasta pan, puree, reginal Oberland Bratwurst</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
