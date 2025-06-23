@@ -4,17 +4,6 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-06-23">
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Omelette , Blattspinat, Bratkartoffeln</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
-          <price role="employee">5.40</price>
-          <price role="other">6.60</price>
-          <price role="student">4.10</price>
-        </meal>
-      </category>
       <category name="CampusVital">
         <meal>
           <name>Spaghetti (GlW), Tomaten- Basilikumsoße, Melanzane Bällchen (Mi,GlW)</name>
@@ -25,6 +14,14 @@
         </meal>
       </category>
       <category name="CampusWorld">
+        <meal>
+          <name>Zitronenbulgur mit Linsen Hirsen Bällchen und Sojajoghurt Dip (So,Sl,GlW,GlH)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.25</price>
+          <price role="other">6.45</price>
+          <price role="student">3.95</price>
+        </meal>
         <meal>
           <name>scharfe Kokos-Limonen-Suppe mit Udon-Nudeln (2,3,So,Sl,Se,Sw,GlW)</name>
           <note>Vegan</note>
@@ -49,17 +46,17 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Penne (GlW), Tomaten- Gemüsesoße mit Auberginen, Zucchini und Kapern</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Tortellini mit Käsefüllung (Mi,GlW), Zucchini und Walnüssen in Sahnesoße (Mi,GlW,GlG,NWa)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Tortellini mit Käsefüllung (Mi,GlW), Zucchini und Walnüssen in Sahnesoße (Mi,GlW,GlG,NWa)</name>
-          <note>Vegetarisch</note>
+          <name>Penne (GlW), Tomaten- Gemüsesoße mit Auberginen, Zucchini und Kapern</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -79,19 +76,19 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Hausgemachte Pasta (GlW), hausgemachtes rote Beete Pesto mit Hartkäse und Ruccola (Mi,NMa)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.40</price>
-          <price role="student">3.90</price>
-        </meal>
-        <meal>
           <name>Gebackene Planted Nuggets mit Waffel, Avocado und Chili Cheese Dip (2,3,Ei,So,Mi,GlW,GlG), Baby Spinatsalat</name>
           <note>Senf und Senferzeugnisse</note>
           <note>Vegetarisch</note>
           <price role="employee">7.25</price>
           <price role="other">8.45</price>
           <price role="student">5.95</price>
+        </meal>
+        <meal>
+          <name>Hausgemachte Pasta (GlW), hausgemachtes rote Beete Pesto mit Hartkäse und Ruccola (Mi,NMa)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">5.20</price>
+          <price role="other">6.40</price>
+          <price role="student">3.90</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -184,11 +181,12 @@
     <day date="2025-06-26">
       <category name="CampusWorld">
         <meal>
-          <name>Hausgemachte Pasta (GlW), Pasta funghi mit braunen Champignons, gebratener Paneer (2,So,Mi,GlW,NWa)</name>
+          <name>Gebratene Pierogi mit Kartoffel-Quarkfüllung mit Kastanien pesto (1,2,Ei,Mi,Sl,GlW,NMa), Rote Beete Salat</name>
           <note>Vegetarisch</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.40</price>
-          <price role="student">3.90</price>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">5.70</price>
+          <price role="other">6.90</price>
+          <price role="student">4.40</price>
         </meal>
         <meal>
           <name>Korean Planted Duck Bowl mit marinierter Planted Duck, Broccoli, Rotkohl, Basmatireis und Erdnussdip (1,2,3,En,So,Se,GlW,GlH)</name>
@@ -200,12 +198,11 @@
           <price role="student">6.30</price>
         </meal>
         <meal>
-          <name>Gebratene Pierogi mit Kartoffel-Quarkfüllung mit Kastanien pesto (1,2,Ei,Mi,Sl,GlW,NMa), Rote Beete Salat</name>
+          <name>Hausgemachte Pasta (GlW), Pasta funghi mit braunen Champignons, gebratener Paneer (2,So,Mi,GlW,NWa)</name>
           <note>Vegetarisch</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">5.70</price>
-          <price role="other">6.90</price>
-          <price role="student">4.40</price>
+          <price role="employee">5.20</price>
+          <price role="other">6.40</price>
+          <price role="student">3.90</price>
         </meal>
       </category>
       <category name="Pastabar">
