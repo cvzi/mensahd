@@ -6,7 +6,9 @@
     <day date="2025-06-24">
       <category name="Vorspeise">
         <meal>
-          <name>Tagessuppe</name>
+          <name>Tomatensuppe</name>
+          <note>Sellerie</note>
+          <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -43,6 +45,16 @@
           <price role="employee">7.40</price>
           <price role="student">4.90</price>
         </meal>
+        <meal>
+          <name>Lasagne mit Tomatensauce</name>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Rind</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <price role="employee">7.60</price>
+          <price role="student">5.10</price>
+        </meal>
       </category>
       <category name="Aktion">
         <meal>
@@ -58,32 +70,20 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Tagesgemüse</name>
+          <name>Kaisergemüse</name>
+          <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
         <meal>
-          <name>Gemüsezartweizen</name>
-          <note>Weizen</note>
-          <note>vegan</note>
+          <name>Kartoffelpüree</name>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Farbstoffen</note>
+          <note>vegetarisch</note>
           <price role="employee">1.49</price>
           <price role="student">1.09</price>
-        </meal>
-        <meal>
-          <name>Kartoffelsalat</name>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>vegan</note>
-          <price role="employee">1.69</price>
-          <price role="student">1.29</price>
-        </meal>
-        <meal>
-          <name>Pommes frites</name>
-          <note>vegan</note>
-          <price role="employee">1.69</price>
-          <price role="student">1.29</price>
         </meal>
       </category>
       <category name="Salat">
@@ -102,6 +102,14 @@
           <note>vegan</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
+        </meal>
+        <meal>
+          <name>Kirschjoghurt</name>
+          <note>Milch und Laktose</note>
+          <note>mit Farbstoffen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.49</price>
+          <price role="student">1.09</price>
         </meal>
       </category>
       <category name="Buffet">
