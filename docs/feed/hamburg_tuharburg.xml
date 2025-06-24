@@ -6,7 +6,7 @@
     <day date="2025-06-24">
       <category name="Pottkieker">
         <meal>
-          <name>Indisches Linsencurry (Sf,GlW), Couscous (GlW)</name>
+          <name>Indisches Linsencurry (Sl,Sf,GlW), Couscous (GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">3.50</price>
@@ -16,7 +16,7 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Homemade paniertes Putenschnitzel (Ei,GlW), Pfefferrahmsoße , Kartoffelspalten (GlW)</name>
+          <name>Homemade paniertes Putenschnitzel Pariser Art in Käse-Ei-Hülle (Ei,Mi,GlW), Pfefferrahmsoße , Kartoffelspalten (GlW)</name>
           <note>Geflügel</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <price role="employee">6.20</price>
@@ -44,7 +44,7 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Vollkorn Fussili (GlW), Sonnenblumenhack-Lauchcreme (1,So,Sl,Sf,GlW)</name>
+          <name>Pasta nach Wahl (GlW), Vegane BBQ Sahnesoße (Sf,GlH)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
@@ -52,9 +52,25 @@
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Vollkorn Fussili (GlW), Hähnchenstreifen in Tomatensoße</name>
-          <note>Geflügel</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>vegane Spanische Albondigas in Tomaten-Paprikasugo (So,GlW,GlG)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Pasta nach Wahl (GlW), Fleischsoße mit Zwiebeln</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwein</note>
+          <note>Senf und Senferzeugnisse</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Pasta nach Wahl (GlW), Sonnenblumenhack-Bolognese (1,So,Sl,Sf,GlW)</name>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
@@ -63,9 +79,7 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Gelbe und Grüne Zucchini mit Cherrytomaten und Oliven , Fenchelgemüse , Süßkartoffelwürfel gebacken, gerösteter Broccoli, Reis</name>
-          <note>Geschwärzt</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Schwarzwurzeln, Fingermöhrchen, Brechbohnen, Asiatische Gemüsesoße (1,2,9,So,Sl,GlW), Reis</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
@@ -87,6 +101,18 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
+          <name>vegane Currybratwurst , Grillsoße , Pommes Frites</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">5.65</price>
+          <price role="other">6.85</price>
+          <price role="student">4.35</price>
+        </meal>
+        <meal>
           <name>Currybratwurst , Grillsoße , Pommes Frites</name>
           <note>Schwein</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -100,18 +126,6 @@
           <price role="employee">5.90</price>
           <price role="other">7.10</price>
           <price role="student">4.60</price>
-        </meal>
-        <meal>
-          <name>vegane Currybratwurst , Grillsoße , Pommes Frites</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">5.65</price>
-          <price role="other">6.85</price>
-          <price role="student">4.35</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -194,18 +208,18 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Korean Planted Duck Bowl mit marinierter Planted Duck, Broccoli, Rotkohl, Basmatireis und Erdnussdip (1,2,3,En,So,Se,GlW,GlH)</name>
+          <name>Korean Beef Bowl mit mariniertem Rindfleisch, Broccoli, Rotkohl, Bsmatireis und Erdnussdip (1,2,3,En,So,Se,GlW)</name>
           <note>Alkohol</note>
-          <note>Vegan</note>
+          <note>Rind</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">7.60</price>
           <price role="other">8.80</price>
           <price role="student">6.30</price>
         </meal>
         <meal>
-          <name>Korean Beef Bowl mit mariniertem Rindfleisch, Broccoli, Rotkohl, Bsmatireis und Erdnussdip (1,2,3,En,So,Se,GlW)</name>
+          <name>Korean Planted Duck Bowl mit marinierter Planted Duck, Broccoli, Rotkohl, Basmatireis und Erdnussdip (1,2,3,En,So,Se,GlW,GlH)</name>
           <note>Alkohol</note>
-          <note>Rind</note>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">7.60</price>
           <price role="other">8.80</price>
@@ -288,18 +302,18 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Eliche (GlW), Sojahack in einer Paprika Cremesoße</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Farfalle (GlW), Austernpilze in Sahnesoße (Mi,Sl,GlW,GlG)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Farfalle (GlW), Austernpilze in Sahnesoße (Mi,Sl,GlW,GlG)</name>
-          <note>Vegetarisch</note>
+          <name>Eliche (GlW), Sojahack in einer Paprika Cremesoße</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -375,17 +389,17 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Gnocchi, Tomatensoße aus getrockneten Tomaten mit Basilikum (2,5,Mi,Sw,GlW,GlG)</name>
-          <note>Vegetarisch</note>
+          <name>Gnocchi, Tomatensoße mit Schweinefleischstreifen, Zucchini und Champignons</name>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Gnocchi, Tomatensoße mit Schweinefleischstreifen, Zucchini und Champignons</name>
-          <note>Schwein</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Gnocchi, Tomatensoße aus getrockneten Tomaten mit Basilikum (2,5,Mi,Sw,GlW,GlG)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -652,20 +666,20 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Veganes Knusperschnitzel (GlW), Bratkartoffeln, Gurkensalat, Zitrone</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.20</price>
-          <price role="other">7.40</price>
-          <price role="student">4.90</price>
-        </meal>
-        <meal>
           <name>veganer Wrap Pulled BBQ mit Salat (So,Sf,Sw,GlW,GlH)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">5.10</price>
           <price role="other">6.30</price>
           <price role="student">3.80</price>
+        </meal>
+        <meal>
+          <name>Veganes Knusperschnitzel (GlW), Bratkartoffeln, Gurkensalat, Zitrone</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.40</price>
+          <price role="student">4.90</price>
         </meal>
       </category>
       <category name="Pastabar">
