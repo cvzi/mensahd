@@ -26,6 +26,14 @@
       </category>
       <category name="CampusWorld">
         <meal>
+          <name>Mezze Teller, Harissa- Rinderhack mit griechischem Joghurt, Wrap (Mi,GlW), Hummus , Tabuleh-Salat (GlW), Tomaten-Sonnenblumenkern-Salsa</name>
+          <note>Rind</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <price role="employee">7.25</price>
+          <price role="other">8.45</price>
+          <price role="student">5.95</price>
+        </meal>
+        <meal>
           <name>Mezze Teller, Harissa- Sonnenblumenhack mit veganem Joghurt, Wrap (So,Sl,Sf,GlW), Hummus , Tabuleh-Salat (GlW), Tomaten-Sonnenblumenkern-Salsa</name>
           <note>Sesamsamen und Sesamsamenerzeugnisse</note>
           <note>Vegan</note>
@@ -34,29 +42,21 @@
           <price role="other">8.45</price>
           <price role="student">5.95</price>
         </meal>
-        <meal>
-          <name>Mezze Teller, Harissa- Rinderhack mit griechischem Joghurt, Wrap (Mi,GlW), Hummus , Tabuleh-Salat (GlW), Tomaten-Sonnenblumenkern-Salsa</name>
-          <note>Rind</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <price role="employee">7.25</price>
-          <price role="other">8.45</price>
-          <price role="student">5.95</price>
-        </meal>
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Penne (GlW), Rinderhackfleisch in Sahnesoße mit Kräutern</name>
+          <name>Penne (GlW), Tomaten-Sahnesoße mit Zucchiniwürfel</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Rind</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Penne (GlW), Tomaten-Sahnesoße mit Zucchiniwürfel</name>
+          <name>Penne (GlW), Rinderhackfleisch in Sahnesoße mit Kräutern</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -169,13 +169,6 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Veganes Vischbrötchen mit Brunnenkressecreme und Radieschen- Gurkensalat (3,5,So,Mi,Sf,Sw,GlW), Amazing Fries</name>
-          <note>Vegetarisch</note>
-          <price role="employee">7.25</price>
-          <price role="other">8.45</price>
-          <price role="student">5.95</price>
-        </meal>
-        <meal>
           <name>Veganer Crispy Caesar Burger (3,Sf,GlW,GlG), Pommes Frites</name>
           <note>Senf und Senferzeugnisse</note>
           <note>Vegan</note>
@@ -184,21 +177,28 @@
           <price role="other">7.50</price>
           <price role="student">5.00</price>
         </meal>
+        <meal>
+          <name>Veganes Vischbrötchen mit Brunnenkressecreme und Radieschen- Gurkensalat (3,5,So,Mi,Sf,Sw,GlW), Amazing Fries</name>
+          <note>Vegetarisch</note>
+          <price role="employee">7.25</price>
+          <price role="other">8.45</price>
+          <price role="student">5.95</price>
+        </meal>
       </category>
       <category name="Pastabar">
-        <meal>
-          <name>Farfalle (GlW), Austernpilze in Sahnesoße (Mi,Sl,GlW,GlG)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
         <meal>
           <name>Eliche (GlW), Sojahack in einer Paprika Cremesoße</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Farfalle (GlW), Austernpilze in Sahnesoße (Mi,Sl,GlW,GlG)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -480,16 +480,16 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>gebratene Hähnchenstreifen und Auberginen in Tomatensoße (Sw,GlW)</name>
-          <note>Geflügel</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Tortellini mit Käsefüllung (Mi,GlW), Zucchini und Walnüssen in Sahnesoße (Mi,GlW,GlG,NWa)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Tortellini mit Käsefüllung (Mi,GlW), Zucchini und Walnüssen in Sahnesoße (Mi,GlW,GlG,NWa)</name>
-          <note>Vegetarisch</note>
+          <name>gebratene Hähnchenstreifen und Auberginen in Tomatensoße (Sw,GlW)</name>
+          <note>Geflügel</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
