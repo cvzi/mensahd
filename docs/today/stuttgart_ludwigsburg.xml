@@ -3,12 +3,19 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-06-30">
+    <day date="2025-07-01">
+      <category name="Vorspeise">
+        <meal>
+          <name>Tagessuppe</name>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
       <category name="Veganer renner">
         <meal>
-          <name>Tomaten-Bulgur mit Haselnüssen</name>
-          <note>Haselnüsse</note>
-          <note>Weizen</note>
+          <name>Kichererbsen-Curry mit Duftreis</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -16,45 +23,54 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Allgäuer Käsespätzle mit Zwiebelschmelze</name>
-          <note>Dinkel</note>
+          <name>Kaiserschmarrn mit Rosinen und Apfelmus</name>
           <note>Ei</note>
+          <note>Mandeln</note>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>vegetarisch</note>
+          <price role="employee">5.60</price>
+          <price role="student">3.10</price>
+        </meal>
+        <meal>
+          <name>Bandnudeln mit Pesto</name>
+          <note>Mandeln</note>
           <note>Milch und Laktose</note>
           <note>Weizen</note>
           <note>vegetarisch</note>
-          <price role="employee">7.00</price>
-          <price role="student">4.50</price>
+          <price role="employee">5.80</price>
+          <price role="student">3.30</price>
         </meal>
         <meal>
-          <name>5 Mini Nürnberger Bratwürste mit Nudelsalat</name>
+          <name>Schweinegulasch mit Paprika und Spätzle</name>
+          <note>Dinkel</note>
           <note>Ei</note>
-          <note>Milch und Laktose</note>
           <note>Schwein</note>
-          <note>Senf</note>
           <note>Weizen</note>
-          <note>mit Farbstoffen</note>
-          <price role="employee">7.40</price>
-          <price role="student">4.90</price>
-        </meal>
-        <meal>
-          <name>Frittierte Tintenfischringe mit Zitrone, Knoblauch-Dip und Pommes frites</name>
-          <note>Ei</note>
-          <note>Milch und Laktose</note>
-          <note>Senf</note>
-          <note>Weichtiere</note>
-          <note>Weizen</note>
-          <note>mit Farbstoffen</note>
           <price role="employee">7.90</price>
           <price role="student">5.40</price>
         </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Sommergemüse</name>
-          <note>Sellerie</note>
-          <note>vegan</note>
+          <name>Tagesgemüse</name>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Duftreis</name>
+          <note>vegan</note>
+          <price role="employee">1.49</price>
+          <price role="student">1.09</price>
+        </meal>
+        <meal>
+          <name>Kroketten</name>
+          <note>Roggen</note>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
         </meal>
         <meal>
           <name>Pommes frites</name>
@@ -72,14 +88,13 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Himbeerquark</name>
+          <name>Creme mit Tiramisu-Geschmack</name>
           <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Mousse mit Blutorangen-Geschmack</name>
+          <name>Buttermilchdessert Limette Zitrone</name>
           <note>Milch und Laktose</note>
           <note>vegetarisch</note>
           <price role="employee">1.69</price>
