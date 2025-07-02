@@ -3,21 +3,29 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-07-01">
+    <day date="2025-07-02">
       <category name="Vorspeise">
         <meal>
-          <name>Gemüsebrühe mit frischen Kräutern</name>
+          <name>Kartoffel-Hasselnusssuppe</name>
+          <note>Haselnüsse</note>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
-          <note>vegan</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Kichererbsen-Curry mit Duftreis</name>
+          <name>Veganes Gyros mit veganem Tzatziki, Paprikareis und Weißkrautsalat</name>
+          <note>Hafer</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Soja</note>
+          <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -25,64 +33,51 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Bandnudeln mit Pesto</name>
-          <note>Mandeln</note>
-          <note>Milch und Laktose</note>
-          <note>Weizen</note>
-          <note>vegetarisch</note>
-          <price role="employee">5.80</price>
-          <price role="student">3.30</price>
+          <name>Tomaten-Hirse mit Haselnüssen</name>
+          <note>Haselnüsse</note>
+          <note>vegan</note>
+          <price role="employee">5.40</price>
+          <price role="student">2.90</price>
         </meal>
         <meal>
-          <name>Schweinegulasch mit Paprika und Spätzle</name>
-          <note>Dinkel</note>
+          <name>Geröstete Schinkennudeln mit Ei</name>
           <note>Ei</note>
           <note>Schwein</note>
           <note>Weizen</note>
-          <price role="employee">7.90</price>
-          <price role="student">5.40</price>
-        </meal>
-        <meal>
-          <name>Hamburger vegan</name>
-          <note>Senf</note>
-          <note>Sesam</note>
-          <note>Weizen</note>
           <note>mit Antioxidationsmitteln</note>
           <note>mit Konservierungsstoffen</note>
-          <note>mit Süßungsmitteln</note>
-          <note>vegan</note>
-          <price role="employee">7.40</price>
-          <price role="student">4.90</price>
+          <note>mit Phosphaten</note>
+          <price role="employee">6.70</price>
+          <price role="student">4.20</price>
         </meal>
         <meal>
-          <name>Hamburger</name>
+          <name>Paniertes Schweineschnitzel mit Pilzsauce und Kräuterknöpfle</name>
+          <note>Dinkel</note>
           <note>Ei</note>
-          <note>Rind</note>
-          <note>Senf</note>
-          <note>Sesam</note>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Schwein</note>
           <note>Weizen</note>
-          <note>mit Konservierungsstoffen</note>
-          <note>mit Süßungsmitteln</note>
-          <price role="employee">8.40</price>
-          <price role="student">5.90</price>
+          <price role="employee">7.70</price>
+          <price role="student">5.20</price>
         </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Ratatouille-Gemüse</name>
+          <name>Gemischtes Gemüse</name>
           <note>Sellerie</note>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
         <meal>
-          <name>Duftreis</name>
+          <name>Paprikareis</name>
           <note>vegan</note>
           <price role="employee">1.49</price>
           <price role="student">1.09</price>
         </meal>
         <meal>
-          <name>Spätzle</name>
+          <name>Kräuterknöpfle</name>
           <note>Dinkel</note>
           <note>Ei</note>
           <note>Weizen</note>
@@ -91,8 +86,10 @@
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Country Potatoes</name>
+          <name>Kroketten</name>
+          <note>Roggen</note>
           <note>Weizen</note>
+          <note>vegan</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
@@ -107,17 +104,23 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Exotischer Obstsalat</name>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>mit Antioxidationsmitteln</note>
+          <name>Erdbeerquark Sahneschokopudding</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
+        </meal>
+        <meal>
+          <name>Veganer Hafer Schokopudding</name>
+          <note>Hafer</note>
           <note>vegan</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Himbeerquark Sahneschokopudding</name>
-          <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
+          <name>Veganer Hafer Schokopudding</name>
+          <note>Hafer</note>
+          <note>vegan</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
