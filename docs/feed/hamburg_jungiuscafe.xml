@@ -3,31 +3,10 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-07-02">
-      <category name="CampusSpezial">
-        <meal>
-          <name>Linsen Hirsebällchen (GlW,GlH), Bulgur Tomaten Salat (3,5,Sw,GlW), hausgemachtes Petersilienpesto, Rucola</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.10</price>
-          <price role="other">7.30</price>
-          <price role="student">4.80</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Putenschnitzel Piccata Milanese (Ei,Mi,GlW), Tomaten- Basilikumsoße, Spaghetti (GlW)</name>
-          <note>Geflügel</note>
-          <price role="employee">7.25</price>
-          <price role="other">8.45</price>
-          <price role="student">5.95</price>
-        </meal>
-      </category>
-    </day>
     <day date="2025-07-03">
       <category name="Pottkieker">
         <meal>
-          <name>Minestrone (Sl,Sw,GlW), Ciabatta (GlW,GlG)</name>
+          <name>Minestrone (Sl,Sw,GlW), Fladenbrot (Se,GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">3.50</price>
@@ -185,6 +164,15 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
+          <name>5 Nürnberger Bratwürstchen, Sauerkraut (vegan) , hausgemachtes Kartoffelpüree</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <price role="employee">5.45</price>
+          <price role="other">6.65</price>
+          <price role="student">4.15</price>
+        </meal>
+        <meal>
           <name>Gemüsefrikadelle (Sl,GlW), Sauerkraut (vegan) , hausgemachtes Kartoffelpüree</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -193,14 +181,31 @@
           <price role="other">6.40</price>
           <price role="student">3.90</price>
         </meal>
+      </category>
+    </day>
+    <day date="2025-07-11">
+      <category name="CampusKlassiker">
         <meal>
-          <name>5 Nürnberger Bratwürstchen, Sauerkraut (vegan) , hausgemachtes Kartoffelpüree</name>
+          <name>Mac and Cheese (1,Mi,Sl,Sf,GlW), Eisbergsalat mit Tomate</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">5.50</price>
+          <price role="other">6.70</price>
+          <price role="student">4.20</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Kartoffel-Quark-Auflauf mit Broccoli , Kerbelsoße (Mi,GlW,GlG), Radieschensalat</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Geschwefelt</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwein</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <price role="employee">5.45</price>
-          <price role="other">6.65</price>
-          <price role="student">4.15</price>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegetarisch</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.40</price>
+          <price role="student">4.90</price>
         </meal>
       </category>
     </day>
