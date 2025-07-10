@@ -3,67 +3,6 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-07-09">
-      <category name="CampusVital">
-        <meal>
-          <name>vegane Tom Kha Suppe mit Kokosmilch,Tofu und Basmatireis (2,3,So,Sw,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.90</price>
-          <price role="other">7.10</price>
-          <price role="student">4.60</price>
-        </meal>
-      </category>
-      <category name="CampusSpezial">
-        <meal>
-          <name>Hausgemachter Kartoffelstampf , Sauerkraut (vegan) , gebratene Champingnons und Creme Fraiche</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegetarisch</note>
-          <price role="employee">5.60</price>
-          <price role="other">6.80</price>
-          <price role="student">4.30</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Pikanter Linseneintopf mit Kartoffel, Tomate, Dattel, Rosinen und Falafel (3,5,Sl,Sf,Sw,GlW), Baguette (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.35</price>
-          <price role="other">6.55</price>
-          <price role="student">4.05</price>
-        </meal>
-      </category>
-      <category name="Pastabar">
-        <meal>
-          <name>Pasta (GlW), Champignons, Austernpilze und Mischpilze in Sahnesoße (3,Mi,Sl,Sw,GlW,GlG)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>Pasta (GlW), Tomatensoße und Sojawürfeln und Jalapenos (2,So,Se,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-      </category>
-      <category name="Gemüsebar">
-        <meal>
-          <name>Weiße Bohnen meditteraneo, spanisches Kartoffelgemüse, gebratene Zucchini, Couscous mit Mandeln, Rosinen und Chili (Sl,GlW,NMa)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-      </category>
-    </day>
     <day date="2025-07-10">
       <category name="CampusVital">
         <meal>
@@ -80,6 +19,14 @@
       </category>
       <category name="CampusSpezial">
         <meal>
+          <name>Spitzkohl in Rahm , Spinatknödel mit gerösteten Kartoffelwürfel (Ei,Mi,GlW)</name>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <price role="employee">6.00</price>
+          <price role="other">7.20</price>
+          <price role="student">4.70</price>
+        </meal>
+        <meal>
           <name>Gnocchi mit Tomaten Dattelsoße mit gebratenen Auberginen</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -90,29 +37,9 @@
           <price role="student">5.20</price>
         </meal>
       </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Hausgemachte Pasta (GlW), Paprikacreme mit Ricotta Salata</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.40</price>
-          <price role="student">3.90</price>
-        </meal>
-      </category>
       <category name="Pastabar">
         <meal>
-          <name>Fusilli (GlW), Sojahack in einer Paprika Cremesoße</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>Fusilli (GlW), Blattspinat und Oliven</name>
+          <name>Pasta (GlW), Blattspinat und Oliven</name>
           <note>Senf und Senferzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -121,10 +48,20 @@
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
+        <meal>
+          <name>Pasta (GlW), Sojahack in einer Paprika Cremesoße</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>gerösteter Broccoli, Steckrüben-Möhren Gemüse , Spitzkohl, Spätzle (Ei,Mi,GlW)</name>
+          <name>gerösteter Broccoli, Steckrüben-Möhren Gemüse , Spätzle (Ei,Mi,GlW)</name>
           <note>Vegetarisch</note>
           <note>mit Farbstoff</note>
           <price role="employee">1.10</price>
@@ -321,6 +258,16 @@
       </category>
       <category name="CampusWorld">
         <meal>
+          <name>Vollkorn-PerlcousCous-Salat mit Kichererbsen und grünem Spargel, Grapefruit und Babyspinat (GlW), Linsen Hirsebällchen (GlW,GlH), süßer Senf Dip</name>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">7.20</price>
+          <price role="other">8.40</price>
+          <price role="student">5.90</price>
+        </meal>
+        <meal>
           <name>veganer Grillteller (2,So,GlW,GlG), Ajvar Dip , Weißkrautsalat , Reis</name>
           <note>Geschwefelt</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
@@ -332,16 +279,6 @@
           <price role="employee">6.50</price>
           <price role="other">7.70</price>
           <price role="student">5.20</price>
-        </meal>
-        <meal>
-          <name>Vollkorn-PerlcousCous-Salat mit Kichererbsen und grünem Spargel, Grapefruit und Babyspinat (GlW), Linsen Hirsebällchen (GlW,GlH), süßer Senf Dip</name>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">7.20</price>
-          <price role="other">8.40</price>
-          <price role="student">5.90</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -405,16 +342,16 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Stortelli Rigati (GlW), Aglio e olio mit Tomate und Knoblauch in Olivenöl</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Stortelli Rigati (GlW), Pilzen und Zucchini in Mozzarella- Sahnesoße (Mi,GlW,GlG)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Stortelli Rigati (GlW), Pilzen und Zucchini in Mozzarella- Sahnesoße (Mi,GlW,GlG)</name>
-          <note>Vegetarisch</note>
+          <name>Stortelli Rigati (GlW), Aglio e olio mit Tomate und Knoblauch in Olivenöl</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
