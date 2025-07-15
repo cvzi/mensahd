@@ -3,8 +3,31 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-07-14">
+    <day date="2025-07-15">
       <category name="CampusWorld">
+        <meal>
+          <name>Levante Burger mit gebackenem Rote Beete Patty, geschmorten Aubergine, Hummus und Minzsalat (3,Mi,Se,Sw,GlW), Pommes Frites</name>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <price role="employee">7.00</price>
+          <price role="other">8.20</price>
+          <price role="student">5.70</price>
+        </meal>
+        <meal>
+          <name>Levante Burger mit Knusperschnitzel, geschmorten Aubergine, Hummus und Minzsalat (3,Mi,Se,Sw,GlW), Pommes Frites</name>
+          <note>Geflügel</note>
+          <note>Senf und Senferzeugnisse</note>
+          <price role="employee">6.00</price>
+          <price role="other">7.20</price>
+          <price role="student">4.70</price>
+        </meal>
+        <meal>
+          <name>Vollkorn-Pastasalat mit Hirtenkäse, Staudensellerie und Trauben (3,5,Mi,Sl,Sw,GlW,NWa), Hähnchenbrust natur gebraten (GlW)</name>
+          <note>Geflügel</note>
+          <price role="employee">7.20</price>
+          <price role="other">8.40</price>
+          <price role="student">5.90</price>
+        </meal>
         <meal>
           <name>Kartoffel-Bohnen-Pot mit Dillschmand, Matjes und Salat</name>
           <note>Fisch und Fischerzeugnisse</note>
@@ -15,76 +38,6 @@
           <price role="employee">6.00</price>
           <price role="other">7.20</price>
           <price role="student">4.70</price>
-        </meal>
-        <meal>
-          <name>Frisches Putensteak vom Grill mit Bulgur, Sesamkarotten und Joghurtdip (Mi,Sl,Se,GlW)</name>
-          <note>Geflügel</note>
-          <price role="employee">7.75</price>
-          <price role="other">8.95</price>
-          <price role="student">6.45</price>
-        </meal>
-      </category>
-      <category name="Pastabar">
-        <meal>
-          <name>Pasta mit Brokkoli und Blumenkohl in Sahnesauce (Mi,Sl,GlW,GlG)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-      </category>
-      <category name="Gemüsebar">
-        <meal>
-          <name>gebratenes Kichererbsencurry, Cous Cous arabisch (Sl,GlW,NMa,NWa)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>gebratene Mungosprossen (2,So,Se,GlW), Spicy Erbsen , gebratene Curry - Zucchini, orientalische Zuckermöhren, Sesam-Blumenkohl , gebratenem Wirsing</name>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>Kartoffelspalten (GlW), Röstiecken, Kartoffel - Blumenkohlgratin (Mi,GlW,GlG), gebackene Cajun-Kartoffeln</name>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-      </category>
-    </day>
-    <day date="2025-07-15">
-      <category name="CampusWorld">
-        <meal>
-          <name>Levante Burger mit Knusperschnitzel, geschmorten Aubergine, Hummus und Minzsalat (3,Mi,Se,Sw,GlW), Pommes Frites</name>
-          <note>Geflügel</note>
-          <note>Senf und Senferzeugnisse</note>
-          <price role="employee">7.70</price>
-          <price role="other">8.90</price>
-          <price role="student">6.40</price>
-        </meal>
-        <meal>
-          <name>Levante Burger mit gebackenem Rote Beete Patty, geschmorten Aubergine, Hummus und Minzsalat (3,Mi,Se,Sw,GlW), Pommes Frites</name>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegetarisch</note>
-          <price role="employee">7.00</price>
-          <price role="other">8.20</price>
-          <price role="student">5.70</price>
-        </meal>
-        <meal>
-          <name>Vollkorn-Pastasalat mit Hirtenkäse, Staudensellerie und Trauben (3,5,Mi,Sl,Sw,GlW,NWa), Hähnchenbrust natur gebraten (GlW)</name>
-          <note>Geflügel</note>
-          <price role="employee">7.20</price>
-          <price role="other">8.40</price>
-          <price role="student">5.90</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -99,17 +52,16 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Gebackenes / Frittiertes:, Kartoffelspalten (GlW), Steakhouse - Pommes, Röstiecken, Röstinchen, Herzoginkartoffeln , Kroketten (GlW), Aufläufe:, Kartoffelgratin , Kartoffel - Gemüsegratin (Mi,GlW,GlG), Kartoffel - Blumenkohlgratin</name>
-          <note>Ei und Eierzeugnisse</note>
+          <name>Curry und Ragout:, orientalischer CousCous (Sl,GlW,NMa,NWa), orientalisches Kichererbsen - Tomatenragout, gebratenes Kichererbsencurry, Kicherserbsen Tomatenragout, Kartoffelragout in Dillsahne , weißes Bohnencurry , Dal Tadka - mit roten</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
           <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>(Mi,GlW,G</name>
+          <name>Linsen u</name>
         </meal>
         <meal>
           <name>gebratene Mungosprossen (2,So,Se,GlW), Bohne:, gebratene Bohnen, Bohnen mit Knoblauch und Ingwer, Erbsen:, Erbsen, Spicy Erbsen , Blumenkohl:, Blumenkohl, gebackener Cajun - Blumenkohl, gebackener Tandoori - Blumenkohl , Blumenkohl mit</name>
@@ -125,16 +77,17 @@
           <name>Sesammarin</name>
         </meal>
         <meal>
-          <name>Curry und Ragout:, orientalischer CousCous (Sl,GlW,NMa,NWa), orientalisches Kichererbsen - Tomatenragout, gebratenes Kichererbsencurry, Kicherserbsen Tomatenragout, Kartoffelragout in Dillsahne , weißes Bohnencurry , Dal Tadka - mit roten</name>
+          <name>Gebackenes / Frittiertes:, Kartoffelspalten (GlW), Steakhouse - Pommes, Röstiecken, Röstinchen, Herzoginkartoffeln , Kroketten (GlW), Aufläufe:, Kartoffelgratin , Kartoffel - Gemüsegratin (Mi,GlW,GlG), Kartoffel - Blumenkohlgratin</name>
+          <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Senf und Senferzeugnisse</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Linsen u</name>
+          <name>(Mi,GlW,G</name>
         </meal>
       </category>
     </day>
@@ -234,18 +187,6 @@
     <day date="2025-07-17">
       <category name="CampusWorld">
         <meal>
-          <name>Wildlachs-Bowl mit Avocado, Brokkoli, Mandeln und Granatapfel (1,2,3,Fi,So,Se,GlW,NMa), Wasabi Dip</name>
-          <note>Alkohol</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>mit Farbstoff</note>
-          <note>mit Fisch</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">7.80</price>
-          <price role="other">9.00</price>
-          <price role="student">6.50</price>
-        </meal>
-        <meal>
           <name>Ägyptische Falafel mit persischem Gewürzreis (Sl,Se,GlW), Pfirsich-Tomaten-Chutney</name>
           <note>Geschwefelt</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
@@ -256,6 +197,18 @@
           <price role="employee">5.70</price>
           <price role="other">6.90</price>
           <price role="student">4.40</price>
+        </meal>
+        <meal>
+          <name>Wildlachs-Bowl mit Avocado, Brokkoli, Mandeln und Granatapfel (1,2,3,Fi,So,Se,GlW,NMa), Wasabi Dip</name>
+          <note>Alkohol</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>mit Farbstoff</note>
+          <note>mit Fisch</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">7.80</price>
+          <price role="other">9.00</price>
+          <price role="student">6.50</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -270,16 +223,17 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Curry und Ragout:, orientalischer CousCous (Sl,GlW,NMa,NWa), orientalisches Kichererbsen - Tomatenragout, gebratenes Kichererbsencurry, Kicherserbsen Tomatenragout, Kartoffelragout in Dillsahne , weißes Bohnencurry , Dal Tadka - mit roten</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <name>gebratene Mungosprossen (2,So,Se,GlW), Bohne:, gebratene Bohnen, Bohnen mit Knoblauch und Ingwer, Erbsen:, Erbsen, Spicy Erbsen , Blumenkohl:, Blumenkohl, gebackener Cajun - Blumenkohl, gebackener Tandoori - Blumenkohl , Blumenkohl mit</name>
           <note>Senf und Senferzeugnisse</note>
           <note>Vegetarisch</note>
+          <note>mit Farbstoff</note>
+          <note>mit Konservierungsstoff</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Linsen u</name>
+          <name>Sesammarin</name>
         </meal>
         <meal>
           <name>Gebackenes / Frittiertes:, Kartoffelspalten (GlW), Steakhouse - Pommes, Röstiecken, Röstinchen, Herzoginkartoffeln , Kroketten (GlW), Aufläufe:, Kartoffelgratin , Kartoffel - Gemüsegratin (Mi,GlW,GlG), Kartoffel - Blumenkohlgratin</name>
@@ -295,17 +249,16 @@
           <name>(Mi,GlW,G</name>
         </meal>
         <meal>
-          <name>gebratene Mungosprossen (2,So,Se,GlW), Bohne:, gebratene Bohnen, Bohnen mit Knoblauch und Ingwer, Erbsen:, Erbsen, Spicy Erbsen , Blumenkohl:, Blumenkohl, gebackener Cajun - Blumenkohl, gebackener Tandoori - Blumenkohl , Blumenkohl mit</name>
+          <name>Curry und Ragout:, orientalischer CousCous (Sl,GlW,NMa,NWa), orientalisches Kichererbsen - Tomatenragout, gebratenes Kichererbsencurry, Kicherserbsen Tomatenragout, Kartoffelragout in Dillsahne , weißes Bohnencurry , Dal Tadka - mit roten</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Senf und Senferzeugnisse</note>
           <note>Vegetarisch</note>
-          <note>mit Farbstoff</note>
-          <note>mit Konservierungsstoff</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Sesammarin</name>
+          <name>Linsen u</name>
         </meal>
       </category>
     </day>
@@ -389,6 +342,14 @@
     <day date="2025-07-21">
       <category name="CampusWorld">
         <meal>
+          <name>Spanischer Linseneintopf mit veganen Hackbällchen (3,5,So,Sl,Sf,Sw,GlW,GlG), Fladenbrot (Se,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.35</price>
+          <price role="other">6.55</price>
+          <price role="student">4.05</price>
+        </meal>
+        <meal>
           <name>Putensteak, Kräuterdip , Broccoli, gebratene Drillinge</name>
           <note>Geflügel</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -397,14 +358,6 @@
           <price role="employee">7.80</price>
           <price role="other">9.00</price>
           <price role="student">6.50</price>
-        </meal>
-        <meal>
-          <name>Spanischer Linseneintopf mit veganen Hackbällchen (3,5,So,Sl,Sf,Sw,GlW,GlG), Fladenbrot (Se,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.35</price>
-          <price role="other">6.55</price>
-          <price role="student">4.05</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -418,18 +371,6 @@
         </meal>
       </category>
       <category name="Gemüsebar">
-        <meal>
-          <name>Curry und Ragout:, orientalischer CousCous (Sl,GlW,NMa,NWa), orientalisches Kichererbsen - Tomatenragout, gebratenes Kichererbsencurry, Kicherserbsen Tomatenragout, Kartoffelragout in Dillsahne , weißes Bohnencurry , Dal Tadka - mit roten</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>Linsen u</name>
-        </meal>
         <meal>
           <name>gebratene Mungosprossen (2,So,Se,GlW), Bohne:, gebratene Bohnen, Bohnen mit Knoblauch und Ingwer, Erbsen:, Erbsen, Spicy Erbsen , Blumenkohl:, Blumenkohl, gebackener Cajun - Blumenkohl, gebackener Tandoori - Blumenkohl , Blumenkohl mit</name>
           <note>Senf und Senferzeugnisse</note>
@@ -455,6 +396,18 @@
         </meal>
         <meal>
           <name>(Mi,GlW,G</name>
+        </meal>
+        <meal>
+          <name>Curry und Ragout:, orientalischer CousCous (Sl,GlW,NMa,NWa), orientalisches Kichererbsen - Tomatenragout, gebratenes Kichererbsencurry, Kicherserbsen Tomatenragout, Kartoffelragout in Dillsahne , weißes Bohnencurry , Dal Tadka - mit roten</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Linsen u</name>
         </meal>
       </category>
     </day>
@@ -499,6 +452,19 @@
       </category>
       <category name="Gemüsebar">
         <meal>
+          <name>Gebackenes / Frittiertes:, Kartoffelspalten (GlW), Steakhouse - Pommes, Röstiecken, Röstinchen, Herzoginkartoffeln , Kroketten (GlW), Aufläufe:, Kartoffelgratin , Kartoffel - Gemüsegratin (Mi,GlW,GlG), Kartoffel - Blumenkohlgratin</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>(Mi,GlW,G</name>
+        </meal>
+        <meal>
           <name>Curry und Ragout:, orientalischer CousCous (Sl,GlW,NMa,NWa), orientalisches Kichererbsen - Tomatenragout, gebratenes Kichererbsencurry, Kicherserbsen Tomatenragout, Kartoffelragout in Dillsahne , weißes Bohnencurry , Dal Tadka - mit roten</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Senf und Senferzeugnisse</note>
@@ -522,19 +488,6 @@
         </meal>
         <meal>
           <name>Sesammarin</name>
-        </meal>
-        <meal>
-          <name>Gebackenes / Frittiertes:, Kartoffelspalten (GlW), Steakhouse - Pommes, Röstiecken, Röstinchen, Herzoginkartoffeln , Kroketten (GlW), Aufläufe:, Kartoffelgratin , Kartoffel - Gemüsegratin (Mi,GlW,GlG), Kartoffel - Blumenkohlgratin</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>(Mi,GlW,G</name>
         </meal>
       </category>
     </day>
@@ -602,6 +555,18 @@
           <name>Sesammarin</name>
         </meal>
         <meal>
+          <name>Curry und Ragout:, orientalischer CousCous (Sl,GlW,NMa,NWa), orientalisches Kichererbsen - Tomatenragout, gebratenes Kichererbsencurry, Kicherserbsen Tomatenragout, Kartoffelragout in Dillsahne , weißes Bohnencurry , Dal Tadka - mit roten</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Linsen u</name>
+        </meal>
+        <meal>
           <name>Gebackenes / Frittiertes:, Kartoffelspalten (GlW), Steakhouse - Pommes, Röstiecken, Röstinchen, Herzoginkartoffeln , Kroketten (GlW), Aufläufe:, Kartoffelgratin , Kartoffel - Gemüsegratin (Mi,GlW,GlG), Kartoffel - Blumenkohlgratin</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -613,18 +578,6 @@
         </meal>
         <meal>
           <name>(Mi,GlW,G</name>
-        </meal>
-        <meal>
-          <name>Curry und Ragout:, orientalischer CousCous (Sl,GlW,NMa,NWa), orientalisches Kichererbsen - Tomatenragout, gebratenes Kichererbsencurry, Kicherserbsen Tomatenragout, Kartoffelragout in Dillsahne , weißes Bohnencurry , Dal Tadka - mit roten</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>Linsen u</name>
         </meal>
       </category>
     </day>
@@ -669,6 +622,18 @@
       </category>
       <category name="Gemüsebar">
         <meal>
+          <name>Curry und Ragout:, orientalischer CousCous (Sl,GlW,NMa,NWa), orientalisches Kichererbsen - Tomatenragout, gebratenes Kichererbsencurry, Kicherserbsen Tomatenragout, Kartoffelragout in Dillsahne , weißes Bohnencurry , Dal Tadka - mit roten</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Linsen u</name>
+        </meal>
+        <meal>
           <name>gebratene Mungosprossen (2,So,Se,GlW), Bohne:, gebratene Bohnen, Bohnen mit Knoblauch und Ingwer, Erbsen:, Erbsen, Spicy Erbsen , Blumenkohl:, Blumenkohl, gebackener Cajun - Blumenkohl, gebackener Tandoori - Blumenkohl , Blumenkohl mit</name>
           <note>Senf und Senferzeugnisse</note>
           <note>Vegetarisch</note>
@@ -693,18 +658,6 @@
         </meal>
         <meal>
           <name>(Mi,GlW,G</name>
-        </meal>
-        <meal>
-          <name>Curry und Ragout:, orientalischer CousCous (Sl,GlW,NMa,NWa), orientalisches Kichererbsen - Tomatenragout, gebratenes Kichererbsencurry, Kicherserbsen Tomatenragout, Kartoffelragout in Dillsahne , weißes Bohnencurry , Dal Tadka - mit roten</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>Linsen u</name>
         </meal>
       </category>
     </day>
