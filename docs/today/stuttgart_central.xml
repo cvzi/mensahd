@@ -3,24 +3,22 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-07-16">
+    <day date="2025-07-17">
       <category name="Vorspeise">
         <meal>
-          <name>Maultaschensuppe</name>
-          <note>Ei</note>
-          <note>Rind</note>
-          <note>Schwein</note>
-          <note>Sellerie</note>
-          <note>Weizen</note>
+          <name>Tagessuppe</name>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Penne an Tomatensugo mit Kräutern</name>
+          <name>Bunter Gemüseeintopf mit Dinkelbrötchen</name>
+          <note>Dinkel</note>
+          <note>Gerste</note>
+          <note>Roggen</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
-          <note>Weizen</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -28,28 +26,31 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Wurstgulasch mit Risoleekartoffeln</name>
-          <note>Rind</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Schwein</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Konservierungsstoffen</note>
-          <note>mit Süßungsmitteln</note>
-          <price role="employee">7.10</price>
-          <price role="student">4.60</price>
-        </meal>
-        <meal>
-          <name>Hähnchen-Döner mit Joghurt-Knoblauch-Dip</name>
-          <note>Geflügel</note>
+          <name>Caesar Salat</name>
+          <note>Ei</note>
+          <note>Fisch</note>
           <note>Milch und Laktose</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Senf</note>
-          <note>Sesam</note>
           <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
           <note>mit Farbstoffen</note>
+          <price role="employee">8.00</price>
+          <price role="student">5.50</price>
+        </meal>
+        <meal>
+          <name>Gnocchi- Gemüsepfanne mit mariniertem Tofu und Tomatensauce</name>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">6.70</price>
+          <price role="student">4.20</price>
+        </meal>
+        <meal>
+          <name>2 Crispy Drumsticks mit Steakhouse frites Und Mango Curry Salsa</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>mit Phosphaten</note>
           <price role="employee">7.90</price>
           <price role="student">5.40</price>
         </meal>
@@ -66,20 +67,35 @@
           <price role="employee">7.25</price>
           <price role="student">4.75</price>
         </meal>
+        <meal>
+          <name>Hähnchenbruststreifen Topping für Caesar Salat</name>
+          <note>Geflügel</note>
+          <price role="employee">1.95</price>
+          <price role="student">1.95</price>
+        </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Erbsen</name>
-          <note>vegan</note>
+          <name>Tagesgemüse</name>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
         <meal>
-          <name>Spätzle</name>
-          <note>Dinkel</note>
-          <note>Ei</note>
-          <note>Weizen</note>
-          <note>vegetarisch</note>
+          <name>Pommes frites</name>
+          <note>vegan</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
+        </meal>
+        <meal>
+          <name>Reis</name>
+          <note>vegan</note>
+          <price role="employee">1.49</price>
+          <price role="student">1.09</price>
+        </meal>
+        <meal>
+          <name>Risoleekartoffeln</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>vegan</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
@@ -94,9 +110,7 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Veganer Hafer Schokopudding</name>
-          <note>100% Bio nach EG-Öko-Verordnung (DE-ÖKO-006)</note>
-          <note>Hafer</note>
+          <name>Vegane Waldbeerencreme</name>
           <note>vegan</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
@@ -108,11 +122,15 @@
           <note>Ei</note>
           <note>Milch und Laktose</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
           <note>Senf</note>
+          <note>Sesam</note>
           <note>Weizen</note>
           <note>geschwefelt</note>
+          <note>geschwärzt</note>
           <note>mit Antioxidationsmitteln</note>
           <note>mit Farbstoffen</note>
+          <note>mit Süßungsmitteln</note>
           <note>vegetarisch</note>
           <price role="employee">1.60</price>
           <price role="student">1.10</price>

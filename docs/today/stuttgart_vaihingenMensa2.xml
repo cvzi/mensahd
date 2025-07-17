@@ -3,23 +3,24 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-07-16">
+    <day date="2025-07-17">
       <category name="Vorspeise">
         <meal>
-          <name>Pilzcremesuppe</name>
-          <note>Milch und Laktose</note>
+          <name>Tomatensuppe</name>
           <note>Sellerie</note>
-          <note>Weizen</note>
-          <note>vegetarisch</note>
+          <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Penne an Tomatensugo mit Kräutern</name>
+          <name>Bunter Gemüseeintopf mit Dinkelbrötchen</name>
+          <note>Dinkel</note>
+          <note>Gerste</note>
+          <note>Roggen</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
-          <note>Weizen</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -27,39 +28,41 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Milchreis und Apfelmus und Zimt Zucker</name>
-          <note>Milch und Laktose</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>vegetarisch</note>
-          <price role="employee">5.60</price>
-          <price role="student">3.10</price>
-        </meal>
-        <meal>
-          <name>Begrenztes Angebot: Schweinebraten mit Pilzsauce und Spätzle</name>
-          <note>Dinkel</note>
-          <note>Ei</note>
-          <note>Milch und Laktose</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Schwein</note>
-          <note>Weizen</note>
-          <price role="employee">7.70</price>
-          <price role="student">5.20</price>
-        </meal>
-        <meal>
-          <name>Hähnchen-Döner mit Joghurt-Knoblauch-Dip</name>
+          <name>2 Crispy Drumsticks mit Mango Curry Salsa und Country Potatoes</name>
           <note>Geflügel</note>
-          <note>Milch und Laktose</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Senf</note>
-          <note>Sesam</note>
+          <note>Sellerie</note>
           <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
+          <note>mit Phosphaten</note>
           <price role="employee">7.90</price>
           <price role="student">5.40</price>
         </meal>
+        <meal>
+          <name>Wrap mit Gemüse und Kidneybohnenmus</name>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">6.50</price>
+          <price role="student">4.00</price>
+        </meal>
+        <meal>
+          <name>Caesar Salat Coutons Caesar Dressing</name>
+          <note>Ei</note>
+          <note>Fisch</note>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Weizen</note>
+          <note>mit Farbstoffen</note>
+          <price role="employee">8.00</price>
+          <price role="student">5.50</price>
+        </meal>
       </category>
       <category name="Aktion">
+        <meal>
+          <name>Hähnchenbruststreifen Topping für Caesar Salat</name>
+          <note>Geflügel</note>
+          <price role="employee">1.95</price>
+          <price role="student">1.95</price>
+        </meal>
         <meal>
           <name>Nudel Bar</name>
           <note>Ei</note>
@@ -109,23 +112,29 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Broccoli</name>
+          <name>Orientalisches Gemüse</name>
+          <note>Sellerie</note>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
         <meal>
-          <name>Pommes frites</name>
+          <name>Reis</name>
+          <note>vegan</note>
+          <price role="employee">1.49</price>
+          <price role="student">1.09</price>
+        </meal>
+        <meal>
+          <name>Risoleekartoffeln</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>vegan</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Spätzle</name>
-          <note>Dinkel</note>
-          <note>Ei</note>
+          <name>Country Potatoes</name>
           <note>Weizen</note>
-          <note>vegetarisch</note>
+          <note>vegan</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
@@ -140,15 +149,15 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Buttermilchdessert Mango</name>
-          <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
+          <name>Vegane Waldbeerencreme</name>
+          <note>vegan</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Karamellpudding</name>
+          <name>Milchreis mit Apfelmus</name>
           <note>Milch und Laktose</note>
+          <note>mit Antioxidationsmitteln</note>
           <note>vegetarisch</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
