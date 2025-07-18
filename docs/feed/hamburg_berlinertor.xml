@@ -4,6 +4,15 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-07-18">
+      <category name="Highlight">
+        <meal>
+          <name>Frisch gebackene FLAMMKUCHEN nach Wahl (versch. Sorten) ab 4,20 / 5,50 / 6,70 (auch TAKE AWAY) (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">5.50</price>
+          <price role="other">6.70</price>
+          <price role="student">4.20</price>
+        </meal>
+      </category>
       <category name="Pottkieker">
         <meal>
           <name>Blumenkohl Korma, Reis</name>
@@ -30,13 +39,6 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Frisch gebackene FLAMMKUCHEN nach Wahl (versch. Sorten) ab 4,20 / 5,50 / 6,70 (auch TAKE AWAY) (Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">5.50</price>
-          <price role="other">6.70</price>
-          <price role="student">4.20</price>
-        </meal>
-        <meal>
           <name>Flammkuchen des Tages Teriyaki mit Räuchertofu, asiatischem Gemüse, Sesam (2,So,Mi,GlW)</name>
           <note>Vegetarisch</note>
           <price role="employee">5.90</price>
@@ -52,15 +54,31 @@
           <price role="student">5.75</price>
         </meal>
       </category>
-      <category name="Gemüsebar">
+      <category name="Pastabar">
         <meal>
-          <name>glasierte rote Beete, Staudensellerie und Tomate , Broccoli, Fingermöhrchen mit Ingwer und Frühlingslauch , Gemüse Sesamreis</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <name>Vegane Zartweizen-Tomatentopf mit Pilzen (Sl,Sw,GlW), Reis</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Farbstoff</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>vegane Wurst-Champignon Gulasch</name>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+      </category>
+      <category name="Gemüsebar">
+        <meal>
+          <name>Broccoli, vegan, Bohnen in Rahm , Perlgraupen, vegan (GlG)</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -166,6 +184,16 @@
           <price role="student">5.40</price>
         </meal>
       </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Seelachsfilet mit Kräuterkruste (Fi,Mi,GlW), Tomaten-Gemüse Sugo, hausgemachtes Kartoffelpüree</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>mit Fisch</note>
+          <price role="employee">7.25</price>
+          <price role="other">8.45</price>
+          <price role="student">5.95</price>
+        </meal>
+      </category>
       <category name="CampusWorld">
         <meal>
           <name>Frisch gebackene FLAMMKUCHEN nach Wahl (versch. Sorten) ab 4,20 / 5,50 / 6,70 (auch TAKE AWAY) (Mi,GlW)</name>
@@ -180,6 +208,14 @@
           <price role="employee">6.55</price>
           <price role="other">7.75</price>
           <price role="student">5.25</price>
+        </meal>
+        <meal>
+          <name>Vegane Carbonara mit Tofuwürfel (1,So,Sl,Sf,GlW), Conchiglie (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.25</price>
+          <price role="other">5.45</price>
+          <price role="student">2.95</price>
         </meal>
       </category>
       <category name="Gemüsebar">
