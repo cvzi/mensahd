@@ -65,9 +65,30 @@
           <price role="student">4.70</price>
         </meal>
       </category>
+      <category name="Pastabar">
+        <meal>
+          <name>Vegetarisches Geschnetzeltes Gyros Art , Pommes Frites</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Pasta (GlW), gebratene Hähnchenstreifen und Auberginen in Tomaten-Sahnesoße</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+      </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Gemüsemix mit Karotten, Brokkoli und Bohnen, gebratene Champignons , Röstkartoffeln Provencial, Veggie Wrap mit Käse überbacken (2,3,5,So,Sf,Sw,GlW)</name>
+          <name>Gemüsemix mit Karotten, Brokkoli und Bohnen, gebratene Champignons , Röstkartoffeln Provencial, Veggie Wrap mit Käse überbacken (2,3,5,Mi,Sf,Sw,GlW)</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Vegetarisch</note>
           <price role="employee">1.10</price>
@@ -170,14 +191,6 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>All in one pot: Reisnudeln, Tofuwürfel, Salat, Erdnüsse, Apfel, Röstzwiebeln (2,En,So,Sw,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.10</price>
-          <price role="other">6.30</price>
-          <price role="student">3.80</price>
-        </meal>
-        <meal>
           <name>All in one pot: Reisnudeln, Rindfleisch, Salat, Erdnüsse, Apfel, Röstzwiebeln (2,En,So,Sl,Sw,GlW)</name>
           <note>Rind</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -185,15 +198,16 @@
           <price role="other">8.60</price>
           <price role="student">6.10</price>
         </meal>
+        <meal>
+          <name>All in one pot: Reisnudeln, Tofuwürfel, Salat, Erdnüsse, Apfel, Röstzwiebeln (2,En,So,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.10</price>
+          <price role="other">6.30</price>
+          <price role="student">3.80</price>
+        </meal>
       </category>
       <category name="CampusWorld">
-        <meal>
-          <name>Frisch gebackene PIZZA LARGE nach Wahl (versch. Sorten) ab 4,70 / 6,00 / 7,20 (auch TAKE AWAY) (Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">6.00</price>
-          <price role="other">7.20</price>
-          <price role="student">4.70</price>
-        </meal>
         <meal>
           <name>Hühnchen in Kokos Soße , Sesammöhrchen , Basmatireis</name>
           <note>Geflügel</note>
@@ -204,6 +218,13 @@
           <price role="employee">6.10</price>
           <price role="other">7.30</price>
           <price role="student">4.80</price>
+        </meal>
+        <meal>
+          <name>Frisch gebackene PIZZA LARGE nach Wahl (versch. Sorten) ab 4,70 / 6,00 / 7,20 (auch TAKE AWAY) (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">6.00</price>
+          <price role="other">7.20</price>
+          <price role="student">4.70</price>
         </meal>
       </category>
       <category name="Gemüsebar">
@@ -263,18 +284,18 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Flammkuchen des Tages mit geschmolzenem Camembert und Apfelwürfeln (Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">5.90</price>
-          <price role="other">7.10</price>
-          <price role="student">4.60</price>
-        </meal>
-        <meal>
           <name>Frisch gebackene FLAMMKUCHEN nach Wahl (versch. Sorten) ab 4,20 / 5,50 / 6,70 (auch TAKE AWAY) (Mi,GlW)</name>
           <note>Vegetarisch</note>
           <price role="employee">5.50</price>
           <price role="other">6.70</price>
           <price role="student">4.20</price>
+        </meal>
+        <meal>
+          <name>Flammkuchen des Tages mit geschmolzenem Camembert und Apfelwürfeln (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">5.90</price>
+          <price role="other">7.10</price>
+          <price role="student">4.60</price>
         </meal>
       </category>
       <category name="Gemüsebar">
