@@ -3,67 +3,10 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-07-21">
-      <category name="Pottkieker">
-        <meal>
-          <name>Tofu-Gemüse-Topf</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">3.50</price>
-          <price role="other">4.70</price>
-          <price role="student">2.20</price>
-        </meal>
-      </category>
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Leberkäse im Ganzen gebacken , Bratensoße , hausgemachtes Kartoffelpüree</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwein</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Phosphat</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.40</price>
-          <price role="student">3.90</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Vegane Maultaschen mit Zucchini- Champignongemüse und Salbei (1,3,So,Sl,Sw,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.65</price>
-          <price role="other">7.85</price>
-          <price role="student">5.35</price>
-        </meal>
-      </category>
-      <category name="Pastabar">
-        <meal>
-          <name>Fusilli (GlW), Tomatensoße aus getrockneten Tomaten mit Basilikum (2,5,Mi,Sw,GlW,GlG)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-      </category>
-      <category name="Gemüsebar">
-        <meal>
-          <name>Champignons in Rahm (Mi,Sw,GlW,GlG), Süßkartoffeln, Broccoli Blumenkohl Mix, Fenchelgemüse</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-      </category>
-    </day>
     <day date="2025-07-22">
       <category name="Pottkieker">
         <meal>
-          <name>Fasolada Griechischer Bohnensuppe mit Sellerie, Karotten und Baguette (Sl,GlW)</name>
+          <name>Fasolada Griechischer Bohnensuppe mit Sellerie, Karotten und Kaiserbrötchen (Sl,GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">3.50</price>
@@ -73,8 +16,9 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Zwiebel Hähnchen (Mi,GlW), Karotten- Bohnengemüse, Reis</name>
+          <name>Zwiebel Hähnchen (Mi,GlW), Karotten- Bohnengemüse, Süßkartoffelpüree</name>
           <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <price role="employee">4.70</price>
           <price role="other">5.90</price>
           <price role="student">3.40</price>
@@ -456,25 +400,20 @@
           <price role="student">2.20</price>
         </meal>
       </category>
-      <category name="CampusVital">
+      <category name="CampusKlassiker">
         <meal>
-          <name>Grüne Gemüsepfanne mit Erdnusssoße (2,En,So,GlW), Vollkornreis</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">4.80</price>
-          <price role="other">6.00</price>
-          <price role="student">3.50</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Schweinekotelette gebraten, Bratensoße , Brechbohnen, Hausgemachtes Kartoffel-Butterstampf</name>
+          <name>Gebackene Seelachsfiletwürfel (Fi,Mi,GlW), Remoulade , Petersilienkartoffeln</name>
+          <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwein</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <price role="employee">6.25</price>
-          <price role="other">7.45</price>
-          <price role="student">4.95</price>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Farbstoff</note>
+          <note>mit Fisch</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">5.70</price>
+          <price role="other">6.90</price>
+          <price role="student">4.40</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -511,30 +450,16 @@
           <price role="student">2.20</price>
         </meal>
       </category>
-      <category name="CampusVital">
+      <category name="CampusKlassiker">
         <meal>
-          <name>Mariniertes Tofusteak (2,So,GlW), Gurken-Sprossen-Salat (2,9,So,Se,GlW), Udon-Nudeln (GlW)</name>
+          <name>Soja-Bolognese mit Gemüse , Bunte Fusilli (GlW)</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mensaVital</note>
-          <price role="employee">6.50</price>
-          <price role="other">7.70</price>
-          <price role="student">5.20</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>All in one Pot: Paneer, Bohnen, Blumenkohl, Karotte , Birnen-Chutney , Kokosreis</name>
-          <note>Geschwefelt</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">5.85</price>
-          <price role="other">7.05</price>
-          <price role="student">4.55</price>
+          <price role="employee">5.45</price>
+          <price role="other">6.65</price>
+          <price role="student">4.15</price>
         </meal>
       </category>
       <category name="Pastabar">
