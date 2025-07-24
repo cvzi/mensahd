@@ -3,75 +3,6 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-07-23">
-      <category name="CampusSpezial">
-        <meal>
-          <name>All in one Pot: Vegane Köfte (So,GlW,GlG), Vollkornreis, Tomatensalat mit Bohnen, Petersilie , Knoblauchdip</name>
-          <note>Geschwefelt</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">6.15</price>
-          <price role="other">7.35</price>
-          <price role="student">4.85</price>
-        </meal>
-        <meal>
-          <name>vegane Bratwurst, hausgemachter Kartoffelstampf , Kohlrabi-Erbsengemüse in Rahm und Petersilienöl (Mi,GlW)</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
-          <note>mit Farbstoff</note>
-          <price role="employee">6.30</price>
-          <price role="other">7.50</price>
-          <price role="student">5.00</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Belgische Pommes, Planted Duck (So,GlH), Kräuterdip , gepickelte rote Zwiebel und Frühlingslauch</name>
-          <note>Neu</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.40</price>
-          <price role="other">7.60</price>
-          <price role="student">5.10</price>
-        </meal>
-      </category>
-      <category name="Pastabar">
-        <meal>
-          <name>Pasta (GlW), Sojastreifen in scharfer Tomatensoße</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>Pasta (GlW), Waldpilzen in Sahnesoße mit Basilikum (Mi,Sw,GlW,GlG)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-      </category>
-      <category name="Gemüsebar">
-        <meal>
-          <name>gerösteter Blumenkohl, frisches Gemüse aus dem Wok , mediterranes Gemüse , Basmatireis</name>
-          <note>Geschwärzt</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-      </category>
-    </day>
     <day date="2025-07-24">
       <category name="CampusKlassiker">
         <meal>
@@ -91,6 +22,14 @@
       </category>
       <category name="CampusWorld">
         <meal>
+          <name>Hausgemachte Pasta (GlW), Zucchini, Paprika und Kapern in Tomatensoße, Rucola</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.20</price>
+          <price role="other">6.40</price>
+          <price role="student">3.90</price>
+        </meal>
+        <meal>
           <name>Guacamole Bites (3,Mi,Sf,Sw,GlW), Mexican Reispfanne, Chili Dip</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Vegetarisch</note>
@@ -99,27 +38,19 @@
           <price role="other">7.95</price>
           <price role="student">5.45</price>
         </meal>
-        <meal>
-          <name>Hausgemachte Pasta (GlW), Zucchini, Paprika und Kapern in Tomatensoße, Rucola</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.40</price>
-          <price role="student">3.90</price>
-        </meal>
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Bunte Fusilli (GlW), Champignons in Cremesoße</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Nudelauflauf mit Spinat in Sahnesoße und mit Hirtenkäse gebacken (Ei,Mi,GlW)</name>
           <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Nudelauflauf mit Spinat in Sahnesoße und mit Hirtenkäse gebacken (Ei,Mi,GlW)</name>
+          <name>Bunte Fusilli (GlW), Champignons in Cremesoße</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
@@ -213,8 +144,9 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Spaghetti (GlW), verschiedene Gemüse in Tomatensoße</name>
+          <name>Spaghetti (GlW), Soia e Porri mit Lauch und Sojasahne</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
@@ -222,9 +154,8 @@
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Spaghetti (GlW), Soia e Porri mit Lauch und Sojasahne</name>
+          <name>Spaghetti (GlW), verschiedene Gemüse in Tomatensoße</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
