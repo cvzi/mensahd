@@ -3,10 +3,11 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-07-25">
+    <day date="2025-07-28">
       <category name="Pottkieker">
         <meal>
-          <name>Kohlrabi-Erbsencurry mit Kokosmilch, Kaiserbrötchen (GlW)</name>
+          <name>Kichererbsencurry, pikantes Möhrengemüse</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">3.50</price>
@@ -16,31 +17,35 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Fritten Oriental mit Falaffel und Grillgemüse (GlW), Hummus</name>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.80</price>
-          <price role="other">7.00</price>
-          <price role="student">4.50</price>
+          <name>Paniertes Schweineschnitzel (GlW), Cole slaw Salat , Pommes Frites , Zitrone</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwein</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Farbstoff</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">5.20</price>
+          <price role="other">6.40</price>
+          <price role="student">3.90</price>
         </meal>
       </category>
-      <category name="CampusWorld">
+      <category name="CampusSpezial">
         <meal>
-          <name>Pikante Bratreis mit asiatischem Pfannengemüse, Tufo und Sesam (2,3,So,Sf,Se,Sw,GlW,NCa)</name>
+          <name>Vegane Maultaschen (GlW), Ratatouille , Petersilie</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mensaVital</note>
-          <price role="employee">5.15</price>
-          <price role="other">6.35</price>
-          <price role="student">3.85</price>
+          <price role="employee">6.25</price>
+          <price role="other">7.45</price>
+          <price role="student">4.95</price>
         </meal>
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Bunte Nudeln (GlW), Waldpilzen in Sahnesoße mit Basilikum (Mi,Sw,GlW,GlG)</name>
-          <note>Vegetarisch</note>
-          <note>mensaVital</note>
+          <name>Conchiglie (GlW), Broccoli in einer Gorgonzola- Sahnesoße</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -48,9 +53,214 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Paprikagemüse mit Zwiebeln und Lauch (Mi,NCa), Blattspinat, Rosenkohl , Broccoli , Röstkartoffeln, Schupfnudeln (GlW)</name>
+          <name>Dummy Hauptkomponente</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2025-07-29">
+      <category name="Pottkieker">
+        <meal>
+          <name>Chili con Corn (Sl,GlD), Basmatireis</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.50</price>
+          <price role="other">4.70</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Orange Chicken (2,3,5,So,Se,Sw,GlW), Bratreis mit Gemüse (2,3,So,GlW)</name>
+          <note>Geflügel</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.80</price>
+          <price role="other">8.00</price>
+          <price role="student">5.50</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Scharfe Kokos-Limonen-Suppe mit Udon-Nudeln (2,3,So,Sl,Se,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.90</price>
+          <price role="other">7.10</price>
+          <price role="student">4.60</price>
+        </meal>
+      </category>
+      <category name="Pastabar">
+        <meal>
+          <name>Strozzapreti (GlW), Tomaten- Kräuter- Gemüsesoße</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+      </category>
+      <category name="Gemüsebar">
+        <meal>
+          <name>Dummy Hauptkomponente</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2025-07-30">
+      <category name="Pottkieker">
+        <meal>
+          <name>Möhrensuppe mit Ingwer , Baguette Brötchen (GlW,GlR)</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.50</price>
+          <price role="other">4.70</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Penne (GlW), Bolognese mit Rinderhackfleisch , Hartkäse gerieben</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <price role="employee">4.80</price>
+          <price role="other">6.00</price>
+          <price role="student">3.50</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Veganes Hackbällchen-Curry mit Kokosmilch, Erdnussbutter und Gemüse (1,2,En,So,GlW,GlG), Basmatireis</name>
+          <note>Neu</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.70</price>
+          <price role="other">6.90</price>
+          <price role="student">4.40</price>
+        </meal>
+      </category>
+      <category name="Pastabar">
+        <meal>
+          <name>Reis, asiatischer Tomatensoße und Sojawürfeln (2,So,Se,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+      </category>
+      <category name="Gemüsebar">
+        <meal>
+          <name>Dummy Hauptkomponente</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2025-07-31">
+      <category name="Pottkieker">
+        <meal>
+          <name>Erbsencremesuppe , Kaiserbrötchen (GlW)</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.50</price>
+          <price role="other">4.70</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Gebackene Seelachsfiletwürfel (Fi,Mi,GlW), Remoulade , Petersilienkartoffeln</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Farbstoff</note>
+          <note>mit Fisch</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">5.70</price>
+          <price role="other">6.90</price>
+          <price role="student">4.40</price>
+        </meal>
+      </category>
+      <category name="Pastabar">
+        <meal>
+          <name>Eliche (GlW), Tomatensoße mit Paprika, getrocknete Tomaten und geröstete Haselnüsse (Sl,NHa)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+      </category>
+      <category name="Gemüsebar">
+        <meal>
+          <name>Dummy Hauptkomponente</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2025-08-01">
+      <category name="Pottkieker">
+        <meal>
+          <name>Mexikanischer Bohnentopf</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <price role="employee">3.50</price>
+          <price role="other">4.70</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Soja-Bolognese mit Gemüse , Bunte Fusilli (GlW)</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.45</price>
+          <price role="other">6.65</price>
+          <price role="student">4.15</price>
+        </meal>
+      </category>
+      <category name="Pastabar">
+        <meal>
+          <name>Farfalle (GlW), Broccoli in Tomatensoße</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+      </category>
+      <category name="Gemüsebar">
+        <meal>
+          <name>Dummy Hauptkomponente</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
