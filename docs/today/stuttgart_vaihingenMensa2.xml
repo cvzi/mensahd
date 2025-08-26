@@ -3,20 +3,23 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-08-25">
+    <day date="2025-08-26">
       <category name="Vorspeise">
         <meal>
-          <name>Tomatensuppe</name>
+          <name>Gemüserahmsuppe</name>
+          <note>Milch und Laktose</note>
           <note>Sellerie</note>
-          <note>vegan</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Tomaten-Hirse mit Haselnüssen</name>
-          <note>Haselnüsse</note>
+          <name>Kichererbsen-Curry mit Duftreis</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -24,25 +27,37 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Allgäuer Käsespätzle mit Zwiebelschmelze</name>
-          <note>Dinkel</note>
+          <name>Kaiserschmarrn mit Rosinen und Apfelmus</name>
           <note>Ei</note>
+          <note>Mandeln</note>
           <note>Milch und Laktose</note>
           <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
           <note>vegetarisch</note>
-          <price role="employee">7.00</price>
-          <price role="student">4.50</price>
+          <price role="employee">5.60</price>
+          <price role="student">3.10</price>
         </meal>
         <meal>
-          <name>Frittierte Tintenfischringe mit Zitrone, Knoblauch-Dip und Pommes frites</name>
+          <name>Schweinegulasch mit Paprika und Spätzle</name>
+          <note>Dinkel</note>
           <note>Ei</note>
-          <note>Milch und Laktose</note>
-          <note>Senf</note>
-          <note>Weichtiere</note>
+          <note>Schwein</note>
           <note>Weizen</note>
-          <note>mit Farbstoffen</note>
           <price role="employee">7.90</price>
           <price role="student">5.40</price>
+        </meal>
+        <meal>
+          <name>Antipasti</name>
+          <note>Ei</note>
+          <note>Mandeln</note>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Schwein</note>
+          <note>Weizen</note>
+          <note>geschwefelt</note>
+          <note>mit Farbstoffen</note>
+          <price role="employee">10.00</price>
+          <price role="student">7.50</price>
         </meal>
       </category>
       <category name="Aktion">
@@ -66,11 +81,17 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Kaisergemüse</name>
+          <name>Fingermöhren</name>
           <note>Sellerie</note>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Duftreis</name>
+          <note>vegan</note>
+          <price role="employee">1.49</price>
+          <price role="student">1.09</price>
         </meal>
         <meal>
           <name>Pommes frites</name>
@@ -89,20 +110,16 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Himbeerquark</name>
+          <name>Creme mit Tiramisu-Geschmack</name>
           <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Früchtemüsli</name>
-          <note>Gerste</note>
+          <name>Veganer Haferquark mit Honig und Mandeln</name>
           <note>Hafer</note>
-          <note>Haselnüsse</note>
           <note>Mandeln</note>
-          <note>Milch und Laktose</note>
-          <note>mit Antioxidationsmitteln</note>
+          <note>Soja</note>
           <note>vegetarisch</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
