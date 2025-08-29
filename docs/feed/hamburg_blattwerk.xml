@@ -4,6 +4,16 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-08-29">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Vegetarisches Schnitzel mit Pilzrahmsoße mit Paprika und Sahne (Ei,So,Mi,Sl,Sw,GlW,GlH), Pommes Frites</name>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <price role="employee">6.70</price>
+          <price role="other">7.90</price>
+          <price role="student">5.40</price>
+        </meal>
+      </category>
       <category name="CampusVital">
         <meal>
           <name>Cous-Cous One Pot mit getrockneten Tomaten, Erbsen und Joghurt (2,5,Mi,Sl,Sw,GlW)</name>
@@ -15,6 +25,13 @@
       </category>
       <category name="CampusWorld">
         <meal>
+          <name>Glasnudelsalat mit Karotten, Wakame, Tofu und Teriyakisoße (1,2,3,5,Ei,So,Se,Sw,GlW)</name>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.75</price>
+          <price role="other">6.95</price>
+          <price role="student">4.45</price>
+        </meal>
+        <meal>
           <name>Taco Shells gefüllt mit mariniertem veganem Kebab (2,3,So,GlW), Paprikareis</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -25,7 +42,14 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Vollkorn Penne (GlW), Tomaten- Kräuter- Gemüsesoße</name>
+          <name>Pasta (GlW), Blattspinat in Käse-Sahnesoße (Mi,Sl,GlW,GlG)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Pasta (GlW), Tomaten- Kräuter- Gemüsesoße</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -33,8 +57,50 @@
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
+      </category>
+    </day>
+    <day date="2025-09-01">
+      <category name="CampusVital">
         <meal>
-          <name>Vollkorn Penne (GlW), Blattspinat in Käse-Sahnesoße (Mi,Sl,GlW,GlG)</name>
+          <name>Pikante Sesamnudeln mit asiatischem Pfannengemüse (2,3,So,Sf,Se,Sw,GlW,NCa)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mensaVital</note>
+          <price role="employee">5.15</price>
+          <price role="other">6.35</price>
+          <price role="student">3.85</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>All in one Pot: Bulgur, Soja, Weißkohl, Cranberries, Ananas, Asia-Majo, Cashew (2,So,Sl,Sf,Sw,GlW,NCa)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.05</price>
+          <price role="other">7.25</price>
+          <price role="student">4.75</price>
+        </meal>
+      </category>
+      <category name="Pastabar">
+        <meal>
+          <name>Strozzapreti (GlW), Carbonara vegetariana (Ei,Mi,GlW,GlG)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Strozzapreti (GlW), Tomatensoße aus getrockneten Tomaten mit Basilikum (2,5,Mi,Sw,GlW,GlG)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+      </category>
+      <category name="Gemüsebar">
+        <meal>
+          <name>Gemüsemix mit gelben Karotten, Buttererbsen , Kohlrabi-Bärlauch Gemüse , Chili-Kartoffeln aus dem Ofen</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
