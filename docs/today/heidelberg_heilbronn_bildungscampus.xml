@@ -4,8 +4,61 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2025-09-07">
-      <closed/>
+    <day date="2025-09-08">
+      <category name="Dessert">
+        <meal>
+          <name>Hausgemachter Mandelkuchen im Glas</name>
+          <note>Homemade almond cake in a jar</note>
+          <price role="student">0.90</price>
+          <price role="employee">1.40</price>
+          <price role="other">2.00</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Kokoscreme mit Beeren</name>
+          <note>Coconut cream with berries</note>
+          <price role="student">0.90</price>
+          <price role="employee">1.40</price>
+          <price role="other">2.00</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Tomatensuppe mit Basilikum Hafer Schmand</name>
+          <note>Tomato soup with basil oat sour cream</note>
+          <price role="student">0.90</price>
+          <price role="employee">1.40</price>
+          <price role="other">2.00</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Pulled-Beef-Burger mit Coleslaw und Süßkartoffelpüree</name>
+          <note>Pulled beef burger with coleslaw and sweet potato mash</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Chana Masala, indisches Kichererbsen Curry mit Gewürzreis</name>
+          <note>Chana Masala, Indian chickpea curry with spiced rice</note>
+          <price role="student">0.92</price>
+          <price role="employee">1.20</price>
+          <price role="other">1.94</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Der Klassiker Mac and Cheese</name>
+          <note>Classic Mac and Cheese</note>
+          <price role="student">2.90</price>
+          <price role="employee">4.35</price>
+          <price role="other">7.25</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
