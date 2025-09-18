@@ -4,13 +4,6 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-09-18">
-      <category name="Vorspeise">
-        <meal>
-          <name>Tagessuppe</name>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-      </category>
       <category name="Veganer renner">
         <meal>
           <name>Vollkornreispfanne mit Zucchini, Paprika und Auberginen</name>
@@ -45,10 +38,18 @@
           <price role="employee">7.90</price>
           <price role="student">5.40</price>
         </meal>
+        <meal>
+          <name>Mini-Frühlingsrollen mit fruchtiger Currysauce und Duftreis</name>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <price role="employee">7.50</price>
+          <price role="student">5.00</price>
+        </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Tagesgemüse</name>
+          <name>Buntes Gemüse</name>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -63,6 +64,18 @@
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
+        <meal>
+          <name>Bandnudeln</name>
+          <note>Weizen</note>
+          <price role="employee">1.49</price>
+          <price role="student">1.09</price>
+        </meal>
+        <meal>
+          <name>Bandnudeln</name>
+          <note>Weizen</note>
+          <price role="employee">1.49</price>
+          <price role="student">1.09</price>
+        </meal>
       </category>
       <category name="Salat">
         <meal>
@@ -74,37 +87,17 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Bayerische Creme mit Zimtkirschen</name>
-          <note>Milch und Laktose</note>
-          <price role="employee">1.69</price>
-          <price role="student">1.29</price>
-        </meal>
-        <meal>
-          <name>Veganer Pudding mit Vanille-Geschmack und Himbeersauce</name>
+          <name>Veganer Himbeerquark</name>
+          <note>Hafer</note>
           <note>Soja</note>
-          <note>vegan</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
-      </category>
-      <category name="Buffet">
         <meal>
-          <name>Salatbuffet</name>
-          <note>Ei</note>
+          <name>Pudding mit Vanille-Geschmack</name>
           <note>Milch und Laktose</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>Sesam</note>
-          <note>Weizen</note>
-          <note>geschwefelt</note>
-          <note>geschwärzt</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
-          <note>mit Süßungsmitteln</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.60</price>
-          <price role="student">1.10</price>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
         </meal>
       </category>
     </day>
