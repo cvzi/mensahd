@@ -4,13 +4,6 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-09-19">
-      <category name="Vorspeise">
-        <meal>
-          <name>Tagessuppe</name>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-      </category>
       <category name="Veganer renner">
         <meal>
           <name>Spätzle-Pilzpfanne</name>
@@ -21,16 +14,6 @@
         </meal>
       </category>
       <category name="Hauptgericht">
-        <meal>
-          <name>Pad Thai - Thailändische Reisbandnudeln</name>
-          <note>Ei</note>
-          <note>Erdnuss</note>
-          <note>Fisch</note>
-          <note>Weizen</note>
-          <note>mit Konservierungsstoffen</note>
-          <price role="employee">7.30</price>
-          <price role="student">4.80</price>
-        </meal>
         <meal>
           <name>Seelachs in der Sesampanade mit Sweet Chili Gemüse Sauce und Reis</name>
           <note>Fisch</note>
@@ -47,10 +30,21 @@
           <price role="employee">7.90</price>
           <price role="student">5.40</price>
         </meal>
+        <meal>
+          <name>Vegetarisches Schnitzel mit Käsefüllung und Schupfnudeln an Ratatouille-Gemüse</name>
+          <note>Ei</note>
+          <note>Hafer</note>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>mit Farbstoffen</note>
+          <price role="employee">7.70</price>
+          <price role="student">5.20</price>
+        </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Tagesgemüse</name>
+          <name>Buntes Gemüse</name>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -76,18 +70,17 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Kokosmilchreis mit Mango</name>
-          <note>Soja</note>
-          <note>vegan</note>
+          <name>Pudding mit Vanille-Geschmack</name>
+          <note>Milch und Laktose</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Mousse mit Blutorangen-Geschmack</name>
+          <name>Kirschjoghurt</name>
           <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.69</price>
-          <price role="student">1.29</price>
+          <note>mit Farbstoffen</note>
+          <price role="employee">1.49</price>
+          <price role="student">1.09</price>
         </meal>
       </category>
       <category name="Buffet">
