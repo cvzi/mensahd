@@ -19,7 +19,7 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Oktoberfest Wiesn 2025 Spezial, Leberkäse vom Grill , Bratkartoffeln, Krautsalat , Süßer Senf</name>
+          <name>Oktoberfest Wiesn 2025 Spezial, Leberkäse , Bratkartoffeln, Krautsalat , Süßer Senf</name>
           <note>Geschwefelt</note>
           <note>Lieblingsessen</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
@@ -59,17 +59,21 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Conchiglie (GlW), Broccoli in einer Gorgonzola- Sahnesoße</name>
+          <name>Pasta nach Wahl (GlW), Hähnchenstreifen in einer pikanten asiatischen Sauce</name>
+          <note>Geflügel</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>mit Konservierungsstoff</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Conchiglie (GlW), Rinderhackfleisch in einer Paprika- Sahnesoße</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Rind</note>
+          <name>Pasta nach Wahl (GlW), vegane Pilzrahmsoße</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -77,11 +81,10 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Geschmorter Sellerie , gebratenem Wirsing, Blumenkohl mit gebräunten Bröseln (1,GlW), Alte Gemüse: Pastinake- Sellerie- Karotte- Topinambur , Nusskartoffeln</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <name>Erbsen- Karotten Gemüse, Paprika-Maisgemüse mit Chili, Altes Gemüse: Retro-Mix , Gartengemüse gratiniert mit Käse , Gemüse Bulgur (Sl,GlW)</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -143,21 +146,21 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Strozzapreti (GlW), Tomaten- Kräuter- Gemüsesoße</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
           <name>Strozzapreti (GlW), Tomatensoße mit Speckwürfel</name>
           <note>Schwein</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Antioxidationsmittel</note>
           <note>mit Konservierungsstoff</note>
           <note>mit Phosphat</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Strozzapreti (GlW), Tomaten- Kräuter- Gemüsesoße</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -200,14 +203,6 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Linsen Hirsebällchen (GlW,GlH), Bulgur Tomaten Salat (3,5,Sw,GlW), hausgemachtes Petersilienpesto, Rucola</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.10</price>
-          <price role="other">7.30</price>
-          <price role="student">4.80</price>
-        </meal>
-        <meal>
           <name>Oktoberfest Wiesn 2025 Spezial, Hähnchenkeule , Bayrischer Kartoffelsalat , Laugenbrezel (GlW)</name>
           <note>Geflügel</note>
           <note>Lieblingsessen</note>
@@ -218,19 +213,27 @@
           <price role="other">6.40</price>
           <price role="student">3.90</price>
         </meal>
+        <meal>
+          <name>Linsen Hirsebällchen (GlW,GlH), Bulgur Tomaten Salat (3,5,Sw,GlW), hausgemachtes Petersilienpesto, Rucola</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.10</price>
+          <price role="other">7.30</price>
+          <price role="student">4.80</price>
+        </meal>
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Reis, asiatischer Tomatensoße und Sojawürfeln (Sojaprotein) (2,So,Se,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Eliche (GlW), Rindfleischstreifen und Pilzen in Sahnesoße (3,Mi,Sl,GlW,GlG)</name>
+          <note>Rind</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Eliche (GlW), Rindfleischstreifen und Pilzen in Sahnesoße (3,Mi,Sl,GlW,GlG)</name>
-          <note>Rind</note>
+          <name>Reis, asiatischer Tomatensoße und Sojawürfeln (Sojaprotein) (2,So,Se,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -293,18 +296,18 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Bunte Fusilli (GlW), Tomatensoße mit Paprika, getrocknete Tomaten und geröstete Haselnüsse (Sl,NHa)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Bunte Fusilli (GlW), gebratenen Hähnchenstreifen in einer Rahmsoße mit Rucola</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Bunte Fusilli (GlW), gebratenen Hähnchenstreifen in einer Rahmsoße mit Rucola</name>
-          <note>Geflügel</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Bunte Fusilli (GlW), Tomatensoße mit Paprika, getrocknete Tomaten und geröstete Haselnüsse (Sl,NHa)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -372,14 +375,6 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Fusilli (GlW), Aglio e olio mit Tomate und Knoblauch in Olivenöl</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
           <name>Fusilli (GlW), Schinkenstreifen in einer Käse- Sahnesoße</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
@@ -388,6 +383,14 @@
           <note>mit Antioxidationsmittel</note>
           <note>mit Konservierungsstoff</note>
           <note>mit Phosphat</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Fusilli (GlW), Aglio e olio mit Tomate und Knoblauch in Olivenöl</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -454,17 +457,17 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Vollkorn Fussili (GlW), Sonnenblumenhack-Lauchcreme (Sonnenblumenprotein) (1,So,Sl,Sf,GlW)</name>
-          <note>Vegan</note>
+          <name>Vollkorn Fussili (GlW), Hähnchenstreifen in Tomatensoße</name>
+          <note>Geflügel</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Vollkorn Fussili (GlW), Hähnchenstreifen in Tomatensoße</name>
-          <note>Geflügel</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Vollkorn Fussili (GlW), Sonnenblumenhack-Lauchcreme (Sonnenblumenprotein) (1,So,Sl,Sf,GlW)</name>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
@@ -533,18 +536,18 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Penne (GlW), Tomaten-Sahnesoße mit Zucchiniwürfel</name>
+          <name>Penne (GlW), Rinderhackfleisch in Sahnesoße mit Kräutern</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Penne (GlW), Rinderhackfleisch in Sahnesoße mit Kräutern</name>
+          <name>Penne (GlW), Tomaten-Sahnesoße mit Zucchiniwürfel</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Rind</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -614,12 +617,6 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Eliche (GlW), Gorgonzola- Hartkäsesoße, gerösteten Haselnüssen und Basilikum (Mi,Sl,NHa)</name>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
           <name>Bunte Nudeln (GlW), Tomatensoße mit Waldpilzen und Speck</name>
           <note>Schwein</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -627,6 +624,12 @@
           <note>mit Antioxidationsmittel</note>
           <note>mit Konservierungsstoff</note>
           <note>mit Phosphat</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Eliche (GlW), Gorgonzola- Hartkäsesoße, gerösteten Haselnüssen und Basilikum (Mi,Sl,NHa)</name>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -665,12 +668,14 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Vegetarisches Moussaka (Mi,Sw,GlW,GlG), Tomatensoße, Rucola</name>
-          <note>Neu</note>
-          <note>Vegetarisch</note>
-          <price role="employee">7.00</price>
-          <price role="other">8.20</price>
-          <price role="student">5.70</price>
+          <name>Frische vegane Gemüsepfanne aus dem Wok , Reis</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.30</price>
+          <price role="other">6.50</price>
+          <price role="student">4.00</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -692,18 +697,18 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Eliche (GlW), Sojahack in einer Paprika Cremesoße (Sojaprotein)</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Farfalle (GlW), Austernpilze in Sahnesoße (Mi,Sl,GlW,GlG)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Farfalle (GlW), Austernpilze in Sahnesoße (Mi,Sl,GlW,GlG)</name>
-          <note>Vegetarisch</note>
+          <name>Eliche (GlW), Sojahack in einer Paprika Cremesoße (Sojaprotein)</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
