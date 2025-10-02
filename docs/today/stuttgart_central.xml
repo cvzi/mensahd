@@ -3,22 +3,18 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-10-01">
+    <day date="2025-10-02">
       <category name="Vorspeise">
         <meal>
-          <name>Eierflockensuppe</name>
-          <note>Ei</note>
-          <note>Sellerie</note>
-          <note>vegetarisch</note>
+          <name>Tagessuppe</name>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Kichererbsen-Curry mit Duftreis</name>
+          <name>Kartoffel-Gemüse-Pfanne</name>
           <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Sellerie</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -26,19 +22,23 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Vegane Tortelloni mit Basilikum-Gemüsesauce</name>
+          <name>Überbackener Blumenkohl mit Kräuterrahmsauce und Petersilienkartoffeln</name>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
+          <note>Soja</note>
           <note>Weizen</note>
-          <note>vegan</note>
-          <price role="employee">6.40</price>
-          <price role="student">3.90</price>
+          <note>vegetarisch</note>
+          <price role="employee">6.70</price>
+          <price role="student">4.20</price>
         </meal>
         <meal>
-          <name>Schweinegeschnetzeltes mit Champignons und Kartoffelrösti</name>
-          <note>Milch und Laktose</note>
+          <name>Paniertes Schweineschnitzel mit Bratensauce und Pommes frites</name>
+          <note>Ei</note>
           <note>Schwein</note>
-          <price role="employee">7.90</price>
-          <price role="student">5.40</price>
+          <note>Weizen</note>
+          <price role="employee">7.20</price>
+          <price role="student">4.70</price>
         </meal>
       </category>
       <category name="Aktion">
@@ -66,16 +66,22 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Mais-Paprika-Gemüse</name>
-          <note>vegan</note>
+          <name>Tagesgemüse</name>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
         <meal>
-          <name>Duftreis</name>
+          <name>Djuvec-Reis</name>
+          <note>Sellerie</note>
           <note>vegan</note>
           <price role="employee">1.49</price>
           <price role="student">1.09</price>
+        </meal>
+        <meal>
+          <name>Pommes frites</name>
+          <note>vegan</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
         </meal>
       </category>
       <category name="Salat">
@@ -88,24 +94,15 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Veganer Heidelbeerquark</name>
+          <name>Veganes Mousse au chocolat</name>
           <note>Hafer</note>
-          <note>Soja</note>
+          <note>Haselnüsse</note>
+          <note>Mandeln</note>
+          <note>Pistazien</note>
+          <note>Weizen</note>
           <note>vegan</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
-        </meal>
-        <meal>
-          <name>Ofenschlupfer mit Dessertsauce Vanille</name>
-          <note>Ei</note>
-          <note>Haselnüsse</note>
-          <note>Mandeln</note>
-          <note>Milch und Laktose</note>
-          <note>Soja</note>
-          <note>Weizen</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.49</price>
-          <price role="student">1.09</price>
         </meal>
       </category>
       <category name="Buffet">
