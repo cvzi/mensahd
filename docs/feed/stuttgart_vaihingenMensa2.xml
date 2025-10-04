@@ -3,7 +3,905 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-10-03">
+    <day date="2025-10-04">
+      <closed/>
+    </day>
+    <day date="2025-10-06">
+      <category name="Vorspeise">
+        <meal>
+          <name>Erbsencremesuppe</name>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Veganer renner">
+        <meal>
+          <name>Grünkernpfanne mit Blumenkohl-Bohnengemüse und Möhren-Chili-Dip</name>
+          <note>Dinkel</note>
+          <note>Sellerie</note>
+          <note>vegan</note>
+          <price role="employee">5.49</price>
+          <price role="student">2.99</price>
+        </meal>
+      </category>
+      <category name="Hauptgericht">
+        <meal>
+          <name>Falafel mit Tomatenbulgur und veganem Hafer-Kräuterquark</name>
+          <note>Hafer</note>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">7.40</price>
+          <price role="student">4.90</price>
+        </meal>
+        <meal>
+          <name>Überbackenes Hähnchenbrustfilet an Tomatensugo mit Kräutern und Penne</name>
+          <note>Geflügel</note>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <price role="employee">7.70</price>
+          <price role="student">5.20</price>
+        </meal>
+        <meal>
+          <name>Koeriwerk Kalbs-Currywurst mit Steinofenbaguette</name>
+          <note>Rind</note>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Weizen</note>
+          <price role="employee">3.90</price>
+          <price role="student">2.90</price>
+        </meal>
+        <meal>
+          <name>Koeriwerk vegane Currywurst mit Steinofenbaguette</name>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">3.90</price>
+          <price role="student">2.90</price>
+        </meal>
+      </category>
+      <category name="Aktion">
+        <meal>
+          <name>Nudel Bar Bolognese Boccolotti Pasta Rigatoni und Reibekäse</name>
+          <note>Ei</note>
+          <note>Mandeln</note>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Konservierungsstoffen</note>
+          <note>mit Phosphaten</note>
+          <note>vegan</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.16</price>
+          <price role="student">0.80</price>
+        </meal>
+        <meal>
+          <name>Pizza Margherita</name>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">8.00</price>
+          <price role="student">5.50</price>
+        </meal>
+        <meal>
+          <name>Pizza mit Pilzen</name>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">8.50</price>
+          <price role="student">6.00</price>
+        </meal>
+        <meal>
+          <name>Pizza BBQ mit Hähnchestreifen</name>
+          <note>Geflügel</note>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>mit Süßungsmitteln</note>
+          <price role="employee">8.75</price>
+          <price role="student">6.25</price>
+        </meal>
+      </category>
+      <category name="Beilage">
+        <meal>
+          <name>Bohnen-Paprika-Gemüse</name>
+          <note>Sellerie</note>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Pommes frites</name>
+          <note>vegan</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
+        </meal>
+        <meal>
+          <name>Penne</name>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">1.49</price>
+          <price role="student">1.09</price>
+        </meal>
+      </category>
+      <category name="Salat">
+        <meal>
+          <name>Beilagensalat</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Dessert">
+        <meal>
+          <name>Aprikosenjoghurt</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.49</price>
+          <price role="student">1.09</price>
+        </meal>
+        <meal>
+          <name>Karamellpudding</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
+        </meal>
+      </category>
+      <category name="Buffet">
+        <meal>
+          <name>Salatbuffet</name>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Sesam</note>
+          <note>Weizen</note>
+          <note>geschwefelt</note>
+          <note>geschwärzt</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Farbstoffen</note>
+          <note>mit Süßungsmitteln</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.60</price>
+          <price role="student">1.10</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2025-10-07">
+      <category name="Vorspeise">
+        <meal>
+          <name>Tomatensuppe</name>
+          <note>Sellerie</note>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Veganer renner">
+        <meal>
+          <name>Vollkornspaghetti mit Sojabolognese</name>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">5.49</price>
+          <price role="student">2.99</price>
+        </meal>
+      </category>
+      <category name="Hauptgericht">
+        <meal>
+          <name>Teigtaschen mit Kartoffel-Quarkfüllung und Salatgarnitur ,Sour-Cream Dip</name>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Konservierungsstoffen</note>
+          <note>vegetarisch</note>
+          <price role="employee">7.80</price>
+          <price role="student">5.30</price>
+        </meal>
+        <meal>
+          <name>Korma Chicken und Duftreis</name>
+          <note>Geflügel</note>
+          <note>Mandeln</note>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>mit Konservierungsstoffen</note>
+          <price role="employee">7.90</price>
+          <price role="student">5.40</price>
+        </meal>
+        <meal>
+          <name>Koeriwerk Kalbs-Currywurst mit Steinofenbaguette</name>
+          <note>Rind</note>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Weizen</note>
+          <price role="employee">3.90</price>
+          <price role="student">2.90</price>
+        </meal>
+        <meal>
+          <name>Koeriwerk vegane Currywurst mit Steinofenbaguette</name>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">3.90</price>
+          <price role="student">2.90</price>
+        </meal>
+      </category>
+      <category name="Aktion">
+        <meal>
+          <name>Nudel Bar Bolognese mit Tomatensauce Boccolotti Pasta Rigatoni</name>
+          <note>Ei</note>
+          <note>Mandeln</note>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Konservierungsstoffen</note>
+          <note>mit Phosphaten</note>
+          <note>vegan</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.16</price>
+          <price role="student">0.80</price>
+        </meal>
+        <meal>
+          <name>Pizza Margherita</name>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">8.00</price>
+          <price role="student">5.50</price>
+        </meal>
+        <meal>
+          <name>Pizza BBQ mit Hähnchestreifen</name>
+          <note>Geflügel</note>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>mit Süßungsmitteln</note>
+          <price role="employee">8.75</price>
+          <price role="student">6.25</price>
+        </meal>
+        <meal>
+          <name>Pizza mit Pilzen</name>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">8.50</price>
+          <price role="student">6.00</price>
+        </meal>
+      </category>
+      <category name="Beilage">
+        <meal>
+          <name>Fingermöhren</name>
+          <note>Sellerie</note>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Pommes frites</name>
+          <note>vegan</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
+        </meal>
+        <meal>
+          <name>Duftreis</name>
+          <note>vegan</note>
+          <price role="employee">1.49</price>
+          <price role="student">1.09</price>
+        </meal>
+      </category>
+      <category name="Salat">
+        <meal>
+          <name>Beilagensalat</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Dessert">
+        <meal>
+          <name>Veganer Heidelbeerquark</name>
+          <note>Hafer</note>
+          <note>Soja</note>
+          <note>vegan</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
+        </meal>
+        <meal>
+          <name>Duo aus Vanille- und Schokopudding</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
+        </meal>
+      </category>
+      <category name="Buffet">
+        <meal>
+          <name>Salatbuffet</name>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Sesam</note>
+          <note>Weizen</note>
+          <note>geschwefelt</note>
+          <note>geschwärzt</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Farbstoffen</note>
+          <note>mit Süßungsmitteln</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.60</price>
+          <price role="student">1.10</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2025-10-08">
+      <category name="Vorspeise">
+        <meal>
+          <name>Pilzcremesuppe</name>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Veganer renner">
+        <meal>
+          <name>Rotes-Linsen-Kartoffel-Curry mit Rosinen</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>vegan</note>
+          <price role="employee">5.49</price>
+          <price role="student">2.99</price>
+        </meal>
+      </category>
+      <category name="Hauptgericht">
+        <meal>
+          <name>Kartoffel-Zucchini-Gratin</name>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">6.60</price>
+          <price role="student">4.10</price>
+        </meal>
+        <meal>
+          <name>Cordon bleu vom Schwein mit Bratensauce und Pommes frites</name>
+          <note>Milch und Laktose</note>
+          <note>Schwein</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <price role="employee">7.90</price>
+          <price role="student">5.40</price>
+        </meal>
+        <meal>
+          <name>Koeriwerk Kalbs-Currywurst mit Steinofenbaguette</name>
+          <note>Rind</note>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Weizen</note>
+          <price role="employee">3.90</price>
+          <price role="student">2.90</price>
+        </meal>
+        <meal>
+          <name>Loaded Fries mit Bratensauce und Mozzarella</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">6.50</price>
+          <price role="student">4.00</price>
+        </meal>
+      </category>
+      <category name="Aktion">
+        <meal>
+          <name>Loaded Fries mit Sojabolognese</name>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">6.50</price>
+          <price role="student">4.00</price>
+        </meal>
+        <meal>
+          <name>Nudel Bar Bolognese mit Tomatensauce Boccolotti Pasta Rigatoni</name>
+          <note>Ei</note>
+          <note>Mandeln</note>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Konservierungsstoffen</note>
+          <note>mit Phosphaten</note>
+          <note>vegan</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.16</price>
+          <price role="student">0.80</price>
+        </meal>
+        <meal>
+          <name>Pizza mit Pilzen</name>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">8.50</price>
+          <price role="student">6.00</price>
+        </meal>
+        <meal>
+          <name>Pizza Margherita</name>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">8.00</price>
+          <price role="student">5.50</price>
+        </meal>
+        <meal>
+          <name>Pizza BBQ mit Hähnchestreifen</name>
+          <note>Geflügel</note>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>mit Süßungsmitteln</note>
+          <price role="employee">8.75</price>
+          <price role="student">6.25</price>
+        </meal>
+      </category>
+      <category name="Beilage">
+        <meal>
+          <name>Kokos-Schlemmergemüse</name>
+          <note>Sellerie</note>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Pommes frites</name>
+          <note>vegan</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
+        </meal>
+        <meal>
+          <name>Salzkartoffeln</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>vegan</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
+        </meal>
+      </category>
+      <category name="Salat">
+        <meal>
+          <name>Loaded Fries mit Erbsen Guacamole und Tomatensalsa</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Senf</note>
+          <note>Soja</note>
+          <note>vegan</note>
+          <price role="employee">7.00</price>
+          <price role="student">4.50</price>
+        </meal>
+      </category>
+      <category name="Dessert">
+        <meal>
+          <name>Käsesahne Creme</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
+        </meal>
+        <meal>
+          <name>Vegane Himbeercreme</name>
+          <note>vegan</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
+        </meal>
+      </category>
+      <category name="Buffet">
+        <meal>
+          <name>Salatbuffet</name>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Sesam</note>
+          <note>Weizen</note>
+          <note>geschwefelt</note>
+          <note>geschwärzt</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Farbstoffen</note>
+          <note>mit Süßungsmitteln</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.60</price>
+          <price role="student">1.10</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2025-10-09">
+      <category name="Vorspeise">
+        <meal>
+          <name>Indische Curry suppe</name>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Veganer renner">
+        <meal>
+          <name>Vollkorn Penne mit mediterranem Gemüse</name>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">5.49</price>
+          <price role="student">2.99</price>
+        </meal>
+      </category>
+      <category name="Hauptgericht">
+        <meal>
+          <name>Schupfnudelnpfanne mit Zucchini, Paprika mit veganem Hafer-Kräuterquark</name>
+          <note>Hafer</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">7.40</price>
+          <price role="student">4.90</price>
+        </meal>
+        <meal>
+          <name>Allgäuer Käsespätzle mit Zwiebelschmelze</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">7.00</price>
+          <price role="student">4.50</price>
+        </meal>
+        <meal>
+          <name>Koeriwerk Kalbs-Currywurst mit Steinofenbaguette</name>
+          <note>Rind</note>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Weizen</note>
+          <price role="employee">3.90</price>
+          <price role="student">2.90</price>
+        </meal>
+        <meal>
+          <name>Loaded Fries mit Bratensauce und Mozzarella</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">6.50</price>
+          <price role="student">4.00</price>
+        </meal>
+      </category>
+      <category name="Aktion">
+        <meal>
+          <name>Loaded Fries mit Sojabolognese</name>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">6.50</price>
+          <price role="student">4.00</price>
+        </meal>
+        <meal>
+          <name>Nudel Bar Bolognese mit Tomatensauce Boccolotti Pasta Rigatoni</name>
+          <note>Ei</note>
+          <note>Mandeln</note>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Konservierungsstoffen</note>
+          <note>mit Phosphaten</note>
+          <note>vegan</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.16</price>
+          <price role="student">0.80</price>
+        </meal>
+        <meal>
+          <name>Pizza mit Pilzen</name>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">8.50</price>
+          <price role="student">6.00</price>
+        </meal>
+        <meal>
+          <name>Pizza BBQ mit Hähnchestreifen</name>
+          <note>Geflügel</note>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>mit Süßungsmitteln</note>
+          <price role="employee">8.75</price>
+          <price role="student">6.25</price>
+        </meal>
+        <meal>
+          <name>Pizza Margherita</name>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">8.00</price>
+          <price role="student">5.50</price>
+        </meal>
+      </category>
+      <category name="Beilage">
+        <meal>
+          <name>Broccoli</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Pommes frites</name>
+          <note>vegan</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
+        </meal>
+      </category>
+      <category name="Salat">
+        <meal>
+          <name>Loaded Fries mit Erbsen Guacamole und Tomatensalsa</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Senf</note>
+          <note>Soja</note>
+          <note>vegan</note>
+          <price role="employee">7.00</price>
+          <price role="student">4.50</price>
+        </meal>
+      </category>
+      <category name="Dessert">
+        <meal>
+          <name>Kokosmilchreis mit Mango</name>
+          <note>Soja</note>
+          <note>vegan</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
+        </meal>
+        <meal>
+          <name>Dessert-Duo: Vanillepudding &amp; Rote Grütze</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
+        </meal>
+      </category>
+      <category name="Buffet">
+        <meal>
+          <name>Salatbuffet</name>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Sesam</note>
+          <note>Weizen</note>
+          <note>geschwefelt</note>
+          <note>geschwärzt</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Farbstoffen</note>
+          <note>mit Süßungsmitteln</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.60</price>
+          <price role="student">1.10</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2025-10-10">
+      <category name="Vorspeise">
+        <meal>
+          <name>Gemüserahmsuppe</name>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Veganer renner">
+        <meal>
+          <name>Gemüse-Knusperfrikadelle mit veganem Hafer-Kräuterquark und Pommes frites</name>
+          <note>Hafer</note>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">5.49</price>
+          <price role="student">2.99</price>
+        </meal>
+      </category>
+      <category name="Hauptgericht">
+        <meal>
+          <name>Fajitas mit Gemüse, Sojastreifen und Dip mit veganem Sour-Cream Dip</name>
+          <note>Hafer</note>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>mit Konservierungsstoffen</note>
+          <note>vegan</note>
+          <price role="employee">7.10</price>
+          <price role="student">4.60</price>
+        </meal>
+        <meal>
+          <name>Backfisch mit Remouladensauce und Kartoffelsalat</name>
+          <note>Ei</note>
+          <note>MSC-zertifizierter Fisch (MSC-C-51632)</note>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Farbstoffen</note>
+          <note>mit Süßungsmitteln</note>
+          <price role="employee">7.90</price>
+          <price role="student">5.40</price>
+        </meal>
+        <meal>
+          <name>Koeriwerk Kalbs-Currywurst mit Steinofenbaguette</name>
+          <note>Rind</note>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Weizen</note>
+          <price role="employee">3.90</price>
+          <price role="student">2.90</price>
+        </meal>
+        <meal>
+          <name>Loaded Fries mit Bratensauce und Mozzarella</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">6.50</price>
+          <price role="student">4.00</price>
+        </meal>
+      </category>
+      <category name="Aktion">
+        <meal>
+          <name>Loaded Fries mit Sojabolognese</name>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">6.50</price>
+          <price role="student">4.00</price>
+        </meal>
+        <meal>
+          <name>Nudel Bar Bolognese mit Tomatensauce Boccolotti Pasta Rigatoni</name>
+          <note>Ei</note>
+          <note>Mandeln</note>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Konservierungsstoffen</note>
+          <note>mit Phosphaten</note>
+          <note>vegan</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.16</price>
+          <price role="student">0.80</price>
+        </meal>
+        <meal>
+          <name>Pizza Margherita</name>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">8.00</price>
+          <price role="student">5.50</price>
+        </meal>
+        <meal>
+          <name>Pizza mit Pilzen</name>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">8.50</price>
+          <price role="student">6.00</price>
+        </meal>
+        <meal>
+          <name>Pizza BBQ mit Hähnchestreifen</name>
+          <note>Geflügel</note>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>mit Süßungsmitteln</note>
+          <price role="employee">8.75</price>
+          <price role="student">6.25</price>
+        </meal>
+      </category>
+      <category name="Beilage">
+        <meal>
+          <name>Blattspinat</name>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Pommes frites</name>
+          <note>vegan</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
+        </meal>
+        <meal>
+          <name>Kartoffelsalat</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>mit Antioxidationsmitteln</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
+        </meal>
+      </category>
+      <category name="Salat">
+        <meal>
+          <name>Loaded Fries mit Erbsen Guacamole und Tomatensalsa</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Senf</note>
+          <note>Soja</note>
+          <note>vegan</note>
+          <price role="employee">7.00</price>
+          <price role="student">4.50</price>
+        </meal>
+      </category>
+      <category name="Dessert">
+        <meal>
+          <name>Ananasquark</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
+        </meal>
+        <meal>
+          <name>Pudding mit Sahne Vanille-Geschmack</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
+        </meal>
+      </category>
+      <category name="Buffet">
+        <meal>
+          <name>Salatbuffet</name>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Sesam</note>
+          <note>Weizen</note>
+          <note>geschwefelt</note>
+          <note>geschwärzt</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Farbstoffen</note>
+          <note>mit Süßungsmitteln</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.60</price>
+          <price role="student">1.10</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2025-10-11">
       <closed/>
     </day>
   </canteen>
