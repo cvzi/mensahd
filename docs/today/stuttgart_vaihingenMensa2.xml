@@ -3,22 +3,22 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-10-06">
+    <day date="2025-10-07">
       <category name="Vorspeise">
         <meal>
-          <name>Erbsencremesuppe</name>
-          <note>Milch und Laktose</note>
+          <name>Tomatensuppe</name>
           <note>Sellerie</note>
-          <note>vegetarisch</note>
+          <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Grünkernpfanne mit Blumenkohl-Bohnengemüse und Möhren-Chili-Dip</name>
-          <note>Dinkel</note>
+          <name>Vollkornspaghetti mit Sojabolognese</name>
           <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Weizen</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -26,21 +26,25 @@
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Falafel und Tomatenreis mit veganem Hafer-Kräuterquark</name>
-          <note>Hafer</note>
-          <note>Soja</note>
-          <note>vegan</note>
-          <price role="employee">7.40</price>
-          <price role="student">4.90</price>
+          <name>Teigtaschen mit Kartoffel-Quarkfüllung und Salatgarnitur ,Sour-Cream Dip</name>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Konservierungsstoffen</note>
+          <note>vegetarisch</note>
+          <price role="employee">7.80</price>
+          <price role="student">5.30</price>
         </meal>
         <meal>
-          <name>Überbackenes Hähnchenbrustfilet an Tomatensugo mit Kräutern und Penne</name>
+          <name>Korma Chicken und Duftreis</name>
           <note>Geflügel</note>
+          <note>Mandeln</note>
           <note>Milch und Laktose</note>
           <note>Sellerie</note>
-          <note>Weizen</note>
-          <price role="employee">7.70</price>
-          <price role="student">5.20</price>
+          <note>mit Konservierungsstoffen</note>
+          <price role="employee">7.90</price>
+          <price role="student">5.40</price>
         </meal>
         <meal>
           <name>Koeriwerk Kalbs-Currywurst mit Steinofenbaguette</name>
@@ -64,7 +68,7 @@
       </category>
       <category name="Aktion">
         <meal>
-          <name>Nudel Bar Bolognese Boccolotti Pasta Rigatoni und Reibekäse</name>
+          <name>Nudel Bar Bolognese mit Tomatensauce Boccolotti Pasta Rigatoni</name>
           <note>Ei</note>
           <note>Mandeln</note>
           <note>Milch und Laktose</note>
@@ -80,10 +84,35 @@
           <price role="employee">1.16</price>
           <price role="student">0.80</price>
         </meal>
+        <meal>
+          <name>Pizza Margherita</name>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">8.00</price>
+          <price role="student">5.50</price>
+        </meal>
+        <meal>
+          <name>Pizza BBQ mit Hähnchestreifen</name>
+          <note>Geflügel</note>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>mit Süßungsmitteln</note>
+          <price role="employee">8.75</price>
+          <price role="student">6.25</price>
+        </meal>
+        <meal>
+          <name>Pizza mit Pilzen</name>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">8.50</price>
+          <price role="student">6.00</price>
+        </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Bohnen-Paprika-Gemüse</name>
+          <name>Fingermöhren</name>
           <note>Sellerie</note>
           <note>vegan</note>
           <price role="employee">1.39</price>
@@ -96,7 +125,7 @@
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Tomatenreis</name>
+          <name>Duftreis</name>
           <note>vegan</note>
           <price role="employee">1.49</price>
           <price role="student">1.09</price>
@@ -112,14 +141,15 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Aprikosenjoghurt</name>
-          <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.49</price>
-          <price role="student">1.09</price>
+          <name>Veganer Heidelbeerquark</name>
+          <note>Hafer</note>
+          <note>Soja</note>
+          <note>vegan</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Karamellpudding</name>
+          <name>Duo aus Vanille- und Schokopudding</name>
           <note>Milch und Laktose</note>
           <note>vegetarisch</note>
           <price role="employee">1.69</price>
