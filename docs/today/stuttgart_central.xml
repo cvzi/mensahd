@@ -3,7 +3,7 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-10-08">
+    <day date="2025-10-09">
       <category name="Vorspeise">
         <meal>
           <name>Tagessuppe</name>
@@ -13,15 +13,25 @@
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Rotes-Linsen-Kartoffel-Curry mit Rosinen</name>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <name>Vollkorn Penne mit mediterranem Gemüse</name>
           <note>Sellerie</note>
+          <note>Weizen</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
         </meal>
       </category>
       <category name="Hauptgericht">
+        <meal>
+          <name>Allgäuer Käsespätzle mit Zwiebelschmelze</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">7.00</price>
+          <price role="student">4.50</price>
+        </meal>
         <meal>
           <name>Hähnchen-Döner mit Joghurt-Knoblauch-Dip</name>
           <note>Geflügel</note>
@@ -35,31 +45,19 @@
           <price role="employee">7.90</price>
           <price role="student">5.40</price>
         </meal>
-        <meal>
-          <name>Cordon bleu vom Schwein mit Bratensauce und Pommes frites</name>
-          <note>Milch und Laktose</note>
-          <note>Schwein</note>
-          <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
-          <price role="employee">7.90</price>
-          <price role="student">5.40</price>
-        </meal>
       </category>
       <category name="Aktion">
         <meal>
-          <name>Gemüsewok Honig-Pfeffer mit Glasnudeln</name>
-          <note>Soja</note>
-          <note>vegetarisch</note>
+          <name>Gemüsewok Curry mit Reisnudeln</name>
+          <note>vegan</note>
           <price role="employee">6.95</price>
           <price role="student">4.45</price>
         </meal>
         <meal>
-          <name>Würziges Rinderhackfleisch zum Wokgericht</name>
-          <note>Rind</note>
-          <note>Soja</note>
-          <note>Weizen</note>
-          <price role="employee">2.95</price>
-          <price role="student">2.95</price>
+          <name>Schweinefleischstreifen zum Wokgericht</name>
+          <note>vegan</note>
+          <price role="employee">1.95</price>
+          <price role="student">1.95</price>
         </meal>
       </category>
       <category name="Beilage">
@@ -69,10 +67,10 @@
           <price role="student">0.99</price>
         </meal>
         <meal>
-          <name>Pommes frites</name>
+          <name>Reis</name>
           <note>vegan</note>
-          <price role="employee">1.69</price>
-          <price role="student">1.29</price>
+          <price role="employee">1.49</price>
+          <price role="student">1.09</price>
         </meal>
       </category>
       <category name="Salat">
@@ -85,8 +83,9 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Vegane Himbeercreme</name>
-          <note>vegan</note>
+          <name>Rote Grütze mit Dessertsauce Vanille</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
