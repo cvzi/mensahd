@@ -3,80 +3,6 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-10-14">
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Vegetarisches Schnitzel mit pikanter Pilz-Paprikacremesoße (Ei,So,Mi,Sl,Sw,GlW,GlH), Pommes Frites</name>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegetarisch</note>
-          <price role="employee">6.60</price>
-          <price role="other">7.80</price>
-          <price role="student">5.30</price>
-        </meal>
-      </category>
-      <category name="CampusSpezial">
-        <meal>
-          <name>Süßkartoffelpüree, Dattel-Curry Falafel (GlW), grünem Hummus , Rotkrautsalat</name>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">7.10</price>
-          <price role="other">8.30</price>
-          <price role="student">5.80</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Pho chay, kräftige Gemüsebrühe mit gebackenem Tofu, frischem Gemüse und Reisnudeln (2,So,Sl,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.60</price>
-          <price role="other">7.80</price>
-          <price role="student">5.30</price>
-        </meal>
-        <meal>
-          <name>Hausgemachte Pasta (GlW), mit Spinat, Zucchini, Sahne, Ricotta und Hartkäse</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.40</price>
-          <price role="student">3.90</price>
-        </meal>
-      </category>
-      <category name="Pastabar">
-        <meal>
-          <name>Nudelauflauf mit Auberginen in Tomaten- Kräutersoße (1,Mi,Sw,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>Pasta (GlW), Linsen in pikanter Tomatensoße</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-      </category>
-      <category name="Gemüsebar">
-        <meal>
-          <name>Sesammöhrchen, gebraten Zucchini in Tomaten , Gerösteter Knollensellerie und Fenchel , gebratenem Wirsing, Bauernkartoffeln mit gebräunten Bröseln (Mi,GlW)</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-      </category>
-    </day>
     <day date="2025-10-15">
       <category name="CampusKlassiker">
         <meal>
@@ -108,8 +34,9 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Guacamole Bites (3,Mi,Sf,Sw,GlW), Mexican Reispfanne, Chili Dip</name>
+          <name>Guacamole Bites (3,Mi,Sf,Sw,GlW), Mexican Reispfanne mit Mais und schwarze Bohnen , Chili Dip</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Senf und Senferzeugnisse</note>
           <note>Vegetarisch</note>
           <note>mit Geschmacksverstärker</note>
           <price role="employee">6.90</price>
@@ -119,14 +46,14 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Farfalle (GlW), Waldpilzen in Sahnesoße mit Basilikum (Mi,Sw,GlW,GlG)</name>
+          <name>Pasta (GlW), Waldpilzen in Sahnesoße mit Basilikum (Mi,Sw,GlW,GlG)</name>
           <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Farfalle (GlW), Sojastreifen in scharfer Tomatensoße (Sojaprotein)</name>
+          <name>Pasta (GlW), Sojastreifen in scharfer Tomatensoße (Sojaprotein)</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
@@ -179,16 +106,16 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Bunte Fusilli (GlW), Champignons in Cremesoße</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Nudelauflauf mit Spinat in Sahnesoße und mit Hirtenkäse gebacken (Ei,Mi,GlW)</name>
           <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Nudelauflauf mit Spinat in Sahnesoße und mit Hirtenkäse gebacken (Ei,Mi,GlW)</name>
+          <name>Bunte Fusilli (GlW), Champignons in Cremesoße</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
