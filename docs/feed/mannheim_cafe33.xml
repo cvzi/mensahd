@@ -3,15 +3,48 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-10-13">
+    <day date="2025-10-20">
       <category name="Menü 1">
         <meal>
-          <name>Hähnchenkeule, Geflügelsauce, Weißkraut-Karottensalat , Salzkartoffeln </name>
-          <note>Antioxidationsmittel</note>
-          <note>Geflügel</note>
+          <name>Geschnetzeltes vom Schwein, Pilzrahmsoße , Spätzle , frische Kräuter </name>
+          <note>Ei</note>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Milch/Laktose</note>
           <note>Portion Preis</note>
-          <note>Schwefeldioxid Sulfit</note>
+          <note>Schweinefleisch</note>
+          <note>Säuerungsmittel</note>
+          <note>Weizen</note>
+          <note> = Vegan</note>
+          <note> = Vegetarisch</note>
+          <price role="employee">5.00</price>
+          <price role="other">6.40</price>
+          <price role="student">4.00</price>
+        </meal>
+      </category>
+      <category name="Menü vegan">
+        <meal>
+          <name>Süßkartoffelpüree , Marktgemüse , Avocado-Quinoa-Pflanzerl , frische Kräuter </name>
+          <note>Hafer</note>
+          <note>Portion Preis</note>
+          <note>Soja</note>
+          <note>Säuerungsmittel</note>
+          <note> = Vegan</note>
+          <price role="employee">5.00</price>
+          <price role="other">6.40</price>
+          <price role="student">4.00</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2025-10-21">
+      <category name="Menü 1">
+        <meal>
+          <name>Chili con Carne, bunte Gemüsegerste , frische Kräuter </name>
+          <note>Farbstoff</note>
+          <note>Gerste</note>
+          <note>Portion Preis</note>
+          <note>Rind</note>
           <note>Sellerie</note>
+          <note>Säuerungsmittel</note>
           <note>Weizen</note>
           <note> = Vegan</note>
           <price role="employee">5.00</price>
@@ -21,13 +54,12 @@
       </category>
       <category name="Menü vegan">
         <meal>
-          <name>Soja-Bolognese , Spaghetti , frische Kräuter , Beilagensalat </name>
-          <note>Farbstoff</note>
-          <note>Glutenhaltiges Getreide</note>
+          <name>Gemüsemaultaschen vegan , Kartoffelsalat , Zwiebelschmelze , frische Kräuter </name>
+          <note>Antioxidationsmittel</note>
           <note>Portion Preis</note>
           <note>Schwefeldioxid Sulfit</note>
           <note>Sellerie</note>
-          <note>Soja</note>
+          <note>Senf</note>
           <note>Säuerungsmittel</note>
           <note>Weizen</note>
           <note> = Vegan</note>
@@ -37,41 +69,35 @@
         </meal>
       </category>
     </day>
-    <day date="2025-10-14">
+    <day date="2025-10-22">
       <category name="Menü 1">
         <meal>
-          <name>hausgemachte Puten-Cevapcici, Ajvar-Dip , Langkornreis , Weißkrautsalat , Peperoni </name>
-          <note>Antioxidationsmittel</note>
+          <name>Putenbraten, provenzalische Soße , Marktgemüse , Schupfnudeln </name>
+          <note>Ei</note>
+          <note>Farbstoff</note>
           <note>Geflügel</note>
-          <note>Milch/Laktose</note>
+          <note>Portion Preis</note>
+          <note>Schwefeldioxid Sulfit</note>
+          <note>Säuerungsmittel</note>
+          <note>Weizen</note>
+          <note> = Vegan</note>
+          <note> = Vegetarisch</note>
+          <price role="employee">5.00</price>
+          <price role="other">6.40</price>
+          <price role="student">4.00</price>
+        </meal>
+      </category>
+      <category name="Menü vegan">
+        <meal>
+          <name>hausgemachte vegane Bratwurst , Currysoße , Bratkartoffeln , Weißkraut-Karottensalat </name>
+          <note>Antioxidationsmittel</note>
           <note>Portion Preis</note>
           <note>Schwefeldioxid Sulfit</note>
           <note>Sellerie</note>
           <note>Senf</note>
           <note>Säuerungsmittel</note>
           <note>mit Geschmacksverstärker</note>
-          <note> = Vegan</note>
-          <note> = Vegetarisch</note>
-          <price role="employee">5.00</price>
-          <price role="other">6.40</price>
-          <price role="student">4.00</price>
-        </meal>
-      </category>
-      <category name="Menü vegan">
-        <meal>
-          <name>Falafel-Bällchen , gelbe Currysoße, Marktgemüse , Couscous </name>
-          <note>Antioxidationsmittel</note>
-          <note>Farbstoff</note>
-          <note>Glutenhaltiges Getreide</note>
-          <note>Konservierungsstoff</note>
-          <note>Portion Preis</note>
-          <note>Schwefeldioxid Sulfit</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>Soja</note>
-          <note>Säuerungsmittel</note>
-          <note>Weizen</note>
-          <note>mit Geschmacksverstärker</note>
+          <note>mit Süßmitteln</note>
           <note> = Vegan</note>
           <price role="employee">5.00</price>
           <price role="other">6.40</price>
@@ -79,85 +105,21 @@
         </meal>
       </category>
     </day>
-    <day date="2025-10-15">
+    <day date="2025-10-23">
       <category name="Menü 1">
         <meal>
-          <name>Salsiccia, Fenchel-Paprika-Gemüse , Tomatensoße , Rosmarinkartoffeln </name>
-          <note>Ei</note>
-          <note>Farbstoff</note>
-          <note>Portion Preis</note>
-          <note>Schwefeldioxid Sulfit</note>
-          <note>Schweinefleisch</note>
-          <note>Säuerungsmittel</note>
-          <note>Weizen</note>
-          <note> = Vegan</note>
-          <price role="employee">5.00</price>
-          <price role="other">6.40</price>
-          <price role="student">4.00</price>
-        </meal>
-      </category>
-      <category name="Menü vegan">
-        <meal>
-          <name>veganes Schnitzel , One Pot Pasta "Erbsen-Champignons" , Schnittlauchsoße </name>
-          <note>Portion Preis</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>Soja</note>
-          <note>Säuerungsmittel</note>
-          <note>Weizen</note>
-          <note> = Vegan</note>
-          <price role="employee">5.00</price>
-          <price role="other">6.40</price>
-          <price role="student">4.00</price>
-        </meal>
-      </category>
-    </day>
-    <day date="2025-10-16">
-      <category name="Menü 1">
-        <meal>
-          <name>Schweinerückensteak, Pilzrahmsoße , Spätzle , Beilagensalat </name>
-          <note>Ei</note>
-          <note>Glutenhaltiges Getreide</note>
-          <note>Milch/Laktose</note>
-          <note>Portion Preis</note>
-          <note>Schweinefleisch</note>
-          <note>Säuerungsmittel</note>
-          <note>Weizen</note>
-          <note> = Vegan</note>
-          <note> = Vegetarisch</note>
-          <price role="employee">5.00</price>
-          <price role="other">6.40</price>
-          <price role="student">4.00</price>
-        </meal>
-      </category>
-      <category name="Menü vegan">
-        <meal>
-          <name>vegane hausgemachte Bratwurst , Zwiebelsoße , Karottengemüse , Kartoffelstampf </name>
-          <note>Farbstoff</note>
-          <note>Portion Preis</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>Säuerungsmittel</note>
-          <note>Weizen</note>
-          <note> = Vegan</note>
-          <price role="employee">5.00</price>
-          <price role="other">6.40</price>
-          <price role="student">4.00</price>
-        </meal>
-      </category>
-    </day>
-    <day date="2025-10-17">
-      <category name="Menü 1">
-        <meal>
-          <name>Kartoffelsuppe, Zwiebel-Speckstippe, Dampfnudel , frische Kräuter </name>
+          <name>Cevapcici, Metaxasoße , Tomatenreis , Peperoni , weißer Bohnensalat </name>
+          <note>Alkohol</note>
           <note>Antioxidationsmittel</note>
           <note>Ei</note>
-          <note>Glutenhaltiges Getreide</note>
-          <note>Konservierungsstoff</note>
+          <note>Farbstoff</note>
           <note>Milch/Laktose</note>
+          <note>Phosphat</note>
           <note>Portion Preis</note>
+          <note>Schwefeldioxid Sulfit</note>
           <note>Schweinefleisch</note>
           <note>Sellerie</note>
+          <note>Senf</note>
           <note>Säuerungsmittel</note>
           <note>Weizen</note>
           <note> = Vegan</note>
@@ -169,13 +131,43 @@
       </category>
       <category name="Menü vegan">
         <meal>
-          <name>Linsensugo , Gnocchi , Rucola , Beilagensalat </name>
-          <note>Farbstoff</note>
+          <name>orientalischer Linseneintopf , Naanbrot , frische Kräuter , Beilagensalat </name>
+          <note>Antioxidationsmittel</note>
           <note>Portion Preis</note>
           <note>Schwefeldioxid Sulfit</note>
           <note>Sellerie</note>
-          <note>Säuerungsmittel</note>
+          <note>Soja</note>
           <note>Weizen</note>
+          <note> = Vegan</note>
+          <price role="employee">5.00</price>
+          <price role="other">6.40</price>
+          <price role="student">4.00</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2025-10-24">
+      <category name="Menü 1">
+        <meal>
+          <name>Rahmgulasch vom Schwein mit Pilzen, breite Bandnudeln , frische Kräuter , Karottensalat </name>
+          <note>Antioxidationsmittel</note>
+          <note>Ei</note>
+          <note>Milch/Laktose</note>
+          <note>Portion Preis</note>
+          <note>Schwefeldioxid Sulfit</note>
+          <note>Schweinefleisch</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note> = Vegan</note>
+          <note> = Vegetarisch</note>
+          <price role="employee">5.00</price>
+          <price role="other">6.40</price>
+          <price role="student">4.00</price>
+        </meal>
+      </category>
+      <category name="Menü vegan">
+        <meal>
+          <name>Gemüse-Curry , Nasi Lemak - Kokosreis aus Malaysia , Koriander und Minze , Limettenecke </name>
+          <note>Portion Preis</note>
           <note> = Vegan</note>
           <price role="employee">5.00</price>
           <price role="other">6.40</price>
