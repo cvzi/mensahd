@@ -47,13 +47,6 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Frisch gebackene PIZZA nach Wahl (versch. Sorten) ab 4,70 / 6,00 / 7,20 (auch TAKE AWAY) (Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">6.00</price>
-          <price role="other">7.20</price>
-          <price role="student">4.70</price>
-        </meal>
-        <meal>
           <name>Hähnchenbrust in Parmesanpanade (Mi,GlW), Schmortomaten-Soße, Bohnen- Kartoffelstampf</name>
           <note>Geflügel</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -61,14 +54,15 @@
           <price role="other">8.20</price>
           <price role="student">5.70</price>
         </meal>
+        <meal>
+          <name>Frisch gebackene PIZZA nach Wahl (versch. Sorten) ab 4,70 / 6,00 / 7,20 (auch TAKE AWAY) (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">6.00</price>
+          <price role="other">7.20</price>
+          <price role="student">4.70</price>
+        </meal>
       </category>
       <category name="Pastabar">
-        <meal>
-          <name>Eliche (GlW), Gorgonzola- Hartkäsesoße, gerösteten Haselnüssen und Basilikum (Mi,Sl,NHa)</name>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
         <meal>
           <name>Bunte Nudeln (GlW), Tomatensoße mit Waldpilzen und Speck</name>
           <note>Schwein</note>
@@ -77,6 +71,12 @@
           <note>mit Antioxidationsmittel</note>
           <note>mit Konservierungsstoff</note>
           <note>mit Phosphat</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Eliche (GlW), Gorgonzola- Hartkäsesoße, gerösteten Haselnüssen und Basilikum (Mi,Sl,NHa)</name>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -200,13 +200,6 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Frisch gebackene PIZZA nach Wahl (versch. Sorten) ab 4,70 / 6,00 / 7,20 (auch TAKE AWAY) (Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">6.00</price>
-          <price role="other">7.20</price>
-          <price role="student">4.70</price>
-        </meal>
-        <meal>
           <name>Gebratenes Wildlachsfilet (Fi,GlW), Buchweizen Pilaw mit Porree und Kichererbsen , Joghurt-Spinat-Dip</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Neu</note>
@@ -225,8 +218,23 @@
           <price role="other">7.10</price>
           <price role="student">4.60</price>
         </meal>
+        <meal>
+          <name>Frisch gebackene PIZZA nach Wahl (versch. Sorten) ab 4,70 / 6,00 / 7,20 (auch TAKE AWAY) (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">6.00</price>
+          <price role="other">7.20</price>
+          <price role="student">4.70</price>
+        </meal>
       </category>
       <category name="Pastabar">
+        <meal>
+          <name>Fusilli (GlW), Aglio e olio mit Tomate und Knoblauch in Olivenöl</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
         <meal>
           <name>Fusilli (GlW), Schinkenstreifen in einer Käse- Sahnesoße</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -236,14 +244,6 @@
           <note>mit Antioxidationsmittel</note>
           <note>mit Konservierungsstoff</note>
           <note>mit Phosphat</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>Fusilli (GlW), Aglio e olio mit Tomate und Knoblauch in Olivenöl</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -281,19 +281,19 @@
           <price role="student">5.75</price>
         </meal>
         <meal>
-          <name>Veggie Cheddarburger mit Gemüseschnitzel (1,2,9,Mi,Se,Sw,GlW,GlD), Kartoffelspalten (GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">6.85</price>
-          <price role="other">8.05</price>
-          <price role="student">5.55</price>
-        </meal>
-        <meal>
           <name>4 Röstiecken, Kräuterquark , Gurkensalat</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Vegetarisch</note>
           <price role="employee">4.80</price>
           <price role="other">6.00</price>
           <price role="student">3.50</price>
+        </meal>
+        <meal>
+          <name>Veggie Cheddarburger mit Gemüseschnitzel (1,2,9,Mi,Se,Sw,GlW,GlD), Kartoffelspalten (GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">6.85</price>
+          <price role="other">8.05</price>
+          <price role="student">5.55</price>
         </meal>
       </category>
       <category name="CampusSpezial">
@@ -407,18 +407,18 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Penne (GlW), Rinderhackfleisch in Sahnesoße mit Kräutern</name>
+          <name>Penne (GlW), Tomaten-Sahnesoße mit Zucchiniwürfel</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Rind</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Penne (GlW), Tomaten-Sahnesoße mit Zucchiniwürfel</name>
+          <name>Penne (GlW), Rinderhackfleisch in Sahnesoße mit Kräutern</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -490,18 +490,18 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Flammkuchen des Tages: mit Schmand, Grillgemüse und Hirtenkäse (Mi,Sw,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">6.55</price>
-          <price role="other">7.75</price>
-          <price role="student">5.25</price>
-        </meal>
-        <meal>
           <name>Frisch gebackene FLAMMKUCHEN nach Wahl (versch. Sorten) ab 4,20 / 5,50 / 6,70 (auch TAKE AWAY) (Mi,GlW)</name>
           <note>Vegetarisch</note>
           <price role="employee">5.50</price>
           <price role="other">6.70</price>
           <price role="student">4.20</price>
+        </meal>
+        <meal>
+          <name>Flammkuchen des Tages: mit Schmand, Grillgemüse und Hirtenkäse (Mi,Sw,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">6.55</price>
+          <price role="other">7.75</price>
+          <price role="student">5.25</price>
         </meal>
       </category>
       <category name="Pastabar">
