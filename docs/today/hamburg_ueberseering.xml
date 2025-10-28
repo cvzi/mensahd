@@ -15,20 +15,20 @@
           <price role="student">4.15</price>
         </meal>
         <meal>
-          <name>Vegetarischer Döner - Burger mit Gurken,Tomaten und Krautsalat, würzigem Dill-Dip und Röstzwiebeln (3,Mi,GlW), Pommes Frites</name>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegetarisch</note>
-          <price role="employee">7.00</price>
-          <price role="other">8.20</price>
-          <price role="student">5.70</price>
-        </meal>
-        <meal>
           <name>Dönerfleisch - Burger mit Gurken,Tomaten und Krautsalat, würzigem Dill-Dip und Röstzwiebeln (3,4,Mi,Sf,GlW), Pommes Frites</name>
           <note>Geflügel</note>
           <note>Senf und Senferzeugnisse</note>
           <price role="employee">7.40</price>
           <price role="other">8.60</price>
           <price role="student">6.10</price>
+        </meal>
+        <meal>
+          <name>Vegetarischer Döner - Burger mit Gurken,Tomaten und Krautsalat, würzigem Dill-Dip und Röstzwiebeln (3,Mi,GlW), Pommes Frites</name>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <price role="employee">7.00</price>
+          <price role="other">8.20</price>
+          <price role="student">5.70</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -50,6 +50,14 @@
           <price role="student">0.85</price>
         </meal>
         <meal>
+          <name>gebratene Mungosprossen (2,So,Se,GlW), Bohnen mit Knoblauch und Ingwer, orientalische Zuckermöhren, gebratener Wirsingkohl mit Kreuzkümmel, gebratene Cajun Zucchini</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
           <name>Herzoginkartoffeln , Kroketten (GlW), Kartoffel - Blumenkohlgratin (Mi,GlW,GlG), gebackene Kartoffel mit Koriander - Limettenmarinade</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -59,34 +67,10 @@
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
-        <meal>
-          <name>gebratene Mungosprossen (2,So,Se,GlW), Bohnen mit Knoblauch und Ingwer, orientalische Zuckermöhren, gebratener Wirsingkohl mit Kreuzkümmel, gebratene Cajun Zucchini</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
       </category>
     </day>
     <day date="2025-10-29">
       <category name="CampusKlassiker">
-        <meal>
-          <name>vegane Currybratwurst (Erbsenprotein) , BBQ Soße , fruchtige BBQ Soße , verschiedene Currypulver nach Wahl , Pommes Frites</name>
-          <note>Geschwefelt</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Farbstoff</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">6.20</price>
-          <price role="other">7.40</price>
-          <price role="student">4.90</price>
-        </meal>
         <meal>
           <name>Unsere Hauseigene Currybratwurst , BBQ Soße , fruchtige BBQ Soße , verschiedene Currypulver nach Wahl , Pommes Frites</name>
           <note>Geschwefelt</note>
@@ -100,6 +84,22 @@
           <note>mit Farbstoff</note>
           <note>mit Konservierungsstoff</note>
           <note>mit Phosphat</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.40</price>
+          <price role="student">4.90</price>
+        </meal>
+        <meal>
+          <name>vegane Currybratwurst (Erbsenprotein) , BBQ Soße , fruchtige BBQ Soße , verschiedene Currypulver nach Wahl , Pommes Frites</name>
+          <note>Geschwefelt</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Farbstoff</note>
+          <note>mit Konservierungsstoff</note>
           <note>mit Süßungsmittel</note>
           <price role="employee">6.20</price>
           <price role="other">7.40</price>
@@ -128,8 +128,7 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Gebackenes / Frittiertes:, Kartoffelspalten (GlW), Steakhouse - Pommes, Röstiecken, Röstinchen, Herzoginkartoffeln , Kroketten (GlW), Aufläufe:, Kartoffelgratin (Mi,Sl,GlW,GlG), Kartoffel - Gemüsegratin (Mi,GlW,GlG), Kartoffel -</name>
-          <note>Ei und Eierzeugnisse</note>
+          <name>Bratreis mit Gemüse (2,3,So,GlW), Curry und Ragout:, orientalischer CousCous (Sl,GlW,NMa,NWa), orientalisches Kichererbsen - Tomatenragout, gebratenes Kichererbsencurry, Kicherserbsen Tomatenragout, Kartoffelragout in Dillsahne , weißes</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Vegetarisch</note>
           <price role="employee">1.10</price>
@@ -137,7 +136,7 @@
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Blumenkohlgratin (</name>
+          <name>Bohnencurry (S</name>
         </meal>
         <meal>
           <name>gebratene Mungosprossen (2,So,Se,GlW), Bohne:, gebratene Bohnen, Bohnen mit Knoblauch und Ingwer, Erbsen:, Erbsen, Spicy Erbsen , Blumenkohl:, Blumenkohl, gebackener Cajun - Blumenkohl, gebackener Tandoori - Blumenkohl , Blumenkohl mit</name>
@@ -153,7 +152,8 @@
           <name>Sesammarin</name>
         </meal>
         <meal>
-          <name>Bratreis mit Gemüse (2,3,So,GlW), Curry und Ragout:, orientalischer CousCous (Sl,GlW,NMa,NWa), orientalisches Kichererbsen - Tomatenragout, gebratenes Kichererbsencurry, Kicherserbsen Tomatenragout, Kartoffelragout in Dillsahne , weißes</name>
+          <name>Gebackenes / Frittiertes:, Kartoffelspalten (GlW), Steakhouse - Pommes, Röstiecken, Röstinchen, Herzoginkartoffeln , Kroketten (GlW), Aufläufe:, Kartoffelgratin (Mi,Sl,GlW,GlG), Kartoffel - Gemüsegratin (Mi,GlW,GlG), Kartoffel -</name>
+          <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Vegetarisch</note>
           <price role="employee">1.10</price>
@@ -161,7 +161,7 @@
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Bohnencurry (S</name>
+          <name>Blumenkohlgratin (</name>
         </meal>
       </category>
     </day>
@@ -178,15 +178,6 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Kross gebackenes Panko-Chicken (3,GlW), Sprossengemüse (2,So,Se,GlW), Spicy Pepper Sauce , Basmatireis</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Geflügel</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <price role="employee">7.80</price>
-          <price role="other">9.00</price>
-          <price role="student">6.50</price>
-        </meal>
-        <meal>
           <name>gebackener Panko - Tofu (2,So,GlW), Sprossengemüse (2,So,Se,GlW), Spicy Pepper Sauce , Basmatireis</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -194,6 +185,15 @@
           <price role="employee">6.40</price>
           <price role="other">7.60</price>
           <price role="student">5.10</price>
+        </meal>
+        <meal>
+          <name>Kross gebackenes Panko-Chicken (3,GlW), Sprossengemüse (2,So,Se,GlW), Spicy Pepper Sauce , Basmatireis</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <price role="employee">7.80</price>
+          <price role="other">9.00</price>
+          <price role="student">6.50</price>
         </meal>
       </category>
       <category name="Pastabar">
