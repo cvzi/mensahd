@@ -4,13 +4,6 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-10-30">
-      <category name="Vorspeise">
-        <meal>
-          <name>Tagessuppe</name>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-      </category>
       <category name="Veganer renner">
         <meal>
           <name>Spaghetti mit Napolisauce</name>
@@ -22,15 +15,6 @@
         </meal>
       </category>
       <category name="Hauptgericht">
-        <meal>
-          <name>Pfannkuchen</name>
-          <note>Ei</note>
-          <note>Milch und Laktose</note>
-          <note>Weizen</note>
-          <note>vegetarisch</note>
-          <price role="employee">5.70</price>
-          <price role="student">3.20</price>
-        </meal>
         <meal>
           <name>Gebratene Putenbrust an Pilzrahmsauce mit Weißwein und Reis</name>
           <note>Geflügel</note>
@@ -53,7 +37,7 @@
           <price role="student">4.50</price>
         </meal>
         <meal>
-          <name>Aktionsessen Schweinshaxe mit Kümmelsauce und Kartoffelsalat Weißkrautsalat</name>
+          <name>Aktionsessen Schweinshaxe mit Kümmelsauce und Kartoffelsalat oder wahlweise mit Weißkrautsalat</name>
           <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
           <note>Senf</note>
@@ -93,7 +77,8 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Tagesgemüse</name>
+          <name>Buntes Gemüse</name>
+          <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -126,18 +111,17 @@
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Veganer Himbeerquark</name>
-          <note>Hafer</note>
-          <note>Soja</note>
-          <note>vegan</note>
-          <price role="employee">1.69</price>
-          <price role="student">1.29</price>
-        </meal>
-        <meal>
           <name>Birne-Quitte Mascarponecreme</name>
           <note>Milch und Laktose</note>
           <note>mit Konservierungsstoffen</note>
           <note>vegetarisch</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
+        </meal>
+        <meal>
+          <name>Veganer Ananas-Kokos-Quark</name>
+          <note>Hafer</note>
+          <note>Soja</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
