@@ -30,7 +30,7 @@ jobs:
         python tests/test_ghpages.py
     - name: Upload github pages /docs/ artifact
       if: always()
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: github-pages-docs
         path: docs/
