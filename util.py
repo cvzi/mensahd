@@ -56,7 +56,7 @@ def meta_from_xsl(file_name, data):
     if "times" in data:
         opening_times = {}
         pattern = re.compile(
-            r"([A-Z][a-z])(\s*-\s*([A-Z][a-z]))?\s*(\d{1,2}):(\d{2})\s*[-–]\s*(\d{1,2}):(\d{2})(?:\s*Uhr)?", flags=re.IGNORECASE)
+            r"([A-Z][a-z])(\s*-\s*([A-Z][a-z]))?\s*(\d{1,2})[:\.](\d{2})\s*[-–]\s*(\d{1,2})[:\.](\d{2})(?:\s*Uhr)?", flags=re.IGNORECASE)
         m = re.findall(pattern, data["times"])
 
         for result in m:
