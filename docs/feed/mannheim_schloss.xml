@@ -6,10 +6,12 @@
     <day date="2025-11-03">
       <category name="Menü 1">
         <meal>
-          <name>paniertes Schnitzel vom Schwein, Bratensoße, Marktgemüse , Salzkartoffeln , frische Kräuter </name>
+          <name>paniertes Schnitzel vom Schwein, Putenschnitzel, Bratensoße, Marktgemüse , Salzkartoffeln , frische Kräuter </name>
           <note>Alkohol</note>
           <note>Ei</note>
           <note>Farbstoff</note>
+          <note>Geflügel</note>
+          <note>Glutenhaltiges Getreide</note>
           <note>Konservierungsstoff</note>
           <note>Portion Preis</note>
           <note>Rind</note>
@@ -58,8 +60,13 @@
       </category>
       <category name="Themenpark">
         <meal>
-          <name>Hähnchenschnitzel veganes Schnitzel  Marktgemüse </name>
+          <name>Hähnchenschnitzel veganes Schnitzel  Marktgemüse  Bratensoße  Spätzle  Blumenkohlsuppe </name>
+          <note>Ei</note>
+          <note>Farbstoff</note>
           <note>Geflügel</note>
+          <note>Glutenhaltiges Getreide</note>
+          <note>Jodsalz</note>
+          <note>Schwefeldioxid Sulfit</note>
           <note>Sellerie</note>
           <note>Senf</note>
           <note>Soja</note>
@@ -67,6 +74,7 @@
           <note>Weizen</note>
           <note>pro 100g Preis</note>
           <note> = Vegan</note>
+          <note> = Vegetarisch</note>
           <price role="employee">1.75</price>
           <price role="other">2.24</price>
           <price role="student">1.40</price>
@@ -154,12 +162,11 @@
       </category>
       <category name="Menü vegan">
         <meal>
-          <name>Sellerieschnitzel , Kräutersoße , Zucchini, Pilze und Spinatgemüse , Schupfnudeln vegan </name>
-          <note>Glutenhaltiges Getreide</note>
+          <name>Auberginen-Süßkartoffel-Curry , Mandel-Basmatireis , Tomaten-Gurkensalat , frische Kräuter </name>
+          <note>Farbstoff</note>
+          <note>Mandeln</note>
           <note>Portion Preis</note>
-          <note>Sellerie</note>
-          <note>Säuerungsmittel</note>
-          <note>Weizen</note>
+          <note>Schwefeldioxid Sulfit</note>
           <note> = Vegan</note>
           <price role="employee">5.00</price>
           <price role="other">6.40</price>
@@ -183,22 +190,12 @@
       </category>
       <category name="Themenpark">
         <meal>
-          <name>Chiles en nogada - mexikanische Paprikaschote gefüllt veganes Schnitzel  Marktgemüse  Bratensoße  Couscous  Karotten-Ingwer Suppe </name>
-          <note>Alkohol</note>
-          <note>Antioxidationsmittel</note>
-          <note>Farbstoff</note>
-          <note>Glutenhaltiges Getreide</note>
-          <note>Jodsalz</note>
-          <note>Konservierungsstoff</note>
-          <note>Milch/Laktose</note>
-          <note>Rind</note>
-          <note>Schwefeldioxid Sulfit</note>
-          <note>Schweinefleisch</note>
+          <name>Hähnchenschnitzel veganes Schnitzel  Marktgemüse </name>
+          <note>Geflügel</note>
           <note>Sellerie</note>
           <note>Senf</note>
           <note>Soja</note>
           <note>Säuerungsmittel</note>
-          <note>Walnüsse</note>
           <note>Weizen</note>
           <note>pro 100g Preis</note>
           <note> = Vegan</note>
@@ -236,14 +233,16 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Obstsalat , Stracciatellamousse mit Lebkuchenstückchen , Schokodekor , Hafer-Obst-Dessert </name>
+          <name>Obstsalat , Frankfurter Kuchen , Hafer-Obst-Dessert </name>
+          <note>Ei</note>
           <note>Glas Preis</note>
           <note>Hafer</note>
-          <note>Konservierungsstoff</note>
+          <note>Haselnüsse</note>
           <note>Mandeln</note>
           <note>Milch/Laktose</note>
           <note>Schalenfrüchte</note>
-          <note>Soja</note>
+          <note>Säuerungsmittel</note>
+          <note>Weizen</note>
           <note> = Vegan</note>
           <note> = Vegetarisch</note>
           <price role="employee">1.88</price>
@@ -293,11 +292,12 @@
       </category>
       <category name="Menü vegan">
         <meal>
-          <name>Auberginen-Süßkartoffel-Curry , Mandel-Basmatireis , Tomaten-Gurkensalat , frische Kräuter </name>
-          <note>Farbstoff</note>
-          <note>Mandeln</note>
+          <name>Sellerieschnitzel , Kräutersoße , Zucchini, Pilze und Spinatgemüse , Schupfnudeln vegan </name>
+          <note>Glutenhaltiges Getreide</note>
           <note>Portion Preis</note>
-          <note>Schwefeldioxid Sulfit</note>
+          <note>Sellerie</note>
+          <note>Säuerungsmittel</note>
+          <note>Weizen</note>
           <note> = Vegan</note>
           <price role="employee">5.00</price>
           <price role="other">6.40</price>
@@ -568,7 +568,7 @@
       </category>
       <category name="Menü vegan">
         <meal>
-          <name>Frühlingsrolle , Asia-Nudeln, Asia-Gemüse , Basmatireis , Süß-Sauer-Soße , frische Kräuter </name>
+          <name>Frühlingsrolle , Asia-Nudeln, Asia-Gemüse , Süß-Sauer-Soße , frische Kräuter </name>
           <note>Antioxidationsmittel</note>
           <note>Farbstoff</note>
           <note>Konservierungsstoff</note>
