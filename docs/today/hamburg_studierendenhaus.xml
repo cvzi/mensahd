@@ -4,22 +4,6 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-11-05">
-      <category name="Menü">
-        <meal>
-          <name>Bao Bun Teigtaschen (1,GlW), mit pulled Turkey mit Hoisin (1,2,So,GlW), mit marinierten Schweinenackenstreifen mit Hoisin und Ingwer (1,2,So,Se,GlW), Sesamreis , verschiedene Extras (1,3,5,En,So,Se,Sw,GlW), verschiedene Soßen</name>
-          <note>Alkohol</note>
-          <note>Geflügel</note>
-          <note>Schwein</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">14.50</price>
-          <price role="other">16.50</price>
-          <price role="student">12.00</price>
-        </meal>
-        <meal>
-          <name>(1,2,3,4,5,Ei,En,So,Sf,Se,Sw,GlW)</name>
-        </meal>
-      </category>
       <category name="Pottkieker">
         <meal>
           <name>Bohnen-Lauch-Curry mit Brech- Bohnen, Edamame Bohnen und Lauch , Basmatireis</name>
@@ -33,7 +17,55 @@
           <price role="student">2.20</price>
         </meal>
       </category>
+      <category name="Werkskombüse">
+        <meal>
+          <name>Bao Bun Teigtaschen (1,GlW), mit pulled Turkey mit Hoisin (1,2,So,GlW), mit marinierten Schweinenackenstreifen mit Hoisin und Ingwer (1,2,So,Se,GlW), Sesamreis , verschiedene Extras (1,3,5,En,So,Se,Sw,GlW), verschiedene Soßen</name>
+          <note>Alkohol</note>
+          <note>Geflügel</note>
+          <note>Schwein</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.45</price>
+          <price role="other">1.65</price>
+          <price role="student">1.20</price>
+        </meal>
+        <meal>
+          <name>(1,2,3,4,5,Ei,En,So,Sf,Se,Sw,GlW)</name>
+        </meal>
+      </category>
       <category name="CampusKlassiker">
+        <meal>
+          <name>Grünkohl , Kasseler Nackenbraten , Röstkartoffeln</name>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Phosphat</note>
+          <price role="employee">5.60</price>
+          <price role="other">6.80</price>
+          <price role="student">4.30</price>
+        </meal>
+        <meal>
+          <name>Grünkohl , vegane Kochwurst (Erbsenprotein), Röstkartoffeln</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.80</price>
+          <price role="other">7.00</price>
+          <price role="student">4.50</price>
+        </meal>
+        <meal>
+          <name>Hausgemachte Pasta (GlW), Bolognese mit Rinderhackfleisch , Hartkäse</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <price role="employee">5.20</price>
+          <price role="other">6.40</price>
+          <price role="student">3.90</price>
+        </meal>
         <meal>
           <name>Grünkohl , Kochwurst , Röstkartoffeln</name>
           <note>Schwein</note>
@@ -49,40 +81,16 @@
           <price role="other">6.80</price>
           <price role="student">4.30</price>
         </meal>
-        <meal>
-          <name>Grünkohl , Kasseler Nackenbraten , Röstkartoffeln</name>
-          <note>Schwein</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Phosphat</note>
-          <price role="employee">5.60</price>
-          <price role="other">6.80</price>
-          <price role="student">4.30</price>
-        </meal>
-        <meal>
-          <name>Hausgemachte Pasta (GlW), Bolognese mit Rinderhackfleisch , Hartkäse</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Rind</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.40</price>
-          <price role="student">3.90</price>
-        </meal>
-        <meal>
-          <name>Grünkohl , vegane Kochwurst (Erbsenprotein), Röstkartoffeln</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.80</price>
-          <price role="other">7.00</price>
-          <price role="student">4.50</price>
-        </meal>
       </category>
       <category name="Pastabar">
+        <meal>
+          <name>Süßkartoffelwürfel gebacken</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
         <meal>
           <name>Maccaroni (GlW)</name>
           <note>Vegan</note>
@@ -109,14 +117,6 @@
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
-        <meal>
-          <name>Süßkartoffelwürfel gebacken</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
       </category>
       <category name="Gemüsebar">
         <meal>
@@ -132,22 +132,6 @@
       </category>
     </day>
     <day date="2025-11-06">
-      <category name="Menü">
-        <meal>
-          <name>Bao Bun Teigtaschen (1,GlW), mit pulled Turkey mit Hoisin (1,2,So,GlW), mit marinierten Schweinenackenstreifen mit Hoisin und Ingwer (1,2,So,Se,GlW), Sesamreis , verschiedene Extras (1,3,5,En,So,Se,Sw,GlW), verschiedene Soßen</name>
-          <note>Alkohol</note>
-          <note>Geflügel</note>
-          <note>Schwein</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">14.50</price>
-          <price role="other">16.50</price>
-          <price role="student">12.00</price>
-        </meal>
-        <meal>
-          <name>(1,2,3,4,5,Ei,En,So,Sf,Se,Sw,GlW)</name>
-        </meal>
-      </category>
       <category name="Pottkieker">
         <meal>
           <name>Minestrone (Sl,Sw,GlW), Ciabatta (GlW,GlG)</name>
@@ -156,6 +140,22 @@
           <price role="employee">3.50</price>
           <price role="other">4.70</price>
           <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="Werkskombüse">
+        <meal>
+          <name>Bao Bun Teigtaschen (1,GlW), mit pulled Turkey mit Hoisin (1,2,So,GlW), mit marinierten Schweinenackenstreifen mit Hoisin und Ingwer (1,2,So,Se,GlW), Sesamreis , verschiedene Extras (1,3,5,En,So,Se,Sw,GlW), verschiedene Soßen</name>
+          <note>Alkohol</note>
+          <note>Geflügel</note>
+          <note>Schwein</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.45</price>
+          <price role="other">1.65</price>
+          <price role="student">1.20</price>
+        </meal>
+        <meal>
+          <name>(1,2,3,4,5,Ei,En,So,Sf,Se,Sw,GlW)</name>
         </meal>
       </category>
       <category name="CampusKlassiker">
