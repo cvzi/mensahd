@@ -4,13 +4,6 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-11-05">
-      <category name="Vorspeise">
-        <meal>
-          <name>Tagessuppe</name>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-      </category>
       <category name="Veganer renner">
         <meal>
           <name>Penne an Tomatensugo mit Kräutern</name>
@@ -59,7 +52,8 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Tagesgemüse</name>
+          <name>Ratatouille-Gemüse</name>
+          <note>Sellerie</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -87,16 +81,15 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Veganer Hafer Schokopudding</name>
-          <note>Hafer</note>
-          <note>vegan</note>
+          <name>Veganer Grießpudding mit Pfirsich</name>
+          <note>Soja</note>
+          <note>Weizen</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Buttermilchdessert Mango</name>
+          <name>Bayerische Creme mit Zimtkirschen</name>
           <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
@@ -553,18 +546,6 @@
         </meal>
       </category>
       <category name="Aktion">
-        <meal>
-          <name>Pizza mit Putenschinken</name>
-          <note>Geflügel</note>
-          <note>Milch und Laktose</note>
-          <note>Sellerie</note>
-          <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Konservierungsstoffen</note>
-          <note>mit Phosphaten</note>
-          <price role="employee">9.00</price>
-          <price role="student">6.50</price>
-        </meal>
         <meal>
           <name>Pizza mit Grana Padano und Rucola</name>
           <note>Ei</note>
