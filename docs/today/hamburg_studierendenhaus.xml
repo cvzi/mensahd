@@ -78,14 +78,23 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Conchiglie (GlW), Broccoli in einer Gorgonzola- Sahnesoße</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <name>Nusskartoffeln</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Conchiglie (GlW), Rinderhackfleisch in einer Paprika- Sahnesoße</name>
+          <name>Conchiglie (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Rinderhackfleisch in einer Paprika- Sahnesoße</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Rind</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -96,8 +105,9 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>pikantes Grillgemüse (Sl,Sf,GlW), gebratenem Wirsing, Blumenkohl mit gebräunten Bröseln (1,GlW), Alte Gemüse: Pastinake- Sellerie- Karotte- Topinambur , Nusskartoffeln</name>
+          <name>pikantes Grillgemüse (Sl,Sf,GlW), gebratene Zucchini, Blumenkohl mit gebräunten Bröseln (1,GlW), Alte Gemüse: Pastinake- Sellerie- Karotte- Topinambur , Ingwermöhrchen mit Sesam</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
@@ -122,16 +132,6 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Homemade paniertes Putenschnitzel (Ei,GlW), Pfefferrahmsoße , Pommes Frites</name>
-          <note>Geflügel</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <price role="employee">6.20</price>
-          <price role="other">7.40</price>
-          <price role="student">4.90</price>
-        </meal>
-        <meal>
           <name>Matjesfilets , Matjessoße Hausfrauen Art , Petersilienkartoffeln</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Fisch und Fischerzeugnisse</note>
@@ -146,6 +146,16 @@
           <price role="employee">5.40</price>
           <price role="other">6.60</price>
           <price role="student">4.10</price>
+        </meal>
+        <meal>
+          <name>Homemade paniertes Putenschnitzel (Ei,GlW), Pfefferrahmsoße , Pommes Frites</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.40</price>
+          <price role="student">4.90</price>
         </meal>
       </category>
       <category name="CampusVital">
@@ -230,6 +240,23 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
+          <name>Grünkohl , vegane Kochwurst (Erbsenprotein), kleine Salzkartoffeln</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.80</price>
+          <price role="other">7.00</price>
+          <price role="student">4.50</price>
+        </meal>
+        <meal>
+          <name>Putengulasch (Mi,Sl,GlW), Spätzle (Ei,Mi,GlW)</name>
+          <note>Geflügel</note>
+          <price role="employee">6.70</price>
+          <price role="other">7.90</price>
+          <price role="student">5.40</price>
+        </meal>
+        <meal>
           <name>Grünkohl , Kochwurst , kleine Salzkartoffeln</name>
           <note>Schwein</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -245,13 +272,6 @@
           <price role="student">4.30</price>
         </meal>
         <meal>
-          <name>Putengulasch (Mi,Sl,GlW), Spätzle (Ei,Mi,GlW)</name>
-          <note>Geflügel</note>
-          <price role="employee">6.70</price>
-          <price role="other">7.90</price>
-          <price role="student">5.40</price>
-        </meal>
-        <meal>
           <name>Grünkohl , Kasseler Nackenbraten , kleine Salzkartoffeln</name>
           <note>Schwein</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -264,29 +284,19 @@
           <price role="other">6.80</price>
           <price role="student">4.30</price>
         </meal>
-        <meal>
-          <name>Grünkohl , vegane Kochwurst (Erbsenprotein), kleine Salzkartoffeln</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.80</price>
-          <price role="other">7.00</price>
-          <price role="student">4.50</price>
-        </meal>
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Eliche (GlW), asiatischer Tomatensoße und Sojawürfeln (Sojaprotein) (2,So,Se,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Eliche (GlW), Rindfleischstreifen und Pilzen in Sahnesoße (3,Mi,Sl,GlW,GlG)</name>
+          <note>Rind</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Eliche (GlW), Rindfleischstreifen und Pilzen in Sahnesoße (3,Mi,Sl,GlW,GlG)</name>
-          <note>Rind</note>
+          <name>Eliche (GlW), asiatischer Tomatensoße und Sojawürfeln (Sojaprotein) (2,So,Se,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -331,6 +341,15 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
+          <name>Green Oat Homestyle Burger mit Umami Soße, Tomate und Römersalat (Ei,So,Sf,GlW,GlH), Pommes Frites</name>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">7.10</price>
+          <price role="other">8.30</price>
+          <price role="student">5.80</price>
+        </meal>
+        <meal>
           <name>Leberkäse im Ganzen gebacken , Bratensoße , hausgemachtes Kartoffelpüree</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Schwein</note>
@@ -341,15 +360,6 @@
           <price role="employee">5.20</price>
           <price role="other">6.40</price>
           <price role="student">3.90</price>
-        </meal>
-        <meal>
-          <name>Green Oat Homestyle Burger mit Umami Soße, Tomate und Römersalat (Ei,So,Sf,GlW,GlH), Pommes Frites</name>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">7.10</price>
-          <price role="other">8.30</price>
-          <price role="student">5.80</price>
         </meal>
       </category>
       <category name="CampusVital">
