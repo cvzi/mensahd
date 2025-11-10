@@ -4,6 +4,17 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-11-10">
+      <category name="Highlight">
+        <meal>
+          <name>Homemade paniertes Putenschnitzel (Ei,GlW), Spätzle (Ei,GlW), Pfefferrahmsoße</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.40</price>
+          <price role="student">4.90</price>
+        </meal>
+      </category>
       <category name="Pottkieker">
         <meal>
           <name>Kohlrabi Kokos Suppe mit Erdnuss- Minz Topping</name>
@@ -15,17 +26,6 @@
           <price role="employee">3.50</price>
           <price role="other">4.70</price>
           <price role="student">2.20</price>
-        </meal>
-      </category>
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Homemade paniertes Putenschnitzel (Ei,GlW), Spätzle (Ei,GlW), Pfefferrahmsoße</name>
-          <note>Geflügel</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <price role="employee">6.20</price>
-          <price role="other">7.40</price>
-          <price role="student">4.90</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -206,6 +206,19 @@
           <price role="student">4.50</price>
         </meal>
         <meal>
+          <name>Grünkohl , Kasseler Nackenbraten , Röstkartoffeln</name>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Phosphat</note>
+          <price role="employee">5.60</price>
+          <price role="other">6.80</price>
+          <price role="student">4.30</price>
+        </meal>
+        <meal>
           <name>Grünkohl , Kochwurst , Röstkartoffeln</name>
           <note>Schwein</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -220,34 +233,21 @@
           <price role="other">6.80</price>
           <price role="student">4.30</price>
         </meal>
-        <meal>
-          <name>Grünkohl , Kasseler Nackenbraten , Röstkartoffeln</name>
-          <note>Schwein</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Phosphat</note>
-          <price role="employee">5.60</price>
-          <price role="other">6.80</price>
-          <price role="student">4.30</price>
-        </meal>
       </category>
       <category name="CampusVital">
-        <meal>
-          <name>All in one pot: Vollkornreis, Tandoori Chicken, Avocado, Linsen, Cranberries, Chia (1,2,3,So,Mi,Sl,Sf,GlW)</name>
-          <note>Geflügel</note>
-          <price role="employee">5.90</price>
-          <price role="other">7.10</price>
-          <price role="student">4.60</price>
-        </meal>
         <meal>
           <name>All in one pot: Vollkornreis, Tandoori Soja, Avocado, Linsen, Cranberries, Chia (Sojaprotein) (1,2,3,So,Mi,Sl,Sf,GlW)</name>
           <note>Vegetarisch</note>
           <price role="employee">5.95</price>
           <price role="other">7.15</price>
           <price role="student">4.65</price>
+        </meal>
+        <meal>
+          <name>All in one pot: Vollkornreis, Tandoori Chicken, Avocado, Linsen, Cranberries, Chia (1,2,3,So,Mi,Sl,Sf,GlW)</name>
+          <note>Geflügel</note>
+          <price role="employee">5.90</price>
+          <price role="other">7.10</price>
+          <price role="student">4.60</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -352,13 +352,6 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Geflügelcurry mit Mandeln (Mi,Sl,Sf,GlW,GlG,NMa), Basmatireis</name>
-          <note>Geflügel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
           <name>Bunte Fusilli (GlW), gebratenen Hähnchenstreifen in einer Rahmsoße mit Rucola</name>
           <note>Geflügel</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -371,6 +364,13 @@
           <name>Bunte Fusilli (GlW), Tomatensoße mit Paprika, getrocknete Tomaten und geröstete Haselnüsse (Sl,NHa)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Geflügelcurry mit Mandeln (Mi,Sl,Sf,GlW,GlG,NMa), Basmatireis</name>
+          <note>Geflügel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
