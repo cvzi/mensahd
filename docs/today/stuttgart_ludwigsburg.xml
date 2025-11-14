@@ -4,13 +4,6 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-11-14">
-      <category name="Vorspeise">
-        <meal>
-          <name>Tagessuppe</name>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-      </category>
       <category name="Veganer renner">
         <meal>
           <name>Spätzle-Pilzpfanne</name>
@@ -33,6 +26,7 @@
         </meal>
         <meal>
           <name>Seelachs in der Sesampanade mit Sweet Chili Gemüse Sauce und Reis</name>
+          <note>Ei</note>
           <note>Fisch</note>
           <note>MSC-zertifizierter Fisch (MSC-C-51632)</note>
           <note>Milch und Laktose</note>
@@ -40,17 +34,19 @@
           <note>Sellerie</note>
           <note>Senf</note>
           <note>Sesam</note>
-          <note>Soja</note>
           <note>Weizen</note>
           <note>mit Antioxidationsmitteln</note>
-          <note>mit Konservierungsstoffen</note>
+          <note>mit Farbstoffen</note>
+          <note>mit Süßungsmitteln</note>
           <price role="employee">7.90</price>
           <price role="student">5.40</price>
         </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Tagesgemüse</name>
+          <name>Buntes Gemüse</name>
+          <note>vegan</note>
+          <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -65,6 +61,12 @@
           <price role="employee">1.49</price>
           <price role="student">1.09</price>
         </meal>
+        <meal>
+          <name>Country Potatoes</name>
+          <note>Weizen</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
+        </meal>
       </category>
       <category name="Salat">
         <meal>
@@ -76,16 +78,15 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Kokosmilchreis mit Mango</name>
-          <note>Soja</note>
-          <note>vegan</note>
+          <name>Bayerische Creme mit Zimtkirschen</name>
+          <note>Milch und Laktose</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Mousse mit Blutorangen-Geschmack</name>
-          <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
+          <name>Veganer Früchtequark</name>
+          <note>Hafer</note>
+          <note>Soja</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
