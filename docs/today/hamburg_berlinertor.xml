@@ -4,20 +4,9 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-11-17">
-      <category name="Highlight">
-        <meal>
-          <name>Flammkuchen des Tages: mit Geflügelsalami und frischen Tomaten (1,2,3,Mi,GlW)</name>
-          <note>Geflügel</note>
-          <price role="employee">5.90</price>
-          <price role="other">7.10</price>
-          <price role="student">4.60</price>
-        </meal>
-      </category>
       <category name="Pottkieker">
         <meal>
-          <name>Schwarze Bohnensuppe mit Räuchertofu</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
+          <name>Blumenkohl Korma</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">3.50</price>
@@ -48,20 +37,27 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Frisch gebackene FLAMMKUCHEN nach Wahl (versch. Sorten) ab 4,20 / 5,50 / 6,70 (auch TAKE AWAY) (Mi,GlW)</name>
+          <name>Frisch gebackene PIZZA nach Wahl (versch. Sorten) ab 4,70 / 6,00 / 7,20 (auch TAKE AWAY) (Mi,GlW)</name>
           <note>Vegetarisch</note>
-          <price role="employee">5.50</price>
-          <price role="other">6.70</price>
-          <price role="student">4.20</price>
+          <price role="employee">6.00</price>
+          <price role="other">7.20</price>
+          <price role="student">4.70</price>
         </meal>
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Süßkartoffel-Gnocchi mit geröstetem Blumenkohl, Sojajoghurt-Minz Dip</name>
-          <note>Soja und Sojaerzeugnisse</note>
+          <name>Bolognese mit Rinderhackfleisch , Süßkartoffel Gnocchi</name>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>asiatischer Tomatensoße und Sojawürfeln (Sojaprotein) (2,So,Se,GlW), Kurkumareis</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -69,10 +65,10 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Gemüsemix mit Karotten, Brokkoli und Bohnen, Lauch in Rahm , Glacierte Pastinaken mit Honig, Orientalisches Linsengemüse , Chili-Kartoffeln aus dem Ofen</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegetarisch</note>
+          <name>Gemüsemix mit Karotten, Brokkoli und Bohnen, Karotten , Blechkartoffeln</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Farbstoff</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -102,13 +98,17 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Bacon Bomb Burger, auch ohne Bacon erhältlich (1,2,3,5,8,9,Ei,Mi,Sl,Sf,Sw,GlW), Pommes Frites</name>
-          <note>Rind</note>
-          <note>Schwein</note>
+          <name>Putensteak, Aioli Dip , Pommes Frites</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Senf und Senferzeugnisse</note>
-          <price role="employee">7.30</price>
-          <price role="other">8.50</price>
-          <price role="student">6.00</price>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Farbstoff</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">7.25</price>
+          <price role="other">8.45</price>
+          <price role="student">5.95</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -278,13 +278,7 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Bunte Nudeln (GlW), Tomatensoße mit Waldpilzen und Speck</name>
-          <note>Schwein</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mensaVital</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Phosphat</note>
+          <name>Eliche (GlW), Gorgonzola- Hartkäsesoße, gerösteten Haselnüssen und Basilikum (Mi,Sl,NHa)</name>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -300,7 +294,13 @@
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Eliche (GlW), Gorgonzola- Hartkäsesoße, gerösteten Haselnüssen und Basilikum (Mi,Sl,NHa)</name>
+          <name>Bunte Nudeln (GlW), Tomatensoße mit Waldpilzen und Speck</name>
+          <note>Schwein</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mensaVital</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Phosphat</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -342,6 +342,13 @@
       </category>
       <category name="CampusWorld">
         <meal>
+          <name>Flammkuchen des Tages: Teriyaki mit Räuchertofu, asiatischem Gemüse, Sesam (2,So,Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">5.90</price>
+          <price role="other">7.10</price>
+          <price role="student">4.60</price>
+        </meal>
+        <meal>
           <name>veganer Wrap Dürüm Kebab (Erbsenprotein) mit Salat und BBQ-Soße (2,3,5,So,Sf,Sw,GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -355,13 +362,6 @@
           <price role="employee">5.50</price>
           <price role="other">6.70</price>
           <price role="student">4.20</price>
-        </meal>
-        <meal>
-          <name>Flammkuchen des Tages: Teriyaki mit Räuchertofu, asiatischem Gemüse, Sesam (2,So,Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">5.90</price>
-          <price role="other">7.10</price>
-          <price role="student">4.60</price>
         </meal>
       </category>
       <category name="Pastabar">
