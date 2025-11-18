@@ -3,82 +3,6 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-11-17">
-      <category name="Highlight">
-        <meal>
-          <name>Flammkuchen des Tages: mit Geflügelsalami und frischen Tomaten (1,2,3,Mi,GlW)</name>
-          <note>Geflügel</note>
-          <price role="employee">5.90</price>
-          <price role="other">7.10</price>
-          <price role="student">4.60</price>
-        </meal>
-      </category>
-      <category name="Pottkieker">
-        <meal>
-          <name>Schwarze Bohnensuppe mit Räuchertofu</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">3.50</price>
-          <price role="other">4.70</price>
-          <price role="student">2.20</price>
-        </meal>
-      </category>
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Hähnchenbrust im Knuspermantel (GlW), Erdnussdip (En,So,GlW), gebratener Reis (2,3,So,Se,GlW)</name>
-          <note>Geflügel</note>
-          <note>Neu</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.90</price>
-          <price role="other">8.10</price>
-          <price role="student">5.60</price>
-        </meal>
-      </category>
-      <category name="CampusVital">
-        <meal>
-          <name>Bratnudeln mit Gemüsestreifen, VEGAN (2,So,Se,GlW), Mini Frühlingsrollen (So,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.55</price>
-          <price role="other">6.75</price>
-          <price role="student">4.25</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Frisch gebackene FLAMMKUCHEN nach Wahl (versch. Sorten) ab 4,20 / 5,50 / 6,70 (auch TAKE AWAY) (Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">5.50</price>
-          <price role="other">6.70</price>
-          <price role="student">4.20</price>
-        </meal>
-      </category>
-      <category name="Pastabar">
-        <meal>
-          <name>Süßkartoffel-Gnocchi mit geröstetem Blumenkohl, Sojajoghurt-Minz Dip</name>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-      </category>
-      <category name="Gemüsebar">
-        <meal>
-          <name>Gemüsemix mit Karotten, Brokkoli und Bohnen, Lauch in Rahm , Glacierte Pastinaken mit Honig, Orientalisches Linsengemüse , Chili-Kartoffeln aus dem Ofen</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-      </category>
-    </day>
     <day date="2025-11-18">
       <category name="Pottkieker">
         <meal>
@@ -366,18 +290,18 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Farfalle (GlW), Austernpilze in Sahnesoße (Mi,Sl,GlW,GlG)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
           <name>Eliche (GlW), Sojahack in einer Paprika Cremesoße (Sojaprotein)</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Farfalle (GlW), Austernpilze in Sahnesoße (Mi,Sl,GlW,GlG)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -408,6 +332,44 @@
           <price role="employee">3.50</price>
           <price role="other">4.70</price>
           <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Putensteak</name>
+          <note>Geflügel</note>
+          <price role="employee">7.15</price>
+          <price role="other">8.35</price>
+          <price role="student">5.85</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>All in one pot VEGGIE: Wok-Nudeln, Soja, Karotten, Süßkartoffel und Sesam (Sojaprotein) (2,Ei,So,Mi,Sl,Se,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">6.25</price>
+          <price role="other">7.45</price>
+          <price role="student">4.95</price>
+        </meal>
+        <meal>
+          <name>Hühnchen in Kokos Soße , Sesammöhrchen , Basmatireis</name>
+          <note>Geflügel</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.10</price>
+          <price role="other">7.30</price>
+          <price role="student">4.80</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Frisch gebackene PIZZA nach Wahl (versch. Sorten) ab 4,70 / 6,00 / 7,20 (auch TAKE AWAY) (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">6.00</price>
+          <price role="other">7.20</price>
+          <price role="student">4.70</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -453,19 +415,71 @@
           <price role="student">2.20</price>
         </meal>
       </category>
-      <category name="Pastabar">
+      <category name="CampusKlassiker">
         <meal>
-          <name>Maccaroni (GlW), Waldpilzen in Sahnesoße mit Basilikum (Mi,Sw,GlW,GlG)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
+          <name>Hähnchenbrust Geschnetzeltes "Züricher Art "</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <price role="employee">5.90</price>
+          <price role="other">7.10</price>
+          <price role="student">4.60</price>
         </meal>
+      </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Crispy Chicken Burger (1,3,9,Ei,Sf,Sw,GlW)</name>
+          <note>Geflügel</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.90</price>
+          <price role="other">8.10</price>
+          <price role="student">5.60</price>
+        </meal>
+        <meal>
+          <name>Crispy Burger VEGAN (Se,Sw,GlW,GlG)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">7.10</price>
+          <price role="other">8.30</price>
+          <price role="student">5.80</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Vegane Carbonara mit Tofuwürfel (1,So,Sl,Sf,GlW), Conchiglie (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.25</price>
+          <price role="other">5.45</price>
+          <price role="student">2.95</price>
+        </meal>
+        <meal>
+          <name>Flammkuchen des Tages: mit Chicken Asia Style (Mi,GlW)</name>
+          <note>Geflügel</note>
+          <price role="employee">6.55</price>
+          <price role="other">7.75</price>
+          <price role="student">5.25</price>
+        </meal>
+        <meal>
+          <name>Frisch gebackene FLAMMKUCHEN nach Wahl (versch. Sorten) ab 4,20 / 5,50 / 6,70 (auch TAKE AWAY) (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">5.50</price>
+          <price role="other">6.70</price>
+          <price role="student">4.20</price>
+        </meal>
+      </category>
+      <category name="Pastabar">
         <meal>
           <name>Maccaroni (GlW), Bolognese mit Rinderhackfleisch</name>
           <note>Rind</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Maccaroni (GlW), Waldpilzen in Sahnesoße mit Basilikum (Mi,Sw,GlW,GlG)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -513,12 +527,39 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>All in one pot: Reisnudeln, Tofuwürfel, Salat, Erdnüsse, Apfel, Röstzwiebeln (2,En,So,Sw,GlW)</name>
+          <name>All in one pot: Reisnudeln, Rindfleisch, Salat, Erdnüsse, Apfel, Röstzwiebeln (2,En,So,Sl,Sw,GlW)</name>
+          <note>Rind</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">7.00</price>
+          <price role="other">8.20</price>
+          <price role="student">5.70</price>
+        </meal>
+        <meal>
+          <name>Rindergeschnetzeltes mit Pilzen in Rahm , Kartoffelklöße, Butterbrösel (Mi,GlW)</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Neu</note>
+          <note>Rind</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">7.25</price>
+          <price role="other">8.45</price>
+          <price role="student">5.95</price>
+        </meal>
+        <meal>
+          <name>All in one pot VEGAN: Reisnudeln, Tofuwürfel, Salat, Erdnüsse, Apfel, Röstzwiebeln (2,En,So,Sw,GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">5.10</price>
           <price role="other">6.30</price>
           <price role="student">3.80</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Frisch gebackene PIZZA nach Wahl (versch. Sorten) ab 4,70 / 6,00 / 7,20 (auch TAKE AWAY) (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">6.00</price>
+          <price role="other">7.20</price>
+          <price role="student">4.70</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -554,6 +595,15 @@
       </category>
     </day>
     <day date="2025-11-27">
+      <category name="Highlight">
+        <meal>
+          <name>Flammkuchen des Tages: mit Geflügelsalami und frischen Tomaten (1,2,3,Mi,GlW)</name>
+          <note>Geflügel</note>
+          <price role="employee">5.90</price>
+          <price role="other">7.10</price>
+          <price role="student">4.60</price>
+        </meal>
+      </category>
       <category name="Pottkieker">
         <meal>
           <name>Erbsensuppe mit Räuchertofu</name>
@@ -564,6 +614,23 @@
           <price role="employee">3.50</price>
           <price role="other">4.70</price>
           <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Currybratwurst (Schwein / Geflügel / Vegan) , zur Auswahl, BBQ Soße , Hot Cola BBQ Soße , Pommes Frites , verschiedene Currypulver nach Wahl</name>
+          <note>Geflügel</note>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Geschmacksverstärker</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Phosphat</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.40</price>
+          <price role="student">4.90</price>
         </meal>
       </category>
       <category name="CampusVital">
@@ -577,6 +644,23 @@
           <price role="employee">6.15</price>
           <price role="other">7.35</price>
           <price role="student">4.85</price>
+        </meal>
+        <meal>
+          <name>Schupfnudeln mit Champignons, Spitzkohl und marinierten Tofuscheiben (1,2,So,Sf,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.75</price>
+          <price role="other">7.95</price>
+          <price role="student">5.45</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Frisch gebackene FLAMMKUCHEN nach Wahl (versch. Sorten) ab 4,20 / 5,50 / 6,70 (auch TAKE AWAY) (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">5.50</price>
+          <price role="other">6.70</price>
+          <price role="student">4.20</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -622,6 +706,37 @@
           <price role="employee">3.50</price>
           <price role="other">4.70</price>
           <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>4 Röstiecken, Gartenbohnen mit Pfifferlingen und Cherrytomaten, Schnittlauchquark</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">4.60</price>
+          <price role="other">5.80</price>
+          <price role="student">3.30</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Vegan / Vegetarische PIZZA LARGE nach Wahl (versch. Sorten) ab 4,70 / 6,00 / 7,20 (auch TAKE AWAY) (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">6.00</price>
+          <price role="other">7.20</price>
+          <price role="student">4.70</price>
+        </meal>
+        <meal>
+          <name>Walnuß-Cheddar Burger mit Senf-Dip (1,3,9,Ei,Mi,Sl,Sf,GlW,NWa), Birnen-Chutney , Pommes Frites</name>
+          <note>Geschwefelt</note>
+          <note>Neu</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">7.25</price>
+          <price role="other">8.45</price>
+          <price role="student">5.95</price>
         </meal>
       </category>
       <category name="Pastabar">
