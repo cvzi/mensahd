@@ -3,20 +3,25 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-11-27">
+    <day date="2025-11-28">
       <category name="Vorspeise">
         <meal>
-          <name>Indische Curry suppe</name>
+          <name>Gemüserahmsuppe</name>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
           <note>Sellerie</note>
-          <note>vegan</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Kartoffel-Gemüse-Pfanne</name>
+          <name>Tomaten-Spaghetti mit Erbsencreme und Chiliflocken</name>
           <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
           <note>vegan</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
@@ -31,17 +36,18 @@
           <price role="student">5.40</price>
         </meal>
         <meal>
-          <name>Cevapcici Paprikareis und Ajvar</name>
+          <name>Paniertes Seelachsfilet mit dänischer Remoulade und Kartoffelsalat</name>
           <note>Ei</note>
-          <note>Rind</note>
-          <note>Weizen</note>
-          <price role="employee">7.50</price>
-          <price role="student">5.00</price>
-        </meal>
-        <meal>
-          <name>Begrenztes Angebot: Schweinegeschnetzeltes mit Champignons und Kartoffelrösti</name>
+          <note>Fisch</note>
+          <note>MSC-zertifizierter Fisch (MSC-C-51632)</note>
           <note>Milch und Laktose</note>
-          <note>Schwein</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Farbstoffen</note>
+          <note>mit Süßungsmitteln</note>
           <price role="employee">7.90</price>
           <price role="student">5.40</price>
         </meal>
@@ -83,12 +89,11 @@
           <price role="student">0.80</price>
         </meal>
         <meal>
-          <name>Loaded Fries mit Hähnchenstreifen,Sweet Chili und Mango Salsa</name>
-          <note>Geflügel</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Sellerie</note>
-          <price role="employee">8.00</price>
-          <price role="student">5.50</price>
+          <name>Loaded Fries mit Bratensauce und Mozzarella</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">6.50</price>
+          <price role="student">4.00</price>
         </meal>
         <meal>
           <name>Loaded Fries mit Sojabolognese</name>
@@ -100,19 +105,19 @@
           <price role="student">4.00</price>
         </meal>
         <meal>
-          <name>Loaded Fries mit Bratensauce und Mozzarella</name>
-          <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
-          <price role="employee">6.50</price>
-          <price role="student">4.00</price>
+          <name>Loaded Fries mit Hähnchenstreifen,Sweet Chili und Mango Salsa</name>
+          <note>Geflügel</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <price role="employee">8.00</price>
+          <price role="student">5.50</price>
         </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Blattspinat</name>
-          <note>Milch und Laktose</note>
-          <note>Weizen</note>
-          <note>vegetarisch</note>
+          <name>Kokos-Schlemmergemüse</name>
+          <note>Sellerie</note>
+          <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -123,10 +128,14 @@
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Paprikareis</name>
+          <name>Kartoffelsalat</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
-          <price role="employee">1.49</price>
-          <price role="student">1.09</price>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
         </meal>
       </category>
       <category name="Salat">
@@ -139,20 +148,15 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Veganes Mousse au chocolat</name>
-          <note>Hafer</note>
-          <note>Haselnüsse</note>
-          <note>Mandeln</note>
-          <note>Pistazien</note>
-          <note>Weizen</note>
-          <note>vegan</note>
+          <name>Karamellpudding</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Himbeerquark</name>
+          <name>Creme mit Tiramisu-Geschmack</name>
           <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
