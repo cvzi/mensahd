@@ -5,7 +5,36 @@
   <canteen>
     <name>Heilbronn, Mensa Sontheim</name>
     <day date="2025-12-01">
-      <closed/>
+      <category name="Buffet">
+        <meal>
+          <name>Tagessuppe</name>
+          <note>soup of the day</note>
+          <price role="student">0.90</price>
+          <price role="employee">1.40</price>
+          <price role="other">2.00</price>
+        </meal>
+        <meal>
+          <name>Träumereien</name>
+          <note>sweet delights </note>
+          <price role="student">0.90</price>
+          <price role="employee">1.40</price>
+          <price role="other">2.00</price>
+        </meal>
+        <meal>
+          <name>Bunter Kartoffel-Gemüse-Gulasch, dazu Brötchen</name>
+          <note>Colorful potato and vegetable goulash, served with bread rolls</note>
+          <price role="student">2.90</price>
+          <price role="employee">4.50</price>
+          <price role="other">7.50</price>
+        </meal>
+        <meal>
+          <name>Falafel im Curryrahm, Wildreis, Kichererbsen-Hackfleisch-Ragout</name>
+          <note>Falafel in curry cream sauce, wild rice, chickpea and minced meat ragout</note>
+          <price role="student">0.99</price>
+          <price role="employee">1.35</price>
+          <price role="other">2.00</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
