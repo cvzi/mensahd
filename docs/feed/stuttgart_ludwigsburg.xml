@@ -4,6 +4,18 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-12-02">
+      <category name="Vorspeise">
+        <meal>
+          <name>Weiße Bohnensuppe</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
       <category name="Veganer renner">
         <meal>
           <name>Vollkornspaghetti mit Sojabolognese</name>
@@ -89,6 +101,14 @@
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
+        <meal>
+          <name>Schupfnudeln</name>
+          <note>Ei</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
+        </meal>
       </category>
       <category name="Salat">
         <meal>
@@ -108,7 +128,14 @@
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Sahneschokopudding</name>
+          <name>Aprikosenjoghurt</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.49</price>
+          <price role="student">1.09</price>
+        </meal>
+        <meal>
+          <name>Früchtequark</name>
           <note>Milch und Laktose</note>
           <note>vegetarisch</note>
           <price role="employee">1.69</price>
@@ -137,13 +164,6 @@
       </category>
     </day>
     <day date="2025-12-03">
-      <category name="Vorspeise">
-        <meal>
-          <name>Tagessuppe</name>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-      </category>
       <category name="Veganer renner">
         <meal>
           <name>Rotes-Linsen-Kartoffel-Curry mit Rosinen</name>
@@ -160,16 +180,6 @@
           <note>Geflügel</note>
           <price role="employee">9.00</price>
           <price role="student">6.50</price>
-        </meal>
-        <meal>
-          <name>Kartoffel-Zucchini-Gratin</name>
-          <note>Milch und Laktose</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Sellerie</note>
-          <note>Weizen</note>
-          <note>vegetarisch</note>
-          <price role="employee">6.60</price>
-          <price role="student">4.10</price>
         </meal>
         <meal>
           <name>Cordon bleu vom Schwein mit Bratensauce und Pommes frites</name>
