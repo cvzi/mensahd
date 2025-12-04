@@ -3,68 +3,6 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-12-03">
-      <category name="Veganer renner">
-        <meal>
-          <name>Rotes-Linsen-Kartoffel-Curry mit Rosinen</name>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Sellerie</note>
-          <note>vegan</note>
-          <price role="employee">5.49</price>
-          <price role="student">2.99</price>
-        </meal>
-      </category>
-      <category name="Hauptgericht">
-        <meal>
-          <name>Halbes Grillhähnchen mit Sweet Chili Dip und Pommes frites</name>
-          <note>Geflügel</note>
-          <note>mit Farbstoffen</note>
-          <price role="employee">9.00</price>
-          <price role="student">6.50</price>
-        </meal>
-        <meal>
-          <name>Currywurst und Pommes frites mit Currysauce</name>
-          <note>Schwein</note>
-          <note>Sellerie</note>
-          <note>Soja</note>
-          <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
-          <price role="employee">6.40</price>
-          <price role="student">3.90</price>
-        </meal>
-      </category>
-      <category name="Beilage">
-        <meal>
-          <name>Pommes frites</name>
-          <price role="employee">1.69</price>
-          <price role="student">1.29</price>
-        </meal>
-      </category>
-      <category name="Salat">
-        <meal>
-          <name>Beilagensalat</name>
-          <note>vegan</note>
-          <price role="employee">1.39</price>
-          <price role="student">0.99</price>
-        </meal>
-      </category>
-      <category name="Dessert">
-        <meal>
-          <name>Veganer Hafer Schokopudding</name>
-          <note>Hafer</note>
-          <price role="employee">1.69</price>
-          <price role="student">1.29</price>
-        </meal>
-        <meal>
-          <name>Nuss-Nougat-Pudding</name>
-          <note>Haselnüsse</note>
-          <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.69</price>
-          <price role="student">1.29</price>
-        </meal>
-      </category>
-    </day>
     <day date="2025-12-04">
       <category name="Veganer renner">
         <meal>
@@ -175,7 +113,6 @@
           <name>Penne mit Champignons und Cocktailtomaten</name>
           <note>Weizen</note>
           <note>vegan</note>
-          <note>vegetarisch</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
         </meal>
@@ -183,6 +120,8 @@
       <category name="Hauptgericht">
         <meal>
           <name>Rote Wurst und Pommes frites mit Pusztasauce</name>
+          <note>Rind</note>
+          <note>Schwein</note>
           <note>Sellerie</note>
           <note>mit Antioxidationsmitteln</note>
           <note>mit Konservierungsstoffen</note>
@@ -203,18 +142,15 @@
       </category>
       <category name="Beilage">
         <meal>
-          <name>Duftreis</name>
+          <name>Pommes frites</name>
           <note>vegan</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.49</price>
-          <price role="student">1.09</price>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
         </meal>
       </category>
       <category name="Salat">
         <meal>
           <name>Beilagensalat</name>
-          <note>vegan</note>
-          <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -224,6 +160,7 @@
           <name>Heidelbeerjoghurt</name>
           <note>Milch und Laktose</note>
           <note>mit Farbstoffen</note>
+          <note>vegetarisch</note>
           <price role="employee">1.49</price>
           <price role="student">1.09</price>
         </meal>
@@ -236,7 +173,6 @@
           <note>Sellerie</note>
           <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
-          <note>vegetarisch</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
         </meal>
@@ -256,7 +192,6 @@
         <meal>
           <name>Beilagensalat</name>
           <note>vegan</note>
-          <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -276,7 +211,6 @@
           <name>Kürbis-Karotten-Gnocchi-Ragout</name>
           <note>Sellerie</note>
           <note>vegan</note>
-          <note>vegetarisch</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
         </meal>
@@ -322,7 +256,6 @@
         <meal>
           <name>Beilagensalat</name>
           <note>vegan</note>
-          <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -331,6 +264,7 @@
         <meal>
           <name>Aprikosenjoghurt</name>
           <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
           <price role="employee">1.49</price>
           <price role="student">1.09</price>
         </meal>
@@ -345,14 +279,13 @@
           <note>Weizen</note>
           <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
-          <note>vegetarisch</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
         </meal>
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Hähnchen-Nuggets mit Curry Dip und Pommes frites</name>
+          <name>Hähnchen-Nuggets und Pommes frites mit Curry Dip</name>
           <note>Ei</note>
           <note>Geflügel</note>
           <note>Milch und Laktose</note>
@@ -367,6 +300,7 @@
       <category name="Beilage">
         <meal>
           <name>Pommes frites</name>
+          <note>vegan</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
@@ -375,7 +309,6 @@
         <meal>
           <name>Beilagensalat</name>
           <note>vegan</note>
-          <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -399,7 +332,6 @@
           <note>Soja</note>
           <note>Weizen</note>
           <note>vegan</note>
-          <note>vegetarisch</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
         </meal>
@@ -423,7 +355,6 @@
         <meal>
           <name>Kartoffelsalat</name>
           <note>vegan</note>
-          <note>vegetarisch</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
@@ -432,7 +363,6 @@
         <meal>
           <name>Beilagensalat</name>
           <note>vegan</note>
-          <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
@@ -441,6 +371,7 @@
         <meal>
           <name>Aprikosenjoghurt</name>
           <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
           <price role="employee">1.49</price>
           <price role="student">1.09</price>
         </meal>
