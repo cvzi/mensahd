@@ -4,6 +4,16 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-12-04">
+      <category name="Vorspeise">
+        <meal>
+          <name>Eierflockensuppe</name>
+          <note>Ei</note>
+          <note>Sellerie</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
       <category name="Veganer renner">
         <meal>
           <name>Vollkorn Penne mit mediterranem Gemüse</name>
@@ -15,6 +25,12 @@
         </meal>
       </category>
       <category name="Hauptgericht">
+        <meal>
+          <name>Halbes Grillhähnchen mit Sweet Chili Dip und Pommes frites</name>
+          <note>Geflügel</note>
+          <price role="employee">0.00</price>
+          <price role="student">0.00</price>
+        </meal>
         <meal>
           <name>Schupfnudelnpfanne mit Zucchini, Paprika und Chilidip</name>
           <note>Hafer</note>
@@ -51,8 +67,25 @@
           <price role="employee">8.00</price>
           <price role="student">5.50</price>
         </meal>
+        <meal>
+          <name>Pizza Salami</name>
+          <note>Milch und Laktose</note>
+          <note>Rind</note>
+          <note>Senf</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Konservierungsstoffen</note>
+          <price role="employee">9.00</price>
+          <price role="student">6.50</price>
+        </meal>
       </category>
       <category name="Beilage">
+        <meal>
+          <name>Mais-Paprika-Gemüse</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
         <meal>
           <name>Reis</name>
           <note>vegan</note>
@@ -81,6 +114,13 @@
           <name>Kokosmilchreis mit Mango</name>
           <note>Soja</note>
           <note>vegan</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
+        </meal>
+        <meal>
+          <name>Käsesahne Creme</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
