@@ -31,14 +31,6 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Cheeseburger mit Gurken, Tomaten und Salat (1,2,3,9,Ei,Mi,Sf,Se,Sw,GlW), Pommes Frites</name>
-          <note>Rind</note>
-          <note>Senf und Senferzeugnisse</note>
-          <price role="employee">6.50</price>
-          <price role="other">7.70</price>
-          <price role="student">5.20</price>
-        </meal>
-        <meal>
           <name>Veggie Cheeseburger mit Gemüseschnitzel, Gouda, Tomaten und Gurke (1,2,9,Mi,Sf,Se,GlW,GlD), Pommes Frites</name>
           <note>Senf und Senferzeugnisse</note>
           <note>Vegetarisch</note>
@@ -46,18 +38,16 @@
           <price role="other">7.50</price>
           <price role="student">5.00</price>
         </meal>
+        <meal>
+          <name>Cheeseburger mit Gurken, Tomaten und Salat (1,2,3,9,Ei,Mi,Sf,Se,Sw,GlW), Pommes Frites</name>
+          <note>Rind</note>
+          <note>Senf und Senferzeugnisse</note>
+          <price role="employee">6.50</price>
+          <price role="other">7.70</price>
+          <price role="student">5.20</price>
+        </meal>
       </category>
       <category name="CampusWorld">
-        <meal>
-          <name>Red Curry Dim Sum mit Pak Choi, Bohnen und Kokosbrühe (3,En,Sl,GlW), Sesamrotkohl</name>
-          <note>Erdnüsse und Erdnusserzeugnisse</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.25</price>
-          <price role="other">7.45</price>
-          <price role="student">4.95</price>
-        </meal>
         <meal>
           <name>Frisch gebackene FLAMMKUCHEN nach Wahl (versch. Sorten) ab 4,20 / 5,50 / 6,70 (auch TAKE AWAY) (Mi,GlW)</name>
           <note>Vegetarisch</note>
@@ -71,6 +61,16 @@
           <price role="employee">6.55</price>
           <price role="other">7.75</price>
           <price role="student">5.25</price>
+        </meal>
+        <meal>
+          <name>Red Curry Dim Sum mit Pak Choi, Bohnen und Kokosbrühe (3,En,Sl,GlW), Sesamrotkohl</name>
+          <note>Erdnüsse und Erdnusserzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.25</price>
+          <price role="other">7.45</price>
+          <price role="student">4.95</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -273,13 +273,6 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Vegan / Vegetarische PIZZA LARGE nach Wahl (versch. Sorten) ab 4,70 / 6,00 / 7,20 (auch TAKE AWAY) (Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">6.00</price>
-          <price role="other">7.20</price>
-          <price role="student">4.70</price>
-        </meal>
-        <meal>
           <name>Veganer Crispy Caesar Burger (Weizenprotein) (3,Sf,GlW,GlG), Pommes Frites</name>
           <note>Senf und Senferzeugnisse</note>
           <note>Vegan</note>
@@ -288,21 +281,28 @@
           <price role="other">7.50</price>
           <price role="student">5.00</price>
         </meal>
+        <meal>
+          <name>Vegan / Vegetarische PIZZA LARGE nach Wahl (versch. Sorten) ab 4,70 / 6,00 / 7,20 (auch TAKE AWAY) (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">6.00</price>
+          <price role="other">7.20</price>
+          <price role="student">4.70</price>
+        </meal>
       </category>
       <category name="Pastabar">
+        <meal>
+          <name>Farfalle (GlW), Austernpilze in Sahnesoße (Mi,Sl,GlW,GlG)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
         <meal>
           <name>Eliche (GlW), Sojahack in einer Paprika Cremesoße (Sojaprotein)</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>Farfalle (GlW), Austernpilze in Sahnesoße (Mi,Sl,GlW,GlG)</name>
-          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>

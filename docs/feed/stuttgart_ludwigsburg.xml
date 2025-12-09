@@ -4,6 +4,20 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-12-09">
+      <category name="Vorspeise">
+        <meal>
+          <name>Petersiliensuppe mit Weißwein</name>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>mit Alkohol</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
       <category name="Veganer renner">
         <meal>
           <name>Vegane Paella</name>
@@ -35,6 +49,17 @@
           <price role="employee">7.90</price>
           <price role="student">5.40</price>
         </meal>
+        <meal>
+          <name>Köttbullar mit Rahmsauce ,Preiselbeeren und Salzkartoffeln</name>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Rind</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Schwein</note>
+          <note>Weizen</note>
+          <price role="employee">7.40</price>
+          <price role="student">4.90</price>
+        </meal>
       </category>
       <category name="Aktion">
         <meal>
@@ -56,6 +81,13 @@
         </meal>
       </category>
       <category name="Beilage">
+        <meal>
+          <name>Karotten-Erbsen-Gemüse</name>
+          <note>Sellerie</note>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="student">0.99</price>
+        </meal>
         <meal>
           <name>Kartoffelpüree</name>
           <note>Milch und Laktose</note>
@@ -99,19 +131,30 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Mousse mit Limone-Joghurt-Geschmack</name>
+          <name>Veganes Mousse au chocolat</name>
+          <note>Hafer</note>
+          <note>Haselnüsse</note>
+          <note>Mandeln</note>
+          <note>Pistazien</note>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
+        </meal>
+        <meal>
+          <name>Heidelbeerquark</name>
           <note>Milch und Laktose</note>
           <note>vegetarisch</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Veganer Himbeerquark</name>
-          <note>Hafer</note>
-          <note>Soja</note>
-          <note>vegan</note>
-          <price role="employee">1.69</price>
-          <price role="student">1.29</price>
+          <name>Kirschjoghurt</name>
+          <note>Milch und Laktose</note>
+          <note>mit Farbstoffen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.49</price>
+          <price role="student">1.09</price>
         </meal>
       </category>
       <category name="Buffet">
