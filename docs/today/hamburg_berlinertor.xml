@@ -4,24 +4,9 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-12-09">
-      <category name="Menü">
-        <meal>
-          <name>Entenkeule , Geflügelrahmsoße , Apfelrotkohl , Kartoffelklöße, gebräunte Brösel (1,GlW)</name>
-          <note>Geflügel</note>
-          <note>Geschwefelt</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Phosphat</note>
-          <price role="employee">5.70</price>
-          <price role="other">6.40</price>
-          <price role="student">4.90</price>
-        </meal>
-      </category>
       <category name="Pottkieker">
         <meal>
-          <name>Indisches Linsencurry (Sf,GlW), Couscous (GlW)</name>
+          <name>Indisches Linsencurry (Sf,GlW), Basmatireis</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">3.50</price>
@@ -56,13 +41,6 @@
           <price role="student">4.20</price>
         </meal>
         <meal>
-          <name>Flammkuchen des Tages: mit Chicken Asia Style (Mi,GlW)</name>
-          <note>Geflügel</note>
-          <price role="employee">6.55</price>
-          <price role="other">7.75</price>
-          <price role="student">5.25</price>
-        </meal>
-        <meal>
           <name>Red Curry Dim Sum mit Pak Choi, Bohnen und Kokosbrühe (3,En,Sl,GlW), Sesamrotkohl</name>
           <note>Erdnüsse und Erdnusserzeugnisse</note>
           <note>Sesamsamen und Sesamsamenerzeugnisse</note>
@@ -72,14 +50,30 @@
           <price role="other">7.45</price>
           <price role="student">4.95</price>
         </meal>
+        <meal>
+          <name>Flammkuchen des Tages: mit Chicken Asia Style (Mi,GlW)</name>
+          <note>Geflügel</note>
+          <price role="employee">6.55</price>
+          <price role="other">7.75</price>
+          <price role="student">5.25</price>
+        </meal>
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Ungarisches Rindergulasch , Salzkartoffeln</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Rind</note>
+          <name>Gemüsepfanne Thai Green</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>mit Süßungsmittel</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Conchiglie (GlW), Bolognese mit Rinderhackfleisch</name>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -87,10 +81,9 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Brechbohnen, Zartweizen mit Gemüse (Sl,GlW), karamellisierte Schwarzwurzeln , Gartengemüse, Schupfnudeln (GlW)</name>
+          <name>Romanesco, Broccoli, Salzkartoffeln</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Farbstoff</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -98,6 +91,21 @@
       </category>
     </day>
     <day date="2025-12-10">
+      <category name="Menü">
+        <meal>
+          <name>Entenkeule , Geflügelrahmsoße , Apfelrotkohl , Kartoffelklöße, gebräunte Brösel (1,GlW)</name>
+          <note>Geflügel</note>
+          <note>Geschwefelt</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Phosphat</note>
+          <price role="employee">5.70</price>
+          <price role="other">6.40</price>
+          <price role="student">4.90</price>
+        </meal>
+      </category>
       <category name="Pottkieker">
         <meal>
           <name>Tomaten-Kokossuppe (3,So,Sl,GlW), Reis</name>
@@ -273,6 +281,13 @@
       </category>
       <category name="CampusWorld">
         <meal>
+          <name>Vegan / Vegetarische PIZZA LARGE nach Wahl (versch. Sorten) ab 4,70 / 6,00 / 7,20 (auch TAKE AWAY) (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">6.00</price>
+          <price role="other">7.20</price>
+          <price role="student">4.70</price>
+        </meal>
+        <meal>
           <name>Veganer Crispy Caesar Burger (Weizenprotein) (3,Sf,GlW,GlG), Pommes Frites</name>
           <note>Senf und Senferzeugnisse</note>
           <note>Vegan</note>
@@ -281,28 +296,21 @@
           <price role="other">7.50</price>
           <price role="student">5.00</price>
         </meal>
-        <meal>
-          <name>Vegan / Vegetarische PIZZA LARGE nach Wahl (versch. Sorten) ab 4,70 / 6,00 / 7,20 (auch TAKE AWAY) (Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">6.00</price>
-          <price role="other">7.20</price>
-          <price role="student">4.70</price>
-        </meal>
       </category>
       <category name="Pastabar">
-        <meal>
-          <name>Farfalle (GlW), Austernpilze in Sahnesoße (Mi,Sl,GlW,GlG)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
         <meal>
           <name>Eliche (GlW), Sojahack in einer Paprika Cremesoße (Sojaprotein)</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Farfalle (GlW), Austernpilze in Sahnesoße (Mi,Sl,GlW,GlG)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
