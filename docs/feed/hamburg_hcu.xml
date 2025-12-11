@@ -3,63 +3,6 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-12-10">
-      <category name="Pottkieker">
-        <meal>
-          <name>Tomaten-Kokossuppe (3,So,Sl,GlW), Reis</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">3.50</price>
-          <price role="other">4.70</price>
-          <price role="student">2.20</price>
-        </meal>
-      </category>
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Schweinegeschnetzeltes Zürcher Art , Reis</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwein</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <price role="employee">6.20</price>
-          <price role="other">9.80</price>
-          <price role="student">4.90</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Gebratenes Wildlachsfilet (Fi,GlW), Buchweizen Pilaw mit Porree und Kichererbsen , hausgemachtes Pesto</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Neu</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>mit Fisch</note>
-          <price role="employee">7.10</price>
-          <price role="other">11.60</price>
-          <price role="student">5.80</price>
-        </meal>
-      </category>
-      <category name="Pastabar">
-        <meal>
-          <name>Eliche (GlW), Gorgonzola- Hartkäsesoße mkoit Broccoli (Mi,Sl,NHa)</name>
-          <price role="employee">1.10</price>
-          <price role="other">1.70</price>
-          <price role="student">0.85</price>
-        </meal>
-      </category>
-      <category name="Gemüsebar">
-        <meal>
-          <name>Rosenkohl , Blechkartoffeln, Sauerkraut mit Speck , Gartengemüse</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwein</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Phosphat</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.70</price>
-          <price role="student">0.85</price>
-        </meal>
-      </category>
-    </day>
     <day date="2025-12-11">
       <category name="Pottkieker">
         <meal>
@@ -107,6 +50,17 @@
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Rind</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.70</price>
+          <price role="student">0.85</price>
+        </meal>
+      </category>
+      <category name="Gemüsebar">
+        <meal>
+          <name>Rosenkohl , Blechkartoffeln, Sauerkraut (vegan) , Gartengemüse</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.70</price>
           <price role="student">0.85</price>
@@ -320,10 +274,11 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Maccaroni (GlW), Bolognese mit Rinderhackfleisch</name>
+          <name>Pasta (GlW), Ungarisches Rindergulasch</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Rind</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>mit Süßungsmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.70</price>
           <price role="student">0.85</price>
@@ -363,10 +318,10 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Reis, gebratene Hähnchenstreifen und Auberginen in Tomatensoße</name>
-          <note>Geflügel</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Reis, Schweinegeschnetzeltes Zürcher Art</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <price role="employee">1.10</price>
           <price role="other">1.70</price>
           <price role="student">0.85</price>
