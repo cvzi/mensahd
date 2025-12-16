@@ -3,51 +3,48 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2025-12-15">
+    <day date="2025-12-16">
       <category name="Vorspeise">
         <meal>
-          <name>Nudelsuppe</name>
+          <name>Blumenkohlcremesuppe</name>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
-          <note>Weizen</note>
-          <note>vegan</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
         </meal>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Chili sin Carne und Reis</name>
+          <name>Kichererbsen-Curry mit Duftreis</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
-          <note>Soja</note>
           <note>vegan</note>
+          <note>vegetarisch</note>
           <price role="employee">5.49</price>
           <price role="student">2.99</price>
         </meal>
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Bratwurst mit Bratensauce und Kartoffelpüree</name>
-          <note>Milch und Laktose</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Schwein</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
+          <name>Begrenztes Angebot: Kartoffelpuffer und Apfelmus</name>
+          <note>Ei</note>
+          <note>Weizen</note>
           <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
-          <price role="employee">7.40</price>
-          <price role="student">4.90</price>
+          <note>vegetarisch</note>
+          <price role="employee">5.70</price>
+          <price role="student">3.20</price>
         </meal>
         <meal>
-          <name>Begrenztes Angebot: Gebackene Champignonköpfe mit Remouladensauce und Salat</name>
+          <name>Schweinegulasch mit Paprika und Spätzle</name>
+          <note>Dinkel</note>
           <note>Ei</note>
-          <note>Milch und Laktose</note>
-          <note>Senf</note>
+          <note>Schwein</note>
           <note>Weizen</note>
-          <note>mit Farbstoffen</note>
-          <note>mit Süßungsmitteln</note>
-          <note>vegetarisch</note>
-          <price role="employee">7.30</price>
-          <price role="student">4.80</price>
+          <price role="employee">7.90</price>
+          <price role="student">5.40</price>
         </meal>
       </category>
       <category name="Aktion">
@@ -64,11 +61,13 @@
           <price role="student">0.80</price>
         </meal>
         <meal>
-          <name>Loaded Fries mit Chili-Cheese und Jalapenos</name>
-          <note>Rind</note>
+          <name>Loaded Fries mit Sojabolognese</name>
           <note>Sellerie</note>
-          <price role="employee">9.00</price>
-          <price role="student">6.50</price>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>vegan</note>
+          <price role="employee">6.50</price>
+          <price role="student">4.00</price>
         </meal>
         <meal>
           <name>Loaded Fries mit Bratensauce und Mozzarella</name>
@@ -78,25 +77,25 @@
           <price role="student">4.00</price>
         </meal>
         <meal>
-          <name>Loaded Fries mit Sojabolognese</name>
+          <name>Loaded Fries mit Chili-Cheese und Jalapenos</name>
+          <note>Rind</note>
           <note>Sellerie</note>
-          <note>Soja</note>
-          <note>Weizen</note>
-          <note>vegan</note>
-          <price role="employee">6.50</price>
-          <price role="student">4.00</price>
+          <price role="employee">9.00</price>
+          <price role="student">6.50</price>
         </meal>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Rahmblumenkohl</name>
-          <note>Milch und Laktose</note>
-          <note>Sellerie</note>
-          <note>Soja</note>
-          <note>Weizen</note>
-          <note>vegetarisch</note>
+          <name>Broccoli</name>
+          <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Duftreis</name>
+          <note>vegan</note>
+          <price role="employee">1.49</price>
+          <price role="student">1.09</price>
         </meal>
         <meal>
           <name>Pommes frites</name>
@@ -105,20 +104,13 @@
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Kartoffelpüree</name>
-          <note>Milch und Laktose</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
+          <name>Spätzle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Weizen</note>
           <note>vegetarisch</note>
-          <price role="employee">1.49</price>
-          <price role="student">1.09</price>
-        </meal>
-        <meal>
-          <name>Reis</name>
-          <note>vegan</note>
-          <price role="employee">1.49</price>
-          <price role="student">1.09</price>
+          <price role="employee">1.69</price>
+          <price role="student">1.29</price>
         </meal>
       </category>
       <category name="Salat">
@@ -131,21 +123,16 @@
       </category>
       <category name="Dessert">
         <meal>
-          <name>Früchtemüsli</name>
-          <note>Gerste</note>
-          <note>Hafer</note>
-          <note>Haselnüsse</note>
+          <name>Quark mit Honig und Mandeln</name>
           <note>Mandeln</note>
           <note>Milch und Laktose</note>
-          <note>mit Antioxidationsmitteln</note>
           <note>vegetarisch</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Aprikosenquark</name>
+          <name>Pudding mit Vanille-Geschmack</name>
           <note>Milch und Laktose</note>
-          <note>mit Antioxidationsmitteln</note>
           <note>vegetarisch</note>
           <price role="employee">1.69</price>
           <price role="student">1.29</price>
