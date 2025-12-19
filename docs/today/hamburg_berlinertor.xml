@@ -4,6 +4,27 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2025-12-19">
+      <category name="Pottkieker">
+        <meal>
+          <name>Vegane Linsensuppe</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.50</price>
+          <price role="other">4.70</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Schnitzel vom Feld (Gemüsebasis) (Sl,Sf,GlW), Kartoffeltwister (GlW), Joghurt-Zitronen-Dip</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">7.05</price>
+          <price role="other">8.25</price>
+          <price role="student">5.75</price>
+        </meal>
+      </category>
       <category name="CampusVital">
         <meal>
           <name>Soja Kokos Curry mit rote Beete, Champignons, Bohnen (Sojaprotein) (So,Sl,Sw,GlW), Basmatireis</name>
@@ -13,6 +34,32 @@
           <price role="employee">5.05</price>
           <price role="other">6.25</price>
           <price role="student">3.75</price>
+        </meal>
+      </category>
+      <category name="Pastabar">
+        <meal>
+          <name>Pasta (GlW), Spinat-Sahnesoße (Mi,Sl,GlW,GlG)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Pasta (GlW), Tomaten-Basilikum-Sauce</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+      </category>
+      <category name="Gemüsebar">
+        <meal>
+          <name>Rahmsauerkraut (Mi,Sl,GlW), gebratene Champignons, Röstkartoffeln, Erbsen in Rahm (Mi,GlW,GlG)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
         </meal>
       </category>
     </day>
