@@ -3,8 +3,65 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2026-01-06">
-      <closed/>
+    <day date="2026-01-07">
+      <category name="Vorspeise">
+        <meal>
+          <name>Tagessuppe</name>
+          <price role="employee">1.79</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Veganer renner">
+        <meal>
+          <name>Geschwenkte Risoleekartoffeln mit grünen Bohnen und Paprika Dip</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>vegan</note>
+          <price role="employee">6.49</price>
+          <price role="student">2.99</price>
+        </meal>
+      </category>
+      <category name="Hauptgericht">
+        <meal>
+          <name>Gebackener Fleischkäse mit Bratensauce und Kartoffelpüree</name>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Schwein</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Farbstoffen</note>
+          <note>mit Konservierungsstoffen</note>
+          <price role="employee">7.70</price>
+          <price role="student">4.20</price>
+        </meal>
+      </category>
+      <category name="Beilage">
+        <meal>
+          <name>Kartoffelpüree</name>
+          <note>Milch und Laktose</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Farbstoffen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.89</price>
+          <price role="student">1.09</price>
+        </meal>
+      </category>
+      <category name="Salat">
+        <meal>
+          <name>Beilagensalat</name>
+          <note>vegan</note>
+          <price role="employee">1.79</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Dessert">
+        <meal>
+          <name>Vanillejoghurt</name>
+          <note>Milch und Laktose</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.89</price>
+          <price role="student">1.09</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
