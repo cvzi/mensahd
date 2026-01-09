@@ -6,15 +6,7 @@
     <day date="2026-01-09">
       <category name="CampusKlassiker">
         <meal>
-          <name>Veganer Steckrübeneintopf mit einem Brötchen (Sl,Sw,GlW,GlR)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">4.20</price>
-          <price role="other">5.40</price>
-          <price role="student">2.90</price>
-        </meal>
-        <meal>
-          <name>vegane Currybratwurst (Erbsenprotein) , BBQ Soße , Baguette (GlW,GlR)</name>
+          <name>vegane Schöpf-Currybratwurst , BBQ Soße , Baguette (GlW,GlR)</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Senf und Senferzeugnisse</note>
           <note>Vegetarisch</note>
@@ -25,6 +17,24 @@
           <price role="other">6.20</price>
           <price role="student">3.70</price>
         </meal>
+        <meal>
+          <name>Veganer Steckrübeneintopf mit einem Brötchen (Sl,Sw,GlW,GlR)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.20</price>
+          <price role="other">5.40</price>
+          <price role="student">2.90</price>
+        </meal>
+      </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Mie-Nudeln (2,En,So,Se,GlW), Asiatische Gemüsepfanne mit Tofu (2,So,Se,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.20</price>
+          <price role="other">6.40</price>
+          <price role="student">3.90</price>
+        </meal>
       </category>
       <category name="Pastabar">
         <meal>
@@ -37,33 +47,6 @@
         </meal>
       </category>
       <category name="Gemüsebar">
-        <meal>
-          <name>gebratene Mungosprossen (2,So,Se,GlW), Bohne:, gebratene Bohnen, Bohnen mit Knoblauch und Ingwer (2,So,Se,GlW), Erbsen:, Erbsen, Spicy Erbsen , Blumenkohl:, Blumenkohl, gebackener Cajun - Blumenkohl, gebackener Tandoori - Blumenkohl ,</name>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>mit Farbstoff</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>Blumenkohl mit Sesammarinade , Blumenkohl mit Hollandaise , Blumenkohl Limette-Knoblauch , Broccoli:, Sesam Broccoli , Broccoli, Karotte:, orientalische Zuckermöhren, Sesam-Karotten , Karotten, Kohl - Gemüse:, Spitzkohl mit</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>mit Antioxidationsmittel</note>
-        </meal>
-        <meal>
-          <name>Kreuzkümmel, gebratener Wirsingkohl mit Cajun, gebratener Weißkohl mit Cranberrys, gebratener Wirsingkohl mit Kreuzkümmel, Zuccini &amp; Aubergine:, gebratene Cajun Zucchini, gebratene Tandoori - Zucchini (Sf,GlW), gebratene Curry - Zucchini,</name>
-        </meal>
-        <meal>
-          <name>orientalische Aubergine, Sonstige Gemüse:, spicy Edamame , Madras Kürbis, Süßkartoffel:, Süßkartoffel ,,Madras,,, Cajun Süßkartoffel</name>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>mit Farbstoff</note>
-          <note>mit Konservierungsstoff</note>
-        </meal>
         <meal>
           <name>Gebackenes / Frittiertes:, Kroketten (GlW), Herzoginkartoffeln , Kartoffelspalten (GlW), Steakhouse - Pommes, Röstiecken, Röstinchen, Aufläufe:, Kartoffelgratin , Kartoffel - Gemüsegratin (Mi,GlW,GlG), Kartoffel - Blumenkohlgratin</name>
           <note>Ei und Eierzeugnisse</note>
@@ -99,18 +82,37 @@
           <note>Senf und Senferzeugnisse</note>
           <note>mit Konservierungsstoff</note>
         </meal>
+        <meal>
+          <name>gebratene Mungosprossen (2,So,Se,GlW), Bohne:, gebratene Bohnen, Bohnen mit Knoblauch und Ingwer (2,So,Se,GlW), Erbsen:, Erbsen, Spicy Erbsen , Blumenkohl:, Blumenkohl, gebackener Cajun - Blumenkohl, gebackener Tandoori - Blumenkohl ,</name>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>mit Farbstoff</note>
+          <note>mit Konservierungsstoff</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Blumenkohl mit Sesammarinade , Blumenkohl mit Hollandaise , Blumenkohl Limette-Knoblauch , Broccoli:, Sesam Broccoli , Broccoli, Karotte:, orientalische Zuckermöhren, Sesam-Karotten , Karotten, Kohl - Gemüse:, Spitzkohl mit</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>mit Antioxidationsmittel</note>
+        </meal>
+        <meal>
+          <name>Kreuzkümmel, gebratener Wirsingkohl mit Cajun, gebratener Weißkohl mit Cranberrys, gebratener Wirsingkohl mit Kreuzkümmel, Zuccini &amp; Aubergine:, gebratene Cajun Zucchini, gebratene Tandoori - Zucchini (Sf,GlW), gebratene Curry - Zucchini,</name>
+        </meal>
+        <meal>
+          <name>orientalische Aubergine, Sonstige Gemüse:, spicy Edamame , Madras Kürbis, Süßkartoffel:, Süßkartoffel ,,Madras,,, Cajun Süßkartoffel</name>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>mit Farbstoff</note>
+          <note>mit Konservierungsstoff</note>
+        </meal>
       </category>
     </day>
     <day date="2026-01-12">
       <category name="CampusWorld">
-        <meal>
-          <name>Seelachsfilet vom Grill mit scharfem Ingwer-Bohnengemüse, Erdnusscreme und Crunch (2,Fi,En,So,Se,GlW), Basmatireis</name>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Fisch</note>
-          <price role="employee">7.80</price>
-          <price role="other">9.00</price>
-          <price role="student">6.50</price>
-        </meal>
         <meal>
           <name>Bibimbap Bowl mit Sonnenblumenhack (Sonnenblumenprotein) und Champignons (2,3,5,So,Sl,Sf,Se,Sw,GlW)</name>
           <note>Vegan</note>
@@ -119,6 +121,14 @@
           <price role="other">7.60</price>
           <price role="student">5.10</price>
         </meal>
+        <meal>
+          <name>Seelachsfilet vom Grill mit scharfem Ingwer-Bohnengemüse, Erdnusscreme und Crunch (2,Fi,En,So,Se,GlW), Basmatireis</name>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Fisch</note>
+          <price role="employee">7.80</price>
+          <price role="other">9.00</price>
+          <price role="student">6.50</price>
+        </meal>
       </category>
       <category name="Pastabar">
         <meal>
@@ -131,22 +141,6 @@
         </meal>
       </category>
       <category name="Gemüsebar">
-        <meal>
-          <name>Curry und Ragout:, orientalisches Kichererbsen - Tomatenragout, gebratenes Kichererbsencurry, Kicherserbsen Tomatenragout, Kartoffelragout in Dillsahne , weißes Bohnencurry , Dal Tadka - mit roten Linsen und Kokosmilch , Dal Palak - mit</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>roten Linsen und Spinat , Sonstiges:, Bulgur arabisch (Sl,GlW,NMa,NWa), orientalischer CousCous (Sl,GlW,NWa)</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>mit Konservierungsstoff</note>
-        </meal>
         <meal>
           <name>gebratene Mungosprossen (2,So,Se,GlW), Bohne:, gebratene Bohnen, Bohnen mit Knoblauch und Ingwer (2,So,Se,GlW), Erbsen:, Erbsen, Spicy Erbsen , Blumenkohl:, Blumenkohl, gebackener Cajun - Blumenkohl, gebackener Tandoori - Blumenkohl ,</name>
           <note>Senf und Senferzeugnisse</note>
@@ -192,6 +186,22 @@
           <name>Sesamkartoffeln , gebackene Kartoffel mit Koriander - Limettenmarinade</name>
           <note>Sesamsamen und Sesamsamenerzeugnisse</note>
           <note>mit Antioxidationsmittel</note>
+        </meal>
+        <meal>
+          <name>Curry und Ragout:, orientalisches Kichererbsen - Tomatenragout, gebratenes Kichererbsencurry, Kicherserbsen Tomatenragout, Kartoffelragout in Dillsahne , weißes Bohnencurry , Dal Tadka - mit roten Linsen und Kokosmilch , Dal Palak - mit</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>mit Konservierungsstoff</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>roten Linsen und Spinat , Sonstiges:, Bulgur arabisch (Sl,GlW,NMa,NWa), orientalischer CousCous (Sl,GlW,NWa)</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>mit Konservierungsstoff</note>
         </meal>
       </category>
     </day>
@@ -243,6 +253,22 @@
       </category>
       <category name="Gemüsebar">
         <meal>
+          <name>Curry und Ragout:, orientalisches Kichererbsen - Tomatenragout, gebratenes Kichererbsencurry, Kicherserbsen Tomatenragout, Kartoffelragout in Dillsahne , weißes Bohnencurry , Dal Tadka - mit roten Linsen und Kokosmilch , Dal Palak - mit</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>mit Konservierungsstoff</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>roten Linsen und Spinat , Sonstiges:, Bulgur arabisch (Sl,GlW,NMa,NWa), orientalischer CousCous (Sl,GlW,NWa)</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>mit Konservierungsstoff</note>
+        </meal>
+        <meal>
           <name>gebratene Mungosprossen (2,So,Se,GlW), Bohne:, gebratene Bohnen, Bohnen mit Knoblauch und Ingwer (2,So,Se,GlW), Erbsen:, Erbsen, Spicy Erbsen , Blumenkohl:, Blumenkohl, gebackener Cajun - Blumenkohl, gebackener Tandoori - Blumenkohl ,</name>
           <note>Senf und Senferzeugnisse</note>
           <note>Vegetarisch</note>
@@ -267,22 +293,6 @@
           <name>orientalische Aubergine, Sonstige Gemüse:, spicy Edamame , Madras Kürbis, Süßkartoffel:, Süßkartoffel ,,Madras,,, Cajun Süßkartoffel</name>
           <note>Soja und Sojaerzeugnisse</note>
           <note>mit Farbstoff</note>
-          <note>mit Konservierungsstoff</note>
-        </meal>
-        <meal>
-          <name>Curry und Ragout:, orientalisches Kichererbsen - Tomatenragout, gebratenes Kichererbsencurry, Kicherserbsen Tomatenragout, Kartoffelragout in Dillsahne , weißes Bohnencurry , Dal Tadka - mit roten Linsen und Kokosmilch , Dal Palak - mit</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>roten Linsen und Spinat , Sonstiges:, Bulgur arabisch (Sl,GlW,NMa,NWa), orientalischer CousCous (Sl,GlW,NWa)</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
           <note>mit Konservierungsstoff</note>
         </meal>
         <meal>
@@ -309,14 +319,6 @@
     <day date="2026-01-14">
       <category name="CampusWorld">
         <meal>
-          <name>Cremige Udonnudeln in einer Kokos - Erdnusssauce mit Gemüse, Koriander und Crunch (2,3,En,So,Sl,Sf,Se,Sw,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">7.35</price>
-          <price role="other">8.55</price>
-          <price role="student">6.05</price>
-        </meal>
-        <meal>
           <name>3 Kartoffeltaschen mit Kräuter Frischkäsefüllung , Kräuterquark , gemischter Salat</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -324,6 +326,14 @@
           <price role="employee">6.15</price>
           <price role="other">7.35</price>
           <price role="student">4.85</price>
+        </meal>
+        <meal>
+          <name>Cremige Udonnudeln in einer Kokos - Erdnusssauce mit Gemüse, Koriander und Crunch (2,3,En,So,Sl,Sf,Se,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">7.35</price>
+          <price role="other">8.55</price>
+          <price role="student">6.05</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -337,22 +347,6 @@
         </meal>
       </category>
       <category name="Gemüsebar">
-        <meal>
-          <name>Curry und Ragout:, orientalisches Kichererbsen - Tomatenragout, gebratenes Kichererbsencurry, Kicherserbsen Tomatenragout, Kartoffelragout in Dillsahne , weißes Bohnencurry , Dal Tadka - mit roten Linsen und Kokosmilch , Dal Palak - mit</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>roten Linsen und Spinat , Sonstiges:, Bulgur arabisch (Sl,GlW,NMa,NWa), orientalischer CousCous (Sl,GlW,NWa)</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>mit Konservierungsstoff</note>
-        </meal>
         <meal>
           <name>gebratene Mungosprossen (2,So,Se,GlW), Bohne:, gebratene Bohnen, Bohnen mit Knoblauch und Ingwer (2,So,Se,GlW), Erbsen:, Erbsen, Spicy Erbsen , Blumenkohl:, Blumenkohl, gebackener Cajun - Blumenkohl, gebackener Tandoori - Blumenkohl ,</name>
           <note>Senf und Senferzeugnisse</note>
@@ -398,6 +392,22 @@
           <name>Sesamkartoffeln , gebackene Kartoffel mit Koriander - Limettenmarinade</name>
           <note>Sesamsamen und Sesamsamenerzeugnisse</note>
           <note>mit Antioxidationsmittel</note>
+        </meal>
+        <meal>
+          <name>Curry und Ragout:, orientalisches Kichererbsen - Tomatenragout, gebratenes Kichererbsencurry, Kicherserbsen Tomatenragout, Kartoffelragout in Dillsahne , weißes Bohnencurry , Dal Tadka - mit roten Linsen und Kokosmilch , Dal Palak - mit</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>mit Konservierungsstoff</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>roten Linsen und Spinat , Sonstiges:, Bulgur arabisch (Sl,GlW,NMa,NWa), orientalischer CousCous (Sl,GlW,NWa)</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>mit Konservierungsstoff</note>
         </meal>
       </category>
     </day>
