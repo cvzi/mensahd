@@ -161,7 +161,8 @@ def parse_url(canteen, locId, day=None):
 
                 if notes is None:
                     notes = []
-                notes.append(nutritionText)
+                if nutritionText not in notes:
+                    notes.append(nutritionText)
 
             pricesNode = div.find("div", {"class": "preise-xs"})
             pricesText = None
