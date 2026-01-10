@@ -132,7 +132,6 @@ def parse_url(canteen, locId, day=None):
             continue
 
         elif nextIsMenu:
-
             mealName = div.find(
                 "div", {"class": "visible-xs-block"}).text.strip()
 
@@ -151,6 +150,19 @@ def parse_url(canteen, locId, day=None):
                 mealName = re.sub(".*Nudelmanufaktur.?\\s*", "", mealName)
                 notes.append("hauseigene Nudelmanufaktur")
 
+            # Nutritional info
+            nutritionNodes = div.find_all(string=re.compile('Nährwerte'))
+            for nutritionNode in nutritionNodes:
+                # Extract text
+                nutritionText = nutritionNode.parent.decode_contents()
+                nutritionText = re.sub(r'<br\s*/?>', ' \n', nutritionText)
+                nutritionText = re.sub(r'<.*?>', '', nutritionText)
+                nutritionText = nutritionText.replace("Nährwerte:", "").strip()
+
+                if notes is None:
+                    notes = []
+                notes.append(nutritionText)
+
             pricesNode = div.find("div", {"class": "preise-xs"})
             pricesText = None
             if not pricesNode:
@@ -162,17 +174,17 @@ def parse_url(canteen, locId, day=None):
                 prices = [float(x.replace(",", "."))
                           for x in price_pattern.findall(pricesText)]
 
-                if len(prices) != 2:
-                    logging.warning("Expected two prices, got %r" % prices)
+                if len(prices) != 3:
+                    logging.warning("Expected 3 prices, got %r" % prices)
                     if len(prices) == 0:
-                        prices = [0.0, 0.0]
+                        prices = [0.0, 0.0, 0.0]
                     elif len(prices) == 1:
                         prices.append(0.0)
-                    elif len(prices) == 3:
-                        prices = prices[0:2]
+                        prices.append(0.0)
+                    elif len(prices) == 2:
+                        prices.append(0.0)
                     else:
-                        prices = [prices[1], prices[3]]
-                    logging.warning("Assuming prices: %r" % prices)
+                        prices = prices[:3]
             else:
                 prices = []
                 logging.warning("No prices found")
