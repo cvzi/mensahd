@@ -30,16 +30,6 @@
           <price role="student">4.30</price>
         </meal>
         <meal>
-          <name>Paniertes Schweineschnitzel (GlW), Champignonrahmsoße , Pommes Frites , Zitrone</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwein</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <price role="employee">5.60</price>
-          <price role="other">6.80</price>
-          <price role="student">4.30</price>
-        </meal>
-        <meal>
           <name>Grünkohl , Kochwurst , Röstkartoffeln</name>
           <note>Schwein</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -64,6 +54,16 @@
           <price role="other">6.80</price>
           <price role="student">4.30</price>
         </meal>
+        <meal>
+          <name>Paniertes Schweineschnitzel (GlW), Champignonrahmsoße , Pommes Frites , Zitrone</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <price role="employee">5.60</price>
+          <price role="other">6.80</price>
+          <price role="student">4.30</price>
+        </meal>
       </category>
       <category name="CampusWorld">
         <meal>
@@ -74,13 +74,30 @@
           <price role="student">4.70</price>
         </meal>
       </category>
-      <category name="Gemüsebar">
+      <category name="Pastabar">
         <meal>
-          <name>Geschmorter Sellerie , gebratenem Wirsing, Blumenkohl mit gebräunten Bröseln (1,GlW), Alte Gemüse: Pastinake- Sellerie- Karotte- Topinambur , Nusskartoffeln</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Reis, Rindergeschnetzeltes mit Pilzen in Rahm</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Rind</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Pasta (GlW), Paprika in Tomatensoße, Rucola</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+      </category>
+      <category name="Gemüsebar">
+        <meal>
+          <name>Salzkartoffel, Grilltomate , Blumenkohl</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -121,11 +138,12 @@
           <price role="student">5.20</price>
         </meal>
         <meal>
-          <name>Flammkuchen des Tages: mit Apfelwürfel, Zimt und Zucker (Mi,GlW,NHa)</name>
+          <name>Asia-Reis-Pot, Sojastreifen, Kimchi- Gurke, Koriander, Erdnüsse, Chilimajo (Sojaprotein) (1,2,3,9,Ei,En,So,Sl,Sf,Se,GlW)</name>
           <note>Vegetarisch</note>
-          <price role="employee">5.50</price>
-          <price role="other">6.70</price>
-          <price role="student">4.20</price>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.90</price>
+          <price role="other">6.10</price>
+          <price role="student">3.60</price>
         </meal>
         <meal>
           <name>Frisch gebackene FLAMMKUCHEN nach Wahl (versch. Sorten) ab 4,20 / 5,50 / 6,70 (auch TAKE AWAY) (Mi,GlW)</name>
@@ -135,12 +153,11 @@
           <price role="student">4.20</price>
         </meal>
         <meal>
-          <name>Asia-Reis-Pot, Sojastreifen, Kimchi- Gurke, Koriander, Erdnüsse, Chilimajo (Sojaprotein) (1,2,3,9,Ei,En,So,Sl,Sf,Se,GlW)</name>
+          <name>Flammkuchen des Tages: mit Apfelwürfel, Zimt und Zucker (Mi,GlW,NHa)</name>
           <note>Vegetarisch</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">4.90</price>
-          <price role="other">6.10</price>
-          <price role="student">3.60</price>
+          <price role="employee">5.50</price>
+          <price role="other">6.70</price>
+          <price role="student">4.20</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -277,18 +294,18 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Frisch gebackene FLAMMKUCHEN nach Wahl (versch. Sorten) ab 4,20 / 5,50 / 6,70 (auch TAKE AWAY) (Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">5.50</price>
-          <price role="other">6.70</price>
-          <price role="student">4.20</price>
-        </meal>
-        <meal>
           <name>Flammkuchen des Tages: Teriyaki mit Räuchertofu, asiatischem Gemüse, Sesam (2,So,Mi,GlW)</name>
           <note>Vegetarisch</note>
           <price role="employee">5.90</price>
           <price role="other">7.10</price>
           <price role="student">4.60</price>
+        </meal>
+        <meal>
+          <name>Frisch gebackene FLAMMKUCHEN nach Wahl (versch. Sorten) ab 4,20 / 5,50 / 6,70 (auch TAKE AWAY) (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">5.50</price>
+          <price role="other">6.70</price>
+          <price role="student">4.20</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -340,19 +357,19 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Vegan / Vegetarische PIZZA LARGE nach Wahl (versch. Sorten) ab 4,70 / 6,00 / 7,20 (auch TAKE AWAY) (Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">6.00</price>
-          <price role="other">7.20</price>
-          <price role="student">4.70</price>
-        </meal>
-        <meal>
           <name>Veganes Hackbällchen-Curry (Soja und Weizenprotein) mit Kokosmilch, Erdnussbutter und Gemüse (1,2,En,So,GlW,GlG), Basmatireis</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">5.70</price>
           <price role="other">6.90</price>
           <price role="student">4.40</price>
+        </meal>
+        <meal>
+          <name>Vegan / Vegetarische PIZZA LARGE nach Wahl (versch. Sorten) ab 4,70 / 6,00 / 7,20 (auch TAKE AWAY) (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">6.00</price>
+          <price role="other">7.20</price>
+          <price role="student">4.70</price>
         </meal>
       </category>
       <category name="Gemüsebar">
