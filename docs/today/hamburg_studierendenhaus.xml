@@ -16,16 +16,6 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Schwedische Köttbullar (Ei,GlW), Rahmsoße , Preiselbeeren, Salzkartoffeln</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Rind</note>
-          <note>Schwein</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <price role="employee">4.80</price>
-          <price role="other">6.00</price>
-          <price role="student">3.50</price>
-        </meal>
-        <meal>
           <name>vegane Currybratwurst (Erbsenprotein) , BBQ Soße , fruchtige BBQ Soße , verschiedene Currypulver nach Wahl , Pommes Frites</name>
           <note>Geschwefelt</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
@@ -40,6 +30,16 @@
           <price role="employee">6.20</price>
           <price role="other">7.40</price>
           <price role="student">4.90</price>
+        </meal>
+        <meal>
+          <name>Schwedische Köttbullar (Ei,GlW), Rahmsoße , Preiselbeeren, Salzkartoffeln</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Rind</note>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <price role="employee">4.80</price>
+          <price role="other">6.00</price>
+          <price role="student">3.50</price>
         </meal>
         <meal>
           <name>Unsere Hauseigene Currybratwurst , BBQ Soße , fruchtige BBQ Soße , verschiedene Currypulver nach Wahl , Pommes Frites</name>
@@ -72,7 +72,7 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Fusilli (GlW), Aglio e olio mit Tomate und Knoblauch in Olivenöl</name>
+          <name>Aglio e olio mit Tomate und Knoblauch in Olivenöl</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
@@ -80,7 +80,15 @@
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Fusilli (GlW), Schinkenstreifen in einer Käse- Sahnesoße</name>
+          <name>Fusilli (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Schinkenstreifen in einer Käse- Sahnesoße</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Schwein</note>
@@ -92,14 +100,23 @@
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
+        <meal>
+          <name>Chili-Kartoffeln aus dem Ofen</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Gemüsemix mit Karotten, Brokkoli und Bohnen, Lauch in Creme , Glacierte Pastinaken, Orientalisches Linsengemüse , Chili-Kartoffeln aus dem Ofen</name>
+          <name>Gemüsemix mit Karotten Brokkoli und Bohnen, Lauch in Creme , Glacierte Pastinaken, Orientalisches Linsengemüse , Steckrübengemüse in Creme</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Farbstoff</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -297,15 +314,6 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Schweinegeschnetzeltes Zürcher Art , Fusilli (GlW)</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwein</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <price role="employee">6.20</price>
-          <price role="other">7.40</price>
-          <price role="student">4.90</price>
-        </meal>
-        <meal>
           <name>Hähnchen Crossies (GlW), BBQ Soße , Pommes Frites</name>
           <note>Geflügel</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -316,6 +324,15 @@
           <price role="employee">6.35</price>
           <price role="other">7.55</price>
           <price role="student">5.05</price>
+        </meal>
+        <meal>
+          <name>Schweinegeschnetzeltes Zürcher Art , Fusilli (GlW)</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.40</price>
+          <price role="student">4.90</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -334,16 +351,16 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Eliche (GlW), Rinderhackfleisch in Sahnesoße mit Kräutern</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Rind</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Eliche (GlW), Gorgonzola- Hartkäsesoße, gerösteten Haselnüssen und Basilikum (Mi,Sl,NHa)</name>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Eliche (GlW), Gorgonzola- Hartkäsesoße, gerösteten Haselnüssen und Basilikum (Mi,Sl,NHa)</name>
+          <name>Eliche (GlW), Rinderhackfleisch in Sahnesoße mit Kräutern</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
