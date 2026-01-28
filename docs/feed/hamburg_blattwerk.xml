@@ -3,67 +3,6 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2026-01-27">
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Süßkartoffel-Linsenpüree mit Römersalat und Limetten-Senf-Dressing (3,Sf,NMa)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.80</price>
-          <price role="other">7.00</price>
-          <price role="student">4.50</price>
-        </meal>
-      </category>
-      <category name="CampusSpezial">
-        <meal>
-          <name>Mie-Nudeln (Ei,GlW), Grünes Wokgemüse mit Sojasoße (2,So,GlW), geschmorter Räuchertofu (So,GlW)</name>
-          <note>Vegetarisch</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.95</price>
-          <price role="other">8.15</price>
-          <price role="student">5.65</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Hausgemachte Pasta (GlW), Vegane Paprikacreme mit gebratenen Sonnenblumenhack (Sonnenblumenprotein) (2,So,Sl,Sf,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.40</price>
-          <price role="student">3.90</price>
-        </meal>
-      </category>
-      <category name="Pastabar">
-        <meal>
-          <name>Nudelauflauf mit Auberginen in Tomaten- Kräutersoße (1,Mi,Sw,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>Pasta (GlW), Linsen in pikanter Tomatensoße</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-      </category>
-      <category name="Gemüsebar">
-        <meal>
-          <name>Sesammöhrchen , Porree in Sojacreme, gebratenem Wirsing, Kräuter-Chili-Kartoffeln</name>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-      </category>
-    </day>
     <day date="2026-01-28">
       <category name="CampusKlassiker">
         <meal>
@@ -85,11 +24,13 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Spinatknödel (Ei,Mi,GlW), Tomaten- Linsenragout mit Zimtcroutons (1,GlW)</name>
+          <name>Spinatknödel (Ei,Mi,GlW), Sauerkraut (vegan) , gebratene Champignons und Creme Fraiche</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegetarisch</note>
-          <price role="employee">6.40</price>
-          <price role="other">7.60</price>
-          <price role="student">5.10</price>
+          <price role="employee">6.95</price>
+          <price role="other">8.15</price>
+          <price role="student">5.65</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -155,14 +96,6 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Scharfe Kokos-Limonen-Suppe mit Udon-Nudeln (2,3,So,Sl,Se,Sw,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.90</price>
-          <price role="other">7.10</price>
-          <price role="student">4.60</price>
-        </meal>
-        <meal>
           <name>Hausgemachte Pasta (GlW), getrockneten Steinpilzen, Champignons und Tomaten</name>
           <note>Geschwefelt</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
@@ -174,19 +107,27 @@
           <price role="other">6.40</price>
           <price role="student">3.90</price>
         </meal>
+        <meal>
+          <name>Scharfe Kokos-Limonen-Suppe mit Udon-Nudeln (2,3,So,Sl,Se,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.90</price>
+          <price role="other">7.10</price>
+          <price role="student">4.60</price>
+        </meal>
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Nudelauflauf mit Spinat in Sahnesoße und mit Hirtenkäse gebacken (Ei,Mi,GlW)</name>
+          <name>Bunte Fusilli (GlW), Champignons in Cremesoße</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Bunte Fusilli (GlW), Champignons in Cremesoße</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Nudelauflauf mit Spinat in Sahnesoße und mit Hirtenkäse gebacken (Ei,Mi,GlW)</name>
           <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
@@ -236,16 +177,16 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Vollkorn Penne (GlW), Broccoli in Tomatensoße</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Vollkorn Penne (GlW), Crema di pesto mit Gemüse und Pestocreme (Mi,Sl,GlW,GlG,NCa)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Vollkorn Penne (GlW), Crema di pesto mit Gemüse und Pestocreme (Mi,Sl,GlW,GlG,NCa)</name>
-          <note>Vegetarisch</note>
+          <name>Vollkorn Penne (GlW), Broccoli in Tomatensoße</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
