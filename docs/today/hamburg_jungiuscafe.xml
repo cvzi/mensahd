@@ -4,6 +4,15 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2026-01-30">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Nudelauflauf mit Gemüse in Käsesahnesoße und mit Käse überbacken (Mi,GlW,GlG)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">3.50</price>
+          <price role="other">4.70</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
       <category name="CampusSpezial">
         <meal>
           <name>Veganes Knusperschnitzel (GlW), Bratkartoffeln, Gurkensalat, Zitrone</name>
@@ -12,17 +21,6 @@
           <price role="employee">6.20</price>
           <price role="other">7.40</price>
           <price role="student">4.90</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Quinoa-Jalapeno-Pot, Tortillachips, Chili-Cheese-Sauce</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">5.35</price>
-          <price role="other">6.55</price>
-          <price role="student">4.05</price>
         </meal>
       </category>
     </day>
