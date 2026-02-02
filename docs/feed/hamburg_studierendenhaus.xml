@@ -19,6 +19,15 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
+          <name>Kohlroulade (GlW), Kümmelsoße , Salzkartoffeln</name>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.35</price>
+          <price role="other">7.55</price>
+          <price role="student">5.05</price>
+        </meal>
+        <meal>
           <name>vegane Currybratwurst (Erbsenprotein) , BBQ Soße , fruchtige BBQ Soße , verschiedene Currypulver nach Wahl , Pommes Frites</name>
           <note>Geschwefelt</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
@@ -33,15 +42,6 @@
           <price role="employee">6.20</price>
           <price role="other">7.40</price>
           <price role="student">4.90</price>
-        </meal>
-        <meal>
-          <name>Kohlroulade (GlW), Kümmelsoße , Salzkartoffeln</name>
-          <note>Schwein</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.35</price>
-          <price role="other">7.55</price>
-          <price role="student">5.05</price>
         </meal>
         <meal>
           <name>Unsere Hauseigene Currybratwurst , BBQ Soße , fruchtige BBQ Soße , verschiedene Currypulver nach Wahl , Pommes Frites</name>
@@ -88,7 +88,23 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Conchiglie (GlW), Rinderhackfleisch in einer Paprika- Sahnesoße</name>
+          <name>Conchiglie (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Nusskartoffeln</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Rinderhackfleisch in einer Paprika- Sahnesoße</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Rind</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -96,17 +112,10 @@
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
-        <meal>
-          <name>Conchiglie (GlW), Broccoli in einer Gorgonzola- Sahnesoße</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Blattspinat , gebratenem Wirsing, Blumenkohl mit gebräunten Bröseln (1,GlW), Alte Gemüse: Pastinake- Sellerie- Karotte- Topinambur , Nusskartoffeln</name>
+          <name>Blattspinat , gebratenem Wirsing, Blumenkohl mit gebräunten Bröseln (1,GlW), Alte Gemüse: Pastinake- Sellerie- Karotte- Topinambur , Rosenkohl in Creme (1,So,Sl,GlW)</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -132,6 +141,16 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
+          <name>Homemade paniertes Putenschnitzel (Ei,GlW), Perlzwiebelsoße , Pommes Frites</name>
+          <note>Geflügel</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.40</price>
+          <price role="student">4.90</price>
+        </meal>
+        <meal>
           <name>Matjesfilets , Matjessoße Hausfrauen Art , Petersilienkartoffeln</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Fisch und Fischerzeugnisse</note>
@@ -146,16 +165,6 @@
           <price role="employee">5.40</price>
           <price role="other">6.60</price>
           <price role="student">4.10</price>
-        </meal>
-        <meal>
-          <name>Homemade paniertes Putenschnitzel (Ei,GlW), Perlzwiebelsoße , Pommes Frites</name>
-          <note>Geflügel</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.20</price>
-          <price role="other">7.40</price>
-          <price role="student">4.90</price>
         </meal>
       </category>
       <category name="CampusVital">
@@ -177,17 +186,17 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Strozzapreti (GlW), Rindfleischstreifen und Pilzen in Sahnesoße (3,Mi,Sl,GlW,GlG)</name>
-          <note>Rind</note>
+          <name>Strozzapreti (GlW), Tomaten- Kräuter- Gemüsesoße</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Strozzapreti (GlW), Tomaten- Kräuter- Gemüsesoße</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Strozzapreti (GlW), Rindfleischstreifen und Pilzen in Sahnesoße (3,Mi,Sl,GlW,GlG)</name>
+          <note>Rind</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -344,14 +353,6 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Linsen Hirsebällchen (GlW,GlH), Bulgur Tomaten Salat (3,5,Sw,GlW), Petersilienpesto, Rucola</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.10</price>
-          <price role="other">7.30</price>
-          <price role="student">4.80</price>
-        </meal>
-        <meal>
           <name>Wir kochen was Sie lieben..., frisches Gemüse aus dem Wok , mit marinierten Schweinenackenstreifen mit Hoisin und Ingwer (1,2,So,Se,GlW), Kokosreis</name>
           <note>Alkohol</note>
           <note>Lieblingsessen</note>
@@ -362,6 +363,14 @@
           <price role="employee">5.50</price>
           <price role="other">6.70</price>
           <price role="student">4.20</price>
+        </meal>
+        <meal>
+          <name>Linsen Hirsebällchen (GlW,GlH), Bulgur Tomaten Salat (3,5,Sw,GlW), Petersilienpesto, Rucola</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.10</price>
+          <price role="other">7.30</price>
+          <price role="student">4.80</price>
         </meal>
       </category>
       <category name="Pastabar">
