@@ -4,15 +4,6 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2026-02-05">
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Ovenkartoffel mit Rosmarin, Karotten, Hirtenkäse , Tomaten-Sonnenblumenkern-Salsa</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <price role="employee">6.70</price>
-          <price role="other">7.90</price>
-          <price role="student">5.40</price>
-        </meal>
-      </category>
       <category name="CampusVital">
         <meal>
           <name>Burrito Bowl mit Sonnenblumenhack (Sonnenblumenprotein), Petersilie-Knoblauch-Dip (1,3,Sl,Sf,GlH,NMa), Tomaten-Gurken-Salsa</name>
@@ -26,10 +17,22 @@
           <price role="student">4.80</price>
         </meal>
       </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Ofenkartoffeln mit Rosmarin, Gemüse und Hirtenkäse , Tomaten-Sonnenblumenkern-Salsa</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">5.80</price>
+          <price role="other">7.00</price>
+          <price role="student">4.50</price>
+        </meal>
+      </category>
       <category name="CampusWorld">
         <meal>
-          <name>Hausgemachte Pasta (GlW), Paprikacreme mit Ricotta Salata und Rucola</name>
+          <name>Hausgemachte Pasta (GlW), Aubergine, Paprika und Kräutern in Tomatensoße und Ricotta Salata</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegetarisch</note>
           <price role="employee">5.20</price>
           <price role="other">6.40</price>
@@ -37,6 +40,15 @@
         </meal>
       </category>
       <category name="Pastabar">
+        <meal>
+          <name>Pasta (GlW), weiße Bohnen, Gemüse und Basilikum in einer Sahnesoße</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
         <meal>
           <name>Pasta (GlW), Sojahack in einer Paprika Cremesoße (Sojaprotein)</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -47,19 +59,10 @@
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
-        <meal>
-          <name>Pasta (GlW), weiße Bohnen, Gemüse und Basilikum in einer Sahnesoße</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Knoblauch Champignons aus dem Ofen (1,2,5,So,Sw,GlW), Karotten Pastinakenmix mit frischer Petersilie, Spitzkohl in Creme , Petersilienkartoffeln</name>
+          <name>Knoblauch Champignons aus dem Ofen (1,2,5,So,Sw,GlW), Bohnen, Röstkartoffel mit Paprika, Sauerkraut, Spitzkohl in Creme</name>
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
