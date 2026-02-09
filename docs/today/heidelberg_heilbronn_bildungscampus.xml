@@ -4,8 +4,61 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2026-02-08">
-      <closed/>
+    <day date="2026-02-09">
+      <category name="Dessert">
+        <meal>
+          <name>Kein Dessert-Angebot aufgrund von Streik</name>
+          <note>No dessert available due to strike</note>
+          <price role="student">0.90</price>
+          <price role="employee">1.40</price>
+          <price role="other">2.00</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Keine Desserts aufgrund von Streik </name>
+          <note>No dessert due to strike</note>
+          <price role="student">0.90</price>
+          <price role="employee">1.40</price>
+          <price role="other">2.00</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Keine Suppe aufgrund des Streiks</name>
+          <note>No soup due to the strike</note>
+          <price role="student">0.90</price>
+          <price role="employee">1.40</price>
+          <price role="other">2.00</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Kein Angebiot aufgrund des Streiks</name>
+          <note>No service due to the strike</note>
+          <price role="student">0.99</price>
+          <price role="employee">1.35</price>
+          <price role="other">2.00</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Kein Buffet Angebot aufgrund des Streiks</name>
+          <note>No buffet service due to the strike</note>
+          <price role="student">0.99</price>
+          <price role="employee">1.35</price>
+          <price role="other">2.00</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Hausgemachte Pasta mit Gemüse-Sonnenblumen-Bolognese</name>
+          <note>Homemade pasta with vegetable and sunflower Bolognese sauce</note>
+          <price role="student">2.90</price>
+          <price role="employee">4.50</price>
+          <price role="other">7.50</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
