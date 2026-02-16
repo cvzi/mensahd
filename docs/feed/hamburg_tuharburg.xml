@@ -36,11 +36,9 @@
       </category>
       <category name="CampusVital">
         <meal>
-          <name>Hühnchen in Kokos Soße , Sesammöhrchen , Basmatireis</name>
+          <name>Hühnchen in Kokos Soße (So,Sl,GlW), Sesammöhrchen , Basmatireis</name>
           <note>Geflügel</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">6.10</price>
           <price role="other">7.30</price>
@@ -61,17 +59,10 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Gnocchi, Tomatensoße aus getrockneten Tomaten mit Basilikum (2,5,Mi,Sw,GlW,GlG)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>Gnocchi, Tomatensoße mit Schweinefleischstreifen, Zucchini und Champignons</name>
-          <note>Schwein</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Pasta nach Wahl (GlW), Wirsing in Sojacremesoße (So,Sl,GlW)</name>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mensaVital</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -79,12 +70,18 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Karotten Rustica, Auberginen-Zucchini Gemüse , karamellisierte Schwarzwurzeln , Schmorkohl , Süßkartoffel Gnocchi</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Kartoffelgratin</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>buntes Gemüse, Broccoli, Blumenkohl</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Farbstoff</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -398,16 +395,16 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Penne in Tomaten Paprikacreme mit Käse gebacken (Ei,Mi,GlW)</name>
-          <note>Vegetarisch</note>
+          <name>Farfalle (GlW), Spinat-Erdnusssoße (2,En,So,Sl,GlW,NMa)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Farfalle (GlW), Spinat-Erdnusssoße (2,En,So,Sl,GlW,NMa)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Penne in Tomaten Paprikacreme mit Käse gebacken (Ei,Mi,GlW)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -426,6 +423,50 @@
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2026-02-24">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Hühnerfrikassee (Mi,Sw,GlW,GlG), Reis</name>
+          <note>Geflügel</note>
+          <price role="employee">5.60</price>
+          <price role="other">6.80</price>
+          <price role="student">4.30</price>
+        </meal>
+        <meal>
+          <name>Cheeseburger mit Gurken, Tomaten und Salat (1,2,3,9,Ei,Mi,Sf,Se,Sw,GlW), Pommes Frites</name>
+          <note>Rind</note>
+          <note>Senf und Senferzeugnisse</note>
+          <price role="employee">6.60</price>
+          <price role="other">7.80</price>
+          <price role="student">5.30</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2026-02-25">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Homemade Putenschnitzel paniert (Ei,GlW), Pfeffersoße , Kartoffelspalten (GlW)</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.40</price>
+          <price role="student">4.90</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2026-02-27">
+      <category name="CampusVital">
+        <meal>
+          <name>Wrap mit Glasnudeln und Sonnenblumenhack (2,So,Sl,Sf,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.20</price>
+          <price role="other">6.40</price>
+          <price role="student">3.90</price>
         </meal>
       </category>
     </day>
