@@ -28,15 +28,6 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Hausgemachte Pasta (GlW), hausgemachtes Pesto Genovese , Hartkäse</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.40</price>
-          <price role="student">3.90</price>
-        </meal>
-        <meal>
           <name>Paniertes Schweineschnitzel (GlW), Champignonrahmsoße , Pommes Frites , Zitrone</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Schwein</note>
@@ -45,6 +36,15 @@
           <price role="employee">5.60</price>
           <price role="other">6.80</price>
           <price role="student">4.30</price>
+        </meal>
+        <meal>
+          <name>Hausgemachte Pasta (GlW), hausgemachtes Pesto Genovese , Hartkäse</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>mit Konservierungsstoff</note>
+          <price role="employee">5.20</price>
+          <price role="other">6.40</price>
+          <price role="student">3.90</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -68,7 +68,7 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Eliche (GlW), asiatischer Tomatensoße und Sojawürfeln (Sojaprotein) (2,So,Se,GlW)</name>
+          <name>Eliche (GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
@@ -76,8 +76,24 @@
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Eliche (GlW), Rindfleischstreifen und Pilzen in Sahnesoße (3,Mi,Sl,GlW,GlG)</name>
+          <name>asiatischer Tomatensoße und Sojawürfeln (Sojaprotein) (2,So,Se,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Rindfleischstreifen und Pilzen in Sahnesoße (3,Mi,Sl,GlW,GlG)</name>
           <note>Rind</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>rote Beete Gnocchi</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -85,7 +101,7 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Ratatouille , Kürbisgemüse, Prinzessbohnen, rote Beete Gnocchi</name>
+          <name>Ratatouille , Kürbisgemüse, Prinzessbohnen, Zartweizen mit Maronen und Kürbis (GlW)</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -152,18 +168,18 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Bunte Fusilli (GlW), Tomatensoße mit Paprika, getrocknete Tomaten und geröstete Haselnüsse (Sl,NHa)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Bunte Fusilli (GlW), gebratenen Hähnchenstreifen in einer Rahmsoße mit Rucola</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Bunte Fusilli (GlW), gebratenen Hähnchenstreifen in einer Rahmsoße mit Rucola</name>
-          <note>Geflügel</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Bunte Fusilli (GlW), Tomatensoße mit Paprika, getrocknete Tomaten und geröstete Haselnüsse (Sl,NHa)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -226,18 +242,18 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Farfalle (GlW), Austernpilze in Sahnesoße (Mi,Sl,GlW,GlG)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
           <name>Eliche (GlW), Sojahack in einer Paprika Cremesoße (Sojaprotein)</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Farfalle (GlW), Austernpilze in Sahnesoße (Mi,Sl,GlW,GlG)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
