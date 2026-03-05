@@ -4,9 +4,21 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2026-03-05">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Schwedische Köttbullar (Ei,GlW), Rahmsoße , Preiselbeeren, Salzkartoffeln</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Rind</note>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <price role="employee">4.80</price>
+          <price role="other">6.00</price>
+          <price role="student">3.50</price>
+        </meal>
+      </category>
       <category name="CampusWorld">
         <meal>
-          <name>Ägyptische Falafel mit persischem Gewürzreis (Sl,Se,GlW), Pfirsich-Tomaten-Chutney</name>
+          <name>Melanzanne Bällchen mit persischem Gewürzreis (Sl,Se,GlW), Chutney</name>
           <note>Geschwefelt</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -18,15 +30,6 @@
           <price role="student">4.55</price>
         </meal>
         <meal>
-          <name>gebackener Panko - Tofu (2,So,GlW), Sprossengemüse (2,So,Se,GlW), Spicy Pepper Sauce , Basmatireis</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
-          <price role="employee">6.40</price>
-          <price role="other">7.60</price>
-          <price role="student">5.10</price>
-        </meal>
-        <meal>
           <name>Kross gebackenes Panko-Chicken (3,GlW), Sprossengemüse (2,So,Se,GlW), Spicy Pepper Sauce , Basmatireis</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Geflügel</note>
@@ -35,12 +38,19 @@
           <price role="other">9.00</price>
           <price role="student">6.50</price>
         </meal>
+        <meal>
+          <name>Sojastreifen mit Panko (2,So,GlW), Sprossengemüse (2,So,Se,GlW), Spicy Pepper Sauce , Basmatireis</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">6.40</price>
+          <price role="other">7.60</price>
+          <price role="student">5.10</price>
+        </meal>
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta des Tages (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Pasta mit Blattspinat in Gorgonzolarahm (Mi,Sl,GlW,GlG)</name>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -48,75 +58,33 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>gebratene Mungosprossen (2,So,Se,GlW), Bohne:, gebratene Bohnen, Bohnen mit Knoblauch und Ingwer (2,So,Se,Sw,GlW), Erbsen:, Erbsen, Spicy Erbsen , Blumenkohl:, Blumenkohl Tikka Masala , Blumenkohl, gebackener Cajun - Blumenkohl, gebackener</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>mit Konservierungsstoff</note>
+          <name>Kicherserbsen Tomatenragout, orientalischer CousCous (Sl,GlW,NWa)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Tandoori - Blumenkohl , Blumenkohl mit Sesammarinade , Broccoli:, Blumenkohl Limette-Knoblauch , Blumenkohl mit Hollandaise , Sesam Broccoli , Broccoli, Karotte:, orientalische Zuckermöhren, Sesam-Karotten ,</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <name>Kartoffelspalten (GlW), Röstinchen, Kartoffel - Blumenkohlgratin (Mi,GlW,GlG), gebackene Kartoffel mit Koriander - Limettenmarinade</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>Vegetarisch</note>
           <note>mit Antioxidationsmittel</note>
-          <note>mit Farbstoff</note>
-        </meal>
-        <meal>
-          <name>Karotten, Kohl - Gemüse:, Spitzkohl mit Kreuzkümmel, gebratener Wirsingkohl mit Cajun, gebratener Weißkohl mit Cranberrys, Zuccini &amp; Aubergine:, gebratener Wirsingkohl mit Kreuzkümmel, gebratene Cajun Zucchini, gebratene Tandoori - Zucchini</name>
-        </meal>
-        <meal>
-          <name>(Sf,GlW), gebratene Curry - Zucchini, orientalische Aubergine, Sonstige Gemüse:, spicy Edamame , Madras Kürbis, Süßkartoffel:, Süßkartoffel ,,Madras,,, Cajun Süßkartoffel</name>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>mit Farbstoff</note>
-          <note>mit Konservierungsstoff</note>
-        </meal>
-        <meal>
-          <name>Curry und Ragout:, orientalisches Kichererbsen - Tomatenragout , gebratenes Kichererbsencurry , Kicherserbsen Tomatenragout, Kartoffelragout in Dillsahne , weißes Bohnencurry , Dal Tadka - mit roten Linsen und Kokosmilch , Dal</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>mit Konservierungsstoff</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Palak - mit roten Linsen und Spinat , Süßkartoffel-Grünkern-Chilli mit Mais und Kidneybohnen (2,Sl,Sw,GlD), Auberginen Linsen Curry , schwarzes Bohnenragout mit Blattspinat und Kreuzkümmel , Sonstiges:, orientalischer CousCous</name>
+          <name>gebratene Mungosprossen (2,So,Se,GlW), Bohnen mit Knoblauch und Ingwer (2,So,Se,Sw,GlW), Blumenkohl Tikka Masala , Blumenkohl Limette-Knoblauch , Sesam-Karotten , Spitzkohl mit Kreuzkümmel</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>mit Konservierungsstoff</note>
-        </meal>
-        <meal>
-          <name>(Sl,GlW,NWa), Bulgur arabisch (Sl,Sw,GlW,NMa,NWa), Bratreis mit Gemüse (2,3,So,Se,Sw,GlW)</name>
-        </meal>
-        <meal>
-          <name>Gebackenes / Frittiertes:, Kroketten (GlW), Herzoginkartoffeln , Kartoffelspalten (GlW), Steakhouse - Pommes, Röstiecken, Röstinchen, Aufläufe:, Kartoffelgratin , Kartoffel - Gemüsegratin (Mi,GlW,GlG), Kartoffel - Blumenkohlgratin</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
           <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
-          <name>(Mi,GlW,GlG), Gnocchi - Auflauf (Mi,GlW,GlG), Spätzle - Auflauf (Ei,Mi,GlW,GlG), Kartoffeln:, Kräuterkartoffeln mit Zwiebeln, gebackene orientalische Kartoffeln, gebackene Kartoffeln in einer Tahinmarinade , gebackene Cajun-Kartoffeln,</name>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
-        </meal>
-        <meal>
-          <name>Sesamkartoffeln , gebackene Kartoffel mit Koriander - Limettenmarinade</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Antioxidationsmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
         </meal>
       </category>
     </day>
@@ -162,12 +130,14 @@
         </meal>
         <meal>
           <name>Sesamkartoffeln , gebackene Kartoffel mit Koriander - Limettenmarinade</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sesamsamen und Sesamsamenerzeugnisse</note>
           <note>mit Antioxidationsmittel</note>
         </meal>
         <meal>
-          <name>Curry und Ragout:, orientalisches Kichererbsen - Tomatenragout, gebratenes Kichererbsencurry, Kicherserbsen Tomatenragout, Kartoffelragout in Dillsahne , weißes Bohnencurry , Dal Tadka - mit roten Linsen und Kokosmilch , Dal Palak - mit</name>
+          <name>Curry und Ragout:, orientalisches Kichererbsen - Tomatenragout , gebratenes Kichererbsencurry , Kicherserbsen Tomatenragout, Kartoffelragout in Dillsahne , weißes Bohnencurry , Dal Tadka - mit roten Linsen und Kokosmilch , Dal</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Senf und Senferzeugnisse</note>
           <note>Vegetarisch</note>
           <note>mit Konservierungsstoff</note>
@@ -176,17 +146,18 @@
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>roten Linsen und Spinat , Süßkartoffel-Grünkern-Chilli mit Mais und Kidneybohnen (2,Sl,GlD), Auberginen Linsen Curry , schwarzes Bohnenragout mit Blattspinat und Kreuzkümmel , Sonstiges:, orientalischer CousCous (Sl,GlW,NWa), Bulgur</name>
+          <name>Palak - mit roten Linsen und Spinat , Süßkartoffel-Grünkern-Chilli mit Mais und Kidneybohnen (2,Sl,Sw,GlD), Auberginen Linsen Curry , schwarzes Bohnenragout mit Blattspinat und Kreuzkümmel , Sonstiges:, orientalischer CousCous</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Senf und Senferzeugnisse</note>
           <note>mit Konservierungsstoff</note>
         </meal>
         <meal>
-          <name>arabisch (Sl,GlW,NMa,NWa), Bratreis mit Gemüse (2,3,So,Se,GlW)</name>
+          <name>(Sl,GlW,NWa), Bulgur arabisch (Sl,Sw,GlW,NMa,NWa), Bratreis mit Gemüse (2,3,So,Se,Sw,GlW)</name>
         </meal>
         <meal>
-          <name>gebratene Mungosprossen (2,So,Se,GlW), Bohne:, gebratene Bohnen, Bohnen mit Knoblauch und Ingwer (2,So,Se,GlW), Erbsen:, Erbsen, Spicy Erbsen , Blumenkohl:, Blumenkohl Tikka Masala , Blumenkohl, gebackener Cajun - Blumenkohl, gebackener</name>
+          <name>gebratene Mungosprossen (2,So,Se,GlW), Bohne:, gebratene Bohnen, Bohnen mit Knoblauch und Ingwer (2,So,Se,Sw,GlW), Erbsen:, Erbsen, Spicy Erbsen , Blumenkohl:, Blumenkohl Tikka Masala , Blumenkohl, gebackener Cajun - Blumenkohl, gebackener</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegetarisch</note>
           <note>mit Konservierungsstoff</note>
@@ -195,9 +166,10 @@
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Tandoori - Blumenkohl , Blumenkohl mit Sesammarinade , Broccoli:, Blumenkohl Limette-Knoblauch , Blumenkohl mit Hollandaise , Sesam Broccoli , Broccoli, Karotte:, orientalische Zuckermöhren, Sesam-Karotten , Karotten,</name>
+          <name>Tandoori - Blumenkohl , Blumenkohl mit Sesammarinade , Broccoli:, Blumenkohl Limette-Knoblauch , Blumenkohl mit Hollandaise , Sesam Broccoli , Broccoli, Karotte:, orientalische Zuckermöhren, Sesam-Karotten ,</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Senf und Senferzeugnisse</note>
           <note>Sesamsamen und Sesamsamenerzeugnisse</note>
@@ -205,10 +177,10 @@
           <note>mit Farbstoff</note>
         </meal>
         <meal>
-          <name>Kohl - Gemüse:, Spitzkohl mit Kreuzkümmel, gebratener Wirsingkohl mit Cajun, gebratener Weißkohl mit Cranberrys, Zuccini &amp; Aubergine:, gebratener Wirsingkohl mit Kreuzkümmel, gebratene Cajun Zucchini, gebratene Tandoori - Zucchini (Sf,GlW),</name>
+          <name>Karotten, Kohl - Gemüse:, Spitzkohl mit Kreuzkümmel, gebratener Wirsingkohl mit Cajun, gebratener Weißkohl mit Cranberrys, Zuccini &amp; Aubergine:, gebratener Wirsingkohl mit Kreuzkümmel, gebratene Cajun Zucchini, gebratene Tandoori - Zucchini</name>
         </meal>
         <meal>
-          <name>gebratene Curry - Zucchini, orientalische Aubergine, Sonstige Gemüse:, spicy Edamame , Madras Kürbis, Süßkartoffel:, Süßkartoffel ,,Madras,,, Cajun Süßkartoffel</name>
+          <name>(Sf,GlW), gebratene Curry - Zucchini, orientalische Aubergine, Sonstige Gemüse:, spicy Edamame , Madras Kürbis, Süßkartoffel:, Süßkartoffel ,,Madras,,, Cajun Süßkartoffel</name>
           <note>Soja und Sojaerzeugnisse</note>
           <note>mit Farbstoff</note>
           <note>mit Konservierungsstoff</note>
