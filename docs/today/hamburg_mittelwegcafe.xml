@@ -3,13 +3,37 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2026-03-20">
+    <day date="2026-03-23">
+      <category name="CampusSpezial">
+        <meal>
+          <name>Rindergeschnetzeltes mit Pilzen in Rahm , Kartoffelklöße, Butterbrösel (Mi,GlW)</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Neu</note>
+          <note>Rind</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">7.25</price>
+          <price role="other">8.45</price>
+          <price role="student">5.95</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Gebratene Pierogi mit Kartoffel-Quarkfüllung (1,Ei,Mi,Sl,GlW), Dill-Quark , Rote Beete Salat</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">5.45</price>
+          <price role="other">6.65</price>
+          <price role="student">4.15</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2026-03-24">
       <category name="Pottkieker">
         <meal>
-          <name>Grünes Curry mit Kichererbsen, Fenchel und Paprika , Kurkumareis</name>
+          <name>Zartweizen-Tomatentopf mit Pilzen (Sl,Sw,GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
           <price role="employee">3.50</price>
           <price role="other">4.70</price>
           <price role="student">2.20</price>
@@ -17,12 +41,93 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Gemüse Vollkornbratling (Ei,Sl,GlW), Rahmwirsing (Mi,Sl,GlW), Hausgemachtes Kartoffel-Butterstampf</name>
+          <name>Hähnchenfilets in Soja Pflaumen Soße , Reis</name>
+          <note>Geflügel</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.85</price>
+          <price role="other">8.05</price>
+          <price role="student">5.55</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2026-03-25">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Dattel-Curry Falafel (GlW), orientalischer Bulgursalat mit Datteln und Cranberries (Sl,GlW), Kräuter Dip (3,GlH,NMa), Frühlingslauch</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.35</price>
+          <price role="other">7.55</price>
+          <price role="student">5.05</price>
+        </meal>
+      </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Rindfleischfrikadelle (Ei,GlW), Rahmsoße , Erbsen- Karotten Gemüse , hausgemachtes Kartoffelpüree</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Neu</note>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <price role="employee">6.85</price>
+          <price role="other">8.05</price>
+          <price role="student">5.55</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2026-03-26">
+      <category name="Pottkieker">
+        <meal>
+          <name>Türkische Linsen-Bulgur-Suppe (Sl,GlW), Wrap (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.50</price>
+          <price role="other">4.70</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Schweinenacken- Braten mit Senf-Oregano-Kruste , Bratensoße , Gartenbohnen mit Pfifferlingen, Kroketten (GlW)</name>
+          <note>Neu</note>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.90</price>
+          <price role="other">8.10</price>
+          <price role="student">5.60</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2026-03-27">
+      <category name="Pottkieker">
+        <meal>
+          <name>Blumenkohl Korma, Reis</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.50</price>
+          <price role="other">4.70</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Rote Beete Stäbchen (Mi,GlW), Remoulade , Gewürzgurke , Bratkartoffeln</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Senf und Senferzeugnisse</note>
           <note>Vegetarisch</note>
-          <price role="employee">6.45</price>
-          <price role="other">7.65</price>
-          <price role="student">5.15</price>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Farbstoff</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">6.25</price>
+          <price role="other">7.45</price>
+          <price role="student">4.95</price>
         </meal>
       </category>
     </day>
