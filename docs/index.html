@@ -37,7 +37,36 @@
   <body>
     <main>
       <article>Parser for <a target="_blank" href="https://openmensa.org">openmensa.org</a>. The parser runs in a <a target="_blank" title="What's a Github action?" href="https://docs.github.com/en/actions">Github action<sup>❓</sup></a> and pushes the XML feeds to this page</article>
-      <article><h3><a href="https://github.com/cvzi/mensahd/actions/">🗿 Parser status</a></h3></article>
+      <article><h3><a href="https://github.com/cvzi/mensahd/actions/">🗿 Parser status</a></h3>
+<pre>heidelberg:
+Traceback (most recent call last):
+  File "/home/runner/work/mensahd/mensahd/updateFeeds.py", line 109, in updateFeeds
+    content = parser.json()
+  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 281, in json
+    stream, _ = _getMetaURL_cached()
+                ~~~~~~~~~~~~~~~~~~^^
+  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 165, in _getMetaURL_cached
+    cache_metaURL_data = _getMetaURL()[0].read()
+                         ~~~~~~~~~~~^^
+  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 153, in _getMetaURL
+    result = urllib.request.urlopen(request, timeout=__timeoutSeconds)  # nosec
+  File "/opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/urllib/request.py", line 493, in open
+    response = meth(req, response)
+  File "/opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/urllib/request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "/opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/urllib/request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/urllib/request.py", line 464, in _call_chain
+    result = func(*args)
+  File "/opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/urllib/request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+</pre></article>
       <article>
 <ol style="list-style-type:none">
 <li><h3 id="eppelheim"><a href="https://cvzi.github.io/mensahd/eppelheim.json">🐏 eppelheim.json</a></h3>
