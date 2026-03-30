@@ -34,6 +34,13 @@
       </category>
       <category name="CampusWorld">
         <meal>
+          <name>italienischer Nudelsalat (3,5,Mi,Sw,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">5.95</price>
+          <price role="other">7.15</price>
+          <price role="student">4.65</price>
+        </meal>
+        <meal>
           <name>All in one Pot: Bulgur, Soja, Weißkohl, Cranberries, Ananas, Asia-Majo, Cashew (Sojaprotein) (2,So,Sl,Sf,Sw,GlW,NCa)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -44,15 +51,19 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Strozzapreti (GlW), Carbonara vegetariana (Mi,GlW,GlG)</name>
+          <name>Pasta (GlW), Carbonara vegetariana (Mi,GlW,GlG)</name>
           <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
         </meal>
         <meal>
-          <name>Strozzapreti (GlW), Tomatensoße aus getrockneten Tomaten mit Basilikum (2,5,Mi,Sw,GlW,GlG)</name>
-          <note>Vegetarisch</note>
+          <name>Pasta (GlW), Tomatensoße aus getrockneten Tomaten mit Basilikum</name>
+          <note>Geschwefelt</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Konservierungsstoff</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -60,15 +71,17 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Spitzkohl in Creme , Auberginen-Zucchini Gemüse mit Balsamiko und Knoblauch , gerösteter Blumenkohl , Süßkartoffel Gnocchi, Karotten mit Ingwerund Kukurma</name>
+          <name>Spitzkohl in Creme , Auberginen-Zucchini Gemüse mit Balsamiko und Knoblauch , gerösteter Blumenkohl , Süßkartoffel Gnocchi, Karotten mit Ingwerund Kukurma , Karottenrösti (Ei,Mi,GlW,GlR,GlH,GlD), Vegetarisch gefüllte Paprikaschote</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>Vegetarisch</note>
           <note>mit Farbstoff</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>(Ei,So,Sl,Sf,GlW)</name>
         </meal>
       </category>
     </day>
@@ -105,18 +118,18 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Nudelauflauf mit Auberginen in Tomaten- Kräutersoße (1,Mi,Sw,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
           <name>Bunte Fusilli (GlW), Linsen in pikanter Tomatensoße</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Nudelauflauf mit Auberginen in Tomaten- Kräutersoße (1,Mi,Sw,GlW)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -181,19 +194,19 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Farfalle (GlW), Waldpilzen in Sahnesoße mit Basilikum (Mi,Sw,GlW,GlG)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">1.10</price>
-          <price role="other">1.30</price>
-          <price role="student">0.85</price>
-        </meal>
-        <meal>
           <name>Farfalle (GlW), Sojastreifen in scharfer Tomatensoße (Sojaprotein)</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.10</price>
+          <price role="other">1.30</price>
+          <price role="student">0.85</price>
+        </meal>
+        <meal>
+          <name>Farfalle (GlW), Waldpilzen in Sahnesoße mit Basilikum (Mi,Sw,GlW,GlG)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
@@ -272,6 +285,72 @@
           <price role="employee">1.10</price>
           <price role="other">1.30</price>
           <price role="student">0.85</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2026-04-07">
+      <category name="CampusVital">
+        <meal>
+          <name>vegane Tom Kha Suppe mit Tofu und Basmatireis (2,3,So,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.90</price>
+          <price role="other">4.60</price>
+          <price role="student">4.60</price>
+        </meal>
+      </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Quinoa-Erbsen-Bratling, Wirsing in Creme (So,Sl,GlW), Salzkartoffeln</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.95</price>
+          <price role="other">5.65</price>
+          <price role="student">5.65</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Hausgemachte Pasta (GlW), mit Blattspinat, Ricotta, Zucchini Topping und Hartkäse</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">5.20</price>
+          <price role="other">3.90</price>
+          <price role="student">3.90</price>
+        </meal>
+      </category>
+      <category name="Pastabar">
+        <meal>
+          <name>Farfalle (GlW), Blumenkohl in einer Sahnesoße mit grünem Pfeffer</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.58</price>
+          <price role="student">0.90</price>
+        </meal>
+        <meal>
+          <name>Farfalle (GlW), pikante Tomaten- Pilz- Gemüse- Soße</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.58</price>
+          <price role="student">0.90</price>
+        </meal>
+      </category>
+      <category name="Gemüsebar">
+        <meal>
+          <name>Gelbe und Grüne Zucchini mit Cherrytomaten und Oliven , Fenchelgemüse, gerösteter Broccoli, Reis, dicke Bohnen, gebratene Paprika , Kohlrabigemüse</name>
+          <note>Geschwärzt</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.58</price>
+          <price role="student">0.90</price>
         </meal>
       </category>
     </day>
