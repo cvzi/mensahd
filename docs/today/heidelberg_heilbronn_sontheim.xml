@@ -4,8 +4,39 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Sontheim</name>
-    <day date="2026-04-19">
-      <closed/>
+    <day date="2026-04-20">
+      <category name="Buffet">
+        <meal>
+          <name>Tagessuppe</name>
+          <note>Soup of the day</note>
+          <price role="student">0.90</price>
+          <price role="employee">1.40</price>
+          <price role="other">2.00</price>
+        </meal>
+        <meal>
+          <name>Dessert des Tages</name>
+          <note>Dessert of the day</note>
+          <price role="student">0.90</price>
+          <price role="employee">1.40</price>
+          <price role="other">2.00</price>
+        </meal>
+        <meal>
+          <name>Der Klassiker Mac and Cheese
+</name>
+          <note>Classic Mac and chesse</note>
+          <price role="student">2.90</price>
+          <price role="employee">4.50</price>
+          <price role="other">7.50</price>
+        </meal>
+        <meal>
+          <name>Griechische Rinder Hackrolle mit Nüdelchen und Bohnengemüse
+</name>
+          <note>Greek beef mince roll with noodles and green beans</note>
+          <price role="student">0.99</price>
+          <price role="employee">1.35</price>
+          <price role="other">2.00</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
