@@ -379,7 +379,7 @@
     <day date="2026-04-22">
       <category name="Menü 1">
         <meal>
-          <name>Cordon bleu vom Schwein, Bratensoße, Erbsengemüse , Kroketten </name>
+          <name>Cordon bleu vom Schwein, Bratensoße, Erbsen-Karottengemüse , gebackene Kartoffeln </name>
           <note>Antioxidationsmittel</note>
           <note>Ei</note>
           <note>Farbstoff</note>
@@ -393,7 +393,6 @@
           <note>Säuerungsmittel</note>
           <note>Weizen</note>
           <note> = Vegan</note>
-          <note> = Vegetarisch</note>
           <price role="employee">5.00</price>
           <price role="other">6.40</price>
           <price role="student">4.00</price>
@@ -434,20 +433,6 @@
           <price role="student">3.50</price>
         </meal>
       </category>
-      <category name="Bowl">
-        <meal>
-          <name>Buchweizen-Quinoasalat, Tempeh fritiert&amp;mariniert, Brokkoli, Paprikawürfel , Granatapfel , Frankfurter Kräuter</name>
-          <note>Farbstoff</note>
-          <note>Portion Preis</note>
-          <note>Schwefeldioxid Sulfit</note>
-          <note>Senf</note>
-          <note>Soja</note>
-          <note> = Vegan</note>
-          <price role="employee">5.25</price>
-          <price role="other">6.72</price>
-          <price role="student">4.20</price>
-        </meal>
-      </category>
       <category name="Dessert">
         <meal>
           <name>ChoViva Franzbrötchen</name>
@@ -472,6 +457,16 @@
           <price role="employee">3.75</price>
           <price role="other">4.80</price>
           <price role="student">3.00</price>
+        </meal>
+      </category>
+      <category name="Smoothie">
+        <meal>
+          <name>Kiwi , Ingwer , Kurkuma , Apfelsaft </name>
+          <note>Glas Preis</note>
+          <note> = Vegan</note>
+          <price role="employee">3.50</price>
+          <price role="other">4.48</price>
+          <price role="student">2.80</price>
         </meal>
       </category>
       <category name="Focaccia Italia">
@@ -525,9 +520,21 @@
           <price role="student">2.00</price>
         </meal>
       </category>
-      <category name="Salat Bowl">
+      <category name="Lassi">
         <meal>
-          <name>Perl Couscoussalat, Schlesische Gurken, Mojo Verde, Kräuterfalafel , Edammebohnen, Spinat </name>
+          <name>Erdbeeren , Milch , Sahne-Joghurt nach griechischer Art , Vanillezucker </name>
+          <note>Glas Preis</note>
+          <note>Milch/Laktose</note>
+          <note> = Vegan</note>
+          <note> = Vegetarisch</note>
+          <price role="employee">3.75</price>
+          <price role="other">4.80</price>
+          <price role="student">3.00</price>
+        </meal>
+      </category>
+      <category name="Prado Verde Bowl">
+        <meal>
+          <name>Perl Couscoussalat , Schlesische Gurken , Mojo Verde , Kräuterfalafel , Edammebohnen , Spinat </name>
           <note>Antioxidationsmittel</note>
           <note>Glutenhaltiges Getreide</note>
           <note>Portion Preis</note>
@@ -538,6 +545,20 @@
           <price role="employee">5.00</price>
           <price role="other">6.40</price>
           <price role="student">4.00</price>
+        </meal>
+      </category>
+      <category name="Sarrasin Bowl">
+        <meal>
+          <name>Buchweizen-Quinoasalat , Tempeh fritiert &amp; mariniert , Brokkoli , Paprikawürfel , Granatapfel , Frankfurter Kräuter </name>
+          <note>Farbstoff</note>
+          <note>Portion Preis</note>
+          <note>Schwefeldioxid Sulfit</note>
+          <note>Senf</note>
+          <note>Soja</note>
+          <note> = Vegan</note>
+          <price role="employee">5.25</price>
+          <price role="other">6.72</price>
+          <price role="student">4.20</price>
         </meal>
       </category>
       <category name="Wrap">
@@ -617,20 +638,6 @@
           <price role="student">3.50</price>
         </meal>
       </category>
-      <category name="Bowl">
-        <meal>
-          <name>Buchweizen-Quinoasalat, Tempeh fritiert&amp;mariniert, Brokkoli, Paprikawürfel , Granatapfel , Frankfurter Kräuter</name>
-          <note>Farbstoff</note>
-          <note>Portion Preis</note>
-          <note>Schwefeldioxid Sulfit</note>
-          <note>Senf</note>
-          <note>Soja</note>
-          <note> = Vegan</note>
-          <price role="employee">5.25</price>
-          <price role="other">6.72</price>
-          <price role="student">4.20</price>
-        </meal>
-      </category>
       <category name="Dessert">
         <meal>
           <name>Franzbrötchen</name>
@@ -655,6 +662,16 @@
           <price role="employee">3.75</price>
           <price role="other">4.80</price>
           <price role="student">3.00</price>
+        </meal>
+      </category>
+      <category name="Smoothie">
+        <meal>
+          <name>Kiwi , Ingwer , Kurkuma , Apfelsaft </name>
+          <note>Glas Preis</note>
+          <note> = Vegan</note>
+          <price role="employee">3.50</price>
+          <price role="other">4.48</price>
+          <price role="student">2.80</price>
         </meal>
       </category>
       <category name="Focaccia Italia">
@@ -708,9 +725,21 @@
           <price role="student">2.00</price>
         </meal>
       </category>
-      <category name="Salat Bowl">
+      <category name="Lassi">
         <meal>
-          <name>Perl Couscoussalat, Schlesische Gurken, Mojo Verde, Kräuterfalafel , Edammebohnen, Spinat </name>
+          <name>Erdbeeren , Milch , Sahne-Joghurt nach griechischer Art , Vanillezucker </name>
+          <note>Glas Preis</note>
+          <note>Milch/Laktose</note>
+          <note> = Vegan</note>
+          <note> = Vegetarisch</note>
+          <price role="employee">3.75</price>
+          <price role="other">4.80</price>
+          <price role="student">3.00</price>
+        </meal>
+      </category>
+      <category name="Prado Verde Bowl">
+        <meal>
+          <name>Perl Couscoussalat , Schlesische Gurken , Mojo Verde , Kräuterfalafel , Edammebohnen , Spinat </name>
           <note>Antioxidationsmittel</note>
           <note>Glutenhaltiges Getreide</note>
           <note>Portion Preis</note>
@@ -721,6 +750,20 @@
           <price role="employee">5.00</price>
           <price role="other">6.40</price>
           <price role="student">4.00</price>
+        </meal>
+      </category>
+      <category name="Sarrasin Bowl">
+        <meal>
+          <name>Buchweizen-Quinoasalat , Tempeh fritiert &amp; mariniert , Brokkoli , Paprikawürfel , Granatapfel , Frankfurter Kräuter </name>
+          <note>Farbstoff</note>
+          <note>Portion Preis</note>
+          <note>Schwefeldioxid Sulfit</note>
+          <note>Senf</note>
+          <note>Soja</note>
+          <note> = Vegan</note>
+          <price role="employee">5.25</price>
+          <price role="other">6.72</price>
+          <price role="student">4.20</price>
         </meal>
       </category>
       <category name="Wrap">
@@ -804,20 +847,6 @@
           <price role="student">3.50</price>
         </meal>
       </category>
-      <category name="Bowl">
-        <meal>
-          <name>Buchweizen-Quinoasalat, Tempeh fritiert&amp;mariniert, Brokkoli, Paprikawürfel , Granatapfel , Frankfurter Kräuter</name>
-          <note>Farbstoff</note>
-          <note>Portion Preis</note>
-          <note>Schwefeldioxid Sulfit</note>
-          <note>Senf</note>
-          <note>Soja</note>
-          <note> = Vegan</note>
-          <price role="employee">5.25</price>
-          <price role="other">6.72</price>
-          <price role="student">4.20</price>
-        </meal>
-      </category>
       <category name="Dessert">
         <meal>
           <name>Franzbrötchen</name>
@@ -842,6 +871,16 @@
           <price role="employee">3.75</price>
           <price role="other">4.80</price>
           <price role="student">3.00</price>
+        </meal>
+      </category>
+      <category name="Smoothie">
+        <meal>
+          <name>Kiwi , Ingwer , Kurkuma , Apfelsaft </name>
+          <note>Glas Preis</note>
+          <note> = Vegan</note>
+          <price role="employee">3.50</price>
+          <price role="other">4.48</price>
+          <price role="student">2.80</price>
         </meal>
       </category>
       <category name="Focaccia Italia">
@@ -895,9 +934,21 @@
           <price role="student">2.00</price>
         </meal>
       </category>
-      <category name="Salat Bowl">
+      <category name="Lassi">
         <meal>
-          <name>Perl Couscoussalat, Schlesische Gurken, Mojo Verde, Kräuterfalafel , Edammebohnen, Spinat </name>
+          <name>Erdbeeren , Milch , Sahne-Joghurt nach griechischer Art , Vanillezucker </name>
+          <note>Glas Preis</note>
+          <note>Milch/Laktose</note>
+          <note> = Vegan</note>
+          <note> = Vegetarisch</note>
+          <price role="employee">3.75</price>
+          <price role="other">4.80</price>
+          <price role="student">3.00</price>
+        </meal>
+      </category>
+      <category name="Prado Verde Bowl">
+        <meal>
+          <name>Perl Couscoussalat , Schlesische Gurken , Mojo Verde , Kräuterfalafel , Edammebohnen , Spinat </name>
           <note>Antioxidationsmittel</note>
           <note>Glutenhaltiges Getreide</note>
           <note>Portion Preis</note>
@@ -908,6 +959,20 @@
           <price role="employee">5.00</price>
           <price role="other">6.40</price>
           <price role="student">4.00</price>
+        </meal>
+      </category>
+      <category name="Sarrasin Bowl">
+        <meal>
+          <name>Buchweizen-Quinoasalat , Tempeh fritiert &amp; mariniert , Brokkoli , Paprikawürfel , Granatapfel , Frankfurter Kräuter </name>
+          <note>Farbstoff</note>
+          <note>Portion Preis</note>
+          <note>Schwefeldioxid Sulfit</note>
+          <note>Senf</note>
+          <note>Soja</note>
+          <note> = Vegan</note>
+          <price role="employee">5.25</price>
+          <price role="other">6.72</price>
+          <price role="student">4.20</price>
         </meal>
       </category>
       <category name="Wrap">
