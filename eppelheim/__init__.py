@@ -103,17 +103,18 @@ def parse_url(url, today=False):
                 week = int(match.group(1))
                 fromdate = datetime.datetime.fromisocalendar(now_local().year, week, 1)
 
+
     if datematch:
         p = datematch.groupdict()
         if len(p["from"].split(".")[2]) == 0:
             p["from"] += p["to"].split(".")[2]
         fromdate = datetime.datetime.strptime(p["from"], "%d.%m.%Y")
 
-    divs = document.find_all("div", {"class": "speiseplan-manuell"})
+    divs = document.find_all("div", {"class": "et_pb_toggle_item"})
 
     date = None
     for div in divs:
-        h3 = div.find("h3")
+        h3 = div.find("h2")
         day = h3.text.strip()
         date = fromdate + datetime.timedelta(days=daysGerman.index(day))
         date = date.strftime("%d.%m.%Y")
@@ -123,37 +124,34 @@ def parse_url(url, today=False):
             continue
 
         for p in div.find_all("p"):
-            notes = []
-            strongs = p.find_all("strong")
-            if not strongs:
-                canteen.setDayClosed(date)
-                continue
-            categoryName = strongs[0].text.strip().strip(":").strip()
-            priceText = strongs[-1].text.strip()
-            for strong in strongs:
-                strong.clear()
+            categories = {}
+            k = None
+            for e in p.contents:
+                if getattr(e, 'name', None) == 'strong':
+                    k = "".join(e.stripped_strings)
+                    categories[k] = []
+                elif k is not None:
+                    categories[k].append((" ".join(e.stripped_strings)).strip().strip(":").strip())
 
-            mealName = p.text.strip()
 
-            if not mealName:
-                continue
+            for category in categories:
+                categoryName = category.strip().strip(":").strip()
+                if "Preise" in categoryName:
+                    continue
 
-            prices = []
-            try:
-                price = float(euro_regex.search(priceText).group(1).replace(",", "."))
-                prices.append(price)
-            except (AttributeError, TypeError, KeyError, ValueError):
-                notes.append(priceText)
+                mealName = (" ".join(categories[category])).strip().strip(":").strip()
 
-            notes = [x for x in notes if x]
-            canteen.addMeal(
-                date,
-                categoryName,
-                mealName,
-                notes if notes else None,
-                prices if prices else None,
-                roles if prices else None,
-            )
+                if not mealName:
+                    continue
+
+                canteen.addMeal(
+                    date,
+                    categoryName,
+                    mealName,
+                    None,
+                    None,
+                    None,
+                )
 
     return canteen.toXMLFeed()
 
