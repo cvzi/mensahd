@@ -19,6 +19,16 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
+          <name>Rindfleischfrikadelle (Ei,GlW), Rahmsoße , Erbsen- Karotten Gemüse , hausgemachtes Kartoffelpüree</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Neu</note>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <price role="employee">6.85</price>
+          <price role="other">8.15</price>
+          <price role="student">5.55</price>
+        </meal>
+        <meal>
           <name>Soja-Bolognese mit Gemüse (Sojaprotein) , Spaghetti (GlW)</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -29,31 +39,21 @@
           <price role="other">6.30</price>
           <price role="student">3.70</price>
         </meal>
-        <meal>
-          <name>Rindfleischfrikadelle (Ei,GlW), Rahmsoße , Erbsen- Karotten Gemüse , hausgemachtes Kartoffelpüree</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Neu</note>
-          <note>Rind</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <price role="employee">6.85</price>
-          <price role="other">8.15</price>
-          <price role="student">5.55</price>
-        </meal>
       </category>
       <category name="CampusVital">
-        <meal>
-          <name>All in one pot: Wok-Nudeln, Soja, Karotten, Süßkartoffel und Sesam (Sojaprotein) (2,Ei,So,Mi,Sl,Se,Sw,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">6.30</price>
-          <price role="other">7.60</price>
-          <price role="student">5.00</price>
-        </meal>
         <meal>
           <name>All in one pot: Wok-Nudeln, Putenbrust, Karotten, Süßkartoffel und Sesam (2,Ei,So,Mi,Se,Sw,GlW)</name>
           <note>Geflügel</note>
           <price role="employee">7.50</price>
           <price role="other">8.80</price>
           <price role="student">6.20</price>
+        </meal>
+        <meal>
+          <name>All in one pot: Wok-Nudeln, Soja, Karotten, Süßkartoffel und Sesam (Sojaprotein) (2,Ei,So,Mi,Sl,Se,Sw,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">6.30</price>
+          <price role="other">7.60</price>
+          <price role="student">5.00</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -67,7 +67,8 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Eliche (GlW), Vegane Bärlauchsoße mit Spargel (1,So,Sf,GlW)</name>
+          <name>Pasta (GlW), Tomatensoße mit frischen Spargel</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.15</price>
@@ -75,7 +76,8 @@
           <price role="student">0.90</price>
         </meal>
         <meal>
-          <name>Eliche (GlW), Gorgonzola- Hartkäsesoße, gerösteten Haselnüssen und Basilikum (Mi,Sl,NHa)</name>
+          <name>Pasta (GlW), Bärlauchsoße (Mi,GlW,GlG)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
@@ -83,12 +85,10 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>gerösteter Blumenkohl , frisches Gemüse aus dem Wok , mediterranes Gemüse , Süßkartoffelwürfel gebacken, Basmatireis</name>
-          <note>Geschwärzt</note>
+          <name>Zucchini , buntem Gemüse, Rosenkohlpfanne mit Kartoffeln, Gemüse Bulgur mit Falafel (Sl,GlW)</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Konservierungsstoff</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
@@ -108,6 +108,17 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
+          <name>Unsere vegane "ExtraVurst - CampusStyle" , mit Curry-Spezial-Sauce , oder Curry-Delikant-Sauce, Pommes Frites</name>
+          <note>Geschwefelt</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.50</price>
+          <price role="student">4.90</price>
+        </meal>
+        <meal>
           <name>Unsere "ExtraWurst - CampusStyle" , mit Curry-Spezial-Sauce , oder Curry-Delikant-Sauce, Pommes Frites</name>
           <note>Geschwefelt</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
@@ -116,17 +127,6 @@
           <note>Senf und Senferzeugnisse</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Phosphat</note>
-          <price role="employee">6.20</price>
-          <price role="other">7.50</price>
-          <price role="student">4.90</price>
-        </meal>
-        <meal>
-          <name>Unsere vegane "ExtraVurst - CampusStyle" , mit Curry-Spezial-Sauce , oder Curry-Delikant-Sauce, Pommes Frites</name>
-          <note>Geschwefelt</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">6.20</price>
           <price role="other">7.50</price>
           <price role="student">4.90</price>
@@ -223,19 +223,19 @@
       </category>
       <category name="CampusWorld">
         <meal>
+          <name>Vegan / Vegetarische PIZZA LARGE nach Wahl (versch. Sorten) ab 4,70 / 6,00 / 7,20 (auch TAKE AWAY) (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">6.00</price>
+          <price role="other">7.30</price>
+          <price role="student">4.70</price>
+        </meal>
+        <meal>
           <name>All in one Pot: Bulgur, Soja, Weißkohl, Cranberries, Ananas, Asia-Majo, Cashew (Sojaprotein) (2,So,Sl,Sf,Sw,GlW,NCa)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">6.05</price>
           <price role="other">7.35</price>
           <price role="student">4.75</price>
-        </meal>
-        <meal>
-          <name>Vegan / Vegetarische PIZZA LARGE nach Wahl (versch. Sorten) ab 4,70 / 6,00 / 7,20 (auch TAKE AWAY) (Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">6.00</price>
-          <price role="other">7.30</price>
-          <price role="student">4.70</price>
         </meal>
       </category>
       <category name="Pastabar">
