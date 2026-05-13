@@ -3,17 +3,35 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2026-05-12">
-      <category name="CampusSpezial">
+    <day date="2026-05-13">
+      <category name="CampusKlassiker">
         <meal>
-          <name>Deutscher Spargel, zerlassene Margarine , Salzkartoffeln</name>
+          <name>vegane Currybratwurst (Erbsenprotein) , BBQ Soße , Kartoffelspalten (GlW), verschiedene Currypulver nach Wahl</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Farbstoff</note>
-          <price role="employee">7.25</price>
-          <price role="other">8.55</price>
-          <price role="student">5.95</price>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.50</price>
+          <price role="student">4.90</price>
         </meal>
+        <meal>
+          <name>Unsere "ExtraWurst - CampusStyle" , BBQ Soße , Kartoffelspalten (GlW), verschiedene Currypulver nach Wahl</name>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Phosphat</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.50</price>
+          <price role="student">4.90</price>
+        </meal>
+      </category>
+      <category name="CampusSpezial">
         <meal>
           <name>Deutscher Spargel, Hollandaise , Salzkartoffeln</name>
           <note>Alkohol</note>
@@ -27,81 +45,20 @@
           <price role="other">8.55</price>
           <price role="student">5.95</price>
         </meal>
-      </category>
-      <category name="CampusWorld">
         <meal>
-          <name>Putensteak, Kartoffelspalten (GlW), Maisgemüse , Kräuterbutter</name>
-          <note>Geflügel</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <name>Deutscher Spargel, zerlassene Margarine , Salzkartoffeln</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Farbstoff</note>
-          <price role="employee">7.80</price>
-          <price role="other">9.10</price>
-          <price role="student">6.50</price>
+          <price role="employee">7.25</price>
+          <price role="other">8.55</price>
+          <price role="student">5.95</price>
         </meal>
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta mit Kirschtomaten und Pesto (Sl,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
-      </category>
-      <category name="Gemüsebar">
-        <meal>
-          <name>Philturm –Veggi-SB-Counter, riesige Auswahl an verschiedenen veganen und vegetarischen Spezialitäten</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
-      </category>
-    </day>
-    <day date="2026-05-13">
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Unsere "ExtraWurst - CampusStyle" , mit Curry-Spezial-Sauce , oder Curry-Delikant-Sauce, Pommes Frites</name>
-          <note>Geschwefelt</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Schwein</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Phosphat</note>
-          <price role="employee">6.20</price>
-          <price role="other">7.50</price>
-          <price role="student">4.90</price>
-        </meal>
-        <meal>
-          <name>Unsere vegane "ExtraVurst - CampusStyle" , mit Curry-Spezial-Sauce , oder Curry-Delikant-Sauce, Pommes Frites</name>
-          <note>Geschwefelt</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.20</price>
-          <price role="other">7.50</price>
-          <price role="student">4.90</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Cremige Udonnudeln in einer Kokos - Erdnusssauce mit Gemüse, Koriander und Crunch (2,3,En,So,Sl,Sf,Se,Sw,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">7.20</price>
-          <price role="other">8.50</price>
-          <price role="student">5.90</price>
-        </meal>
-      </category>
-      <category name="Pastabar">
-        <meal>
-          <name>Pasta des Tages (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Pasta mit Mais in Sahnesauce,Röstzwiebeln (Mi,Sl,GlW,GlG)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
@@ -197,13 +154,6 @@
     <day date="2026-05-19">
       <category name="CampusWorld">
         <meal>
-          <name>Vegetarischer Döner - Burger mit Gurken,Tomaten und Krautsalat, würzigem Dill-Dip und Röstzwiebeln (3,Mi,Sw,GlW), Pommes Frites</name>
-          <note>Vegetarisch</note>
-          <price role="employee">6.80</price>
-          <price role="other">8.10</price>
-          <price role="student">5.50</price>
-        </meal>
-        <meal>
           <name>Dönerfleisch - Burger mit Gurken,Tomaten und Krautsalat, würzigem Dill-Dip und Röstzwiebeln (3,4,Mi,Sf,Sw,GlW), Pommes Frites</name>
           <note>Geflügel</note>
           <price role="employee">7.30</price>
@@ -220,6 +170,13 @@
           <price role="employee">6.00</price>
           <price role="other">7.30</price>
           <price role="student">4.70</price>
+        </meal>
+        <meal>
+          <name>Vegetarischer Döner - Burger mit Gurken,Tomaten und Krautsalat, würzigem Dill-Dip und Röstzwiebeln (3,Mi,Sw,GlW), Pommes Frites</name>
+          <note>Vegetarisch</note>
+          <price role="employee">6.80</price>
+          <price role="other">8.10</price>
+          <price role="student">5.50</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -275,6 +232,56 @@
           <price role="employee">7.20</price>
           <price role="other">8.50</price>
           <price role="student">5.90</price>
+        </meal>
+      </category>
+      <category name="Pastabar">
+        <meal>
+          <name>Pasta des Tages (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+      </category>
+      <category name="Gemüsebar">
+        <meal>
+          <name>Philturm –Veggi-SB-Counter, riesige Auswahl an verschiedenen veganen und vegetarischen Spezialitäten</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2026-05-21">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Dattel-Curry Falafel (GlW), orientalischer Bulgursalat mit Datteln und Cranberries (Sl,GlW), Kräuter Dip (3,GlH,NMa), Frühlingslauch</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.35</price>
+          <price role="other">7.65</price>
+          <price role="student">5.05</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Gebackenes Panko - Chicken (3,GlW), Lo mein - würzige Sesamnudeln mit Edamame und Paprika (2,So,Sl,Se,Sw,GlW)</name>
+          <note>Geflügel</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">7.80</price>
+          <price role="other">9.10</price>
+          <price role="student">6.50</price>
+        </meal>
+        <meal>
+          <name>Gegrillter Ingwer-Tofu (2,So,Se,Sw,GlW), Lo mein - würzige Sesamnudeln mit Edamame und Paprika (2,So,Sl,Se,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.40</price>
+          <price role="other">7.70</price>
+          <price role="student">5.10</price>
         </meal>
       </category>
       <category name="Pastabar">
