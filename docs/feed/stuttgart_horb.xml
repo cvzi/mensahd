@@ -3,102 +3,6 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2026-05-18">
-      <category name="Veganer renner">
-        <meal>
-          <name>Spinatnudeln</name>
-          <note>Hafer</note>
-          <note>Nährwerte pro 100 g 
-Brennwert: 577.0 kj / 138.0 kcal 
-Fett: 4.4 g 
- - davon ges. FS: 0.4 g 
-Kohlenhydrate: 21.4 g 
- - davon Zucker: 1.4 g 
-Eiweiß: 4.2 g 
-Salz: 1.1 g</note>
-          <note>Sellerie</note>
-          <note>Weizen</note>
-          <note>vegan</note>
-          <price role="employee">5.99</price>
-          <price role="other">6.49</price>
-          <price role="student">2.99</price>
-        </meal>
-      </category>
-      <category name="Hauptgericht">
-        <meal>
-          <name>Penne Bolognese überbacken</name>
-          <note>Milch und Laktose</note>
-          <note>Nährwerte pro 100 g 
-Brennwert: 879.1 kj / 210.0 kcal 
-Fett: 10.2 g 
- - davon ges. FS: 4.7 g 
-Kohlenhydrate: 18.4 g 
- - davon Zucker: 3.4 g 
-Eiweiß: 10.3 g 
-Salz: 2.2 g</note>
-          <note>Rind</note>
-          <note>Sellerie</note>
-          <note>Weizen</note>
-          <price role="employee">8.10</price>
-          <price role="other">8.60</price>
-          <price role="student">5.10</price>
-        </meal>
-        <meal>
-          <name>Hähnchenbrustfilet und Spätzle mit Rahmsauce</name>
-          <note>Dinkel</note>
-          <note>Ei</note>
-          <note>Milch und Laktose</note>
-          <note>Nährwerte pro 100 g 
-Brennwert: 453.3 kj / 108.0 kcal 
-Fett: 3.2 g 
- - davon ges. FS: 1.3 g 
-Kohlenhydrate: 10.9 g 
- - davon Zucker: 0.4 g 
-Eiweiß: 8.8 g 
-Salz: 1.1 g</note>
-          <note>Weizen</note>
-          <price role="employee">8.20</price>
-          <price role="other">8.70</price>
-          <price role="student">5.20</price>
-        </meal>
-      </category>
-      <category name="Beilage">
-        <meal>
-          <name>Beilagensalat</name>
-          <note>Nährwerte pro 100 g 
-Brennwert: 43.8 kj / 10.0 kcal 
-Fett: 0.1 g 
- - davon ges. FS: 0.0 g 
-Kohlenhydrate: 1.6 g 
- - davon Zucker: 1.5 g 
-Eiweiß: 0.6 g 
-Salz: 0.0 g</note>
-          <note>vegan</note>
-          <price role="employee">1.39</price>
-          <price role="other">1.79</price>
-          <price role="student">0.99</price>
-        </meal>
-      </category>
-      <category name="Dessert">
-        <meal>
-          <name>Heidelbeerjoghurt</name>
-          <note>Milch und Laktose</note>
-          <note>Nährwerte pro 100 g 
-Brennwert: 394.0 kj / 94.0 kcal 
-Fett: 3.0 g 
- - davon ges. FS: 1.9 g 
-Kohlenhydrate: 12.3 g 
- - davon Zucker: 11.6 g 
-Eiweiß: 3.7 g 
-Salz: 0.1 g</note>
-          <note>mit Farbstoffen</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.49</price>
-          <price role="other">1.89</price>
-          <price role="student">1.09</price>
-        </meal>
-      </category>
-    </day>
     <day date="2026-05-19">
       <category name="Veganer renner">
         <meal>
@@ -180,6 +84,14 @@ Salz: 0.4 g</note>
         </meal>
         <meal>
           <name>Beilagensalat</name>
+          <note>Nährwerte pro 100 g 
+Brennwert: 43.8 kj / 10.0 kcal 
+Fett: 0.1 g 
+ - davon ges. FS: 0.0 g 
+Kohlenhydrate: 1.6 g 
+ - davon Zucker: 1.5 g 
+Eiweiß: 0.6 g 
+Salz: 0.0 g</note>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="other">1.79</price>
@@ -395,18 +307,20 @@ Salz: 2.4 g</note>
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Sahnepudding Latte Macchiato</name>
-          <note>Milch und Laktose</note>
-          <price role="employee">1.69</price>
-          <price role="other">2.09</price>
-          <price role="student">1.29</price>
-        </meal>
-        <meal>
           <name>Beilagensalat</name>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="other">1.79</price>
           <price role="student">0.99</price>
+        </meal>
+      </category>
+      <category name="Dessert">
+        <meal>
+          <name>Sahnepudding Latte Macchiato</name>
+          <note>Milch und Laktose</note>
+          <price role="employee">1.69</price>
+          <price role="other">2.09</price>
+          <price role="student">1.29</price>
         </meal>
       </category>
     </day>
