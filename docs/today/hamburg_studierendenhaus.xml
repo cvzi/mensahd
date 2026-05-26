@@ -63,23 +63,15 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Schupfnudeln (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
-        <meal>
-          <name>Sonnenblumenhack-Lauchcreme (Sonnenblumenprotein) (1,So,Sl,Sf,Sw,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
-        <meal>
           <name>Vollkorn Fussili (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+        <meal>
+          <name>Schupfnudeln (GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.15</price>
@@ -90,6 +82,14 @@
           <name>Hähnchen, Fenchel und Kardamom in Tomatensoße</name>
           <note>Geflügel</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+        <meal>
+          <name>Sonnenblumenhack-Lauchcreme (Sonnenblumenprotein) (1,So,Sl,Sf,Sw,GlW)</name>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
@@ -129,22 +129,6 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Deutscher Spargel, zerlassene Butter , Salzkartoffeln</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
-          <price role="employee">7.25</price>
-          <price role="other">8.55</price>
-          <price role="student">5.95</price>
-        </meal>
-        <meal>
-          <name>Deutscher Spargel, Vegane Hollandaise, Salzkartoffeln</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">7.25</price>
-          <price role="other">8.55</price>
-          <price role="student">5.95</price>
-        </meal>
-        <meal>
           <name>Spaghetti in Basilikum Knoblauchsoße mit Melanzane Bällchen (1,3,5,Mi,Sw,GlW)</name>
           <note>Vegetarisch</note>
           <note>mensaVital</note>
@@ -161,6 +145,22 @@
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegetarisch</note>
           <note>mit Konservierungsstoff</note>
+          <price role="employee">7.25</price>
+          <price role="other">8.55</price>
+          <price role="student">5.95</price>
+        </meal>
+        <meal>
+          <name>Deutscher Spargel, Vegane Hollandaise, Salzkartoffeln</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">7.25</price>
+          <price role="other">8.55</price>
+          <price role="student">5.95</price>
+        </meal>
+        <meal>
+          <name>Deutscher Spargel, zerlassene Butter , Salzkartoffeln</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
           <price role="employee">7.25</price>
           <price role="other">8.55</price>
           <price role="student">5.95</price>
@@ -247,7 +247,7 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Putengulasch (Mi,Sl,GlW), Salzkartoffeln</name>
+          <name>Putengulasch (Mi,Sl,GlW)</name>
           <note>Geflügel</note>
           <price role="employee">1.30</price>
           <price role="other">2.60</price>
@@ -269,20 +269,20 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Penne (GlW), Rinderhackfleisch in Sahnesoße mit Kräutern</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Rind</note>
+          <name>Penne (GlW), Aglio e olio mit Tomate und Knoblauch in Olivenöl</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
         </meal>
         <meal>
-          <name>Penne (GlW), Aglio e olio mit Tomate und Knoblauch in Olivenöl</name>
+          <name>Penne (GlW), Rinderhackfleisch in Sahnesoße mit Kräutern</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Rind</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
@@ -347,18 +347,18 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Farfalle (GlW), Austernpilze in Sahnesoße (Mi,Sl,GlW,GlG)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
-        <meal>
           <name>Farfalle (GlW), Sojahack in einer Paprika Cremesoße (Sojaprotein)</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+        <meal>
+          <name>Farfalle (GlW), Austernpilze in Sahnesoße (Mi,Sl,GlW,GlG)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
