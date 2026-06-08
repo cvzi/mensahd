@@ -4,6 +4,26 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2026-06-08">
+      <category name="Vorspeise">
+        <meal>
+          <name>Selleriecremesuppe</name>
+          <note>Milch und Laktose</note>
+          <note>Nährwerte pro 100 g 
+Brennwert: 190.2 kj / 45.0 kcal 
+Fett: 2.5 g 
+ - davon ges. FS: 1.5 g 
+Kohlenhydrate: 3.9 g 
+ - davon Zucker: 0.5 g 
+Eiweiß: 1.1 g 
+Salz: 0.3 g</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="other">1.79</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
       <category name="Veganer renner">
         <meal>
           <name>Penne mit Champignons und Cocktailtomaten</name>
@@ -87,6 +107,22 @@ Salz: 0.8 g</note>
       </category>
       <category name="Beilage">
         <meal>
+          <name>Grüne Bohnen</name>
+          <note>Nährwerte pro 100 g 
+Brennwert: 229.2 kj / 55.0 kcal 
+Fett: 2.7 g 
+ - davon ges. FS: 1.1 g 
+Kohlenhydrate: 4.3 g 
+ - davon Zucker: 1.3 g 
+Eiweiß: 2.0 g 
+Salz: 0.3 g</note>
+          <note>Sellerie</note>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="other">1.79</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
           <name>Pommes frites</name>
           <note>Nährwerte pro 100 g 
 Brennwert: 869.7 kj / 208.0 kcal 
@@ -99,13 +135,6 @@ Salz: 0.7 g</note>
           <price role="employee">1.69</price>
           <price role="other">2.09</price>
           <price role="student">1.29</price>
-        </meal>
-        <meal>
-          <name>Duftreis</name>
-          <note>vegan</note>
-          <price role="employee">1.49</price>
-          <price role="other">1.89</price>
-          <price role="student">1.09</price>
         </meal>
         <meal>
           <name>Beilagensalat</name>
@@ -1193,12 +1222,12 @@ Salz: 0.1 g</note>
           <name>Tomaten-Hirse mit Haselnüssen</name>
           <note>Haselnüsse</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 573.3 kj / 137.0 kcal 
+Brennwert: 576.4 kj / 138.0 kcal 
 Fett: 4.6 g 
  - davon ges. FS: 0.7 g 
-Kohlenhydrate: 20.1 g 
+Kohlenhydrate: 20.3 g 
  - davon Zucker: 1.8 g 
-Eiweiß: 3.5 g 
+Eiweiß: 3.6 g 
 Salz: 0.5 g</note>
           <note>vegan</note>
           <price role="employee">5.99</price>
@@ -1227,33 +1256,11 @@ Salz: 1.9 g</note>
           <price role="student">4.50</price>
         </meal>
         <meal>
-          <name>Bratwurst mit Nudelsalat</name>
-          <note>Ei</note>
-          <note>Milch und Laktose</note>
-          <note>Nährwerte pro 100 g 
-Brennwert: 943.3 kj / 225.0 kcal 
-Fett: 13.1 g 
- - davon ges. FS: 3.0 g 
-Kohlenhydrate: 20.5 g 
- - davon Zucker: 2.7 g 
-Eiweiß: 10.6 g 
-Salz: 1.8 g</note>
-          <note>Schwein</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
-          <price role="employee">7.60</price>
-          <price role="other">8.10</price>
-          <price role="student">4.60</price>
-        </meal>
-        <meal>
           <name>Hähnchenkeule mit Sweet Chili Dip und Pommes frites</name>
           <note>Geflügel</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 1160.5 kj / 277.0 kcal 
-Fett: 20.0 g 
+Brennwert: 1164.1 kj / 278.0 kcal 
+Fett: 20.4 g 
  - davon ges. FS: 5.7 g 
 Kohlenhydrate: 17.3 g 
  - davon Zucker: 7.6 g 
@@ -1304,9 +1311,9 @@ Salz: 1.1 g</note>
         <meal>
           <name>Pommes frites</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 859.1 kj / 205.0 kcal 
-Fett: 17.6 g 
- - davon ges. FS: 3.8 g 
+Brennwert: 869.7 kj / 208.0 kcal 
+Fett: 18.8 g 
+ - davon ges. FS: 3.9 g 
 Kohlenhydrate: 27.2 g 
  - davon Zucker: 0.7 g 
 Eiweiß: 3.2 g 
@@ -1314,25 +1321,6 @@ Salz: 0.7 g</note>
           <price role="employee">1.69</price>
           <price role="other">2.09</price>
           <price role="student">1.29</price>
-        </meal>
-        <meal>
-          <name>Kartoffelpüree</name>
-          <note>Milch und Laktose</note>
-          <note>Nährwerte pro 100 g 
-Brennwert: 268.8 kj / 64.0 kcal 
-Fett: 1.1 g 
- - davon ges. FS: 0.7 g 
-Kohlenhydrate: 11.5 g 
- - davon Zucker: 1.1 g 
-Eiweiß: 1.7 g 
-Salz: 0.8 g</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.49</price>
-          <price role="other">1.89</price>
-          <price role="student">1.09</price>
         </meal>
         <meal>
           <name>Beilagensalat</name>
@@ -1359,12 +1347,12 @@ Salz: 0.1 g</note>
           <note>Mandeln</note>
           <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 606.5 kj / 145.0 kcal 
-Fett: 2.9 g 
- - davon ges. FS: 1.1 g 
-Kohlenhydrate: 21.8 g 
- - davon Zucker: 11.8 g 
-Eiweiß: 6.1 g 
+Brennwert: 567.2 kj / 135.0 kcal 
+Fett: 3.6 g 
+ - davon ges. FS: 1.2 g 
+Kohlenhydrate: 18.3 g 
+ - davon Zucker: 9.7 g 
+Eiweiß: 5.8 g 
 Salz: 1.8 g</note>
           <note>vegetarisch</note>
           <price role="employee">1.69</price>
@@ -1402,11 +1390,11 @@ Salz: 0.1 g</note>
         <meal>
           <name>Kichererbsen-Curry mit Duftreis</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 471.8 kj / 113.0 kcal 
-Fett: 4.9 g 
- - davon ges. FS: 2.0 g 
-Kohlenhydrate: 16.4 g 
- - davon Zucker: 1.4 g 
+Brennwert: 473.2 kj / 113.0 kcal 
+Fett: 3.9 g 
+ - davon ges. FS: 1.9 g 
+Kohlenhydrate: 17.1 g 
+ - davon Zucker: 1.3 g 
 Eiweiß: 3.8 g 
 Salz: 0.2 g</note>
           <note>Sellerie</note>
@@ -1418,31 +1406,11 @@ Salz: 0.2 g</note>
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Kaiserschmarrn mit Rosinen mit Apfelmus</name>
-          <note>Ei</note>
-          <note>Mandeln</note>
-          <note>Milch und Laktose</note>
-          <note>Nährwerte pro 100 g 
-Brennwert: 726.6 kj / 174.0 kcal 
-Fett: 8.0 g 
- - davon ges. FS: 2.7 g 
-Kohlenhydrate: 23.0 g 
- - davon Zucker: 12.2 g 
-Eiweiß: 4.6 g 
-Salz: 0.1 g</note>
-          <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>vegetarisch</note>
-          <price role="employee">6.40</price>
-          <price role="other">6.90</price>
-          <price role="student">3.40</price>
-        </meal>
-        <meal>
           <name>Bandnudeln mit Pesto</name>
           <note>Mandeln</note>
           <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 397.7 kj / 95.0 kcal 
+Brennwert: 397.3 kj / 95.0 kcal 
 Fett: 2.2 g 
  - davon ges. FS: 0.4 g 
 Kohlenhydrate: 15.2 g 
@@ -1460,10 +1428,10 @@ Salz: 1.1 g</note>
           <note>Dinkel</note>
           <note>Ei</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 568.5 kj / 136.0 kcal 
-Fett: 5.6 g 
- - davon ges. FS: 1.7 g 
-Kohlenhydrate: 10.7 g 
+Brennwert: 517.4 kj / 124.0 kcal 
+Fett: 4.2 g 
+ - davon ges. FS: 1.0 g 
+Kohlenhydrate: 10.8 g 
  - davon Zucker: 0.9 g 
 Eiweiß: 10.4 g 
 Salz: 0.8 g</note>
@@ -1472,64 +1440,6 @@ Salz: 0.8 g</note>
           <price role="employee">8.40</price>
           <price role="other">8.90</price>
           <price role="student">5.40</price>
-        </meal>
-      </category>
-      <category name="Pizza">
-        <meal>
-          <name>Pizza Margherita</name>
-          <note>Milch und Laktose</note>
-          <note>Nährwerte pro 100 g 
-Brennwert: 489.8 kj / 117.0 kcal 
-Fett: 8.0 g 
- - davon ges. FS: 3.5 g 
-Kohlenhydrate: 31.0 g 
- - davon Zucker: 1.8 g 
-Eiweiß: 8.6 g 
-Salz: 2.0 g</note>
-          <note>Weizen</note>
-          <note>vegetarisch</note>
-          <price role="employee">8.75</price>
-          <price role="other">9.25</price>
-          <price role="student">5.75</price>
-        </meal>
-        <meal>
-          <name>Pizza Sojabolognese</name>
-          <note>Milch und Laktose</note>
-          <note>Nährwerte pro 100 g 
-Brennwert: 663.6 kj / 158.0 kcal 
-Fett: 10.0 g 
- - davon ges. FS: 5.4 g 
-Kohlenhydrate: 33.7 g 
- - davon Zucker: 2.2 g 
-Eiweiß: 10.7 g 
-Salz: 1.9 g</note>
-          <note>Soja</note>
-          <note>Weizen</note>
-          <note>vegetarisch</note>
-          <price role="employee">9.00</price>
-          <price role="other">9.50</price>
-          <price role="student">6.00</price>
-        </meal>
-        <meal>
-          <name>Pizza BBQ Bacon</name>
-          <note>Milch und Laktose</note>
-          <note>Nährwerte pro 100 g 
-Brennwert: 851.3 kj / 203.0 kcal 
-Fett: 7.3 g 
- - davon ges. FS: 3.7 g 
-Kohlenhydrate: 44.2 g 
- - davon Zucker: 19.2 g 
-Eiweiß: 11.3 g 
-Salz: 60.4 g</note>
-          <note>Schwein</note>
-          <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Konservierungsstoffen</note>
-          <note>mit Phosphaten</note>
-          <note>mit Süßungsmitteln</note>
-          <price role="employee">9.75</price>
-          <price role="other">10.25</price>
-          <price role="student">6.75</price>
         </meal>
       </category>
       <category name="Buffet">
@@ -1627,9 +1537,9 @@ Salz: 0.8 g</note>
         <meal>
           <name>Pommes frites</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 859.1 kj / 205.0 kcal 
-Fett: 17.6 g 
- - davon ges. FS: 3.8 g 
+Brennwert: 869.7 kj / 208.0 kcal 
+Fett: 18.8 g 
+ - davon ges. FS: 3.9 g 
 Kohlenhydrate: 27.2 g 
  - davon Zucker: 0.7 g 
 Eiweiß: 3.2 g 
@@ -1675,12 +1585,12 @@ Salz: 0.2 g</note>
           <note>Hafer</note>
           <note>Mandeln</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 679.4 kj / 162.0 kcal 
-Fett: 7.3 g 
+Brennwert: 598.4 kj / 143.0 kcal 
+Fett: 6.7 g 
  - davon ges. FS: 0.9 g 
-Kohlenhydrate: 17.3 g 
- - davon Zucker: 13.3 g 
-Eiweiß: 6.3 g 
+Kohlenhydrate: 14.4 g 
+ - davon Zucker: 10.3 g 
+Eiweiß: 6.0 g 
 Salz: 0.2 g</note>
           <note>Soja</note>
           <note>vegetarisch</note>
@@ -1704,13 +1614,13 @@ Salz: 0.2 g</note>
           <name>Veganes Gyros mit veganem Tzatziki, Paprikareis und Weißkrautsalat</name>
           <note>Hafer</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 417.6 kj / 100.0 kcal 
-Fett: 13.8 g 
- - davon ges. FS: 1.6 g 
-Kohlenhydrate: 9.9 g 
+Brennwert: 398.9 kj / 95.0 kcal 
+Fett: 12.8 g 
+ - davon ges. FS: 1.3 g 
+Kohlenhydrate: 10.0 g 
  - davon Zucker: 2.2 g 
 Eiweiß: 4.4 g 
-Salz: 0.7 g</note>
+Salz: 0.8 g</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
           <note>Senf</note>
@@ -1746,7 +1656,7 @@ Salz: 1.9 g</note>
           <note>Ei</note>
           <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 953.3 kj / 228.0 kcal 
+Brennwert: 955.3 kj / 228.0 kcal 
 Fett: 15.2 g 
  - davon ges. FS: 3.8 g 
 Kohlenhydrate: 20.5 g 
@@ -1768,12 +1678,12 @@ Salz: 1.7 g</note>
           <note>Ei</note>
           <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 854.5 kj / 204.0 kcal 
-Fett: 11.1 g 
- - davon ges. FS: 2.9 g 
-Kohlenhydrate: 23.1 g 
+Brennwert: 796.8 kj / 190.0 kcal 
+Fett: 9.6 g 
+ - davon ges. FS: 2.4 g 
+Kohlenhydrate: 22.2 g 
  - davon Zucker: 1.2 g 
-Eiweiß: 10.5 g 
+Eiweiß: 10.4 g 
 Salz: 1.8 g</note>
           <note>Schwein</note>
           <note>Weizen</note>
@@ -1846,9 +1756,9 @@ Salz: 1.1 g</note>
         <meal>
           <name>Pommes frites</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 859.1 kj / 205.0 kcal 
-Fett: 17.6 g 
- - davon ges. FS: 3.8 g 
+Brennwert: 869.7 kj / 208.0 kcal 
+Fett: 18.8 g 
+ - davon ges. FS: 3.9 g 
 Kohlenhydrate: 27.2 g 
  - davon Zucker: 0.7 g 
 Eiweiß: 3.2 g 
@@ -1925,12 +1835,12 @@ Salz: 0.2 g</note>
         <meal>
           <name>Veganer Pudding mit Vanille-Geschmack und Himbeersauce</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 263.7 kj / 63.0 kcal 
-Fett: 1.8 g 
+Brennwert: 271.9 kj / 65.0 kcal 
+Fett: 1.7 g 
  - davon ges. FS: 0.3 g 
-Kohlenhydrate: 8.0 g 
- - davon Zucker: 5.3 g 
-Eiweiß: 3.1 g 
+Kohlenhydrate: 8.9 g 
+ - davon Zucker: 6.0 g 
+Eiweiß: 3.0 g 
 Salz: 0.1 g</note>
           <note>Soja</note>
           <note>vegan</note>
@@ -1953,12 +1863,12 @@ Salz: 0.1 g</note>
         <meal>
           <name>Linsen und vegane Spätzle</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 412.0 kj / 98.0 kcal 
+Brennwert: 385.2 kj / 92.0 kcal 
 Fett: 0.4 g 
  - davon ges. FS: 0.1 g 
-Kohlenhydrate: 15.5 g 
- - davon Zucker: 2.1 g 
-Eiweiß: 6.1 g 
+Kohlenhydrate: 14.2 g 
+ - davon Zucker: 2.0 g 
+Eiweiß: 5.9 g 
 Salz: 0.5 g</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
@@ -1974,12 +1884,12 @@ Salz: 0.5 g</note>
         <meal>
           <name>Kartoffelrösti mit Champignon-Gemüseragout</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 318.5 kj / 76.0 kcal 
-Fett: 6.2 g 
- - davon ges. FS: 1.3 g 
-Kohlenhydrate: 9.2 g 
+Brennwert: 298.9 kj / 71.0 kcal 
+Fett: 5.4 g 
+ - davon ges. FS: 0.9 g 
+Kohlenhydrate: 9.8 g 
  - davon Zucker: 1.0 g 
-Eiweiß: 2.2 g 
+Eiweiß: 2.3 g 
 Salz: 0.5 g</note>
           <note>Sellerie</note>
           <note>Soja</note>
@@ -1994,12 +1904,12 @@ Salz: 0.5 g</note>
           <note>Dinkel</note>
           <note>Ei</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 652.4 kj / 156.0 kcal 
-Fett: 7.3 g 
- - davon ges. FS: 2.8 g 
-Kohlenhydrate: 14.8 g 
+Brennwert: 618.5 kj / 148.0 kcal 
+Fett: 6.7 g 
+ - davon ges. FS: 2.5 g 
+Kohlenhydrate: 14.2 g 
  - davon Zucker: 1.1 g 
-Eiweiß: 6.7 g 
+Eiweiß: 6.6 g 
 Salz: 1.2 g</note>
           <note>Rind</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
@@ -2013,82 +1923,6 @@ Salz: 1.2 g</note>
           <price role="employee">7.90</price>
           <price role="other">8.40</price>
           <price role="student">4.90</price>
-        </meal>
-        <meal>
-          <name>Hausgemachte Lasagne Bolognese mit Tomatensauce</name>
-          <note>Milch und Laktose</note>
-          <note>Nährwerte pro 100 g 
-Brennwert: 196.7 kj / 47.0 kcal 
-Fett: 0.1 g 
- - davon ges. FS: 0.0 g 
-Kohlenhydrate: 9.4 g 
- - davon Zucker: 8.6 g 
-Eiweiß: 1.1 g 
-Salz: 0.9 g</note>
-          <note>Rind</note>
-          <note>Sellerie</note>
-          <note>Weizen</note>
-          <price role="employee">8.40</price>
-          <price role="other">8.90</price>
-          <price role="student">5.40</price>
-        </meal>
-      </category>
-      <category name="Pizza">
-        <meal>
-          <name>Pizza Sojabolognese</name>
-          <note>Milch und Laktose</note>
-          <note>Nährwerte pro 100 g 
-Brennwert: 663.6 kj / 158.0 kcal 
-Fett: 10.0 g 
- - davon ges. FS: 5.4 g 
-Kohlenhydrate: 33.7 g 
- - davon Zucker: 2.2 g 
-Eiweiß: 10.7 g 
-Salz: 1.9 g</note>
-          <note>Soja</note>
-          <note>Weizen</note>
-          <note>vegetarisch</note>
-          <price role="employee">9.00</price>
-          <price role="other">9.50</price>
-          <price role="student">6.00</price>
-        </meal>
-        <meal>
-          <name>Pizza Margherita</name>
-          <note>Milch und Laktose</note>
-          <note>Nährwerte pro 100 g 
-Brennwert: 489.8 kj / 117.0 kcal 
-Fett: 8.0 g 
- - davon ges. FS: 3.5 g 
-Kohlenhydrate: 31.0 g 
- - davon Zucker: 1.8 g 
-Eiweiß: 8.6 g 
-Salz: 2.0 g</note>
-          <note>Weizen</note>
-          <note>vegetarisch</note>
-          <price role="employee">8.75</price>
-          <price role="other">9.25</price>
-          <price role="student">5.75</price>
-        </meal>
-        <meal>
-          <name>Pizza BBQ Bacon</name>
-          <note>Milch und Laktose</note>
-          <note>Nährwerte pro 100 g 
-Brennwert: 851.3 kj / 203.0 kcal 
-Fett: 7.3 g 
- - davon ges. FS: 3.7 g 
-Kohlenhydrate: 44.2 g 
- - davon Zucker: 19.2 g 
-Eiweiß: 11.3 g 
-Salz: 60.4 g</note>
-          <note>Schwein</note>
-          <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Konservierungsstoffen</note>
-          <note>mit Phosphaten</note>
-          <note>mit Süßungsmitteln</note>
-          <price role="employee">9.75</price>
-          <price role="other">10.25</price>
-          <price role="student">6.75</price>
         </meal>
       </category>
       <category name="Buffet">
@@ -2118,31 +1952,6 @@ Salz: 1.1 g</note>
           <price role="employee">1.60</price>
           <price role="other">2.10</price>
           <price role="student">1.10</price>
-        </meal>
-        <meal>
-          <name>Pasta Bar mit Tomatensauce mit Schinken-Sahne-Champignonsauce Bolognese mit Basilikumpesto</name>
-          <note>Ei</note>
-          <note>Mandeln</note>
-          <note>Milch und Laktose</note>
-          <note>Nährwerte pro 100 g 
-Brennwert: 557.6 kj / 133.0 kcal 
-Fett: 1.0 g 
- - davon ges. FS: 0.4 g 
-Kohlenhydrate: 27.0 g 
- - davon Zucker: 1.7 g 
-Eiweiß: 5.8 g 
-Salz: 1.1 g</note>
-          <note>Sellerie</note>
-          <note>Soja</note>
-          <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Konservierungsstoffen</note>
-          <note>mit Phosphaten</note>
-          <note>vegan</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.30</price>
-          <price role="other">1.80</price>
-          <price role="student">0.80</price>
         </meal>
       </category>
       <category name="Beilage">
@@ -2205,11 +2014,11 @@ Salz: 0.1 g</note>
           <name>Mandarinenquark</name>
           <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 519.4 kj / 124.0 kcal 
+Brennwert: 535.5 kj / 128.0 kcal 
 Fett: 2.0 g 
  - davon ges. FS: 1.2 g 
-Kohlenhydrate: 20.1 g 
- - davon Zucker: 20.1 g 
+Kohlenhydrate: 21.0 g 
+ - davon Zucker: 21.0 g 
 Eiweiß: 5.4 g 
 Salz: 0.1 g</note>
           <note>vegetarisch</note>
@@ -2221,11 +2030,11 @@ Salz: 0.1 g</note>
           <name>Veganer Schokopudding mit Kirschen</name>
           <note>Hafer</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 325.0 kj / 78.0 kcal 
+Brennwert: 343.3 kj / 82.0 kcal 
 Fett: 2.7 g 
  - davon ges. FS: 2.5 g 
-Kohlenhydrate: 11.8 g 
- - davon Zucker: 7.4 g 
+Kohlenhydrate: 12.9 g 
+ - davon Zucker: 8.2 g 
 Eiweiß: 1.2 g 
 Salz: 0.1 g</note>
           <note>vegan</note>
@@ -2248,12 +2057,12 @@ Salz: 0.1 g</note>
         <meal>
           <name>Tomaten-Pilaw mit Räuchertofu</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 363.9 kj / 87.0 kcal 
+Brennwert: 367.5 kj / 88.0 kcal 
 Fett: 3.9 g 
  - davon ges. FS: 0.5 g 
-Kohlenhydrate: 11.6 g 
- - davon Zucker: 1.2 g 
-Eiweiß: 4.7 g 
+Kohlenhydrate: 11.7 g 
+ - davon Zucker: 1.3 g 
+Eiweiß: 4.8 g 
 Salz: 0.5 g</note>
           <note>Sellerie</note>
           <note>Soja</note>
@@ -2266,40 +2075,17 @@ Salz: 0.5 g</note>
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Süßkartoffel-Schupfnudeln mit Curry-Erdnuss-Sauce und Chinagemüse</name>
-          <note>Cashewnüsse</note>
-          <note>Erdnuss</note>
-          <note>Haselnüsse</note>
-          <note>Mandeln</note>
-          <note>Milch und Laktose</note>
-          <note>Nährwerte pro 100 g 
-Brennwert: 523.2 kj / 125.0 kcal 
-Fett: 7.6 g 
- - davon ges. FS: 1.4 g 
-Kohlenhydrate: 16.4 g 
- - davon Zucker: 4.2 g 
-Eiweiß: 3.3 g 
-Salz: 1.6 g</note>
-          <note>Sellerie</note>
-          <note>Soja</note>
-          <note>Weizen</note>
-          <note>vegetarisch</note>
-          <price role="employee">7.50</price>
-          <price role="other">8.00</price>
-          <price role="student">4.50</price>
-        </meal>
-        <meal>
           <name>Fleischküchle mit Rahmsauce und Spirelli</name>
           <note>Ei</note>
           <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 681.9 kj / 163.0 kcal 
-Fett: 8.0 g 
- - davon ges. FS: 3.6 g 
+Brennwert: 652.0 kj / 156.0 kcal 
+Fett: 7.2 g 
+ - davon ges. FS: 3.2 g 
 Kohlenhydrate: 15.5 g 
  - davon Zucker: 1.0 g 
 Eiweiß: 6.7 g 
-Salz: 1.7 g</note>
+Salz: 1.6 g</note>
           <note>Rind</note>
           <note>Schwein</note>
           <note>Weizen</note>
@@ -2313,10 +2099,10 @@ Salz: 1.7 g</note>
           <note>MSC-zertifizierter Fisch (MSC-C-51632)</note>
           <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 487.5 kj / 116.0 kcal 
-Fett: 7.2 g 
+Brennwert: 484.7 kj / 116.0 kcal 
+Fett: 6.9 g 
  - davon ges. FS: 1.3 g 
-Kohlenhydrate: 10.6 g 
+Kohlenhydrate: 10.5 g 
  - davon Zucker: 1.1 g 
 Eiweiß: 7.0 g 
 Salz: 0.4 g</note>
@@ -2381,12 +2167,12 @@ Salz: 0.7 g</note>
         <meal>
           <name>Kartoffelsalat</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 306.0 kj / 73.0 kcal 
-Fett: 4.1 g 
- - davon ges. FS: 0.3 g 
+Brennwert: 317.6 kj / 76.0 kcal 
+Fett: 5.0 g 
+ - davon ges. FS: 0.4 g 
 Kohlenhydrate: 12.8 g 
  - davon Zucker: 1.1 g 
-Eiweiß: 1.7 g 
+Eiweiß: 1.8 g 
 Salz: 0.4 g</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
@@ -2433,14 +2219,6 @@ Salz: 0.1 g</note>
         <meal>
           <name>Panna Cotta mit Erdbeermus</name>
           <note>Milch und Laktose</note>
-          <note>Nährwerte pro 100 g 
-Brennwert: 707.6 kj / 169.0 kcal 
-Fett: 10.9 g 
- - davon ges. FS: 6.7 g 
-Kohlenhydrate: 5.6 g 
- - davon Zucker: 5.5 g 
-Eiweiß: 2.9 g 
-Salz: 0.1 g</note>
           <price role="employee">1.69</price>
           <price role="other">2.09</price>
           <price role="student">1.29</price>
