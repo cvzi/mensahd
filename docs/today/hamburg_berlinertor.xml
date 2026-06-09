@@ -35,14 +35,6 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Cheeseburger mit Gurken, Tomaten und Salat (1,2,3,9,Ei,Mi,Sf,Sw,GlW), Pommes Frites</name>
-          <note>Rind</note>
-          <note>Senf und Senferzeugnisse</note>
-          <price role="employee">5.55</price>
-          <price role="other">6.85</price>
-          <price role="student">4.25</price>
-        </meal>
-        <meal>
           <name>Veggie Cheeseburger mit Gurken, Tomaten und Salat (1,2,3,9,Ei,Mi,Sf,Sw,GlW,GlH), Pommes Frites , .</name>
           <note>Senf und Senferzeugnisse</note>
           <note>Vegetarisch</note>
@@ -50,22 +42,16 @@
           <price role="other">6.85</price>
           <price role="student">4.25</price>
         </meal>
+        <meal>
+          <name>Cheeseburger mit Gurken, Tomaten und Salat (1,2,3,9,Ei,Mi,Sf,Sw,GlW), Pommes Frites</name>
+          <note>Rind</note>
+          <note>Senf und Senferzeugnisse</note>
+          <price role="employee">5.55</price>
+          <price role="other">6.85</price>
+          <price role="student">4.25</price>
+        </meal>
       </category>
       <category name="CampusWorld">
-        <meal>
-          <name>Frisch gebackene FLAMMKUCHEN nach Wahl (versch. Sorten) ab 4,20 / 5,50 / 6,70 (auch TAKE AWAY) (Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">5.50</price>
-          <price role="other">6.80</price>
-          <price role="student">4.20</price>
-        </meal>
-        <meal>
-          <name>Flammkuchen des Tages: mit Teriyaki mit Räuchertofu, asiatischem Gemüse, Sesam (2,So,Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">5.90</price>
-          <price role="other">7.20</price>
-          <price role="student">4.60</price>
-        </meal>
         <meal>
           <name>Hühnchen in pikanter Erdnuss-Curry-Soße , Basmatireis</name>
           <note>Erdnüsse und Erdnusserzeugnisse</note>
@@ -78,6 +64,14 @@
         </meal>
       </category>
       <category name="Pastabar">
+        <meal>
+          <name>Bratnudeln mit Gemüsestreifen (2,Ei,So,Se,GlW)</name>
+          <note>Vegetarisch</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
         <meal>
           <name>Reis, Spinat Rindfleisch Curry</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -92,9 +86,8 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Gelbe und Grüne Zucchini mit Cherrytomaten und Oliven , Fenchelgemüse , Süßkartoffelwürfel gebacken, gerösteter Broccoli, Reis</name>
+          <name>Kaisergemüse Pfanne , Broccoli</name>
           <note>Geschwärzt</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.15</price>
@@ -131,6 +124,14 @@
       </category>
       <category name="CampusVital">
         <meal>
+          <name>vegane Tom Kha Suppe mit Tofu und Basmatireis (2,3,So,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.90</price>
+          <price role="other">7.20</price>
+          <price role="student">4.60</price>
+        </meal>
+        <meal>
           <name>Tom Kha Gai Hühner-Kokos-Topf mit Gemüse und Hähnchen</name>
           <note>Geflügel</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
@@ -139,14 +140,6 @@
           <price role="employee">6.40</price>
           <price role="other">7.70</price>
           <price role="student">5.10</price>
-        </meal>
-        <meal>
-          <name>vegane Tom Kha Suppe mit Tofu und Basmatireis (2,3,So,Sw,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.90</price>
-          <price role="other">7.20</price>
-          <price role="student">4.60</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -160,18 +153,18 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Eliche (GlW), Currysauce mit Erbsen und Bärlauch (Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
-        <meal>
           <name>Eliche (GlW), Räuchertofu in Kräuter- Cremesoße</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+        <meal>
+          <name>Eliche (GlW), Currysauce mit Erbsen und Bärlauch (Mi,GlW)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
@@ -239,19 +232,19 @@
           <price role="student">4.20</price>
         </meal>
         <meal>
+          <name>Frisch gebackene FLAMMKUCHEN nach Wahl (versch. Sorten) ab 4,20 / 5,50 / 6,70 (auch TAKE AWAY) (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">5.50</price>
+          <price role="other">6.80</price>
+          <price role="student">4.20</price>
+        </meal>
+        <meal>
           <name>Bibimbap Bowl mit Sonnenblumenhack (Sonnenblumenprotein) und Champignons (2,3,5,En,So,Sl,Sf,Se,Sw,GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">6.85</price>
           <price role="other">8.15</price>
           <price role="student">5.55</price>
-        </meal>
-        <meal>
-          <name>Frisch gebackene FLAMMKUCHEN nach Wahl (versch. Sorten) ab 4,20 / 5,50 / 6,70 (auch TAKE AWAY) (Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">5.50</price>
-          <price role="other">6.80</price>
-          <price role="student">4.20</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -330,19 +323,19 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Farfalle (GlW), Blattspinat-Tomaten-Frischkäsesoße</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
-        <meal>
           <name>Farfalle (GlW), Linsen in pikanter Tomatensoße</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+        <meal>
+          <name>Farfalle (GlW), Blattspinat-Tomaten-Frischkäsesoße</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
