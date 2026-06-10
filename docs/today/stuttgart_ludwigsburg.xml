@@ -4,6 +4,18 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2026-06-10">
+      <category name="Vorspeise">
+        <meal>
+          <name>Pilzcremesuppe</name>
+          <note>Milch und Laktose</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="other">1.79</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
       <category name="Veganer renner">
         <meal>
           <name>Karotten-Gnocchi-Ragout</name>
@@ -109,7 +121,7 @@ Salz: 1.1 g</note>
           <price role="student">1.10</price>
         </meal>
         <meal>
-          <name>Pasta Bar</name>
+          <name>Pasta Bar mit Tomatensauce mit Schinken-Sahne-Champignonsauce Bolognese mit Basilikumpesto</name>
           <note>Ei</note>
           <note>Mandeln</note>
           <note>Milch und Laktose</note>
@@ -135,6 +147,13 @@ Salz: 1.1 g</note>
         </meal>
       </category>
       <category name="Beilage">
+        <meal>
+          <name>Buntes Gemüse</name>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="other">1.79</price>
+          <price role="student">0.99</price>
+        </meal>
         <meal>
           <name>Pommes frites</name>
           <note>Nährwerte pro 100 g 
@@ -201,16 +220,18 @@ Salz: 0.2 g</note>
         <meal>
           <name>Mousse mit Limone-Joghurt-Geschmack</name>
           <note>Milch und Laktose</note>
-          <price role="employee">1.10</price>
-          <price role="other">0.00</price>
-          <price role="student">0.80</price>
+          <note>vegetarisch</note>
+          <price role="employee">1.69</price>
+          <price role="other">2.09</price>
+          <price role="student">1.29</price>
         </meal>
         <meal>
           <name>Mousse mit Limone-Joghurt-Geschmack</name>
           <note>Milch und Laktose</note>
-          <price role="employee">1.10</price>
-          <price role="other">0.00</price>
-          <price role="student">0.80</price>
+          <note>vegetarisch</note>
+          <price role="employee">1.69</price>
+          <price role="other">2.09</price>
+          <price role="student">1.29</price>
         </meal>
       </category>
     </day>
