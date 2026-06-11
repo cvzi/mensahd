@@ -3,20 +3,20 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2026-06-10">
+    <day date="2026-06-11">
       <category name="Vorspeise">
         <meal>
-          <name>Flädlesuppe</name>
+          <name>Grießklößchensuppe</name>
           <note>Ei</note>
           <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 115.7 kj / 28.0 kcal 
-Fett: 1.4 g 
- - davon ges. FS: 0.2 g 
-Kohlenhydrate: 2.8 g 
- - davon Zucker: 0.2 g 
-Eiweiß: 1.0 g 
-Salz: 0.4 g</note>
+Brennwert: 224.1 kj / 54.0 kcal 
+Fett: 3.6 g 
+ - davon ges. FS: 1.9 g 
+Kohlenhydrate: 3.9 g 
+ - davon Zucker: 0.3 g 
+Eiweiß: 1.5 g 
+Salz: 0.2 g</note>
           <note>Sellerie</note>
           <note>Weizen</note>
           <price role="employee">1.39</price>
@@ -26,17 +26,19 @@ Salz: 0.4 g</note>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Karotten-Gnocchi-Ragout</name>
+          <name>Schupfnudel-Sauerkraut-Pfanne</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 514.4 kj / 123.0 kcal 
-Fett: 0.4 g 
- - davon ges. FS: 0.1 g 
-Kohlenhydrate: 4.3 g 
- - davon Zucker: 2.0 g 
-Eiweiß: 3.3 g 
-Salz: 0.5 g</note>
+Brennwert: 414.0 kj / 99.0 kcal 
+Fett: 2.8 g 
+ - davon ges. FS: 0.5 g 
+Kohlenhydrate: 17.9 g 
+ - davon Zucker: 2.3 g 
+Eiweiß: 2.1 g 
+Salz: 0.7 g</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
           <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
           <price role="employee">5.99</price>
           <price role="other">6.49</price>
@@ -45,22 +47,24 @@ Salz: 0.5 g</note>
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Spaghetti Bolognese mit Reibekäse</name>
+          <name>Schweinebraten mit Rahmsauce und Spätzle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
           <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 666.0 kj / 159.0 kcal 
-Fett: 5.4 g 
- - davon ges. FS: 2.0 g 
-Kohlenhydrate: 18.2 g 
- - davon Zucker: 2.8 g 
-Eiweiß: 8.5 g 
-Salz: 0.4 g</note>
-          <note>Rind</note>
-          <note>Sellerie</note>
+Brennwert: 536.3 kj / 128.0 kcal 
+Fett: 7.2 g 
+ - davon ges. FS: 1.1 g 
+Kohlenhydrate: 9.7 g 
+ - davon Zucker: 0.2 g 
+Eiweiß: 9.2 g 
+Salz: 1.0 g</note>
+          <note>Schwein</note>
+          <note>Senf</note>
           <note>Weizen</note>
-          <price role="employee">7.40</price>
-          <price role="other">7.90</price>
-          <price role="student">4.40</price>
+          <price role="employee">8.00</price>
+          <price role="other">8.50</price>
+          <price role="student">5.00</price>
         </meal>
       </category>
       <category name="Aktion">
@@ -114,6 +118,24 @@ Salz: 1.1 g</note>
       </category>
       <category name="Beilage">
         <meal>
+          <name>Spätzle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Nährwerte pro 100 g 
+Brennwert: 817.0 kj / 195.0 kcal 
+Fett: 7.2 g 
+ - davon ges. FS: 2.7 g 
+Kohlenhydrate: 25.8 g 
+ - davon Zucker: 0.2 g 
+Eiweiß: 6.6 g 
+Salz: 1.8 g</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.69</price>
+          <price role="other">2.09</price>
+          <price role="student">1.29</price>
+        </meal>
+        <meal>
           <name>Beilagensalat</name>
           <note>Nährwerte pro 100 g 
 Brennwert: 69.2 kj / 17.0 kcal 
@@ -131,20 +153,16 @@ Salz: 0.1 g</note>
       </category>
       <category name="Dessert">
         <meal>
-          <name>Früchtemüsli</name>
-          <note>Gerste</note>
-          <note>Hafer</note>
-          <note>Haselnüsse</note>
-          <note>Mandeln</note>
+          <name>Waldbeerenquark</name>
           <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 567.2 kj / 135.0 kcal 
-Fett: 3.6 g 
- - davon ges. FS: 1.2 g 
-Kohlenhydrate: 18.3 g 
- - davon Zucker: 9.7 g 
-Eiweiß: 5.8 g 
-Salz: 1.8 g</note>
+Brennwert: 391.1 kj / 93.0 kcal 
+Fett: 2.4 g 
+ - davon ges. FS: 1.5 g 
+Kohlenhydrate: 10.0 g 
+ - davon Zucker: 9.8 g 
+Eiweiß: 6.6 g 
+Salz: 0.1 g</note>
           <note>vegetarisch</note>
           <price role="employee">1.69</price>
           <price role="other">2.09</price>
