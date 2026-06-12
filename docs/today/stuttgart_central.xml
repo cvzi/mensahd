@@ -3,21 +3,23 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2026-06-11">
+    <day date="2026-06-12">
       <category name="Vorspeise">
         <meal>
-          <name>Karottencremesuppe</name>
+          <name>Spargelrahmsuppe mit Weißwein</name>
           <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 403.7 kj / 96.0 kcal 
-Fett: 8.1 g 
- - davon ges. FS: 4.6 g 
-Kohlenhydrate: 4.8 g 
- - davon Zucker: 1.8 g 
-Eiweiß: 1.0 g 
+Brennwert: 189.3 kj / 45.0 kcal 
+Fett: 2.5 g 
+ - davon ges. FS: 1.5 g 
+Kohlenhydrate: 3.7 g 
+ - davon Zucker: 0.8 g 
+Eiweiß: 1.1 g 
 Salz: 0.2 g</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
           <note>Weizen</note>
+          <note>mit Alkohol</note>
           <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="other">1.79</price>
@@ -26,23 +28,49 @@ Salz: 0.2 g</note>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Schupfnudel-Sauerkraut-Pfanne</name>
+          <name>Reispfanne mit Naturreis und Weißkraut-,Paprikagemüse</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 460.4 kj / 110.0 kcal 
-Fett: 2.7 g 
- - davon ges. FS: 0.5 g 
-Kohlenhydrate: 17.9 g 
- - davon Zucker: 2.3 g 
-Eiweiß: 2.1 g 
-Salz: 0.7 g</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
+Brennwert: 468.5 kj / 112.0 kcal 
+Fett: 3.5 g 
+ - davon ges. FS: 0.4 g 
+Kohlenhydrate: 16.2 g 
+ - davon Zucker: 2.0 g 
+Eiweiß: 3.0 g 
+Salz: 1.4 g</note>
           <note>Sellerie</note>
+          <note>Soja</note>
           <note>Weizen</note>
-          <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
           <price role="employee">5.99</price>
           <price role="other">6.49</price>
           <price role="student">2.99</price>
+        </meal>
+      </category>
+      <category name="Hauptgericht">
+        <meal>
+          <name>Paniertes Seelachsfilet mit Remouladensauce und Kartoffelsalat</name>
+          <note>Ei</note>
+          <note>Fisch</note>
+          <note>MSC-zertifizierter Fisch (MSC-C-51632)</note>
+          <note>Milch und Laktose</note>
+          <note>Nährwerte pro 100 g 
+Brennwert: 871.9 kj / 208.0 kcal 
+Fett: 16.1 g 
+ - davon ges. FS: 1.6 g 
+Kohlenhydrate: 12.5 g 
+ - davon Zucker: 1.4 g 
+Eiweiß: 6.6 g 
+Salz: 0.9 g</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Farbstoffen</note>
+          <note>mit Süßungsmitteln</note>
+          <price role="employee">8.40</price>
+          <price role="other">8.90</price>
+          <price role="student">5.40</price>
         </meal>
       </category>
       <category name="Nudelmanufaktur">
@@ -111,26 +139,6 @@ Salz: 0.9 g</note>
           <price role="student">4.90</price>
         </meal>
       </category>
-      <category name="Aktion">
-        <meal>
-          <name>Spargel-Tomaten-Pasta mit Rucola</name>
-          <note>Ei</note>
-          <note>Milch und Laktose</note>
-          <note>Nährwerte pro 100 g 
-Brennwert: 600.8 kj / 143.0 kcal 
-Fett: 6.5 g 
- - davon ges. FS: 1.6 g 
-Kohlenhydrate: 15.6 g 
- - davon Zucker: 1.7 g 
-Eiweiß: 4.6 g 
-Salz: 0.1 g</note>
-          <note>Sellerie</note>
-          <note>Weizen</note>
-          <price role="employee">8.90</price>
-          <price role="other">9.40</price>
-          <price role="student">5.90</price>
-        </meal>
-      </category>
       <category name="Buffet">
         <meal>
           <name>Salatbuffet</name>
@@ -162,8 +170,19 @@ Salz: 1.1 g</note>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Sauerkraut</name>
-          <note>vegan</note>
+          <name>Spargelgemüse in Rahm</name>
+          <note>Milch und Laktose</note>
+          <note>Nährwerte pro 100 g 
+Brennwert: 332.2 kj / 79.0 kcal 
+Fett: 4.9 g 
+ - davon ges. FS: 2.4 g 
+Kohlenhydrate: 5.8 g 
+ - davon Zucker: 3.0 g 
+Eiweiß: 2.4 g 
+Salz: 0.3 g</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="other">1.79</price>
           <price role="student">0.99</price>
@@ -201,15 +220,15 @@ Salz: 0.1 g</note>
       </category>
       <category name="Dessert">
         <meal>
-          <name>Waldbeerenquark</name>
+          <name>Früchtequark</name>
           <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 391.1 kj / 93.0 kcal 
-Fett: 2.4 g 
- - davon ges. FS: 1.5 g 
-Kohlenhydrate: 10.0 g 
- - davon Zucker: 9.8 g 
-Eiweiß: 6.6 g 
+Brennwert: 347.7 kj / 83.0 kcal 
+Fett: 0.8 g 
+ - davon ges. FS: 0.5 g 
+Kohlenhydrate: 12.3 g 
+ - davon Zucker: 10.8 g 
+Eiweiß: 5.1 g 
 Salz: 0.1 g</note>
           <note>vegetarisch</note>
           <price role="employee">1.69</price>
