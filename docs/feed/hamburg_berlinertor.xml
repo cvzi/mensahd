@@ -97,8 +97,9 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Putengulasch (Mi,Sl,GlW)</name>
+          <name>Putengulasch (Mi,Sl,GlW), hausgemachtes Kartoffelpüree</name>
           <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <price role="employee">5.95</price>
           <price role="other">7.25</price>
           <price role="student">4.65</price>
@@ -106,10 +107,11 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Bacon Bomb Burger, auch ohne Bacon erhältlich (1,2,3,5,8,9,Ei,Mi,Sl,Sf,Sw,GlW)</name>
+          <name>Bacon Bomb Burger, auch ohne Bacon erhältlich (1,2,3,5,8,9,Ei,Mi,Sl,Sf,Sw,GlW), Pommes Frites</name>
           <note>Alkohol</note>
           <note>Rind</note>
           <note>Schwein</note>
+          <note>Senf und Senferzeugnisse</note>
           <price role="employee">7.30</price>
           <price role="other">8.60</price>
           <price role="student">6.00</price>
@@ -174,8 +176,9 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Leberkäse im Ganzen gebacken</name>
+          <name>Leberkäse im Ganzen gebacken , Kartoffelsalat mit Essig und Öl</name>
           <note>Schwein</note>
+          <note>Senf und Senferzeugnisse</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Antioxidationsmittel</note>
           <note>mit Konservierungsstoff</note>
@@ -187,18 +190,18 @@
       </category>
       <category name="CampusVital">
         <meal>
-          <name>All in one pot: Vollkornreis, Tandoori Chicken, Avocado, Linsen, Cranberries, Chia (1,2,3,So,Mi,Sl,Sf,Sw,GlW)</name>
-          <note>Geflügel</note>
-          <price role="employee">6.55</price>
-          <price role="other">7.85</price>
-          <price role="student">5.25</price>
-        </meal>
-        <meal>
           <name>All in one pot: Vollkornreis, Tandoori Soja, Avocado, Linsen, Cranberries, Chia (Sojaprotein) (1,2,3,So,Mi,Sl,Sf,Sw,GlW)</name>
           <note>Vegetarisch</note>
           <price role="employee">5.85</price>
           <price role="other">7.15</price>
           <price role="student">4.55</price>
+        </meal>
+        <meal>
+          <name>All in one pot: Vollkornreis, Tandoori Chicken, Avocado, Linsen, Cranberries, Chia (1,2,3,So,Mi,Sl,Sf,Sw,GlW)</name>
+          <note>Geflügel</note>
+          <price role="employee">6.55</price>
+          <price role="other">7.85</price>
+          <price role="student">5.25</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -212,15 +215,15 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Eliche (GlW), Gorgonzola- Hartkäsesoße, gerösteten Haselnüssen und Basilikum (Mi,Sl,NHa)</name>
+          <name>Eliche (GlW), Vegane Bärlauchsoße mit Spargel (1,So,Sf,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
         </meal>
         <meal>
-          <name>Eliche (GlW), Vegane Bärlauchsoße mit Spargel (1,So,Sf,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Eliche (GlW), Gorgonzola- Hartkäsesoße, gerösteten Haselnüssen und Basilikum (Mi,Sl,NHa)</name>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
@@ -291,14 +294,14 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Frisch gebackene FLAMMKUCHEN nach Wahl (versch. Sorten) ab 4,20 / 5,50 / 6,70 (auch TAKE AWAY) (Mi,GlW)</name>
+          <name>Flammkuchen des Tages: mit Apfelwürfel, Zimt und Zucker (Mi,GlW,NHa)</name>
           <note>Vegetarisch</note>
           <price role="employee">5.50</price>
           <price role="other">6.80</price>
           <price role="student">4.20</price>
         </meal>
         <meal>
-          <name>Flammkuchen des Tages: mit Apfelwürfel, Zimt und Zucker (Mi,GlW,NHa)</name>
+          <name>Frisch gebackene FLAMMKUCHEN nach Wahl (versch. Sorten) ab 4,20 / 5,50 / 6,70 (auch TAKE AWAY) (Mi,GlW)</name>
           <note>Vegetarisch</note>
           <price role="employee">5.50</price>
           <price role="other">6.80</price>
@@ -307,20 +310,20 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Penne (GlW), Rinderhackfleisch in Sahnesoße mit Kräutern</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Rind</note>
+          <name>Penne (GlW), Aglio e olio mit Tomate und Knoblauch in Olivenöl</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
         </meal>
         <meal>
-          <name>Penne (GlW), Aglio e olio mit Tomate und Knoblauch in Olivenöl</name>
+          <name>Penne (GlW), Rinderhackfleisch in Sahnesoße mit Kräutern</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Rind</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
