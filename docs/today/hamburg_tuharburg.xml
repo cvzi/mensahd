@@ -6,7 +6,18 @@
     <day date="2026-06-29">
       <category name="Pottkieker">
         <meal>
-          <name>Bohnen-Lauch-Curry mit Brech- Bohnen, Edamame Bohnen und Lauch , Basmatireis</name>
+          <name>mediterranes Gemüseragout mit Tofu und Orange , Reis</name>
+          <note>Geschwärzt</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.50</price>
+          <price role="other">4.80</price>
+          <price role="student">2.20</price>
+        </meal>
+        <meal>
+          <name>Bohnen-Curry mit Brech- Bohnen und Sojabohnen , Basmatireis</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Senf und Senferzeugnisse</note>
@@ -54,8 +65,9 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Conchiglie (GlW), Tomaten- Kräuter- Gemüsesoße</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <name>Pasta nach Wahl (GlW), all'Amatriciana Art mit Soja, Tomate und Paprika</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.15</price>
@@ -63,8 +75,18 @@
           <price role="student">0.90</price>
         </meal>
         <meal>
-          <name>Conchiglie (GlW), Broccoli in einer Gorgonzola- Sahnesoße</name>
+          <name>Pasta nach Wahl (GlW), Rucola in einer Gorgonzola- Sahnesoße</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+        <meal>
+          <name>Spanisches Pfannengemüse</name>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
@@ -72,12 +94,10 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Mais , Blattspinat mit veganem Hirtenkäse , Blumenkohl mit gebräunten Bröseln (1,GlW), Alte Gemüse: Pastinake- Sellerie- Karotte- Topinambur , Nusskartoffeln</name>
+          <name>gebratene Champignons , Broccoli</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Farbstoff</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
@@ -342,14 +362,6 @@
       </category>
       <category name="CampusSpezial">
         <meal>
-          <name>Laugenburger mit Gemüsepflanzerl und süßem Senf (3,5,Mi,Sl,Sf,Se,Sw,GlW), Pommes Frites</name>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegetarisch</note>
-          <price role="employee">7.00</price>
-          <price role="other">8.30</price>
-          <price role="student">5.70</price>
-        </meal>
-        <meal>
           <name>Spätzlepfanne mit Wirsing, Gouda Nuggets und Röstzwiebeln (Ei,Mi,GlW,GlR)</name>
           <note>Neu</note>
           <note>Vegetarisch</note>
@@ -357,22 +369,30 @@
           <price role="other">8.20</price>
           <price role="student">5.60</price>
         </meal>
+        <meal>
+          <name>Laugenburger mit Gemüsepflanzerl und süßem Senf (3,5,Mi,Sl,Sf,Se,Sw,GlW), Pommes Frites</name>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <price role="employee">7.00</price>
+          <price role="other">8.30</price>
+          <price role="student">5.70</price>
+        </meal>
       </category>
       <category name="Pastabar">
-        <meal>
-          <name>Farfalle (GlW), Blattspinat-Tomaten-Frischkäsesoße</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
         <meal>
           <name>Farfalle (GlW), Linsen in pikanter Tomatensoße</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+        <meal>
+          <name>Farfalle (GlW), Blattspinat-Tomaten-Frischkäsesoße</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
