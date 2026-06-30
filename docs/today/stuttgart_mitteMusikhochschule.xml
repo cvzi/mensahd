@@ -3,21 +3,21 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2026-06-29">
+    <day date="2026-06-30">
       <category name="Vorspeise">
         <meal>
-          <name>Petersiliensuppe</name>
+          <name>Grießklößchensuppe</name>
+          <note>Ei</note>
           <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 169.2 kj / 40.0 kcal 
-Fett: 2.6 g 
- - davon ges. FS: 1.6 g 
-Kohlenhydrate: 3.5 g 
- - davon Zucker: 0.4 g 
-Eiweiß: 0.7 g 
-Salz: 0.5 g</note>
+Brennwert: 224.1 kj / 54.0 kcal 
+Fett: 3.6 g 
+ - davon ges. FS: 1.9 g 
+Kohlenhydrate: 3.9 g 
+ - davon Zucker: 0.3 g 
+Eiweiß: 1.5 g 
+Salz: 0.2 g</note>
           <note>Sellerie</note>
-          <note>Soja</note>
           <note>Weizen</note>
           <note>vegetarisch</note>
           <price role="employee">1.39</price>
@@ -27,17 +27,16 @@ Salz: 0.5 g</note>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Hirsecurry-Pfanne mit Soja-Würzdip</name>
+          <name>Chili sin Carne und Reis</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 430.2 kj / 103.0 kcal 
-Fett: 16.6 g 
- - davon ges. FS: 1.4 g 
-Kohlenhydrate: 11.7 g 
- - davon Zucker: 2.1 g 
-Eiweiß: 2.7 g 
-Salz: 0.3 g</note>
+Brennwert: 543.5 kj / 130.0 kcal 
+Fett: 1.8 g 
+ - davon ges. FS: 0.6 g 
+Kohlenhydrate: 20.4 g 
+ - davon Zucker: 2.9 g 
+Eiweiß: 7.6 g 
+Salz: 0.5 g</note>
           <note>Sellerie</note>
-          <note>Senf</note>
           <note>Soja</note>
           <note>vegan</note>
           <price role="employee">5.99</price>
@@ -47,21 +46,56 @@ Salz: 0.3 g</note>
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Hähnchenbrustfilet mit Curry-Kokos-Sauce und Reis</name>
-          <note>Geflügel</note>
+          <name>Schweinebraten mit Pilzsauce und Spätzle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 522.5 kj / 125.0 kcal 
-Fett: 3.1 g 
- - davon ges. FS: 1.8 g 
-Kohlenhydrate: 16.9 g 
- - davon Zucker: 1.1 g 
-Eiweiß: 7.8 g 
-Salz: 0.6 g</note>
-          <note>Sellerie</note>
+Brennwert: 777.1 kj / 186.0 kcal 
+Fett: 11.7 g 
+ - davon ges. FS: 4.4 g 
+Kohlenhydrate: 11.8 g 
+ - davon Zucker: 0.4 g 
+Eiweiß: 11.6 g 
+Salz: 1.6 g</note>
+          <note>Schwein</note>
           <note>Weizen</note>
-          <price role="employee">7.80</price>
-          <price role="other">8.30</price>
-          <price role="student">4.80</price>
+          <price role="employee">8.20</price>
+          <price role="other">8.70</price>
+          <price role="student">5.20</price>
+        </meal>
+        <meal>
+          <name>Ofenkartoffel mit veganem Sour Creme Dip und Salat</name>
+          <note>Hafer</note>
+          <note>Nährwerte pro 100 g 
+Brennwert: 367.7 kj / 88.0 kcal 
+Fett: 3.7 g 
+ - davon ges. FS: 0.3 g 
+Kohlenhydrate: 11.3 g 
+ - davon Zucker: 0.8 g 
+Eiweiß: 1.9 g 
+Salz: 0.6 g</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Soja</note>
+          <note>vegan</note>
+          <price role="employee">6.80</price>
+          <price role="other">7.30</price>
+          <price role="student">3.80</price>
+        </meal>
+      </category>
+      <category name="Burger">
+        <meal>
+          <name>Hamburger</name>
+          <note>Ei</note>
+          <note>Rind</note>
+          <note>Senf</note>
+          <note>Sesam</note>
+          <note>Weizen</note>
+          <note>mit Konservierungsstoffen</note>
+          <note>mit Süßungsmitteln</note>
+          <price role="employee">8.90</price>
+          <price role="other">9.40</price>
+          <price role="student">5.90</price>
         </meal>
       </category>
       <category name="Buffet">
@@ -95,34 +129,20 @@ Salz: 1.1 g</note>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Chinagemüse</name>
+          <name>Karotten-Erbsen-Gemüse</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 183.3 kj / 44.0 kcal 
-Fett: 1.9 g 
- - davon ges. FS: 0.1 g 
-Kohlenhydrate: 5.2 g 
- - davon Zucker: 4.6 g 
-Eiweiß: 3.6 g 
-Salz: 1.2 g</note>
-          <note>Soja</note>
+Brennwert: 354.0 kj / 85.0 kcal 
+Fett: 4.3 g 
+ - davon ges. FS: 2.1 g 
+Kohlenhydrate: 6.4 g 
+ - davon Zucker: 4.0 g 
+Eiweiß: 3.2 g 
+Salz: 0.4 g</note>
+          <note>Sellerie</note>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="other">1.79</price>
           <price role="student">0.99</price>
-        </meal>
-        <meal>
-          <name>Pommes frites</name>
-          <note>Nährwerte pro 100 g 
-Brennwert: 869.7 kj / 208.0 kcal 
-Fett: 18.8 g 
- - davon ges. FS: 3.9 g 
-Kohlenhydrate: 27.2 g 
- - davon Zucker: 0.7 g 
-Eiweiß: 3.2 g 
-Salz: 0.7 g</note>
-          <price role="employee">1.69</price>
-          <price role="other">2.09</price>
-          <price role="student">1.29</price>
         </meal>
         <meal>
           <name>Reis</name>
@@ -140,20 +160,33 @@ Salz: 0.4 g</note>
           <price role="student">1.09</price>
         </meal>
         <meal>
-          <name>Kartoffelsalat</name>
+          <name>Spätzle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 317.1 kj / 76.0 kcal 
-Fett: 5.0 g 
- - davon ges. FS: 0.4 g 
-Kohlenhydrate: 12.8 g 
- - davon Zucker: 1.1 g 
-Eiweiß: 1.8 g 
-Salz: 0.4 g</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>vegan</note>
+Brennwert: 743.0 kj / 177.0 kcal 
+Fett: 5.2 g 
+ - davon ges. FS: 1.6 g 
+Kohlenhydrate: 25.8 g 
+ - davon Zucker: 0.2 g 
+Eiweiß: 6.6 g 
+Salz: 1.8 g</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.69</price>
+          <price role="other">2.09</price>
+          <price role="student">1.29</price>
+        </meal>
+        <meal>
+          <name>Gebackene Kartoffelscheiben</name>
+          <note>Nährwerte pro 100 g 
+Brennwert: 660.0 kj / 158.0 kcal 
+Fett: 14.0 g 
+ - davon ges. FS: 1.3 g 
+Kohlenhydrate: 21.0 g 
+ - davon Zucker: 0.5 g 
+Eiweiß: 2.5 g 
+Salz: 0.6 g</note>
           <price role="employee">1.69</price>
           <price role="other">2.09</price>
           <price role="student">1.29</price>
@@ -176,34 +209,34 @@ Salz: 0.1 g</note>
       </category>
       <category name="Dessert">
         <meal>
-          <name>Mousse mit Mango- Joghurt- Geschmack</name>
-          <note>Ei</note>
-          <note>Haselnüsse</note>
+          <name>Käsesahne Creme</name>
           <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 623.9 kj / 149.0 kcal 
-Fett: 4.7 g 
- - davon ges. FS: 3.4 g 
-Kohlenhydrate: 21.2 g 
- - davon Zucker: 16.3 g 
-Eiweiß: 4.6 g 
-Salz: 0.2 g</note>
+Brennwert: 517.9 kj / 124.0 kcal 
+Fett: 2.4 g 
+ - davon ges. FS: 1.8 g 
+Kohlenhydrate: 17.0 g 
+ - davon Zucker: 14.4 g 
+Eiweiß: 7.3 g 
+Salz: 0.1 g</note>
+          <note>vegetarisch</note>
           <price role="employee">1.69</price>
           <price role="other">2.09</price>
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Erdbeerquark</name>
-          <note>Milch und Laktose</note>
+          <name>Veganer Grießpudding mit Pfirsich</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 391.1 kj / 93.0 kcal 
-Fett: 2.4 g 
- - davon ges. FS: 1.5 g 
-Kohlenhydrate: 10.0 g 
- - davon Zucker: 9.8 g 
-Eiweiß: 6.6 g 
+Brennwert: 272.3 kj / 65.0 kcal 
+Fett: 1.5 g 
+ - davon ges. FS: 0.3 g 
+Kohlenhydrate: 9.7 g 
+ - davon Zucker: 5.0 g 
+Eiweiß: 2.5 g 
 Salz: 0.1 g</note>
-          <note>vegetarisch</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>vegan</note>
           <price role="employee">1.69</price>
           <price role="other">2.09</price>
           <price role="student">1.29</price>
