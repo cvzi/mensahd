@@ -25,18 +25,6 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Hähnchen Crossies (GlW), BBQ Soße , Pommes Frites</name>
-          <note>Geflügel</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Süßungsmittel</note>
-          <price role="employee">6.35</price>
-          <price role="other">7.65</price>
-          <price role="student">5.05</price>
-        </meal>
-        <meal>
           <name>Gebackenes Alaska Seelachsfilet (Fi,GlW), Tatarensoße , Schnittlauchkartoffeln</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -49,6 +37,18 @@
           <price role="employee">5.85</price>
           <price role="other">7.15</price>
           <price role="student">4.55</price>
+        </meal>
+        <meal>
+          <name>Hähnchen Crossies (GlW), BBQ Soße , Pommes Frites</name>
+          <note>Geflügel</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">6.35</price>
+          <price role="other">7.65</price>
+          <price role="student">5.05</price>
         </meal>
       </category>
       <category name="CampusSpezial">
@@ -63,15 +63,31 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Eliche (GlW), Gorgonzola- Hartkäsesoße, gerösteten Haselnüssen und Basilikum (Mi,Sl,NHa)</name>
+          <name>Vegane Bärlauchsoße mit Spargel (1,So,Sf,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
         </meal>
         <meal>
-          <name>Eliche (GlW), Vegane Bärlauchsoße mit Spargel (1,So,Sf,GlW)</name>
+          <name>Süßkartoffelwürfel gebacken</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+        <meal>
+          <name>Eliche (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+        <meal>
+          <name>Gorgonzola- Hartkäsesoße, gerösteten Haselnüssen und Basilikum (Mi,Sl,NHa)</name>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
@@ -79,7 +95,7 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>gerösteter Blumenkohl , frisches Gemüse aus dem Wok , mediterranes Gemüse , Süßkartoffelwürfel gebacken</name>
+          <name>gerösteter Blumenkohl , frisches Gemüse aus dem Wok , mediterranes Gemüse , Zartweizen mit Gemüse (Sl,GlW)</name>
           <note>Geschwärzt</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Vegan</note>
@@ -128,6 +144,16 @@
       </category>
       <category name="CampusVital">
         <meal>
+          <name>Madras Curry mit Kichererbsen und Blumenkohl , Basmatireis</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.50</price>
+          <price role="other">5.80</price>
+          <price role="student">3.20</price>
+        </meal>
+        <meal>
           <name>Hühnchen in Kokos Soße , Sesammöhrchen , Basmatireis</name>
           <note>Geflügel</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -138,33 +164,23 @@
           <price role="other">7.75</price>
           <price role="student">5.15</price>
         </meal>
-        <meal>
-          <name>Madras Curry mit Kichererbsen und Blumenkohl , Basmatireis</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">4.50</price>
-          <price role="other">5.80</price>
-          <price role="student">3.20</price>
-        </meal>
       </category>
       <category name="Pastabar">
+        <meal>
+          <name>Penne (GlW), Aglio e olio mit Tomate und Knoblauch in Olivenöl</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
         <meal>
           <name>Penne (GlW), Rinderhackfleisch in Sahnesoße mit Kräutern</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Rind</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
-        <meal>
-          <name>Penne (GlW), Aglio e olio mit Tomate und Knoblauch in Olivenöl</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
@@ -230,18 +246,18 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Farfalle (GlW), Sojahack in einer Paprika Cremesoße (Sojaprotein)</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Farfalle (GlW), Austernpilze in Sahnesoße (Mi,Sl,GlW,GlG)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
         </meal>
         <meal>
-          <name>Farfalle (GlW), Austernpilze in Sahnesoße (Mi,Sl,GlW,GlG)</name>
-          <note>Vegetarisch</note>
+          <name>Farfalle (GlW), Sojahack in einer Paprika Cremesoße (Sojaprotein)</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>

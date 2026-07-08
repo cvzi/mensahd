@@ -44,10 +44,11 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Quiche mit frischem Lauch (Ei,Mi,Sw,GlW), Blue Cheese Dip , Rucola-Radieschen-Salat zum Grill</name>
+          <name>Quiche mit frischem Lauch (Ei,Mi,Sw,GlW), Kräuterquark , Rucola-Radiccio-Salat</name>
           <note>Geschwefelt</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegetarisch</note>
           <note>mit Antioxidationsmittel</note>
           <price role="employee">6.80</price>
           <price role="other">8.10</price>
@@ -56,7 +57,15 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Eliche (GlW), Vegane Bärlauchsoße mit Spargel (1,So,Sf,GlW)</name>
+          <name>Spätzle (Ei,GlW)</name>
+          <note>Vegetarisch</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+        <meal>
+          <name>Pasta nach Wahl (GlW), Vegane Bärlauchsoße mit Spargel (1,So,Sf,GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.15</price>
@@ -64,7 +73,9 @@
           <price role="student">0.90</price>
         </meal>
         <meal>
-          <name>Eliche (GlW), Gorgonzola- Hartkäsesoße, gerösteten Haselnüssen und Basilikum (Mi,Sl,NHa)</name>
+          <name>Pasta nach Wahl (GlW), Gorgonzolasoße mit Basilikum</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
@@ -72,10 +83,12 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>gerösteter Blumenkohl , frisches Gemüse aus dem Wok , Süßkartoffelwürfel gebacken</name>
+          <name>gerösteter Blumenkohl , gebratener Pak Choi mit Tofu</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Farbstoff</note>
           <note>mit Konservierungsstoff</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
@@ -134,20 +147,20 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Penne (GlW), Aglio e olio mit Tomate und Knoblauch in Olivenöl</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
-        <meal>
           <name>Penne (GlW), Rinderhackfleisch in Sahnesoße mit Kräutern</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Rind</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+        <meal>
+          <name>Penne (GlW), Aglio e olio mit Tomate und Knoblauch in Olivenöl</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
@@ -204,18 +217,18 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Eliche (GlW), Sojahack in einer Paprika Cremesoße (Sojaprotein)</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Farfalle (GlW), Austernpilze in Sahnesoße (Mi,Sl,GlW,GlG)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
         </meal>
         <meal>
-          <name>Farfalle (GlW), Austernpilze in Sahnesoße (Mi,Sl,GlW,GlG)</name>
-          <note>Vegetarisch</note>
+          <name>Eliche (GlW), Sojahack in einer Paprika Cremesoße (Sojaprotein)</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
