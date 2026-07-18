@@ -3,10 +3,113 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2026-07-17">
+    <day date="2026-07-20">
+      <category name="CampusVital">
+        <meal>
+          <name>3 Kartoffeltaschen mit Tomaten-Mozzarellafüllung , Kräuterquark , gemischter Salat</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.50</price>
+          <price role="student">4.90</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Hähnchen Crossies (GlW), Gemüsepfanne in pikanter Tandoorisoße (Sl,Sf,GlW), Reis</name>
+          <note>Geflügel</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">7.45</price>
+          <price role="other">8.75</price>
+          <price role="student">6.15</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2026-07-21">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Gnocchi (GlW), Bohnen-Tomaten-Gemüse, Salsa Verde</name>
+          <note>Geschwefelt</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">5.25</price>
+          <price role="other">6.55</price>
+          <price role="student">3.95</price>
+        </meal>
+      </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Putengulasch (Mi,Sl,GlW), Salzkartoffeln</name>
+          <note>Geflügel</note>
+          <price role="employee">6.00</price>
+          <price role="other">7.30</price>
+          <price role="student">4.70</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2026-07-22">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Rostbratwurst , Sauerkraut (vegan) , hausgemachtes Kartoffelpüree</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Neu</note>
+          <note>Rind</note>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>mit Geschmacksverstärker</note>
+          <note>mit Phosphat</note>
+          <price role="employee">5.10</price>
+          <price role="other">6.40</price>
+          <price role="student">3.80</price>
+        </meal>
+        <meal>
+          <name>Soja-Bolognese mit Gemüse (Sojaprotein) , Spaghetti (GlW)</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.00</price>
+          <price role="other">6.30</price>
+          <price role="student">3.70</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2026-07-23">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Geflügelcurry mit Mandeln (Mi,Sl,Sf,GlW,GlG,NMa), Basmatireis</name>
+          <note>Geflügel</note>
+          <price role="employee">5.00</price>
+          <price role="other">6.30</price>
+          <price role="student">3.70</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Linsen Hirsebällchen (GlW,GlH), Bulgur Tomaten Salat (3,5,Sw,GlW), Petersilienpesto , Rucola</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.50</price>
+          <price role="student">4.90</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2026-07-24">
       <category name="Pottkieker">
         <meal>
-          <name>Chili con Corn (Sl,GlD), Basmatireis</name>
+          <name>Gemüsegulasch , Zartweizen (GlW)</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">3.50</price>
@@ -14,16 +117,14 @@
           <price role="student">2.20</price>
         </meal>
       </category>
-      <category name="CampusWorld">
+      <category name="CampusSpezial">
         <meal>
-          <name>Quinoa-Jalapeno-Pot, Tortillachips, Chili-Cheese-Sauce</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <name>Tortellini mit Spinat Ricottafüllung (Ei,Mi,GlW), Tomatensoße</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Vegetarisch</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">5.55</price>
-          <price role="other">6.85</price>
-          <price role="student">4.25</price>
+          <price role="employee">4.60</price>
+          <price role="other">5.90</price>
+          <price role="student">3.30</price>
         </meal>
       </category>
     </day>
