@@ -3,61 +3,10 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2026-07-23">
-      <category name="CampusVital">
-        <meal>
-          <name>Linsen Hirsebällchen (GlW,GlH), Bulgur Tomaten Salat (3,5,Sw,GlW), Petersilienpesto , Rucola</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.20</price>
-          <price role="other">7.50</price>
-          <price role="student">4.90</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Gebackenes Panko - Chicken (3,GlW), Lo mein - würzige Sesamnudeln mit Edamame und Paprika (1,2,So,Sl,Se,Sw,GlW)</name>
-          <note>Geflügel</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">7.80</price>
-          <price role="other">9.10</price>
-          <price role="student">6.50</price>
-        </meal>
-        <meal>
-          <name>Gegrillter Ingwer-Tofu (2,So,Se,Sw,GlW), Lo mein - würzige Sesamnudeln mit Edamame und Paprika (1,2,So,Sl,Se,Sw,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.40</price>
-          <price role="other">7.70</price>
-          <price role="student">5.10</price>
-        </meal>
-      </category>
-      <category name="Pastabar">
-        <meal>
-          <name>Pasta des Tages (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
-      </category>
-      <category name="Gemüsebar">
-        <meal>
-          <name>Philturm –Veggi-SB-Counter, riesige Auswahl an verschiedenen veganen und vegetarischen Spezialitäten</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
-      </category>
-    </day>
     <day date="2026-07-24">
       <category name="CampusWorld">
         <meal>
-          <name>All in one Pot: Vegane Köfte (Soja und Weizenprotein) (So,Sw,GlW,GlG), Vollkornreis, Tomatensalat mit Bohnen, Petersilie , Knoblauchdip</name>
+          <name>All in one Pot: Vegane Köfte (Soja und Weizenprotein) (So,Sw,GlW,GlG), Tomatenbulgur (GlW), Tomatensalat mit Bohnen, Petersilie , Knoblauchdip</name>
           <note>Geschwefelt</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Senf und Senferzeugnisse</note>
@@ -69,7 +18,7 @@
           <price role="student">4.95</price>
         </meal>
         <meal>
-          <name>Pad Prik King Tao Huu - Rotes Curry mit Bohnen ,Tofu und Cashewkernen (So,Sw,NCa), Basmatireis</name>
+          <name>Pad Prik King Tao Huu - Rotes Curry mit Bohnen ,Tofu und Cashewkernen (So,Se,Sw,NCa), Basmatireis</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">6.50</price>
@@ -79,7 +28,7 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta des Tages (GlW)</name>
+          <name>Pasta mit Auberginen in Tomaten-Cous Cous Pesto (2,5,Sl,Sw,GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.15</price>
@@ -152,6 +101,19 @@
           <price role="student">2.20</price>
         </meal>
       </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Süßkartoffel-Gnocchi mit geröstetem Blumenkohl und Brokkoli , Sojajoghurt-Kräuter Dip</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">5.10</price>
+          <price role="other">6.40</price>
+          <price role="student">3.80</price>
+        </meal>
+      </category>
       <category name="CampusWorld">
         <meal>
           <name>Levante Burger mit Knusperschnitzel, geschmorten Aubergine, Hummus und Minzsalat (3,Mi,Se,Sw,GlW), Pommes Frites</name>
@@ -200,6 +162,16 @@
           <price role="student">2.20</price>
         </meal>
       </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Pennette in Tomatensoße mit Gemüsebällchen (Ei,Sw,GlW)</name>
+          <note>Vegetarisch</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.25</price>
+          <price role="other">5.55</price>
+          <price role="student">2.95</price>
+        </meal>
+      </category>
       <category name="CampusWorld">
         <meal>
           <name>Cremige Udonnudeln mit Kokos - Currysauce, geschmortem Blumenkohl, Koriander (En,Se,Sw,GlW)</name>
@@ -208,6 +180,112 @@
           <price role="employee">6.85</price>
           <price role="other">8.15</price>
           <price role="student">5.55</price>
+        </meal>
+      </category>
+      <category name="Pastabar">
+        <meal>
+          <name>Pasta des Tages (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+      </category>
+      <category name="Gemüsebar">
+        <meal>
+          <name>Philturm –Veggi-SB-Counter, riesige Auswahl an verschiedenen veganen und vegetarischen Spezialitäten</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2026-07-30">
+      <category name="Pottkieker">
+        <meal>
+          <name>Tofu-Gemüse-Topf</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.50</price>
+          <price role="other">4.80</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Gebratene Pierogi mit Kartoffel-Quarkfüllung (1,Ei,Mi,Sl,GlW), Dill-Quark , Rote Beete Salat</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">5.45</price>
+          <price role="other">6.75</price>
+          <price role="student">4.15</price>
+        </meal>
+        <meal>
+          <name>Kross gebackenes Panko-Chicken (3,GlW), Sprossengemüse (2,So,Se,GlW), Spicy Pepper Sauce , Basmatireis</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <price role="employee">7.80</price>
+          <price role="other">9.10</price>
+          <price role="student">6.50</price>
+        </meal>
+        <meal>
+          <name>gebackener Panko - Tofu (2,So,GlW), Sprossengemüse (2,So,Se,GlW), Spicy Pepper Sauce , Basmatireis</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">6.40</price>
+          <price role="other">7.70</price>
+          <price role="student">5.10</price>
+        </meal>
+      </category>
+      <category name="Pastabar">
+        <meal>
+          <name>Pasta des Tages (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+      </category>
+      <category name="Gemüsebar">
+        <meal>
+          <name>Philturm –Veggi-SB-Counter, riesige Auswahl an verschiedenen veganen und vegetarischen Spezialitäten</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2026-07-31">
+      <category name="Pottkieker">
+        <meal>
+          <name>Kichererbsencurry , pikantes Möhrengemüse</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.50</price>
+          <price role="other">4.80</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Briocheburger mit Blumenkohlbratling überbacken mit Cheddar,Römersalat,Chilli Cheesesauce (1,2,Ei,Mi,GlW), Pommes Frites</name>
+          <note>Vegetarisch</note>
+          <price role="employee">7.20</price>
+          <price role="other">8.50</price>
+          <price role="student">5.90</price>
         </meal>
       </category>
       <category name="Pastabar">
