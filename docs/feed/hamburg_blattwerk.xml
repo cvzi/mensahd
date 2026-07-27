@@ -27,6 +27,13 @@
       </category>
       <category name="CampusWorld">
         <meal>
+          <name>Nudelsalat mit Tomate, Melanzane-Bällchen, Cherrytomaten und Rucola (3,5,Mi,Sw,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">6.05</price>
+          <price role="other">7.35</price>
+          <price role="student">4.75</price>
+        </meal>
+        <meal>
           <name>Gnocchi mit Tomaten Dattelsoße mit gebratenen Auberginen (Sl,Sw,GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -37,14 +44,7 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Tortellini mit Käsefüllung (Mi,GlW), Zucchini und Walnüssen in Sahnesoße (Mi,GlW,GlG,NWa)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
-        <meal>
-          <name>Farfalle (GlW), Tomaten- Gemüsesoße mit Auberginen, Zucchini und Kapern</name>
+          <name>Pasta (GlW), Tomaten- Gemüsesoße mit Auberginen, Zucchini und Kapern</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -52,12 +52,20 @@
           <price role="other">1.40</price>
           <price role="student">0.90</price>
         </meal>
+        <meal>
+          <name>Tortellini mit Käsefüllung (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Kohlrabi-Bärlauch Gemüse , Erbsen , Prinzeßgemüse, Blumenkohl, Chili-Kartoffeln aus dem Ofen</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Broccoli mit Sesam , Erbsen , Prinzeßgemüse, Blumenkohl, Chili-Kartoffeln aus dem Ofen</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>mensaVital</note>
           <note>mit Farbstoff</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
@@ -126,12 +134,63 @@
       </category>
     </day>
     <day date="2026-07-29">
+      <category name="CampusVital">
+        <meal>
+          <name>Südstaaten Jambalaja Kreolisches Reisgericht mit Bohnen und Gemüse</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.50</price>
+          <price role="other">5.80</price>
+          <price role="student">3.20</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>veganer Grillteller (Soja, Erbsen und Weizenprotein) (2,So,Sw,GlW,GlG), Ajvar Dip , Weißkrautsalat , Pommes Frites</name>
+          <note>Geschwefelt</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">7.15</price>
+          <price role="other">8.45</price>
+          <price role="student">5.85</price>
+        </meal>
+      </category>
       <category name="Pastabar">
+        <meal>
+          <name>Bunte Fusilli (GlW), Tomaten-Sahnesoße mit Zucchiniwürfel</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
         <meal>
           <name>vegane Schupfnudeln (GlW), Tomatensoße mit dicken Bohnen und Hirtenkäse</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Vegetarisch</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+      </category>
+      <category name="Gemüsebar">
+        <meal>
+          <name>mediterranes Gemüse , Sesammöhrchen , Erbsen-Mais Gemüse , gerösteter Blumenkohl , Herzoginkartoffeln</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Geschwärzt</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>mit Farbstoff</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
