@@ -3,50 +3,6 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2026-07-29">
-      <category name="Pottkieker">
-        <meal>
-          <name>Indische Tomaten-Linsensuppe (Sf,Sw,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">3.50</price>
-          <price role="other">4.80</price>
-          <price role="student">2.20</price>
-        </meal>
-      </category>
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Paniertes Schweineschnitzel (GlW), Bratkartoffeln, Gurkensalat, Zitrone</name>
-          <note>Schwein</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.20</price>
-          <price role="other">7.50</price>
-          <price role="student">4.90</price>
-        </meal>
-      </category>
-      <category name="Pastabar">
-        <meal>
-          <name>Farfalle (GlW), Gorgonzola- Hartkäsesoße, gerösteten Haselnüssen und Basilikum (Mi,Sl,NHa)</name>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
-      </category>
-      <category name="Gemüsebar">
-        <meal>
-          <name>Rotes Gemüsecurry mit Bohnen und Erbsen (2,So,Sw,GlW), Broccoli, Blumenkohl, Zucchini, Rosmarinkartoffeln, Kartoffelgratin mit Sonnenblumenhack</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegetarisch</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
-      </category>
-    </day>
     <day date="2026-07-30">
       <category name="Pottkieker">
         <meal>
@@ -64,7 +20,6 @@
         <meal>
           <name>Rindfleischfrikadelle (Ei,GlW), Rahmsoße , Erbsen- Karotten Gemüse , hausgemachtes Kartoffelpüree</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Neu</note>
           <note>Rind</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <price role="employee">6.85</price>
@@ -74,7 +29,7 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Penne (GlW), verschiedene Gemüse in Tomatensoße</name>
+          <name>Farfalle (GlW), verschiedene Gemüse in Tomatensoße</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -85,9 +40,10 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Fingermöhrchen</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>gebratene Paprika , gebratene Auberginen , Orientalisches Linsengemüse , Broccoli in einer Gorgonzola- Sahnesoße , Röstkartoffeln</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
@@ -153,24 +109,28 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Caesars Salad mit Hähnchenbrust und Baguette (3,8,Ei,Mi,Sf,Sw,GlW)</name>
-          <note>Geflügel</note>
-          <price role="employee">7.20</price>
-          <price role="other">8.50</price>
-          <price role="student">5.90</price>
-        </meal>
-        <meal>
-          <name>Rostbratwurst</name>
+          <name>Rostbratwurst , Bayrisch Kraut , hausgemachtes Kartoffelpüree , Senf</name>
+          <note>Geschwefelt</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Neu</note>
           <note>Rind</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Schwein</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Senf und Senferzeugnisse</note>
+          <note>mit Antioxidationsmittel</note>
           <note>mit Geschmacksverstärker</note>
           <note>mit Phosphat</note>
           <price role="employee">5.10</price>
           <price role="other">6.40</price>
           <price role="student">3.80</price>
+        </meal>
+        <meal>
+          <name>Caesars Salad mit Hähnchenbrust und Baguette (3,8,Ei,Mi,Sf,Sw,GlW)</name>
+          <note>Geflügel</note>
+          <price role="employee">7.20</price>
+          <price role="other">8.50</price>
+          <price role="student">5.90</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -298,8 +258,13 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>gebratene Zucchini</name>
+          <name>gebratene Zucchini , Blumenkohl, Broccoli, Kartoffelgratin mit Sonnenblumenhack</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegetarisch</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
@@ -346,6 +311,50 @@
       <category name="Gemüsebar">
         <meal>
           <name>Spitzkohl</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2026-08-07">
+      <category name="Pottkieker">
+        <meal>
+          <name>Chili con Corn (Sl,GlD), Basmatireis</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.50</price>
+          <price role="other">4.80</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Linsen Hirsebällchen (GlW,GlH), orientalischer Bulgursalat mit Cranberries (Sl,GlW), veganes Tzatziki , Frühlingslauch</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.35</price>
+          <price role="other">7.65</price>
+          <price role="student">5.05</price>
+        </meal>
+      </category>
+      <category name="Pastabar">
+        <meal>
+          <name>Penne (GlW), Spinat-Erdnusssoße (2,En,So,Sl,Sw,GlW,NMa)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+      </category>
+      <category name="Gemüsebar">
+        <meal>
+          <name>Brechbohne</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.15</price>
