@@ -6,21 +6,6 @@
     <day date="2026-08-04">
       <category name="Menü">
         <meal>
-          <name>Hähnchenbrust in Parmesanpanade (Mi,GlW)</name>
-          <note>Geflügel</note>
-          <price role="employee">3.85</price>
-          <price role="other">4.40</price>
-          <price role="student">3.50</price>
-        </meal>
-        <meal>
-          <name>Paniertes Schweineschnitzel (GlW)</name>
-          <note>Schwein</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">2.75</price>
-          <price role="other">3.15</price>
-          <price role="student">2.50</price>
-        </meal>
-        <meal>
           <name>Ägyptische Falafel-Bällchen (GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -36,10 +21,26 @@
           <price role="other">3.15</price>
           <price role="student">2.50</price>
         </meal>
+        <meal>
+          <name>Paniertes Schweineschnitzel (GlW)</name>
+          <note>Schwein</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">2.75</price>
+          <price role="other">3.15</price>
+          <price role="student">2.50</price>
+        </meal>
+        <meal>
+          <name>Hähnchenbrust in Parmesanpanade (Mi,GlW)</name>
+          <note>Geflügel</note>
+          <price role="employee">3.85</price>
+          <price role="other">4.40</price>
+          <price role="student">3.50</price>
+        </meal>
       </category>
       <category name="Pottkieker">
         <meal>
-          <name>Blumenkohl Korma, Reis</name>
+          <name>pikanter Kartoffel-Bohneneintopf</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">3.50</price>
@@ -65,9 +66,8 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta des Tages (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Pasta mit Mais,Cherrytomaten in Pestorahm (Mi,Sl,GlW,GlG)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
@@ -97,17 +97,6 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Unsere vegane "ExtraVurst - CampusStyle" , mit Curry-Spezial-Sauce , oder Curry-Delikant-Sauce, Pommes Frites</name>
-          <note>Geschwefelt</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.20</price>
-          <price role="other">7.50</price>
-          <price role="student">4.90</price>
-        </meal>
-        <meal>
           <name>Unsere "ExtraWurst - CampusStyle" , mit Curry-Spezial-Sauce , oder Curry-Delikant-Sauce, Pommes Frites</name>
           <note>Geschwefelt</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
@@ -116,6 +105,17 @@
           <note>Senf und Senferzeugnisse</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Phosphat</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.50</price>
+          <price role="student">4.90</price>
+        </meal>
+        <meal>
+          <name>Unsere vegane "ExtraVurst - CampusStyle" , mit Curry-Spezial-Sauce , oder Curry-Delikant-Sauce, Pommes Frites</name>
+          <note>Geschwefelt</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">6.20</price>
           <price role="other">7.50</price>
           <price role="student">4.90</price>
@@ -143,17 +143,6 @@
       </category>
     </day>
     <day date="2026-08-06">
-      <category name="Pottkieker">
-        <meal>
-          <name>Grünes Curry mit Kichererbsen, Fenchel und Paprika , Kurkumareis</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">3.50</price>
-          <price role="other">4.80</price>
-          <price role="student">2.20</price>
-        </meal>
-      </category>
       <category name="CampusWorld">
         <meal>
           <name>Gebackenes Panko - Chicken (3,GlW), Spicy Lao-Gan-Ma Mienudeln mit Blattspinat,Erdnüssen und Koriander (1,2,En,So,Sl,Se,Sw,GlW)</name>
@@ -170,47 +159,6 @@
           <price role="employee">6.80</price>
           <price role="other">8.10</price>
           <price role="student">5.50</price>
-        </meal>
-      </category>
-      <category name="Pastabar">
-        <meal>
-          <name>Pasta des Tages (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
-      </category>
-      <category name="Gemüsebar">
-        <meal>
-          <name>Philturm –Veggi-SB-Counter, riesige Auswahl an verschiedenen veganen und vegetarischen Spezialitäten</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
-      </category>
-    </day>
-    <day date="2026-08-07">
-      <category name="Pottkieker">
-        <meal>
-          <name>Chili con Corn (Sl,GlD), Basmatireis</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">3.50</price>
-          <price role="other">4.80</price>
-          <price role="student">2.20</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>WRAP - Veggi-Dönerfleisch mit Gurken,Tomaten und Krautsalat, würzigem Dill-Dip und Röstzwiebeln (3,Ei,Mi,Sw,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">7.20</price>
-          <price role="other">8.50</price>
-          <price role="student">5.90</price>
         </meal>
       </category>
       <category name="Pastabar">
