@@ -3,38 +3,10 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2026-08-05">
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Unsere "ExtraWurst - CampusStyle" , mit Curry-Spezial-Sauce , oder Curry-Delikant-Sauce, Kartoffeltwister (GlW)</name>
-          <note>Geschwefelt</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Schwein</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Phosphat</note>
-          <price role="employee">6.20</price>
-          <price role="other">7.50</price>
-          <price role="student">4.90</price>
-        </meal>
-        <meal>
-          <name>Unsere vegane "ExtraVurst - CampusStyle" , mit Curry-Spezial-Sauce , oder Curry-Delikant-Sauce, Kartoffeltwister (GlW)</name>
-          <note>Geschwefelt</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.20</price>
-          <price role="other">7.50</price>
-          <price role="student">4.90</price>
-        </meal>
-      </category>
-    </day>
     <day date="2026-08-06">
       <category name="Pottkieker">
         <meal>
-          <name>Grünes Curry mit Kichererbsen, Fenchel und Paprika , Kurkumareis</name>
+          <name>Grünes Curry mit Kichererbsen und Paprika , Kurkumareis</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Antioxidationsmittel</note>
@@ -92,6 +64,42 @@
           <price role="student">3.50</price>
         </meal>
       </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Makhloota Curry mit Kidneybohnen, Kichererbsen, Linsen und Gurkentopping , Gemüse Bulgur (Sl,GlW)</name>
+          <note>Neu</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">4.50</price>
+          <price role="other">5.80</price>
+          <price role="student">3.20</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2026-08-11">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Putenschnitzel Piccata Milanese (Ei,Mi,GlW), Tomaten- Basilikumsoße , Spaghetti (GlW)</name>
+          <note>Geflügel</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <price role="employee">5.80</price>
+          <price role="other">7.10</price>
+          <price role="student">4.50</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Asia-Reis-Pot, Sojastreifen, Kimchi- Gurke, Koriander, Erdnüsse, Chilimajo (Sojaprotein) (1,2,3,9,Ei,En,So,Sl,Sf,Se,Sw,GlW)</name>
+          <note>Vegetarisch</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.90</price>
+          <price role="other">6.20</price>
+          <price role="student">3.60</price>
+        </meal>
+      </category>
     </day>
     <day date="2026-08-12">
       <category name="CampusKlassiker">
@@ -102,31 +110,71 @@
           <note>Senf und Senferzeugnisse</note>
           <note>Vegetarisch</note>
           <note>mit Antioxidationsmittel</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.50</price>
-          <price role="student">3.90</price>
+          <price role="employee">6.00</price>
+          <price role="other">7.30</price>
+          <price role="student">4.70</price>
         </meal>
         <meal>
-          <name>Gnocchi (GlW), Hausgemachte Käsesoße mit Wirsing und Chili (Mi,GlW,GlG), Tomatensalat mit Basilikum</name>
-          <note>Geschwefelt</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegetarisch</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.50</price>
-          <price role="student">3.90</price>
+          <name>hausgemachte Kohlroulade, Bratensoße , hausgemachtes Kartoffelpüree</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Rind</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <price role="employee">6.00</price>
+          <price role="other">7.30</price>
+          <price role="student">4.70</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2026-08-13">
+      <category name="CampusVital">
+        <meal>
+          <name>Grüne Gemüsepfanne mit Erdnusssoße (2,En,So,Sw,GlW), Vollkornreis</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.80</price>
+          <price role="other">6.10</price>
+          <price role="student">3.50</price>
         </meal>
         <meal>
-          <name>Gnocchi (GlW), Hausgemachte Käsesoße mit Wirsing und Chili (Mi,GlW,GlG), Tomatensalat mit Basilikum</name>
-          <note>Geschwefelt</note>
+          <name>Gebackenes Alaska Seelachsfilet (Fi,GlW), Tatarensoße , Schnittlauchkartoffeln</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Senf und Senferzeugnisse</note>
-          <note>Vegetarisch</note>
           <note>mit Antioxidationsmittel</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.50</price>
-          <price role="student">3.90</price>
+          <note>mit Farbstoff</note>
+          <note>mit Fisch</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">5.85</price>
+          <price role="other">7.15</price>
+          <price role="student">4.55</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2026-08-14">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Kartoffel-Gemüse-Gulasch mit Taco Chips (2,So,Sl,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.55</price>
+          <price role="other">5.85</price>
+          <price role="student">3.25</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Vegane Bowl mit Crispy Tempeh Balls , Kimchi (2,So,Sw,GlW), Curryreis , Sojajoghurt Dip mit Sesam</name>
+          <note>Lupine und - erzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">7.50</price>
+          <price role="other">8.80</price>
+          <price role="student">6.20</price>
         </meal>
       </category>
     </day>
