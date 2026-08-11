@@ -4,8 +4,61 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2026-08-10">
-      <closed/>
+    <day date="2026-08-11">
+      <category name="Dessert">
+        <meal>
+          <name>Schokoladenpudding mit Vanillesoße</name>
+          <note>Chocolate pudding with vanilla sauce</note>
+          <price role="student">0.90</price>
+          <price role="employee">1.40</price>
+          <price role="other">2.00</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Hausgemachter Mandelkuchen im Glas</name>
+          <note>Homemade almond cake in a jar</note>
+          <price role="student">0.90</price>
+          <price role="employee">1.40</price>
+          <price role="other">2.00</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Grüne Gemüsesuppe mit Haferrahm</name>
+          <note>Green vegetable soup with oat cream</note>
+          <price role="student">0.90</price>
+          <price role="employee">1.40</price>
+          <price role="other">2.00</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Lasagne al forno vom heimischen Rind</name>
+          <note>Lasagne al forno made with local beef</note>
+          <price role="student">0.99</price>
+          <price role="employee">1.35</price>
+          <price role="other">2.00</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Marinierte Mie Nudeln mit Asiagemüse und Mungosprossen</name>
+          <note>Marinated Mie noodles with Asian vegetables and mung bean sprouts</note>
+          <price role="student">0.99</price>
+          <price role="employee">1.35</price>
+          <price role="other">2.00</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Gedämpfter Brokkoli unter Kartoffelkruste in Kräuterrahm</name>
+          <note>Steamed broccoli under a potato crust in herbed cream sauce</note>
+          <price role="student">0.99</price>
+          <price role="employee">1.35</price>
+          <price role="other">2.00</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
