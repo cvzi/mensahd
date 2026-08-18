@@ -4,9 +4,43 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2026-08-18">
+      <category name="Menü">
+        <meal>
+          <name>1 Stück Hähnchenkeule</name>
+          <note>Geflügel</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">2.75</price>
+          <price role="other">3.15</price>
+          <price role="student">2.50</price>
+        </meal>
+        <meal>
+          <name>1 Stück Pastinaken Steckrüben Rösti (Ei,GlW,GlH)</name>
+          <note>Vegetarisch</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">2.20</price>
+          <price role="other">2.50</price>
+          <price role="student">2.00</price>
+        </meal>
+        <meal>
+          <name>5 Stück Kürbis-Falafel</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">2.20</price>
+          <price role="other">2.50</price>
+          <price role="student">2.00</price>
+        </meal>
+        <meal>
+          <name>1 Stück Hähnchenbrust mit Parmesanpanade (Mi,GlW)</name>
+          <note>Geflügel</note>
+          <price role="employee">3.85</price>
+          <price role="other">4.40</price>
+          <price role="student">3.50</price>
+        </meal>
+      </category>
       <category name="Pottkieker">
         <meal>
-          <name>Rotes Gemüsecurry mit Bohnen, Erbsen und Pak Choi (2,So,Sw,GlW), Reis</name>
+          <name>grüne Bohnen mit Kartoffeln und getrockneten Tomaten One-Pot</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">3.50</price>
@@ -16,23 +50,23 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Levante Burger mit Knusperschnitzel, geschmorten Aubergine, Hummus und Minzsalat (3,Mi,Se,Sw,GlW), Pommes Frites</name>
-          <note>Geflügel</note>
-          <price role="employee">7.80</price>
-          <price role="other">9.10</price>
-          <price role="student">6.50</price>
-        </meal>
-        <meal>
           <name>Levante Burger mit gebackenem Rote Beete Patty, geschmorten Aubergine, Hummus und Minzsalat (3,Mi,Se,Sw,GlW), Pommes Frites</name>
           <note>Vegetarisch</note>
           <price role="employee">6.80</price>
           <price role="other">8.10</price>
           <price role="student">5.50</price>
         </meal>
+        <meal>
+          <name>Levante Burger mit Knusperschnitzel, geschmorten Aubergine, Hummus und Minzsalat (3,Mi,Se,Sw,GlW), Pommes Frites</name>
+          <note>Geflügel</note>
+          <price role="employee">7.80</price>
+          <price role="other">9.10</price>
+          <price role="student">6.50</price>
+        </meal>
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta des Tages (GlW)</name>
+          <name>Pasta mit Brechbohnen in Ajvar-Tomatenpesto (GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.15</price>
