@@ -3,10 +3,36 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2026-08-28">
+    <day date="2026-08-31">
+      <category name="CampusVital">
+        <meal>
+          <name>3 Kartoffeltaschen mit Tomaten-Mozzarellafüllung , Kräuterquark , gemischter Salat</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.50</price>
+          <price role="student">4.90</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Hähnchen Crossies (GlW), Gemüsepfanne in pikanter Tandoorisoße (Sl,Sf,GlW), Reis</name>
+          <note>Geflügel</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.85</price>
+          <price role="other">8.15</price>
+          <price role="student">5.55</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2026-09-01">
       <category name="Pottkieker">
         <meal>
-          <name>Chili con Corn (Sl,GlD), Basmatireis</name>
+          <name>Möhren-Tajine mit Soja-Joghurt</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">3.50</price>
@@ -16,14 +42,93 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Omelette , Blattspinat , hausgemachtes Kartoffelpüree</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <name>Hähnchenfilets in Soja Pflaumen Soße , Reis</name>
+          <note>Geflügel</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.85</price>
+          <price role="other">8.15</price>
+          <price role="student">5.55</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2026-09-02">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Rostbratwurst , Sauerkraut (vegan) , hausgemachtes Kartoffelpüree</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Neu</note>
+          <note>Rind</note>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>mit Geschmacksverstärker</note>
+          <note>mit Phosphat</note>
+          <price role="employee">5.10</price>
+          <price role="other">6.40</price>
+          <price role="student">3.80</price>
+        </meal>
+        <meal>
+          <name>Soja-Bolognese mit Gemüse (Sojaprotein) , Spaghetti (GlW)</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.00</price>
+          <price role="other">6.30</price>
+          <price role="student">3.70</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2026-09-03">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Spaghetti (GlW), Bolognese mit Rinderhackfleisch , Hartkäse gerieben</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Rind</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <price role="employee">4.80</price>
+          <price role="other">6.10</price>
+          <price role="student">3.50</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Linsen Hirsebällchen (GlW,GlH), Bulgur Tomaten Salat (3,5,Sw,GlW), Petersilienpesto , Rucola</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.50</price>
+          <price role="student">4.90</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2026-09-04">
+      <category name="Pottkieker">
+        <meal>
+          <name>Gemüsegulasch , Zartweizen (GlW)</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.50</price>
+          <price role="other">4.80</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Gemüse Vollkornbratling (Ei,Sl,GlW), Rahmwirsing (Mi,Sl,GlW), Hausgemachtes Kartoffel-Butterstampf</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Vegetarisch</note>
-          <price role="employee">4.90</price>
-          <price role="other">6.20</price>
-          <price role="student">3.60</price>
+          <price role="employee">6.45</price>
+          <price role="other">7.75</price>
+          <price role="student">5.15</price>
         </meal>
       </category>
     </day>
