@@ -3,25 +3,31 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2026-09-02">
+    <day date="2026-09-03">
       <category name="Menü">
         <meal>
-          <name>1 Stück Hähnchenbrust mit Kokossoße (2,So,Se,GlW)</name>
-          <note>Geflügel</note>
+          <name>7 Stück vegane Köttbullar mit Soße (So,Sl,GlW,GlG)</name>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">2.75</price>
           <price role="other">3.15</price>
           <price role="student">2.50</price>
         </meal>
         <meal>
-          <name>1 Stück Goudaschnitzel (1,Ei,Mi,GlW,GlH)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">2.20</price>
-          <price role="other">2.50</price>
-          <price role="student">2.00</price>
+          <name>1 Stück "ExtraWurst - CampusStyle" mit Currysoße</name>
+          <note>Geschwefelt</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Phosphat</note>
+          <price role="employee">3.85</price>
+          <price role="other">4.40</price>
+          <price role="student">3.50</price>
         </meal>
         <meal>
-          <name>5 Stück Kürbis-Falafel</name>
+          <name>1 Stück Gemüseschnitzel (GlW,GlD)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">2.20</price>
@@ -29,54 +35,15 @@
           <price role="student">2.00</price>
         </meal>
         <meal>
-          <name>1 Stück gebackenes Seelachsfilet (Fi,GlW)</name>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Fisch</note>
-          <price role="employee">3.30</price>
-          <price role="other">3.75</price>
-          <price role="student">3.00</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Cremige Udonnudeln in einer Kokos - Erdnusssauce mit Gemüse, Koriander und Crunch (2,3,En,So,Sl,Sf,Se,Sw,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">7.20</price>
-          <price role="other">8.50</price>
-          <price role="student">5.90</price>
-        </meal>
-      </category>
-      <category name="Pastabar">
-        <meal>
-          <name>Pasta mit Blattspinat in Hirtenkäse in Rahm (Mi,GlW,GlG)</name>
+          <name>3 Stück Kartoffeltaschen Tomate-Mozzarellafüllung</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Vegetarisch</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
+          <price role="employee">2.75</price>
+          <price role="other">3.15</price>
+          <price role="student">2.50</price>
         </meal>
       </category>
-      <category name="Gemüsebar">
-        <meal>
-          <name>Philturm –Veggi-SB-Counter, riesige Auswahl an verschiedenen veganen und vegetarischen Spezialitäten</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
-      </category>
-    </day>
-    <day date="2026-09-03">
       <category name="CampusWorld">
-        <meal>
-          <name>Gebackenes Panko - Chicken (3,GlW), Lo mein - würzige Sesamnudeln mit Edamame und Paprika (1,2,So,Sl,Se,Sw,GlW)</name>
-          <note>Geflügel</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">7.80</price>
-          <price role="other">9.10</price>
-          <price role="student">6.50</price>
-        </meal>
         <meal>
           <name>Gegrillter Ingwer-Tofu (2,So,Se,Sw,GlW), Lo mein - würzige Sesamnudeln mit Edamame und Paprika (1,2,So,Sl,Se,Sw,GlW)</name>
           <note>Vegan</note>
@@ -85,12 +52,18 @@
           <price role="other">7.70</price>
           <price role="student">5.10</price>
         </meal>
+        <meal>
+          <name>Gebackenes Panko - Chicken (3,GlW), Lo mein - würzige Sesamnudeln mit Edamame und Paprika (1,2,So,Sl,Se,Sw,GlW)</name>
+          <note>Geflügel</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">7.80</price>
+          <price role="other">9.10</price>
+          <price role="student">6.50</price>
+        </meal>
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta des Tages (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Pasta mit grünen Bohnen in Tomatenpesto und Käse überbacken (Mi,Sl,GlW,NCa)</name>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
@@ -261,6 +234,41 @@
           <price role="employee">7.80</price>
           <price role="other">9.10</price>
           <price role="student">6.50</price>
+        </meal>
+      </category>
+      <category name="Pastabar">
+        <meal>
+          <name>Pasta des Tages (GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+      </category>
+      <category name="Gemüsebar">
+        <meal>
+          <name>Philturm –Veggi-SB-Counter, riesige Auswahl an verschiedenen veganen und vegetarischen Spezialitäten</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2026-09-11">
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Unsere vegane "ExtraVurst - CampusStyle" , mit Curry-Spezial-Sauce , oder Curry-Delikant-Sauce, Pommes Frites</name>
+          <note>Geschwefelt</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.50</price>
+          <price role="student">4.90</price>
         </meal>
       </category>
       <category name="Pastabar">
