@@ -3,8 +3,31 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2026-09-10">
+    <day date="2026-09-11">
       <category name="Menü">
+        <meal>
+          <name>1 Stück spicy crispy Patty (GlW,GlG)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">2.20</price>
+          <price role="other">2.50</price>
+          <price role="student">2.00</price>
+        </meal>
+        <meal>
+          <name>1 Stück Gemüseschnitzel (GlW,GlD)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">2.20</price>
+          <price role="other">2.50</price>
+          <price role="student">2.00</price>
+        </meal>
+        <meal>
+          <name>1 Stück Milchschnitzel (Ei,Mi,GlW,GlH)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">2.20</price>
+          <price role="other">2.50</price>
+          <price role="student">2.00</price>
+        </meal>
         <meal>
           <name>3 Stück Kartoffeltaschen Tomate-Mozzarellafüllung</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -13,66 +36,7 @@
           <price role="other">3.15</price>
           <price role="student">2.50</price>
         </meal>
-        <meal>
-          <name>1 Stück paniertes Schweineschnitzel (GlW)</name>
-          <note>Schwein</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">2.75</price>
-          <price role="other">3.15</price>
-          <price role="student">2.50</price>
-        </meal>
-        <meal>
-          <name>7 Stück Schwedische Köttbullar mit Rahmsoße (Ei,Mi,Sl,GlW)</name>
-          <note>Rind</note>
-          <note>Schwein</note>
-          <price role="employee">2.75</price>
-          <price role="other">3.15</price>
-          <price role="student">2.50</price>
-        </meal>
       </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>gebackener Panko - Tofu (2,So,GlW), Sprossengemüse (2,So,Se,GlW), Spicy Pepper Sauce , Basmatireis</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">6.40</price>
-          <price role="other">7.70</price>
-          <price role="student">5.10</price>
-        </meal>
-        <meal>
-          <name>Kross gebackenes Panko-Chicken (3,GlW), Sprossengemüse (2,So,Se,GlW), Spicy Pepper Sauce , Basmatireis</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Geflügel</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">7.80</price>
-          <price role="other">9.10</price>
-          <price role="student">6.50</price>
-        </meal>
-      </category>
-      <category name="Pastabar">
-        <meal>
-          <name>Pasta mit Brokkoli in Kräuterrahm (Mi,GlW,GlG)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
-      </category>
-      <category name="Gemüsebar">
-        <meal>
-          <name>Philturm –Veggi-SB-Counter, riesige Auswahl an verschiedenen veganen und vegetarischen Spezialitäten</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
-      </category>
-    </day>
-    <day date="2026-09-11">
       <category name="CampusKlassiker">
         <meal>
           <name>Unsere vegane "ExtraVurst - CampusStyle" , mit Curry-Spezial-Sauce , oder Curry-Delikant-Sauce, Pommes Frites</name>
@@ -88,9 +52,8 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta des Tages (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Pasta mit Brokkoli in Kräuterrahm (Mi,GlW,GlG)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
