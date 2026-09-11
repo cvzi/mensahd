@@ -3,91 +3,10 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2026-09-10">
-      <category name="Pottkieker">
-        <meal>
-          <name>Tofu-Gemüse-Topf , Reis</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">3.50</price>
-          <price role="other">4.80</price>
-          <price role="student">2.20</price>
-        </meal>
-      </category>
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Schweinenacken- Braten mit Senf-Oregano-Kruste , Bratensoße , Gartenbohnen mit Pfifferlingen, Kroketten (GlW)</name>
-          <note>Neu</note>
-          <note>Schwein</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.90</price>
-          <price role="other">8.20</price>
-          <price role="student">5.60</price>
-        </meal>
-      </category>
-      <category name="CampusVital">
-        <meal>
-          <name>All in one Pot: Bulgur, Soja, Weißkohl, Cranberries, Ananas, Asia-Majo, Cashew (Sojaprotein) (2,So,Sl,Sf,Sw,GlW,NCa)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.05</price>
-          <price role="other">7.35</price>
-          <price role="student">4.75</price>
-        </meal>
-      </category>
-      <category name="Pastabar">
-        <meal>
-          <name>Pasta nach Wahl (GlW), Gebratene Hähnchenstreifen in Tandoorisauce (4,Mi,Sl,Sf,Sw,GlW)</name>
-          <note>Geflügel</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
-        <meal>
-          <name>Reis</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
-        <meal>
-          <name>Vegane Austernpilzsoße</name>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
-      </category>
-      <category name="Gemüsebar">
-        <meal>
-          <name>Erbsen-Mais Gemüse , Pastinake- Sellerie- Karotte- Topinambur , Gartenbohnen mit Cherrytomaten, Chili-Kartoffeln aus dem Ofen</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Farbstoff</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
-        <meal>
-          <name>Pasta nach Wahl (GlW), Blattspinat in Käsesauce (Mi,Sl,GlW)</name>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
-      </category>
-    </day>
     <day date="2026-09-11">
       <category name="Pottkieker">
         <meal>
-          <name>Sojageschnetzeltes in Currysoße (Sojaprotein) (So,Sl,Sf,GlW), Reis</name>
+          <name>Sojageschnetzeltes ungarische Art mit Paprikastreifen (Sojaprotein) (So,Sl,Sf,GlW), Reis</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">3.50</price>
@@ -104,10 +23,19 @@
           <price role="other">6.60</price>
           <price role="student">4.00</price>
         </meal>
+        <meal>
+          <name>Hausgemachte karamelisierte Pfannkuchenstreifen mit Mandeln und Rumfrüchten (Ei,Mi,GlW,NMa), Apfelmus</name>
+          <note>Alkohol</note>
+          <note>Vegetarisch</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">5.30</price>
+          <price role="other">6.60</price>
+          <price role="student">4.00</price>
+        </meal>
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Rote Beete Stäbchen (Mi,GlW), Remoulade , Gewürzgurke , Bratkartoffeln</name>
+          <name>Melanzane Bällchen (Mi,GlW), Dipp mit Gurke und Dill , Gewürzgurke , Bratkartoffeln</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
@@ -124,16 +52,33 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Farfalle (GlW), Austernpilze in Sahnesoße (Mi,Sl,GlW,GlG)</name>
-          <note>Vegetarisch</note>
+          <name>Vegane Austernpilzsoße</name>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
         </meal>
         <meal>
-          <name>Farfalle (GlW), Sojahack in einer Paprika Cremesoße (Sojaprotein)</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
+          <name>Pasta nach Wahl (GlW), Sonnenblumenhack-Bolognese (1,So,Sl,Sf,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mensaVital</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+        <meal>
+          <name>Pasta nach Wahl (GlW), Curry-Linsenragout (So,Sl,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+        <meal>
+          <name>Pasta nach Wahl (GlW), Scharfes Veganes Chili mit Kidneybohnen und Mais (2,So,Sl,GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.15</price>
@@ -143,7 +88,8 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Paprikagemüse mit Zwiebeln und Lauch, Broccoli, Gemüsemix Eskorial</name>
+          <name>gerösteter Blumenkohl , Bulgur mit Gemüse und Rosinen (Sl,GlW,NMa), Gemüsemix</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.15</price>
