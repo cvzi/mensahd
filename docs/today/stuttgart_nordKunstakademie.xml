@@ -3,22 +3,20 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2026-09-16">
+    <day date="2026-09-17">
       <category name="Vorspeise">
         <meal>
-          <name>Gemüserahmsuppe</name>
-          <note>Milch und Laktose</note>
+          <name>Weiße Bohnensuppe</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 998.1 kj / 238.0 kcal 
-Fett: 16.0 g 
- - davon ges. FS: 4.3 g 
-Kohlenhydrate: 19.9 g 
- - davon Zucker: 18.2 g 
-Eiweiß: 14.8 g 
-Salz: 3.3 g</note>
+Brennwert: 287.1 kj / 69.0 kcal 
+Fett: 3.4 g 
+ - davon ges. FS: 1.7 g 
+Kohlenhydrate: 5.4 g 
+ - davon Zucker: 0.6 g 
+Eiweiß: 2.7 g 
+Salz: 0.2 g</note>
           <note>Sellerie</note>
-          <note>Soja</note>
-          <note>vegetarisch</note>
+          <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="other">1.79</price>
           <price role="student">0.99</price>
@@ -26,17 +24,19 @@ Salz: 3.3 g</note>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Kürbis-Karotten-Gnocchi-Ragout</name>
+          <name>Linsen und vegane Spätzle</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 466.3 kj / 111.0 kcal 
-Fett: 4.2 g 
- - davon ges. FS: 0.4 g 
-Kohlenhydrate: 3.8 g 
- - davon Zucker: 1.8 g 
-Eiweiß: 2.8 g 
-Salz: 0.4 g</note>
+Brennwert: 385.2 kj / 92.0 kcal 
+Fett: 0.4 g 
+ - davon ges. FS: 0.1 g 
+Kohlenhydrate: 14.2 g 
+ - davon Zucker: 2.0 g 
+Eiweiß: 5.9 g 
+Salz: 0.5 g</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
           <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
           <price role="employee">5.99</price>
           <price role="other">6.49</price>
@@ -45,10 +45,18 @@ Salz: 0.4 g</note>
       </category>
       <category name="Nudelmanufaktur">
         <meal>
-          <name>Conchiglioni mit Champignon-Baby-Blattspinat-Sauce</name>
-          <note>Sellerie</note>
+          <name>Conchiglioni mit Lauch-Sauce</name>
+          <note>Milch und Laktose</note>
+          <note>Nährwerte pro 100 g 
+Brennwert: 747.0 kj / 178.0 kcal 
+Fett: 16.8 g 
+ - davon ges. FS: 10.6 g 
+Kohlenhydrate: 6.0 g 
+ - davon Zucker: 4.1 g 
+Eiweiß: 2.9 g 
+Salz: 0.6 g</note>
           <note>Weizen</note>
-          <note>vegan</note>
+          <note>vegetarisch</note>
           <price role="employee">8.45</price>
           <price role="other">8.95</price>
           <price role="student">5.45</price>
@@ -57,6 +65,41 @@ Salz: 0.4 g</note>
       <category name="Buffet">
         <meal>
           <name>Warmes Buffet</name>
+          <note>Nährwerte pro 100 g 
+Brennwert: 14820.0 kj / 3540.0 kcal 
+Fett: 1045.0 g 
+ - davon ges. FS: 102.0 g 
+Kohlenhydrate: 210.0 g 
+ - davon Zucker: 5.0 g 
+Eiweiß: 25.0 g 
+Salz: 0.5 g</note>
+          <price role="employee">1.60</price>
+          <price role="other">2.10</price>
+          <price role="student">1.10</price>
+        </meal>
+        <meal>
+          <name>Salatbuffet</name>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Nährwerte pro 100 g 
+Brennwert: 423.8 kj / 101.0 kcal 
+Fett: 24.7 g 
+ - davon ges. FS: 2.6 g 
+Kohlenhydrate: 11.1 g 
+ - davon Zucker: 5.7 g 
+Eiweiß: 2.1 g 
+Salz: 1.1 g</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Sesam</note>
+          <note>Weizen</note>
+          <note>geschwefelt</note>
+          <note>geschwärzt</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Farbstoffen</note>
+          <note>mit Süßungsmitteln</note>
+          <note>vegetarisch</note>
           <price role="employee">1.60</price>
           <price role="other">2.10</price>
           <price role="student">1.10</price>
@@ -81,15 +124,8 @@ Salz: 0.1 g</note>
       </category>
       <category name="Dessert">
         <meal>
-          <name>Vegane Waldbeerencreme</name>
-          <note>Nährwerte pro 100 g 
-Brennwert: 1010.8 kj / 241.0 kcal 
-Fett: 21.8 g 
- - davon ges. FS: 21.7 g 
-Kohlenhydrate: 11.3 g 
- - davon Zucker: 9.8 g 
-Eiweiß: 0.5 g 
-Salz: 0.0 g</note>
+          <name>Veganer Hafer Schokopudding</name>
+          <note>Hafer</note>
           <note>vegan</note>
           <price role="employee">1.69</price>
           <price role="other">2.09</price>
