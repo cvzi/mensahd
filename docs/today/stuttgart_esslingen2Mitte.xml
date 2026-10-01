@@ -3,19 +3,19 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2026-09-30">
+    <day date="2026-10-01">
       <category name="Vorspeise">
         <meal>
-          <name>Gemüserahmsuppe</name>
+          <name>Kürbissuppe</name>
           <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 229.1 kj / 55.0 kcal 
-Fett: 4.7 g 
- - davon ges. FS: 2.7 g 
-Kohlenhydrate: 2.4 g 
+Brennwert: 191.2 kj / 46.0 kcal 
+Fett: 3.6 g 
+ - davon ges. FS: 2.0 g 
+Kohlenhydrate: 2.8 g 
  - davon Zucker: 0.9 g 
-Eiweiß: 0.7 g 
-Salz: 0.1 g</note>
+Eiweiß: 0.6 g 
+Salz: 0.2 g</note>
           <note>Sellerie</note>
           <note>Weizen</note>
           <price role="employee">1.39</price>
@@ -25,17 +25,19 @@ Salz: 0.1 g</note>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Kürbis-Karotten-Gnocchi-Ragout</name>
+          <name>Schupfnudel-Sauerkraut-Pfanne</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 466.3 kj / 111.0 kcal 
-Fett: 4.2 g 
- - davon ges. FS: 0.4 g 
-Kohlenhydrate: 3.8 g 
- - davon Zucker: 1.8 g 
-Eiweiß: 2.8 g 
-Salz: 0.4 g</note>
+Brennwert: 413.9 kj / 99.0 kcal 
+Fett: 2.8 g 
+ - davon ges. FS: 0.5 g 
+Kohlenhydrate: 17.9 g 
+ - davon Zucker: 2.3 g 
+Eiweiß: 2.1 g 
+Salz: 0.7 g</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
           <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
           <price role="employee">5.99</price>
           <price role="other">6.49</price>
@@ -44,39 +46,43 @@ Salz: 0.4 g</note>
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Kartoffel-Gemüseauflauf</name>
+          <name>Omelette mit Blattspinat und Salzkartoffeln</name>
+          <note>Ei</note>
           <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 442.2 kj / 106.0 kcal 
-Fett: 5.8 g 
- - davon ges. FS: 3.7 g 
-Kohlenhydrate: 8.4 g 
- - davon Zucker: 2.0 g 
-Eiweiß: 4.4 g 
-Salz: 0.5 g</note>
+Brennwert: 390.0 kj / 93.0 kcal 
+Fett: 4.0 g 
+ - davon ges. FS: 1.8 g 
+Kohlenhydrate: 8.8 g 
+ - davon Zucker: 1.0 g 
+Eiweiß: 4.6 g 
+Salz: 0.6 g</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Weizen</note>
           <note>vegetarisch</note>
-          <price role="employee">6.30</price>
-          <price role="other">6.80</price>
-          <price role="student">3.30</price>
+          <price role="employee">6.90</price>
+          <price role="other">7.40</price>
+          <price role="student">3.90</price>
         </meal>
         <meal>
-          <name>Spaghetti Bolognese mit Reibekäse</name>
+          <name>Schweinebraten mit Rahmsauce und Spätzle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
           <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 735.7 kj / 176.0 kcal 
-Fett: 5.1 g 
- - davon ges. FS: 1.9 g 
-Kohlenhydrate: 22.7 g 
- - davon Zucker: 3.2 g 
-Eiweiß: 8.5 g 
-Salz: 0.4 g</note>
-          <note>Rind</note>
-          <note>Sellerie</note>
+Brennwert: 536.3 kj / 128.0 kcal 
+Fett: 7.2 g 
+ - davon ges. FS: 1.1 g 
+Kohlenhydrate: 9.7 g 
+ - davon Zucker: 0.2 g 
+Eiweiß: 9.2 g 
+Salz: 1.0 g</note>
+          <note>Schwein</note>
+          <note>Senf</note>
           <note>Weizen</note>
-          <price role="employee">7.90</price>
-          <price role="other">8.40</price>
-          <price role="student">4.90</price>
+          <price role="employee">8.00</price>
+          <price role="other">8.50</price>
+          <price role="student">5.00</price>
         </meal>
       </category>
       <category name="Buffet">
@@ -110,20 +116,39 @@ Salz: 1.1 g</note>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Chinagemüse</name>
+          <name>Blattspinat</name>
+          <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 276.5 kj / 66.0 kcal 
-Fett: 4.4 g 
- - davon ges. FS: 1.4 g 
-Kohlenhydrate: 5.2 g 
- - davon Zucker: 4.5 g 
-Eiweiß: 3.5 g 
-Salz: 1.2 g</note>
+Brennwert: 373.5 kj / 89.0 kcal 
+Fett: 5.6 g 
+ - davon ges. FS: 2.9 g 
+Kohlenhydrate: 4.9 g 
+ - davon Zucker: 1.0 g 
+Eiweiß: 4.0 g 
+Salz: 0.5 g</note>
           <note>Sellerie</note>
-          <note>Soja</note>
+          <note>Weizen</note>
           <price role="employee">1.39</price>
           <price role="other">1.79</price>
           <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Spätzle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Nährwerte pro 100 g 
+Brennwert: 817.0 kj / 195.0 kcal 
+Fett: 7.2 g 
+ - davon ges. FS: 2.7 g 
+Kohlenhydrate: 25.8 g 
+ - davon Zucker: 0.2 g 
+Eiweiß: 6.6 g 
+Salz: 1.8 g</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.69</price>
+          <price role="other">2.09</price>
+          <price role="student">1.29</price>
         </meal>
         <meal>
           <name>Beilagensalat</name>
@@ -143,21 +168,17 @@ Salz: 0.1 g</note>
       </category>
       <category name="Dessert">
         <meal>
-          <name>Früchtemüsli</name>
-          <note>Gerste</note>
-          <note>Hafer</note>
+          <name>Nuss-Nougat-Pudding</name>
           <note>Haselnüsse</note>
-          <note>Mandeln</note>
           <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 565.5 kj / 135.0 kcal 
+Brennwert: 507.0 kj / 121.0 kcal 
 Fett: 3.6 g 
- - davon ges. FS: 1.2 g 
-Kohlenhydrate: 18.2 g 
- - davon Zucker: 9.6 g 
-Eiweiß: 5.8 g 
-Salz: 1.8 g</note>
-          <note>vegetarisch</note>
+ - davon ges. FS: 2.2 g 
+Kohlenhydrate: 19.0 g 
+ - davon Zucker: 15.0 g 
+Eiweiß: 2.9 g 
+Salz: 0.2 g</note>
           <price role="employee">1.69</price>
           <price role="other">2.09</price>
           <price role="student">1.29</price>

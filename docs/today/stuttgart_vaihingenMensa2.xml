@@ -3,20 +3,22 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2026-09-30">
+    <day date="2026-10-01">
       <category name="Vorspeise">
         <meal>
-          <name>Erbsencremesuppe</name>
+          <name>Kürbissuppe</name>
+          <note>Hafer</note>
           <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 290.8 kj / 69.0 kcal 
+Brennwert: 242.8 kj / 58.0 kcal 
 Fett: 4.8 g 
- - davon ges. FS: 2.8 g 
-Kohlenhydrate: 4.1 g 
- - davon Zucker: 1.6 g 
-Eiweiß: 2.0 g 
-Salz: 0.4 g</note>
+ - davon ges. FS: 2.1 g 
+Kohlenhydrate: 3.1 g 
+ - davon Zucker: 1.0 g 
+Eiweiß: 0.7 g 
+Salz: 0.2 g</note>
           <note>Sellerie</note>
+          <note>Weizen</note>
           <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="other">1.79</price>
@@ -25,17 +27,19 @@ Salz: 0.4 g</note>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Kürbis-Karotten-Gnocchi-Ragout</name>
+          <name>Schupfnudel-Sauerkraut-Pfanne</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 559.0 kj / 134.0 kcal 
-Fett: 3.9 g 
- - davon ges. FS: 0.4 g 
-Kohlenhydrate: 3.8 g 
- - davon Zucker: 1.8 g 
-Eiweiß: 2.8 g 
-Salz: 0.5 g</note>
+Brennwert: 460.4 kj / 110.0 kcal 
+Fett: 2.7 g 
+ - davon ges. FS: 0.5 g 
+Kohlenhydrate: 17.9 g 
+ - davon Zucker: 2.3 g 
+Eiweiß: 2.1 g 
+Salz: 0.7 g</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
           <note>Weizen</note>
+          <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
           <price role="employee">5.99</price>
           <price role="other">6.49</price>
@@ -44,36 +48,39 @@ Salz: 0.5 g</note>
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Enchiladas Mexico mit Grillgemüse und Country Potatoes</name>
+          <name>Hähnchen-Nuggets mit Curry Dip und Pommes frites</name>
+          <note>Ei</note>
+          <note>Geflügel</note>
           <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 821.2 kj / 196.0 kcal 
-Fett: 11.3 g 
- - davon ges. FS: 3.3 g 
-Kohlenhydrate: 20.0 g 
- - davon Zucker: 0.5 g 
-Eiweiß: 2.5 g 
-Salz: 1.4 g</note>
+Brennwert: 1242.5 kj / 297.0 kcal 
+Fett: 97.4 g 
+ - davon ges. FS: 11.2 g 
+Kohlenhydrate: 19.1 g 
+ - davon Zucker: 1.9 g 
+Eiweiß: 5.7 g 
+Salz: 1.0 g</note>
+          <note>Senf</note>
+          <note>Soja</note>
           <note>Weizen</note>
-          <note>mit Konservierungsstoffen</note>
-          <note>vegetarisch</note>
-          <price role="employee">8.60</price>
-          <price role="other">9.10</price>
-          <price role="student">5.60</price>
+          <note>mit Farbstoffen</note>
+          <price role="employee">8.20</price>
+          <price role="other">8.70</price>
+          <price role="student">5.20</price>
         </meal>
       </category>
       <category name="All time classics">
         <meal>
-          <name>Paniertes Schweineschnitzel mit Bratensauce und Country Potatoes</name>
+          <name>Paniertes Schweineschnitzel mit Bratensauce und Pommes frites</name>
           <note>Ei</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 774.1 kj / 185.0 kcal 
-Fett: 9.8 g 
- - davon ges. FS: 2.0 g 
-Kohlenhydrate: 16.0 g 
- - davon Zucker: 1.0 g 
-Eiweiß: 7.4 g 
-Salz: 1.2 g</note>
+Brennwert: 915.9 kj / 219.0 kcal 
+Fett: 12.2 g 
+ - davon ges. FS: 2.2 g 
+Kohlenhydrate: 18.3 g 
+ - davon Zucker: 1.2 g 
+Eiweiß: 8.3 g 
+Salz: 0.9 g</note>
           <note>Schwein</note>
           <note>Weizen</note>
           <price role="employee">7.90</price>
@@ -81,15 +88,15 @@ Salz: 1.2 g</note>
           <price role="student">4.90</price>
         </meal>
         <meal>
-          <name>Veganes Schnitzel mit Bratensauce und Country Potatoes</name>
+          <name>Veganes Schnitzel mit Bratensauce und Pommes frites</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 1004.3 kj / 240.0 kcal 
-Fett: 15.8 g 
- - davon ges. FS: 3.0 g 
-Kohlenhydrate: 18.2 g 
- - davon Zucker: 0.7 g 
-Eiweiß: 5.4 g 
-Salz: 1.2 g</note>
+Brennwert: 1172.9 kj / 280.0 kcal 
+Fett: 18.9 g 
+ - davon ges. FS: 3.2 g 
+Kohlenhydrate: 20.8 g 
+ - davon Zucker: 0.8 g 
+Eiweiß: 6.0 g 
+Salz: 0.9 g</note>
           <note>Weizen</note>
           <note>vegan</note>
           <price role="employee">7.90</price>
@@ -134,27 +141,41 @@ Salz: 1.1 g</note>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Buntes Gemüse</name>
+          <name>Karottengemüse</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 328.5 kj / 78.0 kcal 
-Fett: 2.6 g 
- - davon ges. FS: 1.2 g 
-Kohlenhydrate: 9.0 g 
- - davon Zucker: 6.1 g 
-Eiweiß: 3.0 g 
-Salz: 0.4 g</note>
-          <note>Sellerie</note>
+Brennwert: 213.2 kj / 51.0 kcal 
+Fett: 2.0 g 
+ - davon ges. FS: 1.0 g 
+Kohlenhydrate: 6.1 g 
+ - davon Zucker: 5.6 g 
+Eiweiß: 0.7 g 
+Salz: 0.3 g</note>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="other">1.79</price>
           <price role="student">0.99</price>
         </meal>
         <meal>
+          <name>Pommes frites</name>
+          <note>Nährwerte pro 100 g 
+Brennwert: 1153.7 kj / 276.0 kcal 
+Fett: 16.7 g 
+ - davon ges. FS: 3.8 g 
+Kohlenhydrate: 27.2 g 
+ - davon Zucker: 0.7 g 
+Eiweiß: 3.2 g 
+Salz: 0.7 g</note>
+          <note>vegan</note>
+          <price role="employee">1.69</price>
+          <price role="other">2.09</price>
+          <price role="student">1.29</price>
+        </meal>
+        <meal>
           <name>Country Potatoes</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 821.2 kj / 196.0 kcal 
-Fett: 11.3 g 
- - davon ges. FS: 3.3 g 
+Brennwert: 898.6 kj / 215.0 kcal 
+Fett: 13.4 g 
+ - davon ges. FS: 3.4 g 
 Kohlenhydrate: 20.0 g 
  - davon Zucker: 0.5 g 
 Eiweiß: 2.5 g 
@@ -183,33 +204,33 @@ Salz: 0.1 g</note>
       </category>
       <category name="Dessert">
         <meal>
-          <name>Veganer Ananas-Kokos-Quark</name>
+          <name>Veganer Grießpudding mit Pfirsich</name>
           <note>Hafer</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 565.5 kj / 135.0 kcal 
-Fett: 5.0 g 
- - davon ges. FS: 2.4 g 
-Kohlenhydrate: 18.9 g 
- - davon Zucker: 16.0 g 
-Eiweiß: 3.7 g 
-Salz: 0.2 g</note>
-          <note>Soja</note>
+Brennwert: 329.9 kj / 79.0 kcal 
+Fett: 1.3 g 
+ - davon ges. FS: 0.1 g 
+Kohlenhydrate: 15.2 g 
+ - davon Zucker: 8.0 g 
+Eiweiß: 0.3 g 
+Salz: 0.1 g</note>
+          <note>Weizen</note>
           <note>vegan</note>
           <price role="employee">1.69</price>
           <price role="other">2.09</price>
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Sahneschokopudding</name>
+          <name>Waldbeerenquark</name>
           <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 629.1 kj / 150.0 kcal 
-Fett: 7.8 g 
- - davon ges. FS: 5.4 g 
-Kohlenhydrate: 17.0 g 
- - davon Zucker: 12.0 g 
-Eiweiß: 2.8 g 
-Salz: 0.2 g</note>
+Brennwert: 391.1 kj / 93.0 kcal 
+Fett: 2.4 g 
+ - davon ges. FS: 1.5 g 
+Kohlenhydrate: 10.0 g 
+ - davon Zucker: 9.8 g 
+Eiweiß: 6.6 g 
+Salz: 0.1 g</note>
           <note>vegetarisch</note>
           <price role="employee">1.69</price>
           <price role="other">2.09</price>
