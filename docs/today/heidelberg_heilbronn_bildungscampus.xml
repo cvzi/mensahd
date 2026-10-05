@@ -4,8 +4,85 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2026-10-04">
-      <closed/>
+    <day date="2026-10-05">
+      <category name="Dessert">
+        <meal>
+          <name>Vanillecreme mit geröstetetem Rosinenbrot</name>
+          <note>vanilla cream with toasted raisin bread</note>
+          <price role="student">0.90</price>
+          <price role="employee">1.40</price>
+          <price role="other">2.00</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Hafermilchreis mit Sauerkirschragout</name>
+          <note>oat milk rice pudding with sour cherry ragout</note>
+          <price role="student">0.90</price>
+          <price role="employee">1.40</price>
+          <price role="other">2.00</price>
+        </meal>
+      </category>
+      <category name="Foodtruck">
+        <meal>
+          <name>Currywurst vom Kalb mit fruchtiger Tomatensauce und Brot</name>
+          <note>Veal Currywurst with a fruity tomato sauce and bread</note>
+          <price role="student">3.20</price>
+          <price role="employee">3.80</price>
+          <price role="other">5.80</price>
+        </meal>
+        <meal>
+          <name>Currywurst vegan mit fruchtiger Tomatensauce und Brot</name>
+          <note>Vegan Currywurst with fruity tomato sauce and bread	
+</note>
+          <price role="student">2.60</price>
+          <price role="employee">3.10</price>
+          <price role="other">4.70</price>
+        </meal>
+        <meal>
+          <name>Pommes Frites</name>
+          <note>French fries</note>
+          <price role="student">1.50</price>
+          <price role="employee">1.80</price>
+          <price role="other">2.70</price>
+        </meal>
+      </category>
+      <category name="Suppentopf">
+        <meal>
+          <name>Kohlrabisuppe mit Kräutercroutons</name>
+          <note>kohlrabi soup with herb croutons</note>
+          <price role="student">0.90</price>
+          <price role="employee">1.40</price>
+          <price role="other">2.00</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Seelachs gebraten mit Tahini Paprikaragout dazu Cous Cous</name>
+          <note>pan-fried pollock with tahini and bell pepper ragout served with couscous</note>
+          <price role="student">0.99</price>
+          <price role="employee">1.35</price>
+          <price role="other">2.00</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Glas Nudeln mit Sweet Chili-Soße und Gemüse</name>
+          <note>glass noodles with sweet chili sauce and vegetables</note>
+          <price role="student">0.99</price>
+          <price role="employee">1.35</price>
+          <price role="other">2.00</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Schwäbische Käsespätzle mit Röstziebeln</name>
+          <note>swabian kaesespaetzle with roasted onions</note>
+          <price role="student">2.90</price>
+          <price role="employee">4.50</price>
+          <price role="other">7.50</price>
+        </meal>
+      </category>
     </day>
   </canteen>
 </openmensa>
