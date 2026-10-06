@@ -4,22 +4,39 @@
 <openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <name>Heilbronn, Mensa Bildungscampus/Europaplatz</name>
-    <day date="2026-10-05">
+    <day date="2026-10-06">
+      <category name="Dessert">
+        <meal>
+          <name>Moccacreme mit Granatapfelkernen</name>
+          <note>mocha cream with pomegranate seeds</note>
+          <price role="student">0.90</price>
+          <price role="employee">1.40</price>
+          <price role="other">2.00</price>
+        </meal>
+      </category>
+      <category name="Dessert vegan">
+        <meal>
+          <name>Mandelpudding mit Sahnehäubchen</name>
+          <note>almond pudding with a dollop of whipped</note>
+          <price role="student">0.90</price>
+          <price role="employee">1.40</price>
+          <price role="other">2.00</price>
+        </meal>
+      </category>
       <category name="Foodtruck">
         <meal>
-          <name>Currywurst vom Kalb mit fruchtiger Tomatensauce und Brot</name>
-          <note>Veal Currywurst with a fruity tomato sauce and bread</note>
-          <price role="student">3.20</price>
-          <price role="employee">3.80</price>
-          <price role="other">5.80</price>
+          <name>Burger vom Rind aus der Region mit Tomate, Röstzwiebeln und hausgemachtem Dip</name>
+          <note>Burger made from local beef, served with tomatoes, fried onions and a homemade dip</note>
+          <price role="student">6.00</price>
+          <price role="employee">7.00</price>
+          <price role="other">9.50</price>
         </meal>
         <meal>
-          <name>Currywurst vegan mit fruchtiger Tomatensauce und Brot</name>
-          <note>Vegan Currywurst with fruity tomato sauce and bread	
-</note>
-          <price role="student">2.60</price>
-          <price role="employee">3.10</price>
-          <price role="other">4.70</price>
+          <name>Burger vom Portobello-Pilz, mit Pak Choi und eingelegtem Gemüse</name>
+          <note>Vegan Portobello mushroom burger with pak choi and mixed pickles</note>
+          <price role="student">5.50</price>
+          <price role="employee">6.50</price>
+          <price role="other">9.00</price>
         </meal>
         <meal>
           <name>Pommes Frites</name>
@@ -29,13 +46,40 @@
           <price role="other">2.70</price>
         </meal>
       </category>
-      <category name="Vegetarisch">
+      <category name="Suppentopf">
         <meal>
-          <name>Schwäbische Käsespätzle mit Röstziebeln</name>
-          <note>swabian kaesespaetzle with roasted onions</note>
+          <name>Minestrone</name>
+          <note>minestrone</note>
+          <price role="student">0.90</price>
+          <price role="employee">1.40</price>
+          <price role="other">2.00</price>
+        </meal>
+      </category>
+      <category name="Tierisch">
+        <meal>
+          <name>Putensteacks mit Zitronensoße dazu bunter Gemüsereis</name>
+          <note>turkey steaks with lemon sauce and colorful vegetable rice</note>
+          <price role="student">0.99</price>
+          <price role="employee">1.35</price>
+          <price role="other">2.00</price>
+        </meal>
+      </category>
+      <category name="Vegan">
+        <meal>
+          <name>Grünkernbratling mit Paprikareis dazu Kräuterdip</name>
+          <note>green spelt patty with bell pepper rice and herb dip</note>
           <price role="student">2.90</price>
           <price role="employee">4.50</price>
           <price role="other">7.50</price>
+        </meal>
+      </category>
+      <category name="Vegetarisch">
+        <meal>
+          <name>Gemüse Lasagne mit Tomate und Mozzarella</name>
+          <note>vegetable lasagne with tomato and mozzarella</note>
+          <price role="student">0.99</price>
+          <price role="employee">1.35</price>
+          <price role="other">2.00</price>
         </meal>
       </category>
     </day>
