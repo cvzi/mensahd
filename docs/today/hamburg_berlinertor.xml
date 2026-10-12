@@ -4,6 +4,16 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2026-10-12">
+      <category name="Highlight">
+        <meal>
+          <name>Bibimbap Bowl mit Sonnenblumenhack (Sonnenblumenprotein) und Champignons (2,3,5,En,So,Sl,Sf,Se,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.85</price>
+          <price role="other">8.15</price>
+          <price role="student">5.55</price>
+        </meal>
+      </category>
       <category name="Pottkieker">
         <meal>
           <name>Bohnen-Lauch-Curry mit Brech- Bohnen, Edamame Bohnen und Lauch , Basmatireis</name>
@@ -44,15 +54,6 @@
           <price role="student">4.90</price>
         </meal>
       </category>
-      <category name="CampusSpezial">
-        <meal>
-          <name>Penne alla Norma mit Auberginen-Tomatensoße und Ricotta (Mi,Sw,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">5.15</price>
-          <price role="other">6.45</price>
-          <price role="student">3.85</price>
-        </meal>
-      </category>
       <category name="CampusWorld">
         <meal>
           <name>Frisch gebackene PIZZA nach Wahl (versch. Sorten) ab 4,70 / 6,00 / 7,20 (auch TAKE AWAY) (Mi,GlW)</name>
@@ -61,28 +62,18 @@
           <price role="other">7.30</price>
           <price role="student">4.70</price>
         </meal>
-        <meal>
-          <name>Bibimbap Bowl mit Sonnenblumenhack (Sonnenblumenprotein) und Champignons (2,3,5,En,So,Sl,Sf,Se,Sw,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.85</price>
-          <price role="other">8.15</price>
-          <price role="student">5.55</price>
-        </meal>
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Spaghetti (Ei,Mi,GlW), Frischkäsesoße mit Meerrettich und Kräutern (3,5,Mi,Sw,GlW,GlG)</name>
-          <note>Vegetarisch</note>
+          <name>Penne alla Norma mit Auberginen-Tomatensoße (Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
         </meal>
         <meal>
-          <name>Spaghetti (GlW), Sojastreifen in scharfer Tomatensoße (Sojaprotein)</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
+          <name>Reis, Chili con Corn (Sl,GlD)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.15</price>
@@ -92,9 +83,8 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>gebratenem Wirsing, Blumenkohl mit gebräunten Bröseln (1,GlW), geschmorter Sellerie , Alte Gemüse: Pastinake- Sellerie- Karotte- Topinambur , Nusskartoffeln</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Gemüsepfanne, Asiagemüse , Röstiecken</name>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.15</price>
@@ -115,19 +105,6 @@
           <price role="employee">3.50</price>
           <price role="other">4.80</price>
           <price role="student">2.20</price>
-        </meal>
-      </category>
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Soja-Bolognese mit Gemüse (Sojaprotein) , Spaghetti (GlW)</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.00</price>
-          <price role="other">6.30</price>
-          <price role="student">3.70</price>
         </meal>
       </category>
       <category name="CampusVital">
@@ -224,6 +201,19 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
+          <name>2 Stück vegane Weißwürste , Süßer Senf , Rettichsalat , Laugenbrezel (GlW)</name>
+          <note>Geschwefelt</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Farbstoff</note>
+          <price role="employee">5.20</price>
+          <price role="other">6.50</price>
+          <price role="student">3.90</price>
+        </meal>
+        <meal>
           <name>2 Stück Weißwürste , Süßer Senf , Rettichsalat , Laugenbrezel (GlW)</name>
           <note>Geschwefelt</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -233,19 +223,6 @@
           <note>Senf und Senferzeugnisse</note>
           <note>mit Antioxidationsmittel</note>
           <note>mit Geschmacksverstärker</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.50</price>
-          <price role="student">3.90</price>
-        </meal>
-        <meal>
-          <name>2 Stück vegane Weißwürste , Süßer Senf , Rettichsalat , Laugenbrezel (GlW)</name>
-          <note>Geschwefelt</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Farbstoff</note>
           <price role="employee">5.20</price>
           <price role="other">6.50</price>
           <price role="student">3.90</price>
@@ -266,19 +243,19 @@
       </category>
       <category name="CampusWorld">
         <meal>
+          <name>Frisch gebackene FLAMMKUCHEN nach Wahl (versch. Sorten) ab 4,20 / 5,50 / 6,70 (auch TAKE AWAY) (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">5.50</price>
+          <price role="other">6.80</price>
+          <price role="student">4.20</price>
+        </meal>
+        <meal>
           <name>Veganes Hackbällchen-Curry (Soja und Weizenprotein) mit Kokosmilch, Erdnussbutter und Gemüse (1,2,En,So,Sw,GlW,GlG), Basmatireis</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">5.90</price>
           <price role="other">7.20</price>
           <price role="student">4.60</price>
-        </meal>
-        <meal>
-          <name>Frisch gebackene FLAMMKUCHEN nach Wahl (versch. Sorten) ab 4,20 / 5,50 / 6,70 (auch TAKE AWAY) (Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">5.50</price>
-          <price role="other">6.80</price>
-          <price role="student">4.20</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -341,24 +318,15 @@
           <price role="other">6.90</price>
           <price role="student">4.30</price>
         </meal>
-        <meal>
-          <name>Sojageschnetzeltes mit Waldpilzen (Sojaprotein) (So,Sl,GlW), Semmelklöße (Ei,GlW)</name>
-          <note>Vegetarisch</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mensaVital</note>
-          <price role="employee">5.15</price>
-          <price role="other">6.45</price>
-          <price role="student">3.85</price>
-        </meal>
       </category>
       <category name="CampusSpezial">
         <meal>
           <name>Mi Nudeln mit Brokkoli, Edamame, Pak Choi und Erdnüssen (2,3,En,So,Se,Sw,GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.25</price>
-          <price role="other">7.55</price>
-          <price role="student">4.95</price>
+          <price role="employee">4.50</price>
+          <price role="other">5.80</price>
+          <price role="student">3.20</price>
         </meal>
       </category>
       <category name="CampusWorld">
