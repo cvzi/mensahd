@@ -29,14 +29,6 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Vegane Nuggets Roasted Sesam (Soja und Weizenprotein) (2,So,Sf,Se,GlW,GlG), pikanter Gemüsesalat mit Pak Choi und Cashewkerne (1,2,So,Sw,GlW,NCa), Basmatireis</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.80</price>
-          <price role="other">8.10</price>
-          <price role="student">5.50</price>
-        </meal>
-        <meal>
           <name>Hausgemachte Pasta (GlW), Pfifferlinge, Erbsen und Tomaten , Sauerampfer-Pesto (2,Ei,Mi,Sw,NMa)</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -44,6 +36,14 @@
           <price role="employee">5.20</price>
           <price role="other">6.50</price>
           <price role="student">3.90</price>
+        </meal>
+        <meal>
+          <name>Vegane Nuggets Roasted Sesam (Soja und Weizenprotein) (2,So,Sf,Se,GlW,GlG), pikanter Gemüsesalat mit Pak Choi und Cashewkerne (1,2,So,Sw,GlW,NCa), Basmatireis</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.80</price>
+          <price role="other">8.10</price>
+          <price role="student">5.50</price>
         </meal>
         <meal>
           <name>Maultaschensalat mit Petersilie, rotem Zwiebeln und Rucola (1,3,5,Sl,Sf,Sw,GlW)</name>
@@ -56,6 +56,17 @@
       </category>
       <category name="Pastabar">
         <meal>
+          <name>Pasta (GlW), Blumenkohl in einer Sahnesoße mit grünem Pfeffer</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+        <meal>
           <name>Pasta (GlW), Kürbis- Sojacreme mit Rosmarin</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -63,17 +74,6 @@
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Antioxidationsmittel</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
-        <meal>
-          <name>Pasta (GlW), Blumenkohl in einer Sahnesoße mit grünem Pfeffer</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Konservierungsstoff</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
@@ -96,22 +96,35 @@
       </category>
     </day>
     <day date="2026-10-14">
+      <category name="CampusVital">
+        <meal>
+          <name>Pommes Frites , Vegetarisches Schnitzel in Knusperpanade (Ei,Mi,GlW,GlH), Pikante Paprikasoße mit Tomate, Paprika und Gurke</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Süßungsmittel</note>
+          <price role="employee">6.05</price>
+          <price role="other">7.35</price>
+          <price role="student">4.75</price>
+        </meal>
+      </category>
       <category name="CampusSpezial">
         <meal>
-          <name>4 vegane Mini Bratwürstchen, Sauerkraut (vegan) , veganes hausgemachtes Kartoffelpüree</name>
+          <name>vegane Bratwurst (Erbsenprotein), Sauerkraut (vegan) , veganes hausgemachtes Kartoffelpüree</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Farbstoff</note>
-          <price role="employee">6.90</price>
-          <price role="other">8.20</price>
-          <price role="student">5.60</price>
+          <price role="employee">5.40</price>
+          <price role="other">6.70</price>
+          <price role="student">4.10</price>
         </meal>
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Spanischer Linseneintopf mit veganen Hackbällchen (Soja und Weizenprotein) (3,5,So,Sl,Sf,Sw,GlW,GlG), Fladenbrot (Se,GlW)</name>
+          <name>Spanischer Linseneintopf mit veganen Hackbällchen (Soja und Weizenprotein) (3,5,So,Sl,Sw,GlW,GlG), Fladenbrot (Se,GlW)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">5.40</price>
@@ -120,13 +133,6 @@
         </meal>
       </category>
       <category name="Pastabar">
-        <meal>
-          <name>Gnocchi (GlW), Steckrübencreme mit Thymian und Knoblauch (Mi,Sw,GlW,GlG)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
         <meal>
           <name>Gnocchi (GlW), Ratatouille</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
@@ -137,10 +143,27 @@
           <price role="other">1.40</price>
           <price role="student">0.90</price>
         </meal>
+        <meal>
+          <name>Gnocchi (GlW), Steckrübencreme mit Thymian und Knoblauch (Mi,Sw,GlW,GlG)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Alte Gemüse: Pastinake- Sellerie- Karotte- Topinambur , Grünkohl , Kürbisgemüse, Prinzessbohnen, rote Beete Gnocchi</name>
+          <name>Alte Gemüse: Pastinake- Sellerie- Karotte- Topinambur , Macairekartoffeln (GlW), Grünkohl , Kürbisgemüse, Prinzessbohnen</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+        <meal>
+          <name>Alte Gemüse: Pastinake- Sellerie- Karotte- Topinambur , Macairekartoffeln (GlW), Grünkohl , Kürbisgemüse, Prinzessbohnen</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Senf und Senferzeugnisse</note>
           <note>Vegan</note>
@@ -188,21 +211,21 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Strozzapreti (GlW), Räuchertofu in Kräuter- Cremesoße</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
-        <meal>
           <name>Strozzapreti (GlW), weiße Bohnen, Gemüse und Basilikum in einer Sahnesoße</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegetarisch</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+        <meal>
+          <name>Strozzapreti (GlW), Räuchertofu in Kräuter- Cremesoße</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
