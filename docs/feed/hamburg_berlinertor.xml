@@ -4,6 +4,24 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2026-10-19">
+      <category name="Highlight">
+        <meal>
+          <name>All in one pot: Reis paellastyle mit Geflügel (2,So,Sl,Sw,GlW)</name>
+          <note>Geflügel</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.55</price>
+          <price role="other">7.85</price>
+          <price role="student">5.25</price>
+        </meal>
+        <meal>
+          <name>All in one pot: Reis paellastyle vegan (2,So,Sl,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.35</price>
+          <price role="other">6.65</price>
+          <price role="student">4.05</price>
+        </meal>
+      </category>
       <category name="Pottkieker">
         <meal>
           <name>Mexikanischer Bohnentopf mit Kartoffeln</name>
@@ -29,24 +47,6 @@
           <price role="student">3.80</price>
         </meal>
       </category>
-      <category name="CampusSpezial">
-        <meal>
-          <name>All in one pot: Reis paellastyle vegan (2,So,Sl,Sw,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.35</price>
-          <price role="other">6.65</price>
-          <price role="student">4.05</price>
-        </meal>
-        <meal>
-          <name>All in one pot: Reis paellastyle mit Geflügel (2,So,Sl,Sw,GlW)</name>
-          <note>Geflügel</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.55</price>
-          <price role="other">7.85</price>
-          <price role="student">5.25</price>
-        </meal>
-      </category>
       <category name="CampusWorld">
         <meal>
           <name>Frisch gebackene PIZZA nach Wahl (versch. Sorten) ab 4,70 / 6,00 / 7,20 (auch TAKE AWAY) (Mi,GlW)</name>
@@ -58,29 +58,8 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>rote Beete Gnocchi, Broccoli in einer Gorgonzola- Sahnesoße</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
-        <meal>
-          <name>rote Beete Gnocchi, mit Sojagranulat, Lauch und Sojasahne (Sojaprotein)</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
+          <name>Gebackene Kartoffeln mit Wirsing und Käse</name>
           <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
-      </category>
-      <category name="Gemüsebar">
-        <meal>
-          <name>Glacierte Pastinaken, Rosenkohl , Sellerie-Karotten Gemüse , Weiße Bohnen mediterraneo , Petersilienkartoffeln</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Farbstoff</note>
@@ -88,9 +67,54 @@
           <price role="other">1.40</price>
           <price role="student">0.90</price>
         </meal>
+        <meal>
+          <name>Pasta (GlW), Waldpilzen in Sahnesoße mit Basilikum (Mi,Sw,GlW,GlG)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+        <meal>
+          <name>Pasta (GlW), Soja Kokos Curry (Sojaprotein) (So,Mi,Sl,Sw,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+      </category>
+      <category name="Gemüsebar">
+        <meal>
+          <name>Broccoli, Blumenkohl mit Hollandaise , Kartoffeltwister (GlW)</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
       </category>
     </day>
     <day date="2026-10-20">
+      <category name="Highlight">
+        <meal>
+          <name>Bacon Bomb Burger, auch ohne Bacon erhältlich, (1,2,3,5,8,9,Ei,Mi,Sl,Sf,Sw,GlW), Pommes Frites</name>
+          <note>Rind</note>
+          <note>Schwein</note>
+          <note>Senf und Senferzeugnisse</note>
+          <price role="employee">7.45</price>
+          <price role="other">8.75</price>
+          <price role="student">6.15</price>
+        </meal>
+        <meal>
+          <name>Crispy Veggie Burger (1,3,5,9,Ei,Mi,Sf,Sw,GlW,GlG), Pommes Frites</name>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegetarisch</note>
+          <price role="employee">5.60</price>
+          <price role="other">6.90</price>
+          <price role="student">4.30</price>
+        </meal>
+      </category>
       <category name="Pottkieker">
         <meal>
           <name>Rotes Gemüsecurry mit Bohnen, Erbsen und Pak Choi (2,So,Sw,GlW), Reis</name>
@@ -101,25 +125,14 @@
           <price role="student">2.20</price>
         </meal>
       </category>
-      <category name="CampusSpezial">
-        <meal>
-          <name>Crispy Veggie Burger (1,3,5,9,Ei,Mi,Sf,Sw,GlW,GlG)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">5.60</price>
-          <price role="other">6.90</price>
-          <price role="student">4.30</price>
-        </meal>
-        <meal>
-          <name>Bacon Bomb Burger, auch ohne Bacon erhältlich, (1,2,3,5,8,9,Ei,Mi,Sl,Sf,Sw,GlW), Pommes Frites</name>
-          <note>Rind</note>
-          <note>Schwein</note>
-          <note>Senf und Senferzeugnisse</note>
-          <price role="employee">7.30</price>
-          <price role="other">8.60</price>
-          <price role="student">6.00</price>
-        </meal>
-      </category>
       <category name="CampusWorld">
+        <meal>
+          <name>Frisch gebackene FLAMMKUCHEN nach Wahl (versch. Sorten) ab 4,20 / 5,50 / 6,70 (auch TAKE AWAY) (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">5.50</price>
+          <price role="other">6.80</price>
+          <price role="student">4.20</price>
+        </meal>
         <meal>
           <name>Gebratene Pierogi mit Kartoffel-Quarkfüllung (1,Ei,Mi,Sl,GlW), Dill-Quark , Rote Beete Salat</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -128,13 +141,6 @@
           <price role="employee">5.45</price>
           <price role="other">6.75</price>
           <price role="student">4.15</price>
-        </meal>
-        <meal>
-          <name>Frisch gebackene FLAMMKUCHEN nach Wahl (versch. Sorten) ab 4,20 / 5,50 / 6,70 (auch TAKE AWAY) (Mi,GlW)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">5.50</price>
-          <price role="other">6.80</price>
-          <price role="student">4.20</price>
         </meal>
       </category>
       <category name="Pastabar">
@@ -173,6 +179,16 @@
       </category>
     </day>
     <day date="2026-10-21">
+      <category name="Highlight">
+        <meal>
+          <name>Scharfe Kokos-Limonen-Suppe mit Udon-Nudeln (2,3,So,Sl,Se,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.90</price>
+          <price role="other">7.20</price>
+          <price role="student">4.60</price>
+        </meal>
+      </category>
       <category name="Pottkieker">
         <meal>
           <name>Indische Tomaten-Linsensuppe (Sf,Sw,GlW)</name>
@@ -195,16 +211,6 @@
           <price role="employee">6.50</price>
           <price role="other">7.80</price>
           <price role="student">5.20</price>
-        </meal>
-      </category>
-      <category name="CampusVital">
-        <meal>
-          <name>Scharfe Kokos-Limonen-Suppe mit Udon-Nudeln (2,3,So,Sl,Se,Sw,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.90</price>
-          <price role="other">7.20</price>
-          <price role="student">4.60</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -249,29 +255,7 @@
       </category>
     </day>
     <day date="2026-10-22">
-      <category name="Pottkieker">
-        <meal>
-          <name>Grünes Steckrübencurry mit Kokosmilch und grüne Erbsen , Reis</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">3.50</price>
-          <price role="other">4.80</price>
-          <price role="student">2.20</price>
-        </meal>
-      </category>
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Unsere vegane "ExtraVurst - CampusStyle" , mit Curry-Spezial-Sauce , oder Curry-Delikant-Sauce, Pommes Frites</name>
-          <note>Geschwefelt</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.20</price>
-          <price role="other">7.50</price>
-          <price role="student">4.90</price>
-        </meal>
+      <category name="Highlight">
         <meal>
           <name>Unsere "ExtraWurst - CampusStyle" , mit Curry-Spezial-Sauce , oder Curry-Delikant-Sauce, Pommes Frites</name>
           <note>Geschwefelt</note>
@@ -284,6 +268,28 @@
           <price role="employee">6.20</price>
           <price role="other">7.50</price>
           <price role="student">4.90</price>
+        </meal>
+        <meal>
+          <name>Unsere vegane "ExtraVurst - CampusStyle" , mit Curry-Spezial-Sauce , oder Curry-Delikant-Sauce, Pommes Frites</name>
+          <note>Geschwefelt</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.50</price>
+          <price role="student">4.90</price>
+        </meal>
+      </category>
+      <category name="Pottkieker">
+        <meal>
+          <name>Grünes Steckrübencurry mit Kokosmilch und grüne Erbsen , Reis</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.50</price>
+          <price role="other">4.80</price>
+          <price role="student">2.20</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -338,6 +344,17 @@
       </category>
     </day>
     <day date="2026-10-23">
+      <category name="Highlight">
+        <meal>
+          <name>Veganer Sloppy Joes Burger mit Sojahack (Sojaprotein), gepickelten Zwiebeln und Gewürzgurke (1,2,3,9,So,Sf,GlW), Cole Slaw mit Sojamajo , Pommes Frites</name>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">6.20</price>
+          <price role="other">7.50</price>
+          <price role="student">4.90</price>
+        </meal>
+      </category>
       <category name="Pottkieker">
         <meal>
           <name>Sojageschnetzeltes in Currysoße (Sojaprotein) (So,Sl,Sf,GlW), Reis</name>
@@ -366,15 +383,6 @@
           <price role="other">7.30</price>
           <price role="student">4.70</price>
         </meal>
-        <meal>
-          <name>Veganer Sloppy Joes Burger mit Sojahack (Sojaprotein), gepickelten Zwiebeln und Gewürzgurke (1,2,3,9,So,Sf,GlW), Cole Slaw mit Sojamajo , Pommes Frites</name>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">6.20</price>
-          <price role="other">7.50</price>
-          <price role="student">4.90</price>
-        </meal>
       </category>
       <category name="Pastabar">
         <meal>
@@ -401,6 +409,170 @@
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2026-10-26">
+      <category name="Highlight">
+        <meal>
+          <name>Putenbrust im Ganzen gebraten, Geflügelrahmsoße , Gemüse-Reis</name>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <price role="employee">7.00</price>
+          <price role="other">8.30</price>
+          <price role="student">5.70</price>
+        </meal>
+      </category>
+      <category name="Pottkieker">
+        <meal>
+          <name>Orientalischer Gemüseeintopf</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.50</price>
+          <price role="other">4.80</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Rote Beete Gnocchi mit Grillgemüse</name>
+          <note>Geschwefelt</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Farbstoff</note>
+          <price role="employee">6.10</price>
+          <price role="other">7.40</price>
+          <price role="student">4.80</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Frisch gebackene FLAMMKUCHEN nach Wahl (versch. Sorten) ab 4,20 / 5,50 / 6,70 (auch TAKE AWAY) (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">5.50</price>
+          <price role="other">6.80</price>
+          <price role="student">4.20</price>
+        </meal>
+      </category>
+      <category name="Pastabar">
+        <meal>
+          <name>Pennette (GlW), mit cremiger Tomatensoße mit Harissa und Aubergine</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Vegetarisch</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+        <meal>
+          <name>Pennette (GlW), Sonnenblumenhack mit Rosenkohl in Sojacreme (Sonnenblumenprotein) (1,So,Sl,Sf,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+      </category>
+      <category name="Gemüsebar">
+        <meal>
+          <name>Gebratener Sellerie mit Fenchel , gebratenem Wirsing, Sesammöhrchen , Broccoli, Indische Kartoffeln</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Sesamsamen und Sesamsamenerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2026-10-27">
+      <category name="Highlight">
+        <meal>
+          <name>Cheeseburger mit Gurken, Tomaten und Salat (1,2,3,9,Ei,Mi,Sf,Sw,GlW), Pommes Frites</name>
+          <note>Rind</note>
+          <note>Senf und Senferzeugnisse</note>
+          <price role="employee">6.95</price>
+          <price role="other">8.25</price>
+          <price role="student">5.65</price>
+        </meal>
+      </category>
+      <category name="Pottkieker">
+        <meal>
+          <name>Blumenkohl Korma, Reis</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.50</price>
+          <price role="other">4.80</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>Indisches Bohnencurry Rajma Chawal , Gemüse Bulgur (Sl,GlW)</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">4.85</price>
+          <price role="other">6.15</price>
+          <price role="student">3.55</price>
+        </meal>
+      </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Frisch gebackene PIZZA nach Wahl (versch. Sorten) ab 4,70 / 6,00 / 7,20 (auch TAKE AWAY) (Mi,GlW)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">6.00</price>
+          <price role="other">7.30</price>
+          <price role="student">4.70</price>
+        </meal>
+      </category>
+      <category name="Pastabar">
+        <meal>
+          <name>Spätzle (Ei,GlW), Schinken- Käsesoße mit Thymian</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Phosphat</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+        <meal>
+          <name>Mi Nudeln (GlW), Spinat-Erdnusssoße (2,En,So,Sl,Sw,GlW,NMa)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+      </category>
+      <category name="Gemüsebar">
+        <meal>
+          <name>Apfelrotkohl , Cajun Gemüse , geschmorter Sellerie , Karotten Bohnengemüse, Gnocchi (GlW)</name>
+          <note>Geschwefelt</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
