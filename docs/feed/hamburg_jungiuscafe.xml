@@ -3,31 +3,6 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2026-10-19">
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Rindergeschnetzeltes mit Pilzen in Rahm , Conchiglie (GlW)</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Rind</note>
-          <price role="employee">6.80</price>
-          <price role="other">8.10</price>
-          <price role="student">5.50</price>
-        </meal>
-      </category>
-      <category name="CampusVital">
-        <meal>
-          <name>Süßkartoffel-Gnocchi mit geröstetem Blumenkohl und Brokkoli , Sojajoghurt-Kräuter Dip</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Soja und Sojaerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">5.10</price>
-          <price role="other">6.40</price>
-          <price role="student">3.80</price>
-        </meal>
-      </category>
-    </day>
     <day date="2026-10-20">
       <category name="Pottkieker">
         <meal>
@@ -41,14 +16,6 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Pennette in Tomatensoße mit Gemüsebällchen (Ei,Sw,GlW)</name>
-          <note>Vegetarisch</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">4.25</price>
-          <price role="other">5.55</price>
-          <price role="student">2.95</price>
-        </meal>
-        <meal>
           <name>Paniertes Putenschnitzel (GlW), Hollandaise , Erbsen, Kroketten (GlW)</name>
           <note>Alkohol</note>
           <note>Ei und Eierzeugnisse</note>
@@ -61,18 +28,18 @@
           <price role="other">8.30</price>
           <price role="student">5.70</price>
         </meal>
+        <meal>
+          <name>Pennette in Tomatensoße mit Gemüsebällchen (Ei,Sw,GlW)</name>
+          <note>Vegetarisch</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">4.25</price>
+          <price role="other">5.55</price>
+          <price role="student">2.95</price>
+        </meal>
       </category>
     </day>
     <day date="2026-10-21">
       <category name="CampusSpezial">
-        <meal>
-          <name>Vegane Maultaschen mit Kürbis-Champignongemüse und Salbei (1,3,So,Sl,Sw,GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">7.20</price>
-          <price role="other">8.50</price>
-          <price role="student">5.90</price>
-        </meal>
         <meal>
           <name>Rindfleischfrikadelle (Ei,GlW), Rahmsoße , Erbsen- Karotten Gemüse, hausgemachtes Kartoffelpüree</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -81,6 +48,14 @@
           <price role="employee">6.85</price>
           <price role="other">8.15</price>
           <price role="student">5.55</price>
+        </meal>
+        <meal>
+          <name>Vegane Maultaschen mit Kürbis-Champignongemüse und Salbei (1,3,So,Sl,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">7.20</price>
+          <price role="other">8.50</price>
+          <price role="student">5.90</price>
         </meal>
       </category>
     </day>
@@ -198,6 +173,49 @@
           <price role="employee">4.85</price>
           <price role="other">6.15</price>
           <price role="student">3.55</price>
+        </meal>
+      </category>
+    </day>
+    <day date="2026-10-28">
+      <category name="Pottkieker">
+        <meal>
+          <name>Tofu-Gemüse-Topf</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.50</price>
+          <price role="other">4.80</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusKlassiker">
+        <meal>
+          <name>Leberkäse im Ganzen gebacken , Sauerkraut mit Speck , Bratkartoffeln mit Speck</name>
+          <note>Schwein</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Phosphat</note>
+          <price role="employee">5.90</price>
+          <price role="other">7.20</price>
+          <price role="student">4.60</price>
+        </meal>
+      </category>
+      <category name="CampusVital">
+        <meal>
+          <name>gebackener Hirtenkäse , Tomatenreis mit Edamame und Oliven , Tomaten-Gurken-Salsa , Rucola</name>
+          <note>Geschwefelt</note>
+          <note>Geschwärzt</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Soja und Sojaerzeugnisse</note>
+          <note>Vegetarisch</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">6.00</price>
+          <price role="other">7.30</price>
+          <price role="student">4.70</price>
         </meal>
       </category>
     </day>

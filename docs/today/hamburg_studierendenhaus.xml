@@ -16,29 +16,6 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Paniertes Putenschnitzel (GlW), Hollandaise , Erbsen, Kroketten (GlW)</name>
-          <note>Ei und Eierzeugnisse</note>
-          <note>Geflügel</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <price role="employee">7.00</price>
-          <price role="other">8.30</price>
-          <price role="student">5.70</price>
-        </meal>
-        <meal>
-          <name>2 Stück vegane Weißwürste , Süßer Senf , Rettichsalat , Laugenbrezel (GlW)</name>
-          <note>Geschwefelt</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Farbstoff</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.50</price>
-          <price role="student">3.90</price>
-        </meal>
-        <meal>
           <name>2 Stück Weißwürste , Süßer Senf , Rettichsalat , Laugenbrezel (GlW)</name>
           <note>Geschwefelt</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -53,12 +30,35 @@
           <price role="student">3.90</price>
         </meal>
         <meal>
+          <name>Paniertes Putenschnitzel (GlW), Hollandaise , Erbsen, Kroketten (GlW)</name>
+          <note>Ei und Eierzeugnisse</note>
+          <note>Geflügel</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <price role="employee">7.00</price>
+          <price role="other">8.30</price>
+          <price role="student">5.70</price>
+        </meal>
+        <meal>
           <name>Pennette in Tomatensoße mit Gemüsebällchen (Ei,Sw,GlW)</name>
           <note>Vegetarisch</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">4.25</price>
           <price role="other">5.55</price>
           <price role="student">2.95</price>
+        </meal>
+        <meal>
+          <name>2 Stück vegane Weißwürste , Süßer Senf , Rettichsalat , Laugenbrezel (GlW)</name>
+          <note>Geschwefelt</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Farbstoff</note>
+          <price role="employee">5.20</price>
+          <price role="other">6.50</price>
+          <price role="student">3.90</price>
         </meal>
       </category>
       <category name="CampusWorld">
@@ -82,7 +82,7 @@
           <price role="student">0.90</price>
         </meal>
         <meal>
-          <name>Tomatensoße mit Pastinaken und Thymian</name>
+          <name>spanisches Kartoffelgemüse</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -91,7 +91,7 @@
           <price role="student">0.90</price>
         </meal>
         <meal>
-          <name>spanisches Kartoffelgemüse</name>
+          <name>Tomatensoße mit Pastinaken und Thymian</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
@@ -351,14 +351,6 @@
       </category>
       <category name="CampusWorld">
         <meal>
-          <name>Hausgemachte Pasta (GlW), Pasta sugo di zucca mit Kürbissoße, Orangen Gremolata, Hirtenkäsealternative (So,Sw,NHa)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.50</price>
-          <price role="student">3.90</price>
-        </meal>
-        <meal>
           <name>Rote Beete Stäbchen (Mi,GlW), Remoulade , Gewürzgurke , Bratkartoffeln</name>
           <note>Ei und Eierzeugnisse</note>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
@@ -373,20 +365,28 @@
           <price role="other">7.60</price>
           <price role="student">5.00</price>
         </meal>
+        <meal>
+          <name>Hausgemachte Pasta (GlW), Pasta sugo di zucca mit Kürbissoße, Orangen Gremolata, Hirtenkäsealternative (So,Sw,NHa)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">5.20</price>
+          <price role="other">6.50</price>
+          <price role="student">3.90</price>
+        </meal>
       </category>
       <category name="Pastabar">
-        <meal>
-          <name>Eliche (GlW), Waldpilzen in Sahnesoße mit Basilikum und geräuchertem Knoblauch (Mi,Sw,GlW,GlG)</name>
-          <note>Vegetarisch</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
         <meal>
           <name>Eliche (GlW), Tomatensoße mit Auberginen, Paprika und Kapern</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+        <meal>
+          <name>Eliche (GlW), Waldpilzen in Sahnesoße mit Basilikum und geräuchertem Knoblauch (Mi,Sw,GlW,GlG)</name>
+          <note>Vegetarisch</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
