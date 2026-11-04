@@ -3,15 +3,22 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2026-11-03">
+    <day date="2026-11-04">
       <category name="Vorspeise">
         <meal>
-          <name>Maultaschensuppe</name>
-          <note>Ei</note>
-          <note>Rind</note>
-          <note>Schwein</note>
+          <name>Gemüserahmsuppe</name>
+          <note>Milch und Laktose</note>
+          <note>Nährwerte pro 100 g 
+Brennwert: 229.0 kj / 55.0 kcal 
+Fett: 4.7 g 
+ - davon ges. FS: 2.7 g 
+Kohlenhydrate: 2.4 g 
+ - davon Zucker: 0.9 g 
+Eiweiß: 0.7 g 
+Salz: 0.1 g</note>
           <note>Sellerie</note>
           <note>Weizen</note>
+          <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="other">1.79</price>
           <price role="student">0.99</price>
@@ -19,20 +26,18 @@
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Veganes Gyros mit veganem Tzatziki, Paprikareis und Weißkrautsalat</name>
-          <note>Hafer</note>
+          <name>Indisches Auberginencurry mit Kichererbsenreis</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 349.9 kj / 84.0 kcal 
-Fett: 4.3 g 
- - davon ges. FS: 0.6 g 
-Kohlenhydrate: 11.1 g 
- - davon Zucker: 2.4 g 
-Eiweiß: 4.8 g 
-Salz: 0.8 g</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
+Brennwert: 440.0 kj / 105.0 kcal 
+Fett: 2.5 g 
+ - davon ges. FS: 0.2 g 
+Kohlenhydrate: 19.0 g 
+ - davon Zucker: 0.7 g 
+Eiweiß: 3.5 g 
+Salz: 0.7 g</note>
           <note>Sellerie</note>
           <note>Soja</note>
-          <note>mit Antioxidationsmitteln</note>
+          <note>mit Konservierungsstoffen</note>
           <note>vegan</note>
           <price role="employee">5.99</price>
           <price role="other">6.49</price>
@@ -41,38 +46,39 @@ Salz: 0.8 g</note>
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Penne Bolognese überbacken</name>
-          <note>Milch und Laktose</note>
+          <name>Falafel mit Tomatenbulgur und Soja-Minz-Dip</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 976.1 kj / 233.0 kcal 
-Fett: 7.4 g 
- - davon ges. FS: 3.1 g 
-Kohlenhydrate: 28.5 g 
- - davon Zucker: 4.0 g 
-Eiweiß: 11.6 g 
+Brennwert: 551.6 kj / 132.0 kcal 
+Fett: 15.9 g 
+ - davon ges. FS: 1.4 g 
+Kohlenhydrate: 15.1 g 
+ - davon Zucker: 2.1 g 
+Eiweiß: 3.5 g 
 Salz: 0.5 g</note>
-          <note>Rind</note>
           <note>Sellerie</note>
+          <note>Senf</note>
+          <note>Soja</note>
           <note>Weizen</note>
-          <price role="employee">8.10</price>
-          <price role="other">8.60</price>
-          <price role="student">5.10</price>
+          <note>vegan</note>
+          <price role="employee">7.80</price>
+          <price role="other">8.30</price>
+          <price role="student">4.80</price>
         </meal>
         <meal>
-          <name>Seelachs Nuggets mit Honig-Senf-Dip und Steakhouse frites</name>
-          <note>Fisch</note>
-          <note>MSC-zertifizierter Fisch (MSC-C-51632)</note>
+          <name>Hähnchen Cordon bleu und Pommes frites</name>
+          <note>Geflügel</note>
           <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 802.2 kj / 192.0 kcal 
-Fett: 16.3 g 
- - davon ges. FS: 3.3 g 
-Kohlenhydrate: 18.2 g 
- - davon Zucker: 3.5 g 
-Eiweiß: 6.8 g 
+Brennwert: 771.5 kj / 184.0 kcal 
+Fett: 15.4 g 
+ - davon ges. FS: 3.2 g 
+Kohlenhydrate: 19.3 g 
+ - davon Zucker: 1.0 g 
+Eiweiß: 9.7 g 
 Salz: 1.0 g</note>
-          <note>Senf</note>
           <note>Weizen</note>
+          <note>mit Konservierungsstoffen</note>
+          <note>mit Phosphaten</note>
           <price role="employee">8.40</price>
           <price role="other">8.90</price>
           <price role="student">5.40</price>
@@ -81,8 +87,6 @@ Salz: 1.0 g</note>
       <category name="Buffet">
         <meal>
           <name>Mensa Buffet</name>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Weizen</note>
           <price role="employee">1.60</price>
           <price role="other">2.10</price>
           <price role="student">1.10</price>
@@ -92,10 +96,10 @@ Salz: 1.0 g</note>
           <note>Ei</note>
           <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 395.0 kj / 94.0 kcal 
+Brennwert: 395.2 kj / 94.0 kcal 
 Fett: 23.3 g 
  - davon ges. FS: 2.4 g 
-Kohlenhydrate: 10.1 g 
+Kohlenhydrate: 10.2 g 
  - davon Zucker: 4.7 g 
 Eiweiß: 2.1 g 
 Salz: 1.1 g</note>
@@ -117,14 +121,14 @@ Salz: 1.1 g</note>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Grüne Bohnen</name>
+          <name>Balkangemüse</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 224.1 kj / 54.0 kcal 
+Brennwert: 264.7 kj / 63.0 kcal 
 Fett: 2.5 g 
- - davon ges. FS: 1.0 g 
-Kohlenhydrate: 4.3 g 
- - davon Zucker: 1.3 g 
-Eiweiß: 2.0 g 
+ - davon ges. FS: 1.1 g 
+Kohlenhydrate: 6.5 g 
+ - davon Zucker: 4.0 g 
+Eiweiß: 2.3 g 
 Salz: 0.3 g</note>
           <note>Sellerie</note>
           <note>vegan</note>
@@ -133,16 +137,9 @@ Salz: 0.3 g</note>
           <price role="student">0.99</price>
         </meal>
         <meal>
-          <name>Reis</name>
-          <note>vegan</note>
-          <price role="employee">1.49</price>
-          <price role="other">1.89</price>
-          <price role="student">1.09</price>
-        </meal>
-        <meal>
           <name>Pommes frites</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 869.7 kj / 208.0 kcal 
+Brennwert: 869.6 kj / 208.0 kcal 
 Fett: 18.8 g 
  - davon ges. FS: 3.9 g 
 Kohlenhydrate: 27.2 g 
@@ -154,9 +151,24 @@ Salz: 0.7 g</note>
           <price role="student">1.29</price>
         </meal>
         <meal>
+          <name>Kichererbsenreis</name>
+          <note>Nährwerte pro 100 g 
+Brennwert: 651.9 kj / 156.0 kcal 
+Fett: 1.5 g 
+ - davon ges. FS: 0.2 g 
+Kohlenhydrate: 28.5 g 
+ - davon Zucker: 0.5 g 
+Eiweiß: 5.1 g 
+Salz: 0.2 g</note>
+          <note>vegan</note>
+          <price role="employee">1.49</price>
+          <price role="other">1.89</price>
+          <price role="student">1.09</price>
+        </meal>
+        <meal>
           <name>Beilagensalat</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 69.2 kj / 17.0 kcal 
+Brennwert: 68.8 kj / 16.0 kcal 
 Fett: 0.1 g 
  - davon ges. FS: 0.1 g 
 Kohlenhydrate: 1.8 g 
@@ -171,34 +183,33 @@ Salz: 0.1 g</note>
       </category>
       <category name="Dessert">
         <meal>
-          <name>Heidelbeerjoghurt</name>
-          <note>Milch und Laktose</note>
+          <name>Veganer Mangoquark</name>
+          <note>Hafer</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 394.0 kj / 94.0 kcal 
-Fett: 3.0 g 
- - davon ges. FS: 1.9 g 
-Kohlenhydrate: 12.3 g 
- - davon Zucker: 11.6 g 
-Eiweiß: 3.7 g 
-Salz: 0.1 g</note>
-          <note>mit Farbstoffen</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.49</price>
-          <price role="other">1.89</price>
-          <price role="student">1.09</price>
-        </meal>
-        <meal>
-          <name>Veganer Pudding mit Vanille-Geschmack</name>
-          <note>Nährwerte pro 100 g 
-Brennwert: 390.4 kj / 93.0 kcal 
-Fett: 3.1 g 
- - davon ges. FS: 1.2 g 
-Kohlenhydrate: 11.9 g 
- - davon Zucker: 8.2 g 
+Brennwert: 407.2 kj / 97.0 kcal 
+Fett: 3.3 g 
+ - davon ges. FS: 0.6 g 
+Kohlenhydrate: 12.7 g 
+ - davon Zucker: 9.8 g 
 Eiweiß: 4.0 g 
 Salz: 0.2 g</note>
           <note>Soja</note>
           <note>vegan</note>
+          <price role="employee">1.69</price>
+          <price role="other">2.09</price>
+          <price role="student">1.29</price>
+        </meal>
+        <meal>
+          <name>Creme mit Tiramisu-Geschmack</name>
+          <note>Milch und Laktose</note>
+          <note>Nährwerte pro 100 g 
+Brennwert: 557.0 kj / 133.0 kcal 
+Fett: 4.5 g 
+ - davon ges. FS: 3.2 g 
+Kohlenhydrate: 18.7 g 
+ - davon Zucker: 15.5 g 
+Eiweiß: 4.3 g 
+Salz: 0.2 g</note>
           <price role="employee">1.69</price>
           <price role="other">2.09</price>
           <price role="student">1.29</price>
