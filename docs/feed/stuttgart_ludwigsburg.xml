@@ -3,19 +3,19 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2026-11-04">
+    <day date="2026-11-05">
       <category name="Vorspeise">
         <meal>
-          <name>Gemüserahmsuppe</name>
+          <name>Lauchcremsuppe</name>
           <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 229.0 kj / 55.0 kcal 
-Fett: 4.7 g 
- - davon ges. FS: 2.7 g 
-Kohlenhydrate: 2.4 g 
- - davon Zucker: 0.9 g 
-Eiweiß: 0.7 g 
-Salz: 0.1 g</note>
+Brennwert: 258.0 kj / 62.0 kcal 
+Fett: 4.5 g 
+ - davon ges. FS: 2.6 g 
+Kohlenhydrate: 3.9 g 
+ - davon Zucker: 1.0 g 
+Eiweiß: 1.1 g 
+Salz: 0.2 g</note>
           <note>Sellerie</note>
           <note>Weizen</note>
           <note>vegetarisch</note>
@@ -26,18 +26,22 @@ Salz: 0.1 g</note>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Indisches Auberginencurry mit Kichererbsenreis</name>
+          <name>Gemüse-Knusperfrikadelle und Petersilienkartoffeln Cocktaildip</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 440.0 kj / 105.0 kcal 
-Fett: 2.5 g 
- - davon ges. FS: 0.2 g 
-Kohlenhydrate: 19.0 g 
- - davon Zucker: 0.7 g 
-Eiweiß: 3.5 g 
-Salz: 0.7 g</note>
+Brennwert: 320.1 kj / 76.0 kcal 
+Fett: 12.3 g 
+ - davon ges. FS: 1.3 g 
+Kohlenhydrate: 8.9 g 
+ - davon Zucker: 1.5 g 
+Eiweiß: 1.3 g 
+Salz: 0.4 g</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
+          <note>Senf</note>
           <note>Soja</note>
-          <note>mit Konservierungsstoffen</note>
+          <note>Weizen</note>
+          <note>mit Farbstoffen</note>
+          <note>mit Süßungsmitteln</note>
           <note>vegan</note>
           <price role="employee">5.99</price>
           <price role="other">6.49</price>
@@ -46,23 +50,43 @@ Salz: 0.7 g</note>
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Falafel mit Tomatenbulgur und Soja-Minz-Dip</name>
+          <name>Allgäuer Käsespätzle mit Zwiebelschmelze</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 551.6 kj / 132.0 kcal 
-Fett: 15.9 g 
- - davon ges. FS: 1.4 g 
-Kohlenhydrate: 15.1 g 
- - davon Zucker: 2.1 g 
-Eiweiß: 3.5 g 
-Salz: 0.5 g</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>Soja</note>
+Brennwert: 777.0 kj / 186.0 kcal 
+Fett: 9.2 g 
+ - davon ges. FS: 4.8 g 
+Kohlenhydrate: 17.5 g 
+ - davon Zucker: 1.3 g 
+Eiweiß: 8.0 g 
+Salz: 1.9 g</note>
           <note>Weizen</note>
-          <note>vegan</note>
-          <price role="employee">7.80</price>
-          <price role="other">8.30</price>
-          <price role="student">4.80</price>
+          <note>vegetarisch</note>
+          <price role="employee">7.50</price>
+          <price role="other">8.00</price>
+          <price role="student">4.50</price>
+        </meal>
+        <meal>
+          <name>Kassler Rücken Braten mit Bratensauce und Kartoffelpüree</name>
+          <note>Milch und Laktose</note>
+          <note>Nährwerte pro 100 g 
+Brennwert: 161.4 kj / 39.0 kcal 
+Fett: 1.0 g 
+ - davon ges. FS: 0.6 g 
+Kohlenhydrate: 6.4 g 
+ - davon Zucker: 0.6 g 
+Eiweiß: 0.9 g 
+Salz: 0.4 g</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Schwein</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Farbstoffen</note>
+          <note>mit Konservierungsstoffen</note>
+          <price role="employee">8.10</price>
+          <price role="other">8.60</price>
+          <price role="student">5.10</price>
         </meal>
         <meal>
           <name>Hähnchen Cordon bleu und Pommes frites</name>
@@ -79,14 +103,16 @@ Salz: 1.0 g</note>
           <note>Weizen</note>
           <note>mit Konservierungsstoffen</note>
           <note>mit Phosphaten</note>
-          <price role="employee">8.40</price>
-          <price role="other">8.90</price>
-          <price role="student">5.40</price>
+          <price role="employee">8.30</price>
+          <price role="other">8.80</price>
+          <price role="student">5.30</price>
         </meal>
       </category>
       <category name="Buffet">
         <meal>
           <name>Mensa Buffet</name>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Weizen</note>
           <price role="employee">1.60</price>
           <price role="other">2.10</price>
           <price role="student">1.10</price>
@@ -96,7 +122,7 @@ Salz: 1.0 g</note>
           <note>Ei</note>
           <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 395.2 kj / 94.0 kcal 
+Brennwert: 395.6 kj / 94.0 kcal 
 Fett: 23.3 g 
  - davon ges. FS: 2.4 g 
 Kohlenhydrate: 10.2 g 
@@ -121,20 +147,39 @@ Salz: 1.1 g</note>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Balkangemüse</name>
+          <name>Kürbis Karotten Gemüse</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 264.7 kj / 63.0 kcal 
-Fett: 2.5 g 
- - davon ges. FS: 1.1 g 
-Kohlenhydrate: 6.5 g 
- - davon Zucker: 4.0 g 
-Eiweiß: 2.3 g 
-Salz: 0.3 g</note>
+Brennwert: 139.5 kj / 33.0 kcal 
+Fett: 2.9 g 
+ - davon ges. FS: 0.3 g 
+Kohlenhydrate: 4.2 g 
+ - davon Zucker: 3.6 g 
+Eiweiß: 1.0 g 
+Salz: 0.2 g</note>
           <note>Sellerie</note>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="other">1.79</price>
           <price role="student">0.99</price>
+        </meal>
+        <meal>
+          <name>Kartoffelpüree</name>
+          <note>Milch und Laktose</note>
+          <note>Nährwerte pro 100 g 
+Brennwert: 301.1 kj / 72.0 kcal 
+Fett: 1.9 g 
+ - davon ges. FS: 1.1 g 
+Kohlenhydrate: 11.5 g 
+ - davon Zucker: 1.1 g 
+Eiweiß: 1.7 g 
+Salz: 0.8 g</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>mit Farbstoffen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.49</price>
+          <price role="other">1.89</price>
+          <price role="student">1.09</price>
         </meal>
         <meal>
           <name>Pommes frites</name>
@@ -151,24 +196,9 @@ Salz: 0.7 g</note>
           <price role="student">1.29</price>
         </meal>
         <meal>
-          <name>Kichererbsenreis</name>
-          <note>Nährwerte pro 100 g 
-Brennwert: 651.9 kj / 156.0 kcal 
-Fett: 1.5 g 
- - davon ges. FS: 0.2 g 
-Kohlenhydrate: 28.5 g 
- - davon Zucker: 0.5 g 
-Eiweiß: 5.1 g 
-Salz: 0.2 g</note>
-          <note>vegan</note>
-          <price role="employee">1.49</price>
-          <price role="other">1.89</price>
-          <price role="student">1.09</price>
-        </meal>
-        <meal>
           <name>Beilagensalat</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 68.8 kj / 16.0 kcal 
+Brennwert: 69.0 kj / 16.0 kcal 
 Fett: 0.1 g 
  - davon ges. FS: 0.1 g 
 Kohlenhydrate: 1.8 g 
@@ -183,159 +213,16 @@ Salz: 0.1 g</note>
       </category>
       <category name="Dessert">
         <meal>
-          <name>Veganer Mangoquark</name>
-          <note>Hafer</note>
-          <note>Nährwerte pro 100 g 
-Brennwert: 407.2 kj / 97.0 kcal 
-Fett: 3.3 g 
- - davon ges. FS: 0.6 g 
-Kohlenhydrate: 12.7 g 
- - davon Zucker: 9.8 g 
-Eiweiß: 4.0 g 
-Salz: 0.2 g</note>
-          <note>Soja</note>
-          <note>vegan</note>
-          <price role="employee">1.69</price>
-          <price role="other">2.09</price>
-          <price role="student">1.29</price>
-        </meal>
-        <meal>
-          <name>Creme mit Tiramisu-Geschmack</name>
-          <note>Milch und Laktose</note>
-          <note>Nährwerte pro 100 g 
-Brennwert: 557.0 kj / 133.0 kcal 
-Fett: 4.5 g 
- - davon ges. FS: 3.2 g 
-Kohlenhydrate: 18.7 g 
- - davon Zucker: 15.5 g 
-Eiweiß: 4.3 g 
-Salz: 0.2 g</note>
-          <price role="employee">1.69</price>
-          <price role="other">2.09</price>
-          <price role="student">1.29</price>
-        </meal>
-      </category>
-    </day>
-    <day date="2026-11-05">
-      <category name="Vorspeise">
-        <meal>
-          <name>Zwiebelsuppe mit Weißwein</name>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Sellerie</note>
-          <note>Weizen</note>
-          <note>mit Alkohol</note>
-          <note>vegan</note>
-          <price role="employee">1.39</price>
-          <price role="other">1.79</price>
-          <price role="student">0.99</price>
-        </meal>
-      </category>
-      <category name="Veganer renner">
-        <meal>
-          <name>Gemüse-Knusperfrikadelle und Petersilienkartoffeln Cocktaildip</name>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>Soja</note>
-          <note>Weizen</note>
-          <note>mit Farbstoffen</note>
-          <note>mit Süßungsmitteln</note>
-          <note>vegan</note>
-          <price role="employee">5.99</price>
-          <price role="other">6.49</price>
-          <price role="student">2.99</price>
-        </meal>
-      </category>
-      <category name="Hauptgericht">
-        <meal>
-          <name>Allgäuer Käsespätzle mit Zwiebelschmelze</name>
-          <note>Dinkel</note>
-          <note>Ei</note>
-          <note>Milch und Laktose</note>
-          <note>Weizen</note>
-          <note>vegetarisch</note>
-          <price role="employee">7.50</price>
-          <price role="other">8.00</price>
-          <price role="student">4.50</price>
-        </meal>
-        <meal>
-          <name>Kassler Rücken Braten mit Bratensauce und Kartoffelpüree</name>
-          <note>Milch und Laktose</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Schwein</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
-          <note>mit Konservierungsstoffen</note>
-          <price role="employee">8.10</price>
-          <price role="other">8.60</price>
-          <price role="student">5.10</price>
-        </meal>
-      </category>
-      <category name="Buffet">
-        <meal>
-          <name>Mensa Buffet</name>
-          <price role="employee">1.60</price>
-          <price role="other">2.10</price>
-          <price role="student">1.10</price>
-        </meal>
-        <meal>
-          <name>Salatbuffet</name>
-          <note>Ei</note>
-          <note>Milch und Laktose</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Sellerie</note>
-          <note>Senf</note>
-          <note>Sesam</note>
-          <note>Weizen</note>
-          <note>geschwefelt</note>
-          <note>geschwärzt</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
-          <note>mit Süßungsmitteln</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.60</price>
-          <price role="other">2.10</price>
-          <price role="student">1.10</price>
-        </meal>
-      </category>
-      <category name="Beilage">
-        <meal>
-          <name>Kürbis Karotten Gemüse</name>
-          <note>Sellerie</note>
-          <note>vegan</note>
-          <price role="employee">1.39</price>
-          <price role="other">1.79</price>
-          <price role="student">0.99</price>
-        </meal>
-        <meal>
-          <name>Kartoffelpüree</name>
-          <note>Milch und Laktose</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>mit Antioxidationsmitteln</note>
-          <note>mit Farbstoffen</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.49</price>
-          <price role="other">1.89</price>
-          <price role="student">1.09</price>
-        </meal>
-        <meal>
-          <name>Pommes frites</name>
-          <price role="employee">1.69</price>
-          <price role="other">2.09</price>
-          <price role="student">1.29</price>
-        </meal>
-        <meal>
-          <name>Beilagensalat</name>
-          <note>vegan</note>
-          <price role="employee">1.39</price>
-          <price role="other">1.79</price>
-          <price role="student">0.99</price>
-        </meal>
-      </category>
-      <category name="Dessert">
-        <meal>
           <name>Veganer Himbeerquark</name>
           <note>Hafer</note>
+          <note>Nährwerte pro 100 g 
+Brennwert: 427.7 kj / 102.0 kcal 
+Fett: 3.1 g 
+ - davon ges. FS: 0.4 g 
+Kohlenhydrate: 13.6 g 
+ - davon Zucker: 10.8 g 
+Eiweiß: 4.2 g 
+Salz: 0.2 g</note>
           <note>Soja</note>
           <note>vegan</note>
           <price role="employee">1.69</price>
@@ -345,6 +232,14 @@ Salz: 0.2 g</note>
         <meal>
           <name>Sahneschokopudding</name>
           <note>Milch und Laktose</note>
+          <note>Nährwerte pro 100 g 
+Brennwert: 629.1 kj / 150.0 kcal 
+Fett: 7.8 g 
+ - davon ges. FS: 5.4 g 
+Kohlenhydrate: 17.0 g 
+ - davon Zucker: 12.0 g 
+Eiweiß: 2.8 g 
+Salz: 0.2 g</note>
           <note>vegetarisch</note>
           <price role="employee">1.69</price>
           <price role="other">2.09</price>
@@ -353,6 +248,27 @@ Salz: 0.2 g</note>
       </category>
     </day>
     <day date="2026-11-06">
+      <category name="Vorspeise">
+        <meal>
+          <name>Kartoffelsuppe</name>
+          <note>Milch und Laktose</note>
+          <note>Nährwerte pro 100 g 
+Brennwert: 154.0 kj / 37.0 kcal 
+Fett: 1.3 g 
+ - davon ges. FS: 0.8 g 
+Kohlenhydrate: 5.0 g 
+ - davon Zucker: 0.6 g 
+Eiweiß: 0.8 g 
+Salz: 0.5 g</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="other">1.79</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
       <category name="Veganer renner">
         <meal>
           <name>Spaghetti aglio e olio</name>
@@ -373,9 +289,28 @@ Salz: 0.0 g</note>
       </category>
       <category name="Hauptgericht">
         <meal>
+          <name>Allgäuer Käsespätzle mit Zwiebelschmelze</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Nährwerte pro 100 g 
+Brennwert: 777.0 kj / 186.0 kcal 
+Fett: 9.2 g 
+ - davon ges. FS: 4.8 g 
+Kohlenhydrate: 17.5 g 
+ - davon Zucker: 1.3 g 
+Eiweiß: 8.0 g 
+Salz: 1.9 g</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">7.40</price>
+          <price role="other">7.90</price>
+          <price role="student">4.40</price>
+        </meal>
+        <meal>
           <name>Currywurst mit Currysauce und Pommes frites</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 713.9 kj / 171.0 kcal 
+Brennwert: 714.0 kj / 171.0 kcal 
 Fett: 14.2 g 
  - davon ges. FS: 3.9 g 
 Kohlenhydrate: 13.6 g 
@@ -423,6 +358,14 @@ Salz: 0.9 g</note>
           <name>Salatbuffet</name>
           <note>Ei</note>
           <note>Milch und Laktose</note>
+          <note>Nährwerte pro 100 g 
+Brennwert: 395.3 kj / 94.0 kcal 
+Fett: 23.3 g 
+ - davon ges. FS: 2.4 g 
+Kohlenhydrate: 10.1 g 
+ - davon Zucker: 4.7 g 
+Eiweiß: 2.1 g 
+Salz: 1.1 g</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
           <note>Senf</note>
@@ -442,18 +385,28 @@ Salz: 0.9 g</note>
       <category name="Beilage">
         <meal>
           <name>Pommes frites</name>
-          <price role="employee">1.69</price>
-          <price role="other">2.09</price>
-          <price role="student">1.29</price>
-        </meal>
-        <meal>
-          <name>Steakhouse frites</name>
+          <note>Nährwerte pro 100 g 
+Brennwert: 869.7 kj / 208.0 kcal 
+Fett: 18.8 g 
+ - davon ges. FS: 3.9 g 
+Kohlenhydrate: 27.2 g 
+ - davon Zucker: 0.7 g 
+Eiweiß: 3.2 g 
+Salz: 0.7 g</note>
           <price role="employee">1.69</price>
           <price role="other">2.09</price>
           <price role="student">1.29</price>
         </meal>
         <meal>
           <name>Reis</name>
+          <note>Nährwerte pro 100 g 
+Brennwert: 570.4 kj / 136.0 kcal 
+Fett: 3.0 g 
+ - davon ges. FS: 1.5 g 
+Kohlenhydrate: 24.5 g 
+ - davon Zucker: 0.1 g 
+Eiweiß: 2.3 g 
+Salz: 0.4 g</note>
           <note>vegan</note>
           <price role="employee">1.49</price>
           <price role="other">1.89</price>
@@ -461,6 +414,14 @@ Salz: 0.9 g</note>
         </meal>
         <meal>
           <name>Beilagensalat</name>
+          <note>Nährwerte pro 100 g 
+Brennwert: 68.2 kj / 16.0 kcal 
+Fett: 0.1 g 
+ - davon ges. FS: 0.1 g 
+Kohlenhydrate: 1.8 g 
+ - davon Zucker: 1.5 g 
+Eiweiß: 1.3 g 
+Salz: 0.1 g</note>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="other">1.79</price>
@@ -471,6 +432,14 @@ Salz: 0.9 g</note>
         <meal>
           <name>Schokoladenpudding mit Birne</name>
           <note>Milch und Laktose</note>
+          <note>Nährwerte pro 100 g 
+Brennwert: 434.5 kj / 104.0 kcal 
+Fett: 4.6 g 
+ - davon ges. FS: 3.0 g 
+Kohlenhydrate: 13.2 g 
+ - davon Zucker: 10.3 g 
+Eiweiß: 2.1 g 
+Salz: 0.1 g</note>
           <note>vegetarisch</note>
           <price role="employee">1.69</price>
           <price role="other">2.09</price>
@@ -482,6 +451,27 @@ Salz: 0.9 g</note>
       <closed/>
     </day>
     <day date="2026-11-09">
+      <category name="Vorspeise">
+        <meal>
+          <name>Zwiebelsuppe mit Weißwein</name>
+          <note>Nährwerte pro 100 g 
+Brennwert: 149.3 kj / 36.0 kcal 
+Fett: 2.3 g 
+ - davon ges. FS: 1.1 g 
+Kohlenhydrate: 2.5 g 
+ - davon Zucker: 0.6 g 
+Eiweiß: 0.5 g 
+Salz: 0.1 g</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>Weizen</note>
+          <note>mit Alkohol</note>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="other">1.79</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
       <category name="Veganer renner">
         <meal>
           <name>Gebratene Mienudeln mit Paprika, Weißkraut und Karotten</name>
@@ -553,6 +543,14 @@ Salz: 0.8 g</note>
           <name>Salatbuffet</name>
           <note>Ei</note>
           <note>Milch und Laktose</note>
+          <note>Nährwerte pro 100 g 
+Brennwert: 395.8 kj / 95.0 kcal 
+Fett: 23.3 g 
+ - davon ges. FS: 2.4 g 
+Kohlenhydrate: 10.2 g 
+ - davon Zucker: 4.7 g 
+Eiweiß: 2.1 g 
+Salz: 1.1 g</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
           <note>Senf</note>
@@ -571,7 +569,31 @@ Salz: 0.8 g</note>
       </category>
       <category name="Beilage">
         <meal>
+          <name>Balkangemüse</name>
+          <note>Nährwerte pro 100 g 
+Brennwert: 269.6 kj / 64.0 kcal 
+Fett: 2.6 g 
+ - davon ges. FS: 1.2 g 
+Kohlenhydrate: 6.5 g 
+ - davon Zucker: 4.0 g 
+Eiweiß: 2.3 g 
+Salz: 0.3 g</note>
+          <note>Sellerie</note>
+          <note>vegan</note>
+          <price role="employee">1.39</price>
+          <price role="other">1.79</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
           <name>Pommes frites</name>
+          <note>Nährwerte pro 100 g 
+Brennwert: 869.7 kj / 208.0 kcal 
+Fett: 18.8 g 
+ - davon ges. FS: 3.9 g 
+Kohlenhydrate: 27.2 g 
+ - davon Zucker: 0.7 g 
+Eiweiß: 3.2 g 
+Salz: 0.7 g</note>
           <price role="employee">1.69</price>
           <price role="other">2.09</price>
           <price role="student">1.29</price>
@@ -579,6 +601,14 @@ Salz: 0.8 g</note>
         <meal>
           <name>Kartoffelpüree</name>
           <note>Milch und Laktose</note>
+          <note>Nährwerte pro 100 g 
+Brennwert: 292.5 kj / 70.0 kcal 
+Fett: 1.7 g 
+ - davon ges. FS: 1.0 g 
+Kohlenhydrate: 11.5 g 
+ - davon Zucker: 1.1 g 
+Eiweiß: 1.7 g 
+Salz: 0.8 g</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>mit Antioxidationsmitteln</note>
           <note>mit Farbstoffen</note>
@@ -589,6 +619,14 @@ Salz: 0.8 g</note>
         </meal>
         <meal>
           <name>Beilagensalat</name>
+          <note>Nährwerte pro 100 g 
+Brennwert: 69.3 kj / 17.0 kcal 
+Fett: 0.1 g 
+ - davon ges. FS: 0.1 g 
+Kohlenhydrate: 1.8 g 
+ - davon Zucker: 1.5 g 
+Eiweiß: 1.3 g 
+Salz: 0.1 g</note>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="other">1.79</price>
@@ -599,6 +637,14 @@ Salz: 0.8 g</note>
         <meal>
           <name>Sahneschokopudding</name>
           <note>Milch und Laktose</note>
+          <note>Nährwerte pro 100 g 
+Brennwert: 629.1 kj / 150.0 kcal 
+Fett: 7.8 g 
+ - davon ges. FS: 5.4 g 
+Kohlenhydrate: 17.0 g 
+ - davon Zucker: 12.0 g 
+Eiweiß: 2.8 g 
+Salz: 0.2 g</note>
           <note>vegetarisch</note>
           <price role="employee">1.69</price>
           <price role="other">2.09</price>
@@ -607,6 +653,14 @@ Salz: 0.8 g</note>
         <meal>
           <name>Pfirsichjoghurt</name>
           <note>Milch und Laktose</note>
+          <note>Nährwerte pro 100 g 
+Brennwert: 397.0 kj / 95.0 kcal 
+Fett: 3.0 g 
+ - davon ges. FS: 1.9 g 
+Kohlenhydrate: 12.6 g 
+ - davon Zucker: 12.1 g 
+Eiweiß: 3.7 g 
+Salz: 0.1 g</note>
           <note>mit Farbstoffen</note>
           <note>vegetarisch</note>
           <price role="employee">1.49</price>
@@ -616,6 +670,27 @@ Salz: 0.8 g</note>
       </category>
     </day>
     <day date="2026-11-10">
+      <category name="Vorspeise">
+        <meal>
+          <name>Kartoffelsuppe</name>
+          <note>Milch und Laktose</note>
+          <note>Nährwerte pro 100 g 
+Brennwert: 153.5 kj / 37.0 kcal 
+Fett: 1.3 g 
+ - davon ges. FS: 0.8 g 
+Kohlenhydrate: 5.0 g 
+ - davon Zucker: 0.6 g 
+Eiweiß: 0.8 g 
+Salz: 0.5 g</note>
+          <note>Schwefeldioxid SO2 und Sulfite</note>
+          <note>Sellerie</note>
+          <note>mit Antioxidationsmitteln</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="other">1.79</price>
+          <price role="student">0.99</price>
+        </meal>
+      </category>
       <category name="Veganer renner">
         <meal>
           <name>Linsen und vegane Spätzle</name>
@@ -692,6 +767,14 @@ Salz: 0.9 g</note>
           <name>Salatbuffet</name>
           <note>Ei</note>
           <note>Milch und Laktose</note>
+          <note>Nährwerte pro 100 g 
+Brennwert: 395.8 kj / 95.0 kcal 
+Fett: 23.3 g 
+ - davon ges. FS: 2.4 g 
+Kohlenhydrate: 10.2 g 
+ - davon Zucker: 4.7 g 
+Eiweiß: 2.1 g 
+Salz: 1.1 g</note>
           <note>Schwefeldioxid SO2 und Sulfite</note>
           <note>Sellerie</note>
           <note>Senf</note>
@@ -710,9 +793,36 @@ Salz: 0.9 g</note>
       </category>
       <category name="Beilage">
         <meal>
+          <name>Rahmblumenkohl</name>
+          <note>Milch und Laktose</note>
+          <note>Nährwerte pro 100 g 
+Brennwert: 319.8 kj / 76.0 kcal 
+Fett: 5.3 g 
+ - davon ges. FS: 2.7 g 
+Kohlenhydrate: 4.3 g 
+ - davon Zucker: 2.3 g 
+Eiweiß: 2.6 g 
+Salz: 0.3 g</note>
+          <note>Sellerie</note>
+          <note>Soja</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.39</price>
+          <price role="other">1.79</price>
+          <price role="student">0.99</price>
+        </meal>
+        <meal>
           <name>Spätzle</name>
           <note>Dinkel</note>
           <note>Ei</note>
+          <note>Nährwerte pro 100 g 
+Brennwert: 746.0 kj / 178.0 kcal 
+Fett: 5.3 g 
+ - davon ges. FS: 1.7 g 
+Kohlenhydrate: 25.8 g 
+ - davon Zucker: 0.2 g 
+Eiweiß: 6.6 g 
+Salz: 0.9 g</note>
           <note>Weizen</note>
           <note>vegetarisch</note>
           <price role="employee">1.69</price>
@@ -721,12 +831,28 @@ Salz: 0.9 g</note>
         </meal>
         <meal>
           <name>Pommes frites</name>
+          <note>Nährwerte pro 100 g 
+Brennwert: 869.7 kj / 208.0 kcal 
+Fett: 18.8 g 
+ - davon ges. FS: 3.9 g 
+Kohlenhydrate: 27.2 g 
+ - davon Zucker: 0.7 g 
+Eiweiß: 3.2 g 
+Salz: 0.7 g</note>
           <price role="employee">1.69</price>
           <price role="other">2.09</price>
           <price role="student">1.29</price>
         </meal>
         <meal>
           <name>Beilagensalat</name>
+          <note>Nährwerte pro 100 g 
+Brennwert: 69.0 kj / 16.0 kcal 
+Fett: 0.1 g 
+ - davon ges. FS: 0.1 g 
+Kohlenhydrate: 1.8 g 
+ - davon Zucker: 1.5 g 
+Eiweiß: 1.3 g 
+Salz: 0.1 g</note>
           <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="other">1.79</price>
@@ -735,19 +861,19 @@ Salz: 0.9 g</note>
       </category>
       <category name="Dessert">
         <meal>
-          <name>Vanillejoghurt</name>
-          <note>Milch und Laktose</note>
-          <note>vegetarisch</note>
-          <price role="employee">1.49</price>
-          <price role="other">1.89</price>
-          <price role="student">1.09</price>
-        </meal>
-        <meal>
           <name>Veganes Früchtemüsli</name>
           <note>Gerste</note>
           <note>Hafer</note>
           <note>Haselnüsse</note>
           <note>Mandeln</note>
+          <note>Nährwerte pro 100 g 
+Brennwert: 526.5 kj / 126.0 kcal 
+Fett: 3.7 g 
+ - davon ges. FS: 0.5 g 
+Kohlenhydrate: 17.9 g 
+ - davon Zucker: 8.9 g 
+Eiweiß: 3.8 g 
+Salz: 1.8 g</note>
           <note>Soja</note>
           <note>mit Antioxidationsmitteln</note>
           <note>vegan</note>
@@ -883,7 +1009,7 @@ Salz: 0.1 g</note>
     <day date="2026-11-12">
       <category name="Veganer renner">
         <meal>
-          <name>Veganes Gyros mit veganem Tzatziki, fairtrade Paprikareis und Weißkrautsalat</name>
+          <name>Veganes Gyros mit veganem Tzatziki, Fairtrade Paprikareis und Weißkrautsalat</name>
           <note>Hafer</note>
           <note>Nährwerte pro 100 g 
 Brennwert: 222.1 kj / 53.0 kcal 
