@@ -4,6 +4,16 @@
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
     <day date="2026-11-13">
+      <category name="Menü">
+        <meal>
+          <name>1 Stück spicy crispy Patty (GlW,GlG)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">2.20</price>
+          <price role="other">2.50</price>
+          <price role="student">2.00</price>
+        </meal>
+      </category>
       <category name="CampusWorld">
         <meal>
           <name>Veganer Falafel - Burger mit Taboulé und Tahin-Hafer Joghurt (3,So,Sl,Se,GlW,GlH,NMa), Pommes Frites</name>
@@ -17,9 +27,7 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Pasta des Tages (GlW)</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Pasta mit Spinat und Gorgonzola (Mi,GlW)</name>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
