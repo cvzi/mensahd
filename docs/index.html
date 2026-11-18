@@ -37,7 +37,22 @@
   <body>
     <main>
       <article>Parser for <a target="_blank" href="https://openmensa.org">openmensa.org</a>. The parser runs in a <a target="_blank" title="What's a Github action?" href="https://docs.github.com/en/actions">Github action<sup>❓</sup></a> and pushes the XML feeds to this page</article>
-      <article><h3><a href="https://github.com/cvzi/mensahd/actions/">🗿 Parser status</a></h3></article>
+      <article><h3><a href="https://github.com/cvzi/mensahd/actions/">🗿 Parser status</a></h3>
+<pre>heidelberg:
+Traceback (most recent call last):
+  File "/home/runner/work/mensahd/mensahd/updateFeeds.py", line 109, in updateFeeds
+    content = parser.json()
+  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 282, in json
+    return _generateCanteenList_JSON(stream, self.url_template)
+  File "/home/runner/work/mensahd/mensahd/heidelberg/__init__.py", line 269, in _generateCanteenList_JSON
+    metaOrFeed='meta', mensaReference=urllib.parse.quote(shortName))
+                                      ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.15.2/x64/lib/python3.15/urllib/parse.py", line 1072, in quote
+    return quote_from_bytes(string, safe)
+  File "/opt/hostedtoolcache/Python/3.15.2/x64/lib/python3.15/urllib/parse.py", line 1102, in quote_from_bytes
+    raise TypeError("quote_from_bytes() expected bytes")
+TypeError: quote_from_bytes() expected bytes
+</pre></article>
       <article>
 <ol style="list-style-type:none">
 <li><h3 id="eppelheim"><a href="https://cvzi.github.io/mensahd/eppelheim.json">🐏 eppelheim.json</a></h3>
@@ -122,9 +137,6 @@
   <li><a href="https://cvzi.github.io/mensahd/feed/heidelberg_triplex.xml">🍱 feed/heidelberg_triplex.xml</a></li>
   <li><a href="https://cvzi.github.io/mensahd/meta/heidelberg_triplex.xml">🈺 meta/heidelberg_triplex.xml</a></li>
   <li><a href="https://cvzi.github.io/mensahd/today/heidelberg_triplex.xml">🍱 today/heidelberg_triplex.xml</a></li>
-  <li><a href="https://cvzi.github.io/mensahd/feed/heidelberg_zeughaus.xml">🍱 feed/heidelberg_zeughaus.xml</a></li>
-  <li><a href="https://cvzi.github.io/mensahd/meta/heidelberg_zeughaus.xml">🈺 meta/heidelberg_zeughaus.xml</a></li>
-  <li><a href="https://cvzi.github.io/mensahd/today/heidelberg_zeughaus.xml">🍱 today/heidelberg_zeughaus.xml</a></li>
 </ul>
 <li><h3 id="mannheim"><a href="https://cvzi.github.io/mensahd/mannheim.json">🐏 mannheim.json</a></h3>
 <ul style="list-style-type:none">
