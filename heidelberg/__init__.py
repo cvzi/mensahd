@@ -45,7 +45,7 @@ emptyFeed = '<openmensa xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="ht
 
 # Maps arbitrary ids to the actual names in the XML feed. The ids are used in the feed URLs
 nameMap = {
-    "zeughaus": "zeughaus-Mensa im Marstall",
+    #"zeughaus": "zeughaus-Mensa im Marstall",  # Closed for construction, at least until 2029
     "triplex": "Triplex-Mensa am Uniplatz",
     "inf304": "Mensa Im Neuenheimer Feld 304",
     "heilbronn_sontheim": "Mensa Heilbronn TechCampus",
@@ -55,7 +55,7 @@ nameMap = {
 
 # Maps arbitrary ids to the actual names in the Meta JSON file.
 nameMapMeta = {
-    "zeughaus": "zeughaus-Mensa im Marstall",
+    #"zeughaus": "zeughaus-Mensa im Marstall",
     "triplex": "Triplex-Mensa am Uniplatz",
     "inf304": "Mensa Im Neuenheimer Feld 304",
     "heilbronn_sontheim": "Mensa Heilbronn",
@@ -66,7 +66,7 @@ nameMapMeta = {
 
 # Maps actual names from the XML feed to the desired names, that will be shown on openmensa.org
 desiredName = {
-    "zeughaus-Mensa im Marstall": "Heidelberg, zeughaus-Mensa im Marstall",
+    #"zeughaus-Mensa im Marstall": "Heidelberg, zeughaus-Mensa im Marstall",
     "Triplex-Mensa am Uniplatz": "Heidelberg, Triplex-Mensa am Uniplatz",
     "Mensa Im Neuenheimer Feld 304": "Heidelberg, Mensa Im Neuenheimer Feld 304",
     "Mensa Heilbronn TechCampus": "Heilbronn, Mensa Sontheim",
