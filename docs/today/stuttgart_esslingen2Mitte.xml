@@ -3,21 +3,22 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2026-11-18">
+    <day date="2026-11-19">
       <category name="Vorspeise">
         <meal>
-          <name>Gemüserahmsuppe</name>
+          <name>Kürbiscremesuppe</name>
           <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 233.6 kj / 56.0 kcal 
-Fett: 4.7 g 
- - davon ges. FS: 2.8 g 
-Kohlenhydrate: 2.4 g 
+Brennwert: 191.2 kj / 46.0 kcal 
+Fett: 3.6 g 
+ - davon ges. FS: 2.0 g 
+Kohlenhydrate: 2.8 g 
  - davon Zucker: 0.9 g 
-Eiweiß: 0.7 g 
-Salz: 0.1 g</note>
+Eiweiß: 0.6 g 
+Salz: 0.2 g</note>
           <note>Sellerie</note>
           <note>Weizen</note>
+          <note>vegetarisch</note>
           <price role="employee">1.39</price>
           <price role="other">1.79</price>
           <price role="student">0.99</price>
@@ -25,17 +26,16 @@ Salz: 0.1 g</note>
       </category>
       <category name="Veganer renner">
         <meal>
-          <name>Vollkornpasta mit Sojabolognese</name>
+          <name>Vollkorn Penne mit mediterranem Gemüse</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 656.8 kj / 157.0 kcal 
-Fett: 2.4 g 
+Brennwert: 420.5 kj / 100.0 kcal 
+Fett: 1.2 g 
  - davon ges. FS: 0.5 g 
-Kohlenhydrate: 23.6 g 
- - davon Zucker: 3.5 g 
-Eiweiß: 8.3 g 
+Kohlenhydrate: 17.8 g 
+ - davon Zucker: 3.2 g 
+Eiweiß: 3.4 g 
 Salz: 0.1 g</note>
           <note>Sellerie</note>
-          <note>Soja</note>
           <note>Weizen</note>
           <note>vegan</note>
           <price role="employee">5.99</price>
@@ -45,41 +45,59 @@ Salz: 0.1 g</note>
       </category>
       <category name="Hauptgericht">
         <meal>
-          <name>Kartoffel-Zucchini-Gratin</name>
+          <name>Cordon bleu vom Schwein mit Bratensauce und Spätzle</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
           <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 517.6 kj / 124.0 kcal 
-Fett: 7.9 g 
- - davon ges. FS: 5.0 g 
-Kohlenhydrate: 7.5 g 
- - davon Zucker: 1.6 g 
-Eiweiß: 5.2 g 
-Salz: 1.2 g</note>
-          <note>Schwefeldioxid SO2 und Sulfite</note>
-          <note>Sellerie</note>
-          <note>Weizen</note>
-          <note>vegetarisch</note>
-          <price role="employee">7.10</price>
-          <price role="other">7.60</price>
-          <price role="student">4.10</price>
-        </meal>
-        <meal>
-          <name>Cordon bleu vom Schwein mit Bratensauce und Pommes frites</name>
-          <note>Milch und Laktose</note>
-          <note>Nährwerte pro 100 g 
-Brennwert: 688.2 kj / 164.0 kcal 
-Fett: 13.8 g 
- - davon ges. FS: 3.2 g 
-Kohlenhydrate: 16.3 g 
- - davon Zucker: 2.1 g 
-Eiweiß: 8.1 g 
-Salz: 0.3 g</note>
+Brennwert: 586.2 kj / 140.0 kcal 
+Fett: 7.6 g 
+ - davon ges. FS: 2.1 g 
+Kohlenhydrate: 14.9 g 
+ - davon Zucker: 1.7 g 
+Eiweiß: 8.3 g 
+Salz: 0.4 g</note>
           <note>Schwein</note>
           <note>Weizen</note>
           <note>mit Antioxidationsmitteln</note>
           <price role="employee">8.40</price>
           <price role="other">8.90</price>
           <price role="student">5.40</price>
+        </meal>
+        <meal>
+          <name>Chili con Carne und Reis</name>
+          <note>Nährwerte pro 100 g 
+Brennwert: 537.9 kj / 128.0 kcal 
+Fett: 3.5 g 
+ - davon ges. FS: 1.2 g 
+Kohlenhydrate: 18.3 g 
+ - davon Zucker: 3.0 g 
+Eiweiß: 6.3 g 
+Salz: 0.9 g</note>
+          <note>Rind</note>
+          <note>Sellerie</note>
+          <price role="employee">7.40</price>
+          <price role="other">7.90</price>
+          <price role="student">4.40</price>
+        </meal>
+        <meal>
+          <name>Allgäuer Käsespätzle mit Zwiebelschmelze</name>
+          <note>Dinkel</note>
+          <note>Ei</note>
+          <note>Milch und Laktose</note>
+          <note>Nährwerte pro 100 g 
+Brennwert: 777.0 kj / 186.0 kcal 
+Fett: 9.2 g 
+ - davon ges. FS: 4.8 g 
+Kohlenhydrate: 17.5 g 
+ - davon Zucker: 1.3 g 
+Eiweiß: 8.0 g 
+Salz: 1.9 g</note>
+          <note>Weizen</note>
+          <note>vegetarisch</note>
+          <price role="employee">7.50</price>
+          <price role="other">8.00</price>
+          <price role="student">4.50</price>
         </meal>
       </category>
       <category name="Buffet">
@@ -112,38 +130,32 @@ Salz: 1.1 g</note>
       </category>
       <category name="Beilage">
         <meal>
-          <name>Blattspinat</name>
-          <note>Milch und Laktose</note>
+          <name>Asia-Kokos-Gemüse</name>
+          <note>Nährwerte pro 100 g 
+Brennwert: 298.1 kj / 71.0 kcal 
+Fett: 4.6 g 
+ - davon ges. FS: 3.4 g 
+Kohlenhydrate: 5.6 g 
+ - davon Zucker: 3.2 g 
+Eiweiß: 1.1 g 
+Salz: 0.6 g</note>
           <note>Sellerie</note>
-          <note>Weizen</note>
+          <note>Soja</note>
+          <note>vegan</note>
           <price role="employee">1.39</price>
           <price role="other">1.79</price>
           <price role="student">0.99</price>
         </meal>
         <meal>
-          <name>Pommes frites</name>
+          <name>Reis</name>
           <note>Nährwerte pro 100 g 
-Brennwert: 869.7 kj / 208.0 kcal 
-Fett: 18.8 g 
- - davon ges. FS: 3.9 g 
-Kohlenhydrate: 27.2 g 
- - davon Zucker: 0.7 g 
-Eiweiß: 3.2 g 
-Salz: 0.7 g</note>
-          <price role="employee">1.69</price>
-          <price role="other">2.09</price>
-          <price role="student">1.29</price>
-        </meal>
-        <meal>
-          <name>Duftreis</name>
-          <note>Nährwerte pro 100 g 
-Brennwert: 502.6 kj / 120.0 kcal 
-Fett: 0.7 g 
- - davon ges. FS: 0.1 g 
-Kohlenhydrate: 25.5 g 
- - davon Zucker: 0.0 g 
-Eiweiß: 2.4 g 
-Salz: 0.2 g</note>
+Brennwert: 570.4 kj / 136.0 kcal 
+Fett: 3.0 g 
+ - davon ges. FS: 1.5 g 
+Kohlenhydrate: 24.5 g 
+ - davon Zucker: 0.1 g 
+Eiweiß: 2.3 g 
+Salz: 0.4 g</note>
           <note>vegan</note>
           <price role="employee">1.49</price>
           <price role="other">1.89</price>
@@ -167,19 +179,20 @@ Salz: 0.1 g</note>
       </category>
       <category name="Dessert">
         <meal>
-          <name>Weißes Mousse au chocolat</name>
+          <name>Vanillejoghurt</name>
           <note>Milch und Laktose</note>
           <note>Nährwerte pro 100 g 
-Brennwert: 566.1 kj / 135.0 kcal 
-Fett: 6.1 g 
- - davon ges. FS: 4.4 g 
-Kohlenhydrate: 15.9 g 
- - davon Zucker: 13.6 g 
-Eiweiß: 4.0 g 
-Salz: 0.2 g</note>
-          <price role="employee">1.69</price>
-          <price role="other">2.09</price>
-          <price role="student">1.29</price>
+Brennwert: 420.0 kj / 100.0 kcal 
+Fett: 3.0 g 
+ - davon ges. FS: 1.9 g 
+Kohlenhydrate: 14.7 g 
+ - davon Zucker: 14.2 g 
+Eiweiß: 3.5 g 
+Salz: 0.1 g</note>
+          <note>vegetarisch</note>
+          <price role="employee">1.49</price>
+          <price role="other">1.89</price>
+          <price role="student">1.09</price>
         </meal>
       </category>
     </day>
