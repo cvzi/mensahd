@@ -6,7 +6,7 @@
     <day date="2026-11-23">
       <category name="CampusKlassiker">
         <meal>
-          <name>Grünkohl , vegane Kochwurst (Erbsenprotein), Röstkartoffeln</name>
+          <name>Grünkohl , vegane Kochwurst (Erbsenprotein), Salzkartoffel</name>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Senf und Senferzeugnisse</note>
           <note>Vegan</note>
@@ -39,9 +39,19 @@
           <price role="student">3.70</price>
         </meal>
       </category>
+      <category name="CampusWorld">
+        <meal>
+          <name>Kartoffelsalat mit veganem Schnitzel und Senfdip (2,Sf,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">7.00</price>
+          <price role="other">8.30</price>
+          <price role="student">5.70</price>
+        </meal>
+      </category>
       <category name="Pastabar">
         <meal>
-          <name>Penne (GlW), Frischkäsesoße mit Meerrettich und Kräutern (3,5,Mi,Sw,GlW,GlG)</name>
+          <name>Pasta (GlW), Frischkäsesoße mit Meerrettich und Kräutern (3,5,Mi,Sw,GlW,GlG)</name>
           <note>Vegetarisch</note>
           <note>mensaVital</note>
           <price role="employee">1.15</price>
@@ -49,7 +59,7 @@
           <price role="student">0.90</price>
         </meal>
         <meal>
-          <name>Penne (GlW), Sojastreifen in scharfer Tomatensoße (Sojaprotein)</name>
+          <name>Pasta (GlW), Sojastreifen in scharfer Tomatensoße (Sojaprotein)</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
@@ -63,7 +73,7 @@
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>gebratenem Wirsing, Blumenkohl mit gebräunten Bröseln (1,GlW), Nusskartoffeln</name>
+          <name>gebratener Wirsing, Bohnen, Blumenkohl mit gebräunten Bröseln, Zucchini mit Tomaten (1,GlW), Nusskartoffeln</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">1.15</price>
@@ -86,28 +96,46 @@
           <price role="student">3.00</price>
         </meal>
       </category>
-      <category name="CampusWorld">
+      <category name="CampusSpezial">
         <meal>
-          <name>Hausgemachte Pasta (GlW), Paprikacreme und Mascarpone mit Basilikum</name>
+          <name>gebratene Süßkartoffel Gnocchi, Paprikacreme und Mascarpone mit Basilikum</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Vegetarisch</note>
-          <price role="employee">5.20</price>
-          <price role="other">6.50</price>
-          <price role="student">3.90</price>
+          <price role="employee">6.40</price>
+          <price role="other">7.70</price>
+          <price role="student">5.10</price>
         </meal>
+      </category>
+      <category name="CampusWorld">
         <meal>
-          <name>Vegane Nuggets Roasted Sesam (Soja und Weizenprotein) (2,So,Sf,Se,GlW,GlG), gebratener Pak Choi mit Cashewkerne (1,2,So,Sw,GlW,NCa), Basmatireis</name>
+          <name>Basmatireis, Pak Choisalat mit Knoblauch, Reisessig und Chili-Kohl (1,2,So,Sw,GlW,NCa), Vegane Nuggets Roasted Sesam (Soja und Weizenprotein) Cashewkerne (2,So,Sf,Se,GlW,GlG)</name>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <price role="employee">6.80</price>
           <price role="other">8.10</price>
           <price role="student">5.50</price>
         </meal>
+        <meal>
+          <name>Bulgursalat mit Rotkohl, Hirtenkäse und Ajva-Walnussdip (6,Mi,Sl,Sw,GlW,NWa)</name>
+          <note>Vegetarisch</note>
+          <price role="employee">6.50</price>
+          <price role="other">7.80</price>
+          <price role="student">5.20</price>
+        </meal>
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Vollkorn Fusilli (GlW), Kürbis- Sojacreme mit Rosmarin</name>
+          <name>Pasta (GlW), Blumenkohl in einer Sahnesoße mit grünem Pfeffer</name>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Vegetarisch</note>
+          <note>mit Antioxidationsmittel</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+        <meal>
+          <name>Pasta (GlW), Kürbis- Sojacreme mit Rosmarin</name>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
           <note>Soja und Sojaerzeugnisse</note>
@@ -118,25 +146,18 @@
           <price role="other">1.40</price>
           <price role="student">0.90</price>
         </meal>
-        <meal>
-          <name>Vollkorn Fusilli (GlW), Blumenkohl in einer Sahnesoße mit grünem Pfeffer</name>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Vegetarisch</note>
-          <note>mit Antioxidationsmittel</note>
-          <price role="employee">1.15</price>
-          <price role="other">1.40</price>
-          <price role="student">0.90</price>
-        </meal>
       </category>
       <category name="Gemüsebar">
         <meal>
-          <name>Macairekartoffeln (GlW), Rosenkohl in Creme (1,So,Sl,GlW), Grüne und gelbe Zucchini mit Oliven und Cherrytomate , Apfelrotkohl</name>
+          <name>Macairekartoffeln (GlW), Rosenkohl in Creme (1,So,Sl,GlW), Grüne und gelbe Zucchini mit Oliven und Cherrytomate , Apfelrotkohl , überbackener Blumenkohl mit veganem Käse</name>
           <note>Geschwefelt</note>
           <note>Geschwärzt</note>
           <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Soja und Sojaerzeugnisse</note>
           <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mit Antioxidationsmittel</note>
+          <note>mit Farbstoff</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
@@ -184,19 +205,19 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Penne (GlW), Ratatouille</name>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <name>Penne (GlW), Steckrübencreme mit Thymian und Knoblauch (Mi,Sw,GlW,GlG)</name>
+          <note>Vegetarisch</note>
           <note>mensaVital</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
         </meal>
         <meal>
-          <name>Penne (GlW), Steckrübencreme mit Thymian und Knoblauch (Mi,Sw,GlW,GlG)</name>
-          <note>Vegetarisch</note>
+          <name>Penne (GlW), Ratatouille</name>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
           <note>mensaVital</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>

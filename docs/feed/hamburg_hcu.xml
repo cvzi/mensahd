@@ -22,7 +22,6 @@
         <meal>
           <name>Rostbratwurst , Sauerkraut (vegan) , hausgemachtes Kartoffelpüree</name>
           <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Neu</note>
           <note>Rind</note>
           <note>Schwein</note>
           <note>Sellerie und Sellerieerzeugnisse</note>
@@ -45,8 +44,20 @@
       </category>
       <category name="Pastabar">
         <meal>
-          <name>Spaghetti (Ei,Mi,GlW), Frischkäsesoße mit Meerrettich und Kräutern (3,5,Mi,Sw,GlW,GlG)</name>
+          <name>Penne (GlW), Frischkäsesoße mit Meerrettich und Kräutern (3,5,Mi,Sw,GlW,GlG)</name>
           <note>Vegetarisch</note>
+          <price role="employee">1.15</price>
+          <price role="other">1.40</price>
+          <price role="student">0.90</price>
+        </meal>
+      </category>
+      <category name="Gemüsebar">
+        <meal>
+          <name>Kräuter-Chili-Kartoffeln, Gemüsemix Eskorial, Möhrchen mit Ingwer , Romanesco</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <note>mensaVital</note>
+          <note>mit Farbstoff</note>
           <price role="employee">1.15</price>
           <price role="other">1.40</price>
           <price role="student">0.90</price>
@@ -311,12 +322,14 @@
       </category>
       <category name="CampusKlassiker">
         <meal>
-          <name>Spaghetti in Tomatensoße mit Gemüsebällchen (Ei,Sw,GlW)</name>
-          <note>Vegetarisch</note>
+          <name>Grünkohl , vegane Kochwurst (Erbsenprotein), Röstkartoffeln</name>
+          <note>Sellerie und Sellerieerzeugnisse</note>
+          <note>Senf und Senferzeugnisse</note>
+          <note>Vegan</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">4.25</price>
-          <price role="other">5.55</price>
-          <price role="student">2.95</price>
+          <price role="employee">5.60</price>
+          <price role="other">6.90</price>
+          <price role="student">4.30</price>
         </meal>
         <meal>
           <name>Grünkohl , Kochwurst , Röstkartoffeln</name>
@@ -334,14 +347,12 @@
           <price role="student">4.30</price>
         </meal>
         <meal>
-          <name>Grünkohl , vegane Kochwurst (Erbsenprotein), Röstkartoffeln</name>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>Vegan</note>
+          <name>Spaghetti in Tomatensoße mit Gemüsebällchen (Ei,Sw,GlW)</name>
+          <note>Vegetarisch</note>
           <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.60</price>
-          <price role="other">6.90</price>
-          <price role="student">4.30</price>
+          <price role="employee">4.25</price>
+          <price role="other">5.55</price>
+          <price role="student">2.95</price>
         </meal>
       </category>
       <category name="Pastabar">
