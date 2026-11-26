@@ -3,47 +3,6 @@
 <?xml-stylesheet href="https://cdn.jsdelivr.net/npm/om-style@1.0.0/lightgreen.css" type="text/css"?>
 <openmensa version="2.1" xmlns="http://openmensa.org/open-mensa-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
-    <day date="2026-11-25">
-      <category name="CampusKlassiker">
-        <meal>
-          <name>Grünkohl , Kasseler Nackenbraten , Röstkartoffeln</name>
-          <note>Schwein</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <price role="employee">5.60</price>
-          <price role="other">6.90</price>
-          <price role="student">4.30</price>
-        </meal>
-        <meal>
-          <name>Grünkohl , Kochwurst , Röstkartoffeln</name>
-          <note>Schwein</note>
-          <note>Sellerie und Sellerieerzeugnisse</note>
-          <note>Senf und Senferzeugnisse</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Farbstoff</note>
-          <note>mit Geschmacksverstärker</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Phosphat</note>
-          <price role="employee">5.60</price>
-          <price role="other">6.90</price>
-          <price role="student">4.30</price>
-        </meal>
-      </category>
-      <category name="CampusWorld">
-        <meal>
-          <name>Veganes Hackbällchen-Curry (Soja und Weizenprotein) mit Kokosmilch, Erdnussbutter und Gemüse (1,2,En,So,Sw,GlW,GlG), Basmatireis</name>
-          <note>Vegan</note>
-          <note>enthält keine laktosehaltigen Lebensmittel</note>
-          <price role="employee">5.90</price>
-          <price role="other">7.20</price>
-          <price role="student">4.60</price>
-        </meal>
-      </category>
-    </day>
     <day date="2026-11-26">
       <category name="CampusVital">
         <meal>
@@ -191,6 +150,19 @@
     <day date="2026-12-03">
       <category name="CampusSpezial">
         <meal>
+          <name>Entenkeule , Geflügelrahmsoße , Apfelrotkohl , Kartoffelklöße, gebräunte Brösel (1,GlW)</name>
+          <note>Geflügel</note>
+          <note>Geschwefelt</note>
+          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
+          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
+          <note>mit Antioxidationsmittel</note>
+          <note>mit Konservierungsstoff</note>
+          <note>mit Phosphat</note>
+          <price role="employee">6.25</price>
+          <price role="other">7.55</price>
+          <price role="student">4.95</price>
+        </meal>
+        <meal>
           <name>Veganer Weihnachtsbraten mit Soße (Sl,Sf,GlW), Rote Zwiebel-Senf Marmelade , Apfelrotkohl , Röstkartoffeln</name>
           <note>Alkohol</note>
           <note>Geschwefelt</note>
@@ -205,18 +177,27 @@
           <price role="other">7.55</price>
           <price role="student">4.95</price>
         </meal>
+      </category>
+    </day>
+    <day date="2026-12-04">
+      <category name="Pottkieker">
         <meal>
-          <name>Entenkeule , Geflügelrahmsoße , Apfelrotkohl , Kartoffelklöße, gebräunte Brösel (1,GlW)</name>
-          <note>Geflügel</note>
-          <note>Geschwefelt</note>
-          <note>Milch und Milcherzeugnisse (einschließlich Laktose)</note>
-          <note>Schwefeldioxid und Sulfite (Konzentration über 10mg/kg oder 10mg/l)</note>
-          <note>mit Antioxidationsmittel</note>
-          <note>mit Konservierungsstoff</note>
-          <note>mit Phosphat</note>
-          <price role="employee">6.25</price>
-          <price role="other">7.55</price>
-          <price role="student">4.95</price>
+          <name>Sojageschnetzeltes in Currysoße (Sojaprotein) (So,Sl,Sf,GlW), Reis</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">3.50</price>
+          <price role="other">4.80</price>
+          <price role="student">2.20</price>
+        </meal>
+      </category>
+      <category name="CampusSpezial">
+        <meal>
+          <name>Vegane Maultaschen mit Kürbis-Champignongemüse und Salbei (1,3,So,Sl,Sw,GlW)</name>
+          <note>Vegan</note>
+          <note>enthält keine laktosehaltigen Lebensmittel</note>
+          <price role="employee">7.20</price>
+          <price role="other">8.50</price>
+          <price role="student">5.90</price>
         </meal>
       </category>
     </day>
